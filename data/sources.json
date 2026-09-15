@@ -1,0 +1,14 @@
+{
+  "feeds": [
+    {"company":"OpenAI","url":"https://openai.com/news/rss.xml"},
+    {"company":"Google DeepMind","url":"https://deepmind.google/blog/rss.xml"},
+    {"company":"NVIDIA","url":"https://blogs.nvidia.com/feed/"},
+    {"company":"Microsoft Research","url":"https://www.microsoft.com/en-us/research/feed/"},
+    {"company":"Qwen","url":"https://github.com/QwenLM/qwen-code/releases.atom"}
+  ],
+  "pages": [
+    {"company":"Anthropic","url":"https://www.anthropic.com/news","path_prefixes":["/news/","/research/","/threat-intelligence-","/claude-"]},
+    {"company":"DeepSeek","url":"https://deepseek.com/en/news/","path_prefixes":["/en/news/"]},
+    {"company":"DeepSeek","url":"https://api-docs.deepseek.com/news/","path_prefixes":["/news/news"]}
+  ]
+}

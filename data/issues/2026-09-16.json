@@ -1,0 +1,98 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T00:52:00+08:00",
+  "label": "创刊精选",
+  "notices": [],
+  "papers": [
+    {
+      "slot": 1,
+      "type": "journal-article",
+      "title": "Beyond representational alignment with brain-guided language models for robust reasoning",
+      "title_zh": "大模型如何刻画人的推理？让脑信号参与检验与改进",
+      "doi": "10.1038/s42256-026-01278-w",
+      "url": "https://www.nature.com/articles/s42256-026-01278-w",
+      "journal": "Nature Machine Intelligence",
+      "published": "2026-08-03",
+      "authors": "Xiao, Du & Lin",
+      "freshness": "近期研究 · Nature 子刊",
+      "summary": "研究将大语言模型的内部表征与人类演绎推理时的脑活动对照，再用脑信号引导模型。结果既呈现两者的对应，也揭示具体推理类型上的差异，为认知建模提供可检验的线索。",
+      "reason": "把“模型是否像人一样推理”落到可测量的脑活动上，与 LLM 对人的认知建模直接相关。",
+      "evidence": "创刊人工核验：期刊官网正式 Article，2026-08-03 发表。论文覆盖 10 个模型；脑信号对齐并不等于模型真正理解了人的心理，也不等于所有任务上都具有人类认知机制。",
+      "tag": "认知建模 / 脑与语言模型"
+    },
+    {
+      "slot": 2,
+      "type": "journal-article",
+      "title": "Mapping the neuronal building blocks of human language with language models",
+      "title_zh": "从单个神经元出发，看人脑怎样组织语言",
+      "doi": "10.1038/s41586-026-10691-5",
+      "url": "https://www.nature.com/articles/s41586-026-10691-5",
+      "journal": "Nature",
+      "published": "2026-06-17",
+      "authors": "Cai et al.",
+      "freshness": "近期研究 · 人类语言",
+      "summary": "研究结合人类单神经元记录与语言模型，观察自然说话时词性、语法关系及句子结构怎样被编码。不同神经元分工处理语言信息，并随上下文动态变化，为语言的细胞层面组织提供证据。",
+      "reason": "一项直接研究人的基础工作：将抽象的语言结构与微观神经活动联系起来。",
+      "evidence": "创刊核验时，期刊页面显示约 6.3 万访问、Altmetric 318（2026-09-16 查询），说明已获得较广关注，不代表学术结论已获独立复现。记录来自 8 位参与者、579 个候选神经元，样本与临床记录场景限制其推广范围。",
+      "tag": "人类神经科学 / 语言"
+    },
+    {
+      "slot": 3,
+      "type": "journal-article",
+      "title": "Advancing regulatory variant effect prediction with AlphaGenome",
+      "title_zh": "AlphaGenome：把长 DNA 序列与精细的基因调控预测连接起来",
+      "doi": "10.1038/s41586-025-10014-0",
+      "url": "https://www.nature.com/articles/s41586-025-10014-0",
+      "journal": "Nature",
+      "published": "2026-01-28",
+      "authors": "Avsec et al.",
+      "freshness": "年度高关注 · AI × 生命科学",
+      "summary": "AlphaGenome 从长达百万碱基的 DNA 序列预测多种分子特征，部分输出达到单碱基分辨率。它把基因表达、剪接等任务纳入同一模型，为探索调控变异的作用提供工具。",
+      "reason": "跨越 AI 与基因组学的高关注研究，展示基础模型如何成为科学发现工具。",
+      "evidence": "创刊核验时，Nature 页面显示约 45.1 万访问、346 次引用、Altmetric 1353（2026-09-16 查询）。据此选为跨领域热点代表，不声称是所有领域绝对第一。计算预测不能替代实验验证。",
+      "tag": "基因组学 / 高关注研究"
+    }
+  ],
+  "news": [
+    {
+      "company": "DeepSeek",
+      "kind": "模型 · 技术报告",
+      "published": "2026-09-10",
+      "title": "DeepSeek-V4.1-Flash 发布，聚焦原生视觉与推理效率",
+      "summary": "官方介绍了新的编码器—解码器架构、缓存压缩和 API 更新，并提供技术报告入口。性能提升为公司公布的结果。",
+      "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "安全报告",
+      "published": "2026-09-10",
+      "title": "Anthropic 发布 9 月 AI 滥用威胁报告",
+      "summary": "报告回顾其识别和阻断的滥用案例，以及模型能力变化带来的防护挑战；该公司说明这些案例并不代表典型使用情况。",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究进展",
+      "published": "2026-09-03",
+      "title": "WeatherNext 3：AI 天气预测的新进展",
+      "summary": "Google 公布新一代全球天气 AI 模型，并介绍其在搜索、地图及云服务中的应用。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "模型发布",
+      "published": "2026-09-02",
+      "title": "Gemini 3.8 Flash 与 Flash Cyber 发布",
+      "summary": "此次更新面向长流程编程、智能体任务与网络防护；Cyber 版本通过专门计划向符合条件的防御方开放。",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "模型发布",
+      "published": "2026-09-01",
+      "title": "Claude Fable 5.1 与 Mythos 5.1 上线",
+      "summary": "Anthropic 公布新一轮模型更新，重点介绍编程、知识工作与科研能力。",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+    }
+  ]
+}
