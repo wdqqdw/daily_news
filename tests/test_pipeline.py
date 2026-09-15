@@ -10,10 +10,12 @@ from unittest.mock import patch
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
+from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
 
 TODAY=dt.date(2026,9,16)
 
-def paper(doi,title='Language models predict human cognition',**extra):
+def paper(doi,title=None,**extra):
+    title=title or 'Language models predict human cognition: '+doi
     p={'doi':doi,'title':title,'journal':'Nature Human Behaviour','publisher':'Springer Science and Business Media LLC',
        'published':'2026-07-01','citations':30,'abstract':'We model human choices using large language models.',
        'url':'https://doi.org/'+doi,'authors':'Test et al.','type':'journal-article'}
@@ -30,17 +32,27 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(is_nsc(paper('10.1/a',journal='Scientific Reports')))
         self.assertFalse(is_nsc(paper('10.1/a',journal='Science of The Total Environment',publisher='Elsevier')))
 
+    def test_human_genomics_is_not_llm_modelling_of_people(self):
+        self.assertFalse(relevant(paper('10.1/dna','Nucleotide Transformer: building and evaluating robust foundation models for human genomics'),1))
+        self.assertTrue(relevant(paper('10.1/mind','A foundation model to predict and capture human cognition'),1))
+
     def test_unique_doi_and_unseen_preference(self):
         pool=[paper('10.1/seen',citations=1000),paper('10.1/a'),paper('10.1/b'),paper('10.1/c','Quantum materials',journal='Physics',publisher='APS',citations=300)]
-        result=select_papers(pool,{'10.1/seen'},TODAY)
+        result=select_papers(pool,item_keys(pool[0],'papers'),TODAY)
         self.assertEqual(len({x['doi'] for x in result}),3)
         self.assertEqual([x['slot'] for x in result],[1,2,3])
         self.assertNotEqual(result[0]['doi'],'10.1/seen')
 
-    def test_repeat_is_explicit(self):
+    def test_seen_papers_never_reappear_when_pool_is_exhausted(self):
         pool=[paper('10.1/a'),paper('10.1/b'),paper('10.1/c','Quantum materials')]
-        result=select_papers(pool,{p['doi'] for p in pool},TODAY)
-        self.assertTrue(all('历史重温' in x['freshness'] for x in result))
+        seen=set().union(*(item_keys(p,'papers') for p in pool))
+        with self.assertRaises(RuntimeError):select_papers(pool,seen,TODAY)
+
+    def test_doi_variants_and_title_aliases_are_always_excluded(self):
+        prior=paper('https://doi.org/10.1/OLD','Human cognition model',title_zh='人类认知模型')
+        variants=[paper('10.1/old','Different title'),paper('10.1/changed','HUMAN COGNITION MODEL!'),paper('10.1/translated','人类认知模型')]
+        seen=item_keys(prior,'papers')
+        self.assertTrue(all(item_keys(p,'papers') & seen for p in variants))
 
     def test_no_qualifying_papers_fails(self):
         with self.assertRaises(RuntimeError):select_papers([],set(),TODAY)
@@ -71,12 +83,55 @@ class ParsingTests(unittest.TestCase):
         self.assertEqual(rows[0]['title'],'New model release')
 
     def test_news_company_diversity_and_domestic_source(self):
-        rows=[{'url':f'https://example.com/{c}/{i}','company':c,'published':'2026-09-15'} for c in ['OpenAI','DeepSeek','Anthropic','Google DeepMind','NVIDIA'] for i in range(3)]
+        rows=[{'url':f'https://example.com/{c}/{i}','title':f'{c} release {i}','company':c,'published':'2026-09-15'} for c in ['OpenAI','DeepSeek','Anthropic','Google DeepMind','NVIDIA'] for i in range(3)]
         result=choose_news(rows,set())
         self.assertEqual(len(result),6)
         self.assertEqual(len({r['company'] for r in result}),5)
 
+    def test_old_news_and_tracking_variants_are_not_reused(self):
+        old={'url':'https://www.example.com/news/model/','title':'New model release','company':'DeepSeek','published':'2026-09-10'}
+        same_url={**old,'url':'https://example.com/news/model?utm_source=rss#section','title':'模型发布'}
+        same_title={**old,'url':'https://example.com/new-path','title':'NEW MODEL RELEASE!'}
+        fresh={**old,'url':'https://example.com/news/new','title':'A separate new model'}
+        self.assertEqual(choose_news([same_url,same_title],item_keys(old,'news')),[])
+        self.assertEqual(choose_news([same_url,same_title,fresh],item_keys(old,'news')),[fresh])
+        self.assertNotEqual(canonical_url('https://qwen.ai/blog?id=one'),canonical_url('https://qwen.ai/blog?id=two'))
+
+    def test_same_issue_news_deduplicates_titles_and_urls(self):
+        a={'url':'https://example.com/a','title':'New AI model','company':'OpenAI','published':'2026-09-15'}
+        self.assertEqual(len(choose_news([a,{**a,'url':'https://example.com/b','title':'NEW AI MODEL!'}],set())),1)
+
 class PublicationTests(unittest.TestCase):
+    def test_history_is_cumulative_and_dry_read_is_non_mutating(self):
+        seed=json.loads(next(build.DATA.glob('*.json')).read_text())
+        with tempfile.TemporaryDirectory() as temp:
+            data=Path(temp)/'issues';data.mkdir()
+            issue_path=data/f"{seed['date']}.json"
+            issue_path.write_text(json.dumps(seed))
+            history=load_history(data)
+            save_history(data,history)
+            self.assertEqual(len(history['papers']),3)
+            self.assertEqual(len(history['news']),5)
+            before=(data.parent/'history.json').read_bytes()
+            self.assertEqual(history,load_history(data))
+            self.assertEqual(before,(data.parent/'history.json').read_bytes())
+            next_issue=copy.deepcopy(seed)
+            next_issue['date']=str(dt.date.fromisoformat(seed['date'])+dt.timedelta(days=1))
+            for kind in ('papers','news'):
+                for index,item in enumerate(next_issue[kind]):
+                    item['title']=f'Distinct new {kind} item {index}'
+                    item['url']=f'https://example.com/{kind}/{index}'
+                    if kind=='papers':item['doi']=f'10.1234/new-{index}'
+                    for key in ('title_zh','original_title','title_aliases','url_aliases'):item.pop(key,None)
+            assert_unseen(next_issue,history)
+            (data/f"{next_issue['date']}.json").write_text(json.dumps(next_issue))
+            updated=load_history(data);save_history(data,updated)
+            self.assertEqual(len(updated['papers']),6)
+            self.assertEqual(len(updated['news']),10)
+            issue_path.unlink()
+            self.assertEqual(updated,load_history(data))
+            with self.assertRaises(ValueError):assert_unseen(seed,updated)
+
     def test_archive_is_immutable_and_html_is_escaped(self):
         seed=json.loads(next(build.DATA.glob('*.json')).read_text())
         seed['papers'][0]['title_zh']='<script>alert(1)</script>'

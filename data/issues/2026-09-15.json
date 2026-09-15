@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-16",
+  "date": "2026-09-15",
   "generated_at": "2026-09-16T00:52:00+08:00",
   "label": "创刊精选",
   "notices": [],
@@ -60,7 +60,8 @@
       "published": "2026-09-10",
       "title": "DeepSeek-V4.1-Flash 发布，聚焦原生视觉与推理效率",
       "summary": "官方介绍了新的编码器—解码器架构、缓存压缩和 API 更新，并提供技术报告入口。性能提升为公司公布的结果。",
-      "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/"
+      "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+      "original_title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient."
     },
     {
       "company": "Anthropic",
@@ -68,7 +69,8 @@
       "published": "2026-09-10",
       "title": "Anthropic 发布 9 月 AI 滥用威胁报告",
       "summary": "报告回顾其识别和阻断的滥用案例，以及模型能力变化带来的防护挑战；该公司说明这些案例并不代表典型使用情况。",
-      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026"
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "original_title": "Detecting and countering misuse of AI: September 2026"
     },
     {
       "company": "Google DeepMind",
@@ -76,7 +78,11 @@
       "published": "2026-09-03",
       "title": "WeatherNext 3：AI 天气预测的新进展",
       "summary": "Google 公布新一代全球天气 AI 模型，并介绍其在搜索、地图及云服务中的应用。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+      "original_title": "WeatherNext 3: Our most advanced global weather AI model",
+      "title_aliases": [
+        "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
+      ]
     },
     {
       "company": "Google DeepMind",
@@ -84,7 +90,8 @@
       "published": "2026-09-02",
       "title": "Gemini 3.8 Flash 与 Flash Cyber 发布",
       "summary": "此次更新面向长流程编程、智能体任务与网络防护；Cyber 版本通过专门计划向符合条件的防御方开放。",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "original_title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
     },
     {
       "company": "Anthropic",
@@ -92,7 +99,8 @@
       "published": "2026-09-01",
       "title": "Claude Fable 5.1 与 Mythos 5.1 上线",
       "summary": "Anthropic 公布新一轮模型更新，重点介绍编程、知识工作与科研能力。",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "original_title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1"
     }
   ]
 }

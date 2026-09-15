@@ -6,6 +6,7 @@ import html
 import json
 from pathlib import Path
 from urllib.parse import urlsplit
+from history import load_history, save_history, validate_edition_history
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
@@ -75,7 +76,7 @@ def news_card(n):
     badges = {'OpenAI':'O','Google DeepMind':'G','Anthropic':'A','DeepSeek':'D','Qwen':'Q','NVIDIA':'N','Microsoft Research':'M','MiniMax':'M'}
     return f'''<article class="news-item"><div class="news-meta"><span class="company-badge" aria-hidden="true">{esc(badges.get(n['company'],n['company'][0]))}</span><span class="company">{esc(n['company'])}</span><span class="news-type">{esc(n.get('kind','公司动态'))}</span><time datetime="{esc(n['published'])}">{esc(n['published'][5:].replace('-', '.'))}</time></div><h3><a href="{safe_url(n['url'])}" target="_blank" rel="noopener noreferrer">{esc(n['title'])}</a></h3>{f'<p>{esc(n["summary"])}</p>' if n.get('summary') else ''}<a class="news-link" href="{safe_url(n['url'])}" target="_blank" rel="noopener noreferrer">官方来源 {icon('arrow')}</a></article>'''
 
-METHOD = '''<details class="method"><summary>关于这份日报 · 筛选规则</summary><ul><li><b>01 LLM 与人的理解：</b>关注人类行为预测、认知建模、心理理论及脑与语言模型。优先期刊名含 Nature、Science、Cell 的正式研究。优先近 180 天，必要时扩至 730 天并标注；仍不足才使用其他期刊。</li><li><b>02 人的科学：</b>不限制期刊品牌，聚焦认知、行为、心理、神经与人机交互；综合主题匹配、引用与新近程度。</li><li><b>03 跨领域热点：</b>跨学科检索近一年论文，以 Crossref 引用总数与每月引用率作为可核验的热度代理。数据库覆盖和引用速度存在学科差异，并非全网实时热榜。</li><li>同一期 DOI 不重复，优先不重复历史论文。候选不足时可明确标注“重温”；不以技术报告、综述、社论或新闻补足论文名额。</li><li>公司动态来自官方公告、研究博客和官方技术报告；报告只出现在右栏。没有新消息的来源不会强行编造。</li><li>每日 09:00（北京时间）触发更新，实际上线可能受 GitHub 排队影响。抓取失败会保留上一期，并在工作流中记录错误。</li><li>自动推送保留原文标题与短摘录，中文筛选说明不是全文解读。每篇均附原始来源，日期为原始发表日期。</li></ul></details>'''
+METHOD = '''<details class="method"><summary>关于这份日报 · 筛选规则</summary><ul><li><b>01 LLM 与人的理解：</b>关注人类行为预测、认知建模、心理理论及脑与语言模型。优先期刊名含 Nature、Science、Cell 的正式研究。优先近 180 天，必要时扩至 730 天并标注；仍不足才使用其他期刊。</li><li><b>02 人的科学：</b>不限制期刊品牌，聚焦认知、行为、心理、神经与人机交互；综合主题匹配、引用与新近程度。</li><li><b>03 跨领域热点：</b>跨学科检索近一年论文，以 Crossref 引用总数与每月引用率作为可核验的热度代理。数据库覆盖和引用速度存在学科差异，并非全网实时热榜。</li><li>维护永久已推送记录，论文按 DOI 与标题、新闻按规范链接与标题去重。历史内容不会再次推送；若新论文不足则保留上一期并报告，新闻没有新增时显示空栏。</li><li>公司动态来自官方公告、研究博客和官方技术报告；报告只出现在右栏。没有新消息的来源不会强行编造。</li><li>每日 09:00（北京时间）触发更新，实际上线可能受 GitHub 排队影响。抓取失败会保留上一期，并在工作流中记录错误。</li><li>自动推送保留原文标题与短摘录，中文筛选说明不是全文解读。每篇均附原始来源，日期为原始发表日期。</li></ul></details>'''
 
 def render_issue(issue, number, historical=False):
     validate(issue)
@@ -84,7 +85,7 @@ def render_issue(issue, number, historical=False):
     prefix = '../' if historical else ''
     archive_notice = f'<p class="notice">正在阅读 {esc(issue["date"])} 的历史快照。<a href="../index.html">查看最新推送 →</a></p>' if historical else '<p id="stale-notice" class="notice hidden" role="status"></p>'
     papers = ''.join(paper_card(p) for p in sorted(issue['papers'], key=lambda p:p['slot']))
-    news = ''.join(news_card(n) for n in issue['news']) or '<p class="empty">本期没有抓取到可核验的近期公司动态。</p>'
+    news = ''.join(news_card(n) for n in issue['news']) or '<p class="empty">暂无未推送的公司动态，历史内容已排除。</p>'
     warnings = ''.join(f'<p class="notice">{esc(w)}</p>' for w in issue.get('notices', []))
     body = f'''<main><section class="masthead"><div><div class="eyebrow">THE DAILY BRIEF <span aria-hidden="true">/</span> VOL. {number:03}</div><h1>今天，值得读什么。</h1><p class="subhead">三篇研究，一览 AI 前沿。</p></div><div class="edition"><b>{date_label(issue['date'])} · 星期{week}</b><span>生成于 {esc(issue['generated_at'][11:16])} · 北京时间</span><span class="schedule">{icon('clock')}每日 09:00 更新</span></div></section><div class="edition-strip"><div class="strip-left"><span class="strip-label">{esc(issue.get('label','DAILY EDITION'))}</span><span><strong>03</strong> 篇论文 &nbsp; / &nbsp; <strong>{len(issue['news']):02}</strong> 条动态</span></div><span class="strip-right">人的理解 &nbsp; · &nbsp; 科学发现 &nbsp; · &nbsp; AI 进展</span></div>{archive_notice}{warnings}<div class="main-grid"><section aria-labelledby="papers-heading"><div class="column-title"><h2 id="papers-heading">论文精选<span class="small-en">RESEARCH</span></h2><span class="count">每日 3 篇</span></div><p class="section-intro">从理解人，到理解更大的世界。</p>{papers}</section><aside aria-labelledby="news-heading"><div class="column-title"><h2 id="news-heading">AI 公司动态<span class="small-en">INDUSTRY</span></h2><span class="count">国内 · 国际</span></div><p class="section-intro">产品发布、研究进展与技术报告。</p><div class="news-panel">{news}</div><div class="news-note">技术报告归入公司动态，不占每日 3 篇论文名额。<br>公司公布的性能与结论，以官方原文及后续独立评估为准。</div>{METHOD}</aside></div></main>'''
     if not historical:
@@ -98,6 +99,7 @@ def build(rebuild_archive=False):
     if not files:
         raise ValueError('No editions to publish')
     issues = [json.loads(f.read_text()) for f in files]
+    validate_edition_history(issues)
     for i, issue in enumerate(issues, 1):
         validate(issue)
         path = SITE / 'archive' / f'{issue["date"]}.html'
@@ -108,6 +110,7 @@ def build(rebuild_archive=False):
     body = f'''<main><section class="masthead"><div><div class="eyebrow">THE READING ARCHIVE</div><h1>把值得读的，留下来。</h1><p class="subhead">历史推送 · 共 {len(issues)} 期 · 每期保存为独立 HTML</p></div><a class="back-link" href="index.html">返回最新推送 →</a></section><div class="archive-list">{rows}</div></main>'''
     (SITE/'archive.html').write_text(frame('历史推送', body, archive=True))
     (SITE/'.nojekyll').touch()
+    save_history(DATA, load_history(DATA))
     print(f'Built {len(issues)} editions; latest {issues[-1]["date"]}')
 
 if __name__ == '__main__':

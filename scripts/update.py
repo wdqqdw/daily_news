@@ -23,12 +23,14 @@ import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
+from history import item_keys, load_history, history_keys, assert_unseen
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
 BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus statement|guideline|reply to|comment on|news and views)(\b|:)', re.I)
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT|foundation model\w*)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
@@ -110,7 +112,7 @@ def relevant(p, slot):
     if BAD_TITLE.search(title): return False
     if slot == 1:
         # Require cognition/people in title, LLM signal in title or abstract.
-        return bool(HUMAN.search(title) and MODELLING.search(title+' '+p.get('abstract','')[:500]) and LLM.search(title+' '+p.get('abstract','')[:1200]))
+        return bool(COGNITION.search(title) and MODELLING.search(title+' '+p.get('abstract','')[:500]) and LLM.search(title+' '+p.get('abstract','')[:1200]))
     if slot == 2:
         return bool(HUMAN.search(title)) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0
@@ -128,12 +130,9 @@ def select_papers(pool, seen, today):
     selected, used = [], set()
     for slot in (1,2,3):
         max_days = 365 if slot == 3 else 730
-        candidates = [p for p in pool if p['doi'] not in used and relevant(p,slot) and 0 <= (today-dt.date.fromisoformat(p['published'])).days <= max_days]
+        candidates = [p for p in pool if not item_keys(p,'papers').intersection(used | seen) and relevant(p,slot) and 0 <= (today-dt.date.fromisoformat(p['published'])).days <= max_days]
         if not candidates:
-            raise RuntimeError(f'No qualifying paper for slot {slot}; keep previous edition')
-        # Never silently recycle old recommendations to fill a new date.
-        unread = [p for p in candidates if p['doi'] not in seen]
-        candidates = unread or candidates
+            raise RuntimeError(f'No unpublished qualifying paper for slot {slot}; keep previous edition without repeating content')
         if slot == 1:
             preferred = [p for p in candidates if is_nsc(p)]
             candidates = preferred or candidates
@@ -143,8 +142,7 @@ def select_papers(pool, seen, today):
         chosen = copy.deepcopy(max(candidates, key=lambda p:(score(p,slot,today),p['published'],p['doi'])))
         chosen['slot'] = slot
         age = (today-dt.date.fromisoformat(chosen['published'])).days
-        repeat = chosen['doi'] in seen
-        chosen['freshness'] = '历史重温 · 候选不足' if repeat else ('近期研究' if age <= 180 else '延伸阅读 · 较早发表')
+        chosen['freshness'] = '近期研究' if age <= 180 else '延伸阅读 · 较早发表'
         if slot == 1 and not is_nsc(chosen):
             chosen['freshness'] += ' · 其他期刊补充'
         cite = chosen.get('citations',0)
@@ -155,15 +153,13 @@ def select_papers(pool, seen, today):
             3:f'本次跨领域候选中热度评分最高的未读研究：公开记录 {cite} 次引用，约 {rate} 次 / 月。'
         }[slot]
         chosen['evidence'] = f'检索时间：{today}；来源：Crossref；引用数 {cite}，距发表 {age} 天。'+ ('优先匹配期刊品牌与主题，再考虑新近程度和引用。' if slot == 1 else '评分依据公开题录、引用总数与发表时间。') + '引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。'
-        if repeat:
-            chosen['evidence'] += '本次没有足够的未读合格候选，明确作为历史重温。'
         abstract = chosen.pop('abstract','')
         chosen['excerpt'] = excerpt(abstract)
         chosen['summary'] = ''
         chosen['tag'] = ['认知与行为建模','人的科学','跨学科 / 引用热度'][slot-1]
         chosen['ranking_score'] = round(score(chosen,slot,today),4)
         selected.append(chosen)
-        used.add(chosen['doi'])
+        used.update(item_keys(chosen,'papers'))
     return selected
 
 def parse_date(value):
@@ -273,9 +269,14 @@ def parse_page(content, config, today):
         used.add(url)
     return result
 
-def choose_news(news, old_urls):
-    unique={x['url'].rstrip('/'):x for x in news}
-    ordered=sorted(unique.values(),key=lambda x:(x['url'] not in old_urls,x['published']),reverse=True)
+def choose_news(news, seen):
+    ordered=[]
+    used=set(seen)
+    for item in sorted(news,key=lambda x:x['published'],reverse=True):
+        keys=item_keys(item,'news')
+        if keys.intersection(used):continue
+        ordered.append(item)
+        used.update(keys)
     out=[];counts={}
     # Prefer diversity; reserve a slot for a domestic source when one is available.
     domestic=next((x for x in ordered if x['company'] in {'Qwen','DeepSeek','MiniMax'}),None)
@@ -320,19 +321,16 @@ def generate(today):
     if paper_success<2 or news_success<1:
         raise RuntimeError('Insufficient live sources; preserving previous publication')
     pool=list({p['doi']:p for p in papers}.values())
-    historical=[json.loads(f.read_text()) for f in sorted(DATA.glob('*.json')) if f.stem<str(today)]
-    seen={p['doi'] for x in historical for p in x['papers']}
-    old_urls={n['url'] for x in historical for n in x['news']}
-    selected=select_papers(pool,seen,today)
-    selected_news=choose_news(news,old_urls)
-    if not selected_news:
-        raise RuntimeError('No verifiable recent company news; preserving previous edition')
+    history=load_history(DATA)
+    selected=select_papers(pool,history_keys(history,'papers'),today)
+    selected_news=choose_news(news,history_keys(history,'news'))
     notices=[]
     failed=sum(not s['ok'] for s in statuses)
     if failed:notices.append(f'本期有 {failed} 个来源暂时不可用，内容来自其余可用来源。')
-    if any('历史重温' in p['freshness'] for p in selected):notices.append('部分主题暂无足够的未读候选，已在对应论文上标注“历史重温”。')
+    if not selected_news:notices.append('本次没有发现未推送的公司动态；已排除所有历史内容。')
     issue={'date':str(today),'generated_at':dt.datetime.now(TZ).isoformat(timespec='seconds'),'label':'DAILY EDITION','papers':selected,'news':selected_news,'notices':notices,'sources':statuses,'candidate_count':len(pool)}
     validate(issue)
+    assert_unseen(issue,history)
     return issue
 
 def main():

@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "papers": [
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Beyond representational alignment with brain-guided language models for robust reasoning",
+      "url": "https://www.nature.com/articles/s42256-026-01278-w",
+      "keys": [
+        "doi:10.1038/s42256-026-01278-w",
+        "title:beyondrepresentationalalignmentwithbrainguidedlanguagemodelsforrobustreasoning",
+        "title:大模型如何刻画人的推理让脑信号参与检验与改进",
+        "url:https://nature.com/articles/s42256-026-01278-w"
+      ],
+      "doi": "10.1038/s42256-026-01278-w"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Mapping the neuronal building blocks of human language with language models",
+      "url": "https://www.nature.com/articles/s41586-026-10691-5",
+      "keys": [
+        "doi:10.1038/s41586-026-10691-5",
+        "title:mappingtheneuronalbuildingblocksofhumanlanguagewithlanguagemodels",
+        "title:从单个神经元出发看人脑怎样组织语言",
+        "url:https://nature.com/articles/s41586-026-10691-5"
+      ],
+      "doi": "10.1038/s41586-026-10691-5"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Advancing regulatory variant effect prediction with AlphaGenome",
+      "url": "https://www.nature.com/articles/s41586-025-10014-0",
+      "keys": [
+        "doi:10.1038/s41586-025-10014-0",
+        "title:advancingregulatoryvarianteffectpredictionwithalphagenome",
+        "title:alphagenome把长dna序列与精细的基因调控预测连接起来",
+        "url:https://nature.com/articles/s41586-025-10014-0"
+      ],
+      "doi": "10.1038/s41586-025-10014-0"
+    }
+  ],
+  "news": [
+    {
+      "first_pushed": "2026-09-15",
+      "title": "DeepSeek-V4.1-Flash 发布，聚焦原生视觉与推理效率",
+      "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
+      "keys": [
+        "title:deepseekv41flash发布聚焦原生视觉与推理效率",
+        "title:introducingdeepseekv41flashsmarterfastermoreefficient",
+        "url:https://deepseek.com/en/news/deepseek-v4-1-flash"
+      ],
+      "company": "DeepSeek"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Anthropic 发布 9 月 AI 滥用威胁报告",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "keys": [
+        "title:anthropic发布9月ai滥用威胁报告",
+        "title:detectingandcounteringmisuseofaiseptember2026",
+        "url:https://anthropic.com/threat-intelligence-report-september-2026"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "WeatherNext 3：AI 天气预测的新进展",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
+      "keys": [
+        "title:introducingweathernext3ourmostadvancedandaccurateglobalweatheraimodel",
+        "title:weathernext3ai天气预测的新进展",
+        "title:weathernext3ourmostadvancedglobalweatheraimodel",
+        "url:https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Gemini 3.8 Flash 与 Flash Cyber 发布",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+      "keys": [
+        "title:gemini38flash与flashcyber发布",
+        "title:introducinggemini38flashand38flashcyber",
+        "url:https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-15",
+      "title": "Claude Fable 5.1 与 Mythos 5.1 上线",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "keys": [
+        "title:claudefable51与mythos51上线",
+        "title:introducingclaudefable51andclaudemythos51",
+        "url:https://anthropic.com/claude-fable-and-mythos-5-1"
+      ],
+      "company": "Anthropic"
+    }
+  ]
+}
