@@ -38,7 +38,7 @@ jobs:
         if: github.event_name != 'push'
         with:
           path: .cache/summary
-          key: summary-ubuntu-b10995-qwen25-15b-q4-v1
+          key: summary-ubuntu-b10995-qwen25-7b-q4-v1
       - name: Prepare local Chinese summary model
         if: github.event_name != 'push'
         run: python scripts/prepare_summary.py
@@ -52,6 +52,7 @@ jobs:
           path: |
             .cache/verified-issue.json
             .cache/summary/server.log
+            .cache/summary/preview.json
           retention-days: 3
       - name: Generate today's edition
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.verify_sources)

@@ -139,10 +139,11 @@ def summarize(base, item, kind, source):
     choice=data['choices'][0]
     if choice.get('finish_reason') == 'length':raise ValueError('Truncated Chinese summary')
     result=json.loads(choice['message']['content'])
-    if not valid_chinese(result):raise ValueError('Incomplete Chinese title / summary: '+item['title'])
+    if not valid_chinese(result):raise ValueError('Incomplete Chinese title / summary: '+item['title']+'; output='+json.dumps(result,ensure_ascii=False))
     return result
 
 def enrich(issue, fetch):
+    preview=[]
     inputs=[]
     for kind in ('papers','news'):
         for item in issue[kind]:
@@ -158,5 +159,7 @@ def enrich(issue, fetch):
             item.pop('_source_text',None)
             item.pop('_summary_source',None)
             item.pop('excerpt',None)
+            preview.append({k:item.get(k) for k in ('title','title_zh','summary','summary_source','doi','url')})
+            (CACHE/'preview.json').write_text(json.dumps(preview,ensure_ascii=False,indent=2)+'\n')
             print(f'Chinese summary: {item["title_zh"]}',flush=True)
     return issue

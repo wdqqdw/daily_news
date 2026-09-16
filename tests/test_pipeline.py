@@ -27,6 +27,12 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/old','Bioaccumulation of microplastics in decedent human brains',abstract='We measured plastic in tissue.'),2))
         self.assertFalse(relevant(paper('10.1/dna','Foundation models for human genomics',abstract='A transformer trained on DNA.'),2))
         self.assertTrue(relevant(paper('10.1/new','Using deep learning to predict human decision-making',abstract='We tested human choice predictions.'),2))
+        self.assertFalse(relevant(paper('10.1/theory','Artificial Intelligence and the Psychology of Human Connection',abstract='This article introduces a middle-range theoretical framework and proposes a research agenda.'),2))
+        self.assertFalse(relevant(paper('10.1/clinical','Benchmark evaluation of DeepSeek large language models in clinical decision-making',abstract='We tested clinical accuracy on medical questions.'),1))
+
+    def test_hot_paper_requires_established_publication_source(self):
+        self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
+        self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))
     def test_reports_and_conceptual_items_do_not_fill_slots(self):
         for title in ('Qwen Technical Report','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
             self.assertFalse(relevant(paper('10.1/no',title),1))

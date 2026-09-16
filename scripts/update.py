@@ -37,6 +37,8 @@ AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neur
 PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|brain.guided|social behavio\w*)\b', re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
+ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
+THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework)|narrative review|systematic review', re.I)
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', text or ''))).strip()
@@ -89,7 +91,7 @@ def normalize_work(x, today):
     if published > today:
         return None
     journal = clean(' '.join(x.get('container-title',[])))
-    if not journal or re.search(r'review|abstracts|proceedings',journal,re.I):
+    if not journal or re.search(r'review|abstracts|proceedings|perspectives on|trends in',journal,re.I):
         return None
     authors = x.get('author', [])
     author = authors[0].get('family',authors[0].get('name','')) if authors else ''
@@ -113,6 +115,7 @@ def is_nsc(p):
 def relevant(p, slot):
     title = p['title']
     if BAD_TITLE.search(title): return False
+    if THEORY_ONLY.search(p.get('abstract','')):return False
     if slot == 1:
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
@@ -120,7 +123,7 @@ def relevant(p, slot):
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
-    return p.get('citations',0) > 0
+    return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
     age = max((today-dt.date.fromisoformat(p['published'])).days,1)

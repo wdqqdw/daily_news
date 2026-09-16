@@ -65,9 +65,10 @@
       "kind": "模型 · 技术报告",
       "published": "2026-09-10",
       "title": "DeepSeek-V4.1-Flash 发布，聚焦原生视觉与推理效率",
-      "summary": "官方介绍了新的编码器—解码器架构、缓存压缩和 API 更新，并提供技术报告入口。性能提升为公司公布的结果。",
+      "summary": "DeepSeek-V4.1-Flash 采用新的因果编码器—解码器架构，支持原生视觉理解，并通过降低输入、输出的激活参数和压缩 KV 缓存来提升推理效率。官方同时更新 API 与兼容路由，并提供技术报告，重点是让智能体和多模态任务以更低成本运行；性能结论来自公司公布的测试。",
       "url": "https://deepseek.com/en/news/deepseek-v4-1-flash/",
-      "original_title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient."
+      "original_title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Anthropic",
@@ -76,37 +77,41 @@
       "title": "Anthropic 发布 9 月 AI 滥用威胁报告",
       "summary": "报告回顾其识别和阻断的滥用案例，以及模型能力变化带来的防护挑战；该公司说明这些案例并不代表典型使用情况。",
       "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
-      "original_title": "Detecting and countering misuse of AI: September 2026"
+      "original_title": "Detecting and countering misuse of AI: September 2026",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Google DeepMind",
       "kind": "研究进展",
       "published": "2026-09-03",
       "title": "WeatherNext 3：AI 天气预测的新进展",
-      "summary": "Google 公布新一代全球天气 AI 模型，并介绍其在搜索、地图及云服务中的应用。",
+      "summary": "WeatherNext 3 将实时卫星观测与天气站数据纳入预测，每小时刷新，部分地表变量的分辨率达到 5 公里。新模型还加入与风能、太阳能相关的预测变量，并接入搜索、地图、Gemini 和云服务，目标是改善局地天气、降水和清洁能源规划所需的信息。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/",
       "original_title": "WeatherNext 3: Our most advanced global weather AI model",
       "title_aliases": [
         "Introducing WeatherNext 3, our most advanced and accurate global weather AI model"
-      ]
+      ],
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Google DeepMind",
       "kind": "模型发布",
       "published": "2026-09-02",
       "title": "Gemini 3.8 Flash 与 Flash Cyber 发布",
-      "summary": "此次更新面向长流程编程、智能体任务与网络防护；Cyber 版本通过专门计划向符合条件的防御方开放。",
+      "summary": "Gemini 3.8 Flash 重点改进长流程编程、智能体任务和多步骤推理；Flash Cyber 则面向漏洞发现与自动修复，通过 Fairwind 计划向可信防御方开放。两款模型使用相同的底层能力，但部署与防护设置不同；官方公布的基准提升仍需结合具体业务评估。",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
-      "original_title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber"
+      "original_title": "Introducing Gemini 3.8 Flash and 3.8 Flash Cyber",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Anthropic",
       "kind": "模型发布",
       "published": "2026-09-01",
       "title": "Claude Fable 5.1 与 Mythos 5.1 上线",
-      "summary": "Anthropic 公布新一轮模型更新，重点介绍编程、知识工作与科研能力。",
+      "summary": "Fable 5.1 与 Mythos 5.1 使用相同的底层模型，区别主要在防护机制与开放范围：Fable 面向一般使用，Mythos 通过可信访问计划支持网络安全和生命科学工作。官方重点介绍编程、知识工作与科研能力的提升，同时调整缓存计费和企业数据管理方案。",
       "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
-      "original_title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1"
+      "original_title": "Introducing Claude Fable 5.1 and Claude Mythos 5.1",
+      "summary_method": "根据官方公告整理"
     }
   ]
 }

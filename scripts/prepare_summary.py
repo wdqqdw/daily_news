@@ -8,10 +8,13 @@ import tarfile
 ROOT = Path(__file__).resolve().parents[1]
 CACHE = ROOT / '.cache' / 'summary'
 VERSION = 'b10995'
-MODEL_REPO = 'Qwen/Qwen2.5-1.5B-Instruct-GGUF'
-MODEL_REVISION = '91cad51170dc346986eccefdc2dd33a9da36ead9'
-MODEL_FILE = 'qwen2.5-1.5b-instruct-q4_k_m.gguf'
-MODEL_SHA = '6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e'
+MODEL_REPO = 'Qwen/Qwen2.5-7B-Instruct-GGUF'
+MODEL_REVISION = 'bb5d59e06d9551d752d08b292a50eb208b07ab1f'
+MODEL_PARTS = {
+    'qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf': 'dfce12e3862a5283ccfb88221b48480e58745165de856439950d0f22590580db',
+    'qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf': '539cf93f78e887edea1c04e2d7d8cdaca9d01dae9c9025bcb8accbe29df3d72a',
+}
+MODEL_FILE = next(iter(MODEL_PARTS))
 BINARIES = {
     ('Linux','x86_64'): ('ubuntu-x64', '44bfcb9df36318853f8f6ad6b588084c7eadf6d79e263e315ad9272dc2fee4ad'),
     ('Darwin','arm64'): ('macos-arm64', '0fcbc80b076cc866395291cc54897a5ce9c7782e2774af58c89125d58d326105'),
@@ -42,7 +45,8 @@ def prepare():
         runtime.mkdir(exist_ok=True)
         with tarfile.open(archive) as tf:
             tf.extractall(runtime, filter='data')
-    download(f'https://huggingface.co/{MODEL_REPO}/resolve/{MODEL_REVISION}/{MODEL_FILE}', CACHE/MODEL_FILE, MODEL_SHA)
+    for filename, sha in MODEL_PARTS.items():
+        download(f'https://huggingface.co/{MODEL_REPO}/resolve/{MODEL_REVISION}/{filename}', CACHE/filename, sha)
     print('Chinese summarizer ready: ' + MODEL_REPO,flush=True)
 
 if __name__ == '__main__':
