@@ -7,7 +7,13 @@
   const memory = new Map();
   const status = document.getElementById('reading-status');
   let storageAvailable = true;
-  const announce = message => { if (status) status.textContent = message; };
+  let announcementTimer;
+  const announce = message => {
+    if (!status) return;
+    status.textContent = message;
+    clearTimeout(announcementTimer);
+    if (storageAvailable) announcementTimer = setTimeout(() => { status.textContent = ''; }, 5000);
+  };
   const normalize = text => text.normalize('NFKC').toLocaleLowerCase().replace(/\s+/g, ' ').trim();
   const isRead = id => {
     if (memory.has(id)) return memory.get(id);

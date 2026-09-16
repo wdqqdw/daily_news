@@ -24,7 +24,7 @@ from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
 from history import item_keys, load_history, history_keys, assert_unseen
-from summarize import enrich
+from summarize import enrich, source_text
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
@@ -34,6 +34,7 @@ HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind
 COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|brain.guided|social behavio\w*)\b', re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 
@@ -114,10 +115,11 @@ def relevant(p, slot):
     if BAD_TITLE.search(title): return False
     if slot == 1:
         # Require cognition/people in title, LLM signal in title or abstract.
-        return bool(COGNITION.search(title) and MODELLING.search(title+' '+p.get('abstract','')[:500]) and LLM.search(title+' '+p.get('abstract','')[:1200]))
+        text = title+' '+p.get('abstract','')[:1200]
+        return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
-        return bool(COGNITION.search(title) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0
 
 def score(p, slot, today):
@@ -323,8 +325,44 @@ def generate(today):
         raise RuntimeError('Insufficient live sources; preserving previous publication')
     pool=list({p['doi']:p for p in papers}.values())
     history=load_history(DATA)
-    selected=select_papers(pool,history_keys(history,'papers'),today)
-    selected_news=choose_news(news,history_keys(history,'news'))
+    # A Chinese summary needs substantive source text. Try the next eligible
+    # unseen candidate if a publisher supplies only a title or blocks access.
+    excluded_papers=history_keys(history,'papers')
+    prepared={}
+    for _ in range(12):
+        selected=select_papers(pool,excluded_papers,today)
+        unavailable=[]
+        for item in selected:
+            try:
+                if item['doi'] not in prepared:
+                    prepared[item['doi']]=source_text(item,'papers',fetch)
+                text,url=prepared[item['doi']]
+                item['_source_text']=text
+                item['_summary_source']=url
+            except ValueError:
+                unavailable.append(item)
+                print('Skipping paper without accessible abstract: '+item['title'],flush=True)
+        if not unavailable:break
+        for item in unavailable:excluded_papers.update(item_keys(item,'papers'))
+    else:raise RuntimeError('Insufficient accessible paper abstracts; preserving previous edition')
+    excluded_news=history_keys(history,'news')
+    prepared_news={}
+    for _ in range(18):
+        selected_news=choose_news(news,excluded_news)
+        unavailable=[]
+        for item in selected_news:
+            try:
+                if item['url'] not in prepared_news:
+                    prepared_news[item['url']]=source_text(item,'news',fetch)
+                text,url=prepared_news[item['url']]
+                item['_source_text']=text
+                item['_summary_source']=url
+            except ValueError:
+                unavailable.append(item)
+                print('Skipping news without accessible body: '+item['title'],flush=True)
+        if not unavailable:break
+        for item in unavailable:excluded_news.update(item_keys(item,'news'))
+    else:raise RuntimeError('Cannot prepare reliable news summaries')
     notices=[]
     failed=sum(not s['ok'] for s in statuses)
     if failed:notices.append(f'本期有 {failed} 个来源暂时不可用，内容来自其余可用来源。')

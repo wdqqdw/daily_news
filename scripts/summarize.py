@@ -71,6 +71,8 @@ class ArticleParser(HTMLParser):
 
 def source_text(item, kind, fetch):
     raw=clean(item.get('_source_text',''))
+    if raw and item.get('_summary_source'):
+        return raw,item['_summary_source']
     if kind == 'papers' and len(raw.split()) >= 45:
         return raw, item.get('metadata_url',item['url'])
     if item.get('company') == 'Qwen' and len(raw.split()) >= 45:
@@ -153,6 +155,7 @@ def enrich(issue, fetch):
             item['summary_source']=url
             item['summary_model']=MODEL_REPO
             item.pop('_source_text',None)
+            item.pop('_summary_source',None)
             item.pop('excerpt',None)
             print(f'Chinese summary: {item["title_zh"]}',flush=True)
     return issue
