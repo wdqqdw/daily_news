@@ -14,7 +14,23 @@ import subprocess
 import time
 import urllib.error
 import urllib.request
-from prepare_summary import CACHE, VERSION, MODEL_FILE, MODEL_REPO
+from prepare_summary import CACHE, VERSION, MODEL_FILE, MODEL_REPO, ROOT
+from history import canonical_doi, canonical_url
+
+def apply_editorial_corrections(issue):
+    """Keep verified, article-specific corrections authoritative over model drafts."""
+    corrections=json.loads((ROOT/'data'/'summary_corrections.json').read_text())
+    for kind in ('papers','news'):
+        for item in issue[kind]:
+            key=('doi:'+canonical_doi(item['doi'])) if kind=='papers' else ('url:'+canonical_url(item['url']))
+            correction=corrections.get(key)
+            if correction is None:continue
+            if not valid_chinese(correction) or not correction.get('summary_source','').startswith('https://'):
+                raise ValueError('Invalid editorial correction: '+key)
+            item.update(correction)
+            item['summary_method']='人工核对公开原文'
+            item.pop('summary_model',None)
+    return issue
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', text or ''))).strip()

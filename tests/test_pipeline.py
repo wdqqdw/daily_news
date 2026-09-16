@@ -12,7 +12,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
-from summarize import ArticleParser, source_text, valid_chinese, summarize
+from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections
 
 TODAY=dt.date(2026,9,16)
 
@@ -172,6 +172,25 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaises(ValueError):build.validate(seed)
 
 class ReadingAndSummaryTests(unittest.TestCase):
+    def test_editorial_corrections_preserve_identity_and_override_model_errors(self):
+        url='https://blogs.nvidia.com/blog/from-megawatts-to-tokens-how-nvidia-maximizes-ai-factory-production/'
+        news={'url':url+'?utm_source=rss','title':'Original headline','summary':'NVIDIA 的 Conductor 平台','summary_model':'test'}
+        untouched={'url':'https://example.com/unrelated','title':'Other news','summary':'保留原摘要'}
+        p={'doi':'https://doi.org/10.1038/S41467-025-65518-0','title':'Original paper','summary':'旧摘要'}
+        issue={'papers':[p],'news':[news,untouched]}
+        original=copy.deepcopy(issue)
+        apply_editorial_corrections(issue)
+        self.assertIn('Emerald AI 的 Conductor',news['summary'])
+        self.assertIn('Lambda 使用 NVIDIA DSX MaxLPS',news['summary'])
+        self.assertIn('皮层脑电',p['summary'])
+        self.assertEqual(news['summary_method'],'人工核对公开原文')
+        self.assertNotIn('summary_model',news)
+        self.assertEqual(news['url'],original['news'][0]['url'])
+        self.assertEqual(news['title'],original['news'][0]['title'])
+        self.assertEqual(untouched,original['news'][1])
+        once=copy.deepcopy(issue)
+        self.assertEqual(apply_editorial_corrections(issue),once)
+
     def test_summary_requires_source_based_review_before_publication(self):
         draft={'title_zh':'电力管理新进展','summary':'发布公司推出了合作伙伴的平台，并通过智能分配工作负载提高吞吐量，旨在改善计算效率和电网需求响应。'}
         revised={'title_zh':'电力管理新进展','summary':'合作伙伴的平台根据电网信号调整工作负载，优先保留关键任务。另一项独立测试显示，官方的电力分配技术可提高吞吐量。'}

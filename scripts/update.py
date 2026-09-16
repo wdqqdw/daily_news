@@ -24,7 +24,7 @@ from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
 from history import item_keys, load_history, history_keys, assert_unseen
-from summarize import enrich, source_text
+from summarize import enrich, source_text, apply_editorial_corrections
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
@@ -369,6 +369,7 @@ def generate(today):
     validate(issue)
     assert_unseen(issue,history)
     enrich(issue,fetch)
+    apply_editorial_corrections(issue)
     issue['generated_at']=dt.datetime.now(TZ).isoformat(timespec='seconds')
     validate(issue)
     assert_unseen(issue,history)
