@@ -19,31 +19,31 @@
       "freshness": "延伸阅读 · 较早发表",
       "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
       "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 117，距发表 441 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "excerpt": "Abstract Establishing a unified theory of cognition has been an important goal in psychology 1,2 . A first step towards such a theory is…",
-      "summary": "",
+      "excerpt": "",
+      "summary": "研究将大语言模型在覆盖 160 项心理实验的人类行为数据上微调，得到认知模型 Centaur。它能够预测参与者在不同实验中的选择，并在未见过的任务情境中展示泛化能力。这说明统一模型有望连接多类行为研究，但预测准确并不意味着它与人脑采用相同机制。",
       "tag": "认知与行为建模",
-      "ranking_score": 16.5709
+      "ranking_score": 16.5709,
+      "title_zh": "Centaur：用基础模型预测人类认知与选择",
+      "summary_method": "根据期刊公开摘要整理"
     },
     {
       "type": "journal-article",
-      "title": "Bioaccumulation of microplastics in decedent human brains",
-      "doi": "10.1038/s41591-024-03453-1",
-      "url": "https://doi.org/10.1038/s41591-024-03453-1",
-      "journal": "Nature Medicine",
-      "publisher": "Springer Science and Business Media LLC",
-      "published": "2025-02-03",
-      "authors": "Nihart et al.",
-      "citations": 796,
-      "metadata_source": "Crossref",
-      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41591-024-03453-1",
       "slot": 2,
+      "doi": "10.1038/s43588-025-00840-7",
+      "url": "https://www.nature.com/articles/s43588-025-00840-7",
+      "title": "A large-scale replication of scenario-based experiments in psychology and management using large language models",
+      "title_zh": "让大模型复现 156 项心理实验：能模拟人，也会放大效应",
+      "journal": "Nature Computational Science",
+      "publisher": "Springer Nature",
+      "published": "2025-07-09",
+      "authors": "Cui et al.",
+      "citations": 46,
       "freshness": "延伸阅读 · 较早发表",
-      "reason": "研究聚焦人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
-      "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 796，距发表 590 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "excerpt": "",
-      "summary": "",
-      "tag": "人的科学",
-      "ranking_score": 22.1557
+      "summary": "研究使用三个大语言模型复现 156 项心理与管理学实验。模型对主效应的复现率较高，但往往夸大效应大小，对种族、性别等敏感议题表现较弱，还容易把原本不显著的结果判断为显著。它适合帮助预试验与探索假设，仍需要真实人类参与者验证。",
+      "reason": "直接检验 AI 模拟人类实验参与者的能力与偏差，属于使用人工智能研究人的实证工作。",
+      "evidence": "官网核验于 2026-09-16：Nature Computational Science 正式研究，2025-07-09 发表，官网显示 46 次引用。研究使用情景实验，不能泛化为大模型能替代所有人类参与者。",
+      "tag": "研究人的人工智能工作",
+      "summary_method": "根据期刊公开摘要整理"
     },
     {
       "type": "journal-article",
@@ -61,10 +61,12 @@
       "freshness": "延伸阅读 · 较早发表",
       "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 1143 次引用，约 94.2 次 / 月。",
       "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 1143，距发表 364 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "excerpt": "Abstract General reasoning represents a long-standing and formidable challenge in artificial intelligence (AI). Recent breakthroughs, exemplified by large language models (LLMs) 1,2 and chain-of-thought…",
-      "summary": "",
+      "excerpt": "",
+      "summary": "研究从可验证任务的奖励出发，展示强化学习如何促使语言模型形成反思、检查答案与调整策略等推理行为，并将能力蒸馏到较小模型。论文同时区分纯强化学习的 R1-Zero 与结合多阶段训练的 R1；结论主要来自数学、代码等可验证任务，不能直接等同于通用智能。",
       "tag": "跨学科 / 引用热度",
-      "ranking_score": 20.7765
+      "ranking_score": 20.7765,
+      "title_zh": "DeepSeek-R1：通过强化学习激发大模型推理能力",
+      "summary_method": "根据期刊公开摘要整理"
     }
   ],
   "news": [
@@ -73,54 +75,72 @@
       "kind": "研究 / 公司动态",
       "published": "2026-09-16",
       "title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
-      "summary": "Air pollution is a serious public health risk, contributing to an…",
+      "summary": "团队将天气与气候 AI 模型迁移到空气污染预测：用化学气候模拟数据训练 CorrDiff，并引入 StormCast 利用观测信息进行时序预测。训练在英国 Isambard-AI 完成，工作流还可在桌面 DGX Spark 上运行，目标是降低空气质量建模成本，支持污染情景分析。",
       "url": "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/",
-      "source_feed": "https://blogs.nvidia.com/feed/"
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "original_title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
+      "title_zh": "曼彻斯特大学用 NVIDIA Earth-2 预测英国空气污染",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Google DeepMind",
       "kind": "产品发布",
       "published": "2026-09-15",
       "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
-      "summary": "",
+      "summary": "两款模型面向实时语音交互：Live 注重流畅对话、视觉理解与使用成本，Extended Thinking 面向多步骤复杂任务。官方介绍，它们可以在继续交谈的同时处理后台工具调用；开发者可通过 Gemini API 使用，面向个人及企业的入口按产品逐步开放。",
       "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
-      "source_feed": "https://deepmind.google/blog/rss.xml"
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "original_title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "title_zh": "Google 发布 Gemini 3.8 Live 与增强思考版",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Qwen",
       "kind": "产品发布",
       "published": "2026-09-14",
       "title": "Qwen Code · Release v0.23.4",
-      "summary": "",
+      "summary": "本次更新扩展跨会话协作、任务执行与网页预览，并改进 Web Shell 的通知、上下文管理和中断恢复。升级还涉及两项行为变更：移除可配置的消息前缀过滤，以及将命令钩子的超时按秒解释；使用相关设置的用户需核对官方变更说明。",
       "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4",
-      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom"
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "original_title": "Qwen Code · Release v0.23.4",
+      "title_zh": "通义千问 Qwen Code 更新至 v0.23.4",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "OpenAI",
       "kind": "研究 / 公司动态",
       "published": "2026-09-14",
       "title": "How Fyxer built an AI executive assistant people trust",
-      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft…",
+      "summary": "Fyxer 将邮件分类、意图判断、记忆检索和回复生成拆成多个模型任务，并用真实助理工作数据做微调。用户对草稿的修改会成为偏好训练数据，新版本经过 A/B 测试后再上线。这一案例展示了如何用任务分工和持续反馈，提高日常办公助手的可靠性。",
       "url": "https://openai.com/index/fyxer",
-      "source_feed": "https://openai.com/news/rss.xml"
+      "source_feed": "https://openai.com/news/rss.xml",
+      "original_title": "How Fyxer built an AI executive assistant people trust",
+      "title_zh": "Fyxer 如何用 OpenAI 模型打造可信赖的 AI 行政助理",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Anthropic",
       "kind": "研究 / 公司动态",
       "published": "2026-09-01",
       "title": "Developing Enterprise Frontier Safeguards with our customers",
-      "summary": "",
+      "summary": "Enterprise Frontier Safeguards 将自动滥用检测与企业自己的数据管理结合：活动记录可放在客户控制的云账户中，由客户管理密钥和访问权限；异常信号交给客户团队复核。方案旨在让受监管企业使用前沿模型时，兼顾跨会话风险检测和敏感数据控制。",
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
-      "source_page": "https://www.anthropic.com/news"
+      "source_page": "https://www.anthropic.com/news",
+      "original_title": "Developing Enterprise Frontier Safeguards with our customers",
+      "title_zh": "Anthropic 与企业客户共建前沿模型安全防护",
+      "summary_method": "根据官方公告整理"
     },
     {
       "company": "Microsoft Research",
       "kind": "研究 / 公司动态",
       "published": "2026-08-31",
       "title": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models",
-      "summary": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash…",
+      "summary": "新模型通过蒸馏和轻量骨干网络，降低全切片分析与肿瘤微环境建模的计算需求。官方测试报告 GigaPath-Flash 约减少 50 倍计算量，GigaTIME-Flash 约提速 6 倍、减少 8 倍内存需求；权重与代码开放，当前属于研究发布，尚未验证用于临床决策。",
       "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
-      "source_feed": "https://www.microsoft.com/en-us/research/feed/"
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "original_title": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models",
+      "title_zh": "微软发布更高效的病理模型 GigaPath-Flash 与 GigaTIME-Flash",
+      "summary_method": "根据官方公告整理"
     }
   ],
   "notices": [
@@ -203,5 +223,33 @@
       "items": 0
     }
   ],
-  "candidate_count": 431
+  "candidate_count": 431,
+  "previous_items": {
+    "papers": [
+      {
+        "type": "journal-article",
+        "title": "Bioaccumulation of microplastics in decedent human brains",
+        "doi": "10.1038/s41591-024-03453-1",
+        "url": "https://doi.org/10.1038/s41591-024-03453-1",
+        "journal": "Nature Medicine",
+        "publisher": "Springer Science and Business Media LLC",
+        "published": "2025-02-03",
+        "authors": "Nihart et al.",
+        "citations": 796,
+        "metadata_source": "Crossref",
+        "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41591-024-03453-1",
+        "slot": 2,
+        "freshness": "延伸阅读 · 较早发表",
+        "reason": "研究聚焦人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+        "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 796，距发表 590 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+        "excerpt": "",
+        "summary": "研究检测了逝者的脑、肝与肾组织，发现脑组织中的微塑料和纳米塑料水平更高，且较新的样本中含量上升。研究呈现了人体组织中的暴露与积累现象，但不能据此推断微塑料导致了神经疾病。该文属于人体环境健康研究，现作为分类调整前的推送保留。",
+        "tag": "人的科学",
+        "ranking_score": 22.1557,
+        "title_zh": "人体脑组织中的微塑料积累"
+      }
+    ],
+    "news": []
+  },
+  "revision_note": "2026-09-16：第二类改为研究人的人工智能工作；补齐中文标题与摘要，保留分类调整前条目。"
 }

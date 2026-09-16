@@ -48,7 +48,7 @@ def history_keys(history, kind):
 
 def record_issue(history, issue):
     for kind in ('papers', 'news'):
-        for item in issue[kind]:
+        for item in [*issue[kind], *issue.get('previous_items', {}).get(kind, [])]:
             keys = item_keys(item, kind)
             matches = [record for record in history[kind] if keys.intersection(record['keys'])]
             if matches:

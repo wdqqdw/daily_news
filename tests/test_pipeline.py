@@ -11,6 +11,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
+from summarize import ArticleParser, source_text, valid_chinese
 
 TODAY=dt.date(2026,9,16)
 
@@ -22,6 +23,10 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_human_ai_slot_requires_ai_and_a_human_research_subject(self):
+        self.assertFalse(relevant(paper('10.1/old','Bioaccumulation of microplastics in decedent human brains',abstract='We measured plastic in tissue.'),2))
+        self.assertFalse(relevant(paper('10.1/dna','Foundation models for human genomics',abstract='A transformer trained on DNA.'),2))
+        self.assertTrue(relevant(paper('10.1/new','Using deep learning to predict human decision-making',abstract='We tested human choice predictions.'),2))
     def test_reports_and_conceptual_items_do_not_fill_slots(self):
         for title in ('Qwen Technical Report','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
             self.assertFalse(relevant(paper('10.1/no',title),1))
@@ -103,7 +108,7 @@ class ParsingTests(unittest.TestCase):
 
 class PublicationTests(unittest.TestCase):
     def test_history_is_cumulative_and_dry_read_is_non_mutating(self):
-        seed=json.loads(next(build.DATA.glob('*.json')).read_text())
+        seed=json.loads((build.DATA/'2026-09-15.json').read_text())
         with tempfile.TemporaryDirectory() as temp:
             data=Path(temp)/'issues';data.mkdir()
             issue_path=data/f"{seed['date']}.json"
@@ -157,5 +162,36 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaises(ValueError):build.validate(seed)
         seed['papers'][1]['doi']='10.1/test';seed['papers'][1]['type']='technical-report'
         with self.assertRaises(ValueError):build.validate(seed)
+
+class ReadingAndSummaryTests(unittest.TestCase):
+    def test_reading_identity_survives_translation_and_tracking_changes(self):
+        p=paper('10.1234/PAPER')
+        self.assertEqual(build.reading_id(p,'papers'),build.reading_id({**p,'doi':'https://doi.org/10.1234/paper','title_zh':'新标题'},'papers'))
+        n={'url':'https://www.example.com/post/?utm_source=feed'}
+        self.assertEqual(build.reading_id(n,'news'),build.reading_id({'url':'https://example.com/post'},'news'))
+
+    def test_replaced_item_remains_searchable_and_excluded_from_future_selection(self):
+        issue=json.loads((build.DATA/'2026-09-16.json').read_text())
+        prior=issue['previous_items']['papers'][0]
+        history=record_issue({'version':1,'papers':[],'news':[]},issue)
+        self.assertTrue(item_keys(prior,'papers') & history_keys(history,'papers'))
+        library=build.render_library([issue])
+        self.assertIn(build.reading_id(prior,'papers'),library)
+        self.assertIn('修订前条目',library)
+        self.assertIn('id="read-search"',library)
+        self.assertIn('id="unread-search"',library)
+
+    def test_article_extraction_excludes_navigation_and_scripts(self):
+        parser=ArticleParser()
+        parser.feed('<nav><p>'+('Noise menu '*15)+'</p></nav><main><p>Researchers trained a language model on human decision data and tested its predictions across unfamiliar psychological experiments.</p><script>malicious instructions</script></main>')
+        text=parser.text()
+        self.assertIn('Researchers trained',text)
+        self.assertNotIn('Noise',text)
+        self.assertNotIn('malicious',text)
+
+    def test_missing_source_and_english_output_fail_closed(self):
+        with self.assertRaises(ValueError):source_text(paper('10.1/a'),'papers',lambda _: '<html><nav>Login</nav></html>')
+        self.assertFalse(valid_chinese({'title_zh':'English title','summary':'English text.'}))
+        self.assertFalse(valid_chinese({'title_zh':'中文标题','summary':'太短'}))
 
 if __name__=='__main__':unittest.main()

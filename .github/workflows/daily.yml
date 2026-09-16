@@ -22,7 +22,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 30
     permissions:
       contents: write
     steps:
@@ -34,9 +34,25 @@ jobs:
           python-version: '3.12'
       - name: Check selection, parsing, and archive invariants
         run: python -m unittest discover -s tests -v
+      - uses: actions/cache@v4
+        if: github.event_name != 'push'
+        with:
+          path: .cache/summary
+          key: summary-ubuntu-b10995-qwen25-15b-q4-v1
+      - name: Prepare local Chinese summary model
+        if: github.event_name != 'push'
+        run: python scripts/prepare_summary.py
       - name: Verify live sources
         if: github.event_name == 'workflow_dispatch' && inputs.verify_sources
-        run: python scripts/update.py --dry-run
+        run: python scripts/update.py --dry-run --output .cache/verified-issue.json
+      - uses: actions/upload-artifact@v4
+        if: always() && github.event_name == 'workflow_dispatch' && inputs.verify_sources
+        with:
+          name: verified-chinese-edition
+          path: |
+            .cache/verified-issue.json
+            .cache/summary/server.log
+          retention-days: 3
       - name: Generate today's edition
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.verify_sources)
         run: python scripts/update.py

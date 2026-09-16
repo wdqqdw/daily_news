@@ -44,6 +44,7 @@
       "keys": [
         "doi:10.1038/s41586-025-09215-4",
         "title:afoundationmodeltopredictandcapturehumancognition",
+        "title:centaur用基础模型预测人类认知与选择",
         "url:https://doi.org/10.1038/s41586-025-09215-4"
       ],
       "doi": "10.1038/s41586-025-09215-4"
@@ -55,6 +56,7 @@
       "keys": [
         "doi:10.1038/s41591-024-03453-1",
         "title:bioaccumulationofmicroplasticsindecedenthumanbrains",
+        "title:人体脑组织中的微塑料积累",
         "url:https://doi.org/10.1038/s41591-024-03453-1"
       ],
       "doi": "10.1038/s41591-024-03453-1"
@@ -66,9 +68,22 @@
       "keys": [
         "doi:10.1038/s41586-025-09422-z",
         "title:deepseekr1incentivizesreasoninginllmsthroughreinforcementlearning",
+        "title:deepseekr1通过强化学习激发大模型推理能力",
         "url:https://doi.org/10.1038/s41586-025-09422-z"
       ],
       "doi": "10.1038/s41586-025-09422-z"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "A large-scale replication of scenario-based experiments in psychology and management using large language models",
+      "url": "https://www.nature.com/articles/s43588-025-00840-7",
+      "keys": [
+        "doi:10.1038/s43588-025-00840-7",
+        "title:alargescalereplicationofscenariobasedexperimentsinpsychologyandmanagementusinglargelanguagemodels",
+        "title:让大模型复现156项心理实验能模拟人也会放大效应",
+        "url:https://nature.com/articles/s43588-025-00840-7"
+      ],
+      "doi": "10.1038/s43588-025-00840-7"
     }
   ],
   "news": [
@@ -134,6 +149,7 @@
       "url": "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/",
       "keys": [
         "title:universityofmanchesterusesnvidiaearth2toforecastairpollutionacrosstheuk",
+        "title:曼彻斯特大学用nvidiaearth2预测英国空气污染",
         "url:https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2"
       ],
       "company": "NVIDIA"
@@ -143,6 +159,7 @@
       "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
       "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
       "keys": [
+        "title:google发布gemini38live与增强思考版",
         "title:introducinggemini38liveand38liveextendedthinking",
         "url:https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking"
       ],
@@ -154,6 +171,7 @@
       "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4",
       "keys": [
         "title:qwencodereleasev0234",
+        "title:通义千问qwencode更新至v0234",
         "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4"
       ],
       "company": "Qwen"
@@ -163,6 +181,7 @@
       "title": "How Fyxer built an AI executive assistant people trust",
       "url": "https://openai.com/index/fyxer",
       "keys": [
+        "title:fyxer如何用openai模型打造可信赖的ai行政助理",
         "title:howfyxerbuiltanaiexecutiveassistantpeopletrust",
         "url:https://openai.com/index/fyxer"
       ],
@@ -173,6 +192,7 @@
       "title": "Developing Enterprise Frontier Safeguards with our customers",
       "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
       "keys": [
+        "title:anthropic与企业客户共建前沿模型安全防护",
         "title:developingenterprisefrontiersafeguardswithourcustomers",
         "url:https://anthropic.com/news/enterprise-frontier-safeguards"
       ],
@@ -184,6 +204,7 @@
       "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
       "keys": [
         "title:gigapathflashandgigatimeflashtowardpopulationscalediscoverywithefficientpathologyfoundationmodels",
+        "title:微软发布更高效的病理模型gigapathflash与gigatimeflash",
         "url:https://microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models"
       ],
       "company": "Microsoft Research"

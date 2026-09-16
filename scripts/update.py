@@ -24,6 +24,7 @@ from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
 from history import item_keys, load_history, history_keys, assert_unseen
+from summarize import enrich
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
@@ -32,6 +33,7 @@ LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
 COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
+AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 
@@ -114,7 +116,8 @@ def relevant(p, slot):
         # Require cognition/people in title, LLM signal in title or abstract.
         return bool(COGNITION.search(title) and MODELLING.search(title+' '+p.get('abstract','')[:500]) and LLM.search(title+' '+p.get('abstract','')[:1200]))
     if slot == 2:
-        return bool(HUMAN.search(title)) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        text = title + ' ' + p.get('abstract','')[:1400]
+        return bool(COGNITION.search(title) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0
 
 def score(p, slot, today):
@@ -149,14 +152,14 @@ def select_papers(pool, seen, today):
         rate = round(cite/max(age/30,1),2)
         chosen['reason'] = {
             1:'题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。',
-            2:'研究聚焦人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。',
+            2:'使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。',
             3:f'本次跨领域候选中热度评分最高的未读研究：公开记录 {cite} 次引用，约 {rate} 次 / 月。'
         }[slot]
         chosen['evidence'] = f'检索时间：{today}；来源：Crossref；引用数 {cite}，距发表 {age} 天。'+ ('优先匹配期刊品牌与主题，再考虑新近程度和引用。' if slot == 1 else '评分依据公开题录、引用总数与发表时间。') + '引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。'
         abstract = chosen.pop('abstract','')
-        chosen['excerpt'] = excerpt(abstract)
+        chosen['_source_text'] = abstract
         chosen['summary'] = ''
-        chosen['tag'] = ['认知与行为建模','人的科学','跨学科 / 引用热度'][slot-1]
+        chosen['tag'] = ['认知与行为建模','研究人的人工智能工作','跨学科 / 引用热度'][slot-1]
         chosen['ranking_score'] = round(score(chosen,slot,today),4)
         selected.append(chosen)
         used.update(item_keys(chosen,'papers'))
@@ -206,12 +209,10 @@ def parse_feed(content, config, today):
         if config['company'] == 'Qwen':
             if not re.fullmatch(r'(?:Release\s+)?v\d+\.\d+\.\d+',title):continue
             title = 'Qwen Code · '+title
-        # Bound text reuse per source; title plus excerpt share 24 words.
-        budget = max(0,24-len(title.split()))
-        summary = excerpt(txt('description','summary'),budget) if budget else ''
+        source_text = clean(txt('encoded','content','description','summary'))
         if not published or not title or not url.startswith('https://'): continue
         if not 0 <= (today-published).days <= 21: continue
-        result.append({'company':config['company'],'kind':news_kind(title), 'published':str(published), 'title':title,'summary':summary,'url':url, 'source_feed':config['url']})
+        result.append({'company':config['company'],'kind':news_kind(title), 'published':str(published), 'title':title,'summary':'','_source_text':source_text,'url':url, 'source_feed':config['url']})
     return result
 
 class LinkParser(HTMLParser):
@@ -294,9 +295,9 @@ def generate(today):
     jobs={
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'LLM cognition':lambda:crossref('language models human cognition brain theory of mind',today),
-      'Human behaviour':lambda:crossref('human cognition psychology decision making',today,days=365),
+      'AI human behaviour':lambda:crossref('artificial intelligence human cognition psychology behavior',today,days=365),
       'Human interaction':lambda:crossref('human artificial intelligence interaction experiment',today,days=365),
-      'Human cognition impact':lambda:crossref('human cognition behavior',today,days=730,rows=180,sort='is-referenced-by-count'),
+      'AI human cognition impact':lambda:crossref('language models human cognition behavior psychology',today,days=730,rows=180,sort='is-referenced-by-count'),
       'Cross-discipline annual citations':lambda:crossref('',today,days=365,rows=200,sort='is-referenced-by-count'),
       'Cross-discipline recent citations':lambda:crossref('',today,days=90,rows=150,sort='is-referenced-by-count'),
     }
@@ -329,6 +330,9 @@ def generate(today):
     if failed:notices.append(f'本期有 {failed} 个来源暂时不可用，内容来自其余可用来源。')
     if not selected_news:notices.append('本次没有发现未推送的公司动态；已排除所有历史内容。')
     issue={'date':str(today),'generated_at':dt.datetime.now(TZ).isoformat(timespec='seconds'),'label':'DAILY EDITION','papers':selected,'news':selected_news,'notices':notices,'sources':statuses,'candidate_count':len(pool)}
+    validate(issue)
+    assert_unseen(issue,history)
+    enrich(issue,fetch)
     validate(issue)
     assert_unseen(issue,history)
     return issue
