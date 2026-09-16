@@ -36,6 +36,39 @@
         "url:https://nature.com/articles/s41586-025-10014-0"
       ],
       "doi": "10.1038/s41586-025-10014-0"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "A foundation model to predict and capture human cognition",
+      "url": "https://doi.org/10.1038/s41586-025-09215-4",
+      "keys": [
+        "doi:10.1038/s41586-025-09215-4",
+        "title:afoundationmodeltopredictandcapturehumancognition",
+        "url:https://doi.org/10.1038/s41586-025-09215-4"
+      ],
+      "doi": "10.1038/s41586-025-09215-4"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "Bioaccumulation of microplastics in decedent human brains",
+      "url": "https://doi.org/10.1038/s41591-024-03453-1",
+      "keys": [
+        "doi:10.1038/s41591-024-03453-1",
+        "title:bioaccumulationofmicroplasticsindecedenthumanbrains",
+        "url:https://doi.org/10.1038/s41591-024-03453-1"
+      ],
+      "doi": "10.1038/s41591-024-03453-1"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+      "url": "https://doi.org/10.1038/s41586-025-09422-z",
+      "keys": [
+        "doi:10.1038/s41586-025-09422-z",
+        "title:deepseekr1incentivizesreasoninginllmsthroughreinforcementlearning",
+        "url:https://doi.org/10.1038/s41586-025-09422-z"
+      ],
+      "doi": "10.1038/s41586-025-09422-z"
     }
   ],
   "news": [
@@ -94,6 +127,66 @@
         "url:https://anthropic.com/claude-fable-and-mythos-5-1"
       ],
       "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
+      "url": "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/",
+      "keys": [
+        "title:universityofmanchesterusesnvidiaearth2toforecastairpollutionacrosstheuk",
+        "url:https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "keys": [
+        "title:introducinggemini38liveand38liveextendedthinking",
+        "url:https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "Qwen Code · Release v0.23.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4",
+      "keys": [
+        "title:qwencodereleasev0234",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "keys": [
+        "title:howfyxerbuiltanaiexecutiveassistantpeopletrust",
+        "url:https://openai.com/index/fyxer"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "Developing Enterprise Frontier Safeguards with our customers",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "keys": [
+        "title:developingenterprisefrontiersafeguardswithourcustomers",
+        "url:https://anthropic.com/news/enterprise-frontier-safeguards"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-16",
+      "title": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "keys": [
+        "title:gigapathflashandgigatimeflashtowardpopulationscalediscoverywithefficientpathologyfoundationmodels",
+        "url:https://microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models"
+      ],
+      "company": "Microsoft Research"
     }
   ]
 }

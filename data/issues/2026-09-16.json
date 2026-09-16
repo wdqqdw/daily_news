@@ -1,0 +1,207 @@
+{
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T13:26:08+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "A foundation model to predict and capture human cognition",
+      "doi": "10.1038/s41586-025-09215-4",
+      "url": "https://doi.org/10.1038/s41586-025-09215-4",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-07-02",
+      "authors": "Binz et al.",
+      "citations": 117,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09215-4",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 117，距发表 441 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "excerpt": "Abstract Establishing a unified theory of cognition has been an important goal in psychology 1,2 . A first step towards such a theory is…",
+      "summary": "",
+      "tag": "认知与行为建模",
+      "ranking_score": 16.5709
+    },
+    {
+      "type": "journal-article",
+      "title": "Bioaccumulation of microplastics in decedent human brains",
+      "doi": "10.1038/s41591-024-03453-1",
+      "url": "https://doi.org/10.1038/s41591-024-03453-1",
+      "journal": "Nature Medicine",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-02-03",
+      "authors": "Nihart et al.",
+      "citations": 796,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41591-024-03453-1",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "研究聚焦人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 796，距发表 590 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "excerpt": "",
+      "summary": "",
+      "tag": "人的科学",
+      "ranking_score": 22.1557
+    },
+    {
+      "type": "journal-article",
+      "title": "DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning",
+      "doi": "10.1038/s41586-025-09422-z",
+      "url": "https://doi.org/10.1038/s41586-025-09422-z",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-09-17",
+      "authors": "Guo et al.",
+      "citations": 1143,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09422-z",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 1143 次引用，约 94.2 次 / 月。",
+      "evidence": "检索时间：2026-09-16；来源：Crossref；引用数 1143，距发表 364 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "excerpt": "Abstract General reasoning represents a long-standing and formidable challenge in artificial intelligence (AI). Recent breakthroughs, exemplified by large language models (LLMs) 1,2 and chain-of-thought…",
+      "summary": "",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 20.7765
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-16",
+      "title": "University of Manchester Uses NVIDIA Earth-2 to Forecast Air Pollution Across the UK",
+      "summary": "Air pollution is a serious public health risk, contributing to an…",
+      "url": "https://blogs.nvidia.com/blog/uk-air-pollution-research-earth-2/",
+      "source_feed": "https://blogs.nvidia.com/feed/"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "产品发布",
+      "published": "2026-09-15",
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "summary": "",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "source_feed": "https://deepmind.google/blog/rss.xml"
+    },
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-14",
+      "title": "Qwen Code · Release v0.23.4",
+      "summary": "",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.23.4",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-14",
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "summary": "Fyxer uses OpenAI models, fine-tuning, memory, and real user feedback to organize inboxes and draft…",
+      "url": "https://openai.com/index/fyxer",
+      "source_feed": "https://openai.com/news/rss.xml"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-01",
+      "title": "Developing Enterprise Frontier Safeguards with our customers",
+      "summary": "",
+      "url": "https://www.anthropic.com/news/enterprise-frontier-safeguards",
+      "source_page": "https://www.anthropic.com/news"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-08-31",
+      "title": "GigaPath-Flash and GigaTIME-Flash: Toward population-scale discovery with efficient pathology foundation models",
+      "summary": "What if pathology foundation models could do more with less? GigaPath-Flash and GigaTIME-Flash…",
+      "url": "https://www.microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/"
+    }
+  ],
+  "notices": [
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。"
+  ],
+  "sources": [
+    {
+      "source": "Human behaviour",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 44
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 9
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "Human cognition impact",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 25
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 431
+}
