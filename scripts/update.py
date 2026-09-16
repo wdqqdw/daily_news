@@ -345,25 +345,19 @@ def generate(today):
         if not unavailable:break
         for item in unavailable:excluded_papers.update(item_keys(item,'papers'))
     else:raise RuntimeError('Insufficient accessible paper abstracts; preserving previous edition')
-    excluded_news=history_keys(history,'news')
-    prepared_news={}
-    for _ in range(18):
-        selected_news=choose_news(news,excluded_news)
-        unavailable=[]
-        for item in selected_news:
-            try:
-                if item['url'] not in prepared_news:
-                    prepared_news[item['url']]=source_text(item,'news',fetch)
-                text,url=prepared_news[item['url']]
-                item['_source_text']=text
-                item['_summary_source']=url
-            except ValueError:
-                unavailable.append(item)
-                print('Skipping news without accessible body: '+item['title'],flush=True)
-        if not unavailable:break
-        for item in unavailable:excluded_news.update(item_keys(item,'news'))
-    else:raise RuntimeError('Cannot prepare reliable news summaries')
+    selected_news=[]
+    unavailable_news=0
+    for item in choose_news(news,history_keys(history,'news')):
+        try:
+            text,url=source_text(item,'news',fetch)
+            item['_source_text']=text
+            item['_summary_source']=url
+            selected_news.append(item)
+        except ValueError:
+            unavailable_news+=1
+            print('Skipping news without accessible body: '+item['title'],flush=True)
     notices=[]
+    if unavailable_news:notices.append(f'有 {unavailable_news} 条新动态缺少可用原文，暂未收录。')
     failed=sum(not s['ok'] for s in statuses)
     if failed:notices.append(f'本期有 {failed} 个来源暂时不可用，内容来自其余可用来源。')
     if not selected_news:notices.append('本次没有发现未推送的公司动态；已排除所有历史内容。')
