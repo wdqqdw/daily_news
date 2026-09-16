@@ -29,6 +29,7 @@ class SelectionTests(unittest.TestCase):
         self.assertTrue(relevant(paper('10.1/new','Using deep learning to predict human decision-making',abstract='We tested human choice predictions.'),2))
         self.assertFalse(relevant(paper('10.1/theory','Artificial Intelligence and the Psychology of Human Connection',abstract='This article introduces a middle-range theoretical framework and proposes a research agenda.'),2))
         self.assertFalse(relevant(paper('10.1/clinical','Benchmark evaluation of DeepSeek large language models in clinical decision-making',abstract='We tested clinical accuracy on medical questions.'),1))
+        self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We assess AI performance in intuitive physics and visual benchmarks.'),2))
 
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
@@ -199,5 +200,6 @@ class ReadingAndSummaryTests(unittest.TestCase):
         with self.assertRaises(ValueError):source_text(paper('10.1/a'),'papers',lambda _: '<html><nav>Login</nav></html>')
         self.assertFalse(valid_chinese({'title_zh':'English title','summary':'English text.'}))
         self.assertFalse(valid_chinese({'title_zh':'中文标题','summary':'太短'}))
+        self.assertTrue(valid_chinese({'title_zh':'快速扩展在线存储以服务超过十亿用户','summary':'OpenAI将Habitat从一个Python库扩展为一个全球分布的存储平台，以服务超过10亿ChatGPT用户和每秒2200万次请求。'}))
 
 if __name__=='__main__':unittest.main()

@@ -35,6 +35,7 @@ COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|ment
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|brain.guided|social behavio\w*)\b', re.I)
+HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind)\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
@@ -122,7 +123,7 @@ def relevant(p, slot):
         return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
-        return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
