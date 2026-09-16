@@ -1,5 +1,6 @@
 import copy
 import datetime as dt
+import io
 import json
 from pathlib import Path
 import sys
@@ -11,7 +12,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
-from summarize import ArticleParser, source_text, valid_chinese
+from summarize import ArticleParser, source_text, valid_chinese, summarize
 
 TODAY=dt.date(2026,9,16)
 
@@ -171,6 +172,19 @@ class PublicationTests(unittest.TestCase):
         with self.assertRaises(ValueError):build.validate(seed)
 
 class ReadingAndSummaryTests(unittest.TestCase):
+    def test_summary_requires_source_based_review_before_publication(self):
+        draft={'title_zh':'电力管理新进展','summary':'发布公司推出了合作伙伴的平台，并通过智能分配工作负载提高吞吐量，旨在改善计算效率和电网需求响应。'}
+        revised={'title_zh':'电力管理新进展','summary':'合作伙伴的平台根据电网信号调整工作负载，优先保留关键任务。另一项独立测试显示，官方的电力分配技术可提高吞吐量。'}
+        def response(result):
+            return io.BytesIO(json.dumps({'choices':[{'finish_reason':'stop','message':{'content':json.dumps(result)}}]}).encode())
+        evidence='Partner owns Conductor. Publisher reports a separate throughput test.'
+        with patch('summarize.urllib.request.urlopen',side_effect=[response(draft),response(revised)]) as call:
+            self.assertEqual(summarize('http://localhost',{'title':'Power management'},'news',evidence),revised)
+            review=json.loads(call.call_args_list[1].args[0].data)
+            self.assertIn(evidence,review['messages'][1]['content'])
+        with patch('summarize.urllib.request.urlopen',side_effect=[response(draft),response({'title_zh':'Invalid','summary':'Incomplete'})]):
+            with self.assertRaises(ValueError):summarize('http://localhost',{'title':'Power management'},'news',evidence)
+
     def test_reading_identity_survives_translation_and_tracking_changes(self):
         p=paper('10.1234/PAPER')
         self.assertEqual(build.reading_id(p,'papers'),build.reading_id({**p,'doi':'https://doi.org/10.1234/paper','title_zh':'新标题'},'papers'))
