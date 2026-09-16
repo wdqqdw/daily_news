@@ -369,6 +369,7 @@ def generate(today):
     validate(issue)
     assert_unseen(issue,history)
     enrich(issue,fetch)
+    issue['generated_at']=dt.datetime.now(TZ).isoformat(timespec='seconds')
     validate(issue)
     assert_unseen(issue,history)
     return issue

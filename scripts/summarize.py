@@ -117,7 +117,7 @@ def local_model():
 
 def valid_chinese(result):
     if not isinstance(result,dict):return False
-    for key,minimum,maximum in [('title_zh',3,180),('summary',20,500)]:
+    for key,minimum,maximum in [('title_zh',2,180),('summary',20,500)]:
         text=result.get(key)
         if not isinstance(text,str) or not minimum <= len(re.findall(r'[\u4e00-\u9fff]',text)) or len(text)>maximum:
             return False

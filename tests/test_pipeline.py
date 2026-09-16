@@ -201,5 +201,6 @@ class ReadingAndSummaryTests(unittest.TestCase):
         self.assertFalse(valid_chinese({'title_zh':'English title','summary':'English text.'}))
         self.assertFalse(valid_chinese({'title_zh':'中文标题','summary':'太短'}))
         self.assertTrue(valid_chinese({'title_zh':'快速扩展在线存储以服务超过十亿用户','summary':'OpenAI将Habitat从一个Python库扩展为一个全球分布的存储平台，以服务超过10亿ChatGPT用户和每秒2200万次请求。'}))
+        self.assertTrue(valid_chinese({'title_zh':'Qwen Code v0.24.0 发布','summary':'这次版本更新修复了任务恢复和会话管理的问题，并改进了网页预览与通知功能，具体变更见官方说明。'}))
 
 if __name__=='__main__':unittest.main()
