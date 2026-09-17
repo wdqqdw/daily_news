@@ -84,6 +84,42 @@
         "url:https://nature.com/articles/s43588-025-00840-7"
       ],
       "doi": "10.1038/s43588-025-00840-7"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "High-level visual representations in the human brain are aligned with large language models",
+      "url": "https://doi.org/10.1038/s42256-025-01072-0",
+      "keys": [
+        "doi:10.1038/s42256-025-01072-0",
+        "title:highlevelvisualrepresentationsinthehumanbrainarealignedwithlargelanguagemodels",
+        "title:人脑的高级视觉表征与大语言模型如何对齐",
+        "url:https://doi.org/10.1038/s42256-025-01072-0"
+      ],
+      "doi": "10.1038/s42256-025-01072-0"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "Temporal structure of natural language processing in the human brain corresponds to layered hierarchy of large language models",
+      "url": "https://doi.org/10.1038/s41467-025-65518-0",
+      "keys": [
+        "doi:10.1038/s41467-025-65518-0",
+        "title:temporalstructureofnaturallanguageprocessinginthehumanbraincorrespondstolayeredhierarchyoflargelanguagemodels",
+        "title:用大语言模型的层次结构研究人脑语言理解的时间过程",
+        "url:https://doi.org/10.1038/s41467-025-65518-0"
+      ],
+      "doi": "10.1038/s41467-025-65518-0"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+      "url": "https://doi.org/10.1145/3796519",
+      "keys": [
+        "doi:10.1145/3796519",
+        "title:modelcontextprotocolmcplandscapesecuritythreatsandfutureresearchdirections",
+        "title:模型上下文协议mcp概览安全威胁及未来研究方向",
+        "url:https://doi.org/10.1145/3796519"
+      ],
+      "doi": "10.1145/3796519"
     }
   ],
   "news": [
@@ -208,6 +244,61 @@
         "url:https://microsoft.com/en-us/research/blog/gigapath-flash-and-gigatime-flash-toward-population-scale-discovery-with-efficient-pathology-foundation-models"
       ],
       "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "Qwen Code · Release v0.24.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0",
+      "keys": [
+        "title:qwencodereleasev0240",
+        "title:qwencode发布v0240版本",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "Helping older adults use AI in everyday life",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "keys": [
+        "title:helpingolderadultsuseaiineverydaylife",
+        "title:openai与aarp携手为老年人提供免费chatgpt实操培训",
+        "url:https://openai.com/index/helping-older-adults-use-ai-in-everyday-life"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "NVIDIA Vera Rubin NVL72 Delivers Leading Performance in MLPerf Inference v6.1 Debut",
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+      "keys": [
+        "title:nvidiaverarubinnvl72deliversleadingperformanceinmlperfinferencev61debut",
+        "title:nvidiaverarubinnvl72在mlperfinferencev61中取得领先性能",
+        "url:https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "keys": [
+        "title:alphagenomeatlasapredictivemapofeverypossiblednaletterchangeinthehumangenome",
+        "title:alphagenome地图人类基因组中每种可能的dna字符变化的预测图谱",
+        "url:https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-17",
+      "title": "Improving our alignment and security efforts",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "keys": [
+        "title:anthropic公布评估环境安全与模型对齐的改进措施",
+        "title:improvingouralignmentandsecurityefforts",
+        "url:https://anthropic.com/news/improving-alignment-security-efforts"
+      ],
+      "company": "Anthropic"
     }
   ]
 }

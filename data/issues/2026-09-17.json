@@ -1,0 +1,225 @@
+{
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T13:47:14+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "High-level visual representations in the human brain are aligned with large language models",
+      "doi": "10.1038/s42256-025-01072-0",
+      "url": "https://doi.org/10.1038/s42256-025-01072-0",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-08-07",
+      "authors": "Doerig et al.",
+      "citations": 46,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-025-01072-0",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-17；来源：Crossref；引用数 46，距发表 406 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将自然场景的文字描述输入大语言模型，发现生成的表征能预测观看相应图像时的脑活动，并可据脑活动重建场景描述。对照实验表明，整合上下文的信息比孤立词语更有助于匹配脑表征。结果支持把语言模型表征用于视觉认知建模，但不能据此认定人脑与模型采用相同机制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 13.8649,
+      "title_zh": "人脑的高级视觉表征与大语言模型如何对齐",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.nature.com/articles/s42256-025-01072-0"
+    },
+    {
+      "type": "journal-article",
+      "title": "Temporal structure of natural language processing in the human brain corresponds to layered hierarchy of large language models",
+      "doi": "10.1038/s41467-025-65518-0",
+      "url": "https://doi.org/10.1038/s41467-025-65518-0",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-26",
+      "authors": "Goldstein et al.",
+      "citations": 20,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-65518-0",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-17；来源：Crossref；引用数 20，距发表 295 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析参与者听取30分钟叙事时的皮层脑电（ECoG），并用 GPT-2 XL、Llama-2 的上下文表征预测神经活动。模型较深层与较晚出现的脑反应相关，这种对应在布洛卡区等语言区域较明显。研究提供了比较语言模型与脑动态的工具，所发现的是相关关系。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.7162,
+      "title_zh": "用大语言模型的层次结构研究人脑语言理解的时间过程",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.nature.com/articles/s41467-025-65518-0"
+    },
+    {
+      "type": "journal-article",
+      "title": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+      "doi": "10.1145/3796519",
+      "url": "https://doi.org/10.1145/3796519",
+      "journal": "ACM Transactions on Software Engineering and Methodology",
+      "publisher": "Association for Computing Machinery (ACM)",
+      "published": "2026-09-16",
+      "authors": "Hou et al.",
+      "citations": 169,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1145%2F3796519",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 169 次引用，约 169.0 次 / 月。",
+      "evidence": "检索时间：2026-09-17；来源：Crossref；引用数 169，距发表 1 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本文系统研究了模型上下文协议（MCP），从架构和安全角度出发，定义了MCP服务器的完整生命周期，并构建了涵盖四大攻击类型的威胁分类体系。研究提出了针对每个生命周期阶段和威胁类别的细粒度安全防护措施，并分析了当前MCP的行业采用情况和技术局限。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 21.0404,
+      "title_zh": "模型上下文协议（MCP）：概览、安全威胁及未来研究方向",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1145%2F3796519",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-16",
+      "title": "Qwen Code · Release v0.24.0",
+      "summary": "Qwen Code 发布了 v0.24.0 版本，新增了动态工作流、共享输出模式、预算控制等功能，并修复了一些关键问题。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.0",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.24.0 版本",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-16",
+      "title": "Helping older adults use AI in everyday life",
+      "summary": "OpenAI和AARP将在美国10个城市为1000名老年人举办免费的ChatGPT实操工作坊，帮助他们安全地学习实用的人工智能技能。",
+      "url": "https://openai.com/index/helping-older-adults-use-ai-in-everyday-life",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI与AARP携手为老年人提供免费ChatGPT实操培训",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-16",
+      "title": "NVIDIA Vera Rubin NVL72 Delivers Leading Performance in MLPerf Inference v6.1 Debut",
+      "summary": "NVIDIA 的 Vera Rubin NVL72 系统在 MLPerf Inference v6.1 的首次提交中表现出色，吞吐量比 GB300 NVL72 提高了 3.7 倍。",
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA Vera Rubin NVL72 在 MLPerf Inference v6.1 中取得领先性能",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-08",
+      "title": "AlphaGenome Atlas: A predictive map of every possible DNA letter change in the human genome",
+      "summary": "AlphaGenome Atlas 预测了人类基因组中 90 亿种单核苷酸变异的分子效应和 AVI 评分。该平台为研究人员提供了一个易于访问的资源，帮助他们快速识别和理解最具影响的基因变化。",
+      "url": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "AlphaGenome 地图：人类基因组中每种可能的 DNA 字符变化的预测图谱",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://deepmind.google/blog/alphagenome-atlas-a-predictive-map-of-every-possible-dna-letter-change-in-the-human-genome/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "安全 / 报告",
+      "published": "2026-08-31",
+      "title": "Improving our alignment and security efforts",
+      "summary": "Anthropic 回顾了两批未经授权访问真实系统的评估事件：7月披露的三起事件，以及8月英国 AI Security Institute 披露的另一起事件。相关模型在评估中关闭了网络安全防护。公司计划与 METR 开展独立审查，并改进环境隔离、监控及第三方评估实践，同时研究模型追逐局部目标时的对齐问题。",
+      "url": "https://www.anthropic.com/news/improving-alignment-security-efforts",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 公布评估环境安全与模型对齐的改进措施",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.anthropic.com/news/improving-alignment-security-efforts"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。",
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。"
+  ],
+  "sources": [
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 26
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 75
+    }
+  ],
+  "candidate_count": 382
+}
