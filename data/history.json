@@ -120,6 +120,42 @@
         "url:https://doi.org/10.1145/3796519"
       ],
       "doi": "10.1145/3796519"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Mind captioning: Evolving descriptive text of mental content from human brain activity",
+      "url": "https://doi.org/10.1126/sciadv.adw1464",
+      "keys": [
+        "doi:10.1126/sciadv.adw1464",
+        "title:mindcaptioningevolvingdescriptivetextofmentalcontentfromhumanbrainactivity",
+        "title:心智描述通过人类脑活动生成描述性文本",
+        "url:https://doi.org/10.1126/sciadv.adw1464"
+      ],
+      "doi": "10.1126/sciadv.adw1464"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Modelling low-dimensional interacting brain networks reveals organising principle in human cognition",
+      "url": "https://doi.org/10.1162/netn_a_00434",
+      "keys": [
+        "doi:10.1162/netn_a_00434",
+        "title:modellinglowdimensionalinteractingbrainnetworksrevealsorganisingprincipleinhumancognition",
+        "title:建模低维度相互作用的脑网络揭示人类认知的组织原则",
+        "url:https://doi.org/10.1162/netn_a_00434"
+      ],
+      "doi": "10.1162/netn_a_00434"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "IQ-TREE 3: phylogenomic inference software using complex evolutionary models",
+      "url": "https://doi.org/10.1093/molbev/msag117",
+      "keys": [
+        "doi:10.1093/molbev/msag117",
+        "title:iqtree3phylogenomicinferencesoftwareusingcomplexevolutionarymodels",
+        "title:iqtree3使用复杂进化模型的系统发育推断软件",
+        "url:https://doi.org/10.1093/molbev/msag117"
+      ],
+      "doi": "10.1093/molbev/msag117"
     }
   ],
   "news": [
@@ -299,6 +335,72 @@
         "url:https://anthropic.com/news/improving-alignment-security-efforts"
       ],
       "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "keys": [
+        "title:howcooleyisacceleratingipoworkwithchatgpt",
+        "title:科勒利用chatgpt加速ipo工作",
+        "url:https://openai.com/index/cooley-gopublic"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Cute Critters Come to the Cloud: ‘Aniimo’ Launches on GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-aniimo/",
+      "keys": [
+        "title:cutecritterscometothecloudaniimolaunchesongeforcenow",
+        "title:云游戏新伙伴aniimo登陆geforcenow",
+        "url:https://blogs.nvidia.com/blog/geforce-now-thursday-aniimo"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Introducing the Life Sciences Verification Program",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "keys": [
+        "title:introducingthelifesciencesverificationprogram",
+        "title:介绍生命科学验证计划",
+        "url:https://anthropic.com/news/life-sciences-verification-program"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Introducing Astra for Law",
+      "url": "https://openai.com/index/astra-for-law",
+      "keys": [
+        "title:introducingastraforlaw",
+        "title:openaiforlaw推出astra",
+        "url:https://openai.com/index/astra-for-law"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Emerald AI, Google and NVIDIA Launch Alliance to Advance Flexible AI Data Centers",
+      "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+      "keys": [
+        "title:emeraldaigoogleandnvidialaunchalliancetoadvanceflexibleaidatacenters",
+        "title:emeraldaigoogle和nvidia联合推进灵活ai数据中心联盟",
+        "url:https://blogs.nvidia.com/blog/ai-energy-management-alliance"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-18",
+      "title": "Proactive cyber defense for governments and enterprises",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "keys": [
+        "title:proactivecyberdefenseforgovernmentsandenterprises",
+        "title:政府和企业主动网络防御计划启动fairwind计划",
+        "url:https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }

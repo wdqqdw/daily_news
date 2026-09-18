@@ -1,0 +1,238 @@
+{
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T15:10:29+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Mind captioning: Evolving descriptive text of mental content from human brain activity",
+      "doi": "10.1126/sciadv.adw1464",
+      "url": "https://doi.org/10.1126/sciadv.adw1464",
+      "journal": "Science Advances",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "published": "2025-11-07",
+      "authors": "Horikawa",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1126%2Fsciadv.adw1464",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-18；来源：Crossref；引用数 6，距发表 315 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "该研究提出了一种方法，通过深度语言模型计算的语义特征生成描述性文本，以反映大脑表征。该方法通过优化候选描述，使其特征与脑解码特征对齐，从而生成结构良好且准确捕捉所观内容的描述。",
+      "tag": "认知与行为建模",
+      "ranking_score": 8.3591,
+      "title_zh": "心智描述：通过人类脑活动生成描述性文本",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1126%2Fsciadv.adw1464",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Modelling low-dimensional interacting brain networks reveals organising principle in human cognition",
+      "doi": "10.1162/netn_a_00434",
+      "url": "https://doi.org/10.1162/netn_a_00434",
+      "journal": "Network Neuroscience",
+      "publisher": "MIT Press",
+      "published": "2025-05-08",
+      "authors": "Perl et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1162%2Fnetn_a_00434",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-18；来源：Crossref；引用数 6，距发表 498 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究结合深度变分自动编码器和计算建模，构建了基于功能性磁共振成像（fMRI）测量的全脑动态模型，揭示了任务驱动的网络交互模式的高度灵活重构，并证明了这种重构可以用于分类不同的认知任务。与使用所有节点的分段相比，该模型在建模和分类性能上表现更好。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.0263,
+      "title_zh": "建模低维度相互作用的脑网络揭示人类认知的组织原则",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1162%2Fnetn_a_00434",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "IQ-TREE 3: phylogenomic inference software using complex evolutionary models",
+      "doi": "10.1093/molbev/msag117",
+      "url": "https://doi.org/10.1093/molbev/msag117",
+      "journal": "Molecular Biology and Evolution",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2026-05-01",
+      "authors": "Wong et al.",
+      "citations": 270,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fmolbev%2Fmsag117",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 270 次引用，约 57.86 次 / 月。",
+      "evidence": "检索时间：2026-09-18；来源：Crossref；引用数 270，距发表 140 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "IQ-TREE 3 是一种广泛使用的开源软件工具，用于高效地在最大似然下推断系统发育树。该版本显著扩展了前两个版本的功能，包括混合模型、基因和位点一致性因子以及全面的序列模拟器。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 18.0572,
+      "title_zh": "IQ-TREE 3：使用复杂进化模型的系统发育推断软件",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1093%2Fmolbev%2Fmsag117",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-17",
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "summary": "科勒利用ChatGPT开发了名为GO Public的工具，旨在使IPO流程更加智能化，帮助律师更早地发现潜在问题并专注于最关键的部分。",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "科勒利用ChatGPT加速IPO工作",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-09-17",
+      "title": "Cute Critters Come to the Cloud: ‘Aniimo’ Launches on GeForce NOW",
+      "summary": "NVIDIA GeForce NOW 平台新增游戏 Aniimo，这是一款免费的开放世界捕捉生物角色扮演游戏，玩家可以在支持的设备上云游戏而无需下载。同时，007 First Light 也获得了路径追踪更新，提升了画面效果。",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-aniimo/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "云游戏新伙伴：Aniimo 登陆 GeForce NOW",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-aniimo/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "产品发布",
+      "published": "2026-09-17",
+      "title": "Introducing the Life Sciences Verification Program",
+      "summary": "Anthropic公司推出生命科学验证计划（LSVP），为生命科学专业人士提供Mythos、Opus和Sonnet模型的访问权限，并通过严格的审核流程确保安全和伦理。该计划分为“标准使用”和“高风险使用”两种类型，前者适用于大多数生命科学工作，后者则针对特定高风险项目。",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "介绍生命科学验证计划",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-09-17",
+      "title": "Introducing Astra for Law",
+      "summary": "OpenAI for Law 推出 Astra，提供前沿法律智能、定制律师事务所工作流程和连接的法律数据源。",
+      "url": "https://openai.com/index/astra-for-law",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI for Law 推出 Astra",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-09-16",
+      "title": "Emerald AI, Google and NVIDIA Launch Alliance to Advance Flexible AI Data Centers",
+      "summary": "Emerald AI、Google 和 NVIDIA 宣布成立 AI 能源管理联盟 (AEMA)，旨在推动能够动态管理电力使用的灵活数据中心的发展。该联盟专注于设施可提供的可测量服务，如响应速度、持续时间、可预测性和紧急情况下的行为，而不关注特定硬件或软件。",
+      "url": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Emerald AI、Google 和 NVIDIA 联合推进灵活AI数据中心联盟",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-energy-management-alliance/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-02",
+      "title": "Proactive cyber defense for governments and enterprises",
+      "summary": "谷歌推出了Fairwind计划，为政府和值得信赖的合作伙伴提供其最先进的网络防御工具。该计划通过提供强大的Gemini 3.8 Flash Cyber模型和CodeMender工具，帮助防御者自动发现和修复漏洞，保护关键基础设施和国家安全。",
+      "url": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "政府和企业主动网络防御计划启动：Fairwind 计划",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 25
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 447
+}
