@@ -141,6 +141,9 @@ def valid_chinese(result):
     if len(result['summary'].strip()) < 40:return False
     return True
 
+class SummaryError(ValueError):
+    """One item still lacks a usable Chinese brief after a bounded retry."""
+
 def summarize(base, item, kind, source):
     # Limit published summaries to a short paragraph and the source context to
     # 450 words. Full articles/abstracts are never copied into the public repo.
@@ -150,15 +153,27 @@ def summarize(base, item, kind, source):
     length = '60–100' if len(context.split()) < 80 else '100–180'
     prompt=('类型：'+('研究论文' if kind=='papers' else '公司官方动态')+'\n原文标题：'+item['title']+'\n资料：\n'+context+f'\n\n请给出自然的中文标题，以及 {length} 个汉字、2–3 句话的独立摘要。说明做了什么、主要结果或改进；资料中有局限时保留。公司性能用“官方称”归因，未提供的细节不要补充。')
     def request(messages):
-        payload={'messages':messages,'temperature':0,'max_tokens':480,'response_format':{'type':'json_schema','json_schema':{'name':'chinese_brief','strict':True,'schema':schema}}}
-        req=urllib.request.Request(base+'/v1/chat/completions',data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
-        with urllib.request.urlopen(req,timeout=240) as response:
-            data=json.load(response)
-        choice=data['choices'][0]
-        if choice.get('finish_reason') == 'length':raise ValueError('Truncated Chinese summary')
-        result=json.loads(choice['message']['content'])
-        if not valid_chinese(result):raise ValueError('Incomplete Chinese title / summary: '+item['title']+'; output='+json.dumps(result,ensure_ascii=False))
-        return result
+        messages=list(messages)
+        for attempt in range(2):
+            content=''
+            try:
+                payload={'messages':messages,'temperature':0,'max_tokens':480,'response_format':{'type':'json_schema','json_schema':{'name':'chinese_brief','strict':True,'schema':schema}}}
+                req=urllib.request.Request(base+'/v1/chat/completions',data=json.dumps(payload).encode(),headers={'Content-Type':'application/json'})
+                with urllib.request.urlopen(req,timeout=240) as response:
+                    data=json.load(response)
+                choice=data['choices'][0]
+                if choice.get('finish_reason') == 'length':raise ValueError('Truncated Chinese summary')
+                content=choice['message']['content']
+                result=json.loads(content)
+                if not valid_chinese(result):raise ValueError('Incomplete Chinese title / summary')
+                return result
+            except (ValueError,KeyError,TypeError,IndexError,OSError) as error:
+                if attempt:
+                    raise SummaryError('Chinese brief failed after retry: '+item['title']+'; '+str(error)) from error
+                print('Retrying Chinese brief: '+item['title'],flush=True)
+                if isinstance(content,str) and content:
+                    messages.append({'role':'assistant','content':content})
+                messages.append({'role':'user','content':'上次输出未通过格式或中文完整性检查。请根据同一份原始资料重新输出完整 JSON。title_zh 必须是中文标题，至少含两个汉字，不能直接照抄英文标题；公司或产品名可保留英文。summary 必须是至少40个字符的中文摘要，至少含20个汉字。只保留原文支持的事实，不补充细节，不输出解释。'})
 
     draft=request([{'role':'system','content':system},{'role':'user','content':prompt}])
     # A separate source-based edit catches entity/metric attribution mistakes
@@ -183,21 +198,44 @@ def summarize(base, item, kind, source):
 def enrich(issue, fetch):
     preview=[]
     inputs=[]
+    failures=[]
+    CACHE.mkdir(parents=True,exist_ok=True)
+    apply_editorial_corrections(issue)
+    def save_preview(item):
+        item.pop('_source_text',None)
+        item.pop('_summary_source',None)
+        item.pop('excerpt',None)
+        preview.append({k:item.get(k) for k in ('title','title_zh','summary','summary_source','doi','url')})
+        (CACHE/'preview.json').write_text(json.dumps(preview,ensure_ascii=False,indent=2)+'\n')
+    (CACHE/'preview.json').write_text('[]\n')
+    (CACHE/'failures.json').write_text('[]\n')
     for kind in ('papers','news'):
         for item in issue[kind]:
+            if item.get('summary_method')=='人工核对公开原文':
+                save_preview(item)
+                continue
             source,url=source_text(item,kind,fetch)
             inputs.append((item,kind,source,url))
+    if not inputs:return issue
+    skipped=set()
     with local_model() as base:
         for item,kind,source,url in inputs:
-            result=summarize(base,item,kind,source)
+            try:
+                result=summarize(base,item,kind,source)
+            except SummaryError as error:
+                failures.append({'kind':kind,'title':item['title'],'url':item['url'],'error':str(error)})
+                (CACHE/'failures.json').write_text(json.dumps(failures,ensure_ascii=False,indent=2)+'\n')
+                if kind=='papers':raise
+                skipped.add(id(item))
+                print('Deferring news after failed Chinese brief: '+item['title'],flush=True)
+                continue
             item.update(result)
             item['summary_method']='AI 根据公开摘要整理' if kind=='papers' else 'AI 根据官方公告整理'
             item['summary_source']=url
             item['summary_model']=MODEL_REPO
-            item.pop('_source_text',None)
-            item.pop('_summary_source',None)
-            item.pop('excerpt',None)
-            preview.append({k:item.get(k) for k in ('title','title_zh','summary','summary_source','doi','url')})
-            (CACHE/'preview.json').write_text(json.dumps(preview,ensure_ascii=False,indent=2)+'\n')
+            save_preview(item)
             print(f'Chinese summary: {item["title_zh"]}',flush=True)
+    if skipped:
+        issue['news']=[item for item in issue['news'] if id(item) not in skipped]
+        issue.setdefault('notices',[]).append(f'有 {len(skipped)} 条公司动态的中文摘要未通过校验，已暂缓推送。')
     return issue

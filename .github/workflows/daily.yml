@@ -51,18 +51,20 @@ jobs:
       - name: Verify live sources
         if: github.event_name == 'workflow_dispatch' && inputs.verify_sources
         run: python scripts/update.py --dry-run --output .cache/verified-issue.json
-      - uses: actions/upload-artifact@v4
-        if: always() && github.event_name == 'workflow_dispatch' && inputs.verify_sources
+      - name: Generate today's edition
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.verify_sources)
+        run: python scripts/update.py
+      - name: Save Chinese brief diagnostics
+        uses: actions/upload-artifact@v4
+        if: always() && github.event_name != 'push'
         with:
-          name: verified-chinese-edition
+          name: chinese-edition-diagnostics
           path: |
             .cache/verified-issue.json
             .cache/summary/server.log
             .cache/summary/preview.json
-          retention-days: 3
-      - name: Generate today's edition
-        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.verify_sources)
-        run: python scripts/update.py
+            .cache/summary/failures.json
+          retention-days: 7
       - name: Build static pages
         run: python scripts/build.py
       - name: Check links and generated pages

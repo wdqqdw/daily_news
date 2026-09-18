@@ -120,7 +120,7 @@ def relevant(p, slot):
     if slot == 1:
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
-        return bool(COGNITION.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
+        return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)

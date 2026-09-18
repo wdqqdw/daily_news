@@ -1,4 +1,5 @@
 import copy
+from contextlib import nullcontext
 import datetime as dt
 import io
 import json
@@ -12,7 +13,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
-from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections
+from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections, enrich, SummaryError
 
 TODAY=dt.date(2026,9,16)
 
@@ -31,6 +32,7 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/theory','Artificial Intelligence and the Psychology of Human Connection',abstract='This article introduces a middle-range theoretical framework and proposes a research agenda.'),2))
         self.assertFalse(relevant(paper('10.1/clinical','Benchmark evaluation of DeepSeek large language models in clinical decision-making',abstract='We tested clinical accuracy on medical questions.'),1))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We assess AI performance in intuitive physics and visual benchmarks.'),2))
+        self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We compare visual cognition in LLMs with human performance.'),1))
 
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
@@ -201,8 +203,49 @@ class ReadingAndSummaryTests(unittest.TestCase):
             self.assertEqual(summarize('http://localhost',{'title':'Power management'},'news',evidence),revised)
             review=json.loads(call.call_args_list[1].args[0].data)
             self.assertIn(evidence,review['messages'][1]['content'])
-        with patch('summarize.urllib.request.urlopen',side_effect=[response(draft),response({'title_zh':'Invalid','summary':'Incomplete'})]):
+        with patch('summarize.urllib.request.urlopen',side_effect=[response(draft),response({'title_zh':'Invalid','summary':'Incomplete'}),response({'title_zh':'Invalid','summary':'Incomplete'})]):
             with self.assertRaises(ValueError):summarize('http://localhost',{'title':'Power management'},'news',evidence)
+
+    def test_english_title_is_retried_with_original_evidence(self):
+        invalid={'title_zh':'Introducing Astra for Law','summary':'这项更新提供专业领域的人工智能工具，支持定制工作流程与连接数据源，并为客户工作提供访问控制。'}
+        repaired={**invalid,'title_zh':'推出面向法律工作的 Astra'}
+        def response(result):
+            return io.BytesIO(json.dumps({'choices':[{'finish_reason':'stop','message':{'content':json.dumps(result)}}]}).encode())
+        source='Official source: a new professional workflow product.'
+        with patch('summarize.urllib.request.urlopen',side_effect=[response(invalid),response(repaired),response(repaired)]) as call:
+            self.assertEqual(summarize('http://localhost',{'title':'Introducing Astra for Law'},'news',source),repaired)
+            retry=json.loads(call.call_args_list[1].args[0].data)
+            self.assertIn(source,retry['messages'][1]['content'])
+            self.assertIn('不能直接照抄英文标题',retry['messages'][-1]['content'])
+            self.assertEqual(call.call_count,3)
+
+    def test_bad_news_is_deferred_but_paper_failure_stops_publication(self):
+        def item(name):
+            return {'title':name,'url':'https://example.com/'+name,'_source_text':'Prepared official source text.','_summary_source':'https://example.com/'+name}
+        brief={'title_zh':'一项新的研究进展','summary':'研究人员提出了一种新的方法，并在多个数据集上进行了评估，结果提供了新的比较依据，具体适用范围仍需结合原文判断。'}
+        for kind in ('news','papers'):
+            issue={'papers':[],'news':[],'notices':[]}
+            issue[kind]=[item('bad'),item('good')]
+            if kind=='papers':
+                for n,row in enumerate(issue[kind]):row['doi']=f'10.1/test-{n}'
+            with tempfile.TemporaryDirectory() as tmp, patch('summarize.CACHE',Path(tmp)), patch('summarize.local_model',return_value=nullcontext('http://localhost')), patch('summarize.summarize',side_effect=[SummaryError('Invalid Chinese'),brief]):
+                if kind=='papers':
+                    with self.assertRaises(SummaryError):enrich(issue,lambda _: '')
+                else:
+                    enrich(issue,lambda _: '')
+                    self.assertEqual([x['title'] for x in issue['news']],['good'])
+                    self.assertTrue(issue['notices'])
+                failures=json.loads((Path(tmp)/'failures.json').read_text())
+                self.assertEqual(failures[0]['title'],'bad')
+
+    def test_editorial_correction_does_not_depend_on_model_output(self):
+        row={'doi':'10.1038/s41467-025-65518-0','title':'Known paper','url':'https://doi.org/10.1038/s41467-025-65518-0','_source_text':'Cached source'}
+        issue={'papers':[row],'news':[]}
+        with tempfile.TemporaryDirectory() as tmp, patch('summarize.CACHE',Path(tmp)), patch('summarize.local_model') as model:
+            enrich(issue,lambda _: self.fail('Verified correction must not fetch again'))
+            model.assert_not_called()
+            self.assertIn('皮层脑电',row['summary'])
+            self.assertNotIn('_source_text',row)
 
     def test_reading_identity_survives_translation_and_tracking_changes(self):
         p=paper('10.1234/PAPER')
