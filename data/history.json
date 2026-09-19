@@ -156,6 +156,42 @@
         "url:https://doi.org/10.1093/molbev/msag117"
       ],
       "doi": "10.1093/molbev/msag117"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "Large language models as proxies for theories of human linguistic cognition",
+      "url": "https://doi.org/10.15398/jlm.457",
+      "keys": [
+        "doi:10.15398/jlm.457",
+        "title:largelanguagemodelsasproxiesfortheoriesofhumanlinguisticcognition",
+        "title:大型语言模型作为人类语言认知理论的代理模型",
+        "url:https://doi.org/10.15398/jlm.457"
+      ],
+      "doi": "10.15398/jlm.457"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "Re-evaluating Theory of Mind evaluation in large language models",
+      "url": "https://doi.org/10.1098/rstb.2023.0499",
+      "keys": [
+        "doi:10.1098/rstb.2023.0499",
+        "title:reevaluatingtheoryofmindevaluationinlargelanguagemodels",
+        "title:重新评估大语言模型的理论共情能力评价",
+        "url:https://doi.org/10.1098/rstb.2023.0499"
+      ],
+      "doi": "10.1098/rstb.2023.0499"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "Cancer statistics, 2026",
+      "url": "https://doi.org/10.3322/caac.70043",
+      "keys": [
+        "doi:10.3322/caac.70043",
+        "title:2026年癌症统计数据",
+        "title:cancerstatistics2026",
+        "url:https://doi.org/10.3322/caac.70043"
+      ],
+      "doi": "10.3322/caac.70043"
     }
   ],
   "news": [
@@ -399,6 +435,50 @@
         "title:proactivecyberdefenseforgovernmentsandenterprises",
         "title:政府和企业主动网络防御计划启动fairwind计划",
         "url:https://deepmind.google/blog/proactive-cyber-defense-for-governments-and-enterprises"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "keys": [
+        "title:partneringwithaccentureonembeddedevaluation",
+        "title:与埃森哲合作进行前沿人工智能独立评估",
+        "url:https://anthropic.com/news/accenture-embedded-evaluation"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+      "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
+      "keys": [
+        "title:nowwecanknoweverythinganddoanythingjensenhuangsaysatdreamforce",
+        "title:salesforce与nvidia在dreamforce介绍koacrm推理模型",
+        "url:https://blogs.nvidia.com/blog/jensen-huang-dreamforce"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "From Megawatts to Tokens: How NVIDIA Maximizes AI Factory Production",
+      "url": "https://blogs.nvidia.com/blog/from-megawatts-to-tokens-how-nvidia-maximizes-ai-factory-production/",
+      "keys": [
+        "title:frommegawattstotokenshownvidiamaximizesaifactoryproduction",
+        "title:nvidia分享ai数据中心电力优化的最新进展",
+        "url:https://blogs.nvidia.com/blog/from-megawatts-to-tokens-how-nvidia-maximizes-ai-factory-production"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-19",
+      "title": "Introducing agentic video understanding with Gemini",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "keys": [
+        "title:introducingagenticvideounderstandingwithgemini",
+        "title:推出gemini动态视频理解功能",
+        "url:https://deepmind.google/blog/introducing-agentic-video-in-gemini"
       ],
       "company": "Google DeepMind"
     }

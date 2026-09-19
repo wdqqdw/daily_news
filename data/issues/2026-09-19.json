@@ -1,0 +1,212 @@
+{
+  "date": "2026-09-19",
+  "generated_at": "2026-09-19T13:22:44+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models as proxies for theories of human linguistic cognition",
+      "doi": "10.15398/jlm.457",
+      "url": "https://doi.org/10.15398/jlm.457",
+      "journal": "Journal of Language Modelling",
+      "publisher": "Institute of Computer Science, Polish Academy of Sciences",
+      "published": "2026-04-13",
+      "authors": "Ziv et al.",
+      "citations": 2,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.15398%2Fjlm.457",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-19；来源：Crossref；引用数 2，距发表 159 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究探讨了当前大型语言模型（LLMs）在研究人类语言认知中的潜在作用。文章指出，这些模型可以作为相对语言中立的认知理论的代理，但在关键方面与当前的LLMs不同。研究展示了LLMs如何在两种类型的问题中提供帮助：一是验证目标理论是否能解释从特定语料库中获得的某种模式；二是比较目标理论是否使某种类型证实的模式比另一种类型未证实的模式更容易获得。然而，目前这种帮助的范围仍然有限。",
+      "tag": "认知与行为建模",
+      "ranking_score": 6.536,
+      "title_zh": "大型语言模型作为人类语言认知理论的代理模型",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.15398%2Fjlm.457",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Re-evaluating Theory of Mind evaluation in large language models",
+      "doi": "10.1098/rstb.2023.0499",
+      "url": "https://doi.org/10.1098/rstb.2023.0499",
+      "journal": "Philosophical Transactions of the Royal Society B: Biological Sciences",
+      "publisher": "The Royal Society",
+      "published": "2025-08-14",
+      "authors": "Hu et al.",
+      "citations": 12,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1098%2Frstb.2023.0499",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-19；来源：Crossref；引用数 12，距发表 401 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本文重新审视大语言模型（LLMs）的理论共情能力（ToM）评价，指出当前评价结果不一致的主要原因是对模型是否应匹配人类行为或其背后的计算缺乏明确性。文章还指出，当前评价可能偏离了“纯粹”的ToM能力测量，导致混淆。研究建议未来研究应关注ToM与实用沟通的关系。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.0182,
+      "title_zh": "重新评估大语言模型的理论共情能力评价",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1098%2Frstb.2023.0499",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Cancer statistics, 2026",
+      "doi": "10.3322/caac.70043",
+      "url": "https://doi.org/10.3322/caac.70043",
+      "journal": "CA: A Cancer Journal for Clinicians",
+      "publisher": "Wiley",
+      "published": "2026-01-13",
+      "authors": "Siegel et al.",
+      "citations": 386,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.3322%2Fcaac.70043",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 386 次引用，约 46.51 次 / 月。",
+      "evidence": "检索时间：2026-09-19；来源：Crossref；引用数 386，距发表 249 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "美国癌症协会估计，2026 年美国将新增约 211.49 万例癌症病例和约 62.61 万例癌症死亡。癌症死亡率持续下降，自 1991 年以来已避免 480 万例死亡，主要得益于吸烟减少、早期检测和治疗改善。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 17.6664,
+      "title_zh": "2026 年癌症统计数据",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.3322%2Fcaac.70043",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-18",
+      "title": "Partnering with Accenture on embedded evaluation",
+      "summary": "Anthropic与埃森哲合作，进行独立评估前沿人工智能，计划在未来五年内各自投资至少10亿美元。该合作将由埃森哲的专业AI业务Faculty领导，包括评估和红队测试模型、进行对齐评估和测试模型保护措施。",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "与埃森哲合作进行前沿人工智能独立评估",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-15",
+      "title": "‘Now We Can Know Everything and Do Anything,’ Jensen Huang Says at Dreamforce",
+      "summary": "两家公司介绍了面向 Agentforce 的 Koa：Salesforce 基于 NVIDIA Nemotron 3 Super，使用源于多年 CRM 业务经验的合成数据进行后训练，模型运行于 Salesforce 自有基础设施。黄仁勋在会上讨论了 AI 基础设施和产品安全，强调创新速度需要与安全保障并行。",
+      "url": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Salesforce 与 NVIDIA 在 Dreamforce 介绍 Koa CRM 推理模型",
+      "summary_source": "https://blogs.nvidia.com/blog/jensen-huang-dreamforce/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-15",
+      "title": "From Megawatts to Tokens: How NVIDIA Maximizes AI Factory Production",
+      "summary": "NVIDIA 介绍了数据中心在固定电力预算下提升效率、参与电网调度的方案。合作伙伴 Emerald AI 的 Conductor 按电网信号调整工作负载，保留高优先级任务；在另一项测试中，Lambda 使用 NVIDIA DSX MaxLPS 优化电力分配，官方称集群词元吞吐量在相同电力预算下提高24%。",
+      "url": "https://blogs.nvidia.com/blog/from-megawatts-to-tokens-how-nvidia-maximizes-ai-factory-production/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 分享 AI 数据中心电力优化的最新进展",
+      "summary_source": "https://blogs.nvidia.com/blog/from-megawatts-to-tokens-how-nvidia-maximizes-ai-factory-production/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "产品发布",
+      "published": "2026-09-01",
+      "title": "Introducing agentic video understanding with Gemini",
+      "summary": "谷歌推出了 Gemini 的新功能——动态视频理解，该功能通过动态扫描视频片段来提高准确性并降低词元消耗和成本，最高可达 88% 和 66%。",
+      "url": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "推出 Gemini 动态视频理解功能",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://deepmind.google/blog/introducing-agentic-video-in-gemini/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 44
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 25
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 443
+}
