@@ -30,6 +30,7 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/dna','Foundation models for human genomics',abstract='A transformer trained on DNA.'),2))
         self.assertTrue(relevant(paper('10.1/new','Using deep learning to predict human decision-making',abstract='We tested human choice predictions.'),2))
         self.assertFalse(relevant(paper('10.1/theory','Artificial Intelligence and the Psychology of Human Connection',abstract='This article introduces a middle-range theoretical framework and proposes a research agenda.'),2))
+        self.assertFalse(relevant(paper('10.1/forum','How AI is rewiring the human brain',abstract='This Open Forum paper develops a discussion framework for cognitive sovereignty.'),2))
         self.assertFalse(relevant(paper('10.1/clinical','Benchmark evaluation of DeepSeek large language models in clinical decision-making',abstract='We tested clinical accuracy on medical questions.'),1))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We assess AI performance in intuitive physics and visual benchmarks.'),2))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We compare visual cognition in LLMs with human performance.'),1))
@@ -278,5 +279,37 @@ class ReadingAndSummaryTests(unittest.TestCase):
         self.assertFalse(valid_chinese({'title_zh':'中文标题','summary':'太短'}))
         self.assertTrue(valid_chinese({'title_zh':'快速扩展在线存储以服务超过十亿用户','summary':'OpenAI将Habitat从一个Python库扩展为一个全球分布的存储平台，以服务超过10亿ChatGPT用户和每秒2200万次请求。'}))
         self.assertTrue(valid_chinese({'title_zh':'Qwen Code v0.24.0 发布','summary':'这次版本更新修复了任务恢复和会话管理的问题，并改进了网页预览与通知功能，具体变更见官方说明。'}))
+
+    def test_indexed_abstract_recovers_blocked_publisher_with_exact_doi(self):
+        abstract='Researchers compared language models with human brain responses during reading. '*5
+        calls=[]
+        def fetch(url):
+            calls.append(url)
+            if url.startswith('https://doi.org/'):raise OSError('Publisher unavailable')
+            return json.dumps({'resultList':{'result':[{'doi':'10.1234/paper','abstractText':'<p>'+abstract+'</p>'}]}})
+        text,url=source_text(paper('10.1234/PAPER'),'papers',fetch)
+        self.assertIn('human brain responses',text)
+        self.assertNotIn('<p>',text)
+        self.assertTrue(url.startswith('https://www.ebi.ac.uk/europepmc/'))
+        self.assertIn('resultType=core',url)
+        self.assertEqual(len(calls),2)
+
+    def test_indexed_abstract_rejects_other_doi_or_missing_text(self):
+        abstract='Researchers compared language models with human brain responses during reading. '*5
+        for records in ([{'doi':'10.1234/other','abstractText':abstract}],
+                        [{'doi':'10.1234/paper','abstractText':'A short title only.'}],[],
+                        [{'doi':'10.1234/paper'}]):
+            with self.subTest(records=records):
+                def fetch(url):
+                    if url.startswith('https://doi.org/'):return '<html>Login</html>'
+                    return json.dumps({'resultList':{'result':records}})
+                with self.assertRaises(ValueError):source_text(paper('10.1234/paper'),'papers',fetch)
+
+    def test_existing_abstract_does_not_request_fallback(self):
+        raw='Researchers compared language models with human brain responses during reading. '*5
+        row=paper('10.1234/paper',_source_text=raw,metadata_url='https://api.crossref.org/works/10.1234%2Fpaper')
+        text,url=source_text(row,'papers',lambda _: self.fail('No fetch needed'))
+        self.assertEqual(text,raw.strip())
+        self.assertEqual(url,row['metadata_url'])
 
 if __name__=='__main__':unittest.main()

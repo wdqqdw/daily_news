@@ -39,7 +39,7 @@ HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuro
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
-THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework)|narrative review|systematic review', re.I)
+THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework|argument)|discussion framework|open forum (?:paper|contribution)|narrative review|systematic review', re.I)
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', text or ''))).strip()
@@ -304,6 +304,10 @@ def generate(today):
       'AI human behaviour':lambda:crossref('artificial intelligence human cognition psychology behavior',today,days=365),
       'Human interaction':lambda:crossref('human artificial intelligence interaction experiment',today,days=365),
       'AI human cognition impact':lambda:crossref('language models human cognition behavior psychology',today,days=730,rows=180,sort='is-referenced-by-count'),
+      'LLM brain alignment':lambda:crossref('language models human brain alignment',today,rows=180),
+      'AI human decisions':lambda:crossref('machine learning human decision making behavior',today,rows=180),
+      'AI personality prediction':lambda:crossref('artificial intelligence personality psychology prediction',today,rows=180),
+      'Neural models of cognition':lambda:crossref('deep learning human brain cognition',today,rows=180),
       'Cross-discipline annual citations':lambda:crossref('',today,days=365,rows=200,sort='is-referenced-by-count'),
       'Cross-discipline recent citations':lambda:crossref('',today,days=90,rows=150,sort='is-referenced-by-count'),
     }
@@ -341,6 +345,10 @@ def generate(today):
                 if item['doi'] not in prepared:
                     prepared[item['doi']]=source_text(item,'papers',fetch)
                 text,url=prepared[item['doi']]
+                if THEORY_ONLY.search(text):
+                    unavailable.append(item)
+                    print('Skipping non-empirical paper identified from abstract: '+item['title'],flush=True)
+                    continue
                 item['_source_text']=text
                 item['_summary_source']=url
             except ValueError:

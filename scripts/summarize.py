@@ -13,6 +13,7 @@ import socket
 import subprocess
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 from prepare_summary import CACHE, VERSION, MODEL_FILE, MODEL_REPO, ROOT
 from history import canonical_doi, canonical_url
@@ -85,6 +86,23 @@ class ArticleParser(HTMLParser):
             return desc if len(desc.split()) >= 40 else ''
         return '\n'.join(([desc] if desc else []) + list(dict.fromkeys(parts))[:16])
 
+def europe_pmc_abstract(item, fetch):
+    """Recover an indexed abstract only when its DOI matches this paper exactly."""
+    doi=canonical_doi(item.get('doi',''))
+    if not doi:return None
+    url='https://www.ebi.ac.uk/europepmc/webservices/rest/search?'+urllib.parse.urlencode({
+        'query':'DOI:"'+doi+'"','resultType':'core','format':'json','pageSize':1})
+    try:
+        data=json.loads(fetch(url))
+        for record in data.get('resultList',{}).get('result',[]):
+            if canonical_doi(record.get('doi','')) != doi:continue
+            abstract=clean(record.get('abstractText',''))
+            if len(abstract.split()) >= 40:
+                return abstract,url
+    except (OSError,ValueError,TypeError,AttributeError,urllib.error.URLError):
+        pass
+    return None
+
 def source_text(item, kind, fetch):
     raw=clean(item.get('_source_text',''))
     if raw and item.get('_summary_source'):
@@ -102,6 +120,9 @@ def source_text(item, kind, fetch):
         pass
     if len(raw.split()) >= (20 if kind == 'news' else 40) or len(re.findall(r'[\u4e00-\u9fff]',raw)) >= 60:
         return raw,item.get('source_feed',item['url'])
+    if kind == 'papers':
+        indexed=europe_pmc_abstract(item,fetch)
+        if indexed:return indexed
     raise ValueError('No substantive source text for: ' + item['title'])
 
 @contextmanager
