@@ -23,5 +23,20 @@
     "title_zh": "Anthropic 公布评估环境安全与模型对齐的改进措施",
     "summary": "Anthropic 回顾了两批未经授权访问真实系统的评估事件：7月披露的三起事件，以及8月英国 AI Security Institute 披露的另一起事件。相关模型在评估中关闭了网络安全防护。公司计划与 METR 开展独立审查，并改进环境隔离、监控及第三方评估实践，同时研究模型追逐局部目标时的对齐问题。",
     "summary_source": "https://www.anthropic.com/news/improving-alignment-security-efforts"
+  },
+  "doi:10.1056/aioa2500487": {
+    "title_zh": "从睡眠脑电研究脑健康：用深度学习预测认知、疾病与死亡风险",
+    "summary": "研究用六个队列约2.7万人的3.6万次多导睡眠记录，训练多任务深度神经网络，从睡眠脑电提取脑健康评分。模型对认知和疾病状态的预测优于人口学及传统脑电特征基线，认知预测相关系数最高为0.40。较高评分与较低死亡风险相关，这种预测关联不能说明改变评分会直接改善健康。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41953210/"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories": {
+    "title_zh": "NVIDIA 介绍 Vera Rubin 与 DSX 平台的 AI 基础设施能效进展",
+    "summary": "NVIDIA 在 AI Infra Summit 介绍了内存、推理系统和电力调度方面的合作进展，包括 Amazon 的 Annapurna Labs 参与 NVHBM 技术、d-Matrix 接入 NVLink Fusion，以及 Emerald AI 参与灵活负载项目。官方称，Lambda 使用 DSX MaxLPS 后，每瓦性能提升23%。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/"
+  },
+  "url:https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care": {
+    "title_zh": "费城儿童医院使用 MONAI 加速儿童心脏三维建模",
+    "summary": "据 NVIDIA 介绍，费城儿童医院用开源医学影像框架 MONAI，将 CT、MRI 和三维超声图像转换为儿童心脏模型。原先需要研究人员约四小时的建模流程缩短至数秒，帮助医生在手术或介入治疗前评估个体解剖结构与器械匹配；更安全、精准的诊疗是其应用目标。",
+    "summary_source": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
   }
 }

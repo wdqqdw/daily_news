@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generated_at": "2026-09-20T09:59:10+08:00",
+  "generated_at": "2026-09-20T10:03:23+08:00",
   "label": "DAILY EDITION",
   "papers": [
     {
@@ -29,27 +29,26 @@
     },
     {
       "type": "journal-article",
-      "title": "Explainable Artificial Intelligence (XAI) towards Model Personality in NLP task",
-      "doi": "10.12962/j23378557.v7i1.a8989",
-      "url": "https://doi.org/10.12962/j23378557.v7i1.a8989",
-      "journal": "IPTEK The Journal of Engineering",
-      "publisher": "Lembaga Penelitian dan Pengabdian kepada Masyarakat ITS",
-      "published": "2025-09-02",
-      "authors": "Nurdin et al.",
-      "citations": 6,
+      "title": "Brain Health from Sleep EEG: A Multicohort, Deep Learning Biomarker for Cognition, Disease, and Mortality",
+      "doi": "10.1056/aioa2500487",
+      "url": "https://doi.org/10.1056/aioa2500487",
+      "journal": "NEJM AI",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2026-02-26",
+      "authors": "Ganglberger et al.",
+      "citations": 7,
       "metadata_source": "Crossref",
-      "metadata_url": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Faioa2500487",
       "slot": 2,
       "freshness": "延伸阅读 · 较早发表",
-      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
-      "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 6，距发表 383 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "研究提出了两种用于情感分析的模型：简单的双向LSTM和复杂的Bi-GRU-LSTM-CNN，并使用三种不同的XAI方法（LIME、SHAP和Anchor）进行分析，证明了XAI可以帮助理解并区分模型的个性和行为。",
+      "reason": "基于真实人类睡眠脑电，用深度学习研究认知表现、疾病状态与死亡风险。",
+      "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 7，距发表 206 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。 巡检修订：已核对 PubMed 的公开摘要，替换主题不符的模型行为研究。",
+      "summary": "研究用六个队列约2.7万人的3.6万次多导睡眠记录，训练多任务深度神经网络，从睡眠脑电提取脑健康评分。模型对认知和疾病状态的预测优于人口学及传统脑电特征基线，认知预测相关系数最高为0.40。较高评分与较低死亡风险相关，这种预测关联不能说明改变评分会直接改善健康。",
       "tag": "研究人的人工智能工作",
-      "ranking_score": 7.195,
-      "title_zh": "可解释的人工智能（XAI）在自然语言处理任务中的模型个性研究",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "ranking_score": 9.1935,
+      "title_zh": "从睡眠脑电研究脑健康：用深度学习预测认知、疾病与死亡风险",
+      "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41953210/",
+      "summary_method": "人工核对公开原文"
     },
     {
       "type": "journal-article",
@@ -108,31 +107,30 @@
       "kind": "研究 / 公司动态",
       "published": "2026-09-15",
       "title": "AI Infra Summit: NVIDIA Vera Rubin and DSX Platform Advancements Showcase Energy Efficiencies of Optimizing Tokens Per Watt for AI Factories",
-      "summary": "NVIDIA 在 AI 基础设施峰会上展示了其 Vera Rubin 和 DSX 平台的能效优化成果，通过优化每瓦词元，提高能源效率。Lambda 公司通过使用 NVIDIA DSX MaxLPS 提升了每瓦性能 23%。",
+      "summary": "NVIDIA 在 AI Infra Summit 介绍了内存、推理系统和电力调度方面的合作进展，包括 Amazon 的 Annapurna Labs 参与 NVHBM 技术、d-Matrix 接入 NVLink Fusion，以及 Emerald AI 参与灵活负载项目。官方称，Lambda 使用 DSX MaxLPS 后，每瓦性能提升23%。",
       "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
       "source_feed": "https://blogs.nvidia.com/feed/",
-      "title_zh": "NVIDIA 在 AI 基础设施峰会上展示 Vera Rubin 和 DSX 平台的能效优化成果",
-      "summary_method": "AI 根据官方公告整理",
-      "summary_source": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "NVIDIA 介绍 Vera Rubin 与 DSX 平台的 AI 基础设施能效进展",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/"
     },
     {
       "company": "NVIDIA",
       "kind": "研究 / 公司动态",
       "published": "2026-09-15",
       "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
-      "summary": "儿童医院利用开源AI工具MONAI在几秒内建模儿童心脏，以提供更安全精确的先天性心脏病治疗。通过机器学习，该医院能够快速生成高质量的心脏模型，取代过去需要数小时的工作。",
+      "summary": "据 NVIDIA 介绍，费城儿童医院用开源医学影像框架 MONAI，将 CT、MRI 和三维超声图像转换为儿童心脏模型。原先需要研究人员约四小时的建模流程缩短至数秒，帮助医生在手术或介入治疗前评估个体解剖结构与器械匹配；更安全、精准的诊疗是其应用目标。",
       "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
       "source_feed": "https://blogs.nvidia.com/feed/",
-      "title_zh": "心脏建模：儿童医院利用开源NVIDIA AI进行心脏模型以提供更安全精确的治疗",
-      "summary_method": "AI 根据官方公告整理",
-      "summary_source": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "费城儿童医院使用 MONAI 加速儿童心脏三维建模",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
     }
   ],
   "notices": [
     "有 1 条新动态缺少可用原文，暂未收录。",
-    "本期有 2 个来源暂时不可用，内容来自其余可用来源。"
+    "本期有 2 个来源暂时不可用，内容来自其余可用来源。",
+    "第二篇已修订为研究人的睡眠脑电与认知的论文；修订前条目保留在历史记录中，不再推送。"
   ],
   "sources": [
     {
@@ -231,5 +229,35 @@
       "items": 0
     }
   ],
-  "candidate_count": 685
+  "candidate_count": 685,
+  "previous_items": {
+    "papers": [
+      {
+        "type": "journal-article",
+        "title": "Explainable Artificial Intelligence (XAI) towards Model Personality in NLP task",
+        "doi": "10.12962/j23378557.v7i1.a8989",
+        "url": "https://doi.org/10.12962/j23378557.v7i1.a8989",
+        "journal": "IPTEK The Journal of Engineering",
+        "publisher": "Lembaga Penelitian dan Pengabdian kepada Masyarakat ITS",
+        "published": "2025-09-02",
+        "authors": "Nurdin et al.",
+        "citations": 6,
+        "metadata_source": "Crossref",
+        "metadata_url": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
+        "slot": 2,
+        "freshness": "延伸阅读 · 较早发表",
+        "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+        "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 6，距发表 383 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+        "summary": "研究提出了两种用于情感分析的模型：简单的双向LSTM和复杂的Bi-GRU-LSTM-CNN，并使用三种不同的XAI方法（LIME、SHAP和Anchor）进行分析，证明了XAI可以帮助理解并区分模型的个性和行为。",
+        "tag": "研究人的人工智能工作",
+        "ranking_score": 7.195,
+        "title_zh": "可解释的人工智能（XAI）在自然语言处理任务中的模型个性研究",
+        "summary_method": "AI 根据公开摘要整理",
+        "summary_source": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
+        "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      }
+    ]
+  },
+  "initial_generated_at": "2026-09-20T09:59:10+08:00",
+  "revised_at": "2026-09-20T10:03:23+08:00"
 }

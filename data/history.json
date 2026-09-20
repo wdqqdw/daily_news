@@ -228,6 +228,18 @@
         "url:https://doi.org/10.1126/science.adw8780"
       ],
       "doi": "10.1126/science.adw8780"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Brain Health from Sleep EEG: A Multicohort, Deep Learning Biomarker for Cognition, Disease, and Mortality",
+      "url": "https://doi.org/10.1056/aioa2500487",
+      "keys": [
+        "doi:10.1056/aioa2500487",
+        "title:brainhealthfromsleepeegamulticohortdeeplearningbiomarkerforcognitiondiseaseandmortality",
+        "title:从睡眠脑电研究脑健康用深度学习预测认知疾病与死亡风险",
+        "url:https://doi.org/10.1056/aioa2500487"
+      ],
+      "doi": "10.1056/aioa2500487"
     }
   ],
   "news": [
@@ -546,6 +558,7 @@
       "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
       "keys": [
         "title:aiinfrasummitnvidiaverarubinanddsxplatformadvancementsshowcaseenergyefficienciesofoptimizingtokensperwattforaifactories",
+        "title:nvidia介绍verarubin与dsx平台的ai基础设施能效进展",
         "title:nvidia在ai基础设施峰会上展示verarubin和dsx平台的能效优化成果",
         "url:https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories"
       ],
@@ -558,6 +571,7 @@
       "keys": [
         "title:heartofthematterhowamajorchildrenshospitalusesopensourcenvidiaaiforcardiaccare",
         "title:心脏建模儿童医院利用开源nvidiaai进行心脏模型以提供更安全精确的治疗",
+        "title:费城儿童医院使用monai加速儿童心脏三维建模",
         "url:https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care"
       ],
       "company": "NVIDIA"

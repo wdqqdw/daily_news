@@ -7,11 +7,12 @@ from pathlib import Path
 import sys
 import tempfile
 import unittest
+import urllib.error
 from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
-from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date
+from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
 from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections, enrich, SummaryError
 
@@ -31,6 +32,9 @@ class SelectionTests(unittest.TestCase):
         self.assertTrue(relevant(paper('10.1/new','Using deep learning to predict human decision-making',abstract='We tested human choice predictions.'),2))
         self.assertFalse(relevant(paper('10.1/theory','Artificial Intelligence and the Psychology of Human Connection',abstract='This article introduces a middle-range theoretical framework and proposes a research agenda.'),2))
         self.assertFalse(relevant(paper('10.1/forum','How AI is rewiring the human brain',abstract='This Open Forum paper develops a discussion framework for cognitive sovereignty.'),2))
+        self.assertFalse(relevant(paper('10.1/model','Explainable Artificial Intelligence (XAI) towards Model Personality in NLP task',abstract='We study model personality with LIME and SHAP in sentiment analysis.'),2))
+        self.assertFalse(relevant(paper('10.1/model','Personality in large language models',abstract='We assess personality traits of artificial agents.'),1))
+        self.assertTrue(relevant(paper('10.1/person','Large language models predict human personality',abstract='We predict personality scores from human participants.'),2))
         self.assertFalse(relevant(paper('10.1/clinical','Benchmark evaluation of DeepSeek large language models in clinical decision-making',abstract='We tested clinical accuracy on medical questions.'),1))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We assess AI performance in intuitive physics and visual benchmarks.'),2))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We compare visual cognition in LLMs with human performance.'),1))
@@ -78,6 +82,21 @@ class SelectionTests(unittest.TestCase):
         self.assertIsNone(normalize_work(raw,TODAY))
         raw['published']={'date-parts':[[2026,9]]}
         self.assertIsNone(normalize_work(raw,TODAY))
+
+class NetworkTests(unittest.TestCase):
+    def test_rate_limit_uses_bounded_retry_after(self):
+        for retry,delay in [('17',17),('9999',60),('',10)]:
+            error=urllib.error.HTTPError('https://api.crossref.org/works',429,'Rate limit',{'Retry-After':retry},None)
+            with self.subTest(retry=retry),patch('update.urllib.request.urlopen',side_effect=[error,io.BytesIO(b'ok')]),patch('update.time.sleep') as sleep:
+                self.assertEqual(fetch('https://api.crossref.org/works'),'ok')
+                sleep.assert_called_once_with(delay)
+
+    def test_persistent_rate_limit_stops_after_bounded_retries(self):
+        error=urllib.error.HTTPError('https://api.crossref.org/works',429,'Rate limit',{},None)
+        with patch('update.urllib.request.urlopen',side_effect=error) as request,patch('update.time.sleep') as sleep:
+            with self.assertRaises(urllib.error.HTTPError):fetch('https://api.crossref.org/works')
+            self.assertEqual(request.call_count,4)
+            self.assertEqual([c.args[0] for c in sleep.call_args_list],[10,20,40])
 
 class ParsingTests(unittest.TestCase):
     def test_rss_filters_future_and_stale_items(self):

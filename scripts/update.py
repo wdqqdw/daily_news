@@ -15,6 +15,7 @@ import json
 import math
 from pathlib import Path
 import re
+import threading
 import time
 import urllib.error
 import urllib.parse
@@ -28,6 +29,7 @@ from summarize import enrich, source_text, apply_editorial_corrections
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
+CROSSREF_SLOTS = threading.BoundedSemaphore(2)
 BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus statement|guideline|reply to|comment on|news and views)(\b|:)', re.I)
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT|foundation model\w*)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
@@ -36,6 +38,7 @@ MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory 
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|brain.guided|social behavio\w*)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind)\b',re.I)
+MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
@@ -54,12 +57,23 @@ def excerpt(text, words=24):
 
 def fetch(url):
     request = urllib.request.Request(url, headers={'User-Agent':USER_AGENT, 'Accept':'application/json, application/xml, text/html;q=0.9, */*;q=0.8'})
-    for attempt in range(3):
+    for attempt in range(4):
         try:
             with urllib.request.urlopen(request, timeout=35) as r:
                 return r.read(12_000_000).decode('utf-8', errors='replace')
+        except urllib.error.HTTPError as error:
+            if attempt == 3:raise
+            delay=2 ** attempt
+            if error.code == 429:
+                retry=error.headers.get('Retry-After','') if error.headers else ''
+                try:delay=float(retry)
+                except ValueError:
+                    try:delay=parsedate_to_datetime(retry).timestamp()-time.time()
+                    except (ValueError,TypeError,OverflowError):delay=10 * 2 ** attempt
+                delay=max(10,min(delay,60))
+            time.sleep(delay)
         except (urllib.error.URLError, TimeoutError, OSError):
-            if attempt == 2:
+            if attempt == 3:
                 raise
             time.sleep(2 ** attempt)
 
@@ -71,7 +85,8 @@ def crossref(query, today, days=730, rows=120, sort=None):
     if sort:
         params.update({'sort':sort,'order':'desc'})
     url = 'https://api.crossref.org/works?' + urllib.parse.urlencode(params)
-    items = json.loads(fetch(url))['message']['items']
+    with CROSSREF_SLOTS:
+        items = json.loads(fetch(url))['message']['items']
     return [p for x in items if (p := normalize_work(x, today))]
 
 def normalize_work(x, today):
@@ -116,6 +131,7 @@ def is_nsc(p):
 def relevant(p, slot):
     title = p['title']
     if BAD_TITLE.search(title): return False
+    if slot in (1,2) and MODEL_PERSONALITY.search(title):return False
     if THEORY_ONLY.search(p.get('abstract','')):return False
     if slot == 1:
         # Require cognition/people in title, LLM signal in title or abstract.
