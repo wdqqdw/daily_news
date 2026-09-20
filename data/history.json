@@ -192,6 +192,42 @@
         "url:https://doi.org/10.3322/caac.70043"
       ],
       "doi": "10.3322/caac.70043"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Increasing alignment of large language models with language processing in the human brain",
+      "url": "https://doi.org/10.1038/s43588-025-00863-0",
+      "keys": [
+        "doi:10.1038/s43588-025-00863-0",
+        "title:increasingalignmentoflargelanguagemodelswithlanguageprocessinginthehumanbrain",
+        "title:大型语言模型与人类大脑语言处理的对齐增强研究",
+        "url:https://doi.org/10.1038/s43588-025-00863-0"
+      ],
+      "doi": "10.1038/s43588-025-00863-0"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Explainable Artificial Intelligence (XAI) towards Model Personality in NLP task",
+      "url": "https://doi.org/10.12962/j23378557.v7i1.a8989",
+      "keys": [
+        "doi:10.12962/j23378557.v7i1.a8989",
+        "title:explainableartificialintelligencexaitowardsmodelpersonalityinnlptask",
+        "title:可解释的人工智能xai在自然语言处理任务中的模型个性研究",
+        "url:https://doi.org/10.12962/j23378557.v7i1.a8989"
+      ],
+      "doi": "10.12962/j23378557.v7i1.a8989"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Homogenized chlorine distribution for >27% power conversion efficiency in perovskite solar cells",
+      "url": "https://doi.org/10.1126/science.adw8780",
+      "keys": [
+        "doi:10.1126/science.adw8780",
+        "title:homogenizedchlorinedistributionfor27powerconversionefficiencyinperovskitesolarcells",
+        "title:通过引入碱金属草酸盐实现氯分布均匀化以提高钙钛矿太阳能电池的转换效率至272",
+        "url:https://doi.org/10.1126/science.adw8780"
+      ],
+      "doi": "10.1126/science.adw8780"
     }
   ],
   "news": [
@@ -481,6 +517,50 @@
         "url:https://deepmind.google/blog/introducing-agentic-video-in-gemini"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Qwen Code · Release v0.24.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.1",
+      "keys": [
+        "title:qwencodereleasev0241",
+        "title:qwencode发布v0241版本",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.1"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "keys": [
+        "title:introducingtheaustralianyouthsafetyblueprint",
+        "title:介绍澳大利亚青年安全蓝图",
+        "url:https://openai.com/index/australian-youth-safety-blueprint"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "AI Infra Summit: NVIDIA Vera Rubin and DSX Platform Advancements Showcase Energy Efficiencies of Optimizing Tokens Per Watt for AI Factories",
+      "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "keys": [
+        "title:aiinfrasummitnvidiaverarubinanddsxplatformadvancementsshowcaseenergyefficienciesofoptimizingtokensperwattforaifactories",
+        "title:nvidia在ai基础设施峰会上展示verarubin和dsx平台的能效优化成果",
+        "url:https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-20",
+      "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+      "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
+      "keys": [
+        "title:heartofthematterhowamajorchildrenshospitalusesopensourcenvidiaaiforcardiaccare",
+        "title:心脏建模儿童医院利用开源nvidiaai进行心脏模型以提供更安全精确的治疗",
+        "url:https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }

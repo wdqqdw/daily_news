@@ -1,0 +1,235 @@
+{
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T09:59:10+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Increasing alignment of large language models with language processing in the human brain",
+      "doi": "10.1038/s43588-025-00863-0",
+      "url": "https://doi.org/10.1038/s43588-025-00863-0",
+      "journal": "Nature Computational Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-09-16",
+      "authors": "Gao et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs43588-025-00863-0",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 16，距发表 369 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本研究比较了不同规模的基础和指令调优大型语言模型（LLM）与自然阅读过程中通过眼动追踪和功能性磁共振成像测量的人类行为和大脑活动。研究发现，仅仅使LLM更大就能使其更接近人类大脑的语言处理模式，而通过指令微调则未能显著改善。",
+      "tag": "认知与行为建模",
+      "ranking_score": 10.8858,
+      "title_zh": "大型语言模型与人类大脑语言处理的对齐增强研究",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs43588-025-00863-0%22&resultType=core&format=json&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Explainable Artificial Intelligence (XAI) towards Model Personality in NLP task",
+      "doi": "10.12962/j23378557.v7i1.a8989",
+      "url": "https://doi.org/10.12962/j23378557.v7i1.a8989",
+      "journal": "IPTEK The Journal of Engineering",
+      "publisher": "Lembaga Penelitian dan Pengabdian kepada Masyarakat ITS",
+      "published": "2025-09-02",
+      "authors": "Nurdin et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 6，距发表 383 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出了两种用于情感分析的模型：简单的双向LSTM和复杂的Bi-GRU-LSTM-CNN，并使用三种不同的XAI方法（LIME、SHAP和Anchor）进行分析，证明了XAI可以帮助理解并区分模型的个性和行为。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 7.195,
+      "title_zh": "可解释的人工智能（XAI）在自然语言处理任务中的模型个性研究",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.12962%2Fj23378557.v7i1.a8989",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Homogenized chlorine distribution for >27% power conversion efficiency in perovskite solar cells",
+      "doi": "10.1126/science.adw8780",
+      "url": "https://doi.org/10.1126/science.adw8780",
+      "journal": "Science",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "published": "2025-11-06",
+      "authors": "Xiong et al.",
+      "citations": 451,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1126%2Fscience.adw8780",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 451 次引用，约 42.55 次 / 月。",
+      "evidence": "检索时间：2026-09-20；来源：Crossref；引用数 451，距发表 318 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究发现钙钛矿薄膜中卤素分布的空间异质性是限制太阳能电池转换效率和稳定性的关键因素。通过引入碱金属草酸盐，有效均匀化了氯分布，显著抑制了表面缺陷并消除了界面障碍，实现了27.2%的认证稳态转换效率。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 17.5207,
+      "title_zh": "通过引入碱金属草酸盐实现氯分布均匀化以提高钙钛矿太阳能电池的转换效率至27.2%",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1126%2Fscience.adw8780",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-19",
+      "title": "Qwen Code · Release v0.24.1",
+      "summary": "Qwen Code 发布了 v0.24.1 版本，包含多项新功能和改进。主要更新包括：让代理可以限制子代理到显式工具允许列表，支持可配置的 Mem0 提供者，以及改进了 Web Shell 的压缩显示。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.1",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.24.1 版本",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "安全 / 报告",
+      "published": "2026-09-18",
+      "title": "Introducing the Australian Youth Safety Blueprint",
+      "summary": "OpenAI 推出了澳大利亚青年安全蓝图，这是一个六支柱的路线图，旨在为年轻用户提供更安全的AI体验，保护并赋能他们。",
+      "url": "https://openai.com/index/australian-youth-safety-blueprint",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "介绍澳大利亚青年安全蓝图",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-15",
+      "title": "AI Infra Summit: NVIDIA Vera Rubin and DSX Platform Advancements Showcase Energy Efficiencies of Optimizing Tokens Per Watt for AI Factories",
+      "summary": "NVIDIA 在 AI 基础设施峰会上展示了其 Vera Rubin 和 DSX 平台的能效优化成果，通过优化每瓦词元，提高能源效率。Lambda 公司通过使用 NVIDIA DSX MaxLPS 提升了每瓦性能 23%。",
+      "url": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 在 AI 基础设施峰会上展示 Vera Rubin 和 DSX 平台的能效优化成果",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-infra-summit-vera-rubin-dsx-energy-efficiencies-tokens-per-watt-ai-factories/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-15",
+      "title": "Heart of the Matter: How a Major Children’s Hospital Uses Open Source NVIDIA AI for Cardiac Care",
+      "summary": "儿童医院利用开源AI工具MONAI在几秒内建模儿童心脏，以提供更安全精确的先天性心脏病治疗。通过机器学习，该医院能够快速生成高质量的心脏模型，取代过去需要数小时的工作。",
+      "url": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "心脏建模：儿童医院利用开源NVIDIA AI进行心脏模型以提供更安全精确的治疗",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。",
+    "本期有 2 个来源暂时不可用，内容来自其余可用来源。"
+  ],
+  "sources": [
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human interaction",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 25
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 685
+}
