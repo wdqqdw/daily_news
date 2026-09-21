@@ -12,7 +12,9 @@ from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
-from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch
+from update import clean as clean_metadata, human_research_source
+from summarize import clean as clean_summary
+from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, HUMAN_DATA
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
 from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections, enrich, SummaryError
 
@@ -84,6 +86,58 @@ class SelectionTests(unittest.TestCase):
         self.assertIsNone(normalize_work(raw,TODAY))
 
 class NetworkTests(unittest.TestCase):
+    def test_cleaning_preserves_comparisons_and_following_safety_results(self):
+        raw='<p>Survival improved (P<0.001). Grade 3 events: 30%.</p><h4>Conclusion</h4><p>Benefit was observed.</p>'
+        for clean in (clean_metadata,clean_summary):
+            text=clean(raw)
+            self.assertIn('P<0.001',text)
+            self.assertIn('Grade 3 events: 30%',text)
+            self.assertIn('Benefit was observed.',text)
+            self.assertNotIn('<p>',text)
+            self.assertEqual(clean(text),text)
+
+    def test_indexed_discovery_verifies_doi_and_preserves_abstract(self):
+        abstract='We analyzed human choices from participants using language models to predict individual decisions. '*5
+        row={'doi':'10.1234/indexed','title':'Language models predict human cognition','abstractText':abstract,'pubTypeList':{'pubType':['Journal Article']}}
+        work={'DOI':row['doi'],'type':'journal-article','title':[row['title']], 'container-title':['Nature Human Behaviour'],'publisher':'Springer Nature','published':{'date-parts':[[2026,7,1]]},'is-referenced-by-count':8}
+        def source(url):
+            return json.dumps({'message':work} if 'api.crossref.org' in url else {'resultList':{'result':[row]}})
+        with patch('update.fetch',side_effect=source):
+            rows=europe_pmc_candidates('human cognition',TODAY,set())
+        self.assertEqual(len(rows),1)
+        self.assertEqual(rows[0]['citations'],8)
+        self.assertEqual(rows[0]['abstract'],abstract.strip())
+        self.assertIn('europepmc',rows[0]['abstract_source'])
+        def intermittent(url):
+            if 'sort_date%3Ay' in url:raise OSError('Temporary search disconnect')
+            return source(url)
+        with patch('update.fetch',side_effect=intermittent):
+            self.assertEqual(len(europe_pmc_candidates('human cognition',TODAY,set())),1)
+        work['DOI']='10.1234/wrong'
+        with patch('update.fetch',side_effect=source):
+            self.assertEqual(europe_pmc_candidates('human cognition',TODAY,set()),[])
+
+    def test_indexed_discovery_skips_reviews_and_seen_records(self):
+        abstract='We analyzed human choices from participants using language models to predict individual decisions. '*5
+        rows=[{'doi':'10.1234/review','title':'Language models predict human cognition','abstractText':abstract,'pubTypeList':{'pubType':['Review','Journal Article']}},
+              {'doi':'10.1234/seen','title':'Language models predict human cognition','abstractText':abstract,'pubTypeList':{'pubType':['Journal Article']}}]
+        with patch('update.fetch',return_value=json.dumps({'resultList':{'result':rows}})) as source:
+            self.assertEqual(europe_pmc_candidates('cognition',TODAY,{'doi:10.1234/seen'}),[])
+        self.assertTrue(all('europepmc' in c.args[0] for c in source.call_args_list))
+
+    def test_source_merge_keeps_indexed_evidence_in_either_completion_order(self):
+        indexed=paper('10.1/a',abstract='Human participants completed the experiment.',abstract_source='https://europepmc.org/article/MED/123',publication_types=['Journal Article'])
+        empty=paper('10.1/a',abstract='')
+        for rows in ([indexed,empty],[empty,indexed]):
+            merged=merge_paper_sources(rows)
+            self.assertEqual(len(merged),1)
+            self.assertEqual(merged[0]['abstract'],indexed['abstract'])
+            self.assertEqual(merged[0]['abstract_source'],indexed['abstract_source'])
+        self.assertFalse(relevant(paper('10.1/p',publication_types=['Perspective']),1))
+        self.assertFalse(HUMAN_DATA.search('We chart metaphors of machine cognition and propose a philosophical framework.'))
+        self.assertTrue(HUMAN_DATA.search('We analyze neural datasets to predict brain responses.'))
+        self.assertFalse(human_research_source('We use large language models (LLMs) as test subjects. Results mirror earlier studies with human participants.'))
+
     def test_rate_limit_uses_bounded_retry_after(self):
         for retry,delay in [('17',17),('9999',60),('',10)]:
             error=urllib.error.HTTPError('https://api.crossref.org/works',429,'Rate limit',{'Retry-After':retry},None)

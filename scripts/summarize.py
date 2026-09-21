@@ -34,7 +34,7 @@ def apply_editorial_corrections(issue):
     return issue
 
 def clean(text):
-    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', text or ''))).strip()
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
 
 class ArticleParser(HTMLParser):
     """Collect article paragraphs and metadata, excluding navigation and scripts."""

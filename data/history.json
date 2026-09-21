@@ -240,6 +240,42 @@
         "url:https://doi.org/10.1056/aioa2500487"
       ],
       "doi": "10.1056/aioa2500487"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Spurious alignment between large language models and brains can emerge from non-robust methods and overlooked confounds",
+      "url": "https://doi.org/10.1038/s41467-026-72253-7",
+      "keys": [
+        "doi:10.1038/s41467-026-72253-7",
+        "title:spuriousalignmentbetweenlargelanguagemodelsandbrainscanemergefromnonrobustmethodsandoverlookedconfounds",
+        "title:大语言模型与人脑的部分对齐可能来自方法和混杂因素",
+        "url:https://doi.org/10.1038/s41467-026-72253-7"
+      ],
+      "doi": "10.1038/s41467-026-72253-7"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Predicting human decisions with behavioural theories and machine learning",
+      "url": "https://doi.org/10.1038/s41562-025-02267-6",
+      "keys": [
+        "doi:10.1038/s41562-025-02267-6",
+        "title:predictinghumandecisionswithbehaviouraltheoriesandmachinelearning",
+        "title:结合行为理论与机器学习预测人在风险和不确定性下的决策",
+        "url:https://doi.org/10.1038/s41562-025-02267-6"
+      ],
+      "doi": "10.1038/s41562-025-02267-6"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Daraxonrasib or Chemotherapy in Previously Treated Metastatic Pancreatic Cancer",
+      "url": "https://doi.org/10.1056/nejmoa2605555",
+      "keys": [
+        "doi:10.1056/nejmoa2605555",
+        "title:daraxonrasiborchemotherapyinpreviouslytreatedmetastaticpancreaticcancer",
+        "title:daraxonrasib与化疗治疗既往经治转移性胰腺癌的三期比较",
+        "url:https://doi.org/10.1056/nejmoa2605555"
+      ],
+      "doi": "10.1056/nejmoa2605555"
     }
   ],
   "news": [
@@ -573,6 +609,39 @@
         "title:心脏建模儿童医院利用开源nvidiaai进行心脏模型以提供更安全精确的治疗",
         "title:费城儿童医院使用monai加速儿童心脏三维建模",
         "url:https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Qwen Code · Release v0.24.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2",
+      "keys": [
+        "title:qwencodereleasev0242",
+        "title:qwencode发布v0242改进远程工作区与浏览器会话",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
+      "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+      "keys": [
+        "title:perplexityportablecomputerisnowavailableonwindowspoweredbynvidiartx",
+        "title:perplexityportablecomputer支持windowsrtx电脑运行本地智能体",
+        "url:https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-21",
+      "title": "Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video",
+      "url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+      "keys": [
+        "title:skildais1用单个视频示范学习机器人新任务",
+        "title:skildaitapsnvidiaphysicalaitoteachrobotsnewtasksfromasinglevideo",
+        "url:https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai"
       ],
       "company": "NVIDIA"
     }

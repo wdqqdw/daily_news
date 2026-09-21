@@ -1,0 +1,238 @@
+{
+  "date": "2026-09-21",
+  "generated_at": "2026-09-21T09:52:35+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Spurious alignment between large language models and brains can emerge from non-robust methods and overlooked confounds",
+      "doi": "10.1038/s41467-026-72253-7",
+      "url": "https://doi.org/10.1038/s41467-026-72253-7",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-04-27",
+      "authors": "Hadidi et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-026-72253-7",
+      "slot": 1,
+      "freshness": "近期研究",
+      "reason": "近期 Nature Communications 实证研究，检验语言模型与人脑对应关系的方法是否稳健，直接关联 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-21；来源：Crossref；引用数 6，距发表 147 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究重分析三个常用人类神经数据集，发现随机打乱训练与测试划分、模型激活提取方式，以及词语位置和词速等混杂因素，都可能夸大语言模型对脑活动的预测能力。一些未训练模型的神经预测能力可完全由这些混杂因素解释。结论针对所检验的数据集和方法，并非否定所有模型与人脑的对应研究。",
+      "tag": "认知与行为建模",
+      "ranking_score": 8.1634,
+      "title_zh": "大语言模型与人脑的部分“对齐”可能来自方法和混杂因素",
+      "summary_source": "https://www.nature.com/articles/s41467-026-72253-7",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Predicting human decisions with behavioural theories and machine learning",
+      "doi": "10.1038/s41562-025-02267-6",
+      "url": "https://doi.org/10.1038/s41562-025-02267-6",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-07-21",
+      "authors": "Plonsky et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02267-6",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-21；来源：Crossref；引用数 16，距发表 427 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出 BEAST-GB，将行为理论与梯度提升结合，用于预测人在风险与不确定性下的选择。模型在 CPC18 预测比赛中获胜，并在两套大型数据上优于所比较的神经网络和多种行为模型；还可迁移至未见过的实验情境，帮助改进行为理论本身。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 10.7795,
+      "title_zh": "结合行为理论与机器学习，预测人在风险和不确定性下的决策",
+      "summary_source": "https://pubmed.ncbi.nlm.nih.gov/40691307/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Daraxonrasib or Chemotherapy in Previously Treated Metastatic Pancreatic Cancer",
+      "doi": "10.1056/nejmoa2605555",
+      "url": "https://doi.org/10.1056/nejmoa2605555",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2026-05-31",
+      "authors": "O’Reilly et al.",
+      "citations": 88,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2605555",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "跨领域高关注临床研究：公开题录记录88次引用，500人随机三期试验报告生存结局。巡检已核对期刊原文。",
+      "evidence": "检索时间：2026-09-21；来源：Crossref；引用数 88，距发表 113 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。 发表日期以 NEJM 官网首次在线发表日期2026-05-31为准。",
+      "summary": "这项开放标签、随机三期试验纳入500名既往接受治疗的转移性胰腺导管腺癌患者，比较 daraxonrasib 与研究者选择的化疗。总体人群中位总生存期分别为13.2个月和6.7个月，中位无进展生存期为7.2个月和3.6个月；RAS G12突变亚组也观察到生存获益。研究由 Revolution Medicines 资助。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 14.3347,
+      "publication_date_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2605555",
+      "title_zh": "Daraxonrasib 与化疗治疗既往经治转移性胰腺癌的三期比较",
+      "summary_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2605555",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-20",
+      "title": "Qwen Code · Release v0.24.2",
+      "summary": "Qwen Code 新版本恢复了远程工作区添加流程，支持多个浏览器会话共享 Chrome 配置，并可在语音设置卡中选择模型和声音。更新还加入基于 bwrap 的 Linux 沙箱执行基础，修复工作区信任检查、权限规则和工作流快照等问题；官方发布说明未列出已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.24.2，改进远程工作区与浏览器会话",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.2",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-14",
+      "title": "Perplexity Portable Computer Is Now Available on Windows, Powered by NVIDIA RTX",
+      "summary": "据 NVIDIA 介绍，Perplexity Portable Computer 已支持兼容的 Windows RTX 电脑，使用本地模型分析文件并执行多步任务。本地完成的工作不消耗 Perplexity Computer 云端额度；需要云端处理时会先征得用户同意。当前支持至少24GB显存的 GeForce RTX 或 RTX PRO GPU。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Perplexity Portable Computer 支持 Windows RTX 电脑运行本地智能体",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-perplexity-windows-pcs/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-10",
+      "title": "Skild AI Taps NVIDIA Physical AI to Teach Robots New Tasks From a Single Video",
+      "summary": "据官方介绍，Skild AI 的 S1 可将一个视频示范作为上下文，在不更新模型权重、不做任务专用后训练的情况下执行新任务。公司报告，在新多步任务测试中，单步成功率约为66%，对照系统为9%。NVIDIA 的 Cosmos、Isaac Lab 等工具用于其数据生成、训练与仿真。",
+      "url": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Skild AI S1 用单个视频示范学习机器人新任务",
+      "summary_source": "https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "文献服务间歇断连，本期经巡检核对公开摘要与官方公告后补发。",
+    "另有2条公司动态暂未获得充分原文，未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": false,
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": false,
+      "error": "Remote end closed connection without response"
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 23
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "巡检逐项核对期刊摘要与公司官方公告",
+      "ok": true,
+      "items": 6
+    }
+  ],
+  "candidate_count": 977,
+  "publication_method": "巡检核对原始来源后补发"
+}

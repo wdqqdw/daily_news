@@ -24,7 +24,7 @@ import xml.etree.ElementTree as ET
 from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
-from history import item_keys, load_history, history_keys, assert_unseen
+from history import item_keys, load_history, history_keys, assert_unseen, canonical_doi
 from summarize import enrich, source_text, apply_editorial_corrections
 
 TZ = ZoneInfo('Asia/Shanghai')
@@ -36,16 +36,22 @@ HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind
 COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|brain.guided|social behavio\w*)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
 THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework|argument)|discussion framework|open forum (?:paper|contribution)|narrative review|systematic review', re.I)
+NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|letter|preprint|retract',re.I)
+HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory))\b',re.I)
+MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
+
+def human_research_source(text):
+    return bool(HUMAN_DATA.search(text) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
-    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]*>', ' ', text or ''))).strip()
+    return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
 
 def excerpt(text, words=24):
     """Short attributed extracts only; never republish full abstracts or news posts."""
@@ -117,6 +123,59 @@ def normalize_work(x, today):
             'citations':citations,'abstract':clean(x.get('abstract','')),'metadata_source':'Crossref',
             'metadata_url':'https://api.crossref.org/works/'+urllib.parse.quote(x['DOI'],safe='')}
 
+def europe_pmc_candidates(query, today, seen):
+    """Discover abstract-backed records, then verify their DOI and metadata in Crossref."""
+    query+=' AND FIRST_PDATE:['+str(today-dt.timedelta(days=730))+' TO '+str(today)+'] AND SRC:MED'
+    records=[];failures=[]
+    for order in ('sort_date:y','sort_cited:y'):
+        url='https://www.ebi.ac.uk/europepmc/webservices/rest/search?'+urllib.parse.urlencode({
+            'query':query+' '+order,'format':'json','resultType':'core','pageSize':100})
+        try:records.extend(json.loads(fetch(url))['resultList']['result'])
+        except (OSError,ValueError,KeyError) as error:
+            failures.append(error)
+            print('WARNING indexed search '+order+': '+str(error),flush=True)
+    if not records and failures:raise failures[-1]
+    candidates=[];requested=set()
+    for record in records:
+        doi=canonical_doi(record.get('doi') or '')
+        if not doi or doi in requested or 'doi:'+doi in seen:continue
+        types=record.get('pubTypeList',{}).get('pubType',[])
+        if any(NON_RESEARCH_TYPE.search(t) for t in types):continue
+        abstract=clean(record.get('abstractText',''))
+        preview={'title':clean(record.get('title','')),'abstract':abstract,'citations':5}
+        # This is only a topic prefilter; the real citation threshold is applied
+        # to verified Crossref counts below, never to the preview placeholder.
+        if len(abstract.split())<40 or not any(relevant(preview,s) for s in (1,2)):continue
+        if not human_research_source(abstract):continue
+        requested.add(doi)
+        try:
+            with CROSSREF_SLOTS:
+                work=json.loads(fetch('https://api.crossref.org/works/'+urllib.parse.quote(doi,safe='')))['message']
+            paper=normalize_work(work,today)
+            if not paper or canonical_doi(paper['doi'])!=doi:continue
+            paper['abstract']=abstract
+            paper['abstract_source']='https://www.ebi.ac.uk/europepmc/webservices/rest/search?'+urllib.parse.urlencode({
+                'query':'DOI:"'+doi+'"','format':'json','resultType':'core','pageSize':1})
+            paper['publication_types']=types
+            if any(relevant(paper,s) for s in (1,2)):candidates.append(paper)
+        except (OSError,ValueError,KeyError) as error:
+            print('Skipping unverified indexed DOI '+doi+': '+str(error),flush=True)
+        if len(requested)>=25:break
+    return candidates
+
+def merge_paper_sources(papers):
+    """Do not let a later empty Crossref row erase an indexed abstract or type."""
+    merged={}
+    for paper in papers:
+        key=canonical_doi(paper['doi'])
+        if key not in merged:merged[key]=copy.deepcopy(paper);continue
+        current=merged[key]
+        if paper.get('abstract_source') or (not current.get('abstract') and paper.get('abstract')):
+            current['abstract']=paper['abstract']
+            if paper.get('abstract_source'):current['abstract_source']=paper['abstract_source']
+        current['publication_types']=sorted(set(current.get('publication_types',[])+paper.get('publication_types',[])))
+    return list(merged.values())
+
 def is_nsc(p):
     # Exclude e.g. Science of the Total Environment and unrelated Cell journals.
     j = p['journal'].lower()
@@ -131,6 +190,7 @@ def is_nsc(p):
 def relevant(p, slot):
     title = p['title']
     if BAD_TITLE.search(title): return False
+    if any(NON_RESEARCH_TYPE.search(t) for t in p.get('publication_types',[])):return False
     if slot in (1,2) and MODEL_PERSONALITY.search(title):return False
     if THEORY_ONLY.search(p.get('abstract','')):return False
     if slot == 1:
@@ -180,6 +240,8 @@ def select_papers(pool, seen, today):
         chosen['evidence'] = f'检索时间：{today}；来源：Crossref；引用数 {cite}，距发表 {age} 天。'+ ('优先匹配期刊品牌与主题，再考虑新近程度和引用。' if slot == 1 else '评分依据公开题录、引用总数与发表时间。') + '引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。'
         abstract = chosen.pop('abstract','')
         chosen['_source_text'] = abstract
+        if chosen.get('abstract_source'):
+            chosen['_summary_source']=chosen.pop('abstract_source')
         chosen['summary'] = ''
         chosen['tag'] = ['认知与行为建模','研究人的人工智能工作','跨学科 / 引用热度'][slot-1]
         chosen['ranking_score'] = round(score(chosen,slot,today),4)
@@ -314,7 +376,12 @@ def choose_news(news, seen):
 
 def generate(today):
     configs=json.loads((ROOT/'data/sources.json').read_text())
+    history=load_history(DATA)
+    seen=history_keys(history,'papers')
     jobs={
+      'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind")',today,seen),
+      'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain")',today,seen),
+      'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'LLM cognition':lambda:crossref('language models human cognition brain theory of mind',today),
       'AI human behaviour':lambda:crossref('artificial intelligence human cognition psychology behavior',today,days=365),
@@ -347,8 +414,7 @@ def generate(today):
                 print(f'WARNING {name}: {e}',flush=True)
     if paper_success<2 or news_success<1:
         raise RuntimeError('Insufficient live sources; preserving previous publication')
-    pool=list({p['doi']:p for p in papers}.values())
-    history=load_history(DATA)
+    pool=merge_paper_sources(papers)
     # A Chinese summary needs substantive source text. Try the next eligible
     # unseen candidate if a publisher supplies only a title or blocks access.
     excluded_papers=history_keys(history,'papers')
@@ -364,6 +430,10 @@ def generate(today):
                 if THEORY_ONLY.search(text):
                     unavailable.append(item)
                     print('Skipping non-empirical paper identified from abstract: '+item['title'],flush=True)
+                    continue
+                if item['slot'] in (1,2) and not human_research_source(text):
+                    unavailable.append(item)
+                    print('Skipping paper without evidence of human data: '+item['title'],flush=True)
                     continue
                 item['_source_text']=text
                 item['_summary_source']=url
