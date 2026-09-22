@@ -85,6 +85,17 @@ class SelectionTests(unittest.TestCase):
         raw['published']={'date-parts':[[2026,9]]}
         self.assertIsNone(normalize_work(raw,TODAY))
 
+    def test_nonresearch_titles_and_subtitles_are_rejected(self):
+        raw={'type':'journal-article','DOI':'10.1/x','title':['Ovarian Cancer'],
+             'container-title':['JAMA'],'published':{'date-parts':[[2026,7,1]]}}
+        for title,subtitle in [('Ovarian Cancer','A Review'),
+                               ('Nomenclature for Factors of the HLA System, 2026',''),
+                               ('Muscle health: 2025 Consensus Update','')]:
+            with self.subTest(title=title):
+                self.assertIsNone(normalize_work(dict(raw,title=[title],subtitle=[subtitle]),TODAY))
+        original=dict(raw,title=['Predicting human decisions'],subtitle=['An experimental study'])
+        self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
+
 class NetworkTests(unittest.TestCase):
     def test_cleaning_preserves_comparisons_and_following_safety_results(self):
         raw='<p>Survival improved (P<0.001). Grade 3 events: 30%.</p><h4>Conclusion</h4><p>Benefit was observed.</p>'

@@ -1,0 +1,206 @@
+{
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T09:44:46+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Aligning brains into a shared space improves their alignment with large language models",
+      "doi": "10.1038/s43588-025-00900-y",
+      "url": "https://doi.org/10.1038/s43588-025-00900-y",
+      "journal": "Nature Computational Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-18",
+      "authors": "Bhattacharjee et al.",
+      "citations": 4,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs43588-025-00900-y",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "Nature Computational Science 实证研究，通过跨个体脑活动建模检验语言模型对人的语言处理过程的预测能力。",
+      "evidence": "检索时间：2026-09-22；来源：Crossref；引用数 4，距发表 308 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析8名参与者收听同一段30分钟播客时的皮层脑电，用共享反应模型提取跨个体的信息空间，再映射回各人的电极记录以降低噪声。语言模型的平均脑活动预测相关系数由0.188升至0.257，约提高37%，语言理解脑区获益最明显。结果支持跨个体预测的改进，不能据此认定人脑与模型采用相同计算机制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 6.3703,
+      "title_zh": "共享脑活动空间，提高大语言模型对不同人脑反应的预测",
+      "summary_source": "https://collaborate.princeton.edu/en/publications/aligning-brains-into-a-shared-space-improves-their-alignment-with/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Capturing the complexity of human strategic decision-making with machine learning",
+      "doi": "10.1038/s41562-025-02230-5",
+      "url": "https://doi.org/10.1038/s41562-025-02230-5",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-06-25",
+      "authors": "Zhu et al.",
+      "citations": 7,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02230-5",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-22；来源：Crossref；引用数 7，距发表 454 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究收集超过2400种双人矩阵博弈中的9万余次人类决策。深度神经网络对人类选择的预测优于所比较的主要策略行为理论；研究者进一步将其改造为可解释模型，发现人们做出最优回应、推测对方行动的能力会随博弈矩阵复杂度变化。这项工作展示了如何用机器学习研究人的决策规律。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 8.4792,
+      "title_zh": "用机器学习揭示人在策略博弈中如何判断和选择",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02230-5",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The Atacama Cosmology Telescope: DR6 power spectra, likelihoods and ΛCDM parameters",
+      "doi": "10.1088/1475-7516/2025/11/062",
+      "url": "https://doi.org/10.1088/1475-7516/2025/11/062",
+      "journal": "Journal of Cosmology and Astroparticle Physics",
+      "publisher": "IOP Publishing",
+      "published": "2025-11-01",
+      "authors": "Louis et al.",
+      "citations": 251,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1088%2F1475-7516%2F2025%2F11%2F062",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "跨领域高引用宇宙学研究：Crossref 当前记录251次引用，结合大规模观测约束宇宙参数；引用热度不等于全网实时排名。",
+      "evidence": "检索时间：2026-09-22；来源：Crossref；引用数 251，距发表 325 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究利用阿塔卡马宇宙学望远镜覆盖约1.9万平方度天空的宇宙微波背景温度与偏振图，在约1万平方度区域估计功率谱，结果与ΛCDM宇宙学模型相符。结合 Planck、引力透镜与 DESI DR1 数据，得到哈勃常数68.22±0.36千米每秒每百万秒差距。研究提升了宇宙参数测量精度，但不能据此宣称哈勃张力已经解决。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 15.1669,
+      "title_zh": "阿塔卡马望远镜 DR6 数据进一步约束宇宙组成与膨胀率",
+      "summary_source": "https://orca.cardiff.ac.uk/id/eprint/182699/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-21",
+      "title": "Qwen Code · Release v0.24.3",
+      "summary": "Qwen Code 新版将终端命令、输出与耗时整理为结构化结果，并提供可选的逐轮运行指标，包括首个输出等待时间、词元数量和工具耗时。更新还完善实时语音的音频兼容与启动错误提示，修复移动端历史记录、工作区设置和会话运行等问题。官方发布说明未列出已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.3",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.24.3 改进终端结果展示、运行指标与语音体验",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-09-21",
+      "title": "NVIDIA Launches DSX Ready to Qualify Power and Cooling Products for AI Factories",
+      "summary": "NVIDIA 推出 DSX Ready 产品资格评估计划，首批覆盖电池储能系统和冷却液分配单元，帮助建设方按 DSX 参考设计要求选择合作伙伴产品。首批供应商包括日立能源、LG、特斯拉、LiquidStack 和 Vertiv 等。通过产品评估仍需进行具体场地的工程设计与适配，不能直接保证整个设施的稳定性。",
+      "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 推出 DSX Ready，评估 AI 数据中心供电与冷却产品",
+      "summary_source": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-21",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "summary": "OpenAI 宣布与数学家建立独立顾问组，为新成果的意义评估、评审、传播方式和学术规范提供建议，并讨论 AI 工具如何支持数学研究与学习。成员不接受 OpenAI 薪酬，可自主发表意见和调整成员组成。该组不负责决定 OpenAI 内部数学研究的推进速度，公告也不等于对公司所称成果的独立验证。",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 与数学界合作建立独立顾问组，讨论 AI 数学成果的评审与发布",
+      "summary_source": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-21",
+      "title": "Improving synthesis prediction of small molecules at scale with RetroChimera",
+      "summary": "微软研究院介绍 RetroChimera，将直接生成反应物的 Transformer 与基于反应模板的图神经网络结合，再学习如何排序两者的候选方案。官方报告，在10个复杂目标的专家评估中，9个目标的完整路线获认可；这属于路线评审结果，并非全部已经过实验合成验证。模型实现与权重已开放，支持进一步研究和测试。",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软开源 RetroChimera，结合两类模型规划小分子合成",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "安全 / 报告",
+      "published": "2026-09-21",
+      "title": "Why Deploying Physical AI at Scale Demands Safety at Every Layer",
+      "summary": "NVIDIA 介绍 Halos 如何结合硬件、系统软件、仿真测试与独立评估，支持自动驾驶和机器人安全部署。公司列举了 DRIVE 平台已有的功能安全认证，并说明 IGX Thor 等机器人相关组件仍在接受认证准备评估。不同组件所处阶段不同，不能把整个生态都视为已完成认证。",
+      "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 介绍 Halos 安全体系，覆盖自动驾驶与机器人部署",
+      "summary_source": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-21",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "summary": "据 OpenAI 发布的客户案例，Higgsfield 将 GPT-6 Astra 用于把已有广告扩展为多种创意版本，例如面向不同国家调整内容。Higgsfield 首席执行官称，一名工程师借助模型的多步任务规划可在一天内交付新的探索功能。这是公司对自身工作流程的描述，不能直接推广为所有开发任务的效率承诺。",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Higgsfield 用 GPT-6 Astra 扩展视频广告创作并加快功能开发",
+      "summary_source": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "publication_method": "巡检核对原始来源后补发",
+  "notices": [
+    "本期由每日巡检核对期刊公开摘要与公司官方公告后补发。"
+  ],
+  "sources": [
+    {
+      "source": "NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "OpenAI",
+      "ok": true,
+      "items": 47
+    },
+    {
+      "source": "Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Microsoft Research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "https://www.anthropic.com/news",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Crossref 逐篇核对 DOI、发表日期与引用数",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "巡检核对期刊公开摘要与公司官方公告",
+      "ok": true,
+      "items": 9
+    }
+  ]
+}

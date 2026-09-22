@@ -30,7 +30,7 @@ from summarize import enrich, source_text, apply_editorial_corrections
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
 CROSSREF_SLOTS = threading.BoundedSemaphore(2)
-BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus statement|guideline|reply to|comment on|news and views)(\b|:)', re.I)
+BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|guideline|reply to|comment on|news and views)(\b|:)', re.I)
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT|foundation model\w*)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
 COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
@@ -85,7 +85,7 @@ def fetch(url):
 
 def crossref(query, today, days=730, rows=120, sort=None):
     params = {'filter':f'type:journal-article,from-pub-date:{today-dt.timedelta(days=days)},until-pub-date:{today}', 'rows':rows,
-              'select':'DOI,title,author,container-title,publisher,published-online,published-print,published,issued,type,is-referenced-by-count,abstract,update-to'}
+              'select':'DOI,title,subtitle,author,container-title,publisher,published-online,published-print,published,issued,type,is-referenced-by-count,abstract,update-to'}
     if query:
         params['query.title'] = query
     if sort:
@@ -97,7 +97,8 @@ def crossref(query, today, days=730, rows=120, sort=None):
 
 def normalize_work(x, today):
     title = clean(' '.join(x.get('title', [])))
-    if x.get('type') != 'journal-article' or not x.get('DOI') or not title or BAD_TITLE.search(title):
+    subtitle = clean(' '.join(x.get('subtitle', [])))
+    if x.get('type') != 'journal-article' or not x.get('DOI') or not title or BAD_TITLE.search(title+' '+subtitle):
         return None
     if any(u.get('type') in ('retraction','withdrawal') for u in x.get('update-to', [])):
         return None

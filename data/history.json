@@ -276,6 +276,42 @@
         "url:https://doi.org/10.1056/nejmoa2605555"
       ],
       "doi": "10.1056/nejmoa2605555"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Aligning brains into a shared space improves their alignment with large language models",
+      "url": "https://doi.org/10.1038/s43588-025-00900-y",
+      "keys": [
+        "doi:10.1038/s43588-025-00900-y",
+        "title:aligningbrainsintoasharedspaceimprovestheiralignmentwithlargelanguagemodels",
+        "title:共享脑活动空间提高大语言模型对不同人脑反应的预测",
+        "url:https://doi.org/10.1038/s43588-025-00900-y"
+      ],
+      "doi": "10.1038/s43588-025-00900-y"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Capturing the complexity of human strategic decision-making with machine learning",
+      "url": "https://doi.org/10.1038/s41562-025-02230-5",
+      "keys": [
+        "doi:10.1038/s41562-025-02230-5",
+        "title:capturingthecomplexityofhumanstrategicdecisionmakingwithmachinelearning",
+        "title:用机器学习揭示人在策略博弈中如何判断和选择",
+        "url:https://doi.org/10.1038/s41562-025-02230-5"
+      ],
+      "doi": "10.1038/s41562-025-02230-5"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "The Atacama Cosmology Telescope: DR6 power spectra, likelihoods and ΛCDM parameters",
+      "url": "https://doi.org/10.1088/1475-7516/2025/11/062",
+      "keys": [
+        "doi:10.1088/1475-7516/2025/11/062",
+        "title:theatacamacosmologytelescopedr6powerspectralikelihoodsandλcdmparameters",
+        "title:阿塔卡马望远镜dr6数据进一步约束宇宙组成与膨胀率",
+        "url:https://doi.org/10.1088/1475-7516/2025/11/062"
+      ],
+      "doi": "10.1088/1475-7516/2025/11/062"
     }
   ],
   "news": [
@@ -644,6 +680,72 @@
         "url:https://blogs.nvidia.com/blog/skild-ai-s1-physical-ai"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Qwen Code · Release v0.24.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.3",
+      "keys": [
+        "title:qwencodereleasev0243",
+        "title:qwencodev0243改进终端结果展示运行指标与语音体验",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.3"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "NVIDIA Launches DSX Ready to Qualify Power and Cooling Products for AI Factories",
+      "url": "https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling/",
+      "keys": [
+        "title:nvidialaunchesdsxreadytoqualifypowerandcoolingproductsforaifactories",
+        "title:nvidia推出dsxready评估ai数据中心供电与冷却产品",
+        "url:https://blogs.nvidia.com/blog/dsx-ready-ai-factories-power-cooling"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Advisory Group on Mathematics and Artificial Intelligence",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "keys": [
+        "title:advisorygrouponmathematicsandartificialintelligence",
+        "title:openai与数学界合作建立独立顾问组讨论ai数学成果的评审与发布",
+        "url:https://openai.com/index/advisory-group-on-mathematics-and-ai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Improving synthesis prediction of small molecules at scale with RetroChimera",
+      "url": "https://www.microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera/",
+      "keys": [
+        "title:improvingsynthesispredictionofsmallmoleculesatscalewithretrochimera",
+        "title:微软开源retrochimera结合两类模型规划小分子合成",
+        "url:https://microsoft.com/en-us/research/blog/improving-synthesis-prediction-of-small-molecules-at-scale-with-retrochimera"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Why Deploying Physical AI at Scale Demands Safety at Every Layer",
+      "url": "https://blogs.nvidia.com/blog/physical-ai-halos-safety/",
+      "keys": [
+        "title:nvidia介绍halos安全体系覆盖自动驾驶与机器人部署",
+        "title:whydeployingphysicalaiatscaledemandssafetyateverylayer",
+        "url:https://blogs.nvidia.com/blog/physical-ai-halos-safety"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-22",
+      "title": "Higgsfield AI ships new video features in a day with GPT-6 Astra",
+      "url": "https://openai.com/index/higgsfield-from-prompt-to-production-with-astra",
+      "keys": [
+        "title:higgsfieldaishipsnewvideofeaturesinadaywithgpt6astra",
+        "title:higgsfield用gpt6astra扩展视频广告创作并加快功能开发",
+        "url:https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
