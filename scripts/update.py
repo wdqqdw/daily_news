@@ -42,13 +42,16 @@ MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+p
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
-THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework|argument)|discussion framework|open forum (?:paper|contribution)|narrative review|systematic review', re.I)
+THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework|argument)|discussion framework|open forum (?:paper|contribution)|narrative review|systematic review|\b(?:this|our) (?:comprehensive |scoping |narrative |systematic )?review\b', re.I)
 NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|letter|preprint|retract',re.I)
 HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory))\b',re.I)
 MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
 
 def human_research_source(text):
-    return bool(HUMAN_DATA.search(text) and not MODEL_SUBJECTS.search(text))
+    # Human studies may describe samples and diaries without saying "participants".
+    sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
+    human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)
+    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
@@ -380,8 +383,8 @@ def generate(today):
     history=load_history(DATA)
     seen=history_keys(history,'papers')
     jobs={
-      'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind")',today,seen),
-      'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain")',today,seen),
+      'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind" OR TITLE_ABS:personality)',today,seen),
+      'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'LLM cognition':lambda:crossref('language models human cognition brain theory of mind',today),

@@ -312,6 +312,42 @@
         "url:https://doi.org/10.1088/1475-7516/2025/11/062"
       ],
       "doi": "10.1088/1475-7516/2025/11/062"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Assessing personality using zero-shot generative AI scoring of brief open-ended text",
+      "url": "https://doi.org/10.1038/s41562-025-02389-x",
+      "keys": [
+        "doi:10.1038/s41562-025-02389-x",
+        "title:assessingpersonalityusingzeroshotgenerativeaiscoringofbriefopenendedtext",
+        "title:用大语言模型从自由叙述中评估人的人格特征",
+        "url:https://doi.org/10.1038/s41562-025-02389-x"
+      ],
+      "doi": "10.1038/s41562-025-02389-x"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+      "url": "https://doi.org/10.1038/s41562-025-02324-0",
+      "keys": [
+        "doi:10.1038/s41562-025-02324-0",
+        "title:hybridneuralcognitivemodelsrevealhowmemoryshapeshumanrewardlearning",
+        "title:结合神经网络与认知模型揭示记忆如何影响人类奖励学习",
+        "url:https://doi.org/10.1038/s41562-025-02324-0"
+      ],
+      "doi": "10.1038/s41562-025-02324-0"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "The Gene Ontology knowledgebase in 2026",
+      "url": "https://doi.org/10.1093/nar/gkaf1292",
+      "keys": [
+        "doi:10.1093/nar/gkaf1292",
+        "title:geneontology2026扩展基因功能注释与因果通路模型",
+        "title:thegeneontologyknowledgebasein2026",
+        "url:https://doi.org/10.1093/nar/gkaf1292"
+      ],
+      "doi": "10.1093/nar/gkaf1292"
     }
   ],
   "news": [
@@ -746,6 +782,72 @@
         "url:https://openai.com/index/higgsfield-from-prompt-to-production-with-astra"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Qwen Code · Release v0.24.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.4",
+      "keys": [
+        "title:qwencodereleasev0244",
+        "title:qwencodev0244改进远程工作区连接保护和代码审查",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.4"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Better prompt caching for GPT-6",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "keys": [
+        "title:betterpromptcachingforgpt6",
+        "title:openai改进gpt6提示缓存增加命中率监控与诊断工具",
+        "url:https://openai.com/index/better-prompt-caching-for-gpt-6"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
+      "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+      "keys": [
+        "title:nvidiaisaacros50advancesagenticopensourceroboticsdevelopment",
+        "title:nvidia发布isaacros50将智能体工作流引入机器人开发",
+        "url:https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Claude Opus 5.5",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "keys": [
+        "title:anthropic发布claudeopus55强调编程能力与运行效率",
+        "title:claudeopus55",
+        "url:https://anthropic.com/claude-opus-5-5"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "keys": [
+        "title:introducinggpt6solandluna",
+        "title:openai推出gpt6sol和luna扩大高效模型选择",
+        "url:https://openai.com/index/introducing-gpt-6-sol-and-luna"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-23",
+      "title": "From Enablement to Execution, Egypt’s AI Ecosystem Reaches Production Scale",
+      "url": "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/",
+      "keys": [
+        "title:fromenablementtoexecutionegyptsaiecosystemreachesproductionscale",
+        "title:nvidia介绍埃及ai生态进展涉及本地算力与创业企业",
+        "url:https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }

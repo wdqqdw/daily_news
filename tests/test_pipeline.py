@@ -44,6 +44,13 @@ class SelectionTests(unittest.TestCase):
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
         self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))
+
+    def test_abstract_identified_reviews_do_not_fill_any_slot(self):
+        for abstract in ('This review emphasizes the responsible integration of AI.',
+                         'Our comprehensive review summarizes human brain research.'):
+            for slot in (1,2,3):
+                self.assertFalse(relevant(paper('10.1/review',abstract=abstract),slot))
+        self.assertTrue(relevant(paper('10.1/data',abstract='Participants reviewed their diaries before making human choices.'),2))
     def test_reports_and_conceptual_items_do_not_fill_slots(self):
         for title in ('Qwen Technical Report','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
             self.assertFalse(relevant(paper('10.1/no',title),1))
@@ -97,6 +104,12 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
 
 class NetworkTests(unittest.TestCase):
+    def test_human_diaries_and_reward_datasets_are_research_evidence(self):
+        self.assertTrue(human_research_source('Across two samples, daily video diaries and self-report measures were compared.'))
+        self.assertTrue(human_research_source('We applied neural networks to a large dataset of human reward-learning behaviour.'))
+        self.assertFalse(human_research_source('We use large language models (LLMs) as test subjects. Two samples completed self-report measures.'))
+        self.assertFalse(human_research_source('We propose ecological momentary assessment as a future application.'))
+
     def test_cleaning_preserves_comparisons_and_following_safety_results(self):
         raw='<p>Survival improved (P<0.001). Grade 3 events: 30%.</p><h4>Conclusion</h4><p>Benefit was observed.</p>'
         for clean in (clean_metadata,clean_summary):

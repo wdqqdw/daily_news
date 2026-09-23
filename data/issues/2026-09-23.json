@@ -1,0 +1,211 @@
+{
+  "date": "2026-09-23",
+  "generated_at": "2026-09-23T09:44:28+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Assessing personality using zero-shot generative AI scoring of brief open-ended text",
+      "doi": "10.1038/s41562-025-02389-x",
+      "url": "https://doi.org/10.1038/s41562-025-02389-x",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-30",
+      "authors": "Wright et al.",
+      "citations": 13,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02389-x",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "Nature Human Behaviour 实证研究，检验语言模型从个人叙述中推断人格特征的能力，直接关联 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-23；来源：Crossref；引用数 13，距发表 236 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究使用7种商业大语言模型，从两组样本的自由思绪记录和日常视频日记中评估大五人格。模型评分与自评量表的一致性达到或超过多种既有方法，多模型平均评分与自评的一致性最高；这些评分也能预测日常行为和心理健康指标。结果因模型而异，说明开放式个人叙述可提供有用的人格信息，而非仅依赖固定问卷。",
+      "tag": "认知与行为建模",
+      "ranking_score": 9.7257,
+      "title_zh": "用大语言模型从自由叙述中评估人的人格特征",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02389-x",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Hybrid neural–cognitive models reveal how memory shapes human reward learning",
+      "doi": "10.1038/s41562-025-02324-0",
+      "url": "https://doi.org/10.1038/s41562-025-02324-0",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-05",
+      "authors": "Eckstein et al.",
+      "citations": 5,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02324-0",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-23；来源：Crossref；引用数 5，距发表 230 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将人工神经网络嵌入可解释的认知架构，用人类奖励学习数据检验不同计算机制。结果显示，成功的模型需要独立且灵活的记忆变量，保留丰富的历史奖励与行动信息；仅靠少数标量逐步更新的传统强化学习模型难以充分解释所观察到的行为。这种方法兼顾预测能力和可解释性，为研究人的学习机制提供了工具。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.2112,
+      "title_zh": "结合神经网络与认知模型，揭示记忆如何影响人类奖励学习",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02324-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The Gene Ontology knowledgebase in 2026",
+      "doi": "10.1093/nar/gkaf1292",
+      "url": "https://doi.org/10.1093/nar/gkaf1292",
+      "journal": "Nucleic Acids Research",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-12-18",
+      "authors": "The Gene Ontology Consortium et al.",
+      "citations": 217,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgkaf1292",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域年度高引用候选中，排除历史内容与已识别综述后的高热度资源研究；Crossref 记录217次引用。引用热度不等于全网实时排名。",
+      "evidence": "检索时间：2026-09-23；来源：Crossref；引用数 217，距发表 279 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "这篇科研资源论文介绍 Gene Ontology 知识库近三年的更新，扩充并修订代谢、宿主与病原体相互作用、染色质及非编码 RNA 等领域的功能注释。团队发布人类基因综合功能注释集 functionome 的第二版，并将 GO-CAM 代谢与信号通路模型扩展至1500余个。论文也讨论 AI 辅助注释的机会与局限，强调可靠证据和人工核对的重要性。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 15.0662,
+      "title_zh": "Gene Ontology 2026：扩展基因功能注释与因果通路模型",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12807639/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-22",
+      "title": "Qwen Code · Release v0.24.4",
+      "summary": "Qwen Code 新版支持无需远程守护进程的 SSH 工作区，为移动端加入加密且相互隔离的连接配置，并改进二维码配对。代码审查开始记录计划所依据的版本并提示内容变化，网页端可在批准编辑前展示差异；同时修复刷新后的会话、引用标记和远程目录浏览问题。官方未列出已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.4",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.24.4 改进远程工作区、连接保护和代码审查",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-22",
+      "title": "Better prompt caching for GPT-6",
+      "summary": "OpenAI 更新 GPT-6 系列的提示缓存，对30分钟窗口内符合条件的共享前缀提供缓存优惠，并推出监控面板与未命中诊断工具。开发者可设置缓存断点、预热已知上下文，并按官方方式调整推理强度和可用工具以保留缓存。改进旨在降低持续运行智能体的延迟与重复输入成本。",
+      "url": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 改进 GPT-6 提示缓存，增加命中率监控与诊断工具",
+      "summary_source": "https://openai.com/index/better-prompt-caching-for-gpt-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-22",
+      "title": "NVIDIA Isaac ROS 5.0 Advances Agentic, Open Source Robotics Development",
+      "summary": "NVIDIA 在 ROSCon 发布 Isaac ROS 5.0，新增对 ROS Lyrical 和 Ubuntu 24.04 的支持，并提供面向开发者与 AI 智能体的安装、操作及抓取放置流程。FoundationStereo 微调工作流帮助模型适配具体相机和环境，FoundationPose 也提供更便于智能体调用的推理库。更新同时扩展 Jetson 平台及机器人生态合作。",
+      "url": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 发布 Isaac ROS 5.0，将智能体工作流引入机器人开发",
+      "summary_source": "https://blogs.nvidia.com/blog/isaac-ros-5-0-agentic-open-source-robotics/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-22",
+      "title": "Claude Opus 5.5",
+      "summary": "Anthropic 发布 Claude Opus 5.5，报告其在智能体编程、知识工作和行为安全评估上较 Opus 5 改进。官方称默认设置下典型任务成本降低约40%，输入和输出单价则各下降20%，两项指标含义不同。公司还提高部分订阅的五小时使用额度，并介绍外部评估及针对高能力用途的防护措施。",
+      "url": "https://www.anthropic.com/claude-opus-5-5",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 发布 Claude Opus 5.5，强调编程能力与运行效率",
+      "summary_source": "https://www.anthropic.com/claude-opus-5-5",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-09-22",
+      "title": "Introducing GPT-6 Sol and Luna",
+      "summary": "OpenAI 推出 GPT-6 Sol 与 Luna，将 Astra 的训练方法用于更快、成本更低的模型。按公告，每百万输入和输出词元的 API 价格分别为：Sol 2美元和10美元，Luna 0.10美元和0.50美元。两款模型开始进入 ChatGPT Work、Codex 与 API；公告中的任务表现和成本比较来自所列评估条件。",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 推出 GPT-6 Sol 和 Luna，扩大高效模型选择",
+      "summary_source": "https://openai.com/index/introducing-gpt-6-sol-and-luna",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-21",
+      "title": "From Enablement to Execution, Egypt’s AI Ecosystem Reaches Production Scale",
+      "summary": "NVIDIA 在埃及举办生态活动，介绍阿拉伯语语音、机器人、蛋白质设计及开发运维智能体等本地应用。官方提到，Hassan Allam Utilities 与 A15 已达成建设新数据中心的协议，预计投资约4亿美元；A15 和 M Empire 也加入 NVIDIA 的创投合作网络。这些计划反映当地扩展本地算力与产业应用的进展。",
+      "url": "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 介绍埃及 AI 生态进展，涉及本地算力与创业企业",
+      "summary_source": "https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "publication_method": "巡检核对原始来源后补发",
+  "notices": [
+    "本期经每日巡检核对期刊公开摘要与公司官方公告后补发。"
+  ],
+  "sources": [
+    {
+      "source": "https://openai.com/news/rss.xml",
+      "ok": true,
+      "items": 47
+    },
+    {
+      "source": "https://blogs.nvidia.com/feed/",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "https://deepmind.google/blog/rss.xml",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "https://www.microsoft.com/en-us/research/feed/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "https://www.anthropic.com/news",
+      "ok": true,
+      "items": 4
+    },
+    {
+      "source": "https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Crossref 逐篇核对 DOI、发表日期与引用数",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "跨领域一年内高引用候选经原文类型核对",
+      "ok": true,
+      "items": 47
+    },
+    {
+      "source": "巡检核对期刊公开摘要与公司官方公告",
+      "ok": true,
+      "items": 9
+    }
+  ]
+}
