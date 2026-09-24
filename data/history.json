@@ -348,6 +348,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1292"
       ],
       "doi": "10.1093/nar/gkaf1292"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Mapping the movie-watching brain with AI-derived semantics",
+      "url": "https://doi.org/10.1162/imag.a.1300",
+      "keys": [
+        "doi:10.1162/imag.a.1300",
+        "title:mappingthemoviewatchingbrainwithaiderivedsemantics",
+        "title:使用ai衍生语义映射观影大脑",
+        "url:https://doi.org/10.1162/imag.a.1300"
+      ],
+      "doi": "10.1162/imag.a.1300"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Large language models display human-like social desirability biases in Big Five personality surveys",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae533",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgae533",
+        "title:largelanguagemodelsdisplayhumanlikesocialdesirabilitybiasesinbigfivepersonalitysurveys",
+        "title:大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差",
+        "url:https://doi.org/10.1093/pnasnexus/pgae533"
+      ],
+      "doi": "10.1093/pnasnexus/pgae533"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Genome modelling and design across all domains of life with Evo 2",
+      "url": "https://doi.org/10.1038/s41586-026-10176-5",
+      "keys": [
+        "doi:10.1038/s41586-026-10176-5",
+        "title:genomemodellinganddesignacrossalldomainsoflifewithevo2",
+        "title:生命所有领域中的基因组建模与设计evo2生物基础模型",
+        "url:https://doi.org/10.1038/s41586-026-10176-5"
+      ],
+      "doi": "10.1038/s41586-026-10176-5"
     }
   ],
   "news": [
@@ -846,6 +882,61 @@
         "title:fromenablementtoexecutionegyptsaiecosystemreachesproductionscale",
         "title:nvidia介绍埃及ai生态进展涉及本地算力与创业企业",
         "url:https://blogs.nvidia.com/blog/egypt-africa-ai-ecosystem"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Sakeena Fiza Helps NVIDIA Hardware Succeed at Scale",
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
+      "keys": [
+        "title:sakeenafizahelpsnvidiahardwaresucceedatscale",
+        "title:塞凯娜费扎助力nvidia硬件大规模成功",
+        "url:https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Offloaded inference for real-world physical AI robotics",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "keys": [
+        "title:offloadedinferenceforrealworldphysicalairobotics",
+        "title:卸载推理以提升现实世界物理ai机器人性能",
+        "url:https://microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "keys": [
+        "title:scienceclaudediscoversanovelenzymesystemwithcrisprlikerepeats",
+        "title:scienceclaude发现具有crispr类重复序列的新酶系统",
+        "url:https://anthropic.com/news/claude-discovers-novel-enzyme-system"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "keys": [
+        "title:openaiextendscyberaccesstoukraineforciviliandefense",
+        "title:openai扩展对乌克兰政府的网络防御访问权限",
+        "url:https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
+      "url": "https://blogs.nvidia.com/blog/ai-day-singapore/",
+      "keys": [
+        "title:ataidaysingaporenvidiaandpartnersshowcaseaiadvancementsacrosssoutheastasia",
+        "title:在新加坡ai日nvidia及其合作伙伴展示东南亚地区的ai突破性进展",
+        "url:https://blogs.nvidia.com/blog/ai-day-singapore"
       ],
       "company": "NVIDIA"
     }

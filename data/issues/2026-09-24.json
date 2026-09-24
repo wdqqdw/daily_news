@@ -1,0 +1,271 @@
+{
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T09:50:05+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Mapping the movie-watching brain with AI-derived semantics",
+      "doi": "10.1162/imag.a.1300",
+      "url": "https://doi.org/10.1162/imag.a.1300",
+      "journal": "Imaging Neuroscience",
+      "publisher": "MIT Press",
+      "published": "2026-07-10",
+      "authors": "Li",
+      "citations": 1,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1162%2Fimag.a.1300",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 1，距发表 76 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究使用多模态大语言模型Gemini作为自动“语义注释器”，将自然电影刺激、脑响应和认知表现联系起来。研究发现，Gemini衍生特征在颞叶、内侧顶叶和额叶关联皮层中稳健地预测电影诱发的响应，但在单一模态体感、背侧顶叶、岛叶和梨状皮层中解释的方差较小。",
+      "tag": "认知与行为建模",
+      "ranking_score": 5.0462,
+      "title_zh": "使用AI衍生语义映射观影大脑",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1162%2Fimag.a.1300%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Large language models display human-like social desirability biases in Big Five personality surveys",
+      "doi": "10.1093/pnasnexus/pgae533",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae533",
+      "journal": "PNAS Nexus",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2024-11-28",
+      "authors": "Salecha et al.",
+      "citations": 43,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgae533",
+      "publication_types": [
+        "brief-report",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 43，距发表 665 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究发现，大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差，即倾向于在特质维度上向可接受性较高的端点评分。这一偏差存在于包括GPT-4/3.5、Claude 3、Llama 3和PaLM-2在内的所有测试模型中，且在较新的模型中更为明显。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 13.4272,
+      "title_zh": "大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fpnasnexus%2Fpgae533%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Genome modelling and design across all domains of life with Evo 2",
+      "doi": "10.1038/s41586-026-10176-5",
+      "url": "https://doi.org/10.1038/s41586-026-10176-5",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-03-04",
+      "authors": "Brixi et al.",
+      "citations": 169,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-026-10176-5",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 169 次引用，约 24.85 次 / 月。",
+      "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 169，距发表 204 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究介绍了Evo 2，一种基于9万亿DNA碱基对的生物基础模型，具有100万词元的上下文窗口和单核苷酸分辨率。Evo 2能够准确预测基因变异的功能影响，无需特定任务的微调。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 15.0541,
+      "title_zh": "生命所有领域中的基因组建模与设计：Evo 2 生物基础模型",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41586-026-10176-5%22&resultType=core&format=json&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "Sakeena Fiza Helps NVIDIA Hardware Succeed at Scale",
+      "summary": "塞凯娜·费扎作为 NVIDIA 的验证工程师，通过从实验室到生产的系统测试，确保尖端硬件成为可靠的基础设施。她的工作始于产品存在之前，通过一系列严格的测试确保硬件在各种实际条件下都能正常工作。",
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "塞凯娜·费扎助力 NVIDIA 硬件大规模成功",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "Offloaded inference for real-world physical AI robotics",
+      "summary": "微软研究发现，将AI推理卸载到边缘或云端GPU可以显著提高机器人任务成功率和电池寿命。研究展示了在移动操作任务中，卸载推理可以提高任务成功率，并使机器人在动态环境中更有效地响应。",
+      "url": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "卸载推理以提升现实世界物理AI机器人性能",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "Science Claude discovers a novel enzyme system with CRISPR-like repeats",
+      "summary": "Anthropic 公司的研究团队使用 Claude 人工智能模型在 DNA 数据集中发现了具有 CRISPR 类重复序列的新酶系统。尽管其功能尚不清楚，但该系统具有与其他仅存在于少数可编程系统的共同特征。",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Science Claude 发现具有 CRISPR 类重复序列的新酶系统",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "OpenAI extends cyber access to Ukraine for civilian defense",
+      "summary": "OpenAI 将其 Daybreak 程序的访问权限扩展至乌克兰政府，以支持民用基础设施的网络防御。",
+      "url": "https://openai.com/index/openai-extends-cyber-access-to-ukraine-for-civilian-defense",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 扩展对乌克兰政府的网络防御访问权限",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
+      "summary": "NVIDIA在新加坡AI日展示了其在东南亚地区的AI突破性进展，通过开放模型、开发者工具和广泛的合作伙伴生态系统，帮助各国将AI从实验阶段推进到大规模部署。新加坡HTX利用NVIDIA的Nemotron模型推进公共安全领域的AI应用。",
+      "url": "https://blogs.nvidia.com/blog/ai-day-singapore/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "在新加坡AI日，NVIDIA及其合作伙伴展示东南亚地区的AI突破性进展",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-day-singapore/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。",
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 24
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 55
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": false,
+      "error": "not well-formed (invalid token): line 1, column 0"
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 68
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 9
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 977
+}
