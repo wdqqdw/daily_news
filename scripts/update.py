@@ -38,7 +38,7 @@ MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory 
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind)\b',re.I)
-MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?))\b',re.I)
+MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
@@ -46,8 +46,12 @@ THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*
 NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|letter|preprint|retract',re.I)
 HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory))\b',re.I)
 MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
+SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:e|ed|ing)|proxies for|substitutes for)\s+(?:data from\s+)?human\s+(?:participants?|subjects?|respondents?)\b',re.I)
 
 def human_research_source(text):
+    # Simulated participants and model proxies are not evidence of human data.
+    # Keep the rest of the abstract so genuine human comparisons can qualify.
+    text = SIMULATED_HUMAN_REFERENCES.sub('',text)
     # Human studies may describe samples and diaries without saying "participants".
     sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
     human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)

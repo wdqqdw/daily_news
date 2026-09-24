@@ -384,6 +384,18 @@
         "url:https://doi.org/10.1038/s41586-026-10176-5"
       ],
       "doi": "10.1038/s41586-026-10176-5"
+    },
+    {
+      "first_pushed": "2026-09-24",
+      "title": "A probabilistic histological atlas of the human brain for MRI segmentation",
+      "url": "https://doi.org/10.1038/s41586-025-09708-2",
+      "keys": [
+        "doi:10.1038/s41586-025-09708-2",
+        "title:aprobabilistichistologicalatlasofthehumanbrainformrisegmentation",
+        "title:nextbrain用ai构建可用于mri分割的人脑组织学图谱",
+        "url:https://doi.org/10.1038/s41586-025-09708-2"
+      ],
+      "doi": "10.1038/s41586-025-09708-2"
     }
   ],
   "news": [
@@ -890,6 +902,7 @@
       "title": "Sakeena Fiza Helps NVIDIA Hardware Succeed at Scale",
       "url": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
       "keys": [
+        "title:nvidia介绍硬件验证工程师的系统测试工作",
         "title:sakeenafizahelpsnvidiahardwaresucceedatscale",
         "title:塞凯娜费扎助力nvidia硬件大规模成功",
         "url:https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza"
@@ -935,6 +948,7 @@
       "url": "https://blogs.nvidia.com/blog/ai-day-singapore/",
       "keys": [
         "title:ataidaysingaporenvidiaandpartnersshowcaseaiadvancementsacrosssoutheastasia",
+        "title:nvidia与伙伴在新加坡aiday介绍东南亚ai应用进展",
         "title:在新加坡ai日nvidia及其合作伙伴展示东南亚地区的ai突破性进展",
         "url:https://blogs.nvidia.com/blog/ai-day-singapore"
       ],

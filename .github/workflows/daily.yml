@@ -3,6 +3,7 @@ name: Daily news · update and publish
 on:
   schedule:
     - cron: '0 1 * * *' # 09:00 Asia/Shanghai (UTC+8)
+    - cron: '12 1 * * *' # 09:12 backup, away from the start-of-hour load
   push:
     branches: [main]
   workflow_dispatch:

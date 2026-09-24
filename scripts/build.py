@@ -89,7 +89,7 @@ def news_card(n):
 def library_entry(item, kind, date, prefix='archive/', retired=False, library=True):
     uid = reading_id(item, kind)
     title = item.get('title_zh') or item['title']
-    label = ('原分类 · 人的科学' if retired else CATEGORIES[item['slot']-1][0]) if kind == 'papers' else item.get('kind', '公司动态')
+    label = (item.get('previous_category','原分类 · 人的科学') if retired else CATEGORIES[item['slot']-1][0]) if kind == 'papers' else item.get('kind', '公司动态')
     source = item.get('journal') or item['company']
     search = ' '.join(str(item.get(k,'')) for k in ('title','title_zh','original_title','summary','journal','company','doi','published')) + ' ' + date + ' ' + label + (' 论文' if kind == 'papers' else ' 公司动态')
     data = f'data-library-entry data-search="{esc(search)}"' if library else f'id="{uid}"'
@@ -129,7 +129,8 @@ def render_issue(issue, number, historical=False):
     body = f'''<main><section class="masthead"><div><div class="eyebrow">THE DAILY BRIEF <span aria-hidden="true">/</span> VOL. {number:03}</div><h1>今天，值得读什么。</h1><p class="subhead">三篇研究，一览 AI 前沿。</p></div><div class="edition"><b>{date_label(issue['date'])} · 星期{week}</b><span>生成于 {esc(issue['generated_at'][11:16])} · 北京时间</span><span class="schedule">{icon('clock')}每日 09:00 更新</span></div></section><div class="edition-strip"><div class="strip-left"><span class="strip-label">{esc(issue.get('label','DAILY EDITION'))}</span><span><strong>03</strong> 篇论文 &nbsp; / &nbsp; <strong>{len(issue['news']):02}</strong> 条动态</span></div><span class="strip-right">人的理解 &nbsp; · &nbsp; 科学发现 &nbsp; · &nbsp; AI 进展</span></div>{archive_notice}{warnings}<div class="main-grid"><section aria-labelledby="papers-heading"><div class="column-title"><h2 id="papers-heading">论文精选<span class="small-en">RESEARCH</span></h2><span class="count">每日 3 篇</span></div><p class="section-intro">从理解人，到理解更大的世界。</p>{papers}</section><aside aria-labelledby="news-heading"><div class="column-title"><h2 id="news-heading">AI 公司动态<span class="small-en">INDUSTRY</span></h2><span class="count">国内 · 国际</span></div><p class="section-intro">产品发布、研究进展与技术报告。</p><div class="news-panel">{news}</div><div class="news-note">技术报告归入公司动态，不占每日 3 篇论文名额。<br>公司公布的性能与结论，以官方原文及后续独立评估为准。</div>{METHOD}</aside></div></main>'''
     if historical and issue.get('previous_items'):
         previous = ''.join(library_entry(p,k,issue['date'],prefix='',retired=True,library=False) for k in ('papers','news') for p in issue['previous_items'].get(k,[]))
-        body = body.replace('</main>', f'<section class="revision-history"><h2>本期修订前的条目</h2><p class="subhead">第二类调整为研究人的人工智能工作后，原推送仍保留于此，阅读标记与搜索继续可用。</p>{previous}</section></main>')
+        revision_note = issue.get('revision_note','第二类调整为研究人的人工智能工作后，原推送仍保留于此，阅读标记与搜索继续可用。')
+        body = body.replace('</main>', f'<section class="revision-history"><h2>本期修订前的条目</h2><p class="subhead">{esc(revision_note)}</p>{previous}</section></main>')
     if not historical:
         body += f'''<script>(()=>{{const parts=new Intl.DateTimeFormat('sv-SE',{{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23'}}).formatToParts(new Date());const p=Object.fromEntries(parts.map(x=>[x.type,x.value]));const today=p.year+'-'+p.month+'-'+p.day;const issue={json.dumps(issue['date'])};const previous=new Date(Date.UTC(+p.year,+p.month-1,+p.day)-86400000).toISOString().slice(0,10);if(issue<previous||(issue<today&&+p.hour>=10)){{const e=document.getElementById('stale-notice');e.textContent='最新一期仍为 '+issue+'。今天的推送尚未上线，请稍后刷新或查看 GitHub 更新状态。';e.classList.remove('hidden');}}}})();</script>'''
     return frame(f'{issue["date"]} 每日推送', body, prefix, historical)

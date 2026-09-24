@@ -38,5 +38,20 @@
     "title_zh": "费城儿童医院使用 MONAI 加速儿童心脏三维建模",
     "summary": "据 NVIDIA 介绍，费城儿童医院用开源医学影像框架 MONAI，将 CT、MRI 和三维超声图像转换为儿童心脏模型。原先需要研究人员约四小时的建模流程缩短至数秒，帮助医生在手术或介入治疗前评估个体解剖结构与器械匹配；更安全、精准的诊疗是其应用目标。",
     "summary_source": "https://blogs.nvidia.com/blog/childrens-hospital-open-source-ai-cardiac-care/"
+  },
+  "doi:10.1038/s41586-025-09708-2": {
+    "title_zh": "NextBrain：用 AI 构建可用于 MRI 分割的人脑组织学图谱",
+    "summary": "研究利用人工智能辅助配准和标注，将五个人脑半球的约一万张组织切片重建为三维概率图谱，覆盖333个脑区，并开发了配套的贝叶斯 MRI 分割工具。团队在超高分辨率离体 MRI 分割和阿尔茨海默病活体 MRI 体积分析中展示应用，公开了数据、图谱及工具，为更精细地研究人脑结构提供资源。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09708-2"
+  },
+  "url:https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza": {
+    "title_zh": "NVIDIA 介绍硬件验证工程师的系统测试工作",
+    "summary": "NVIDIA 通过验证工程师 Sakeena Fiza 的工作介绍硬件测试流程：从实验室中的早期样机，逐步检验机架、集群及生产环境的可靠性。测试涉及固件、软件、电力与散热之间的配合，目标是及时发现问题并支持大规模部署；这是一篇工程实践介绍。",
+    "summary_source": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-day-singapore": {
+    "title_zh": "NVIDIA 与伙伴在新加坡 AI Day 介绍东南亚 AI 应用进展",
+    "summary": "NVIDIA 在新加坡 AI Day 介绍开放模型与开发工具在东南亚公共服务、企业和本地语言应用中的合作。新加坡 HTX 正研究使用 Nemotron 3 Super 和 Nano Omni 支持公共安全，马来西亚、越南和泰国的伙伴也在适配区域语言与行业需求。这些进展来自公司及伙伴公告，部分仍处于研究阶段。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-day-singapore/"
   }
 }

@@ -33,31 +33,32 @@
     },
     {
       "type": "journal-article",
-      "title": "Large language models display human-like social desirability biases in Big Five personality surveys",
-      "doi": "10.1093/pnasnexus/pgae533",
-      "url": "https://doi.org/10.1093/pnasnexus/pgae533",
-      "journal": "PNAS Nexus",
-      "publisher": "Oxford University Press (OUP)",
-      "published": "2024-11-28",
-      "authors": "Salecha et al.",
-      "citations": 43,
+      "title": "A probabilistic histological atlas of the human brain for MRI segmentation",
+      "doi": "10.1038/s41586-025-09708-2",
+      "url": "https://doi.org/10.1038/s41586-025-09708-2",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-05",
+      "authors": "Casamitjana et al.",
+      "citations": 18,
       "metadata_source": "Crossref",
-      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgae533",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09708-2",
       "publication_types": [
-        "brief-report",
-        "Journal Article"
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
       ],
       "slot": 2,
       "freshness": "延伸阅读 · 较早发表",
-      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
-      "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 43，距发表 665 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "研究发现，大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差，即倾向于在特质维度上向可接受性较高的端点评分。这一偏差存在于包括GPT-4/3.5、Claude 3、Llama 3和PaLM-2在内的所有测试模型中，且在较新的模型中更为明显。",
       "tag": "研究人的人工智能工作",
-      "ranking_score": 13.4272,
-      "title_zh": "大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fpnasnexus%2Fpgae533%22&format=json&resultType=core&pageSize=1",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "ranking_score": 11.332,
+      "reason": "Nature 实证研究，使用人工智能整理人脑组织学数据并支持 MRI 脑区分割，符合用 AI 研究人的脑结构这一栏目主题。",
+      "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 18，距发表 323 天。巡检核对 DOI、正式发表日期与公开摘要后替换栏目不匹配的条目。引用统计可能滞后且存在学科偏差。",
+      "title_zh": "NextBrain：用 AI 构建可用于 MRI 分割的人脑组织学图谱",
+      "summary": "研究利用人工智能辅助配准和标注，将五个人脑半球的约一万张组织切片重建为三维概率图谱，覆盖333个脑区，并开发了配套的贝叶斯 MRI 分割工具。团队在超高分辨率离体 MRI 分割和阿尔茨海默病活体 MRI 体积分析中展示应用，公开了数据、图谱及工具，为更精细地研究人脑结构提供资源。",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09708-2",
+      "summary_method": "人工核对公开原文"
     },
     {
       "type": "journal-article",
@@ -90,13 +91,15 @@
       "kind": "研究 / 公司动态",
       "published": "2026-09-23",
       "title": "Sakeena Fiza Helps NVIDIA Hardware Succeed at Scale",
-      "summary": "塞凯娜·费扎作为 NVIDIA 的验证工程师，通过从实验室到生产的系统测试，确保尖端硬件成为可靠的基础设施。她的工作始于产品存在之前，通过一系列严格的测试确保硬件在各种实际条件下都能正常工作。",
+      "summary": "NVIDIA 通过验证工程师 Sakeena Fiza 的工作介绍硬件测试流程：从实验室中的早期样机，逐步检验机架、集群及生产环境的可靠性。测试涉及固件、软件、电力与散热之间的配合，目标是及时发现问题并支持大规模部署；这是一篇工程实践介绍。",
       "url": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
       "source_feed": "https://blogs.nvidia.com/feed/",
-      "title_zh": "塞凯娜·费扎助力 NVIDIA 硬件大规模成功",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "NVIDIA 介绍硬件验证工程师的系统测试工作",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://blogs.nvidia.com/blog/nvidia-life-sakeena-fiza/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "塞凯娜·费扎助力 NVIDIA 硬件大规模成功"
+      ]
     },
     {
       "company": "Microsoft Research",
@@ -140,20 +143,24 @@
     {
       "company": "NVIDIA",
       "kind": "研究 / 公司动态",
-      "published": "2026-09-23",
+      "published": "2026-09-22",
       "title": "At AI Day Singapore, NVIDIA and Partners Showcase AI Advancements Across Southeast Asia",
-      "summary": "NVIDIA在新加坡AI日展示了其在东南亚地区的AI突破性进展，通过开放模型、开发者工具和广泛的合作伙伴生态系统，帮助各国将AI从实验阶段推进到大规模部署。新加坡HTX利用NVIDIA的Nemotron模型推进公共安全领域的AI应用。",
+      "summary": "NVIDIA 在新加坡 AI Day 介绍开放模型与开发工具在东南亚公共服务、企业和本地语言应用中的合作。新加坡 HTX 正研究使用 Nemotron 3 Super 和 Nano Omni 支持公共安全，马来西亚、越南和泰国的伙伴也在适配区域语言与行业需求。这些进展来自公司及伙伴公告，部分仍处于研究阶段。",
       "url": "https://blogs.nvidia.com/blog/ai-day-singapore/",
       "source_feed": "https://blogs.nvidia.com/feed/",
-      "title_zh": "在新加坡AI日，NVIDIA及其合作伙伴展示东南亚地区的AI突破性进展",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "NVIDIA 与伙伴在新加坡 AI Day 介绍东南亚 AI 应用进展",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://blogs.nvidia.com/blog/ai-day-singapore/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "在新加坡AI日，NVIDIA及其合作伙伴展示东南亚地区的AI突破性进展"
+      ],
+      "date_source": "https://blogs.nvidia.com/blog/ai-day-singapore/"
     }
   ],
   "notices": [
     "有 1 条新动态缺少可用原文，暂未收录。",
-    "本期有 1 个来源暂时不可用，内容来自其余可用来源。"
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。",
+    "本期第二篇经巡检核对后修订：改为 AI 辅助构建人脑图谱的实证研究；原条目保留在当天归档和历史阅读库。"
   ],
   "sources": [
     {
@@ -267,5 +274,40 @@
       "items": 2
     }
   ],
-  "candidate_count": 977
+  "candidate_count": 977,
+  "previous_items": {
+    "papers": [
+      {
+        "type": "journal-article",
+        "title": "Large language models display human-like social desirability biases in Big Five personality surveys",
+        "doi": "10.1093/pnasnexus/pgae533",
+        "url": "https://doi.org/10.1093/pnasnexus/pgae533",
+        "journal": "PNAS Nexus",
+        "publisher": "Oxford University Press (OUP)",
+        "published": "2024-11-28",
+        "authors": "Salecha et al.",
+        "citations": 43,
+        "metadata_source": "Crossref",
+        "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgae533",
+        "publication_types": [
+          "brief-report",
+          "Journal Article"
+        ],
+        "slot": 2,
+        "freshness": "延伸阅读 · 较早发表",
+        "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+        "evidence": "检索时间：2026-09-24；来源：Crossref；引用数 43，距发表 665 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+        "summary": "研究发现，大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差，即倾向于在特质维度上向可接受性较高的端点评分。这一偏差存在于包括GPT-4/3.5、Claude 3、Llama 3和PaLM-2在内的所有测试模型中，且在较新的模型中更为明显。",
+        "tag": "研究人的人工智能工作",
+        "ranking_score": 13.4272,
+        "title_zh": "大语言模型在五大人格调查中表现出类似人类的社会可接受性偏差",
+        "summary_method": "AI 根据公开摘要整理",
+        "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1093%2Fpnasnexus%2Fpgae533%22&format=json&resultType=core&pageSize=1",
+        "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+        "previous_category": "研究人的人工智能工作（栏目匹配错误，已替换）"
+      }
+    ]
+  },
+  "revision_note": "巡检发现原第二篇研究的是模型自身的问卷偏差，已换成用 AI 研究人脑结构的论文。原条目保留于此，阅读标记和永久去重记录继续有效。",
+  "updated_at": "2026-09-24T10:01:49+08:00"
 }

@@ -45,6 +45,17 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
         self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))
 
+    def test_simulated_participants_are_not_human_research_data(self):
+        title='Large language models display human-like social desirability biases in Big Five personality surveys'
+        abstract=('LLMs can simulate human participants. We gave personality questions to several models '
+                  'and measured their response bias. This limits their use as proxies for human participants.')
+        for slot in (1,2):
+            self.assertFalse(relevant(paper('10.1/model-bias',title,abstract=abstract),slot))
+        self.assertFalse(human_research_source(abstract))
+        self.assertFalse(human_research_source('LLMs simulate data from human respondents and act as substitutes for human subjects.'))
+        self.assertTrue(human_research_source(abstract+' We also compared predictions with ratings from 200 human participants.'))
+        self.assertTrue(human_research_source('Artificial intelligence helped align histological sections of human brains with magnetic resonance images.'))
+
     def test_abstract_identified_reviews_do_not_fill_any_slot(self):
         for abstract in ('This review emphasizes the responsible integration of AI.',
                          'Our comprehensive review summarizes human brain research.'):
