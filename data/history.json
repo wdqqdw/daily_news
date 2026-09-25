@@ -396,6 +396,42 @@
         "url:https://doi.org/10.1038/s41586-025-09708-2"
       ],
       "doi": "10.1038/s41586-025-09708-2"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Large Language Models Persuade Without Planning Theory of Mind",
+      "url": "https://doi.org/10.1111/cogs.70259",
+      "keys": [
+        "doi:10.1111/cogs.70259",
+        "title:largelanguagemodelspersuadewithoutplanningtheoryofmind",
+        "title:大语言模型在无需计划的情况下说服理论of心智能力的新测验",
+        "url:https://doi.org/10.1111/cogs.70259"
+      ],
+      "doi": "10.1111/cogs.70259"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Evaluating the ability of large language models to emulate personality",
+      "url": "https://doi.org/10.1038/s41598-024-84109-5",
+      "keys": [
+        "doi:10.1038/s41598-024-84109-5",
+        "title:evaluatingtheabilityoflargelanguagemodelstoemulatepersonality",
+        "title:评估大语言模型模拟个性的能力",
+        "url:https://doi.org/10.1038/s41598-024-84109-5"
+      ],
+      "doi": "10.1038/s41598-024-84109-5"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "On the Use of Agentic Coding: An Empirical Study of Pull Requests on GitHub",
+      "url": "https://doi.org/10.1145/3798166",
+      "keys": [
+        "doi:10.1145/3798166",
+        "title:ontheuseofagenticcodinganempiricalstudyofpullrequestsongithub",
+        "title:关于使用代理编码的探讨github上拉请求的实证研究",
+        "url:https://doi.org/10.1145/3798166"
+      ],
+      "doi": "10.1145/3798166"
     }
   ],
   "news": [
@@ -953,6 +989,61 @@
         "url:https://blogs.nvidia.com/blog/ai-day-singapore"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Qwen Code · Release v0.24.5",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.5",
+      "keys": [
+        "title:qwencodereleasev0245",
+        "title:qwencode发布v0245版本",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.5"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Introducing Gemini 3.8 Live with Live Avatar",
+      "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
+      "keys": [
+        "title:introducinggemini38livewithliveavatar",
+        "title:推出gemini38live附带实时动态头像",
+        "url:https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "How Open Science Can Help Researchers Prepare for the Next Pandemic",
+      "url": "https://blogs.nvidia.com/blog/open-protein-dataset/",
+      "keys": [
+        "title:howopensciencecanhelpresearchersprepareforthenextpandemic",
+        "title:开放科学如何帮助研究人员为下一次疫情做好准备",
+        "url:https://blogs.nvidia.com/blog/open-protein-dataset"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Contain the Chaos: ‘CONTROL Resonant’ Launches on GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant/",
+      "keys": [
+        "title:containthechaoscontrolresonantlaunchesongeforcenow",
+        "title:controlresonant登陆geforcenow终极会员套餐限时发售",
+        "url:https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-25",
+      "title": "Sam Altman’s remarks at the United Nations Security Council",
+      "url": "https://openai.com/index/sam-altman-un-security-council-remarks",
+      "keys": [
+        "title:samaltmansremarksattheunitednationssecuritycouncil",
+        "title:萨姆阿尔特曼在联合国安全理事会的发言关于人工智能安全人类控制与国际合作",
+        "url:https://openai.com/index/sam-altman-un-security-council-remarks"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
