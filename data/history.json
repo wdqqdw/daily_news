@@ -405,6 +405,7 @@
         "doi:10.1111/cogs.70259",
         "title:largelanguagemodelspersuadewithoutplanningtheoryofmind",
         "title:大语言模型在无需计划的情况下说服理论of心智能力的新测验",
+        "title:大语言模型能有效说服人但未必擅长基于心理理论的规划",
         "url:https://doi.org/10.1111/cogs.70259"
       ],
       "doi": "10.1111/cogs.70259"
@@ -1006,6 +1007,7 @@
       "title": "Introducing Gemini 3.8 Live with Live Avatar",
       "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "keys": [
+        "title:gemini38live增加实时虚拟形象功能",
         "title:introducinggemini38livewithliveavatar",
         "title:推出gemini38live附带实时动态头像",
         "url:https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar"
@@ -1030,6 +1032,7 @@
       "keys": [
         "title:containthechaoscontrolresonantlaunchesongeforcenow",
         "title:controlresonant登陆geforcenow终极会员套餐限时发售",
+        "title:geforcenow新增controlresonant计划支持googlebooks",
         "url:https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant"
       ],
       "company": "NVIDIA"

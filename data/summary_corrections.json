@@ -53,5 +53,20 @@
     "title_zh": "NVIDIA 与伙伴在新加坡 AI Day 介绍东南亚 AI 应用进展",
     "summary": "NVIDIA 在新加坡 AI Day 介绍开放模型与开发工具在东南亚公共服务、企业和本地语言应用中的合作。新加坡 HTX 正研究使用 Nemotron 3 Super 和 Nano Omni 支持公共安全，马来西亚、越南和泰国的伙伴也在适配区域语言与行业需求。这些进展来自公司及伙伴公告，部分仍处于研究阶段。",
     "summary_source": "https://blogs.nvidia.com/blog/ai-day-singapore/"
+  },
+  "doi:10.1111/cogs.70259": {
+    "title_zh": "大语言模型能有效说服人，但未必擅长基于心理理论的规划",
+    "summary": "研究用三组互动说服实验比较 o3 与人类。面对理性机器人且目标的知识和偏好被隐藏时，o3 未优于随机水平；信息已知时表现较好。面对真人的实验中，o3 在信息已知条件下的说服效果显著优于人类。结果提示，说服有效不等于具备获取并运用他人心理状态的多步规划能力。",
+    "summary_source": "https://onlinelibrary.wiley.com/doi/10.1111/cogs.70259"
+  },
+  "url:https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar": {
+    "title_zh": "Gemini 3.8 Live 增加实时虚拟形象功能",
+    "summary": "Google 在 Gemini Enterprise 推出 Live Avatar，将实时对话与低延迟视频生成结合，支持同步语音、表情和后台工具调用。官方称可在97种语言之间切换；自定义形象目前仅向列入许可名单的企业开放，生成的音视频嵌入 SynthID 水印。",
+    "summary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
+  },
+  "url:https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant": {
+    "title_zh": "GeForce NOW 新增《CONTROL Resonant》，计划支持 Googlebooks",
+    "summary": "NVIDIA 宣布《CONTROL Resonant》登陆 GeForce NOW，官方称 Ultimate 会员可使用 DLSS 4 等技术。公告中的赠游戏优惠要求在9月27日前购买12个月的 Ultimate 会员，并非所有订阅均适用；Googlebooks 支持仍为后续计划。",
+    "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant/"
   }
 }

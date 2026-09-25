@@ -328,6 +328,20 @@ class ReadingAndSummaryTests(unittest.TestCase):
             self.assertIn('不能直接照抄英文标题',retry['messages'][-1]['content'])
             self.assertEqual(call.call_count,3)
 
+    def test_mixed_translation_is_retried_in_title_or_summary(self):
+        repaired={'title_zh':'用互动实验评估心理理论',
+                  'summary':'研究用互动任务比较人类和模型在不同信息条件下的行为，发现说服效果与多步规划能力并不完全一致，结论受实验设置限制。'}
+        def response(result):
+            return io.BytesIO(json.dumps({'choices':[{'finish_reason':'stop','message':{'content':json.dumps(result)}}]}).encode())
+        source='The experiment compares model and human planning in interactive tasks.'
+        for field in ('title_zh','summary'):
+            invalid={**repaired,field:repaired[field].replace('心理理论','理论_of_心智') if field=='title_zh' else '理论_of_心智：'+repaired[field]}
+            with self.subTest(field=field),patch('summarize.urllib.request.urlopen',side_effect=[response(invalid),response(repaired),response(repaired)]) as call:
+                self.assertEqual(summarize('http://localhost',{'title':'Interactive theory of mind'},'papers',source),repaired)
+                self.assertEqual(call.call_count,3)
+                retry=json.loads(call.call_args_list[1].args[0].data)
+                self.assertIn(source,retry['messages'][1]['content'])
+
     def test_bad_news_is_deferred_but_paper_failure_stops_publication(self):
         def item(name):
             return {'title':name,'url':'https://example.com/'+name,'_source_text':'Prepared official source text.','_summary_source':'https://example.com/'+name}

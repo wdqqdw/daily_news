@@ -23,13 +23,15 @@
       "freshness": "近期研究 · 其他期刊补充",
       "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
       "evidence": "检索时间：2026-09-25；来源：Crossref；引用数 0，距发表 9 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "研究通过设计一个需要代理战略性揭示信息以说服目标选择政策提案的新型理论_of_心智（ToM）任务，评估了人类和大语言模型的ToM能力。实验结果显示，尽管OpenAI的o3模型在已知信息条件下表现出色，但在需要多步规划以获取和利用心理状态信息的隐藏信息条件下表现不佳。人类在两种条件下均表现出中等水平的能力，表明他们能够进行这种规划。此外，o3在揭示信息条件下显著优于人类说服者，表明有效的说服可以不依赖于显式的ToM推理。研究结果提醒我们，不应仅凭预测性、旁观者的基准测试就将人类般的ToM能力归因于大语言模型，同时强调了它们对人们信念和行为的影响潜力。",
+      "summary": "研究用三组互动说服实验比较 o3 与人类。面对理性机器人且目标的知识和偏好被隐藏时，o3 未优于随机水平；信息已知时表现较好。面对真人的实验中，o3 在信息已知条件下的说服效果显著优于人类。结果提示，说服有效不等于具备获取并运用他人心理状态的多步规划能力。",
       "tag": "认知与行为建模",
       "ranking_score": 3.8537,
-      "title_zh": "大语言模型在无需计划的情况下说服：理论_of_心智能力的新测验",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1111%2Fcogs.70259%22&format=json&resultType=core&pageSize=1",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "大语言模型能有效说服人，但未必擅长基于心理理论的规划",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://onlinelibrary.wiley.com/doi/10.1111/cogs.70259",
+      "title_aliases": [
+        "大语言模型在无需计划的情况下说服：理论_of_心智能力的新测验"
+      ]
     },
     {
       "type": "journal-article",
@@ -104,13 +106,15 @@
       "kind": "产品发布",
       "published": "2026-09-24",
       "title": "Introducing Gemini 3.8 Live with Live Avatar",
-      "summary": "Gemini 3.8 Live 附带实时动态头像功能，通过将实时对话能力与低延迟视频流结合，为企业的对话式AI体验带来更自然和直观的视觉呈现。该功能支持多语言同步和自定义头像，能够无缝切换语言并适应97种语言的唇部同步和表情，同时保持视频质量。",
+      "summary": "Google 在 Gemini Enterprise 推出 Live Avatar，将实时对话与低延迟视频生成结合，支持同步语音、表情和后台工具调用。官方称可在97种语言之间切换；自定义形象目前仅向列入许可名单的企业开放，生成的音视频嵌入 SynthID 水印。",
       "url": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
       "source_feed": "https://deepmind.google/blog/rss.xml",
-      "title_zh": "推出 Gemini 3.8 Live 附带实时动态头像",
-      "summary_method": "AI 根据官方公告整理",
-      "summary_source": "https://deepmind.google/blog/introducing-gemini-38-live-with-live-avatar/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "Gemini 3.8 Live 增加实时虚拟形象功能",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/",
+      "title_aliases": [
+        "推出 Gemini 3.8 Live 附带实时动态头像"
+      ]
     },
     {
       "company": "NVIDIA",
@@ -130,13 +134,15 @@
       "kind": "产品发布",
       "published": "2026-09-24",
       "title": "Contain the Chaos: ‘CONTROL Resonant’ Launches on GeForce NOW",
-      "summary": "Remedy Entertainment 的 CONTROL Resonant 游戏现已登陆 GeForce NOW，同时推出终极会员套餐，购买 12 个月的 GeForce NOW 会员可免费获得 CONTROL Resonant。",
+      "summary": "NVIDIA 宣布《CONTROL Resonant》登陆 GeForce NOW，官方称 Ultimate 会员可使用 DLSS 4 等技术。公告中的赠游戏优惠要求在9月27日前购买12个月的 Ultimate 会员，并非所有订阅均适用；Googlebooks 支持仍为后续计划。",
       "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant/",
       "source_feed": "https://blogs.nvidia.com/feed/",
-      "title_zh": "CONTROL Resonant 登陆 GeForce NOW，终极会员套餐限时发售",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "GeForce NOW 新增《CONTROL Resonant》，计划支持 Googlebooks",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "CONTROL Resonant 登陆 GeForce NOW，终极会员套餐限时发售"
+      ]
     },
     {
       "company": "OpenAI",
@@ -267,5 +273,6 @@
       "items": 24
     }
   ],
-  "candidate_count": 972
+  "candidate_count": 972,
+  "updated_at": "2026-09-25T09:53:29+08:00"
 }
