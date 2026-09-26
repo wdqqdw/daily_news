@@ -433,6 +433,42 @@
         "url:https://doi.org/10.1145/3798166"
       ],
       "doi": "10.1145/3798166"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "Large language models can predict the results of social science experiments",
+      "url": "https://doi.org/10.1038/s41586-026-10742-x",
+      "keys": [
+        "doi:10.1038/s41586-026-10742-x",
+        "title:largelanguagemodelscanpredicttheresultsofsocialscienceexperiments",
+        "title:大语言模型能预测社会科学实验结果但会高估效应大小",
+        "url:https://doi.org/10.1038/s41586-026-10742-x"
+      ],
+      "doi": "10.1038/s41586-026-10742-x"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "People choose to receive human empathy despite rating AI empathy higher",
+      "url": "https://doi.org/10.1038/s44271-025-00387-3",
+      "keys": [
+        "doi:10.1038/s44271-025-00387-3",
+        "title:peoplechoosetoreceivehumanempathydespiteratingaiempathyhigher",
+        "title:人们更愿选择人类的共情回应却给ai回应更高评价",
+        "url:https://doi.org/10.1038/s44271-025-00387-3"
+      ],
+      "doi": "10.1038/s44271-025-00387-3"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "Global cancer statistics 2024: GLOBOCAN estimates of incidence and mortality worldwide for 34 cancers in 186 countries",
+      "url": "https://doi.org/10.3322/caac.70090",
+      "keys": [
+        "doi:10.3322/caac.70090",
+        "title:globalcancerstatistics2024globocanestimatesofincidenceandmortalityworldwidefor34cancersin186countries",
+        "title:全球癌症统计2024186个国家34类癌症的发病与死亡估计",
+        "url:https://doi.org/10.3322/caac.70090"
+      ],
+      "doi": "10.3322/caac.70090"
     }
   ],
   "news": [
@@ -1047,6 +1083,39 @@
         "url:https://openai.com/index/sam-altman-un-security-council-remarks"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "Qwen Code · Release v0.24.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
+      "keys": [
+        "title:qwencodereleasev0246",
+        "title:qwencode发布v0246完善托管运行与批量任务",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "AI Security Is an Engineering Problem — How to Solve It at Every Layer of the Agent Stack",
+      "url": "https://blogs.nvidia.com/blog/ai-security-agent-stack/",
+      "keys": [
+        "title:aisecurityisanengineeringproblemhowtosolveitateverylayeroftheagentstack",
+        "title:nvidia讨论如何为ai智能体各层设置安全控制",
+        "url:https://blogs.nvidia.com/blog/ai-security-agent-stack"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-26",
+      "title": "5 Companies Using NVIDIA AI for Clean Energy",
+      "url": "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/",
+      "keys": [
+        "title:5companiesusingnvidiaaiforcleanenergy",
+        "title:nvidia展示ai在清洁能源中的企业应用",
+        "url:https://blogs.nvidia.com/blog/clean-energy-nvidia-ai"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }

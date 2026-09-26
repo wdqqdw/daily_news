@@ -62,6 +62,40 @@ class SelectionTests(unittest.TestCase):
             for slot in (1,2,3):
                 self.assertFalse(relevant(paper('10.1/review',abstract=abstract),slot))
         self.assertTrue(relevant(paper('10.1/data',abstract='Participants reviewed their diaries before making human choices.'),2))
+
+    def test_bot_societies_require_an_observed_human_comparison(self):
+        abstract=('AI chatbots mimic human behaviour in psychological tasks. '
+                  'In a large simulated online society of AI chatbots, communities formed '
+                  'among 33,299 bots. Artificial societies of AI chatbots may simulate human collectives.')
+        self.assertFalse(human_research_source(abstract))
+        self.assertFalse(human_research_source(abstract+' We simulated human participants.'))
+        self.assertTrue(human_research_source(abstract+' We compared results with observations from real humans.'))
+        self.assertTrue(human_research_source(abstract+' We compared responses from 200 human participants.'))
+
+    def test_llm_report_generation_does_not_count_as_modelling_people(self):
+        p=paper('10.1/report','Encoded EEG-based brain-computer interfaces with clinical LLM applications',
+                abstract='Neural networks classify human brain activity using EEG from human subjects. We integrated an LLM (GPT-4) '
+                         'to generate clinical-style summaries based on model outputs.')
+        self.assertFalse(relevant(p,1))
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(dict(p,abstract='Human EEG data.',_excluded_slots=[1]),1))
+        self.assertTrue(relevant(dict(p,_excluded_slots=[1]),2))
+        selected=select_papers([paper('10.1/model'),dict(p,_excluded_slots=[1]),
+                                paper('10.1/hot','Quantum materials')],set(),TODAY)
+        self.assertEqual(selected[1]['doi'],p['doi'])
+        self.assertNotIn('_excluded_slots',selected[1])
+
+    def test_human_social_experiments_and_empathy_still_require_evidence(self):
+        p=paper('10.1/social','Large language models can predict the results of social science experiments',
+                abstract='We predict treatment effects in 70 experiments involving 119,330 participants.')
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(human_research_source(p['abstract']))
+        p=paper('10.1/empathy','People choose to receive human empathy despite rating AI empathy higher',
+                abstract='Four studies measured participant choices and responses to AI emotional support.',citations=14)
+        self.assertTrue(relevant(p,2))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
     def test_reports_and_conceptual_items_do_not_fill_slots(self):
         for title in ('Qwen Technical Report','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
             self.assertFalse(relevant(paper('10.1/no',title),1))

@@ -33,11 +33,11 @@ CROSSREF_SLOTS = threading.BoundedSemaphore(2)
 BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|guideline|reply to|comment on|news and views)(\b|:)', re.I)
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT|foundation model\w*)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|human (?:choices?|preferences?|intentions?|emotions?))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*)\b', re.I)
-HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind)\b',re.I)
+PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
+HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind|social science experiments?)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
 NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advancement|elsevier|cell press', re.I)
@@ -47,11 +47,17 @@ NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|lette
 HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory))\b',re.I)
 MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
 SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:e|ed|ing)|proxies for|substitutes for)\s+(?:data from\s+)?human\s+(?:participants?|subjects?|respondents?)\b',re.I)
+BOT_SOCIETY = re.compile(r'\b(?:simulated (?:online )?societ(?:y|ies)|artificial societ(?:y|ies)) of (?:AI )?(?:chatbots?|agents?)\b',re.I)
+OBSERVED_HUMANS = re.compile(r'\b(?:human (?:participants?|subjects?|respondents?|data|ratings?|responses?)|(?:data|observations|ratings|responses) (?:from|of) (?:real |actual )?(?:humans?|people)|fMRI|EEG|ECoG)\b',re.I)
+LLM_REPORTING_ONLY = re.compile(r'\b(?:generat\w* (?:clinical.style |clinical )?(?:summaries|reports) based on model outputs|LLM.based (?:reporting|interpretation) layer)\b',re.I)
 
 def human_research_source(text):
     # Simulated participants and model proxies are not evidence of human data.
     # Keep the rest of the abstract so genuine human comparisons can qualify.
     text = SIMULATED_HUMAN_REFERENCES.sub('',text)
+    # A bot population plus background mentions of human behaviour is not a
+    # human comparison. Require observed human data for these simulations.
+    if BOT_SOCIETY.search(text) and not OBSERVED_HUMANS.search(text):return False
     # Human studies may describe samples and diaries without saying "participants".
     sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
     human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)
@@ -197,11 +203,14 @@ def is_nsc(p):
 
 def relevant(p, slot):
     title = p['title']
+    if slot in p.get('_excluded_slots',[]):return False
     if BAD_TITLE.search(title): return False
     if any(NON_RESEARCH_TYPE.search(t) for t in p.get('publication_types',[])):return False
     if slot in (1,2) and MODEL_PERSONALITY.search(title):return False
     if THEORY_ONLY.search(p.get('abstract','')):return False
     if slot == 1:
+        # An LLM narrating another model's predictions does not model people.
+        if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
         return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
@@ -233,6 +242,7 @@ def select_papers(pool, seen, today):
         if slot == 1:
             candidates = recent or candidates
         chosen = copy.deepcopy(max(candidates, key=lambda p:(score(p,slot,today),p['published'],p['doi'])))
+        chosen.pop('_excluded_slots',None)
         chosen['slot'] = slot
         age = (today-dt.date.fromisoformat(chosen['published'])).days
         chosen['freshness'] = '近期研究' if age <= 180 else '延伸阅读 · 较早发表'
@@ -387,10 +397,12 @@ def generate(today):
     history=load_history(DATA)
     seen=history_keys(history,'papers')
     jobs={
-      'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind" OR TITLE_ABS:personality)',today,seen),
+      'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind" OR TITLE_ABS:personality OR TITLE_ABS:"social science experiments" OR TITLE_ABS:"human empathy")',today,seen),
       'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
+      'LLM social experiments':lambda:crossref('large language models social science experiments',today),
+      'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),
       'LLM cognition':lambda:crossref('language models human cognition brain theory of mind',today),
       'AI human behaviour':lambda:crossref('artificial intelligence human cognition psychology behavior',today,days=365),
       'Human interaction':lambda:crossref('human artificial intelligence interaction experiment',today,days=365),
@@ -430,11 +442,20 @@ def generate(today):
     for _ in range(12):
         selected=select_papers(pool,excluded_papers,today)
         unavailable=[]
+        retry_selection=False
         for item in selected:
             try:
                 if item['doi'] not in prepared:
                     prepared[item['doi']]=source_text(item,'papers',fetch)
                 text,url=prepared[item['doi']]
+                if item['slot']==1 and LLM_REPORTING_ONLY.search(text):
+                    # Exclude this role only; another AI method may still be a
+                    # valid human study for slot 2 if it meets that slot's rules.
+                    for candidate in pool:
+                        if candidate['doi']==item['doi']:candidate['_excluded_slots']=[1]
+                    retry_selection=True
+                    print('Skipping reporting-only LLM use for slot 1: '+item['title'],flush=True)
+                    continue
                 if THEORY_ONLY.search(text):
                     unavailable.append(item)
                     print('Skipping non-empirical paper identified from abstract: '+item['title'],flush=True)
@@ -448,7 +469,7 @@ def generate(today):
             except ValueError:
                 unavailable.append(item)
                 print('Skipping paper without accessible abstract: '+item['title'],flush=True)
-        if not unavailable:break
+        if not unavailable and not retry_selection:break
         for item in unavailable:excluded_papers.update(item_keys(item,'papers'))
     else:raise RuntimeError('Insufficient accessible paper abstracts; preserving previous edition')
     selected_news=[]

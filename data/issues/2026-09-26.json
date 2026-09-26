@@ -1,0 +1,248 @@
+{
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T09:45:11+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models can predict the results of social science experiments",
+      "doi": "10.1038/s41586-026-10742-x",
+      "url": "https://doi.org/10.1038/s41586-026-10742-x",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-07-08",
+      "authors": "Ashokkumar et al.",
+      "citations": 9,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-026-10742-x",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "slot": 1,
+      "freshness": "近期研究",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-26；来源：Crossref；引用数 9，距发表 80 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究汇集70项美国预注册调查实验，涵盖119,330名参与者和469个实验效应，让 GPT-4 模拟不同条件下的人的反应。预测与真实效应高度相关，准确度接近汇总的人类预测；在训练截止日前尚未公开的研究中，也观察到较高相关性。但模型系统性高估效应大小，在另一组大型研究中的相关性较低。",
+      "tag": "认知与行为建模",
+      "ranking_score": 8.8313,
+      "title_zh": "大语言模型能预测社会科学实验结果，但会高估效应大小",
+      "summary_source": "https://www.nature.com/articles/s41586-026-10742-x",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "People choose to receive human empathy despite rating AI empathy higher",
+      "doi": "10.1038/s44271-025-00387-3",
+      "url": "https://doi.org/10.1038/s44271-025-00387-3",
+      "journal": "Communications Psychology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-31",
+      "authors": "Wenger et al.",
+      "citations": 14,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44271-025-00387-3",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-26；来源：Crossref；引用数 14，距发表 238 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "四项实验让参与者选择接受人类或 AI 的共情回应，并评价收到的内容。参与者整体更偏好人类来源，但在选择并体验 AI 回应时，对回应质量、被倾听的感受和投入程度给出更高评分。研究揭示来源偏好与体验评价的差异，不能据此推断 AI 具备情感体验或能替代真实人际支持。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.9238,
+      "title_zh": "人们更愿选择人类的共情回应，却给 AI 回应更高评价",
+      "summary_source": "https://www.nature.com/articles/s44271-025-00387-3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Global cancer statistics 2024: GLOBOCAN estimates of incidence and mortality worldwide for 34 cancers in 186 countries",
+      "doi": "10.3322/caac.70090",
+      "url": "https://doi.org/10.3322/caac.70090",
+      "journal": "CA: A Cancer Journal for Clinicians",
+      "publisher": "Wiley",
+      "published": "2026-07-08",
+      "authors": "Sung et al.",
+      "citations": 85,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.3322%2Fcaac.70090",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 85 次引用，约 31.88 次 / 月。",
+      "evidence": "检索时间：2026-09-26；来源：Crossref；引用数 85，距发表 80 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究依据 GLOBOCAN 数据估计，2024年全球新增癌症约2,060万例、死亡约980万例，肺癌的发病和死亡负担均居首位，各地区差异明显。基于人口变化趋势，作者预测2050年新增病例可能达到3,440万，比2024年增加67%；这是特定假设下的预测，不是已经发生的结果。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 15.2531,
+      "title_zh": "全球癌症统计2024：186个国家34类癌症的发病与死亡估计",
+      "summary_source": "https://acsjournals.onlinelibrary.wiley.com/doi/10.3322/caac.70090",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-26",
+      "title": "Qwen Code · Release v0.24.6",
+      "summary": "新版增加托管任务的执行、状态查询和取消接口，完善会话日志、恢复与故障切换，并支持创建会话时选择模型和推理设置。更新还加入咨询工具和批量 API 工作流，修复工具权限合并及多轮调用问题。官方发布记录称启动速度和内存占用得到改善。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.24.6，完善托管运行与批量任务",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "安全 / 报告",
+      "published": "2026-09-21",
+      "title": "AI Security Is an Engineering Problem — How to Solve It at Every Layer of the Agent Stack",
+      "summary": "NVIDIA 的技术文章提出，安全控制需覆盖模型、工具编排和运行环境，在模型作出错误决策时仍能限制文件、网络和进程访问。文章介绍 OpenShell 的隔离执行与外部策略控制，以及 Cisco、JFrog 在治理和工具校验方面的集成，并强调可追溯身份、受保护日志和持续测试。",
+      "url": "https://blogs.nvidia.com/blog/ai-security-agent-stack/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 讨论如何为 AI 智能体各层设置安全控制",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-security-agent-stack/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-21",
+      "title": "5 Companies Using NVIDIA AI for Clean Energy",
+      "summary": "NVIDIA 介绍五家清洁能源企业的 AI 实践，包括 ThinkLabs 用电网仿真辅助并网评估、Atomic Canyon 为核电人员提供知识管理和助手，以及 Redwood Materials 结合回收电动车电池与 AI 控制，为数据中心提供储能。案例涉及电网规划、核电运营和供电调节，成效来自官方案例介绍。",
+      "url": "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 展示 AI 在清洁能源中的企业应用",
+      "summary_source": "https://blogs.nvidia.com/blog/clean-energy-nvidia-ai/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。",
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 136
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 68
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": false,
+      "error": "not well-formed (invalid token): line 1, column 0"
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 23
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "candidate_count": 1080
+}
