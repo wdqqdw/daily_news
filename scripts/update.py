@@ -487,7 +487,7 @@ def generate(today):
     if unavailable_news:notices.append(f'有 {unavailable_news} 条新动态缺少可用原文，暂未收录。')
     failed=sum(not s['ok'] for s in statuses)
     if failed:notices.append(f'本期有 {failed} 个来源暂时不可用，内容来自其余可用来源。')
-    if not selected_news:notices.append('本次没有发现未推送的公司动态；已排除所有历史内容。')
+    if not selected_news:notices.append('本期没有可用的新公司动态；历史内容不重复收录。')
     issue={'date':str(today),'generated_at':dt.datetime.now(TZ).isoformat(timespec='seconds'),'label':'DAILY EDITION','papers':selected,'news':selected_news,'notices':notices,'sources':statuses,'candidate_count':len(pool)}
     validate(issue)
     assert_unseen(issue,history)

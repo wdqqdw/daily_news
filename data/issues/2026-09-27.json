@@ -50,13 +50,15 @@
       "freshness": "延伸阅读 · 较早发表",
       "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
       "evidence": "检索时间：2026-09-27；来源：Crossref；引用数 7，距发表 209 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "研究介绍了一种名为PsychAdapter的轻量级大语言模型架构修改方法，通过使用语言与个性、人口统计和心理健康特征之间的实证联系，生成反映特定个性特征的文本。研究将PsychAdapter应用于GPT-2、Gemma-2B和LLaMA-3，并由专家评定确认生成的文本准确反映了指定的个性特征和心理健康状态。该方法为将心理行为模式嵌入语言模型提供了新途径，不仅限于个性条件生成，还适用于模拟患者反映心理障碍和适应性翻译。",
+      "summary": "研究基于人类博客、推文和语言评估模型估计的心理特征分数，在语言模型各层加入条件控制，使输出体现特定特征。专家评价显示，生成文本能体现指定的大五人格、抑郁和生活满意度特征。这些结果针对文本生成，作者将模拟患者和个性化翻译列为未来潜在用途。",
       "tag": "研究人的人工智能工作",
       "ranking_score": 8.1777,
-      "title_zh": "PsychAdapter：使大语言模型反映个性、人格和心理健康特征",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs44387-026-00071-9%22&format=json&resultType=core&pageSize=1",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "PsychAdapter：让语言模型生成体现人格与心理特征的文本",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.nature.com/articles/s44387-026-00071-9",
+      "title_aliases": [
+        "PsychAdapter：使大语言模型反映个性、人格和心理健康特征"
+      ]
     },
     {
       "type": "journal-article",
@@ -87,7 +89,7 @@
   "notices": [
     "有 2 条新动态缺少可用原文，暂未收录。",
     "本期有 1 个来源暂时不可用，内容来自其余可用来源。",
-    "本次没有发现未推送的公司动态；已排除所有历史内容。"
+    "本期没有可用的新公司动态；历史内容不重复收录。"
   ],
   "sources": [
     {
@@ -211,5 +213,6 @@
       "items": 1
     }
   ],
-  "candidate_count": 1083
+  "candidate_count": 1083,
+  "updated_at": "2026-09-27T09:41:11+08:00"
 }

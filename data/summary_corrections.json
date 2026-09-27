@@ -68,5 +68,10 @@
     "title_zh": "GeForce NOW 新增《CONTROL Resonant》，计划支持 Googlebooks",
     "summary": "NVIDIA 宣布《CONTROL Resonant》登陆 GeForce NOW，官方称 Ultimate 会员可使用 DLSS 4 等技术。公告中的赠游戏优惠要求在9月27日前购买12个月的 Ultimate 会员，并非所有订阅均适用；Googlebooks 支持仍为后续计划。",
     "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-control-resonant/"
+  },
+  "doi:10.1038/s44387-026-00071-9": {
+    "title_zh": "PsychAdapter：让语言模型生成体现人格与心理特征的文本",
+    "summary": "研究基于人类博客、推文和语言评估模型估计的心理特征分数，在语言模型各层加入条件控制，使输出体现特定特征。专家评价显示，生成文本能体现指定的大五人格、抑郁和生活满意度特征。这些结果针对文本生成，作者将模拟患者和个性化翻译列为未来潜在用途。",
+    "summary_source": "https://www.nature.com/articles/s44387-026-00071-9"
   }
 }
