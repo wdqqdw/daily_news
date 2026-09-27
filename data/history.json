@@ -469,6 +469,42 @@
         "url:https://doi.org/10.3322/caac.70090"
       ],
       "doi": "10.3322/caac.70090"
+    },
+    {
+      "first_pushed": "2026-09-27",
+      "title": "Modeling Individual Language Patterns and Psychological Constructs to Generate AI-Augmented Data for Scalable Psychological Assessment",
+      "url": "https://doi.org/10.1177/10731911261455483",
+      "keys": [
+        "doi:10.1177/10731911261455483",
+        "title:modelingindividuallanguagepatternsandpsychologicalconstructstogenerateaiaugmenteddataforscalablepsychologicalassessment",
+        "title:建模个体语言模式和心理构念以生成增强数据进行可扩展的心理评估",
+        "url:https://doi.org/10.1177/10731911261455483"
+      ],
+      "doi": "10.1177/10731911261455483"
+    },
+    {
+      "first_pushed": "2026-09-27",
+      "title": "PsychAdapter: adapting LLMs to reflect traits, personality, and mental health",
+      "url": "https://doi.org/10.1038/s44387-026-00071-9",
+      "keys": [
+        "doi:10.1038/s44387-026-00071-9",
+        "title:psychadapteradaptingllmstoreflecttraitspersonalityandmentalhealth",
+        "title:psychadapter使大语言模型反映个性人格和心理健康特征",
+        "url:https://doi.org/10.1038/s44387-026-00071-9"
+      ],
+      "doi": "10.1038/s44387-026-00071-9"
+    },
+    {
+      "first_pushed": "2026-09-27",
+      "title": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+      "url": "https://doi.org/10.1126/science.aec8352",
+      "keys": [
+        "doi:10.1126/science.aec8352",
+        "title:sycophanticaidecreasesprosocialintentionsandpromotesdependence",
+        "title:奉承型ai减少利他意图并促进依赖",
+        "url:https://doi.org/10.1126/science.aec8352"
+      ],
+      "doi": "10.1126/science.aec8352"
     }
   ],
   "news": [

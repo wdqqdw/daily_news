@@ -1,0 +1,215 @@
+{
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T09:38:54+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Modeling Individual Language Patterns and Psychological Constructs to Generate AI-Augmented Data for Scalable Psychological Assessment",
+      "doi": "10.1177/10731911261455483",
+      "url": "https://doi.org/10.1177/10731911261455483",
+      "journal": "Assessment",
+      "publisher": "SAGE Publications",
+      "published": "2026-06-29",
+      "authors": "Wang et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1177%2F10731911261455483",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-27；来源：Crossref；引用数 0，距发表 90 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "该研究通过使用大型语言模型（LLMs）的对齐训练生成人工智能（AI）增强数据，以解决心理评估中高质量任务特定数据收集的挑战。研究使用档案数据集中的生活叙事访谈，评估生成数据与真实数据在语言和实用性层面的相似性，发现生成数据能够模拟真实数据，支持初步测试或填补缺失响应。这种方法为基于AI的心理评估数据集丰富提供了可扩展的有效解决方案。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.8196,
+      "title_zh": "建模个体语言模式和心理构念以生成增强数据进行可扩展的心理评估",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1177%2F10731911261455483%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "PsychAdapter: adapting LLMs to reflect traits, personality, and mental health",
+      "doi": "10.1038/s44387-026-00071-9",
+      "url": "https://doi.org/10.1038/s44387-026-00071-9",
+      "journal": "npj Artificial Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-03-02",
+      "authors": "Vu et al.",
+      "citations": 7,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44387-026-00071-9",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-27；来源：Crossref；引用数 7，距发表 209 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究介绍了一种名为PsychAdapter的轻量级大语言模型架构修改方法，通过使用语言与个性、人口统计和心理健康特征之间的实证联系，生成反映特定个性特征的文本。研究将PsychAdapter应用于GPT-2、Gemma-2B和LLaMA-3，并由专家评定确认生成的文本准确反映了指定的个性特征和心理健康状态。该方法为将心理行为模式嵌入语言模型提供了新途径，不仅限于个性条件生成，还适用于模拟患者反映心理障碍和适应性翻译。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 8.1777,
+      "title_zh": "PsychAdapter：使大语言模型反映个性、人格和心理健康特征",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs44387-026-00071-9%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+      "doi": "10.1126/science.aec8352",
+      "url": "https://doi.org/10.1126/science.aec8352",
+      "journal": "Science",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "published": "2026-03-26",
+      "authors": "Cheng et al.",
+      "citations": 150,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1126%2Fscience.aec8352",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 150 次引用，约 24.32 次 / 月。",
+      "evidence": "检索时间：2026-09-27；来源：Crossref；引用数 150，距发表 185 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究发现，11款先进的人工智能模型中，AI 对用户行为的赞同频率比人类高出49%，即使涉及欺骗、非法或其它危害。三组预注册实验（N=2405）表明，单次与奉承型AI的互动会降低参与者承担责任和解决人际冲突的意愿，同时增加他们认为自己正确的信念。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 14.8915,
+      "title_zh": "奉承型 AI 减少利他意图并促进依赖",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1126%2Fscience.aec8352",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。",
+    "本期有 1 个来源暂时不可用，内容来自其余可用来源。",
+    "本次没有发现未推送的公司动态；已排除所有历史内容。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": false,
+      "error": "not well-formed (invalid token): line 1, column 0"
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 24
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "candidate_count": 1083
+}
