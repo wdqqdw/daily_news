@@ -506,6 +506,42 @@
         "url:https://doi.org/10.1126/science.aec8352"
       ],
       "doi": "10.1126/science.aec8352"
+    },
+    {
+      "first_pushed": "2026-09-28",
+      "title": "Brain-model neural similarity reveals abstractive summarization performance",
+      "url": "https://doi.org/10.1038/s41598-024-84530-w",
+      "keys": [
+        "doi:10.1038/s41598-024-84530-w",
+        "title:brainmodelneuralsimilarityrevealsabstractivesummarizationperformance",
+        "title:脑模型神经相似性揭示抽象总结性能",
+        "url:https://doi.org/10.1038/s41598-024-84530-w"
+      ],
+      "doi": "10.1038/s41598-024-84530-w"
+    },
+    {
+      "first_pushed": "2026-09-28",
+      "title": "Ultrafast J-resolved magnetic resonance spectroscopic imaging for high-resolution metabolic brain imaging",
+      "url": "https://doi.org/10.1038/s41551-025-01418-4",
+      "keys": [
+        "doi:10.1038/s41551-025-01418-4",
+        "title:ultrafastjresolvedmagneticresonancespectroscopicimagingforhighresolutionmetabolicbrainimaging",
+        "title:超快速j分辨磁共振光谱成像技术实现高分辨率代谢脑成像",
+        "url:https://doi.org/10.1038/s41551-025-01418-4"
+      ],
+      "doi": "10.1038/s41551-025-01418-4"
+    },
+    {
+      "first_pushed": "2026-09-28",
+      "title": "Use of Ambient AI Scribes to Reduce Administrative Burden and Professional Burnout",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2025.34976",
+      "keys": [
+        "doi:10.1001/jamanetworkopen.2025.34976",
+        "title:useofambientaiscribestoreduceadministrativeburdenandprofessionalburnout",
+        "title:使用环境ai记述员减少行政负担和职业倦怠",
+        "url:https://doi.org/10.1001/jamanetworkopen.2025.34976"
+      ],
+      "doi": "10.1001/jamanetworkopen.2025.34976"
     }
   ],
   "news": [
@@ -1153,6 +1189,17 @@
         "url:https://blogs.nvidia.com/blog/clean-energy-nvidia-ai"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-09-28",
+      "title": "Gemini 3.8 text-to-speech says hello",
+      "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech/",
+      "keys": [
+        "title:gemini38texttospeechsayshello",
+        "title:gemini38语音合成模型发布打造个性化声音",
+        "url:https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }
