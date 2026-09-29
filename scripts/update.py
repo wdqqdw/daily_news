@@ -50,6 +50,8 @@ SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:e|ed|ing)|proxies for|s
 BOT_SOCIETY = re.compile(r'\b(?:simulated (?:online )?societ(?:y|ies)|artificial societ(?:y|ies)) of (?:AI )?(?:chatbots?|agents?)\b',re.I)
 OBSERVED_HUMANS = re.compile(r'\b(?:human (?:participants?|subjects?|respondents?|data|ratings?|responses?)|(?:data|observations|ratings|responses) (?:from|of) (?:real |actual )?(?:humans?|people)|fMRI|EEG|ECoG)\b',re.I)
 LLM_REPORTING_ONLY = re.compile(r'\b(?:generat\w* (?:clinical.style |clinical )?(?:summaries|reports) based on model outputs|LLM.based (?:reporting|interpretation) layer)\b',re.I)
+BRAIN_TUMOR = re.compile(r'\b(?:brain tumou?rs?|gliomas?|meningiomas?|pituitary tumou?rs?)\b',re.I)
+DIAGNOSTIC_TASK = re.compile(r'\b(?:classif\w*|detect\w*|segment\w*|grading|grade|diagnos\w*)\b',re.I)
 
 def human_research_source(text):
     # Simulated participants and model proxies are not evidence of human data.
@@ -207,6 +209,9 @@ def relevant(p, slot):
     if BAD_TITLE.search(title): return False
     if any(NON_RESEARCH_TYPE.search(t) for t in p.get('publication_types',[])):return False
     if slot in (1,2) and MODEL_PERSONALITY.search(title):return False
+    # Tumor image classification is not a study of cognition or neural function;
+    # background mentions of the human brain must not qualify it for these slots.
+    if slot in (1,2) and BRAIN_TUMOR.search(title) and DIAGNOSTIC_TASK.search(title):return False
     if THEORY_ONLY.search(p.get('abstract','')):return False
     if slot == 1:
         # An LLM narrating another model's predictions does not model people.

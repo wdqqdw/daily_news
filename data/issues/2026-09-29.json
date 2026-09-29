@@ -19,41 +19,38 @@
       "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
       "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
       "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 2，距发表 358 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "研究评估了大型语言模型在游戏化环境中执行心理理论任务的能力，与人类专家进行了比较。结果显示，GPT-4o 在遵循指令标准和评估准确性方面与人类专家相当，没有显著差异。这表明大型语言模型有可能支持可扩展的社会技能培训系统。",
+      "summary": "研究让 GPT-4o 与4名专家分别评价21名完成任务者在游戏化心理理论情境中的回答。两者评分未发现统计学显著差异，提示可探索自动化社会认知评估；这项小样本、离线评估并未检验自闭症干预效果，也不能据此证明模型与专家等效。",
       "tag": "认知与行为建模",
       "ranking_score": 4.7064,
-      "title_zh": "自闭症中的大型语言模型：在游戏化环境中评估心理理论任务",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://api.crossref.org/works/10.1038%2Fs41598-025-18608-4",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "用大语言模型评估游戏化心理理论任务：面向自闭症支持的探索",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.nature.com/articles/s41598-025-18608-4",
+      "title_aliases": [
+        "自闭症中的大型语言模型：在游戏化环境中评估心理理论任务"
+      ]
     },
     {
       "type": "journal-article",
-      "title": "Efficient brain tumor grade classification using ensemble deep learning models",
-      "doi": "10.1186/s12880-024-01476-1",
-      "url": "https://doi.org/10.1186/s12880-024-01476-1",
-      "journal": "BMC Medical Imaging",
+      "title": "Teaching CORnet human fMRI representations for enhanced model-brain alignment",
+      "doi": "10.1007/s11571-025-10252-y",
+      "url": "https://doi.org/10.1007/s11571-025-10252-y",
+      "journal": "Cognitive Neurodynamics",
       "publisher": "Springer Science and Business Media LLC",
-      "published": "2024-11-01",
-      "authors": "M et al.",
-      "citations": 31,
+      "published": "2025-04-15",
+      "authors": "Lu et al.",
+      "citations": 5,
       "metadata_source": "Crossref",
-      "metadata_url": "https://api.crossref.org/works/10.1186%2Fs12880-024-01476-1",
-      "publication_types": [
-        "research-article",
-        "Journal Article"
-      ],
+      "metadata_url": "https://api.crossref.org/works/10.1007%2Fs11571-025-10252-y",
       "slot": 2,
       "freshness": "延伸阅读 · 较早发表",
       "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
-      "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 31，距发表 697 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "本文提出了一种基于集成深度学习模型的脑肿瘤分级方法，使用MobileNetV2模型从MRI图像中提取特征。研究使用六个标准的Kaggle脑肿瘤MRI数据集进行训练和验证，结果显示该模型在检测脑肿瘤、区分良性与恶性肿瘤以及分类脑膜瘤、垂体瘤和胶质瘤方面分别达到了99.85%、99.87%和99.38%的准确率。",
+      "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 5，距发表 532 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用人类 fMRI 数据训练 CORnet 视觉模型，构建 ReAlnet-fMRI。与原始 CORnet 和对照模型相比，新模型在同一被试、跨被试及 fMRI/EEG 评估中总体更贴近脑表征，但改善随刺激和脑区变化；表征相似性不等于机制完全一致。",
       "tag": "研究人的人工智能工作",
-      "ranking_score": 11.4596,
-      "title_zh": "基于集成深度学习模型的脑肿瘤分级高效分类",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1186%2Fs12880-024-01476-1%22&format=json&resultType=core&pageSize=1",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "ranking_score": 7.5314,
+      "title_zh": "让 CORnet 学习人类 fMRI 表征，增强模型与脑活动的对应",
+      "summary_source": "https://link.springer.com/article/10.1007/s11571-025-10252-y",
+      "summary_method": "人工核对公开原文"
     },
     {
       "type": "journal-article",
@@ -71,13 +68,15 @@
       "freshness": "延伸阅读 · 较早发表",
       "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 190 次引用，约 20.0 次 / 月。",
       "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 190，距发表 285 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
-      "summary": "本研究通过一项双盲、非劣效性试验，比较了替利塞帕肽与杜拉格肽在2型糖尿病合并动脉粥样硬化性心血管疾病的患者中的心血管结局。结果显示，替利塞帕肽在主要终点（心血管原因死亡、心肌梗死或中风的复合终点）方面与杜拉格肽非劣效，且安全性相似。",
+      "summary": "这项随机、双盲、活性对照试验比较替尔泊肽与度拉糖肽在2型糖尿病合并动脉粥样硬化性心血管病患者中的结局。主要复合终点为心血管死亡、心肌梗死或卒中，发生率分别为12.2%与13.1%，达到非劣效标准，未证实优效；替尔泊肽组胃肠道不良事件更多。",
       "tag": "跨学科 / 引用热度",
       "ranking_score": 14.4885,
-      "title_zh": "替利塞帕肽与杜拉格肽在2型糖尿病患者中的心血管结局比较",
-      "summary_method": "AI 根据公开摘要整理",
-      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1056%2Fnejmoa2505928%22&resultType=core&format=json&pageSize=1",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "替尔泊肽与度拉糖肽在2型糖尿病患者中的心血管结局比较",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505928",
+      "title_aliases": [
+        "替利塞帕肽与杜拉格肽在2型糖尿病患者中的心血管结局比较"
+      ]
     }
   ],
   "news": [
@@ -86,56 +85,65 @@
       "kind": "研究 / 公司动态",
       "published": "2026-09-28",
       "title": "One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact",
-      "summary": "自2025年7月24日成立以来，微软研究亚洲—新加坡实验室已建立坚实基础，深化了与政府、学术界和产业界的合作，并探索前沿人工智能研究如何创造实际价值。",
+      "summary": "微软回顾新加坡实验室成立首年的进展：与新加坡国立大学和南洋理工大学新增9个项目，覆盖医疗 AI、机器人及多智能体系统，并推动联合研究与人才培养。医疗 AI 工作聚焦多模态和智能体辅助决策，长期目标是推动实际应用。",
       "url": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
       "source_feed": "https://www.microsoft.com/en-us/research/feed/",
-      "title_zh": "一年回顾：微软研究亚洲—新加坡实验室推动研究、合作与人才培养以实现实际影响",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "微软亚洲研究院新加坡实验室首年回顾：研究合作与人才培养",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "一年回顾：微软研究亚洲—新加坡实验室推动研究、合作与人才培养以实现实际影响"
+      ]
     },
     {
       "company": "Anthropic",
       "kind": "研究 / 公司动态",
       "published": "2026-09-28",
       "title": "Claude Sonnet 5.5",
-      "summary": "Claude Sonnet 5.5 是Claude Sonnet 5的升级版，运行速度提高30%以上，成本降低30%。它在终端基准测试中的得分显著提高，并在长期规划和图像理解方面表现出色。",
+      "summary": "Anthropic 发布 Claude Sonnet 5.5。官方称其输出速度比 Sonnet 5 快30%以上，完成任务的成本最多降低30%，词元单价保持不变；新模型还改进了编程、长任务和图像理解表现。成本降幅来自完成任务所需词元减少，属于官方测试结果。",
       "url": "https://www.anthropic.com/claude-sonnet-5-5",
       "source_page": "https://www.anthropic.com/news",
-      "title_zh": "Claude Sonnet 5.5 发布：性能提升30%以上，成本降低30%",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "Claude Sonnet 5.5 发布：提速并降低每项任务成本",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://www.anthropic.com/claude-sonnet-5-5",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "Claude Sonnet 5.5 发布：性能提升30%以上，成本降低30%"
+      ]
     },
     {
       "company": "OpenAI",
       "kind": "研究 / 公司动态",
       "published": "2026-09-28",
       "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
-      "summary": "OpenAI向伦弗斯特AI合作与奖学金项目提供500万美元资金，并额外提供最多500万美元的软件信用和工程支持。",
+      "summary": "OpenAI 宣布向 Lenfest 新闻业 AI 项目新增500万美元资金，并提供总值最高500万美元的软件使用额度和工程支持。Lenfest 将扩大驻场 AI 技术人员项目，并把部分成果整理为可复用工具，供更多新闻机构使用。",
       "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
       "source_feed": "https://openai.com/news/rss.xml",
-      "title_zh": "伦弗斯特研究院扩大OpenAI支持的AI合作与奖学金项目",
-      "summary_method": "AI 根据官方公告整理",
-      "summary_source": "https://openai.com/news/rss.xml",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_zh": "OpenAI 扩大对 Lenfest 新闻业 AI 合作与驻场项目的支持",
+      "summary_method": "人工核对公开原文",
+      "summary_source": "https://openai.com/index/lenfest-ai-collaborative-expansion/",
+      "title_aliases": [
+        "伦弗斯特研究院扩大OpenAI支持的AI合作与奖学金项目"
+      ]
     },
     {
       "company": "Google DeepMind",
       "kind": "研究 / 公司动态",
       "published": "2026-09-23",
       "title": "Advancing Private AI Compute with secure, server-side memory",
-      "summary": "谷歌介绍了其Private AI Compute平台的新技术，通过引入持久内存层，实现跨设备的AI记忆保护，同时保持设备端的隐私标准。这一突破解决了现代AI长期存在的难题：如何在保持严格隐私标准的同时，让助手在多个设备间提供长期连续的服务。",
+      "summary": "Google 介绍 Private AI Compute 的服务端持久记忆架构，计划通过加密存储、设备持有的密钥和云端安全隔离环境，支持跨设备连续使用的 AI 记忆。官方称其目标是保持接近设备端处理的隐私标准；公告描述的是将要实现的能力。",
       "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "source_feed": "https://deepmind.google/blog/rss.xml",
-      "title_zh": "推进私有AI计算：安全服务器端内存技术更新",
-      "summary_method": "AI 根据官方公告整理",
+      "title_zh": "Private AI Compute 技术更新：规划安全的服务端持久记忆",
+      "summary_method": "人工核对公开原文",
       "summary_source": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
-      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      "title_aliases": [
+        "推进私有AI计算：安全服务器端内存技术更新"
+      ]
     }
   ],
   "notices": [
-    "有 1 条新动态缺少可用原文，暂未收录。"
+    "有 1 条新动态缺少可用原文，暂未收录。",
+    "本期已修订：第二栏脑肿瘤图像分类条目不符合认知、行为或神经机制主题，已替换为人类脑表征研究；原条目保留在历史阅读库并继续参与去重。中文摘要已对照公开原文核对。"
   ],
   "sources": [
     {
@@ -259,5 +267,39 @@
       "items": 2
     }
   ],
-  "candidate_count": 1077
+  "candidate_count": 1077,
+  "previous_items": {
+    "papers": [
+      {
+        "type": "journal-article",
+        "title": "Efficient brain tumor grade classification using ensemble deep learning models",
+        "doi": "10.1186/s12880-024-01476-1",
+        "url": "https://doi.org/10.1186/s12880-024-01476-1",
+        "journal": "BMC Medical Imaging",
+        "publisher": "Springer Science and Business Media LLC",
+        "published": "2024-11-01",
+        "authors": "M et al.",
+        "citations": 31,
+        "metadata_source": "Crossref",
+        "metadata_url": "https://api.crossref.org/works/10.1186%2Fs12880-024-01476-1",
+        "publication_types": [
+          "research-article",
+          "Journal Article"
+        ],
+        "slot": 2,
+        "freshness": "延伸阅读 · 较早发表",
+        "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+        "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 31，距发表 697 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+        "summary": "本文提出了一种基于集成深度学习模型的脑肿瘤分级方法，使用MobileNetV2模型从MRI图像中提取特征。研究使用六个标准的Kaggle脑肿瘤MRI数据集进行训练和验证，结果显示该模型在检测脑肿瘤、区分良性与恶性肿瘤以及分类脑膜瘤、垂体瘤和胶质瘤方面分别达到了99.85%、99.87%和99.38%的准确率。",
+        "tag": "研究人的人工智能工作",
+        "ranking_score": 11.4596,
+        "title_zh": "基于集成深度学习模型的脑肿瘤分级高效分类",
+        "summary_method": "AI 根据公开摘要整理",
+        "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1186%2Fs12880-024-01476-1%22&format=json&resultType=core&pageSize=1",
+        "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+      }
+    ],
+    "news": []
+  },
+  "updated_at": "2026-09-29T11:34:00+08:00"
 }

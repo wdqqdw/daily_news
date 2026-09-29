@@ -28,6 +28,23 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_brain_tumor_classification_does_not_fill_human_research_slots(self):
+        p=paper('10.1186/s12880-024-01476-1',
+                'Efficient brain tumor grade classification using ensemble deep learning models',
+                abstract='The human brain controls cognition. We classify tumors in magnetic resonance images using deep learning.',
+                citations=31)
+        for title in (p['title'], 'Large language models for brain tumour classification',
+                      'Deep learning for glioma segmentation'):
+            for slot in (1,2):
+                self.assertFalse(relevant(dict(p,title=title),slot))
+        self.assertTrue(relevant(p,3))
+        brain=paper('10.1007/s11571-025-10252-y',
+                    'Teaching CORnet human fMRI representations for enhanced model-brain alignment',
+                    abstract='Deep learning models were aligned to human brain responses using fMRI and compared with EEG.',citations=5)
+        self.assertTrue(relevant(brain,2))
+        selected=select_papers([paper('10.1/llm'),p,brain,paper('10.1/hot','Quantum materials',citations=300)],set(),TODAY)
+        self.assertEqual(selected[1]['doi'],brain['doi'])
+
     def test_human_ai_slot_requires_ai_and_a_human_research_subject(self):
         self.assertFalse(relevant(paper('10.1/old','Bioaccumulation of microplastics in decedent human brains',abstract='We measured plastic in tissue.'),2))
         self.assertFalse(relevant(paper('10.1/dna','Foundation models for human genomics',abstract='A transformer trained on DNA.'),2))

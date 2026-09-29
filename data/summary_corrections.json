@@ -83,5 +83,40 @@
     "title_zh": "AI 自动病历助手的使用与临床人员负担及职业倦怠下降相关",
     "summary": "研究分析美国6家医疗系统中263名门诊临床人员使用 AI 自动病历助手前与使用30天后的调查。倦怠数据子样本的调整后估计比例从51.9%降至38.8%，文书负担、对患者的专注程度等自报指标也有改善。研究没有对照组，结果提示相关性，不能据此认定改善由 AI 单独造成。",
     "summary_source": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2839542"
+  },
+  "doi:10.1038/s41598-025-18608-4": {
+    "title_zh": "用大语言模型评估游戏化心理理论任务：面向自闭症支持的探索",
+    "summary": "研究让 GPT-4o 与4名专家分别评价21名完成任务者在游戏化心理理论情境中的回答。两者评分未发现统计学显著差异，提示可探索自动化社会认知评估；这项小样本、离线评估并未检验自闭症干预效果，也不能据此证明模型与专家等效。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-18608-4"
+  },
+  "doi:10.1007/s11571-025-10252-y": {
+    "title_zh": "让 CORnet 学习人类 fMRI 表征，增强模型与脑活动的对应",
+    "summary": "研究用人类 fMRI 数据训练 CORnet 视觉模型，构建 ReAlnet-fMRI。与原始 CORnet 和对照模型相比，新模型在同一被试、跨被试及 fMRI/EEG 评估中总体更贴近脑表征，但改善随刺激和脑区变化；表征相似性不等于机制完全一致。",
+    "summary_source": "https://link.springer.com/article/10.1007/s11571-025-10252-y"
+  },
+  "doi:10.1056/nejmoa2505928": {
+    "title_zh": "替尔泊肽与度拉糖肽在2型糖尿病患者中的心血管结局比较",
+    "summary": "这项随机、双盲、活性对照试验比较替尔泊肽与度拉糖肽在2型糖尿病合并动脉粥样硬化性心血管病患者中的结局。主要复合终点为心血管死亡、心肌梗死或卒中，发生率分别为12.2%与13.1%，达到非劣效标准，未证实优效；替尔泊肽组胃肠道不良事件更多。",
+    "summary_source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2505928"
+  },
+  "url:https://microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact": {
+    "title_zh": "微软亚洲研究院新加坡实验室首年回顾：研究合作与人才培养",
+    "summary": "微软回顾新加坡实验室成立首年的进展：与新加坡国立大学和南洋理工大学新增9个项目，覆盖医疗 AI、机器人及多智能体系统，并推动联合研究与人才培养。医疗 AI 工作聚焦多模态和智能体辅助决策，长期目标是推动实际应用。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/"
+  },
+  "url:https://anthropic.com/claude-sonnet-5-5": {
+    "title_zh": "Claude Sonnet 5.5 发布：提速并降低每项任务成本",
+    "summary": "Anthropic 发布 Claude Sonnet 5.5。官方称其输出速度比 Sonnet 5 快30%以上，完成任务的成本最多降低30%，词元单价保持不变；新模型还改进了编程、长任务和图像理解表现。成本降幅来自完成任务所需词元减少，属于官方测试结果。",
+    "summary_source": "https://www.anthropic.com/claude-sonnet-5-5"
+  },
+  "url:https://openai.com/index/lenfest-ai-collaborative-expansion": {
+    "title_zh": "OpenAI 扩大对 Lenfest 新闻业 AI 合作与驻场项目的支持",
+    "summary": "OpenAI 宣布向 Lenfest 新闻业 AI 项目新增500万美元资金，并提供总值最高500万美元的软件使用额度和工程支持。Lenfest 将扩大驻场 AI 技术人员项目，并把部分成果整理为可复用工具，供更多新闻机构使用。",
+    "summary_source": "https://openai.com/index/lenfest-ai-collaborative-expansion/"
+  },
+  "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory": {
+    "title_zh": "Private AI Compute 技术更新：规划安全的服务端持久记忆",
+    "summary": "Google 介绍 Private AI Compute 的服务端持久记忆架构，计划通过加密存储、设备持有的密钥和云端安全隔离环境，支持跨设备连续使用的 AI 记忆。官方称其目标是保持接近设备端处理的隐私标准；公告描述的是将要实现的能力。",
+    "summary_source": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/"
   }
 }

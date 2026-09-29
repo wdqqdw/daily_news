@@ -552,6 +552,7 @@
       "keys": [
         "doi:10.1038/s41598-025-18608-4",
         "title:largelanguagemodelsforautismevaluatingtheoryofmindtasksinagamifiedenvironment",
+        "title:用大语言模型评估游戏化心理理论任务面向自闭症支持的探索",
         "title:自闭症中的大型语言模型在游戏化环境中评估心理理论任务",
         "url:https://doi.org/10.1038/s41598-025-18608-4"
       ],
@@ -577,9 +578,22 @@
         "doi:10.1056/nejmoa2505928",
         "title:cardiovascularoutcomeswithtirzepatideversusdulaglutideintype2diabetes",
         "title:替利塞帕肽与杜拉格肽在2型糖尿病患者中的心血管结局比较",
+        "title:替尔泊肽与度拉糖肽在2型糖尿病患者中的心血管结局比较",
         "url:https://doi.org/10.1056/nejmoa2505928"
       ],
       "doi": "10.1056/nejmoa2505928"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Teaching CORnet human fMRI representations for enhanced model-brain alignment",
+      "url": "https://doi.org/10.1007/s11571-025-10252-y",
+      "keys": [
+        "doi:10.1007/s11571-025-10252-y",
+        "title:teachingcornethumanfmrirepresentationsforenhancedmodelbrainalignment",
+        "title:让cornet学习人类fmri表征增强模型与脑活动的对应",
+        "url:https://doi.org/10.1007/s11571-025-10252-y"
+      ],
+      "doi": "10.1007/s11571-025-10252-y"
     }
   ],
   "news": [
@@ -1246,6 +1260,7 @@
       "keys": [
         "title:oneyearinhowmicrosoftresearchasiasingaporeisadvancingresearchpartnershipandtalentforrealworldimpact",
         "title:一年回顾微软研究亚洲新加坡实验室推动研究合作与人才培养以实现实际影响",
+        "title:微软亚洲研究院新加坡实验室首年回顾研究合作与人才培养",
         "url:https://microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact"
       ],
       "company": "Microsoft Research"
@@ -1257,6 +1272,7 @@
       "keys": [
         "title:claudesonnet55",
         "title:claudesonnet55发布性能提升30以上成本降低30",
+        "title:claudesonnet55发布提速并降低每项任务成本",
         "url:https://anthropic.com/claude-sonnet-5-5"
       ],
       "company": "Anthropic"
@@ -1266,6 +1282,7 @@
       "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
       "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
       "keys": [
+        "title:openai扩大对lenfest新闻业ai合作与驻场项目的支持",
         "title:thelenfestinstitutegrowslandmarkprogramwithexpandedopenaisupport",
         "title:伦弗斯特研究院扩大openai支持的ai合作与奖学金项目",
         "url:https://openai.com/index/lenfest-ai-collaborative-expansion"
@@ -1278,6 +1295,7 @@
       "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
       "keys": [
         "title:advancingprivateaicomputewithsecureserversidememory",
+        "title:privateaicompute技术更新规划安全的服务端持久记忆",
         "title:推进私有ai计算安全服务器端内存技术更新",
         "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
       ],
