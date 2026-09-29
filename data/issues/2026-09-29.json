@@ -1,0 +1,263 @@
+{
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T10:59:18+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models for autism: evaluating theory of mind tasks in a gamified environment",
+      "doi": "10.1038/s41598-025-18608-4",
+      "url": "https://doi.org/10.1038/s41598-025-18608-4",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-10-06",
+      "authors": "Poglitsch et al.",
+      "citations": 2,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-18608-4",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 2，距发表 358 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究评估了大型语言模型在游戏化环境中执行心理理论任务的能力，与人类专家进行了比较。结果显示，GPT-4o 在遵循指令标准和评估准确性方面与人类专家相当，没有显著差异。这表明大型语言模型有可能支持可扩展的社会技能培训系统。",
+      "tag": "认知与行为建模",
+      "ranking_score": 4.7064,
+      "title_zh": "自闭症中的大型语言模型：在游戏化环境中评估心理理论任务",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.1038%2Fs41598-025-18608-4",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Efficient brain tumor grade classification using ensemble deep learning models",
+      "doi": "10.1186/s12880-024-01476-1",
+      "url": "https://doi.org/10.1186/s12880-024-01476-1",
+      "journal": "BMC Medical Imaging",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2024-11-01",
+      "authors": "M et al.",
+      "citations": 31,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1186%2Fs12880-024-01476-1",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 31，距发表 697 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本文提出了一种基于集成深度学习模型的脑肿瘤分级方法，使用MobileNetV2模型从MRI图像中提取特征。研究使用六个标准的Kaggle脑肿瘤MRI数据集进行训练和验证，结果显示该模型在检测脑肿瘤、区分良性与恶性肿瘤以及分类脑膜瘤、垂体瘤和胶质瘤方面分别达到了99.85%、99.87%和99.38%的准确率。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.4596,
+      "title_zh": "基于集成深度学习模型的脑肿瘤分级高效分类",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1186%2Fs12880-024-01476-1%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes",
+      "doi": "10.1056/nejmoa2505928",
+      "url": "https://doi.org/10.1056/nejmoa2505928",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2025-12-18",
+      "authors": "Nicholls et al.",
+      "citations": 190,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2505928",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 190 次引用，约 20.0 次 / 月。",
+      "evidence": "检索时间：2026-09-29；来源：Crossref；引用数 190，距发表 285 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本研究通过一项双盲、非劣效性试验，比较了替利塞帕肽与杜拉格肽在2型糖尿病合并动脉粥样硬化性心血管疾病的患者中的心血管结局。结果显示，替利塞帕肽在主要终点（心血管原因死亡、心肌梗死或中风的复合终点）方面与杜拉格肽非劣效，且安全性相似。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 14.4885,
+      "title_zh": "替利塞帕肽与杜拉格肽在2型糖尿病患者中的心血管结局比较",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1056%2Fnejmoa2505928%22&resultType=core&format=json&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-28",
+      "title": "One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact",
+      "summary": "自2025年7月24日成立以来，微软研究亚洲—新加坡实验室已建立坚实基础，深化了与政府、学术界和产业界的合作，并探索前沿人工智能研究如何创造实际价值。",
+      "url": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "一年回顾：微软研究亚洲—新加坡实验室推动研究、合作与人才培养以实现实际影响",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-28",
+      "title": "Claude Sonnet 5.5",
+      "summary": "Claude Sonnet 5.5 是Claude Sonnet 5的升级版，运行速度提高30%以上，成本降低30%。它在终端基准测试中的得分显著提高，并在长期规划和图像理解方面表现出色。",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Claude Sonnet 5.5 发布：性能提升30%以上，成本降低30%",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://www.anthropic.com/claude-sonnet-5-5",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-28",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "summary": "OpenAI向伦弗斯特AI合作与奖学金项目提供500万美元资金，并额外提供最多500万美元的软件信用和工程支持。",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "伦弗斯特研究院扩大OpenAI支持的AI合作与奖学金项目",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-23",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "summary": "谷歌介绍了其Private AI Compute平台的新技术，通过引入持久内存层，实现跨设备的AI记忆保护，同时保持设备端的隐私标准。这一突破解决了现代AI长期存在的难题：如何在保持严格隐私标准的同时，让助手在多个设备间提供长期连续的服务。",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "推进私有AI计算：安全服务器端内存技术更新",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 68
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 21
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1077
+}

@@ -544,6 +544,42 @@
         "url:https://doi.org/10.1001/jamanetworkopen.2025.34976"
       ],
       "doi": "10.1001/jamanetworkopen.2025.34976"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Large language models for autism: evaluating theory of mind tasks in a gamified environment",
+      "url": "https://doi.org/10.1038/s41598-025-18608-4",
+      "keys": [
+        "doi:10.1038/s41598-025-18608-4",
+        "title:largelanguagemodelsforautismevaluatingtheoryofmindtasksinagamifiedenvironment",
+        "title:自闭症中的大型语言模型在游戏化环境中评估心理理论任务",
+        "url:https://doi.org/10.1038/s41598-025-18608-4"
+      ],
+      "doi": "10.1038/s41598-025-18608-4"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Efficient brain tumor grade classification using ensemble deep learning models",
+      "url": "https://doi.org/10.1186/s12880-024-01476-1",
+      "keys": [
+        "doi:10.1186/s12880-024-01476-1",
+        "title:efficientbraintumorgradeclassificationusingensembledeeplearningmodels",
+        "title:基于集成深度学习模型的脑肿瘤分级高效分类",
+        "url:https://doi.org/10.1186/s12880-024-01476-1"
+      ],
+      "doi": "10.1186/s12880-024-01476-1"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Cardiovascular Outcomes with Tirzepatide versus Dulaglutide in Type 2 Diabetes",
+      "url": "https://doi.org/10.1056/nejmoa2505928",
+      "keys": [
+        "doi:10.1056/nejmoa2505928",
+        "title:cardiovascularoutcomeswithtirzepatideversusdulaglutideintype2diabetes",
+        "title:替利塞帕肽与杜拉格肽在2型糖尿病患者中的心血管结局比较",
+        "url:https://doi.org/10.1056/nejmoa2505928"
+      ],
+      "doi": "10.1056/nejmoa2505928"
     }
   ],
   "news": [
@@ -1200,6 +1236,50 @@
         "title:gemini38texttospeechsayshello",
         "title:gemini38语音合成模型发布打造个性化声音",
         "url:https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "One year in: How Microsoft Research Asia – Singapore is advancing research, partnership and talent for real-world impact",
+      "url": "https://www.microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact/",
+      "keys": [
+        "title:oneyearinhowmicrosoftresearchasiasingaporeisadvancingresearchpartnershipandtalentforrealworldimpact",
+        "title:一年回顾微软研究亚洲新加坡实验室推动研究合作与人才培养以实现实际影响",
+        "url:https://microsoft.com/en-us/research/blog/one-year-in-how-microsoft-research-asia-singapore-is-advancing-research-partnership-and-talent-for-real-world-impact"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Claude Sonnet 5.5",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5",
+      "keys": [
+        "title:claudesonnet55",
+        "title:claudesonnet55发布性能提升30以上成本降低30",
+        "url:https://anthropic.com/claude-sonnet-5-5"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "The Lenfest Institute grows landmark program with expanded OpenAI support",
+      "url": "https://openai.com/index/lenfest-ai-collaborative-expansion",
+      "keys": [
+        "title:thelenfestinstitutegrowslandmarkprogramwithexpandedopenaisupport",
+        "title:伦弗斯特研究院扩大openai支持的ai合作与奖学金项目",
+        "url:https://openai.com/index/lenfest-ai-collaborative-expansion"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-29",
+      "title": "Advancing Private AI Compute with secure, server-side memory",
+      "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/",
+      "keys": [
+        "title:advancingprivateaicomputewithsecureserversidememory",
+        "title:推进私有ai计算安全服务器端内存技术更新",
+        "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
       ],
       "company": "Google DeepMind"
     }
