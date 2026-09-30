@@ -127,6 +127,17 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/dna','Nucleotide Transformer: building and evaluating robust foundation models for human genomics'),1))
         self.assertTrue(relevant(paper('10.1/mind','A foundation model to predict and capture human cognition'),1))
 
+    def test_foundation_model_requires_language_evidence_for_llm_slot(self):
+        brain=paper('10.1038/s41593-026-02202-6',
+                    'A generalizable foundation model for analysis of human brain MRI',
+                    abstract='Artificial intelligence applied to brain MRI: a foundation model learns representations from 48,965 brain MRIs using self-supervised visual encoders.')
+        self.assertFalse(relevant(brain,1))
+        cognitive=paper('10.1/centaur','A foundation model to predict and capture human cognition',
+                        abstract='We fine-tuned a large language model on human behavioural data to predict participant choices.')
+        self.assertTrue(relevant(cognitive,1))
+        selected=select_papers([brain,cognitive,paper('10.1/second'),paper('10.1/hot','Quantum materials',citations=300)],set(),TODAY)
+        self.assertNotEqual(selected[0]['doi'],brain['doi'])
+
     def test_unique_doi_and_unseen_preference(self):
         pool=[paper('10.1/seen',citations=1000),paper('10.1/a'),paper('10.1/b'),paper('10.1/c','Quantum materials',journal='Physics',publisher='APS',citations=300)]
         result=select_papers(pool,item_keys(pool[0],'papers'),TODAY)
@@ -152,6 +163,18 @@ class SelectionTests(unittest.TestCase):
         raw={'type':'journal-article','DOI':'10.1/x','title':['Human cognition'],'container-title':['Nature'],'published':{'date-parts':[[2027,1,1]]}}
         self.assertIsNone(normalize_work(raw,TODAY))
         raw['published']={'date-parts':[[2026,9]]}
+        self.assertIsNone(normalize_work(raw,TODAY))
+
+    def test_explicit_online_date_takes_precedence_over_issue_date(self):
+        raw={'type':'journal-article','DOI':'10.1088/1475-7516/2025/11/063',
+             'title':['Constraints on cosmological models'],'container-title':['Journal of Cosmology and Astroparticle Physics'],
+             'published-print':{'date-parts':[[2025,11,1]]},'published-online':{'date-parts':[[2025,11,19]]}}
+        self.assertEqual(normalize_work(raw,TODAY)['published'],'2025-11-19')
+        raw['published-online']={'date-parts':[[2025,10,29]]}
+        self.assertEqual(normalize_work(raw,TODAY)['published'],'2025-10-29')
+        raw['published-online']={'date-parts':[[2025,11]]}
+        self.assertEqual(normalize_work(raw,TODAY)['published'],'2025-11-01')
+        raw['published-online']={'date-parts':[[2027,1,1]]}
         self.assertIsNone(normalize_work(raw,TODAY))
 
     def test_nonresearch_titles_and_subtitles_are_rejected(self):

@@ -31,7 +31,8 @@ TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
 CROSSREF_SLOTS = threading.BoundedSemaphore(2)
 BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|guideline|reply to|comment on|news and views)(\b|:)', re.I)
-LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT|foundation model\w*)\b', re.I)
+# A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
+LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
 COGNITION = re.compile(r'\b(cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
@@ -118,14 +119,20 @@ def normalize_work(x, today):
     if any(u.get('type') in ('retraction','withdrawal') for u in x.get('update-to', [])):
         return None
     dates = []
+    online = None
     for k in ('published-online','published-print','published','issued'):
         parts = x.get(k,{}).get('date-parts',[[]])[0]
         if len(parts) == 3:
-            try: dates.append(dt.date(*parts))
+            try:
+                date = dt.date(*parts)
+                dates.append(date)
+                if k == 'published-online':online = date
             except (TypeError, ValueError): pass
     if not dates:
         return None  # Do not invent a publication day from a year/month alone.
-    published = min(dates)
+    # Volume/issue metadata can use the first of the month before the article
+    # appeared. Prefer a complete, explicit online publication date.
+    published = online or min(dates)
     if published > today:
         return None
     journal = clean(' '.join(x.get('container-title',[])))
