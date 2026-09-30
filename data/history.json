@@ -594,6 +594,42 @@
         "url:https://doi.org/10.1007/s11571-025-10252-y"
       ],
       "doi": "10.1007/s11571-025-10252-y"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "Assessing Individual Differences in Adult Theory of Mind Through Mental State Language: Human and Artificial Intelligence Approaches",
+      "url": "https://doi.org/10.1177/10731911261486664",
+      "keys": [
+        "doi:10.1177/10731911261486664",
+        "title:assessingindividualdifferencesinadulttheoryofmindthroughmentalstatelanguagehumanandartificialintelligenceapproaches",
+        "title:用心理状态语言评估成人心理理论的个体差异人工编码与ai方法",
+        "url:https://doi.org/10.1177/10731911261486664"
+      ],
+      "doi": "10.1177/10731911261486664"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "A generalizable foundation model for analysis of human brain MRI",
+      "url": "https://doi.org/10.1038/s41593-026-02202-6",
+      "keys": [
+        "doi:10.1038/s41593-026-02202-6",
+        "title:ageneralizablefoundationmodelforanalysisofhumanbrainmri",
+        "title:用于人类脑mri分析的可泛化基础模型brainiac",
+        "url:https://doi.org/10.1038/s41593-026-02202-6"
+      ],
+      "doi": "10.1038/s41593-026-02202-6"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "The Atacama Cosmology Telescope: DR6 constraints on extended cosmological models",
+      "url": "https://doi.org/10.1088/1475-7516/2025/11/063",
+      "keys": [
+        "doi:10.1088/1475-7516/2025/11/063",
+        "title:theatacamacosmologytelescopedr6constraintsonextendedcosmologicalmodels",
+        "title:阿塔卡马宇宙学望远镜dr6数据对扩展宇宙学模型的约束",
+        "url:https://doi.org/10.1088/1475-7516/2025/11/063"
+      ],
+      "doi": "10.1088/1475-7516/2025/11/063"
     }
   ],
   "news": [
@@ -1300,6 +1336,50 @@
         "url:https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "Qwen Code · Release v0.24.7",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
+      "keys": [
+        "title:qwencodereleasev0247",
+        "title:qwencodev0247新增ai提交说明与工作区管理改进",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "Introducing GPT-6.1 Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "keys": [
+        "title:introducinggpt61sol",
+        "title:openai发布gpt61sol改进编程电脑操作与专业任务表现",
+        "url:https://openai.com/index/introducing-gpt-6-1-sol"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "Introducing Quine: An AI research system designed for the complexity of biology",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "keys": [
+        "title:introducingquineanairesearchsystemdesignedforthecomplexityofbiology",
+        "title:微软介绍quine连接多模态生物模型与实验验证的ai研究系统",
+        "url:https://microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-09-30",
+      "title": "DevDay 2026 Recap",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "keys": [
+        "title:devday2026recap",
+        "title:openaidevday2026回顾模型应用与开发工具更新",
+        "url:https://openai.com/index/devday-2026-recap"
+      ],
+      "company": "OpenAI"
     }
   ]
 }

@@ -1,0 +1,255 @@
+{
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T09:43:10+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Assessing Individual Differences in Adult Theory of Mind Through Mental State Language: Human and Artificial Intelligence Approaches",
+      "doi": "10.1177/10731911261486664",
+      "url": "https://doi.org/10.1177/10731911261486664",
+      "journal": "Assessment",
+      "publisher": "SAGE Publications",
+      "published": "2026-09-29",
+      "authors": "Hudson et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1177%2F10731911261486664",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-09-30；来源：Crossref；引用数 0，距发表 1 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析334名大学生与陌生同伴完成双人合作任务时的心理状态语言，检验其能否反映心理理论的个体差异。该指标与既有测量相关，并更好预测人际功能；微调 Transformer 和开源生成式大语言模型能较可靠地复现人工编码。证据来自特定学生样本，推广到自然互动仍待验证。",
+      "tag": "认知与行为建模",
+      "ranking_score": 5.9834,
+      "title_zh": "用心理状态语言评估成人心理理论的个体差异：人工编码与 AI 方法",
+      "summary_source": "https://api.crossref.org/works/10.1177%2F10731911261486664",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "A generalizable foundation model for analysis of human brain MRI",
+      "doi": "10.1038/s41593-026-02202-6",
+      "url": "https://doi.org/10.1038/s41593-026-02202-6",
+      "journal": "Nature Neuroscience",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-05",
+      "authors": "Tak et al.",
+      "citations": 21,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41593-026-02202-6",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-09-30；来源：Crossref；引用数 21，距发表 237 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出脑影像基础模型 BrainIAC，利用未标注 MRI 自监督预训练，并在48,965次脑 MRI 扫描、七类任务上评估，包括脑龄估计与轻度认知障碍分类。作者报告其在少样本和较难预测任务中优于比较模型；这是影像分析研究，尚不能据此认定临床诊疗获益。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 12.0772,
+      "title_zh": "用于人类脑 MRI 分析的可泛化基础模型 BrainIAC",
+      "summary_source": "https://www.nature.com/articles/s41593-026-02202-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The Atacama Cosmology Telescope: DR6 constraints on extended cosmological models",
+      "doi": "10.1088/1475-7516/2025/11/063",
+      "url": "https://doi.org/10.1088/1475-7516/2025/11/063",
+      "journal": "Journal of Cosmology and Astroparticle Physics",
+      "publisher": "IOP Publishing",
+      "published": "2025-11-19",
+      "authors": "Calabrese et al.",
+      "citations": 204,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1088%2F1475-7516%2F2025%2F11%2F063",
+      "publication_types": [],
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 204 次引用，约 19.43 次 / 月。",
+      "evidence": "检索时间：2026-09-30；来源：Crossref；引用数 204，距发表 315 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究利用 ACT 第六次发布的宇宙微波背景温度和偏振数据，并结合 Planck、DESI 等观测，检验标准宇宙学模型及其扩展。结果未发现统计学显著证据支持偏离 ΛCDM；所分析数据将中微子总质量的95%置信上限约束为0.089电子伏，这不等于证明中微子没有质量。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 14.4607,
+      "title_zh": "阿塔卡马宇宙学望远镜：DR6 数据对扩展宇宙学模型的约束",
+      "summary_source": "https://api.crossref.org/works/10.1088%2F1475-7516%2F2025%2F11%2F063",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-09-29",
+      "title": "Qwen Code · Release v0.24.7",
+      "summary": "Qwen Code v0.24.7 新增 /commit 命令，可用 AI 起草提交说明；网页界面支持为分支会话选择可选 worktree，并改进工作区绑定与会话管理。版本同时修复工具调用、终端输出和恢复流程的问题，具体功能适用范围见发布说明。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.24.7：新增 AI 提交说明与工作区管理改进",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.24.7",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-09-29",
+      "title": "Introducing GPT-6.1 Sol",
+      "summary": "OpenAI 发布 GPT-6.1 Sol，作为 GPT-6 Sol 的升级。官方称其在编程、电脑操作与专业工作中接近 GPT-6 Astra 的能力，标准 API 输入和输出词元单价为 Astra 的五分之一；具体效果和每项任务成本仍取决于任务及推理设置。",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 发布 GPT-6.1 Sol，改进编程、电脑操作与专业任务表现",
+      "summary_source": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-29",
+      "title": "Introducing Quine: An AI research system designed for the complexity of biology",
+      "summary": "微软研究院介绍 Quine，将多模态生物世界模型与科研工具、文献及实验流程连接。官方称，团队与 Broad Institute 合作筛选可能改变胰腺癌细胞状态的化合物，并在多项湿实验中验证部分候选。系统仍处于早期研究阶段，仅供科研使用，不用于临床诊疗。",
+      "url": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软介绍 Quine：连接多模态生物模型与实验验证的 AI 研究系统",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/introducing-quine-an-ai-research-system-designed-for-the-complexity-of-biology/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-09-29",
+      "title": "DevDay 2026 Recap",
+      "summary": "OpenAI 汇总 DevDay 2026 的20多项公告，覆盖模型、ChatGPT、Codex、API、安全与开发工具。该页作为大会发布索引，可继续查看各产品的官方说明和可用范围。",
+      "url": "https://openai.com/index/devday-2026-recap",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI DevDay 2026 回顾：模型、应用与开发工具更新",
+      "summary_source": "https://openai.com/index/devday-2026-recap/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 69
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 68
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 50
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 4
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 4
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 29
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 3
+    }
+  ],
+  "candidate_count": 1082
+}
