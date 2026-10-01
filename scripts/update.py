@@ -199,6 +199,19 @@ def merge_paper_sources(papers):
         current['publication_types']=sorted(set(current.get('publication_types',[])+paper.get('publication_types',[])))
     return list(merged.values())
 
+def apply_editorial_exclusions(pool):
+    """Apply source-verified, slot-specific exclusions missed by title rules."""
+    path = ROOT/'data/paper_exclusions.json'
+    exclusions = json.loads(path.read_text()) if path.exists() else {}
+    for paper in pool:
+        entry = exclusions.get(canonical_doi(paper['doi']))
+        if entry is None:continue
+        slots = entry.get('slots',[])
+        if not slots or any(s not in (1,2,3) for s in slots) or not entry.get('reason') or not entry.get('source','').startswith('https://'):
+            raise ValueError('Invalid editorial exclusion: '+paper['doi'])
+        paper['_excluded_slots'] = sorted(set(paper.get('_excluded_slots',[])+slots))
+    return pool
+
 def is_nsc(p):
     # Exclude e.g. Science of the Total Environment and unrelated Cell journals.
     j = p['journal'].lower()
@@ -446,12 +459,14 @@ def generate(today):
                 print(f'WARNING {name}: {e}',flush=True)
     if paper_success<2 or news_success<1:
         raise RuntimeError('Insufficient live sources; preserving previous publication')
-    pool=merge_paper_sources(papers)
+    pool=apply_editorial_exclusions(merge_paper_sources(papers))
     # A Chinese summary needs substantive source text. Try the next eligible
     # unseen candidate if a publisher supplies only a title or blocks access.
     excluded_papers=history_keys(history,'papers')
     prepared={}
-    for _ in range(12):
+    # Unseen pools can contain many high-ranked commentaries or inaccessible
+    # abstracts. Keep searching without relaxing any content requirement.
+    for _ in range(40):
         selected=select_papers(pool,excluded_papers,today)
         unavailable=[]
         retry_selection=False

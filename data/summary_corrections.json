@@ -154,5 +154,52 @@
     "title_zh": "OpenAI DevDay 2026 回顾：模型、应用与开发工具更新",
     "summary": "OpenAI 汇总 DevDay 2026 的20多项公告，覆盖模型、ChatGPT、Codex、API、安全与开发工具。该页作为大会发布索引，可继续查看各产品的官方说明和可用范围。",
     "summary_source": "https://openai.com/index/devday-2026-recap/"
+  },
+  "doi:10.1162/tacl_a_00752": {
+    "title_zh": "用语言增强的贝叶斯心理理论理解信念与知识表述",
+    "summary": "研究提出 LaBToM：用大语言模型把自然语言转为结构化的信念表述，再结合贝叶斯推断评估他人目标与信念。参与者观看迷宫寻钥匙任务后评价相关陈述，模型结果比所比较的多模态大语言模型与消融版本更贴近人类判断；结论限于所测试情境。",
+    "summary_source": "https://aclanthology.org/2025.tacl-1.30/"
+  },
+  "doi:10.1038/s41598-025-86294-3": {
+    "title_zh": "灵活分块的脑 Transformer 模型用于脑电解码",
+    "summary": "研究提出 Patched Brain Transformer，可适配不同脑电通道数和记录长度。运动想象数据集实验中，有监督预训练结合时间平移增强取得较好分类表现，模型参数较少；自监督预训练加快了部分训练，但未带来明确准确率优势，结果依赖任务和数据划分。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-86294-3"
+  },
+  "doi:10.1093/nar/gkaf1250": {
+    "title_zh": "UCSC 基因组浏览器数据库：2026年度更新",
+    "summary": "论文介绍 UCSC 基因组浏览器的新功能：位置热图用于呈现 MaveDB 的变异功能数据，QuickLift 在相关基因组组装版本间转换注释显示，HubSpace 为用户创建和使用注释轨道集提供存储支持。这些更新便于研究者浏览、比较和组织基因组注释。",
+    "summary_source": "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf1250/8326455"
+  },
+  "url:https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign": {
+    "title_zh": "OpenAI 称已阻断协同模型蒸馏活动，并加强推理内容保护",
+    "summary": "OpenAI 称其发现并阻断了协同提取模型受保护推理内容的活动，采取账号限制、输出检测及合作方联动措施。官方表示事件不涉及数据库入侵或直接访问已存储的用户对话，并称后续调查和防护加固仍在进行。",
+    "summary_source": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
+    "kind": "安全 / 报告"
+  },
+  "url:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {
+    "title_zh": "Google 公布 Gemini 4 Argon，先向部分网络防御团队开放",
+    "summary": "Google 公布 Gemini 4 Argon，官方称其面向长流程编程与企业专业任务，输出上限扩展至100万词元。模型正通过 Fairwind 计划向受信任的网络防御团队逐步提供访问；面向开发者、企业和普通用户的更广泛开放仍待后续安排。",
+    "summary_source": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/"
+  },
+  "url:https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026": {
+    "title_zh": "NVIDIA 开放2027—2028年度博士生奖学金申请，最高资助6万美元",
+    "summary": "NVIDIA 开放面向全球博士生的2027—2028年度 Graduate Fellowship 申请，每名获选学生最高获6万美元资助。申请者须已完成至少一年的博士学习，并能参加2027年夏季的现场实习；申请截止日期为2026年10月30日。",
+    "summary_source": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/"
+  },
+  "url:https://microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids": {
+    "title_zh": "微软研究用机器学习提前预测电网面临的空间天气风险",
+    "summary": "微软介绍的研究系统结合太阳风、地磁指标与地质信息，为美国本土66,935座变电站生成提前30—60分钟的地磁风险预测。官方报告其识别了评估中76.5%的主要事件，但极端事件识别率较低且误报随强度增加；投入电网运行前仍需进一步验证。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/"
+  },
+  "url:https://openai.com/index/helping-small-businesses-put-ai-to-work": {
+    "title_zh": "OpenAI 与美国小企业发展中心网络合作推广 AI 实操培训",
+    "summary": "OpenAI 宣布与 America’s SBDC 合作，计划先培训约150名小企业顾问，通过实操工作坊和本地咨询帮助小企业使用 AI。初期目标是以线下培训覆盖至少1,000家小企业，并同步发布关于小团队使用 AI 的报告；这些覆盖数字属于计划目标。",
+    "summary_source": "https://openai.com/index/helping-small-businesses-put-ai-to-work/"
+  },
+  "url:https://deepmind.google/blog/introducing-synthid-bio": {
+    "title_zh": "Google DeepMind 公布 SynthID Bio：为 AI 生成的生物设计添加水印",
+    "summary": "Google DeepMind 公布 SynthID Bio 概念验证，将可检测水印用于 AI 生成的蛋白质序列和预测三维结构。官方称，在所测试蛋白质结合体的湿实验中，加水印后仍保持相近的结合表现；研究旨在追溯生成来源，结果尚不能推广为所有蛋白质均适用。",
+    "summary_source": "https://deepmind.google/blog/introducing-synthid-bio/",
+    "kind": "研究 / 公司动态"
   }
 }

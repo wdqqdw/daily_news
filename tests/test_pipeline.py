@@ -1,5 +1,5 @@
 import copy
-from contextlib import nullcontext
+from contextlib import nullcontext, redirect_stdout
 import datetime as dt
 import io
 import json
@@ -12,9 +12,9 @@ from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
-from update import clean as clean_metadata, human_research_source
+from update import clean as clean_metadata, human_research_source, apply_editorial_exclusions
 from summarize import clean as clean_summary
-from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, HUMAN_DATA
+from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, HUMAN_DATA, generate
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
 from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections, enrich, SummaryError
 
@@ -28,6 +28,43 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_verified_exclusions_are_scoped_to_slots_and_preserve_other_papers(self):
+        rows=apply_editorial_exclusions([
+            paper('https://doi.org/10.46627/SIPOSE.V5I3.676'),
+            paper('10.1021/acselectrochem.5c00334'),paper('10.1/genuine')])
+        self.assertFalse(relevant(rows[0],1))
+        self.assertFalse(relevant(rows[0],2))
+        self.assertTrue(relevant(rows[0],3))
+        self.assertFalse(any(relevant(rows[1],slot) for slot in (1,2,3)))
+        self.assertTrue(relevant(rows[2],1))
+
+    def test_generation_reaches_human_study_after_twelve_ineligible_candidates(self):
+        rejected=[paper(f'10.1/discussion-{i}',citations=0) for i in range(13)]
+        eligible=paper('10.1/human-study',published='2025-07-03',citations=0)
+        human_ai=paper('10.1/brain-study','AI models predict human decision-making',
+                       abstract='Artificial intelligence predicts human choices from participants.',citations=5)
+        hot=paper('10.1/hot','Quantum materials',citations=300)
+        pool=[*rejected,eligible,human_ai,hot]
+        examined=[]
+        def source(item,kind,fetch):
+            examined.append(item['doi'])
+            text=('We discuss language models without conducting experiments.'
+                  if item['doi'].startswith('10.1/discussion-') else
+                  'We evaluated model predictions against observed choices from human participants.')
+            return text,item['url']
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            (root/'data').mkdir()
+            (root/'data'/'sources.json').write_text(json.dumps({'feeds':[{'company':'Test','url':'https://example.com/feed'}],'pages':[]}))
+            with patch('update.ROOT',root),patch('update.DATA',root/'data'/'issues'), \
+                 patch('update.crossref',return_value=pool),patch('update.europe_pmc_candidates',return_value=[]), \
+                 patch('update.fetch',return_value='<rss/>'),patch('update.parse_feed',return_value=[]), \
+                 patch('update.source_text',side_effect=source),patch('update.enrich',lambda issue,fetch:issue), \
+                 redirect_stdout(io.StringIO()):
+                issue=generate(TODAY)
+        self.assertEqual([p['doi'] for p in issue['papers']],['10.1/human-study','10.1/brain-study','10.1/hot'])
+        self.assertTrue(all(p['doi'] in examined for p in rejected))
+
     def test_brain_tumor_classification_does_not_fill_human_research_slots(self):
         p=paper('10.1186/s12880-024-01476-1',
                 'Efficient brain tumor grade classification using ensemble deep learning models',

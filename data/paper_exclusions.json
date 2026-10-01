@@ -1,0 +1,12 @@
+{
+  "10.46627/sipose.v5i3.676": {
+    "slots": [1, 2],
+    "reason": "原文研究对象为 ChatGPT 与 DeepSeek，比较其对四道物理题的回答与研究者编写的参考答案；没有检验 LLM 对人类信念或行为的建模，也没有独立人类被试研究。",
+    "source": "https://doi.org/10.46627/sipose.v5i3.676"
+  },
+  "10.1021/acselectrochem.5c00334": {
+    "slots": [1, 2, 3],
+    "reason": "出版社将该文明确归为 Tutorial，内容是 DRTtools 理论与操作教程，不作为每日三篇原创研究论文。",
+    "source": "https://pubs.acs.org/doi/10.1021/acselectrochem.5c00334"
+  }
+}
