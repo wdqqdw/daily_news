@@ -630,6 +630,42 @@
         "url:https://doi.org/10.1088/1475-7516/2025/11/063"
       ],
       "doi": "10.1088/1475-7516/2025/11/063"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Understanding Epistemic Language with a Language-augmented Bayesian Theory of Mind",
+      "url": "https://doi.org/10.1162/tacl_a_00752",
+      "keys": [
+        "doi:10.1162/tacl_a_00752",
+        "title:understandingepistemiclanguagewithalanguageaugmentedbayesiantheoryofmind",
+        "title:用语言增强的贝叶斯心理理论理解信念与知识表述",
+        "url:https://doi.org/10.1162/tacl_a_00752"
+      ],
+      "doi": "10.1162/tacl_a_00752"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Flexible Patched Brain Transformer model for EEG decoding",
+      "url": "https://doi.org/10.1038/s41598-025-86294-3",
+      "keys": [
+        "doi:10.1038/s41598-025-86294-3",
+        "title:flexiblepatchedbraintransformermodelforeegdecoding",
+        "title:灵活分块的脑transformer模型用于脑电解码",
+        "url:https://doi.org/10.1038/s41598-025-86294-3"
+      ],
+      "doi": "10.1038/s41598-025-86294-3"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "The UCSC Genome Browser database: 2026 update",
+      "url": "https://doi.org/10.1093/nar/gkaf1250",
+      "keys": [
+        "doi:10.1093/nar/gkaf1250",
+        "title:theucscgenomebrowserdatabase2026update",
+        "title:ucsc基因组浏览器数据库2026年度更新",
+        "url:https://doi.org/10.1093/nar/gkaf1250"
+      ],
+      "doi": "10.1093/nar/gkaf1250"
     }
   ],
   "news": [
@@ -1380,6 +1416,61 @@
         "url:https://openai.com/index/devday-2026-recap"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Gemini 4 Argon: our next era of frontier intelligence",
+      "url": "https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence/",
+      "keys": [
+        "title:gemini4argonournexteraoffrontierintelligence",
+        "title:google公布gemini4argon先向部分网络防御团队开放",
+        "url:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "NVIDIA Opens Applications for 2027–2028 Graduate Fellowships With Awards Up to $60,000",
+      "url": "https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026/",
+      "keys": [
+        "title:nvidiaopensapplicationsfor20272028graduatefellowshipswithawardsupto60000",
+        "title:nvidia开放20272028年度博士生奖学金申请最高资助6万美元",
+        "url:https://blogs.nvidia.com/blog/applications-open-graduate-fellowship-awards-2026"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Forecasting space weather risks on power grids",
+      "url": "https://www.microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids/",
+      "keys": [
+        "title:forecastingspaceweatherrisksonpowergrids",
+        "title:微软研究用机器学习提前预测电网面临的空间天气风险",
+        "url:https://microsoft.com/en-us/research/blog/forecasting-space-weather-risks-on-power-grids"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Helping small businesses put AI to work",
+      "url": "https://openai.com/index/helping-small-businesses-put-ai-to-work",
+      "keys": [
+        "title:helpingsmallbusinessesputaitowork",
+        "title:openai与美国小企业发展中心网络合作推广ai实操培训",
+        "url:https://openai.com/index/helping-small-businesses-put-ai-to-work"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-01",
+      "title": "Introducing SynthID Bio",
+      "url": "https://deepmind.google/blog/introducing-synthid-bio/",
+      "keys": [
+        "title:googledeepmind公布synthidbio为ai生成的生物设计添加水印",
+        "title:introducingsynthidbio",
+        "url:https://deepmind.google/blog/introducing-synthid-bio"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }
