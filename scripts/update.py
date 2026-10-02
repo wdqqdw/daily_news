@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 import copy
 import datetime as dt
 from email.utils import parsedate_to_datetime
+import gzip
 import html
 from html.parser import HTMLParser
 import json
@@ -82,7 +83,12 @@ def fetch(url):
     for attempt in range(4):
         try:
             with urllib.request.urlopen(request, timeout=35) as r:
-                return r.read(12_000_000).decode('utf-8', errors='replace')
+                body = r.read(12_000_000)
+                # Some feeds gzip responses even without Accept-Encoding.
+                # Decode the bytes before treating RSS/HTML as UTF-8 text.
+                if body.startswith(b'\x1f\x8b'):
+                    body = gzip.decompress(body)
+                return body.decode('utf-8', errors='replace')
         except urllib.error.HTTPError as error:
             if attempt == 3:raise
             delay=2 ** attempt
@@ -333,6 +339,9 @@ def parse_feed(content, config, today):
                     url=x.get('href','');break
         published = parse_date(txt('pubDate','published','date','updated'))
         title = clean(txt('title'))
+        # Weekly game catalogues are not AI research or company AI progress.
+        if config['company'] == 'NVIDIA' and '/geforce-now-thursday-' in url and re.search(r'\bgames?\b',title,re.I):
+            continue
         if config['company'] == 'Qwen':
             if not re.fullmatch(r'(?:Release\s+)?v\d+\.\d+\.\d+',title):continue
             title = 'Qwen Code · '+title

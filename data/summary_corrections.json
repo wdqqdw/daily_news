@@ -201,5 +201,48 @@
     "summary": "Google DeepMind 公布 SynthID Bio 概念验证，将可检测水印用于 AI 生成的蛋白质序列和预测三维结构。官方称，在所测试蛋白质结合体的湿实验中，加水印后仍保持相近的结合表现；研究旨在追溯生成来源，结果尚不能推广为所有蛋白质均适用。",
     "summary_source": "https://deepmind.google/blog/introducing-synthid-bio/",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1038/s44271-026-00433-8": {
+    "title_zh": "人机互动中的亲近感与共享心理特质相关",
+    "summary": "研究通过三项真人实验，让 GPT-4 或 GPT-4.1 模拟焦虑、外向等特质，以及参与者自身或相反的人格画像。参与者对心理特征与自己相近的模型报告了更强亲近感，部分聊天情绪指标也呈现差异；结果来自短时互动，未证明模型具有人的心理状态。",
+    "summary_source": "https://www.nature.com/articles/s44271-026-00433-8",
+    "reason": "用心理量表塑造个性化 LLM 角色，通过真人对话实验检验人格模拟与人机亲近感的关系。"
+  },
+  "doi:10.1186/s12967-025-06324-6": {
+    "title_zh": "机器学习分析人脑转录组，探索 RNA 修饰与阿尔茨海默病的关联",
+    "summary": "研究结合人脑 RNA 测序、基因共表达网络和机器学习，分析4类 RNA 修饰与18类程序性细胞死亡，筛出19个关键基因并构建风险评分，在多个数据集中验证。结果主要来自生物信息学关联分析，缺少直接实验验证，不能据此认定因果，仍需更广泛的人群验证。",
+    "summary_source": "https://link.springer.com/article/10.1186/s12967-025-06324-6"
+  },
+  "doi:10.1038/s41586-025-09773-7": {
+    "title_zh": "偶极钝化提升全钙钛矿叠层太阳能电池效率",
+    "summary": "研究提出偶极钝化策略，降低铅锡窄带隙钙钛矿电池埋底界面的缺陷，并改善与空穴传输层的能级匹配，减少界面复合与接触损失。实验全钙钛矿叠层器件的光电转换效率达到30.6%，认证稳态效率为30.1%。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09773-7"
+  },
+  "url:https://openai.com/index/the-eternal-complement": {
+    "title_zh": "OpenAI 平台刊文：先进 AI 的价值或在于承担执行工作",
+    "summary": "这篇署名评论讨论创新构想与执行能力的互补关系：作者认为，即使 AI 能提出突破性想法，实验、基础设施和组织协调仍可能成为瓶颈，日常执行工作因此具有重要价值。文章属于对未来经济的情景分析，作者明确表示观点不代表 OpenAI。",
+    "summary_source": "https://openai.com/index/the-eternal-complement/",
+    "kind": "观点 / 经济分析"
+  },
+  "url:https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast": {
+    "title_zh": "NVIDIA 介绍 Blackwell 对 GPT-6 Astra Ultrafast 的推理加速",
+    "summary": "NVIDIA 介绍 OpenAI 在 Blackwell GPU 上运行 GPT-6 Astra Ultrafast，并利用模型持续优化推理软件。官方称，其词元生成速度最高可达 Astra Standard 模式的8倍，已向 API 及符合条件的 ChatGPT Work、Codex 用户提供访问。",
+    "summary_source": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/"
+  },
+  "url:https://openai.com/index/albertsons-reimagining-retail": {
+    "title_zh": "Albertsons 扩大 OpenAI 合作，将 Safeway 购物体验接入 ChatGPT",
+    "summary": "Albertsons 扩大使用 ChatGPT Enterprise 和 OpenAI API，支持员工工作、商品推荐与促销分析。新 Safeway 体验可根据菜谱、图片或购物清单协助挑选商品并建立购物车，再引导用户到 Safeway 结账；扩展至其他旗下品牌仍在计划中。",
+    "summary_source": "https://openai.com/index/albertsons-reimagining-retail/"
+  },
+  "url:https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories": {
+    "title_zh": "NVIDIA 分析 AI 工厂回报：吞吐量、使用年限与工作负载适配",
+    "summary": "NVIDIA 从产出能力、持续使用年限和工作负载适配范围分析 AI 工厂的投资回报。文章强调电力约束下的词元吞吐量、持续软件优化和 CUDA-X 软件库，并以仍在商业服务中的 A100 等设备举例，说明旧硬件可通过适配任务延长使用。",
+    "summary_source": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+    "kind": "技术 / 行业分析"
+  },
+  "url:https://anthropic.com/news/barclays-scales-claude": {
+    "title_zh": "巴克莱扩大 Claude 应用，计划年底覆盖半数开发者",
+    "summary": "巴克莱扩大与 Anthropic 的合作，将 Claude 用于软件开发、旧系统改造和运营。官方称，知识助手已有超过1.6万名员工使用，另一邮件处理平台每天处理约12万封邮件；Claude Code 在2026年底覆盖50%开发者仍是计划目标。",
+    "summary_source": "https://www.anthropic.com/news/barclays-scales-claude"
   }
 }

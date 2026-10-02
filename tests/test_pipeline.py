@@ -1,6 +1,7 @@
 import copy
 from contextlib import nullcontext, redirect_stdout
 import datetime as dt
+import gzip
 import io
 import json
 from pathlib import Path
@@ -226,6 +227,13 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
 
 class NetworkTests(unittest.TestCase):
+    def test_gzip_feed_is_decoded_before_xml_parsing(self):
+        rss='<rss><channel><item><title>新模型发布</title><link>https://example.com/model</link><pubDate>2026-09-15</pubDate></item></channel></rss>'
+        for body in (rss.encode(),gzip.compress(rss.encode())):
+            with self.subTest(compressed=body.startswith(b'\x1f\x8b')),patch('update.urllib.request.urlopen',return_value=io.BytesIO(body)):
+                rows=parse_feed(fetch('https://example.com/rss'),{'company':'Google DeepMind','url':'https://example.com/rss'},TODAY)
+            self.assertEqual([r['title'] for r in rows],['新模型发布'])
+
     def test_human_diaries_and_reward_datasets_are_research_evidence(self):
         self.assertTrue(human_research_source('Across two samples, daily video diaries and self-report measures were compared.'))
         self.assertTrue(human_research_source('We applied neural networks to a large dataset of human reward-learning behaviour.'))
@@ -299,6 +307,14 @@ class NetworkTests(unittest.TestCase):
             self.assertEqual([c.args[0] for c in sleep.call_args_list],[10,20,40])
 
 class ParsingTests(unittest.TestCase):
+    def test_nvidia_game_catalogue_does_not_displace_ai_news(self):
+        articles=[('Fall Into 25 New Games on GeForce NOW This October','geforce-now-thursday-october-2026-games-list'),
+                  ('How NVIDIA GPUs Help Accelerate OpenAI Models','gpus-openai-models'),
+                  ('New AI Rendering Model for Games','neural-rendering-model')]
+        rss='<rss><channel>'+''.join(f'<item><title>{title}</title><link>https://blogs.nvidia.com/blog/{slug}/</link><pubDate>2026-09-15</pubDate></item>' for title,slug in articles)+'</channel></rss>'
+        rows=parse_feed(rss,{'company':'NVIDIA','url':'https://blogs.nvidia.com/feed/'},TODAY)
+        self.assertEqual([r['title'] for r in rows],[a[0] for a in articles[1:]])
+
     def test_rss_filters_future_and_stale_items(self):
         rss='<rss><channel>'+''.join(f'<item><title>Release {i}</title><link>https://example.com/{i}</link><pubDate>{d}</pubDate></item>' for i,d in enumerate(['2026-09-15','2026-09-17','2025-09-15']))+'</channel></rss>'
         result=parse_feed(rss,{'company':'OpenAI','url':'https://example.com/rss'},TODAY)
