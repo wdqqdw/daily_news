@@ -666,6 +666,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1250"
       ],
       "doi": "10.1093/nar/gkaf1250"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "Affiliation in human-AI interactions is based on shared psychological traits",
+      "url": "https://doi.org/10.1038/s44271-026-00433-8",
+      "keys": [
+        "doi:10.1038/s44271-026-00433-8",
+        "title:affiliationinhumanaiinteractionsisbasedonsharedpsychologicaltraits",
+        "title:人机互动中的亲近感与共享心理特质相关",
+        "url:https://doi.org/10.1038/s44271-026-00433-8"
+      ],
+      "doi": "10.1038/s44271-026-00433-8"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "Analysis of human brain RNA-seq data reveals combined effects of 4 types of RNA modifications and 18 types of programmed cell death on Alzheimer’s disease",
+      "url": "https://doi.org/10.1186/s12967-025-06324-6",
+      "keys": [
+        "doi:10.1186/s12967-025-06324-6",
+        "title:analysisofhumanbrainrnaseqdatarevealscombinedeffectsof4typesofrnamodificationsand18typesofprogrammedcelldeathonalzheimersdisease",
+        "title:机器学习分析人脑转录组探索rna修饰与阿尔茨海默病的关联",
+        "url:https://doi.org/10.1186/s12967-025-06324-6"
+      ],
+      "doi": "10.1186/s12967-025-06324-6"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "All-perovskite tandem solar cells with dipolar passivation",
+      "url": "https://doi.org/10.1038/s41586-025-09773-7",
+      "keys": [
+        "doi:10.1038/s41586-025-09773-7",
+        "title:allperovskitetandemsolarcellswithdipolarpassivation",
+        "title:偶极钝化提升全钙钛矿叠层太阳能电池效率",
+        "url:https://doi.org/10.1038/s41586-025-09773-7"
+      ],
+      "doi": "10.1038/s41586-025-09773-7"
     }
   ],
   "news": [
@@ -1471,6 +1507,61 @@
         "url:https://deepmind.google/blog/introducing-synthid-bio"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "The eternal complement",
+      "url": "https://openai.com/index/the-eternal-complement",
+      "keys": [
+        "title:openai平台刊文先进ai的价值或在于承担执行工作",
+        "title:theeternalcomplement",
+        "url:https://openai.com/index/the-eternal-complement"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "How NVIDIA GPUs Help Accelerate OpenAI’s GPT-6 Astra Ultrafast",
+      "url": "https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast/",
+      "keys": [
+        "title:hownvidiagpushelpaccelerateopenaisgpt6astraultrafast",
+        "title:nvidia介绍blackwell对gpt6astraultrafast的推理加速",
+        "url:https://blogs.nvidia.com/blog/gpus-openai-gpt-6-astra-ultrafast"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "Barclays scales Claude to upgrade operations and improve client experience",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude",
+      "keys": [
+        "title:barclaysscalesclaudetoupgradeoperationsandimproveclientexperience",
+        "title:巴克莱扩大claude应用计划年底覆盖半数开发者",
+        "url:https://anthropic.com/news/barclays-scales-claude"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "How Albertsons Companies is reimagining retail from the inside out",
+      "url": "https://openai.com/index/albertsons-reimagining-retail",
+      "keys": [
+        "title:albertsons扩大openai合作将safeway购物体验接入chatgpt",
+        "title:howalbertsonscompaniesisreimaginingretailfromtheinsideout",
+        "url:https://openai.com/index/albertsons-reimagining-retail"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-02",
+      "title": "Productive, Durable, Fungible: How NVIDIA AI Factories Maximize Return on Investment",
+      "url": "https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories/",
+      "keys": [
+        "title:nvidia分析ai工厂回报吞吐量使用年限与工作负载适配",
+        "title:productivedurablefungiblehownvidiaaifactoriesmaximizereturnoninvestment",
+        "url:https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
