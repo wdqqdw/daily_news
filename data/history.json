@@ -702,6 +702,42 @@
         "url:https://doi.org/10.1038/s41586-025-09773-7"
       ],
       "doi": "10.1038/s41586-025-09773-7"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "A semantic embedding space based on large language models for modelling human beliefs",
+      "url": "https://doi.org/10.1038/s41562-025-02228-z",
+      "keys": [
+        "doi:10.1038/s41562-025-02228-z",
+        "title:asemanticembeddingspacebasedonlargelanguagemodelsformodellinghumanbeliefs",
+        "title:用大语言模型构建语义空间建模人的信念",
+        "url:https://doi.org/10.1038/s41562-025-02228-z"
+      ],
+      "doi": "10.1038/s41562-025-02228-z"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "Dialogues with large language models reduce conspiracy beliefs even when the AI is perceived as human",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf325",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgaf325",
+        "title:dialogueswithlargelanguagemodelsreduceconspiracybeliefsevenwhentheaiisperceivedashuman",
+        "title:即使被当作人类与大语言模型对话后阴谋信念也会减弱",
+        "url:https://doi.org/10.1093/pnasnexus/pgaf325"
+      ],
+      "doi": "10.1093/pnasnexus/pgaf325"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "vul-rag : Enhancing LLM-based Vulnerability Detection via Knowledge-level RAG",
+      "url": "https://doi.org/10.1145/3797277",
+      "keys": [
+        "doi:10.1145/3797277",
+        "title:vulragenhancingllmbasedvulnerabilitydetectionviaknowledgelevelrag",
+        "title:vulrag用漏洞知识检索增强大语言模型的代码缺陷检测",
+        "url:https://doi.org/10.1145/3797277"
+      ],
+      "doi": "10.1145/3797277"
     }
   ],
   "news": [
@@ -1560,6 +1596,61 @@
         "title:nvidia分析ai工厂回报吞吐量使用年限与工作负载适配",
         "title:productivedurablefungiblehownvidiaaifactoriesmaximizereturnoninvestment",
         "url:https://blogs.nvidia.com/blog/productive-durable-fungible-ai-factories"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "A model guide for the GPT-6 family",
+      "url": "https://openai.com/index/practical-guide-building-gpt-6",
+      "keys": [
+        "title:amodelguideforthegpt6family",
+        "title:openai发布gpt6系列模型的应用与部署指南",
+        "url:https://openai.com/index/practical-guide-building-gpt-6"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "NVIDIA DGX Spark 64GB Gives Developers More Ways to Build and Scale Local AI",
+      "url": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+      "keys": [
+        "title:nvidiadgxspark64gbgivesdevelopersmorewaystobuildandscalelocalai",
+        "title:nvidia宣布dgxspark64gb配置支持双机扩展本地ai",
+        "url:https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "Anthropic invests $100 million to train 10,000 engineers and tackle the enterprise AI talent gap",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy",
+      "keys": [
+        "title:anthropicinvests100milliontotrain10000engineersandtackletheenterpriseaitalentgap",
+        "title:anthropic承诺投入1亿美元计划到2027年底培训1万名ai工程师",
+        "url:https://anthropic.com/news/claude-frontier-academy"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "Chatham scales its capital markets expertise with OpenAI",
+      "url": "https://openai.com/index/chatham-financial",
+      "keys": [
+        "title:chathamscalesitscapitalmarketsexpertisewithopenai",
+        "title:chatham用codex重构交易核验早期测量显示处理时间缩短",
+        "url:https://openai.com/index/chatham-financial"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-03",
+      "title": "From Training to Production, NVIDIA and CoreWeave Close the Loop on Agentic AI",
+      "url": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/",
+      "keys": [
+        "title:coreweave上线verarubin并推出模型与智能体开发环境forge",
+        "title:fromtrainingtoproductionnvidiaandcoreweaveclosethelooponagenticai",
+        "url:https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin"
       ],
       "company": "NVIDIA"
     }
