@@ -227,6 +227,11 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
 
 class NetworkTests(unittest.TestCase):
+    def test_observed_user_debates_qualify_but_bot_societies_do_not(self):
+        self.assertTrue(human_research_source('We map online user debate data into a language-model embedding space to predict individual beliefs.'))
+        self.assertFalse(human_research_source('We create a simulated society of AI agents and collect online user debate data from those agents.'))
+        self.assertFalse(human_research_source('We propose future studies of online debate and belief formation.'))
+
     def test_gzip_feed_is_decoded_before_xml_parsing(self):
         rss='<rss><channel><item><title>新模型发布</title><link>https://example.com/model</link><pubDate>2026-09-15</pubDate></item></channel></rss>'
         for body in (rss.encode(),gzip.compress(rss.encode())):

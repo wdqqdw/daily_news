@@ -244,5 +244,48 @@
     "title_zh": "巴克莱扩大 Claude 应用，计划年底覆盖半数开发者",
     "summary": "巴克莱扩大与 Anthropic 的合作，将 Claude 用于软件开发、旧系统改造和运营。官方称，知识助手已有超过1.6万名员工使用，另一邮件处理平台每天处理约12万封邮件；Claude Code 在2026年底覆盖50%开发者仍是计划目标。",
     "summary_source": "https://www.anthropic.com/news/barclays-scales-claude"
+  },
+  "doi:10.1038/s41562-025-02228-z": {
+    "title_zh": "用大语言模型构建语义空间，建模人的信念",
+    "summary": "研究利用真实用户的在线辩论记录微调语言模型，把数千种信念映射到同一语义空间。模型捕捉不同社会议题间的信念关联与极化，预测用户在新议题上的立场，并用已有信念与新信念的距离估计认知失调，为研究信念形成提供数据驱动的方法。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02228-z"
+  },
+  "doi:10.1093/pnasnexus/pgaf325": {
+    "title_zh": "即使被当作人类，与大语言模型对话后阴谋信念也会减弱",
+    "summary": "一项955人参与的预注册实验，让语言模型依据事实反驳参与者的阴谋信念或其他缺乏根据的信念，并随机改变“AI工具或人类专家”标签与对话语气。对话后，参与者自报的信念强度下降，各标签和语气条件之间未发现显著差异；研究比较的是信息来源线索。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12578366/"
+  },
+  "doi:10.1145/3797277": {
+    "title_zh": "Vul-RAG：用漏洞知识检索增强大语言模型的代码缺陷检测",
+    "summary": "研究从历史漏洞及修复中提炼多维知识，构建 Vul-RAG 检索增强框架，帮助模型区分有漏洞代码与相似的已修复代码。作者报告该方法提升了模型识别和人工检查表现，并在所测试的 Linux 内核版本中发现10个此前未知缺陷，其中6个获得 CVE 编号。",
+    "summary_source": "https://dl.acm.org/doi/10.1145/3797277"
+  },
+  "url:https://openai.com/index/practical-guide-building-gpt-6": {
+    "title_zh": "OpenAI 发布 GPT-6 系列模型的应用与部署指南",
+    "summary": "OpenAI 发布 GPT-6 系列实用指南，介绍按任务选择模型、推理强度和速度模式，并通过缓存与上下文压缩管理成本。指南还涵盖提示词和技能设计、长任务协调及生产部署评估，建议同时衡量任务成功率、延迟和每次成功任务的成本。",
+    "summary_source": "https://openai.com/index/practical-guide-building-gpt-6/",
+    "kind": "技术指南"
+  },
+  "url:https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync": {
+    "title_zh": "NVIDIA 宣布 DGX Spark 64GB 配置，支持双机扩展本地 AI",
+    "summary": "NVIDIA 宣布合作厂商将于10月推出64GB统一内存版 DGX Spark，保留 GB10 芯片、DGX OS 和 AI 软件栈。官方称两台设备可通过 Sync 组成集群，在其 Qwen 3.8 27B 测试中性能最高达到单机的1.7倍；Model Launcher 计划于月底推出。",
+    "summary_source": "https://blogs.nvidia.com/blog/local-ai-dgx-spark-64gb-sync/",
+    "kind": "产品发布"
+  },
+  "url:https://anthropic.com/news/claude-frontier-academy": {
+    "title_zh": "Anthropic 承诺投入1亿美元，计划到2027年底培训1万名 AI 工程师",
+    "summary": "Anthropic 推出 Claude Frontier Academy，承诺投入1亿美元，目标是在2027年底前培训1万名前沿部署工程师。学员由机构提名，完成线下训练与考核后开展12周真实项目实践；首批最终认证预计在2027年初发放，培训人数仍是计划目标。",
+    "summary_source": "https://www.anthropic.com/news/claude-frontier-academy"
+  },
+  "url:https://openai.com/index/chatham-financial": {
+    "title_zh": "Chatham 用 Codex 重构交易核验，早期测量显示处理时间缩短",
+    "summary": "OpenAI 的客户案例介绍 Chatham 用 Codex 构建工具，并以 GPT-5.6 支持业务应用。客户称，交易核验应用在早期测量中将审查时间从约30分钟降至不足4分钟；团队仍在与真实交易及资深审核人员的结果比较，扩大自动化前保留专业复核。",
+    "summary_source": "https://openai.com/index/chatham-financial/",
+    "kind": "应用 / 客户案例"
+  },
+  "url:https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin": {
+    "title_zh": "CoreWeave 上线 Vera Rubin，并推出模型与智能体开发环境 Forge",
+    "summary": "NVIDIA 公告称，CoreWeave 已提供 Vera Rubin NVL72，Cognition 是首个运行生产负载的客户，同时发布训练、评估与改进模型及智能体的 Forge 环境。Cognition 早期 SWE-2 推理测试报告总词元吞吐量最高为 GB200 NVL72 基线的4.8倍，该数字对应特定测试。",
+    "summary_source": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/"
   }
 }

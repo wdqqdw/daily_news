@@ -65,7 +65,10 @@ def human_research_source(text):
     # Human studies may describe samples and diaries without saying "participants".
     sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
     human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)
-    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset) and not MODEL_SUBJECTS.search(text))
+    # Observed online debate records also contain human beliefs and choices;
+    # these studies need not call the people in their corpus "participants".
+    user_debate_data = re.search(r'\b(?:online )?user (?:debate|discussion) data\b',text,re.I)
+    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or user_debate_data) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
@@ -435,6 +438,7 @@ def generate(today):
       'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
+      'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),
       'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),
       'LLM cognition':lambda:crossref('language models human cognition brain theory of mind',today),
