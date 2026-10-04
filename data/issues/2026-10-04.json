@@ -1,0 +1,228 @@
+{
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T14:38:51+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Towards a psychology of machines: large language models predict human memory",
+      "doi": "10.7717/peerj-cs.3324",
+      "url": "https://doi.org/10.7717/peerj-cs.3324",
+      "journal": "PeerJ Computer Science",
+      "publisher": "PeerJ",
+      "published": "2025-10-31",
+      "authors": "Ulakci et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.3324",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-04；来源：Crossref；引用数 0，距发表 338 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究使用ChatGPT和Google Gemini评估花园路径句子及其上下文的相关性和记忆性，结果表明这些模型的评估与人类参与者高度一致。研究发现，不符合上下文条件下的高相关性与更好的记忆性能相关，这与基于概率框架的上下文依赖学习一致。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.4588,
+      "title_zh": "大语言模型预测人类记忆",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.7717%2Fpeerj-cs.3324",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Noninvasive decoding of typed sentences from human brain activity",
+      "doi": "10.1038/s41593-026-02303-2",
+      "url": "https://doi.org/10.1038/s41593-026-02303-2",
+      "journal": "Nature Neuroscience",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-06-29",
+      "authors": "Lévy et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41593-026-02303-2",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "近期研究",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-04；来源：Crossref；引用数 6，距发表 97 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究介绍了一种无创方法，通过解码脑活动来生成书面句子，并在35名健康志愿者中进行了验证。使用脑磁图技术，该方法的字符错误率平均为29%，显著优于脑电图技术（字符错误率65%）。对于表现最佳的参与者，模型的字符错误率降至18%，并能完美解码训练集外的多种句子。这些结果缩小了侵入性和非侵入性方法之间的差距，为开发安全的脑-机接口铺平了道路。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.5879,
+      "title_zh": "无创解码人类大脑活动生成的书面句子",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41593-026-02303-2%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "S-Scheme Shapes Heterojunction Photocatalysis",
+      "doi": "10.1021/acs.accounts.5c00899",
+      "url": "https://doi.org/10.1021/acs.accounts.5c00899",
+      "journal": "Accounts of Chemical Research",
+      "publisher": "American Chemical Society (ACS)",
+      "published": "2026-03-16",
+      "authors": "Sayed et al.",
+      "citations": 129,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1021%2Facs.accounts.5c00899",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 129 次引用，约 19.16 次 / 月。",
+      "evidence": "检索时间：2026-10-04；来源：Crossref；引用数 129，距发表 202 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过S-方案异质结（SH）优化光生载流子分离和寿命，采用先进的表征技术如光照射Kelvin探针力显微镜、原位电子顺磁共振等，验证了SH机制并揭示了电荷转移动力学。研究旨在通过组分调谐、缺陷调控和界面键工程，增强内部电场，调节能带弯曲，精确控制电荷流动路径，从而最大化光催化效率。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 14.0412,
+      "title_zh": "S-方案重塑异质结光催化",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1021%2Facs.accounts.5c00899%22&resultType=core&format=json&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-01",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "summary": "The Den 在开设新地点的同时，利用 ChatGPT 工作，将准备补助金申请的时间从 3 天缩短至 2 小时，将准备酒类许可证材料的时间从 4 天缩短至 3 小时，每周总共节省 10-15 小时。",
+      "url": "https://openai.com/index/the-den-family-social",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "The Den 提高效率，每周节省 10-15 小时",
+      "summary_method": "AI 根据官方公告整理",
+      "summary_source": "https://openai.com/news/rss.xml",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 69
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 141
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 46
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 1153
+}

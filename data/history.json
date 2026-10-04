@@ -738,6 +738,42 @@
         "url:https://doi.org/10.1145/3797277"
       ],
       "doi": "10.1145/3797277"
+    },
+    {
+      "first_pushed": "2026-10-04",
+      "title": "Towards a psychology of machines: large language models predict human memory",
+      "url": "https://doi.org/10.7717/peerj-cs.3324",
+      "keys": [
+        "doi:10.7717/peerj-cs.3324",
+        "title:towardsapsychologyofmachineslargelanguagemodelspredicthumanmemory",
+        "title:大语言模型预测人类记忆",
+        "url:https://doi.org/10.7717/peerj-cs.3324"
+      ],
+      "doi": "10.7717/peerj-cs.3324"
+    },
+    {
+      "first_pushed": "2026-10-04",
+      "title": "Noninvasive decoding of typed sentences from human brain activity",
+      "url": "https://doi.org/10.1038/s41593-026-02303-2",
+      "keys": [
+        "doi:10.1038/s41593-026-02303-2",
+        "title:noninvasivedecodingoftypedsentencesfromhumanbrainactivity",
+        "title:无创解码人类大脑活动生成的书面句子",
+        "url:https://doi.org/10.1038/s41593-026-02303-2"
+      ],
+      "doi": "10.1038/s41593-026-02303-2"
+    },
+    {
+      "first_pushed": "2026-10-04",
+      "title": "S-Scheme Shapes Heterojunction Photocatalysis",
+      "url": "https://doi.org/10.1021/acs.accounts.5c00899",
+      "keys": [
+        "doi:10.1021/acs.accounts.5c00899",
+        "title:sschemeshapesheterojunctionphotocatalysis",
+        "title:s方案重塑异质结光催化",
+        "url:https://doi.org/10.1021/acs.accounts.5c00899"
+      ],
+      "doi": "10.1021/acs.accounts.5c00899"
     }
   ],
   "news": [
@@ -1653,6 +1689,17 @@
         "url:https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-04",
+      "title": "The Den frees up 10-15 hours a week to grow with ChatGPT Work",
+      "url": "https://openai.com/index/the-den-family-social",
+      "keys": [
+        "title:thedenfreesup1015hoursaweektogrowwithchatgptwork",
+        "title:theden提高效率每周节省1015小时",
+        "url:https://openai.com/index/the-den-family-social"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
