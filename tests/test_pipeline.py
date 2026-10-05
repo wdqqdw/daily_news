@@ -118,6 +118,16 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(selected[0]['doi'],'10.1/ai')  # NSC preference is unchanged.
         self.assertNotEqual(selected[0]['doi'],prior['doi'])
 
+    def test_biological_neural_networks_are_not_an_ai_method(self):
+        p=paper('10.1523/jneurosci.2404-24.2025',
+                'Time-Resolved Aperiodic and Oscillatory Dynamics during Human Visual Memory Encoding',
+                abstract='Biological neural networks translate sensory information into neural code. We analyzed human EEG recordings.',
+                citations=26)
+        self.assertFalse(relevant(p,2))
+        self.assertTrue(human_research_source(p['abstract']))
+        p['abstract']+=' We trained an artificial neural network to predict memory from human brain activity.'
+        self.assertTrue(relevant(p,2))
+
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
         self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))
