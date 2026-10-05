@@ -96,6 +96,28 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We assess AI performance in intuitive physics and visual benchmarks.'),2))
         self.assertFalse(relevant(paper('10.1/ai-only','Visual cognition in multimodal large language models',abstract='We compare visual cognition in LLMs with human performance.'),1))
 
+    def test_human_memory_predictions_qualify_without_model_memory_false_positive(self):
+        p=paper('10.1038/s41598-025-22290-x',
+                'Judgments of learning distinguish humans from large language models in predicting memory',
+                abstract='Large language models mimic human cognition. We compare their predictions with human memory performance.',
+                journal='Scientific Reports',citations=7)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(is_nsc(p))
+        fleeting=paper('10.1162/tacl.a.688',
+                       'Human-like Fleeting Memory Improves Language Learning but Impairs Reading Time Prediction in Transformer Language Models',
+                       abstract='Cognitive scientists compared human reading behavior with language-model predictions.',citations=0)
+        self.assertTrue(relevant(fleeting,1))
+        self.assertFalse(relevant(fleeting,2))  # Citation requirement is unchanged.
+        for title in ('The mosaic memory of large language models',
+                      'Analog in-memory computing for large language models'):
+            self.assertFalse(relevant(dict(p,title=title),1))
+        prior=paper('10.1/seen')
+        selected=select_papers([prior,p,paper('10.1/ai'),paper('10.1/hot','Quantum materials',citations=500)],
+                               item_keys(prior,'papers'),TODAY)
+        self.assertEqual(selected[0]['doi'],'10.1/ai')  # NSC preference is unchanged.
+        self.assertNotEqual(selected[0]['doi'],prior['doi'])
+
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
         self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))

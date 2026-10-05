@@ -171,10 +171,10 @@
     "summary_source": "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkaf1250/8326455"
   },
   "url:https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign": {
-    "title_zh": "OpenAI 称已阻断协同模型蒸馏活动，并加强推理内容保护",
-    "summary": "OpenAI 称其发现并阻断了协同提取模型受保护推理内容的活动，采取账号限制、输出检测及合作方联动措施。官方表示事件不涉及数据库入侵或直接访问已存储的用户对话，并称后续调查和防护加固仍在进行。",
+    "title_zh": "OpenAI 披露阻断模型推理提取活动，并加强防护",
+    "summary": "OpenAI 称发现并阻断一项通过模型交互批量提取受保护推理内容的活动，已采取账号限制、推理内容隔离和输出检测等措施，并与行业伙伴共享线索。公司表示，事件不涉及数据库入侵或直接访问已存储的用户对话；相关调查及防护改进仍在继续。",
     "summary_source": "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/",
-    "kind": "安全 / 报告"
+    "kind": "安全 / 公司动态"
   },
   "url:https://deepmind.google/blog/gemini-4-argon-our-next-era-of-frontier-intelligence": {
     "title_zh": "Google 公布 Gemini 4 Argon，先向部分网络防御团队开放",
@@ -287,5 +287,26 @@
     "title_zh": "CoreWeave 上线 Vera Rubin，并推出模型与智能体开发环境 Forge",
     "summary": "NVIDIA 公告称，CoreWeave 已提供 Vera Rubin NVL72，Cognition 是首个运行生产负载的客户，同时发布训练、评估与改进模型及智能体的 Forge 环境。Cognition 早期 SWE-2 推理测试报告总词元吞吐量最高为 GB200 NVL72 基线的4.8倍，该数字对应特定测试。",
     "summary_source": "https://blogs.nvidia.com/blog/coreweave-agentic-ai-vera-rubin/"
+  },
+  "doi:10.1162/tacl.a.688": {
+    "title_zh": "类人遗忘机制改善语言学习，却削弱对人类阅读时间的预测",
+    "summary": "研究在贴近儿童语言学习规模的数据上，控制训练条件比较带有与不带有记忆衰减的 Transformer。记忆衰减改善了语言建模和句法学习表现，却降低了模型对人类阅读时间的预测能力。这表明，语言学习表现更好并不必然意味着模型更贴近人的阅读行为。",
+    "summary_source": "https://www.mpi.nl/publications/item3715688/human-fleeting-memory-improves-language-learning-impairs-reading-time"
+  },
+  "doi:10.1038/s41598-025-22290-x": {
+    "title_zh": "预测人类记忆时，学习判断揭示人与大语言模型的差异",
+    "summary": "研究让人类与三个 GPT 版本评价语境不同的句子，并比较这些可记忆性评分对人类后续再认表现的预测力。人的学习判断与实际记忆表现显著相关，三个模型的评分均未呈现同等预测力。结果限于所测模型和零样本句子任务，不能据此断言所有大模型都无法理解人的记忆。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-22290-x"
+  },
+  "doi:10.1056/nejmoa2511885": {
+    "title_zh": "ctDNA 引导的阿替利珠单抗辅助治疗改善膀胱癌术后结局",
+    "summary": "IMvigor011 三期双盲试验监测膀胱癌术后患者，并将250名 ctDNA 阳性患者随机分组。阿替利珠单抗组的中位无病生存期为9.9个月，安慰剂组为4.8个月；中位总生存期分别为32.8和21.1个月。3至4级不良事件发生率分别为28%和22%，疗效结论针对该试验中的 ctDNA 阳性人群。",
+    "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2511885"
+  },
+  "url:https://openai.com/index/introducing-dots": {
+    "title_zh": "OpenAI 推出可持续处理任务的 dots 智能体",
+    "summary": "OpenAI 推出由 GPT-6 Astra 驱动的 dots，提供云端电脑、应用连接和持续处理项目的能力，用户可查看进展并设置操作权限。公告称产品正向符合地区条件的 Pro、Business Premium 和 Enterprise 用户逐步开放，并预告面向企业特定职责的专用 dots 试点。",
+    "summary_source": "https://openai.com/index/introducing-dots/",
+    "kind": "产品发布"
   }
 }

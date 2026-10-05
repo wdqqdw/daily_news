@@ -24,5 +24,22 @@
     ],
     "reason": "出版社标为 Special Communication，副标题为 JAMA Summit Report；内容是医疗 AI 峰会讨论与政策建议，不是原创实证研究。",
     "source": "https://jamanetwork.com/journals/jama/fullarticle/2840175"
+  },
+  "10.1002/sdtp.70003_13": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "收录于 SID Symposium Digest of Technical Papers 的会议论文摘要集，不是完整原创期刊研究。",
+    "source": "https://sid.onlinelibrary.wiley.com/journal/21680159"
+  },
+  "10.1002/mp.17583": {
+    "slots": [
+      1,
+      2
+    ],
+    "reason": "原文研究以合成数据训练 U-Net，改善 IVIM 参数图估计并在20名胶质瘤患者影像上验证；目标为成像与病灶表征，没有研究人的认知、行为或神经信息处理。",
+    "source": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.17583"
   }
 }
