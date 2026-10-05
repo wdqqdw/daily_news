@@ -1,0 +1,232 @@
+{
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T09:49:06+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Human-like Fleeting Memory Improves Language Learning but Impairs Reading Time Prediction in Transformer Language Models",
+      "doi": "10.1162/tacl.a.688",
+      "url": "https://doi.org/10.1162/tacl.a.688",
+      "journal": "Transactions of the Association for Computational Linguistics",
+      "publisher": "MIT Press",
+      "published": "2026-06-01",
+      "authors": "Thamma et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1162%2Ftacl.a.688",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-05；来源：Crossref；引用数 0，距发表 126 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在贴近儿童语言学习规模的数据上，控制训练条件比较带有与不带有记忆衰减的 Transformer。记忆衰减改善了语言建模和句法学习表现，却降低了模型对人类阅读时间的预测能力。这表明，语言学习表现更好并不必然意味着模型更贴近人的阅读行为。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.4898,
+      "title_zh": "类人遗忘机制改善语言学习，却削弱对人类阅读时间的预测",
+      "summary_source": "https://www.mpi.nl/publications/item3715688/human-fleeting-memory-improves-language-learning-impairs-reading-time",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Time-Resolved Aperiodic and Oscillatory Dynamics during Human Visual Memory Encoding",
+      "doi": "10.1523/jneurosci.2404-24.2025",
+      "url": "https://doi.org/10.1523/jneurosci.2404-24.2025",
+      "journal": "The Journal of Neuroscience",
+      "publisher": "Society for Neuroscience",
+      "published": "2025-02-27",
+      "authors": "Preston et al.",
+      "citations": 26,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1523%2Fjneurosci.2404-24.2025",
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-05；来源：Crossref；引用数 26，距发表 585 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过分析13名（10名女性）人类颅内EEG记录数据，发现视觉记忆编码期间，非周期性活动和振荡活动均发生变化。具体表现为非周期性调整后的α振荡功率显著下降，同时非周期性神经活动趋于平稳。这些结果提供了人类记忆中非周期性和振荡活动相关动态的新证据。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.0038,
+      "title_zh": "人类视觉记忆编码期间的时间分辨非周期性和振荡动态",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1523%2Fjneurosci.2404-24.2025%22&format=json&resultType=core&pageSize=1",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "ctDNA-Guided Adjuvant Atezolizumab in Muscle-Invasive Bladder Cancer",
+      "doi": "10.1056/nejmoa2511885",
+      "url": "https://doi.org/10.1056/nejmoa2511885",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2025-12-18",
+      "authors": "Powles et al.",
+      "citations": 165,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2511885",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 165 次引用，约 17.01 次 / 月。",
+      "evidence": "检索时间：2026-10-05；来源：Crossref；引用数 165，距发表 291 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "IMvigor011 三期双盲试验监测膀胱癌术后患者，并将250名 ctDNA 阳性患者随机分组。阿替利珠单抗组的中位无病生存期为9.9个月，安慰剂组为4.8个月；中位总生存期分别为32.8和21.1个月。3至4级不良事件发生率分别为28%和22%，疗效结论针对该试验中的 ctDNA 阳性人群。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.8841,
+      "title_zh": "ctDNA 引导的阿替利珠单抗辅助治疗改善膀胱癌术后结局",
+      "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2511885",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-09-29",
+      "title": "Introducing dots",
+      "summary": "OpenAI 推出由 GPT-6 Astra 驱动的 dots，提供云端电脑、应用连接和持续处理项目的能力，用户可查看进展并设置操作权限。公告称产品正向符合地区条件的 Pro、Business Premium 和 Enterprise 用户逐步开放，并预告面向企业特定职责的专用 dots 试点。",
+      "url": "https://openai.com/index/introducing-dots",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 推出可持续处理任务的 dots 智能体",
+      "summary_source": "https://openai.com/index/introducing-dots/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 69
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 46
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 21
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    }
+  ],
+  "candidate_count": 1194
+}

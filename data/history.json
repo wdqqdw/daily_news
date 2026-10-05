@@ -774,6 +774,42 @@
         "url:https://doi.org/10.1021/acs.accounts.5c00899"
       ],
       "doi": "10.1021/acs.accounts.5c00899"
+    },
+    {
+      "first_pushed": "2026-10-05",
+      "title": "Human-like Fleeting Memory Improves Language Learning but Impairs Reading Time Prediction in Transformer Language Models",
+      "url": "https://doi.org/10.1162/tacl.a.688",
+      "keys": [
+        "doi:10.1162/tacl.a.688",
+        "title:humanlikefleetingmemoryimproveslanguagelearningbutimpairsreadingtimepredictionintransformerlanguagemodels",
+        "title:类人遗忘机制改善语言学习却削弱对人类阅读时间的预测",
+        "url:https://doi.org/10.1162/tacl.a.688"
+      ],
+      "doi": "10.1162/tacl.a.688"
+    },
+    {
+      "first_pushed": "2026-10-05",
+      "title": "Time-Resolved Aperiodic and Oscillatory Dynamics during Human Visual Memory Encoding",
+      "url": "https://doi.org/10.1523/jneurosci.2404-24.2025",
+      "keys": [
+        "doi:10.1523/jneurosci.2404-24.2025",
+        "title:timeresolvedaperiodicandoscillatorydynamicsduringhumanvisualmemoryencoding",
+        "title:人类视觉记忆编码期间的时间分辨非周期性和振荡动态",
+        "url:https://doi.org/10.1523/jneurosci.2404-24.2025"
+      ],
+      "doi": "10.1523/jneurosci.2404-24.2025"
+    },
+    {
+      "first_pushed": "2026-10-05",
+      "title": "ctDNA-Guided Adjuvant Atezolizumab in Muscle-Invasive Bladder Cancer",
+      "url": "https://doi.org/10.1056/nejmoa2511885",
+      "keys": [
+        "doi:10.1056/nejmoa2511885",
+        "title:ctdnaguidedadjuvantatezolizumabinmuscleinvasivebladdercancer",
+        "title:ctdna引导的阿替利珠单抗辅助治疗改善膀胱癌术后结局",
+        "url:https://doi.org/10.1056/nejmoa2511885"
+      ],
+      "doi": "10.1056/nejmoa2511885"
     }
   ],
   "news": [
@@ -1698,6 +1734,17 @@
         "title:thedenfreesup1015hoursaweektogrowwithchatgptwork",
         "title:theden提高效率每周节省1015小时",
         "url:https://openai.com/index/the-den-family-social"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-05",
+      "title": "Introducing dots",
+      "url": "https://openai.com/index/introducing-dots",
+      "keys": [
+        "title:introducingdots",
+        "title:openai推出可持续处理任务的dots智能体",
+        "url:https://openai.com/index/introducing-dots"
       ],
       "company": "OpenAI"
     }
