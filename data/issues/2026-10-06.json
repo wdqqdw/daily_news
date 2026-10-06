@@ -1,0 +1,281 @@
+{
+  "date": "2026-10-06",
+  "generated_at": "2026-10-06T21:13:24+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Prediction, syntax and semantic grounding in the brain and large language models",
+      "doi": "10.1038/s41598-026-41532-0",
+      "url": "https://doi.org/10.1038/s41598-026-41532-0",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-03-10",
+      "authors": "Kölbl et al.",
+      "citations": 1,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-026-41532-0",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-06；来源：Crossref；引用数 1，距发表 210 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究记录29名健康参与者听德语有声书时的脑电与脑磁信号，并与 Llama 的词类预测和表征比较。不同词类呈现可重复的时空反应，名词出现前已有显著神经活动，提示语言理解中的预期加工。模型分析提供了计算参照，但不代表人与模型使用相同机制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 4.0137,
+      "title_zh": "结合脑电、脑磁与 Llama，研究人脑如何预测和理解词语",
+      "summary_source": "https://www.nature.com/articles/s41598-026-41532-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Representation of locomotive action affordances in human behavior, brains, and deep neural networks",
+      "doi": "10.1073/pnas.2414005122",
+      "url": "https://doi.org/10.1073/pnas.2414005122",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "publisher": "National Academy of Sciences",
+      "published": "2025-06-12",
+      "authors": "Bartnik et al.",
+      "citations": 9,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1073%2Fpnas.2414005122",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-06；来源：Crossref；引用数 9，距发表 481 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究比较人类对场景可走、可游或可攀爬等行动的判断、功能磁共振信号与深度网络表征，发现场景选择性视觉皮层编码了超出物体和材质等线索的行动可能性。按行动标签训练网络或使用相关语言嵌入能提高与人类的对应程度，但所测模型仍未完整捕捉这种感知。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.1151,
+      "title_zh": "人脑如何判断环境允许哪些行动？深度网络仍未完整复现",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12184334/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Perioperative Enfortumab Vedotin and Pembrolizumab in Bladder Cancer",
+      "doi": "10.1056/nejmoa2511674",
+      "url": "https://doi.org/10.1056/nejmoa2511674",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2026-04-02",
+      "authors": "Vulsteke et al.",
+      "citations": 114,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2511674",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 114 次引用，约 18.29 次 / 月。",
+      "evidence": "检索时间：2026-10-06；来源：Crossref；引用数 114，距发表 187 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "这项三期开放标签试验将344名不适合或拒绝顺铂化疗的肌层浸润性膀胱癌患者随机分组。联合用药加手术组的两年无事件生存率为74.7%，单纯手术组为39.4%；两年总生存率分别为79.7%和63.1%。三级及以上不良事件发生率分别为71.3%和45.9%，疗效伴随更高治疗负担。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.8004,
+      "title_zh": "围手术期维恩妥尤单抗联合帕博利珠单抗改善膀胱癌结局",
+      "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2511674",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "模型 / 行业应用",
+      "published": "2026-10-06",
+      "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
+      "summary": "NVIDIA 介绍运营商使用开放模型处理网络运维和客户服务的进展，包括 SoftBank 的电信模型实践、由 AdaptKey 微调的 Nemotron 3 Large Telco Model，以及基于 NeMo 的端到端定制流程。公告强调模型可控性和本地部署，实际效果仍需在各运营商的任务与数据上验证。",
+      "url": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 介绍电信行业开放模型方案与定制工具",
+      "summary_source": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Qwen",
+      "kind": "产品 / 开源更新",
+      "published": "2026-10-05",
+      "title": "Qwen Code · Release v0.25.0",
+      "summary": "Qwen Code 发布0.25.0版本，更新包括本地工作区智能体协作、将 Mem0 记忆组件整合到主命令行工具，以及工作区智能体的访问和共享。版本同时改进托管会话的工具审批、恢复和远程结果交付，并修复多项问题；发布说明列为无已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.25.0 加入本地工作区智能体协作与记忆能力",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "技术报告 / 安全",
+      "published": "2026-10-05",
+      "title": "Our approach to EU text provenance rules",
+      "summary": "OpenAI 公布 textGrain 文本水印方案：部分 API 模型可由全球客户主动开启，默认关闭；未来数周将为欧盟符合条件的 ChatGPT 与 Codex 文本输出加入水印。检测器初期仅向获批研究者和专业机构开放。公司强调短文本、改写和翻译会影响检测，水印不能证明文本真实或完全由 AI 创作。",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 公布文本水印计划，并向研究者开放检测申请",
+      "summary_source": "https://openai.com/index/eu-text-provenance/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品 / 商业进展",
+      "published": "2026-10-05",
+      "title": "Building advertising for the way people use AI",
+      "summary": "OpenAI 宣布新的视觉广告形式，计划本月稍后在美国向首批广告主测试，最初用于图像生成场景。公告称广告会明确标识、与生成图像分开，且不影响回答；同时扩展转化归因、增量效果测量和品牌适配评估合作，部分评估仍处于试点阶段。",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 将测试 ChatGPT 视觉广告，并扩展广告测量工具",
+      "summary_source": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "医疗 AI / 公司动态",
+      "published": "2026-10-05",
+      "title": "From Scan to Treatment Plan, AI Helps Close Breast Cancer’s Deadliest Gaps",
+      "summary": "NVIDIA 介绍其 Inception 项目企业的乳腺癌应用：iSono Health 用自动化三维超声减少采集差异，Whiterabbit.ai 提供乳腺密度评估并开发风险预测工具。公告称 iSono 正开展3200名患者的多中心研究。相关进展来自公司介绍，不能直接等同于已证实的临床结局改善。",
+      "url": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 介绍初创企业将 AI 用于乳腺影像、风险评估和诊疗支持",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 125
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 106
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 47
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    }
+  ],
+  "candidate_count": 1283
+}

@@ -822,6 +822,42 @@
         "url:https://doi.org/10.1038/s41598-025-22290-x"
       ],
       "doi": "10.1038/s41598-025-22290-x"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Prediction, syntax and semantic grounding in the brain and large language models",
+      "url": "https://doi.org/10.1038/s41598-026-41532-0",
+      "keys": [
+        "doi:10.1038/s41598-026-41532-0",
+        "title:predictionsyntaxandsemanticgroundinginthebrainandlargelanguagemodels",
+        "title:结合脑电脑磁与llama研究人脑如何预测和理解词语",
+        "url:https://doi.org/10.1038/s41598-026-41532-0"
+      ],
+      "doi": "10.1038/s41598-026-41532-0"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Representation of locomotive action affordances in human behavior, brains, and deep neural networks",
+      "url": "https://doi.org/10.1073/pnas.2414005122",
+      "keys": [
+        "doi:10.1073/pnas.2414005122",
+        "title:representationoflocomotiveactionaffordancesinhumanbehaviorbrainsanddeepneuralnetworks",
+        "title:人脑如何判断环境允许哪些行动深度网络仍未完整复现",
+        "url:https://doi.org/10.1073/pnas.2414005122"
+      ],
+      "doi": "10.1073/pnas.2414005122"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Perioperative Enfortumab Vedotin and Pembrolizumab in Bladder Cancer",
+      "url": "https://doi.org/10.1056/nejmoa2511674",
+      "keys": [
+        "doi:10.1056/nejmoa2511674",
+        "title:perioperativeenfortumabvedotinandpembrolizumabinbladdercancer",
+        "title:围手术期维恩妥尤单抗联合帕博利珠单抗改善膀胱癌结局",
+        "url:https://doi.org/10.1056/nejmoa2511674"
+      ],
+      "doi": "10.1056/nejmoa2511674"
     }
   ],
   "news": [
@@ -1759,6 +1795,61 @@
         "url:https://openai.com/index/introducing-dots"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Why Telecom Operators Are Building Their AI Strategy on Open Models",
+      "url": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
+      "keys": [
+        "title:nvidia介绍电信行业开放模型方案与定制工具",
+        "title:whytelecomoperatorsarebuildingtheiraistrategyonopenmodels",
+        "url:https://blogs.nvidia.com/blog/telecom-operators-open-models"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Qwen Code · Release v0.25.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+      "keys": [
+        "title:qwencode0250加入本地工作区智能体协作与记忆能力",
+        "title:qwencodereleasev0250",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Our approach to EU text provenance rules",
+      "url": "https://openai.com/index/eu-text-provenance",
+      "keys": [
+        "title:openai公布文本水印计划并向研究者开放检测申请",
+        "title:ourapproachtoeutextprovenancerules",
+        "url:https://openai.com/index/eu-text-provenance"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "Building advertising for the way people use AI",
+      "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement",
+      "keys": [
+        "title:buildingadvertisingforthewaypeopleuseai",
+        "title:openai将测试chatgpt视觉广告并扩展广告测量工具",
+        "url:https://openai.com/index/new-chatgpt-ads-format-and-measurement"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-06",
+      "title": "From Scan to Treatment Plan, AI Helps Close Breast Cancer’s Deadliest Gaps",
+      "url": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
+      "keys": [
+        "title:fromscantotreatmentplanaihelpsclosebreastcancersdeadliestgaps",
+        "title:nvidia介绍初创企业将ai用于乳腺影像风险评估和诊疗支持",
+        "url:https://blogs.nvidia.com/blog/ai-breast-cancer-startups"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
