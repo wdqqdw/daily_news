@@ -128,6 +128,21 @@ class SelectionTests(unittest.TestCase):
         p['abstract']+=' We trained an artificial neural network to predict memory from human brain activity.'
         self.assertTrue(relevant(p,2))
 
+    def test_pnas_human_reasoning_is_not_mistaken_for_conference_proceedings(self):
+        raw={'type':'journal-article','DOI':'10.1073/pnas.2520077122',
+             'title':['The cost of thinking is similar between large reasoning models and humans'],
+             'container-title':['Proceedings of the National Academy of Sciences'],
+             'published-online':{'date-parts':[[2025,11,19]]},'is-referenced-by-count':10,
+             'abstract':'Neural network models capture human cognition. Across seven tasks, models predict human reaction times.'}
+        p=normalize_work(raw,TODAY)
+        self.assertIsNotNone(p)
+        self.assertTrue(relevant(p,2))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertIsNone(normalize_work(dict(raw,DOI='10.1/conference',**{'container-title':['Proceedings of a Human Cognition Conference']}),TODAY))
+        self.assertIsNone(normalize_work(dict(raw,title=['Human cognition: A Review']),TODAY))
+        self.assertIsNone(normalize_work(dict(raw,DOI='10.1/not-pnas'),TODAY))
+
     def test_hot_paper_requires_established_publication_source(self):
         self.assertFalse(relevant(paper('10.1/spam','Writing better scientific articles',publisher='Unknown journal network',citations=10000),3))
         self.assertTrue(relevant(paper('10.1/physics','Quantum materials',publisher='American Physical Society (APS)'),3))

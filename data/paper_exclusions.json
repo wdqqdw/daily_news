@@ -41,5 +41,14 @@
     ],
     "reason": "原文研究以合成数据训练 U-Net，改善 IVIM 参数图估计并在20名胶质瘤患者影像上验证；目标为成像与病灶表征，没有研究人的认知、行为或神经信息处理。",
     "source": "https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.17583"
+  },
+  "10.1088/1475-7516/2026/03/081": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "ET 合作组将其明确称为 Science Blue Book，作者机构标为 White paper；内容为观测站科学目标、能力预测及方法的综合报告，不计入每日原创研究论文。",
+    "source": "https://einsteintelescope.eu/news/1698/"
   }
 }

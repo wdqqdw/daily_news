@@ -35,7 +35,7 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
@@ -46,7 +46,7 @@ NSC_PUBLISHERS = re.compile(r'springer|nature|american association for the advan
 ESTABLISHED_PUBLISHERS = re.compile(r'springer|nature|elsevier|wiley|american association for the advancement|cell press|american (?:chemical|physical|psychological) society|royal society|national academy of sciences|oxford|cambridge|association for computing machinery|ieee|iop publishing|sage|frontiers|public library of science|plos|massachusetts medical society|american medical association|bmj|aps', re.I)
 THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*theor|proposes? a research agenda|conceptual (?:analysis|framework|argument)|discussion framework|open forum (?:paper|contribution)|narrative review|systematic review|\b(?:this|our) (?:comprehensive |scoping |narrative |systematic )?review\b', re.I)
 NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|letter|preprint|retract',re.I)
-HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory))\b',re.I)
+HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory|(?:reaction|response|reading) times?))\b',re.I)
 MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
 SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:e|ed|ing)|proxies for|substitutes for)\s+(?:data from\s+)?human\s+(?:participants?|subjects?|respondents?)\b',re.I)
 BOT_SOCIETY = re.compile(r'\b(?:simulated (?:online )?societ(?:y|ies)|artificial societ(?:y|ies)) of (?:AI )?(?:chatbots?|agents?)\b',re.I)
@@ -145,7 +145,11 @@ def normalize_work(x, today):
     if published > today:
         return None
     journal = clean(' '.join(x.get('container-title',[])))
-    if not journal or re.search(r'review|abstracts|proceedings|perspectives on|trends in',journal,re.I):
+    # PNAS is a research journal despite 'Proceedings' in its full name.
+    is_pnas = (journal.casefold() in {'proceedings of the national academy of sciences',
+                                    'proceedings of the national academy of sciences of the united states of america'}
+               and canonical_doi(x['DOI']).startswith('10.1073/pnas.'))
+    if not journal or (re.search(r'review|abstracts|proceedings|perspectives on|trends in',journal,re.I) and not is_pnas):
         return None
     authors = x.get('author', [])
     author = authors[0].get('family',authors[0].get('name','')) if authors else ''
@@ -440,6 +444,7 @@ def generate(today):
       'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
+      'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),
       'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),

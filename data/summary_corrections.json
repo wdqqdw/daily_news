@@ -308,5 +308,50 @@
     "summary": "OpenAI 推出由 GPT-6 Astra 驱动的 dots，提供云端电脑、应用连接和持续处理项目的能力，用户可查看进展并设置操作权限。公告称产品正向符合地区条件的 Pro、Business Premium 和 Enterprise 用户逐步开放，并预告面向企业特定职责的专用 dots 试点。",
     "summary_source": "https://openai.com/index/introducing-dots/",
     "kind": "产品发布"
+  },
+  "doi:10.1038/s41598-026-41532-0": {
+    "title_zh": "结合脑电、脑磁与 Llama，研究人脑如何预测和理解词语",
+    "summary": "研究记录29名健康参与者听德语有声书时的脑电与脑磁信号，并与 Llama 的词类预测和表征比较。不同词类呈现可重复的时空反应，名词出现前已有显著神经活动，提示语言理解中的预期加工。模型分析提供了计算参照，但不代表人与模型使用相同机制。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-41532-0"
+  },
+  "doi:10.1073/pnas.2414005122": {
+    "title_zh": "人脑如何判断环境允许哪些行动？深度网络仍未完整复现",
+    "summary": "研究比较人类对场景可走、可游或可攀爬等行动的判断、功能磁共振信号与深度网络表征，发现场景选择性视觉皮层编码了超出物体和材质等线索的行动可能性。按行动标签训练网络或使用相关语言嵌入能提高与人类的对应程度，但所测模型仍未完整捕捉这种感知。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12184334/"
+  },
+  "doi:10.1056/nejmoa2511674": {
+    "title_zh": "围手术期维恩妥尤单抗联合帕博利珠单抗改善膀胱癌结局",
+    "summary": "这项三期开放标签试验将344名不适合或拒绝顺铂化疗的肌层浸润性膀胱癌患者随机分组。联合用药加手术组的两年无事件生存率为74.7%，单纯手术组为39.4%；两年总生存率分别为79.7%和63.1%。三级及以上不良事件发生率分别为71.3%和45.9%，疗效伴随更高治疗负担。",
+    "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2511674"
+  },
+  "url:https://blogs.nvidia.com/blog/telecom-operators-open-models": {
+    "title_zh": "NVIDIA 介绍电信行业开放模型方案与定制工具",
+    "summary": "NVIDIA 介绍运营商使用开放模型处理网络运维和客户服务的进展，包括 SoftBank 的电信模型实践、由 AdaptKey 微调的 Nemotron 3 Large Telco Model，以及基于 NeMo 的端到端定制流程。公告强调模型可控性和本地部署，实际效果仍需在各运营商的任务与数据上验证。",
+    "summary_source": "https://blogs.nvidia.com/blog/telecom-operators-open-models/",
+    "kind": "模型 / 行业应用"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0": {
+    "title_zh": "Qwen Code 0.25.0 加入本地工作区智能体协作与记忆能力",
+    "summary": "Qwen Code 发布0.25.0版本，更新包括本地工作区智能体协作、将 Mem0 记忆组件整合到主命令行工具，以及工作区智能体的访问和共享。版本同时改进托管会话的工具审批、恢复和远程结果交付，并修复多项问题；发布说明列为无已知破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.0",
+    "kind": "产品 / 开源更新"
+  },
+  "url:https://openai.com/index/eu-text-provenance": {
+    "title_zh": "OpenAI 公布文本水印计划，并向研究者开放检测申请",
+    "summary": "OpenAI 公布 textGrain 文本水印方案：部分 API 模型可由全球客户主动开启，默认关闭；未来数周将为欧盟符合条件的 ChatGPT 与 Codex 文本输出加入水印。检测器初期仅向获批研究者和专业机构开放。公司强调短文本、改写和翻译会影响检测，水印不能证明文本真实或完全由 AI 创作。",
+    "summary_source": "https://openai.com/index/eu-text-provenance/",
+    "kind": "技术报告 / 安全"
+  },
+  "url:https://openai.com/index/new-chatgpt-ads-format-and-measurement": {
+    "title_zh": "OpenAI 将测试 ChatGPT 视觉广告，并扩展广告测量工具",
+    "summary": "OpenAI 宣布新的视觉广告形式，计划本月稍后在美国向首批广告主测试，最初用于图像生成场景。公告称广告会明确标识、与生成图像分开，且不影响回答；同时扩展转化归因、增量效果测量和品牌适配评估合作，部分评估仍处于试点阶段。",
+    "summary_source": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/",
+    "kind": "产品 / 商业进展"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-breast-cancer-startups": {
+    "title_zh": "NVIDIA 介绍初创企业将 AI 用于乳腺影像、风险评估和诊疗支持",
+    "summary": "NVIDIA 介绍其 Inception 项目企业的乳腺癌应用：iSono Health 用自动化三维超声减少采集差异，Whiterabbit.ai 提供乳腺密度评估并开发风险预测工具。公告称 iSono 正开展3200名患者的多中心研究。相关进展来自公司介绍，不能直接等同于已证实的临床结局改善。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
+    "kind": "医疗 AI / 公司动态"
   }
 }
