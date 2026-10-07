@@ -353,5 +353,50 @@
     "summary": "NVIDIA 介绍其 Inception 项目企业的乳腺癌应用：iSono Health 用自动化三维超声减少采集差异，Whiterabbit.ai 提供乳腺密度评估并开发风险预测工具。公告称 iSono 正开展3200名患者的多中心研究。相关进展来自公司介绍，不能直接等同于已证实的临床结局改善。",
     "summary_source": "https://blogs.nvidia.com/blog/ai-breast-cancer-startups/",
     "kind": "医疗 AI / 公司动态"
+  },
+  "doi:10.1038/s41562-025-02203-8": {
+    "title_zh": "缺少具身经验的大语言模型能重现人类概念的哪些特征？",
+    "summary": "研究将约4442个词汇概念的模型评分与两套人类常模数据比较，涵盖非感觉运动、感觉和运动维度。模型与人的相似性从非感觉运动维度向感觉、运动维度逐步下降，接受视觉训练的模型在视觉相关维度更接近人类。结果提示，仅靠语言学习难以完整重现人的概念表征；视觉训练与更高相似性相关，但不能据此认定模型具有人类体验。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02203-8"
+  },
+  "doi:10.1073/pnas.2520077122": {
+    "title_zh": "大推理模型与人类的思考成本呈现相似规律",
+    "summary": "研究在七项推理任务中，将大推理模型生成的思维链长度与人类解题反应时间比较。模型需要更多推理词元的题目，人类通常也耗时更长；这种关系既出现在同一任务内，也体现为任务之间的难度差异。结果支持把推理模型用于研究人的认知负荷，但这种相关性并不证明二者采用相同的内部计算机制。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12663947/"
+  },
+  "doi:10.1088/1674-4527/ae75b8": {
+    "title_zh": "中法 SVOM 天文卫星：任务系统与首年观测评估",
+    "summary": "论文介绍 SVOM 如何把星载伽马射线、X射线与可见光仪器同地面望远镜联动，以快速发现和跟踪瞬变天体，并评估首年在轨运行。其常规观测计划完成了850个目标的观测，可见光望远镜获得260万秒可用曝光。研究展示了空间与地面协同观测的实际能力，更深入的伽马暴物理结论仍需结合具体观测分析。",
+    "summary_source": "https://arxiv.org/html/2604.24257v1"
+  },
+  "url:https://openai.com/index/jump-trading": {
+    "title_zh": "Jump Trading 用 ChatGPT 扩展量化研究工作流",
+    "summary": "OpenAI 的客户案例介绍，Jump Trading 用 GPT-6 Astra 承担持续时间更长的研究任务，把多个数据源、代码开发与假设检验结合起来。研究人员定义目标和评估标准，并保留过程检查与最终人工审核。该案例描述了工作方式的变化，没有提供可独立验证的交易收益提升指标。",
+    "summary_source": "https://openai.com/index/jump-trading/",
+    "kind": "应用案例"
+  },
+  "url:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model": {
+    "title_zh": "Google 发布端侧多模态嵌入模型 EmbeddingGemma 2",
+    "summary": "Google 发布7.4亿参数的 EmbeddingGemma 2，以 Apache 2.0 许可开放，将文本、图像、音频和视频映射到统一向量空间，支持本地跨模态检索。模型采用可选视觉与音频编码器，向量维度可从768缩减到128。官方强调其端侧隐私与存储优势，性能和内存数据来自官方评测。",
+    "summary_source": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+    "kind": "模型发布"
+  },
+  "url:https://microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us": {
+    "title_zh": "微软研究院访谈：从 AI 的意外失败中改进评估",
+    "summary": "微软研究员 Jennifer Neville 在访谈中讨论，模型离开传统基准测试后暴露出的意外失败，如何帮助发现真实交互与复杂数据中的问题。她强调把评估与用户需求联系起来，并在结果反常时重新检查数据。内容属于研究访谈，讨论评估方法与实践经验。",
+    "summary_source": "https://www.microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us/",
+    "kind": "研究访谈"
+  },
+  "url:https://anthropic.com/news/cyber-verification-program": {
+    "title_zh": "Anthropic 扩展网络安全认证计划，提供三级访问权限",
+    "summary": "Anthropic 将现有网络安全访问项目整合为扩展版认证计划，设置防御、红队和专门访问三个等级，面向通过审核的安全团队开放相应模型能力。不同等级适用不同身份核验和安全控制，红队测试须获目标系统授权。官方也说明了数据保留要求及后续企业隐私方案的计划。",
+    "summary_source": "https://www.anthropic.com/news/cyber-verification-program",
+    "kind": "产品与政策"
+  },
+  "url:https://openai.com/index/sharing-ai-progress-in-mathematics": {
+    "title_zh": "OpenAI 公开 AI 数学研究结果与部分 Lean 形式化证明",
+    "summary": "OpenAI 在 GitHub 发布内部前沿模型产生的一批数学结果，并提供多项证明的 Lean 形式化、十份模型推理摘要以及计算量和尝试题目数等说明。公司称将继续补充形式化结果、改进引用与展示方式，并资助相关学术交流。此次属于公司研究成果披露，未将全部结果宣称为已经独立同行评审。",
+    "summary_source": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "kind": "研究进展"
   }
 }

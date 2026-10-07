@@ -274,6 +274,21 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
 
 class NetworkTests(unittest.TestCase):
+    def test_human_concepts_require_observed_norm_samples(self):
+        abstract=('We compare representations of 4,442 lexical concepts between humans '
+                  '(the Glasgow Norms 1, N = 829; and the Lancaster Norms 2, N = 3,500) '
+                  'and large language models with and without visual learning.')
+        p=paper('10.1038/s41562-025-02203-8',
+                'Large language models without grounding recover non-sensorimotor but not sensorimotor features of human concepts',
+                abstract=abstract)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(human_research_source(abstract))
+        self.assertFalse(human_research_source('We discuss human concepts and suggest using the Glasgow Norms in future work.'))
+        self.assertFalse(human_research_source('We compare concepts between humans (the Glasgow Norms) and models.'))
+        self.assertFalse(human_research_source('We compare concepts between models (the Glasgow Norms, N = 829) and other models.'))
+        self.assertFalse(human_research_source('We create an artificial society of AI agents. '+abstract))
+        self.assertFalse(human_research_source('We use language models as test subjects. '+abstract))
+
     def test_observed_user_debates_qualify_but_bot_societies_do_not(self):
         self.assertTrue(human_research_source('We map online user debate data into a language-model embedding space to predict individual beliefs.'))
         self.assertFalse(human_research_source('We create a simulated society of AI agents and collect online user debate data from those agents.'))

@@ -35,10 +35,10 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:concepts?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human (?:cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human (?:concepts?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind|social science experiments?)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
@@ -65,10 +65,13 @@ def human_research_source(text):
     # Human studies may describe samples and diaries without saying "participants".
     sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
     human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)
+    # Published human norm datasets can identify their samples by N without
+    # repeating "participants". A mere mention of conceptual norms is not data.
+    sampled_human_norms = re.search(r'\bhumans?\s*\([^)]*\bnorms\b[^)]*\bN\s*=\s*[1-9][\d,]*',text,re.I)
     # Observed online debate records also contain human beliefs and choices;
     # these studies need not call the people in their corpus "participants".
     user_debate_data = re.search(r'\b(?:online )?user (?:debate|discussion) data\b',text,re.I)
-    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or user_debate_data) and not MODEL_SUBJECTS.search(text))
+    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or sampled_human_norms or user_debate_data) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
@@ -446,6 +449,7 @@ def generate(today):
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),
+      'LLM human concepts':lambda:crossref('language models human concepts',today,rows=180),
       'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),
       'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),
