@@ -858,6 +858,42 @@
         "url:https://doi.org/10.1056/nejmoa2511674"
       ],
       "doi": "10.1056/nejmoa2511674"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "Large language models without grounding recover non-sensorimotor but not sensorimotor features of human concepts",
+      "url": "https://doi.org/10.1038/s41562-025-02203-8",
+      "keys": [
+        "doi:10.1038/s41562-025-02203-8",
+        "title:largelanguagemodelswithoutgroundingrecovernonsensorimotorbutnotsensorimotorfeaturesofhumanconcepts",
+        "title:缺少具身经验的大语言模型能重现人类概念的哪些特征",
+        "url:https://doi.org/10.1038/s41562-025-02203-8"
+      ],
+      "doi": "10.1038/s41562-025-02203-8"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "The cost of thinking is similar between large reasoning models and humans",
+      "url": "https://doi.org/10.1073/pnas.2520077122",
+      "keys": [
+        "doi:10.1073/pnas.2520077122",
+        "title:thecostofthinkingissimilarbetweenlargereasoningmodelsandhumans",
+        "title:大推理模型与人类的思考成本呈现相似规律",
+        "url:https://doi.org/10.1073/pnas.2520077122"
+      ],
+      "doi": "10.1073/pnas.2520077122"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "The SVOM Mission, Its Profile and Its System",
+      "url": "https://doi.org/10.1088/1674-4527/ae75b8",
+      "keys": [
+        "doi:10.1088/1674-4527/ae75b8",
+        "title:thesvommissionitsprofileanditssystem",
+        "title:中法svom天文卫星任务系统与首年观测评估",
+        "url:https://doi.org/10.1088/1674-4527/ae75b8"
+      ],
+      "doi": "10.1088/1674-4527/ae75b8"
     }
   ],
   "news": [
@@ -1850,6 +1886,61 @@
         "url:https://blogs.nvidia.com/blog/ai-breast-cancer-startups"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "How Jump Trading is scaling quant research with ChatGPT",
+      "url": "https://openai.com/index/jump-trading",
+      "keys": [
+        "title:howjumptradingisscalingquantresearchwithchatgpt",
+        "title:jumptrading用chatgpt扩展量化研究工作流",
+        "url:https://openai.com/index/jump-trading"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "keys": [
+        "title:embeddinggemma2anopenlightweightmultimodalembeddingmodel",
+        "title:google发布端侧多模态嵌入模型embeddinggemma2",
+        "url:https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "What AI gets wrong and what failure teaches us",
+      "url": "https://www.microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us/",
+      "keys": [
+        "title:whataigetswrongandwhatfailureteachesus",
+        "title:微软研究院访谈从ai的意外失败中改进评估",
+        "url:https://microsoft.com/en-us/research/podcast/what-ai-gets-wrong-and-what-failure-teaches-us"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "Expanding the Cyber Verification Program",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "keys": [
+        "title:anthropic扩展网络安全认证计划提供三级访问权限",
+        "title:expandingthecyberverificationprogram",
+        "url:https://anthropic.com/news/cyber-verification-program"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-07",
+      "title": "Sharing AI progress in mathematics",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics",
+      "keys": [
+        "title:openai公开ai数学研究结果与部分lean形式化证明",
+        "title:sharingaiprogressinmathematics",
+        "url:https://openai.com/index/sharing-ai-progress-in-mathematics"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
