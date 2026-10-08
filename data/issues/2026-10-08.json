@@ -1,0 +1,293 @@
+{
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T09:50:52+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "How well do large language models mirror human cognition of word concepts?: A comparison of psychological ratings for early-acquired English words",
+      "doi": "10.3758/s13428-025-02938-2",
+      "url": "https://doi.org/10.3758/s13428-025-02938-2",
+      "journal": "Behavior Research Methods",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-02",
+      "authors": "Hagihara et al.",
+      "citations": 3,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.3758%2Fs13428-025-02938-2",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-08；来源：Crossref；引用数 3，距发表 248 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "本研究比较了大型语言模型（LLMs）与人类对早期习得的英语单词的心理评级的匹配程度。研究发现，LLMs在某些特征（如具体性、身体互动性）上与人类评级高度一致，但在其他特征（如象征性、唤醒度）上则存在显著差异。此外，功能词与人类和LLMs评级之间的差异更为明显。",
+      "tag": "认知与行为建模",
+      "ranking_score": 7.9153,
+      "title_zh": "大型语言模型如何反映人类对单词概念的认知：基于心理评级的比较研究",
+      "summary_method": "AI 根据公开摘要整理",
+      "summary_source": "https://api.crossref.org/works/10.3758%2Fs13428-025-02938-2",
+      "summary_model": "Qwen/Qwen2.5-7B-Instruct-GGUF"
+    },
+    {
+      "type": "journal-article",
+      "title": "Aligning machine and human visual representations across abstraction levels",
+      "doi": "10.1038/s41586-025-09631-6",
+      "url": "https://doi.org/10.1038/s41586-025-09631-6",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-12",
+      "authors": "Muttenthaler et al.",
+      "citations": 29,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09631-6",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "research-article"
+      ],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-08；来源：Crossref；引用数 29，距发表 330 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究先用人类相似性判断训练教师模型，再把学到的概念结构迁移给预训练视觉模型。对齐后的模型在多个粗细不同的语义层级上更接近人类判断及其不确定性，并在多种下游任务和分布外测试中取得改进。研究指出，补充人类概念的层次关系有助于提高模型的认知一致性与泛化能力，结论限于所评估任务。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.6832,
+      "title_zh": "跨抽象层级对齐机器与人类的视觉表征",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09631-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "A multimodal whole-slide foundation model for pathology",
+      "doi": "10.1038/s41591-025-03982-3",
+      "url": "https://doi.org/10.1038/s41591-025-03982-3",
+      "journal": "Nature Medicine",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-05",
+      "authors": "Ding et al.",
+      "citations": 172,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41591-025-03982-3",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 172 次引用，约 15.31 次 / 月。",
+      "evidence": "检索时间：2026-10-08；来源：Crossref；引用数 172，距发表 337 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出 TITAN，利用335645张病理全切片、对应病理报告及423122条合成图像描述进行视觉自监督与图文对齐训练。模型可提取通用切片表征，并支持少样本分类、罕见癌症检索、跨模态检索和报告生成，在作者评估中优于多种区域级及切片级基线。结果显示其在数据有限场景中的潜力，尚不能等同于常规临床应用中的有效性。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.6058,
+      "title_zh": "TITAN：面向病理全切片的多模态基础模型",
+      "summary_source": "https://www.nature.com/articles/s41591-025-03982-3",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "产品进展",
+      "published": "2026-10-07",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "summary": "OpenAI 介绍 ChatGPT for Teens 的学习工具使用情况，并预告 College Planner，将申请要求、截止日期、任务和助学金步骤整合为计划。初期面向计划申请四年制大学的美国高中生，后续拟扩大覆盖范围。公司还支持青年顾问参与产品反馈；公开的使用量数据不等同于学习效果评估。",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 扩展青少年学习支持，预告大学申请规划工具",
+      "summary_source": "https://openai.com/index/teens-learn-and-plan",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-10-07",
+      "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
+      "summary": "NVIDIA 与微软介绍面向 Windows 智能体的软硬件合作：微软宣布 Microsoft Execution Containers 正式可用，让智能体在操作系统管理下持续运行；RTX Spark 则面向笔记本和小型台式机提供本地 AI 计算。官方展示的 Surface Laptop Ultra 最高配备128GB统一内存，相关计算性能为厂商公布指标。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 与微软推进 Windows 本地 AI，展示 RTX Spark 与智能体支持",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "开源工具",
+      "published": "2026-10-07",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "summary": "微软研究院发布约3500行代码的 Agent Lightning 1.0，通过模型代理接口记录调用，使现有智能体运行框架直接参与强化学习，并原生支持 Kubernetes。官方报告，基于约6000个训练样本，Qwen3.5-9B 在 SWE-bench Verified 上的 Pass@1 从41.8%升至56.4%，提高14.6个百分点；该结果对应其公开训练配置。",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软开源 Agent Lightning 1.0：让真实智能体运行框架直接参与强化学习",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "模型发布",
+      "published": "2026-10-07",
+      "title": "Claude Haiku 5.5",
+      "summary": "Anthropic 推出 Claude Haiku 5.5，定位于摘要、分类、查询和编程子任务等高频场景，并首次为 Haiku 系列提供可调推理投入设置。官方称其平均运行成本较 Haiku 4.5 低约75%，同时降低 Sonnet 5.5 的缓存读取价格。速度、性能和成本改进来自官方及早期客户评估，实际收益取决于工作负载。",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 发布 Claude Haiku 5.5，面向高频、低成本任务",
+      "summary_source": "https://www.anthropic.com/claude-haiku-5-5",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "应用案例",
+      "published": "2026-10-07",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "summary": "丽笙与埃森哲合作推出 ChatGPT 插件，让用户在对话中查看地图、房价和设施，再前往丽笙网站完成预订。官方案例称，2026年7至8月插件访问转预订率约为自然搜索渠道的1.5倍，并介绍了配套广告策略。这是早期渠道观测，不能单独证明插件造成了全部转化提升。",
+      "url": "https://openai.com/index/radisson",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "丽笙酒店集团把酒店发现与比较接入 ChatGPT",
+      "summary_source": "https://openai.com/index/radisson",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 126
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 49
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 19
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 9
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1430
+}

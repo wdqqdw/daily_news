@@ -894,6 +894,42 @@
         "url:https://doi.org/10.1088/1674-4527/ae75b8"
       ],
       "doi": "10.1088/1674-4527/ae75b8"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "How well do large language models mirror human cognition of word concepts?: A comparison of psychological ratings for early-acquired English words",
+      "url": "https://doi.org/10.3758/s13428-025-02938-2",
+      "keys": [
+        "doi:10.3758/s13428-025-02938-2",
+        "title:howwelldolargelanguagemodelsmirrorhumancognitionofwordconceptsacomparisonofpsychologicalratingsforearlyacquiredenglishwords",
+        "title:大型语言模型如何反映人类对单词概念的认知基于心理评级的比较研究",
+        "url:https://doi.org/10.3758/s13428-025-02938-2"
+      ],
+      "doi": "10.3758/s13428-025-02938-2"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "Aligning machine and human visual representations across abstraction levels",
+      "url": "https://doi.org/10.1038/s41586-025-09631-6",
+      "keys": [
+        "doi:10.1038/s41586-025-09631-6",
+        "title:aligningmachineandhumanvisualrepresentationsacrossabstractionlevels",
+        "title:跨抽象层级对齐机器与人类的视觉表征",
+        "url:https://doi.org/10.1038/s41586-025-09631-6"
+      ],
+      "doi": "10.1038/s41586-025-09631-6"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "A multimodal whole-slide foundation model for pathology",
+      "url": "https://doi.org/10.1038/s41591-025-03982-3",
+      "keys": [
+        "doi:10.1038/s41591-025-03982-3",
+        "title:amultimodalwholeslidefoundationmodelforpathology",
+        "title:titan面向病理全切片的多模态基础模型",
+        "url:https://doi.org/10.1038/s41591-025-03982-3"
+      ],
+      "doi": "10.1038/s41591-025-03982-3"
     }
   ],
   "news": [
@@ -1939,6 +1975,61 @@
         "title:openai公开ai数学研究结果与部分lean形式化证明",
         "title:sharingaiprogressinmathematics",
         "url:https://openai.com/index/sharing-ai-progress-in-mathematics"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "Helping teens learn, plan, and shape the future of AI",
+      "url": "https://openai.com/index/teens-learn-and-plan",
+      "keys": [
+        "title:helpingteenslearnplanandshapethefutureofai",
+        "title:openai扩展青少年学习支持预告大学申请规划工具",
+        "url:https://openai.com/index/teens-learn-and-plan"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "NVIDIA, Microsoft Kick Off a New Beginning for Windows PCs With RTX Spark and AI Agents",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+      "keys": [
+        "title:nvidiamicrosoftkickoffanewbeginningforwindowspcswithrtxsparkandaiagents",
+        "title:nvidia与微软推进windows本地ai展示rtxspark与智能体支持",
+        "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "url": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "keys": [
+        "title:agentlightningv10a3500linelightweightagenticrlframeworkfortrainingagentswithrealharnesses",
+        "title:微软开源agentlightning10让真实智能体运行框架直接参与强化学习",
+        "url:https://microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "Claude Haiku 5.5",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "keys": [
+        "title:anthropic发布claudehaiku55面向高频低成本任务",
+        "title:claudehaiku55",
+        "url:https://anthropic.com/claude-haiku-5-5"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-08",
+      "title": "Radisson Hotel Group brings hotel discovery into ChatGPT",
+      "url": "https://openai.com/index/radisson",
+      "keys": [
+        "title:radissonhotelgroupbringshoteldiscoveryintochatgpt",
+        "title:丽笙酒店集团把酒店发现与比较接入chatgpt",
+        "url:https://openai.com/index/radisson"
       ],
       "company": "OpenAI"
     }
