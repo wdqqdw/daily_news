@@ -118,6 +118,20 @@ def source_text(item, kind, fetch):
             return page,item['url']
     except (OSError,ValueError,urllib.error.URLError):
         pass
+    if kind == 'papers':
+        # A DOI redirect can fail while the publisher's public abstract works.
+        # Confirm the DOI in the page before accepting the direct Nature URL.
+        doi=canonical_doi(item.get('doi',''))
+        if re.fullmatch(r'10\.1038/[a-z0-9.-]+',doi):
+            url='https://www.nature.com/articles/'+doi.split('/',1)[1]
+            if url!=item['url']:
+                try:
+                    parser=ArticleParser();parser.feed(fetch(url))
+                    page=parser.text(paper=True)
+                    if canonical_doi(parser.meta.get('citation_doi',''))==doi and len(page.split())>=40:
+                        return page,url
+                except (OSError,ValueError,urllib.error.URLError):
+                    pass
     if len(raw.split()) >= (20 if kind == 'news' else 40) or len(re.findall(r'[\u4e00-\u9fff]',raw)) >= 60:
         return raw,item.get('source_feed',item['url'])
     if kind == 'papers':

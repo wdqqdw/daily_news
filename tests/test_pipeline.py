@@ -13,7 +13,7 @@ from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
-from update import clean as clean_metadata, human_research_source, apply_editorial_exclusions
+from update import clean as clean_metadata, human_research_source, apply_editorial_exclusions, apply_publication_date_corrections
 from summarize import clean as clean_summary
 from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, HUMAN_DATA, generate
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
@@ -29,6 +29,33 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_verified_online_dates_apply_before_age_filtering(self):
+        today=dt.date(2026,10,8)
+        old=paper('10.1056/nejmoa2511774','Obesity treatment',published='2025-11-06',citations=9999)
+        eligible=paper('10.1/hot','Quantum materials',citations=100)
+        pool=apply_publication_date_corrections([old,eligible,paper('10.1/a'),paper('10.1/b')],today)
+        self.assertEqual(pool[0]['published'],'2025-09-16')
+        self.assertTrue(pool[0]['publication_date_source'].startswith('https://'))
+        self.assertEqual(pool[1]['published'],eligible['published'])
+        self.assertNotEqual(select_papers(pool,set(),today)[2]['doi'],old['doi'])
+        with self.assertRaises(ValueError):
+            apply_publication_date_corrections([paper('10.1056/nejmoa2508800')],dt.date(2025,1,1))
+
+    def test_human_object_concepts_and_visual_representations_keep_evidence_gates(self):
+        concepts=paper('10.1038/s42256-025-01049-z',
+            'Human-like object concept representations emerge naturally in multimodal large language models',
+            abstract='We compared model embeddings with human judgments and neural activity patterns.')
+        self.assertTrue(relevant(concepts,1))
+        self.assertTrue(human_research_source(concepts['abstract']))
+        vision=paper('10.1038/s41586-025-09631-6',
+            'Aligning machine and human visual representations across abstraction levels',
+            abstract='Deep neural networks were aligned to human judgements in similarity tasks.',citations=20)
+        self.assertTrue(relevant(vision,2))
+        self.assertFalse(relevant(vision,1))
+        self.assertFalse(relevant(dict(vision,citations=4),2))
+        self.assertFalse(relevant(dict(vision,abstract='We analyzed human judgements using questionnaires.'),2))
+        self.assertFalse(human_research_source('We propose future research on human-like object concepts in language models.'))
+
     def test_verified_exclusions_are_scoped_to_slots_and_preserve_other_papers(self):
         rows=apply_editorial_exclusions([
             paper('https://doi.org/10.46627/SIPOSE.V5I3.676'),
@@ -274,6 +301,20 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(normalize_work(original,TODAY)['title'],'Predicting human decisions')
 
 class NetworkTests(unittest.TestCase):
+    def test_nature_direct_abstract_fallback_requires_matching_doi(self):
+        item=paper('10.1038/s42256-025-01049-z',abstract='')
+        abstract='We compared language model representations with human judgments and neural activity patterns. '*5
+        direct='https://www.nature.com/articles/s42256-025-01049-z'
+        def source(url,doi=item['doi']):
+            if url==direct:
+                return '<meta name="citation_doi" content="'+doi+'"><meta name="citation_abstract" content="'+abstract+'">'
+            raise OSError('Unavailable redirect or index')
+        text,url=source_text(item,'papers',source)
+        self.assertEqual(url,direct)
+        self.assertIn('human judgments',text)
+        with self.assertRaises(ValueError):
+            source_text(item,'papers',lambda url:source(url,doi='10.1038/wrong'))
+
     def test_human_concepts_require_observed_norm_samples(self):
         abstract=('We compare representations of 4,442 lexical concepts between humans '
                   '(the Glasgow Norms 1, N = 829; and the Lancaster Norms 2, N = 3,500) '

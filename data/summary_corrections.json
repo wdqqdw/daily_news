@@ -398,5 +398,50 @@
     "summary": "OpenAI 在 GitHub 发布内部前沿模型产生的一批数学结果，并提供多项证明的 Lean 形式化、十份模型推理摘要以及计算量和尝试题目数等说明。公司称将继续补充形式化结果、改进引用与展示方式，并资助相关学术交流。此次属于公司研究成果披露，未将全部结果宣称为已经独立同行评审。",
     "summary_source": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
     "kind": "研究进展"
+  },
+  "doi:10.1038/s42256-025-01049-z": {
+    "title_zh": "多模态大语言模型中自然涌现类人的物体概念表征",
+    "summary": "研究从语言模型和多模态模型收集约470万次三选一相似性判断，为1854种物体构建66维概念表征，再与人类行为和脑成像数据比较。模型表征呈现可解释的语义聚类，并与多个视觉相关脑区的活动模式对齐。结果表明模型与人类物体概念存在相似结构，但二者并不完全相同，也不能据此认定采用相同认知机制。",
+    "summary_source": "https://www.nature.com/articles/s42256-025-01049-z"
+  },
+  "doi:10.1038/s41586-025-09631-6": {
+    "title_zh": "跨抽象层级对齐机器与人类的视觉表征",
+    "summary": "研究先用人类相似性判断训练教师模型，再把学到的概念结构迁移给预训练视觉模型。对齐后的模型在多个粗细不同的语义层级上更接近人类判断及其不确定性，并在多种下游任务和分布外测试中取得改进。研究指出，补充人类概念的层次关系有助于提高模型的认知一致性与泛化能力，结论限于所评估任务。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09631-6"
+  },
+  "doi:10.1038/s41591-025-03982-3": {
+    "title_zh": "TITAN：面向病理全切片的多模态基础模型",
+    "summary": "研究提出 TITAN，利用335645张病理全切片、对应病理报告及423122条合成图像描述进行视觉自监督与图文对齐训练。模型可提取通用切片表征，并支持少样本分类、罕见癌症检索、跨模态检索和报告生成，在作者评估中优于多种区域级及切片级基线。结果显示其在数据有限场景中的潜力，尚不能等同于常规临床应用中的有效性。",
+    "summary_source": "https://www.nature.com/articles/s41591-025-03982-3"
+  },
+  "url:https://openai.com/index/teens-learn-and-plan": {
+    "title_zh": "OpenAI 扩展青少年学习支持，预告大学申请规划工具",
+    "summary": "OpenAI 介绍 ChatGPT for Teens 的学习工具使用情况，并预告 College Planner，将申请要求、截止日期、任务和助学金步骤整合为计划。初期面向计划申请四年制大学的美国高中生，后续拟扩大覆盖范围。公司还支持青年顾问参与产品反馈；公开的使用量数据不等同于学习效果评估。",
+    "summary_source": "https://openai.com/index/teens-learn-and-plan",
+    "kind": "产品进展"
+  },
+  "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event": {
+    "title_zh": "NVIDIA 与微软推进 Windows 本地 AI，展示 RTX Spark 与智能体支持",
+    "summary": "NVIDIA 与微软介绍面向 Windows 智能体的软硬件合作：微软宣布 Microsoft Execution Containers 正式可用，让智能体在操作系统管理下持续运行；RTX Spark 则面向笔记本和小型台式机提供本地 AI 计算。官方展示的 Surface Laptop Ultra 最高配备128GB统一内存，相关计算性能为厂商公布指标。",
+    "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/",
+    "kind": "产品发布"
+  },
+  "url:https://microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses": {
+    "title_zh": "微软开源 Agent Lightning 1.0：让真实智能体运行框架直接参与强化学习",
+    "summary": "微软研究院发布约3500行代码的 Agent Lightning 1.0，通过模型代理接口记录调用，使现有智能体运行框架直接参与强化学习，并原生支持 Kubernetes。官方报告，基于约6000个训练样本，Qwen3.5-9B 在 SWE-bench Verified 上的 Pass@1 从41.8%升至56.4%，提高14.6个百分点；该结果对应其公开训练配置。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+    "kind": "开源工具"
+  },
+  "url:https://anthropic.com/claude-haiku-5-5": {
+    "title_zh": "Anthropic 发布 Claude Haiku 5.5，面向高频、低成本任务",
+    "summary": "Anthropic 推出 Claude Haiku 5.5，定位于摘要、分类、查询和编程子任务等高频场景，并首次为 Haiku 系列提供可调推理投入设置。官方称其平均运行成本较 Haiku 4.5 低约75%，同时降低 Sonnet 5.5 的缓存读取价格。速度、性能和成本改进来自官方及早期客户评估，实际收益取决于工作负载。",
+    "summary_source": "https://www.anthropic.com/claude-haiku-5-5",
+    "kind": "模型发布"
+  },
+  "url:https://openai.com/index/radisson": {
+    "title_zh": "丽笙酒店集团把酒店发现与比较接入 ChatGPT",
+    "summary": "丽笙与埃森哲合作推出 ChatGPT 插件，让用户在对话中查看地图、房价和设施，再前往丽笙网站完成预订。官方案例称，2026年7至8月插件访问转预订率约为自然搜索渠道的1.5倍，并介绍了配套广告策略。这是早期渠道观测，不能单独证明插件造成了全部转化提升。",
+    "summary_source": "https://openai.com/index/radisson",
+    "kind": "应用案例"
   }
 }

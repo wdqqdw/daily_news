@@ -35,10 +35,10 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human (?:concepts?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human (?:concepts?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind|social science experiments?)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
@@ -228,6 +228,20 @@ def apply_editorial_exclusions(pool):
         paper['_excluded_slots'] = sorted(set(paper.get('_excluded_slots',[])+slots))
     return pool
 
+def apply_publication_date_corrections(pool, today):
+    """Use verified first-publication dates before age filtering and ranking."""
+    path=ROOT/'data/publication_dates.json'
+    corrections=json.loads(path.read_text()) if path.exists() else {}
+    for paper in pool:
+        entry=corrections.get(canonical_doi(paper['doi']))
+        if entry is None:continue
+        date=dt.date.fromisoformat(entry['published'])
+        if date>today or not entry.get('source','').startswith('https://'):
+            raise ValueError('Invalid publication date correction: '+paper['doi'])
+        paper['published']=str(date)
+        paper['publication_date_source']=entry['source']
+    return pool
+
 def is_nsc(p):
     # Exclude e.g. Science of the Total Environment and unrelated Cell journals.
     j = p['journal'].lower()
@@ -299,6 +313,8 @@ def select_papers(pool, seen, today):
             3:f'本次跨领域候选中热度评分最高的未读研究：公开记录 {cite} 次引用，约 {rate} 次 / 月。'
         }[slot]
         chosen['evidence'] = f'检索时间：{today}；来源：Crossref；引用数 {cite}，距发表 {age} 天。'+ ('优先匹配期刊品牌与主题，再考虑新近程度和引用。' if slot == 1 else '评分依据公开题录、引用总数与发表时间。') + '引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。'
+        if chosen.get('publication_date_source'):
+            chosen['evidence'] += '发表日期已按出版商原文的首次在线日期校正。'
         abstract = chosen.pop('abstract','')
         chosen['_source_text'] = abstract
         if chosen.get('abstract_source'):
@@ -450,6 +466,7 @@ def generate(today):
       'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),
       'LLM human concepts':lambda:crossref('language models human concepts',today,rows=180),
+      'Human visual representations':lambda:crossref('human visual representations',today,rows=180),
       'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),
       'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),
@@ -484,7 +501,7 @@ def generate(today):
                 print(f'WARNING {name}: {e}',flush=True)
     if paper_success<2 or news_success<1:
         raise RuntimeError('Insufficient live sources; preserving previous publication')
-    pool=apply_editorial_exclusions(merge_paper_sources(papers))
+    pool=apply_publication_date_corrections(apply_editorial_exclusions(merge_paper_sources(papers)),today)
     # A Chinese summary needs substantive source text. Try the next eligible
     # unseen candidate if a publisher supplies only a title or blocks access.
     excluded_papers=history_keys(history,'papers')
