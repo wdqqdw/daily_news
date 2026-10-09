@@ -931,6 +931,42 @@
         "url:https://doi.org/10.1038/s41591-025-03982-3"
       ],
       "doi": "10.1038/s41591-025-03982-3"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Human-like object concept representations emerge naturally in multimodal large language models",
+      "url": "https://doi.org/10.1038/s42256-025-01049-z",
+      "keys": [
+        "doi:10.1038/s42256-025-01049-z",
+        "title:humanlikeobjectconceptrepresentationsemergenaturallyinmultimodallargelanguagemodels",
+        "title:多模态大语言模型中自然涌现类人的物体概念表征",
+        "url:https://doi.org/10.1038/s42256-025-01049-z"
+      ],
+      "doi": "10.1038/s42256-025-01049-z"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Recurrence affects the geometry of visual representations across the ventral visual stream in the human brain",
+      "url": "https://doi.org/10.1371/journal.pbio.3003354",
+      "keys": [
+        "doi:10.1371/journal.pbio.3003354",
+        "title:recurrenceaffectsthegeometryofvisualrepresentationsacrosstheventralvisualstreaminthehumanbrain",
+        "title:循环加工如何改变人脑腹侧视觉通路的表征",
+        "url:https://doi.org/10.1371/journal.pbio.3003354"
+      ],
+      "doi": "10.1371/journal.pbio.3003354"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "The IPD-IMGT/HLA database: recent developments in sequence submission",
+      "url": "https://doi.org/10.1093/nar/gkaf1218",
+      "keys": [
+        "doi:10.1093/nar/gkaf1218",
+        "title:ipdimgthla数据库升级序列提交与共享流程",
+        "title:theipdimgthladatabaserecentdevelopmentsinsequencesubmission",
+        "url:https://doi.org/10.1093/nar/gkaf1218"
+      ],
+      "doi": "10.1093/nar/gkaf1218"
     }
   ],
   "news": [
@@ -2033,6 +2069,61 @@
         "url:https://openai.com/index/radisson"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "keys": [
+        "title:intotheomniversehowdevelopersturnideasintosimulationswithfrontieraiagents",
+        "title:nvidia展示用ai智能体搭建与改进仿真应用",
+        "url:https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "2026 Usage Policy update",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "keys": [
+        "title:2026usagepolicyupdate",
+        "title:anthropic公布2026年使用政策更新11月12日生效",
+        "url:https://anthropic.com/news/2026-usage-policy-update"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "url": "https://openai.com/index/pollo-ai",
+      "keys": [
+        "title:polloaiturnscreativeideasintocampaignswithopenai",
+        "title:polloai用openai模型串联广告图像与视频创作",
+        "url:https://openai.com/index/pollo-ai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
+      "keys": [
+        "title:geforcenow上线战争机器事变日预告firetv订阅入口",
+        "title:rallyupgearsofwaredaylaunchesongeforcenow",
+        "url:https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-09",
+      "title": "Building on our commitment to American scientific discovery",
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "keys": [
+        "title:anthropic承诺三年投入15亿美元支持genesismission科研",
+        "title:buildingonourcommitmenttoamericanscientificdiscovery",
+        "url:https://anthropic.com/news/genesis-mission-commitment"
+      ],
+      "company": "Anthropic"
     }
   ]
 }

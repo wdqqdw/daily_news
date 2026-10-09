@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:20:47+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Human-like object concept representations emerge naturally in multimodal large language models",
+      "doi": "10.1038/s42256-025-01049-z",
+      "url": "https://doi.org/10.1038/s42256-025-01049-z",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-06-09",
+      "authors": "Du et al.",
+      "citations": 38,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-025-01049-z",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-09；来源：Crossref；引用数 38，距发表 487 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究从语言模型和多模态模型收集约470万次三选一相似性判断，为1854种物体构建66维概念表征，再与人类行为和脑成像数据比较。模型表征呈现可解释的语义聚类，并与多个视觉相关脑区的活动模式对齐。结果表明模型与人类物体概念存在相似结构，但二者并不完全相同，也不能据此认定采用相同认知机制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 12.1912,
+      "title_zh": "多模态大语言模型中自然涌现类人的物体概念表征",
+      "summary_source": "https://www.nature.com/articles/s42256-025-01049-z",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Recurrence affects the geometry of visual representations across the ventral visual stream in the human brain",
+      "doi": "10.1371/journal.pbio.3003354",
+      "url": "https://doi.org/10.1371/journal.pbio.3003354",
+      "journal": "PLOS Biology",
+      "publisher": "Public Library of Science (PLoS)",
+      "published": "2025-08-25",
+      "authors": "Xie et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1371%2Fjournal.pbio.3003354",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-09；来源：Crossref；引用数 16，距发表 410 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过后向掩蔽实验，分析31人的脑电和27人的功能磁共振数据，并用卷积神经网络 AlexNet 作为表征层次的参照。结果显示，循环加工影响早期视觉皮层及外侧枕叶皮层，使视觉表征更持久，并推动后者从中层向高层特征转变。神经网络在这里用于比较特征复杂度，并非直接复现脑内循环机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 10.8072,
+      "title_zh": "循环加工如何改变人脑腹侧视觉通路的表征",
+      "summary_source": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003354",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The IPD-IMGT/HLA database: recent developments in sequence submission",
+      "doi": "10.1093/nar/gkaf1218",
+      "url": "https://doi.org/10.1093/nar/gkaf1218",
+      "journal": "Nucleic Acids Research",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-11-18",
+      "authors": "Barker et al.",
+      "citations": 165,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgkaf1218",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 165 次引用，约 15.23 次 / 月。",
+      "evidence": "检索时间：2026-10-09；来源：Crossref；引用数 165，距发表 325 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "论文介绍人类白细胞抗原（HLA）数据库的新提交工具与程序接口。数据库收录47个基因的逾4.3万个等位基因；新工具增加数据校验、自动提交及向欧洲核苷酸档案库代为提交的选项，减少重复录入并保留提交者署名。这是一项研究数据资源与工具更新，主要贡献在于改进序列整理和共享流程。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.5549,
+      "title_zh": "IPD-IMGT/HLA 数据库升级序列提交与共享流程",
+      "summary_source": "https://academic.oup.com/nar/article/54/D1/D1152/8326453",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-08",
+      "title": "Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents",
+      "summary": "NVIDIA 介绍开发者如何通过自然语言指导智能体，连接 Omniverse 的物理、渲染和传感器仿真库，构建机器人、自动驾驶与数字孪生原型。案例包括用实测相机和激光雷达数据校验场景，以及在物理仿真中迭代机器人动作。开发者仍负责检查结果和设定验收指标，这些演示不等于真实设备部署验证。",
+      "url": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 展示用 AI 智能体搭建与改进仿真应用",
+      "summary_source": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-08",
+      "title": "2026 Usage Policy update",
+      "summary": "Anthropic 发布新版使用政策，进一步明确欺骗性活动、武器相关软件、监控以及医疗和金融等高风险用途的规则。针对能自主操作硬件的模型，新增合格人员可观察和停止设备、断开模型后设备保持安全状态等要求。公司称多数修订旨在澄清现有规则，并宣布新版于11月12日生效。",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 公布 2026 年使用政策更新，11月12日生效",
+      "summary_source": "https://www.anthropic.com/news/2026-usage-policy-update",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-08",
+      "title": "Pollo AI turns creative ideas into campaigns with OpenAI",
+      "summary": "OpenAI 的客户案例介绍 Pollo AI 如何把用户的想法、参考图和产品照片转成故事线、分镜及广告素材。平台用 GPT-5.6 分配任务，GPT-6 Astra 处理较复杂的创作规划，并用 GPT-Image-2.5 生成图像。Pollo AI 称用户选择或切换模型的时间减少逾50%；这是公司自报的产品使用结果。",
+      "url": "https://openai.com/index/pollo-ai",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Pollo AI 用 OpenAI 模型串联广告图像与视频创作",
+      "summary_source": "https://openai.com/index/pollo-ai/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-10-08",
+      "title": "Rally Up: ‘Gears of War: E-Day’ Launches on GeForce NOW",
+      "summary": "NVIDIA 宣布《战争机器：事变日》进入 GeForce NOW，并介绍本周陆续加入的10款游戏及 RTX 云端游戏功能。公告还预告，Fire TV 用户未来几周可直接通过 Amazon 购买会员；这一订阅入口尚未全面上线。不同游戏的商店发行日期与云端可玩时间可能不同，需以实际入库状态为准。",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "GeForce NOW 上线《战争机器：事变日》，预告 Fire TV 订阅入口",
+      "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-08",
+      "title": "Building on our commitment to American scientific discovery",
+      "summary": "Anthropic 宣布未来三年投入1.5亿美元，支持美国 Genesis Mission 的 AI 科研工作，覆盖 NASA、NIH、NSF 等15家以上机构。计划包括为数百个项目提供 Claude、Claude Code 与 API 额度，合作推进聚变和量子计算等方向，并提供培训与技术支持。该公告是未来资源承诺，尚不能视为已实现的科研成果。",
+      "url": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 承诺三年投入1.5亿美元支持 Genesis Mission 科研",
+      "summary_source": "https://www.anthropic.com/news/genesis-mission-commitment",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 125
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 50
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    }
+  ],
+  "candidate_count": 1437
+}
