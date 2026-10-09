@@ -669,4 +669,33 @@ class ReadingAndSummaryTests(unittest.TestCase):
         self.assertEqual(text,raw.strip())
         self.assertEqual(url,row['metadata_url'])
 
+    def test_verified_notes_recover_blocked_paper_without_bypassing_identity(self):
+        row=paper('10.1234/paper')
+        notes='Authors compare language models with human judgments and brain responses. '*5
+        entry={'doi':row['doi'],'title':row['title'],'source':'https://publisher.example/article',
+               'checked_on':'2026-10-09','notes':notes}
+        with tempfile.TemporaryDirectory() as tmp,patch('summarize.ROOT',Path(tmp)):
+            path=Path(tmp)/'data/verified_paper_sources.json';path.parent.mkdir()
+            def save(value):path.write_text(json.dumps({row['doi']:value}))
+            def blocked(url):raise OSError('Publisher unavailable')
+            save(entry)
+            text,url=source_text(row,'papers',blocked)
+            self.assertEqual(text,notes.strip())
+            self.assertEqual(url,entry['source'])
+            for bad in ({'doi':'10.1234/other'},{'title':'Different paper'},
+                        {'source':'http://publisher.example/article'},{'checked_on':''},
+                        {'notes':'Title only'}):
+                with self.subTest(bad=bad):
+                    save({**entry,**bad})
+                    with self.assertRaises(ValueError):source_text(row,'papers',blocked)
+            save(entry)
+            with self.assertRaises(ValueError):source_text(row,'news',blocked)
+
+    def test_live_abstract_takes_precedence_over_verified_notes(self):
+        raw='Researchers compared language models with human judgments and brain activity. '*5
+        row=paper('10.1234/paper',_source_text=raw)
+        with patch('summarize.verified_paper_notes',side_effect=AssertionError('Live source available')):
+            text,_=source_text(row,'papers',lambda _:self.fail('No fetch needed'))
+        self.assertEqual(text,raw.strip())
+
 if __name__=='__main__':unittest.main()

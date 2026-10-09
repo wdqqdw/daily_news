@@ -103,6 +103,26 @@ def europe_pmc_abstract(item, fetch):
         pass
     return None
 
+def verified_paper_notes(item):
+    """Use human-checked source notes only after live abstract routes fail.
+
+    Notes preserve access to a reviewed source, not eligibility: selection still
+    checks current metadata, age, human-data evidence and permanent history.
+    """
+    path=ROOT/'data/verified_paper_sources.json'
+    if not path.exists():return None
+    doi=canonical_doi(item.get('doi',''))
+    entry=json.loads(path.read_text()).get(doi)
+    if not entry:return None
+    if (canonical_doi(entry.get('doi',''))!=doi
+            or clean(entry.get('title','')).casefold()!=clean(item['title']).casefold()
+            or not entry.get('source','').startswith('https://')
+            or not re.fullmatch(r'\d{4}-\d{2}-\d{2}',entry.get('checked_on',''))):
+        raise ValueError('Invalid verified source identity: '+doi)
+    notes=clean(entry.get('notes',''))
+    if len(notes.split())<40:raise ValueError('Insufficient verified source notes: '+doi)
+    return notes,entry['source']
+
 def source_text(item, kind, fetch):
     raw=clean(item.get('_source_text',''))
     if raw and item.get('_summary_source'):
@@ -137,6 +157,10 @@ def source_text(item, kind, fetch):
     if kind == 'papers':
         indexed=europe_pmc_abstract(item,fetch)
         if indexed:return indexed
+        verified=verified_paper_notes(item)
+        if verified:
+            print('Using source-verified editorial notes: '+item['doi'],flush=True)
+            return verified
     raise ValueError('No substantive source text for: ' + item['title'])
 
 @contextmanager

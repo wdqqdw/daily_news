@@ -448,5 +448,40 @@
     "title_zh": "大语言模型能多好地复现人类的词汇概念认知？",
     "summary": "研究让 GPT-4o、Meta-Llama-3.1 等四个模型为695个早期习得的英语词评估21项心理特征，并与人类评分常模比较。具体性、身体互动性等指标较一致，而像似性（词形与词义的相似程度）和唤醒度差异较大，功能词偏差更明显。模型评分对词汇习得年龄的预测也存在系统偏差，说明不能把所有模型评分直接替代人类数据。",
     "summary_source": "https://link.springer.com/article/10.3758/s13428-025-02938-2"
+  },
+  "doi:10.1371/journal.pbio.3003354": {
+    "title_zh": "循环加工如何改变人脑腹侧视觉通路的表征",
+    "summary": "研究通过后向掩蔽实验，分析31人的脑电和27人的功能磁共振数据，并用卷积神经网络 AlexNet 作为表征层次的参照。结果显示，循环加工影响早期视觉皮层及外侧枕叶皮层，使视觉表征更持久，并推动后者从中层向高层特征转变。神经网络在这里用于比较特征复杂度，并非直接复现脑内循环机制。",
+    "summary_source": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3003354"
+  },
+  "doi:10.1093/nar/gkaf1218": {
+    "title_zh": "IPD-IMGT/HLA 数据库升级序列提交与共享流程",
+    "summary": "论文介绍人类白细胞抗原（HLA）数据库的新提交工具与程序接口。数据库收录47个基因的逾4.3万个等位基因；新工具增加数据校验、自动提交及向欧洲核苷酸档案库代为提交的选项，减少重复录入并保留提交者署名。这是一项研究数据资源与工具更新，主要贡献在于改进序列整理和共享流程。",
+    "summary_source": "https://academic.oup.com/nar/article/54/D1/D1152/8326453"
+  },
+  "url:https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents": {
+    "title_zh": "NVIDIA 展示用 AI 智能体搭建与改进仿真应用",
+    "summary": "NVIDIA 介绍开发者如何通过自然语言指导智能体，连接 Omniverse 的物理、渲染和传感器仿真库，构建机器人、自动驾驶与数字孪生原型。案例包括用实测相机和激光雷达数据校验场景，以及在物理仿真中迭代机器人动作。开发者仍负责检查结果和设定验收指标，这些演示不等于真实设备部署验证。",
+    "summary_source": "https://blogs.nvidia.com/blog/developers-simulation-frontier-ai-agents/"
+  },
+  "url:https://anthropic.com/news/2026-usage-policy-update": {
+    "title_zh": "Anthropic 公布 2026 年使用政策更新，11月12日生效",
+    "summary": "Anthropic 发布新版使用政策，进一步明确欺骗性活动、武器相关软件、监控以及医疗和金融等高风险用途的规则。针对能自主操作硬件的模型，新增合格人员可观察和停止设备、断开模型后设备保持安全状态等要求。公司称多数修订旨在澄清现有规则，并宣布新版于11月12日生效。",
+    "summary_source": "https://www.anthropic.com/news/2026-usage-policy-update"
+  },
+  "url:https://openai.com/index/pollo-ai": {
+    "title_zh": "Pollo AI 用 OpenAI 模型串联广告图像与视频创作",
+    "summary": "OpenAI 的客户案例介绍 Pollo AI 如何把用户的想法、参考图和产品照片转成故事线、分镜及广告素材。平台用 GPT-5.6 分配任务，GPT-6 Astra 处理较复杂的创作规划，并用 GPT-Image-2.5 生成图像。Pollo AI 称用户选择或切换模型的时间减少逾50%；这是公司自报的产品使用结果。",
+    "summary_source": "https://openai.com/index/pollo-ai/"
+  },
+  "url:https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day": {
+    "title_zh": "GeForce NOW 上线《战争机器：事变日》，预告 Fire TV 订阅入口",
+    "summary": "NVIDIA 宣布《战争机器：事变日》进入 GeForce NOW，并介绍本周陆续加入的10款游戏及 RTX 云端游戏功能。公告还预告，Fire TV 用户未来几周可直接通过 Amazon 购买会员；这一订阅入口尚未全面上线。不同游戏的商店发行日期与云端可玩时间可能不同，需以实际入库状态为准。",
+    "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-gears-of-war-e-day/"
+  },
+  "url:https://anthropic.com/news/genesis-mission-commitment": {
+    "title_zh": "Anthropic 承诺三年投入1.5亿美元支持 Genesis Mission 科研",
+    "summary": "Anthropic 宣布未来三年投入1.5亿美元，支持美国 Genesis Mission 的 AI 科研工作，覆盖 NASA、NIH、NSF 等15家以上机构。计划包括为数百个项目提供 Claude、Claude Code 与 API 额度，合作推进聚变和量子计算等方向，并提供培训与技术支持。该公告是未来资源承诺，尚不能视为已实现的科研成果。",
+    "summary_source": "https://www.anthropic.com/news/genesis-mission-commitment"
   }
 }
