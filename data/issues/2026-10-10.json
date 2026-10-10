@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T13:20:27+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Active use of latent tree-structured sentence representation in humans and large language models",
+      "doi": "10.1038/s41562-025-02297-0",
+      "url": "https://doi.org/10.1038/s41562-025-02297-0",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-09-10",
+      "authors": "Liu et al.",
+      "citations": 4,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02297-0",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-10；来源：Crossref；引用数 4，距发表 395 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究让372名中文、英文或双语参与者与 ChatGPT 等语言模型根据单个示例完成删词任务。两者都倾向按各自语言的语法成分删除词组，而非任意连续词串；研究者还能根据删词结果重建句子的成分树。仅依据词语属性和词序的简单模型难以解释结果，提示人类与模型存在相似的层次表征，但不证明二者认知机制相同。",
+      "tag": "认知与行为建模",
+      "ranking_score": 6.1626,
+      "title_zh": "人类与大语言模型都会使用潜在的树状句子结构",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02297-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "A neural network for modeling human concept formation, understanding and communication",
+      "doi": "10.1038/s43588-026-00956-4",
+      "url": "https://doi.org/10.1038/s43588-026-00956-4",
+      "journal": "Nature Computational Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-19",
+      "authors": "Guo et al.",
+      "citations": 5,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs43588-026-00956-4",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-10；来源：Crossref；引用数 5，距发表 233 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出 CATS Net，将概念抽象与视觉任务求解分为两个模块，学习可迁移的低维概念表征，并通过门控控制任务处理。研究者将模型与人类语义特征及26名参与者的功能磁共振数据比较，发现概念空间与腹侧视觉皮层表征相关，门控模块与语义控制网络存在对应。结果提供了认知建模线索，但不代表已证实人脑采用同一机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 8.1974,
+      "title_zh": "CATS Net：用神经网络研究人类概念的形成、理解与交流",
+      "summary_source": "https://www.nature.com/articles/s43588-026-00956-4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "ECLAIRs: The SVOM High-energy Transient Trigger Camera",
+      "doi": "10.1088/1674-4527/ae75c4",
+      "url": "https://doi.org/10.1088/1674-4527/ae75c4",
+      "journal": "Research in Astronomy and Astrophysics",
+      "publisher": "IOP Publishing",
+      "published": "2026-09-24",
+      "authors": "Godet et al.",
+      "citations": 24,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1088%2F1674-4527%2Fae75c4",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 24 次引用，约 24.0 次 / 月。",
+      "evidence": "检索时间：2026-10-10；来源：Crossref；引用数 24，距发表 16 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "论文介绍中法 SVOM 卫星的 ECLAIRs 编码掩模相机，其4至150千电子伏能段用于自主探测和定位伽马射线暴等高能瞬变。团队结合仪器设计、配置与实际在轨测量，评估背景、能谱、成像和计时表现，并汇总截至2025年3月31日的科学观测性能。研究重点是仪器的实测验证；文中观测时间早于期刊发表时间。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.333,
+      "title_zh": "SVOM 的 ECLAIRs 相机：高能瞬变探测设计与在轨性能",
+      "summary_source": "https://arxiv.org/html/2604.24249v1",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-09",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "summary": "OpenAI 的客户案例介绍 Sophos 将模型与自身威胁情报、响应流程结合，用智能体收集案件信息、制定调查计划并生成处置建议。Sophos 自报，使用智能体的案件平均响应时间从约38分钟降至89秒，52%的托管检测与响应案件可在设定边界内由 AI 完成。可能造成破坏的操作仍保留相应人工监督，这些效果属于公司自报结果。",
+      "url": "https://openai.com/index/sophos",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Sophos 称借助 OpenAI Daybreak 将威胁调查时间缩短96%",
+      "summary_source": "https://openai.com/index/sophos/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-09",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "summary": "Asana 使用 Codex 中的 GPT-6 Astra 分析浏览器智能体，改进历史信息缓存、截图清理和上下文预算。在144次固定任务测试中，优化后的 GPT-6.1 Sol 流程平均模型费用约0.47美元、耗时约4分钟，成本约为原生产配置的1/76，运行约快5倍。测试任务是从示例目录提取32本书的信息，结果不能直接推广到所有浏览器工作。",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Asana 在浏览器测试中将模型成本降至原来的约1/76",
+      "summary_source": "https://openai.com/index/asana-browser-agent",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "产品发布",
+      "published": "2026-10-08",
+      "title": "Introducing the Anthropic Cyber Mission",
+      "summary": "Anthropic 公布长期网络防御计划，首先通过关键基础设施防御项目，为工业与公共服务系统的防护伙伴提供 Claude 模型、驻场工程师和威胁研究支持。同时推出免费、自愿加入的 OSS Scanner，定期为开源项目扫描漏洞并提供可能的修复建议。扫描报告由模型生成、未经逐条人工复核，维护者仍需验证结果。",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 启动 Cyber Mission，支持关键基础设施和开源安全",
+      "summary_source": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 21
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    }
+  ],
+  "candidate_count": 1592
+}

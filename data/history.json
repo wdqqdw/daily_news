@@ -967,6 +967,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1218"
       ],
       "doi": "10.1093/nar/gkaf1218"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "Active use of latent tree-structured sentence representation in humans and large language models",
+      "url": "https://doi.org/10.1038/s41562-025-02297-0",
+      "keys": [
+        "doi:10.1038/s41562-025-02297-0",
+        "title:activeuseoflatenttreestructuredsentencerepresentationinhumansandlargelanguagemodels",
+        "title:人类与大语言模型都会使用潜在的树状句子结构",
+        "url:https://doi.org/10.1038/s41562-025-02297-0"
+      ],
+      "doi": "10.1038/s41562-025-02297-0"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "A neural network for modeling human concept formation, understanding and communication",
+      "url": "https://doi.org/10.1038/s43588-026-00956-4",
+      "keys": [
+        "doi:10.1038/s43588-026-00956-4",
+        "title:aneuralnetworkformodelinghumanconceptformationunderstandingandcommunication",
+        "title:catsnet用神经网络研究人类概念的形成理解与交流",
+        "url:https://doi.org/10.1038/s43588-026-00956-4"
+      ],
+      "doi": "10.1038/s43588-026-00956-4"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "ECLAIRs: The SVOM High-energy Transient Trigger Camera",
+      "url": "https://doi.org/10.1088/1674-4527/ae75c4",
+      "keys": [
+        "doi:10.1088/1674-4527/ae75c4",
+        "title:eclairsthesvomhighenergytransienttriggercamera",
+        "title:svom的eclairs相机高能瞬变探测设计与在轨性能",
+        "url:https://doi.org/10.1088/1674-4527/ae75c4"
+      ],
+      "doi": "10.1088/1674-4527/ae75c4"
     }
   ],
   "news": [
@@ -2122,6 +2158,39 @@
         "title:anthropic承诺三年投入15亿美元支持genesismission科研",
         "title:buildingonourcommitmenttoamericanscientificdiscovery",
         "url:https://anthropic.com/news/genesis-mission-commitment"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "url": "https://openai.com/index/sophos",
+      "keys": [
+        "title:sophoscutsthreatinvestigationtimeby96withopenaidaybreak",
+        "title:sophos称借助openaidaybreak将威胁调查时间缩短96",
+        "url:https://openai.com/index/sophos"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "Asana cuts model costs 76x in browser tests with GPT-6.1 Sol",
+      "url": "https://openai.com/index/asana-browser-agent",
+      "keys": [
+        "title:asanacutsmodelcosts76xinbrowsertestswithgpt61sol",
+        "title:asana在浏览器测试中将模型成本降至原来的约176",
+        "url:https://openai.com/index/asana-browser-agent"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-10",
+      "title": "Introducing the Anthropic Cyber Mission",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission",
+      "keys": [
+        "title:anthropic启动cybermission支持关键基础设施和开源安全",
+        "title:introducingtheanthropiccybermission",
+        "url:https://anthropic.com/news/anthropic-cyber-mission"
       ],
       "company": "Anthropic"
     }
