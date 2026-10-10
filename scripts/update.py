@@ -36,6 +36,9 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
 COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
+# Sentence representations are a cognitive target when the title also names
+# humans and the source contains an actual human comparison.
+SENTENCE_COGNITION = re.compile(r'\bsentence (?:representations?|processing|comprehension)\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
@@ -268,12 +271,12 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
-        return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and MODELLING.search(text) and LLM.search(text))
+        return bool((COGNITION.search(title) or SENTENCE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or SENTENCE_COGNITION.search(title)) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
-        return bool(COGNITION.search(title) and HUMAN_SUBJECT_TITLE.search(title) and PERSON_TARGET.search(text) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        return bool((COGNITION.search(title) or SENTENCE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or SENTENCE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
@@ -467,6 +470,8 @@ def generate(today):
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),
       'LLM human concepts':lambda:crossref('language models human concepts',today,rows=180),
       'Human visual representations':lambda:crossref('human visual representations',today,rows=180),
+      'Human concept formation':lambda:crossref('neural network human concept formation',today,rows=180),
+      'Human sentence representations':lambda:crossref('language models human sentence representation',today,rows=180),
       'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),
       'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),

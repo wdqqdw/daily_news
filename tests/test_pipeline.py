@@ -155,6 +155,28 @@ class SelectionTests(unittest.TestCase):
         p['abstract']+=' We trained an artificial neural network to predict memory from human brain activity.'
         self.assertTrue(relevant(p,2))
 
+    def test_sentence_representations_require_humans_and_keep_citation_threshold(self):
+        p=paper('10.1038/s41562-025-02297-0',
+                'Active use of latent tree-structured sentence representation in humans and large language models',
+                abstract='',citations=4)
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(p,2))
+        self.assertTrue(relevant(dict(p,citations=5),2))
+        self.assertFalse(human_research_source('Language models delete word sequences according to syntactic rules.'))
+        self.assertTrue(human_research_source('Participants and language models completed a word deletion task.'))
+        for title in ('Sentence representation in large language models',
+                      'Human sentence representation without computational models'):
+            self.assertFalse(relevant(dict(p,title=title),1))
+
+    def test_neural_concept_formation_is_ai_research_not_automatically_llm_research(self):
+        p=paper('10.1038/s43588-026-00956-4',
+                'A neural network for modeling human concept formation, understanding and communication',
+                abstract='A neural network learns conceptual representations. Model-brain comparisons use human fMRI data.',citations=5)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertTrue(human_research_source(p['abstract']))
+
     def test_pnas_human_reasoning_is_not_mistaken_for_conference_proceedings(self):
         raw={'type':'journal-article','DOI':'10.1073/pnas.2520077122',
              'title':['The cost of thinking is similar between large reasoning models and humans'],

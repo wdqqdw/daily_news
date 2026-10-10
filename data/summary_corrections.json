@@ -483,5 +483,35 @@
     "title_zh": "Anthropic 承诺三年投入1.5亿美元支持 Genesis Mission 科研",
     "summary": "Anthropic 宣布未来三年投入1.5亿美元，支持美国 Genesis Mission 的 AI 科研工作，覆盖 NASA、NIH、NSF 等15家以上机构。计划包括为数百个项目提供 Claude、Claude Code 与 API 额度，合作推进聚变和量子计算等方向，并提供培训与技术支持。该公告是未来资源承诺，尚不能视为已实现的科研成果。",
     "summary_source": "https://www.anthropic.com/news/genesis-mission-commitment"
+  },
+  "doi:10.1038/s41562-025-02297-0": {
+    "title_zh": "人类与大语言模型都会使用潜在的树状句子结构",
+    "summary": "研究让372名中文、英文或双语参与者与 ChatGPT 等语言模型根据单个示例完成删词任务。两者都倾向按各自语言的语法成分删除词组，而非任意连续词串；研究者还能根据删词结果重建句子的成分树。仅依据词语属性和词序的简单模型难以解释结果，提示人类与模型存在相似的层次表征，但不证明二者认知机制相同。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02297-0"
+  },
+  "doi:10.1038/s43588-026-00956-4": {
+    "title_zh": "CATS Net：用神经网络研究人类概念的形成、理解与交流",
+    "summary": "研究提出 CATS Net，将概念抽象与视觉任务求解分为两个模块，学习可迁移的低维概念表征，并通过门控控制任务处理。研究者将模型与人类语义特征及26名参与者的功能磁共振数据比较，发现概念空间与腹侧视觉皮层表征相关，门控模块与语义控制网络存在对应。结果提供了认知建模线索，但不代表已证实人脑采用同一机制。",
+    "summary_source": "https://www.nature.com/articles/s43588-026-00956-4"
+  },
+  "doi:10.1088/1674-4527/ae75c4": {
+    "title_zh": "SVOM 的 ECLAIRs 相机：高能瞬变探测设计与在轨性能",
+    "summary": "论文介绍中法 SVOM 卫星的 ECLAIRs 编码掩模相机，其4至150千电子伏能段用于自主探测和定位伽马射线暴等高能瞬变。团队结合仪器设计、配置与实际在轨测量，评估背景、能谱、成像和计时表现，并汇总截至2025年3月31日的科学观测性能。研究重点是仪器的实测验证；文中观测时间早于期刊发表时间。",
+    "summary_source": "https://arxiv.org/html/2604.24249v1"
+  },
+  "url:https://openai.com/index/sophos": {
+    "title_zh": "Sophos 称借助 OpenAI Daybreak 将威胁调查时间缩短96%",
+    "summary": "OpenAI 的客户案例介绍 Sophos 将模型与自身威胁情报、响应流程结合，用智能体收集案件信息、制定调查计划并生成处置建议。Sophos 自报，使用智能体的案件平均响应时间从约38分钟降至89秒，52%的托管检测与响应案件可在设定边界内由 AI 完成。可能造成破坏的操作仍保留相应人工监督，这些效果属于公司自报结果。",
+    "summary_source": "https://openai.com/index/sophos/"
+  },
+  "url:https://openai.com/index/asana-browser-agent": {
+    "title_zh": "Asana 在浏览器测试中将模型成本降至原来的约1/76",
+    "summary": "Asana 使用 Codex 中的 GPT-6 Astra 分析浏览器智能体，改进历史信息缓存、截图清理和上下文预算。在144次固定任务测试中，优化后的 GPT-6.1 Sol 流程平均模型费用约0.47美元、耗时约4分钟，成本约为原生产配置的1/76，运行约快5倍。测试任务是从示例目录提取32本书的信息，结果不能直接推广到所有浏览器工作。",
+    "summary_source": "https://openai.com/index/asana-browser-agent"
+  },
+  "url:https://anthropic.com/news/anthropic-cyber-mission": {
+    "title_zh": "Anthropic 启动 Cyber Mission，支持关键基础设施和开源安全",
+    "summary": "Anthropic 公布长期网络防御计划，首先通过关键基础设施防御项目，为工业与公共服务系统的防护伙伴提供 Claude 模型、驻场工程师和威胁研究支持。同时推出免费、自愿加入的 OSS Scanner，定期为开源项目扫描漏洞并提供可能的修复建议。扫描报告由模型生成、未经逐条人工复核，维护者仍需验证结果。",
+    "summary_source": "https://www.anthropic.com/news/anthropic-cyber-mission"
   }
 }

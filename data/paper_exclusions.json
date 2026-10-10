@@ -50,5 +50,23 @@
     ],
     "reason": "ET 合作组将其明确称为 Science Blue Book，作者机构标为 White paper；内容为观测站科学目标、能力预测及方法的综合报告，不计入每日原创研究论文。",
     "source": "https://einsteintelescope.eu/news/1698/"
+  },
+  "10.1080/09544828.2025.2567155": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "出版商摘要明确说明本文汇总80篇文献并使用CiteSpace进行文献计量分析，属于人机共创设计综述，没有新增独立人类实验，不计入每日原创研究论文。",
+    "source": "https://doi.org/10.1080/09544828.2025.2567155"
+  },
+  "10.1111/bph.70234": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "出版商将其列入 The Concise Guide to PHARMACOLOGY 专刊，摘要说明其为药物靶点分类、命名及既有药理学证据的汇编指南，不是新增原创实证研究。",
+    "source": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bph.70234"
   }
 }

@@ -5,5 +5,12 @@
     "source": "https://www.nature.com/articles/s42256-025-01049-z",
     "checked_on": "2026-10-09",
     "notes": "The authors compare language and multimodal models with human behavioural judgments and fMRI measurements. About 4.7 million model choices among object triplets yield a 66-dimensional representation of 1,854 objects. Its interpretable categories resemble human conceptual organization and correspond to activity across visual brain areas. The article reports similarities, not identical representations or proof of shared cognitive mechanisms. The publisher identifies this as a research Article, first published on 9 June 2025. Its data statement links the human THINGS judgments, model judgments and NSD fMRI data."
+  },
+  "10.1038/s41562-025-02297-0": {
+    "doi": "10.1038/s41562-025-02297-0",
+    "title": "Active use of latent tree-structured sentence representation in humans and large language models",
+    "source": "https://www.nature.com/articles/s41562-025-02297-0",
+    "checked_on": "2026-10-10",
+    "notes": "The study tested 372 human participants with Chinese, English or bilingual backgrounds and compared their responses with language models including ChatGPT. After one example, each group inferred which words to remove from a new sentence. Their choices tended to respect language-specific grammatical constituents. Word deletion patterns allowed the researchers to infer hierarchical phrase trees. Simpler explanations based only on individual words and their positions did not account for the observations. These behavioural similarities support shared structural patterns but do not establish identical cognitive mechanisms. The publisher labels this a research Article, published on 10 September 2025."
   }
 }
