@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T09:43:19+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "A population code for semantics in human hippocampus",
+      "doi": "10.1038/s41593-026-02436-4",
+      "url": "https://doi.org/10.1038/s41593-026-02436-4",
+      "journal": "Nature Neuroscience",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-09-30",
+      "authors": "Franch et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41593-026-02436-4",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "slot": 1,
+      "freshness": "近期研究",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-11；来源：Crossref；引用数 0，距发表 11 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究记录受试者聆听叙述语言时的海马神经元活动，发现控制语音和语法因素后，神经群体仍能表征词义。其活动模式与语义距离和语境有关，在所比较模型中与 GPT-2 词向量的对应最强。部分语义相近词呈现相反的神经距离关系，表明脑中的编码并非简单复制模型表征；结果提供了理解人类语义加工的计算线索。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.8222,
+      "title_zh": "人类海马如何编码词义：与语言模型比较的神经群体证据",
+      "summary_source": "https://www.nature.com/articles/s41593-026-02436-4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Plasticity and language in the anaesthetized human hippocampus",
+      "doi": "10.1038/s41586-026-10448-0",
+      "url": "https://doi.org/10.1038/s41586-026-10448-0",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-05-06",
+      "authors": "Katlowitz et al.",
+      "citations": 11,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-026-10448-0",
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "slot": 2,
+      "freshness": "近期研究",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-11；来源：Crossref；引用数 11，距发表 158 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究者在七名接受手术的麻醉患者海马中记录神经活动，发现部分神经元仍能区分异常音调，并保留对语言语义、语法及后续词语的预测信息。循环神经网络模型重现了音调学习中逐渐增强的异常检测现象，为实验结果提供计算解释。研究支持部分复杂加工可在失去意识时持续，但不能据此认定患者具有清醒体验。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.7018,
+      "title_zh": "麻醉下的人类海马仍保留学习与语言加工迹象",
+      "summary_source": "https://www.nature.com/articles/s41586-026-10448-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Atomically accurate de novo design of antibodies with RFdiffusion",
+      "doi": "10.1038/s41586-025-09721-5",
+      "url": "https://doi.org/10.1038/s41586-025-09721-5",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-05",
+      "authors": "Bennett et al.",
+      "citations": 161,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09721-5",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 161 次引用，约 14.21 次 / 月。",
+      "evidence": "检索时间：2026-10-11；来源：Crossref；引用数 161，距发表 340 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "团队将微调后的 RFdiffusion 与酵母展示筛选结合，设计靶向指定表位的单域抗体、单链抗体片段和完整抗体。冷冻电镜验证了部分设计的结合姿态与关键环区结构；进一步的亲和力成熟使部分分子的结合能力达到个位数纳摩尔水平。这展示了计算设计与实验筛选结合的潜力，尚不等同于已验证临床疗效。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.3283,
+      "title_zh": "RFdiffusion 从零设计抗体，并以实验验证原子级结构精度",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09721-5",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-08",
+      "title": "LegalOn halves Codex costs while maintaining development speed",
+      "summary": "OpenAI 的客户案例介绍，LegalOn 按任务难度选择 Astra、Sol 和 Luna，并结合 Fast 模式限制及部门、个人预算管理成本。公司自报，相较此前主要使用 GPT-5.5 的方案，预估每日成本降低约65%，同时维持开发速度。该数字属于企业内部估算，团队仍在建设按功能发布衡量客户价值与 AI 投入的评估流程。",
+      "url": "https://openai.com/index/legalon-halves-codex-costs",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "LegalOn 称通过模型分工将预估每日 Codex 成本降低65%",
+      "summary_source": "https://openai.com/index/legalon-halves-codex-costs/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 126
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 79
+    }
+  ],
+  "candidate_count": 1595
+}
