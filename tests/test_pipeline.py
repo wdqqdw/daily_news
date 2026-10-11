@@ -29,6 +29,26 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_human_hippocampus_models_keep_ai_citation_and_human_gates(self):
+        p=paper('10.1038/s41586-026-10448-0',
+            'Plasticity and language in the anaesthetized human hippocampus',
+            abstract='We recorded neural activity in patients and used a recurrent neural network to model cognitive processing.',
+            citations=11)
+        self.assertTrue(relevant(p,2))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(p,1))  # A recurrent network is not an LLM.
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,abstract='We recorded neural activity in patients.'),2))
+        self.assertFalse(relevant(dict(p,title='Plasticity in the mouse hippocampus'),2))
+        self.assertFalse(human_research_source('We trained a neural network to simulate cognitive processing.'))
+        semantics=paper('10.1038/s41593-026-02436-4',
+            'A population code for semantics in human hippocampus',
+            abstract='We model neural activity from patients listening to speech using large language model embeddings.',
+            citations=0)
+        self.assertTrue(relevant(semantics,1))
+        self.assertTrue(human_research_source(semantics['abstract']))
+        self.assertFalse(relevant(semantics,2))
+
     def test_verified_online_dates_apply_before_age_filtering(self):
         today=dt.date(2026,10,8)
         old=paper('10.1056/nejmoa2511774','Obesity treatment',published='2025-11-06',citations=9999)

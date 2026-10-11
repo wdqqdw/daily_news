@@ -513,5 +513,25 @@
     "title_zh": "Anthropic 启动 Cyber Mission，支持关键基础设施和开源安全",
     "summary": "Anthropic 公布长期网络防御计划，首先通过关键基础设施防御项目，为工业与公共服务系统的防护伙伴提供 Claude 模型、驻场工程师和威胁研究支持。同时推出免费、自愿加入的 OSS Scanner，定期为开源项目扫描漏洞并提供可能的修复建议。扫描报告由模型生成、未经逐条人工复核，维护者仍需验证结果。",
     "summary_source": "https://www.anthropic.com/news/anthropic-cyber-mission"
+  },
+  "doi:10.1038/s41586-026-10448-0": {
+    "title_zh": "麻醉下的人类海马仍保留学习与语言加工迹象",
+    "summary": "研究者在七名接受手术的麻醉患者海马中记录神经活动，发现部分神经元仍能区分异常音调，并保留对语言语义、语法及后续词语的预测信息。循环神经网络模型重现了音调学习中逐渐增强的异常检测现象，为实验结果提供计算解释。研究支持部分复杂加工可在失去意识时持续，但不能据此认定患者具有清醒体验。",
+    "summary_source": "https://www.nature.com/articles/s41586-026-10448-0"
+  },
+  "doi:10.1038/s41586-025-09721-5": {
+    "title_zh": "RFdiffusion 从零设计抗体，并以实验验证原子级结构精度",
+    "summary": "团队将微调后的 RFdiffusion 与酵母展示筛选结合，设计靶向指定表位的单域抗体、单链抗体片段和完整抗体。冷冻电镜验证了部分设计的结合姿态与关键环区结构；进一步的亲和力成熟使部分分子的结合能力达到个位数纳摩尔水平。这展示了计算设计与实验筛选结合的潜力，尚不等同于已验证临床疗效。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09721-5"
+  },
+  "doi:10.1038/s41593-026-02436-4": {
+    "title_zh": "人类海马如何编码词义：与语言模型比较的神经群体证据",
+    "summary": "研究记录受试者聆听叙述语言时的海马神经元活动，发现控制语音和语法因素后，神经群体仍能表征词义。其活动模式与语义距离和语境有关，在所比较模型中与 GPT-2 词向量的对应最强。部分语义相近词呈现相反的神经距离关系，表明脑中的编码并非简单复制模型表征；结果提供了理解人类语义加工的计算线索。",
+    "summary_source": "https://www.nature.com/articles/s41593-026-02436-4"
+  },
+  "url:https://openai.com/index/legalon-halves-codex-costs": {
+    "title_zh": "LegalOn 称通过模型分工将预估每日 Codex 成本降低65%",
+    "summary": "OpenAI 的客户案例介绍，LegalOn 按任务难度选择 Astra、Sol 和 Luna，并结合 Fast 模式限制及部门、个人预算管理成本。公司自报，相较此前主要使用 GPT-5.5 的方案，预估每日成本降低约65%，同时维持开发速度。该数字属于企业内部估算，团队仍在建设按功能发布衡量客户价值与 AI 投入的评估流程。",
+    "summary_source": "https://openai.com/index/legalon-halves-codex-costs/"
   }
 }

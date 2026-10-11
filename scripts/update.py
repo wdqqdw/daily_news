@@ -35,7 +35,7 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
 # Sentence representations are a cognitive target when the title also names
 # humans and the source contains an actual human comparison.
 SENTENCE_COGNITION = re.compile(r'\bsentence (?:representations?|processing|comprehension)\b', re.I)
@@ -463,7 +463,7 @@ def generate(today):
     seen=history_keys(history,'papers')
     jobs={
       'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind" OR TITLE_ABS:personality OR TITLE_ABS:"social science experiments" OR TITLE_ABS:"human empathy")',today,seen),
-      'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward")',today,seen),
+      'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks" OR TITLE_ABS:"neural network") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward" OR TITLE_ABS:"human hippocampus")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
