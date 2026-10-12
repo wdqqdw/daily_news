@@ -1,0 +1,256 @@
+{
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T09:48:45+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "To what extent do GPT language models capture human sentence processing dynamics? Evidence from Korean subject honorification",
+      "doi": "10.1057/s41599-026-08299-1",
+      "url": "https://doi.org/10.1057/s41599-026-08299-1",
+      "journal": "Humanities and Social Sciences Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-07-28",
+      "authors": "Shin et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1057%2Fs41599-026-08299-1",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-12；来源：Crossref；引用数 0，距发表 76 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 KoGPT-2 等三种支持韩语的模型与四组既有人类实验数据比较，涵盖可接受度、礼貌评价、自定步速阅读和眼动。模型对词语的意外程度指标能识别明显的敬语语法冲突，却难以反映语境中的细微差异和阅读中的延迟效应，与人类表现的相关性较弱且依赖实验条件。结果提示，这类指标对人类语言加工的模拟仍有限。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.9668,
+      "title_zh": "GPT 能多大程度模拟人的句子加工？来自韩语敬语的证据",
+      "summary_source": "https://www.nature.com/articles/s41599-026-08299-1",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "A neuronal code for object representation and memory in the human amygdala and hippocampus",
+      "doi": "10.1038/s41467-025-56793-y",
+      "url": "https://doi.org/10.1038/s41467-025-56793-y",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-02-10",
+      "authors": "Cao et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-56793-y",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-12；来源：Crossref；引用数 16，距发表 609 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究者用 ResNet、AlexNet 提取物体图像特征，并对照四组实验中3173个人类杏仁核和海马神经元的记录。部分神经元对特征空间中的一片区域敏感，这种编码可推广到新图像，并与后续识别记忆表现相关。结果为视觉表征如何关联记忆提供证据，但并不说明人脑直接运行这些人工网络。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 10.6014,
+      "title_zh": "用深度神经网络研究人类杏仁核与海马的物体和记忆编码",
+      "summary_source": "https://www.nature.com/articles/s41467-025-56793-y",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Towards end-to-end automation of AI research",
+      "doi": "10.1038/s41586-026-10265-5",
+      "url": "https://doi.org/10.1038/s41586-026-10265-5",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-03-25",
+      "authors": "Lu et al.",
+      "citations": 110,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-026-10265-5",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 110 次引用，约 16.42 次 / 月。",
+      "evidence": "检索时间：2026-10-12；来源：Crossref；引用数 110，距发表 201 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "团队评估 The AI Scientist 在人类提供代码模板与无模板探索两种设置下，自动生成想法、编写和运行实验、分析结果及撰写论文的能力。一篇生成稿件通过了 ICLR 研讨会的首轮评审，该研讨会录取率为70%。验证范围集中于机器学习研究；作者也指出，自动化可能增加审稿负担与文献噪声。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.4457,
+      "title_zh": "The AI Scientist：从提出想法到实验与论文写作的自动研究流程",
+      "summary_source": "https://www.nature.com/articles/s41586-026-10265-5",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-10-11",
+      "title": "Qwen Code · Release v0.25.1",
+      "summary": "Qwen Code 的正式版本 v0.25.1 增加后台 Shell 与任务事件监控，支持在主会话继续响应时创建独立辅助任务，并加强工具结果、检查点及工作空间状态的持久化记录。版本还改进安卓连接恢复和可访问性，提供实验性的 Kubernetes 运行环境。官方发布说明称，目前没有已知的破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.25.1 发布：增强托管智能体与会话恢复",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "candidate_count": 1593
+}

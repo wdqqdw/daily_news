@@ -1039,6 +1039,42 @@
         "url:https://doi.org/10.1038/s41586-025-09721-5"
       ],
       "doi": "10.1038/s41586-025-09721-5"
+    },
+    {
+      "first_pushed": "2026-10-12",
+      "title": "To what extent do GPT language models capture human sentence processing dynamics? Evidence from Korean subject honorification",
+      "url": "https://doi.org/10.1057/s41599-026-08299-1",
+      "keys": [
+        "doi:10.1057/s41599-026-08299-1",
+        "title:gpt能多大程度模拟人的句子加工来自韩语敬语的证据",
+        "title:towhatextentdogptlanguagemodelscapturehumansentenceprocessingdynamicsevidencefromkoreansubjecthonorification",
+        "url:https://doi.org/10.1057/s41599-026-08299-1"
+      ],
+      "doi": "10.1057/s41599-026-08299-1"
+    },
+    {
+      "first_pushed": "2026-10-12",
+      "title": "A neuronal code for object representation and memory in the human amygdala and hippocampus",
+      "url": "https://doi.org/10.1038/s41467-025-56793-y",
+      "keys": [
+        "doi:10.1038/s41467-025-56793-y",
+        "title:aneuronalcodeforobjectrepresentationandmemoryinthehumanamygdalaandhippocampus",
+        "title:用深度神经网络研究人类杏仁核与海马的物体和记忆编码",
+        "url:https://doi.org/10.1038/s41467-025-56793-y"
+      ],
+      "doi": "10.1038/s41467-025-56793-y"
+    },
+    {
+      "first_pushed": "2026-10-12",
+      "title": "Towards end-to-end automation of AI research",
+      "url": "https://doi.org/10.1038/s41586-026-10265-5",
+      "keys": [
+        "doi:10.1038/s41586-026-10265-5",
+        "title:theaiscientist从提出想法到实验与论文写作的自动研究流程",
+        "title:towardsendtoendautomationofairesearch",
+        "url:https://doi.org/10.1038/s41586-026-10265-5"
+      ],
+      "doi": "10.1038/s41586-026-10265-5"
     }
   ],
   "news": [
@@ -2240,6 +2276,17 @@
         "url:https://openai.com/index/legalon-halves-codex-costs"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-12",
+      "title": "Qwen Code · Release v0.25.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1",
+      "keys": [
+        "title:qwencodereleasev0251",
+        "title:qwencodev0251发布增强托管智能体与会话恢复",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1"
+      ],
+      "company": "Qwen"
     }
   ]
 }
