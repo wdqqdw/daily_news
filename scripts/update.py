@@ -26,7 +26,7 @@ from zoneinfo import ZoneInfo
 
 from build import ROOT, DATA, build, validate
 from history import item_keys, load_history, history_keys, assert_unseen, canonical_doi
-from summarize import enrich, source_text, apply_editorial_corrections
+from summarize import enrich, source_text, apply_editorial_corrections, verified_paper_notes
 
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
@@ -203,6 +203,30 @@ def europe_pmc_candidates(query, today, seen):
         except (OSError,ValueError,KeyError) as error:
             print('Skipping unverified indexed DOI '+doi+': '+str(error),flush=True)
         if len(requested)>=25:break
+    return candidates
+
+def verified_fulltext_candidates(today, seen):
+    """Recover reviewed methods omitted from abstracts, with fresh metadata.
+
+    An explicit discovery flag adds a candidate, never a reserved slot. DOI,
+    title, article type, dates, citations and all normal selection gates apply.
+    """
+    path=ROOT/'data/verified_paper_sources.json'
+    if not path.exists():return []
+    candidates=[]
+    for key,entry in json.loads(path.read_text()).items():
+        doi=canonical_doi(key)
+        if entry.get('discover') is not True or 'doi:'+doi in seen:continue
+        with CROSSREF_SLOTS:
+            work=json.loads(fetch('https://api.crossref.org/works/'+urllib.parse.quote(doi,safe='')))['message']
+        paper=normalize_work(work,today)
+        if not paper:continue
+        if canonical_doi(paper['doi'])!=doi:raise ValueError('Verified candidate DOI mismatch: '+doi)
+        if item_keys(paper,'papers').intersection(seen):continue
+        reviewed=verified_paper_notes(paper)
+        if not reviewed:raise ValueError('Missing verified candidate notes: '+doi)
+        paper['abstract'],paper['abstract_source']=reviewed
+        candidates.append(paper)
     return candidates
 
 def merge_paper_sources(papers):
@@ -506,6 +530,11 @@ def generate(today):
                 print(f'WARNING {name}: {e}',flush=True)
     if paper_success<2 or news_success<1:
         raise RuntimeError('Insufficient live sources; preserving previous publication')
+    # Append last so reviewed method evidence survives an incomplete abstract.
+    reviewed=verified_fulltext_candidates(today,seen)
+    papers.extend(reviewed)
+    statuses.append({'source':'Verified full-text methods','ok':True,'items':len(reviewed)})
+    print(f'Verified full-text methods: {len(reviewed)} items',flush=True)
     pool=apply_publication_date_corrections(apply_editorial_exclusions(merge_paper_sources(papers)),today)
     # A Chinese summary needs substantive source text. Try the next eligible
     # unseen candidate if a publisher supplies only a title or blocks access.

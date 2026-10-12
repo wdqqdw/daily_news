@@ -15,7 +15,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 import build
 from update import clean as clean_metadata, human_research_source, apply_editorial_exclusions, apply_publication_date_corrections
 from summarize import clean as clean_summary
-from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, HUMAN_DATA, generate
+from update import normalize_work, is_nsc, select_papers, relevant, parse_feed, parse_page, choose_news, parse_date, fetch, europe_pmc_candidates, merge_paper_sources, verified_fulltext_candidates, HUMAN_DATA, generate
 from history import item_keys, history_keys, record_issue, load_history, save_history, assert_unseen, canonical_url
 from summarize import ArticleParser, source_text, valid_chinese, summarize, apply_editorial_corrections, enrich, SummaryError
 
@@ -29,6 +29,61 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_verified_fulltext_discovery_keeps_live_metadata_and_evidence_gates(self):
+        doi='10.1234/human-memory'
+        title='A neuronal code for memory in the human hippocampus'
+        notes=('Authors use a deep neural network to model human memory and compare image features with recordings from patients. '
+               'They find that neural activity relates to visual representations and subsequent recognition, using independent images for validation. '
+               'This is evidence about human cognition, not proof that human brains implement the artificial network.')
+        entry={'doi':doi,'title':title,'source':'https://publisher.example/article',
+               'checked_on':'2026-10-12','notes':notes,'discover':True}
+        work={'DOI':doi,'title':[title],'type':'journal-article',
+              'container-title':['Nature Communications'],'publisher':'Springer Nature',
+              'published-online':{'date-parts':[[2025,2,10]]},'is-referenced-by-count':4}
+        with tempfile.TemporaryDirectory() as tmp,patch('update.ROOT',Path(tmp)),patch('summarize.ROOT',Path(tmp)):
+            path=Path(tmp)/'data/verified_paper_sources.json';path.parent.mkdir()
+            path.write_text(json.dumps({doi:entry}))
+            with patch('update.fetch',side_effect=lambda _:json.dumps({'message':work})) as fetcher:
+                rows=verified_fulltext_candidates(TODAY,set())
+                self.assertEqual(rows[0]['citations'],4)
+                self.assertEqual(rows[0]['published'],'2025-02-10')
+                self.assertTrue(human_research_source(rows[0]['abstract']))
+                self.assertFalse(relevant(rows[0],1))
+                self.assertFalse(relevant(rows[0],2))
+                work['is-referenced-by-count']=5
+                row=verified_fulltext_candidates(TODAY,set())[0]
+                self.assertTrue(relevant(row,2))
+                self.assertEqual(row['abstract_source'],entry['source'])
+                # An incomplete search result cannot erase the reviewed methods.
+                merged=merge_paper_sources([dict(row,abstract='No methods in this abstract.',abstract_source=''),row])
+                self.assertEqual(merged[0]['abstract'],notes)
+                fetcher.reset_mock()
+                self.assertEqual(verified_fulltext_candidates(TODAY,{'doi:'+doi}),[])
+                fetcher.assert_not_called()
+                title_keys=item_keys(row,'papers')-{'doi:'+doi}
+                self.assertEqual(verified_fulltext_candidates(TODAY,title_keys),[])
+                path.write_text(json.dumps({doi:{**entry,'discover':False}}))
+                fetcher.reset_mock()
+                self.assertEqual(verified_fulltext_candidates(TODAY,set()),[])
+                fetcher.assert_not_called()
+
+    def test_verified_fulltext_discovery_rejects_mismatches_and_retractions(self):
+        doi='10.1234/study';title='Human memory studied with neural networks'
+        entry={'doi':doi,'title':title,'source':'https://publisher.example/article',
+               'checked_on':'2026-10-12','notes':'Researchers model human memory and compare predictions with patients. '*6,'discover':True}
+        work={'DOI':doi,'title':[title],'type':'journal-article','container-title':['Nature'],
+              'published-online':{'date-parts':[[2025,2,10]]},'is-referenced-by-count':20}
+        with tempfile.TemporaryDirectory() as tmp,patch('update.ROOT',Path(tmp)),patch('summarize.ROOT',Path(tmp)):
+            path=Path(tmp)/'data/verified_paper_sources.json';path.parent.mkdir()
+            path.write_text(json.dumps({doi:entry}))
+            for change in ({'DOI':'10.1234/other'},{'title':['A different study']}):
+                with patch('update.fetch',return_value=json.dumps({'message':{**work,**change}})):
+                    with self.assertRaises(ValueError):verified_fulltext_candidates(TODAY,set())
+            for change in ({'type':'posted-content'},{'update-to':[{'type':'retraction'}]},
+                           {'published-online':{'date-parts':[[2027,1,1]]}}):
+                with patch('update.fetch',return_value=json.dumps({'message':{**work,**change}})):
+                    self.assertEqual(verified_fulltext_candidates(TODAY,set()),[])
+
     def test_human_hippocampus_models_keep_ai_citation_and_human_gates(self):
         p=paper('10.1038/s41586-026-10448-0',
             'Plasticity and language in the anaesthetized human hippocampus',
@@ -344,18 +399,20 @@ class SelectionTests(unittest.TestCase):
 
 class NetworkTests(unittest.TestCase):
     def test_nature_direct_abstract_fallback_requires_matching_doi(self):
-        item=paper('10.1038/s42256-025-01049-z',abstract='')
         abstract='We compared language model representations with human judgments and neural activity patterns. '*5
-        direct='https://www.nature.com/articles/s42256-025-01049-z'
-        def source(url,doi=item['doi']):
-            if url==direct:
-                return '<meta name="citation_doi" content="'+doi+'"><meta name="citation_abstract" content="'+abstract+'">'
-            raise OSError('Unavailable redirect or index')
-        text,url=source_text(item,'papers',source)
-        self.assertEqual(url,direct)
-        self.assertIn('human judgments',text)
-        with self.assertRaises(ValueError):
-            source_text(item,'papers',lambda url:source(url,doi='10.1038/wrong'))
+        for doi in ('10.1038/s42256-025-01049-z','10.1057/s41599-026-08299-1'):
+            with self.subTest(doi=doi):
+                item=paper(doi,abstract='')
+                direct='https://www.nature.com/articles/'+doi.split('/',1)[1]
+                def source(url,doi=doi):
+                    if url==direct:
+                        return '<meta name="citation_doi" content="'+doi+'"><meta name="citation_abstract" content="'+abstract+'">'
+                    raise OSError('Unavailable redirect or index')
+                text,url=source_text(item,'papers',source)
+                self.assertEqual(url,direct)
+                self.assertIn('human judgments',text)
+                with self.assertRaises(ValueError):
+                    source_text(item,'papers',lambda url:source(url,doi='10.1038/wrong'))
 
     def test_human_concepts_require_observed_norm_samples(self):
         abstract=('We compare representations of 4,442 lexical concepts between humans '

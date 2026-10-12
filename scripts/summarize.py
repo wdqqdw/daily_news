@@ -104,10 +104,11 @@ def europe_pmc_abstract(item, fetch):
     return None
 
 def verified_paper_notes(item):
-    """Use human-checked source notes only after live abstract routes fail.
+    """Return identity-checked notes for source recovery or explicit discovery.
 
-    Notes preserve access to a reviewed source, not eligibility: selection still
-    checks current metadata, age, human-data evidence and permanent history.
+    Source recovery uses these only after live abstract routes fail. Discovery
+    requires a separate opt-in and fresh Crossref metadata; selection still
+    checks age, citations, human-data evidence and permanent history.
     """
     path=ROOT/'data/verified_paper_sources.json'
     if not path.exists():return None
@@ -142,7 +143,7 @@ def source_text(item, kind, fetch):
         # A DOI redirect can fail while the publisher's public abstract works.
         # Confirm the DOI in the page before accepting the direct Nature URL.
         doi=canonical_doi(item.get('doi',''))
-        if re.fullmatch(r'10\.1038/[a-z0-9.-]+',doi):
+        if re.fullmatch(r'(?:10\.1038/|10\.1057/s41599-)[a-z0-9.-]+',doi):
             url='https://www.nature.com/articles/'+doi.split('/',1)[1]
             if url!=item['url']:
                 try:

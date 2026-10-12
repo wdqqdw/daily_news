@@ -533,5 +533,25 @@
     "title_zh": "LegalOn 称通过模型分工将预估每日 Codex 成本降低65%",
     "summary": "OpenAI 的客户案例介绍，LegalOn 按任务难度选择 Astra、Sol 和 Luna，并结合 Fast 模式限制及部门、个人预算管理成本。公司自报，相较此前主要使用 GPT-5.5 的方案，预估每日成本降低约65%，同时维持开发速度。该数字属于企业内部估算，团队仍在建设按功能发布衡量客户价值与 AI 投入的评估流程。",
     "summary_source": "https://openai.com/index/legalon-halves-codex-costs/"
+  },
+  "doi:10.1057/s41599-026-08299-1": {
+    "title_zh": "GPT 能多大程度模拟人的句子加工？来自韩语敬语的证据",
+    "summary": "研究将 KoGPT-2 等三种支持韩语的模型与四组既有人类实验数据比较，涵盖可接受度、礼貌评价、自定步速阅读和眼动。模型对词语的意外程度指标能识别明显的敬语语法冲突，却难以反映语境中的细微差异和阅读中的延迟效应，与人类表现的相关性较弱且依赖实验条件。结果提示，这类指标对人类语言加工的模拟仍有限。",
+    "summary_source": "https://www.nature.com/articles/s41599-026-08299-1"
+  },
+  "doi:10.1038/s41467-025-56793-y": {
+    "title_zh": "用深度神经网络研究人类杏仁核与海马的物体和记忆编码",
+    "summary": "研究者用 ResNet、AlexNet 提取物体图像特征，并对照四组实验中3173个人类杏仁核和海马神经元的记录。部分神经元对特征空间中的一片区域敏感，这种编码可推广到新图像，并与后续识别记忆表现相关。结果为视觉表征如何关联记忆提供证据，但并不说明人脑直接运行这些人工网络。",
+    "summary_source": "https://www.nature.com/articles/s41467-025-56793-y"
+  },
+  "doi:10.1038/s41586-026-10265-5": {
+    "title_zh": "The AI Scientist：从提出想法到实验与论文写作的自动研究流程",
+    "summary": "团队评估 The AI Scientist 在人类提供代码模板与无模板探索两种设置下，自动生成想法、编写和运行实验、分析结果及撰写论文的能力。一篇生成稿件通过了 ICLR 研讨会的首轮评审，该研讨会录取率为70%。验证范围集中于机器学习研究；作者也指出，自动化可能增加审稿负担与文献噪声。",
+    "summary_source": "https://www.nature.com/articles/s41586-026-10265-5"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1": {
+    "title_zh": "Qwen Code v0.25.1 发布：增强托管智能体与会话恢复",
+    "summary": "Qwen Code 的正式版本 v0.25.1 增加后台 Shell 与任务事件监控，支持在主会话继续响应时创建独立辅助任务，并加强工具结果、检查点及工作空间状态的持久化记录。版本还改进安卓连接恢复和可访问性，提供实验性的 Kubernetes 运行环境。官方发布说明称，目前没有已知的破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1"
   }
 }

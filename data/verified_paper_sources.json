@@ -12,5 +12,20 @@
     "source": "https://www.nature.com/articles/s41562-025-02297-0",
     "checked_on": "2026-10-10",
     "notes": "The study tested 372 human participants with Chinese, English or bilingual backgrounds and compared their responses with language models including ChatGPT. After one example, each group inferred which words to remove from a new sentence. Their choices tended to respect language-specific grammatical constituents. Word deletion patterns allowed the researchers to infer hierarchical phrase trees. Simpler explanations based only on individual words and their positions did not account for the observations. These behavioural similarities support shared structural patterns but do not establish identical cognitive mechanisms. The publisher labels this a research Article, published on 10 September 2025."
+  },
+  "10.1038/s41467-025-56793-y": {
+    "doi": "10.1038/s41467-025-56793-y",
+    "title": "A neuronal code for object representation and memory in the human amygdala and hippocampus",
+    "source": "https://www.nature.com/articles/s41467-025-56793-y",
+    "checked_on": "2026-10-12",
+    "discover": true,
+    "notes": "The authors use deep neural networks, ResNet and AlexNet, to extract high-level visual features from object images and compare that feature space with human neural recordings and memory performance. Across four experiments, they analyze 3,173 neurons in the amygdala and hippocampus of neurosurgical patients, including both newly collected and existing data. Some neurons respond to regions of this feature space rather than just one category. The response regions generalize to independent images and relate to later recognition and image memorability. The methods compare dimensionality reductions and full network features to check robustness. These findings link visual representations to human memory; they do not establish that the brain implements either artificial network. The publisher labels the work a research Article, first published on 10 February 2025."
+  },
+  "10.1057/s41599-026-08299-1": {
+    "doi": "10.1057/s41599-026-08299-1",
+    "title": "To what extent do GPT language models capture human sentence processing dynamics? Evidence from Korean subject honorification",
+    "source": "https://www.nature.com/articles/s41599-026-08299-1",
+    "checked_on": "2026-10-12",
+    "notes": "The study compares three Korean-capable GPT language models with existing human data from four psycholinguistic experiments covering acceptability, politeness ratings, self-paced reading and eye tracking. Model surprisal identifies clear honorific agreement violations, but does not reliably explain context-dependent human judgments, optional honorific marking or delayed reading effects. Associations between model estimates and human performance are weak and vary across conditions. The findings concern these models and Korean subject honorification, rather than proving a general inability of all language models to represent human language processing."
   }
 }
