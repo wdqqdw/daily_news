@@ -1075,6 +1075,42 @@
         "url:https://doi.org/10.1038/s41586-026-10265-5"
       ],
       "doi": "10.1038/s41586-026-10265-5"
+    },
+    {
+      "first_pushed": "2026-10-13",
+      "title": "Simulated responses from large language models are weak proxies for human economic preferences across 74 countries",
+      "url": "https://doi.org/10.1038/s41562-026-02611-4",
+      "keys": [
+        "doi:10.1038/s41562-026-02611-4",
+        "title:74国对照研究大语言模型难以可靠替代真实人类的经济偏好调查",
+        "title:simulatedresponsesfromlargelanguagemodelsareweakproxiesforhumaneconomicpreferencesacross74countries",
+        "url:https://doi.org/10.1038/s41562-026-02611-4"
+      ],
+      "doi": "10.1038/s41562-026-02611-4"
+    },
+    {
+      "first_pushed": "2026-10-13",
+      "title": "Deep neural networks and humans both benefit from compositional language structure",
+      "url": "https://doi.org/10.1038/s41467-024-55158-1",
+      "keys": [
+        "doi:10.1038/s41467-024-55158-1",
+        "title:deepneuralnetworksandhumansbothbenefitfromcompositionallanguagestructure",
+        "title:组合式语言结构也能帮助神经网络像人一样学习和泛化",
+        "url:https://doi.org/10.1038/s41467-024-55158-1"
+      ],
+      "doi": "10.1038/s41467-024-55158-1"
+    },
+    {
+      "first_pushed": "2026-10-13",
+      "title": "Mapping the genetic landscape across 14 psychiatric disorders",
+      "url": "https://doi.org/10.1038/s41586-025-09820-3",
+      "keys": [
+        "doi:10.1038/s41586-025-09820-3",
+        "title:14种精神障碍的遗传图谱揭示五类共享风险因素",
+        "title:mappingthegeneticlandscapeacross14psychiatricdisorders",
+        "url:https://doi.org/10.1038/s41586-025-09820-3"
+      ],
+      "doi": "10.1038/s41586-025-09820-3"
     }
   ],
   "news": [
@@ -2287,6 +2323,28 @@
         "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.1"
       ],
       "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-13",
+      "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "keys": [
+        "title:nvidia向ocp开放verarubin机架设计推进ai基础设施互通",
+        "title:ocpglobalsummitamidecosystemadoptionnvidiaopensverarubinarchitecturetohelpscaleaifactoriesworldwide",
+        "url:https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-13",
+      "title": "Simulating student learning for better AI tutoring",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "keys": [
+        "title:simulatingstudentlearningforbetteraitutoring",
+        "title:微软研究院发布studentsim模拟学生反馈改进ai辅导系统",
+        "url:https://microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring"
+      ],
+      "company": "Microsoft Research"
     }
   ]
 }

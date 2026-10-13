@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T09:46:19+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Simulated responses from large language models are weak proxies for human economic preferences across 74 countries",
+      "doi": "10.1038/s41562-026-02611-4",
+      "url": "https://doi.org/10.1038/s41562-026-02611-4",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-10-12",
+      "authors": "Chen et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-026-02611-4",
+      "slot": 1,
+      "freshness": "近期研究",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-13；来源：Crossref；引用数 0，距发表 1 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 20 种模型与提示配置生成的回答，与 74 个国家、67,201 名真实受访者的既有调查数据比较，考察风险偏好、耐心、互惠、利他和信任。模型与个体偏好仅呈较弱一致性，部分人口特征关联较容易复现，文化差异则更难捕捉；不少模型在经济或数字基础设施较弱国家的表现更差。结果提示，合成人群回答尚不足以替代跨国代表性调查，也不能直接据此评估政策。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.9834,
+      "title_zh": "74 国对照研究：大语言模型难以可靠替代真实人类的经济偏好调查",
+      "summary_source": "https://www.nature.com/articles/s41562-026-02611-4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Deep neural networks and humans both benefit from compositional language structure",
+      "doi": "10.1038/s41467-024-55158-1",
+      "url": "https://doi.org/10.1038/s41467-024-55158-1",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2024-12-30",
+      "authors": "Galke et al.",
+      "citations": 12,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-024-55158-1",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-13；来源：Crossref；引用数 12，距发表 652 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究把 GPT-3.5 和从零训练的循环神经网络，与既有实验中 100 名成人学习 10 种人工语言的数据比较。输入语言越能通过可重复组合的部分表达意义，模型的泛化越有规律，生成答案也越接近人类学习者。实验为利用人工网络研究人类语言学习提供了可比较的方法，但任务中的行为相似不代表认知机制相同。这是 2024 年发表的延伸阅读，当前 Crossref 记录为 12 次引用。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.775,
+      "title_zh": "组合式语言结构也能帮助神经网络像人一样学习和泛化",
+      "summary_source": "https://www.nature.com/articles/s41467-024-55158-1",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Mapping the genetic landscape across 14 psychiatric disorders",
+      "doi": "10.1038/s41586-025-09820-3",
+      "url": "https://doi.org/10.1038/s41586-025-09820-3",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-12-10",
+      "authors": "Grotzinger et al.",
+      "citations": 147,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09820-3",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 147 次引用，约 14.36 次 / 月。",
+      "evidence": "检索时间：2026-10-13；来源：Crossref；引用数 147，距发表 307 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究整合涉及 1,056,201 个病例的遗传关联数据，比较 14 种儿童及成人起病的精神障碍。分析识别出五类共享遗传因素，平均解释各障碍约 66% 的遗传变异，并关联到 238 个多效性位点；部分障碍的遗传重叠明显高于现有诊断边界所暗示的程度。结果为理解共病及寻找治疗靶点提供线索，但主要跨障碍分析限于欧洲样遗传祖源数据，不能据此直接改变个人诊断或推断确定病因。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.2843,
+      "title_zh": "14 种精神障碍的遗传图谱揭示五类共享风险因素",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09820-3",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-12",
+      "title": "OCP Global Summit: Amid Ecosystem Adoption, NVIDIA Opens Vera Rubin Architecture to Help Scale AI Factories Worldwide",
+      "summary": "NVIDIA 在 OCP 全球峰会上，通过 MGX 开放架构贡献 Vera Rubin 机架和计算托盘设计，并发布用于网络配置、集群验证、机架管理和裸机部署的 DSX 开源组件。公司还与多家伙伴推进供电、液冷及网络标准。此举旨在让设备厂商和数据中心运营方更容易构建可互通的 AI 基础设施；涉及未来硬件的支持计划仍需按各产品实际交付进度看待。",
+      "url": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 向 OCP 开放 Vera Rubin 机架设计，推进 AI 基础设施互通",
+      "summary_source": "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-12",
+      "title": "Simulating student learning for better AI tutoring",
+      "summary": "StudentSim 使用公开、去标识化的学习记录，先学习群体规律，再适配单个学生，模拟其独立作答以及接受指导后的变化。微软研究院在国际象棋、英语写作和数学中评估行为匹配度与指导响应，并探索用模拟反馈训练 AI 辅导模型。结果显示这一方法可提供研发阶段的有效反馈，但它仍是研究系统，尚未进入课堂，也不能替代真实学生的学习效果验证。",
+      "url": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究院发布 StudentSim：模拟学生反馈，改进 AI 辅导系统",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 124
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 137
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 47
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1592
+}
