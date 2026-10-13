@@ -35,13 +35,13 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|preferences?|intentions?|emotions?|empathy))\b', re.I)
-# Sentence representations are a cognitive target when the title also names
-# humans and the source contains an actual human comparison.
-SENTENCE_COGNITION = re.compile(r'\bsentence (?:representations?|processing|comprehension)\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|(?:economic )?preferences?|intentions?|emotions?|empathy))\b', re.I)
+# Sentence processing and compositional language structure qualify only with
+# humans in the title, an AI method and an actual human comparison in the source.
+LANGUAGE_COGNITION = re.compile(r'\b(?:sentence (?:representations?|processing|comprehension)|compositional language structure)\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|(?:economic )?preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind|social science experiments?)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
@@ -295,12 +295,12 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
-        return bool((COGNITION.search(title) or SENTENCE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or SENTENCE_COGNITION.search(title)) and MODELLING.search(text) and LLM.search(text))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
-        return bool((COGNITION.search(title) or SENTENCE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or SENTENCE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

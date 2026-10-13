@@ -27,5 +27,21 @@
     "source": "https://www.nature.com/articles/s41599-026-08299-1",
     "checked_on": "2026-10-12",
     "notes": "The study compares three Korean-capable GPT language models with existing human data from four psycholinguistic experiments covering acceptability, politeness ratings, self-paced reading and eye tracking. Model surprisal identifies clear honorific agreement violations, but does not reliably explain context-dependent human judgments, optional honorific marking or delayed reading effects. Associations between model estimates and human performance are weak and vary across conditions. The findings concern these models and Korean subject honorification, rather than proving a general inability of all language models to represent human language processing."
+  },
+  "10.1038/s41562-026-02611-4": {
+    "doi": "10.1038/s41562-026-02611-4",
+    "title": "Simulated responses from large language models are weak proxies for human economic preferences across 74 countries",
+    "source": "https://www.nature.com/articles/s41562-026-02611-4",
+    "checked_on": "2026-10-13",
+    "discover": true,
+    "notes": "The authors compare simulated responses from large language models with existing Global Preference Survey data from 67,201 matched human respondents in 74 countries. They evaluate six economic preferences across 20 model and prompting configurations. Individual-level alignment is positive but weak. Models reproduce some demographic associations more consistently than cultural differences, and many perform worse in less economically developed or digitally connected countries. These findings limit the use of synthetic responses as substitutes for representative human surveys in cross-national inference and policy evaluation. The publisher identifies this as a research Article first published on 12 October 2026."
+  },
+  "10.1038/s41467-024-55158-1": {
+    "doi": "10.1038/s41467-024-55158-1",
+    "title": "Deep neural networks and humans both benefit from compositional language structure",
+    "source": "https://www.nature.com/articles/s41467-024-55158-1",
+    "checked_on": "2026-10-13",
+    "discover": true,
+    "notes": "The authors compare GPT-3.5 and recurrent neural networks with existing experimental data from 100 adult human participants learning ten artificial languages. These languages vary in compositional structure. The models are evaluated on memorization and generalization tasks tied to the human experiments. More structured input promotes systematic generalization and outputs more similar to those produced by human learners. GPT-3.5 uses in-context learning, while the recurrent networks are trained from scratch. The behavioral similarities in these artificial language tasks do not establish identical cognitive mechanisms. The publisher labels the work a research Article first published on 30 December 2024."
   }
 }

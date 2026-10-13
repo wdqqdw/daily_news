@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_economic_preferences_need_llms_and_observed_human_data(self):
+        p=paper('10.1/economic',
+                'Simulated responses from large language models are weak proxies for human economic preferences across 74 countries',
+                abstract='We compare model responses with survey data from human respondents.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(p,2))
+        self.assertFalse(human_research_source('We simulate human respondents to estimate economic preferences.'))
+        self.assertFalse(relevant(dict(p,title='Measuring human economic preferences',abstract='A survey of respondents.'),1))
+        self.assertFalse(relevant(dict(p,title='Large language models simulate economic preferences',abstract='We model human economic preferences.'),1))
+
+    def test_compositional_language_comparison_preserves_ai_and_citation_gates(self):
+        p=paper('10.1/compositional',
+                'Deep neural networks and humans both benefit from compositional language structure',
+                abstract='Neural networks learn artificial languages and are compared with existing data from human participants.',citations=5)
+        self.assertTrue(relevant(p,2))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(p,1))  # Neural networks alone do not imply LLMs.
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,title='Neural networks benefit from compositional language structure'),2))
+        self.assertFalse(relevant(dict(p,title='Humans benefit from compositional language structure',abstract='Participants learn languages.'),2))
+        self.assertFalse(human_research_source('Neural networks learn artificial languages with compositional language structure.'))
+
     def test_verified_fulltext_discovery_keeps_live_metadata_and_evidence_gates(self):
         doi='10.1234/human-memory'
         title='A neuronal code for memory in the human hippocampus'
