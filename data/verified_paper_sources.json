@@ -43,5 +43,21 @@
     "checked_on": "2026-10-13",
     "discover": true,
     "notes": "The authors compare GPT-3.5 and recurrent neural networks with existing experimental data from 100 adult human participants learning ten artificial languages. These languages vary in compositional structure. The models are evaluated on memorization and generalization tasks tied to the human experiments. More structured input promotes systematic generalization and outputs more similar to those produced by human learners. GPT-3.5 uses in-context learning, while the recurrent networks are trained from scratch. The behavioral similarities in these artificial language tasks do not establish identical cognitive mechanisms. The publisher labels the work a research Article first published on 30 December 2024."
+  },
+  "10.1038/s41598-025-14961-6": {
+    "doi": "10.1038/s41598-025-14961-6",
+    "title": "Correspondence of high dimensional emotion structures elicited from video clips between humans and multimodal LLMs",
+    "source": "https://www.nature.com/articles/s41598-025-14961-6",
+    "checked_on": "2026-10-14",
+    "discover": true,
+    "notes": "The researchers compare multimodal large language models with existing emotion ratings provided by human participants in two video-viewing datasets. Models including Gemini and GPT predict human emotions evoked by video clips. The analysis compares both fixed video correspondences and unsupervised alignment of relationships among emotional responses. Broad emotional categories align more successfully than fine-grained individual videos. This concerns models predicting human reports, not evidence that models experience emotions. The publisher identifies the study as a research Article in Scientific Reports, first published on 1 September 2025."
+  },
+  "10.1038/s41562-025-02318-y": {
+    "doi": "10.1038/s41562-025-02318-y",
+    "title": "Humans and neural networks show similar patterns of transfer and interference during continual learning",
+    "source": "https://www.nature.com/articles/s41562-025-02318-y",
+    "checked_on": "2026-10-14",
+    "discover": true,
+    "notes": "The researchers study human cognition by comparing participants with paired artificial neural networks trained on matching sequences of two rule-based tasks. After learning task A and then task B, both learners are retested on A. Similar task rules promote transfer but also greater interference. Individual human learning patterns resemble networks that reuse or separate representations. Human experiments include independent discovery and replication samples. The observed behavioral similarities do not establish identical neural mechanisms. The publisher identifies this as a research Article first published on 30 October 2025."
   }
 }

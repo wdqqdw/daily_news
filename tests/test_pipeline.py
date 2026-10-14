@@ -29,6 +29,25 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_emotion_structure_and_continual_learning_keep_human_research_gates(self):
+        emotion=paper('10.1/emotion',
+                'Correspondence of emotion structures between humans and multimodal LLMs',
+                abstract='We predict human emotions with large language models and compare estimates with ratings from human participants.',citations=2)
+        learning=paper('10.1/learning',
+                'Humans and neural networks show transfer and interference during continual learning',
+                abstract='We study human cognition by comparing neural networks with participants learning sequential tasks.',citations=5)
+        self.assertTrue(relevant(emotion,1))
+        self.assertFalse(relevant(emotion,2))
+        self.assertTrue(relevant(learning,2))
+        self.assertFalse(relevant(learning,1))
+        self.assertFalse(relevant(dict(learning,citations=4),2))
+        self.assertFalse(relevant(dict(learning,title='Human memory during continual learning',abstract='We describe human cognition using biological neural networks.'),2))
+        for p in (emotion,learning):
+            self.assertTrue(human_research_source(p['abstract']))
+            self.assertFalse(relevant(dict(p,title=p['title'].replace('humans','robots').replace('Humans','Robots')),1))
+            self.assertFalse(relevant(dict(p,title=p['title'].replace('humans','robots').replace('Humans','Robots')),2))
+        self.assertFalse(human_research_source('We simulate human participants to predict emotion structures.'))
+
     def test_economic_preferences_need_llms_and_observed_human_data(self):
         p=paper('10.1/economic',
                 'Simulated responses from large language models are weak proxies for human economic preferences across 74 countries',

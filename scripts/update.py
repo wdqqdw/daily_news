@@ -35,7 +35,7 @@ BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retrac
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|(?:economic )?preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|emotion structures?|continual learning|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|(?:economic )?preferences?|intentions?|emotions?|empathy))\b', re.I)
 # Sentence processing and compositional language structure qualify only with
 # humans in the title, an AI method and an actual human comparison in the source.
 LANGUAGE_COGNITION = re.compile(r'\b(?:sentence (?:representations?|processing|comprehension)|compositional language structure)\b', re.I)

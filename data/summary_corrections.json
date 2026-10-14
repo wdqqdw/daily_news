@@ -578,5 +578,56 @@
     "title_zh": "微软研究院发布 StudentSim：模拟学生反馈，改进 AI 辅导系统",
     "summary": "StudentSim 使用公开、去标识化的学习记录，先学习群体规律，再适配单个学生，模拟其独立作答以及接受指导后的变化。微软研究院在国际象棋、英语写作和数学中评估行为匹配度与指导响应，并探索用模拟反馈训练 AI 辅导模型。结果显示这一方法可提供研发阶段的有效反馈，但它仍是研究系统，尚未进入课堂，也不能替代真实学生的学习效果验证。",
     "summary_source": "https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/"
+  },
+  "doi:10.1038/s41598-025-14961-6": {
+    "title_zh": "多模态大语言模型能在多大程度上预测人的情绪结构？",
+    "summary": "研究将 Gemini、GPT 等模型对视频诱发情绪的估计，与两个既有人类自评数据集比较，并结合表征相似性分析和无监督结构对齐。模型能较好复现较粗的情绪类别关系，但对单个视频的精细匹配仍有限。研究关注模型预测人类情绪报告的能力，并不意味着模型拥有情绪体验。本篇为 2025 年发表于 Scientific Reports 的延伸阅读。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-14961-6"
+  },
+  "doi:10.1038/s41562-025-02318-y": {
+    "title_zh": "人和神经网络持续学习时，都面临迁移与干扰的权衡",
+    "summary": "研究让人类参与者与配对的人工神经网络依次学习任务 A、任务 B，再回测任务 A。任务规则越相似，已有知识越能帮助新学习，也越容易干扰旧知识；独立发现与重复实验均支持这一模式。不同参与者在泛化与保留细节之间的差异，也能由网络表征方式模拟。结果揭示了共同的学习权衡，但尚不能证明人脑采用同样的内部机制。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02318-y"
+  },
+  "doi:10.1056/nejmoa2508800": {
+    "title_zh": "CREST-2：无症状颈动脉狭窄的强化内科治疗与血运重建比较",
+    "summary": "两项平行随机试验分别纳入 1,245 和 1,240 名重度无症状颈动脉狭窄患者。在强化内科治疗基础上加用支架，4 年主要复合终点发生率为 2.8%，单用内科治疗为 6.0%；另一项试验中，内膜剥脱术组与其内科对照组为 3.7% 和 5.3%，差异未达统计学显著。终点包括前 44 天卒中或死亡及后续同侧缺血性卒中。两项试验并非支架与手术的直接比较，且重建组存在早期操作风险。",
+    "summary_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2508800"
+  },
+  "url:https://deepmind.google/blog/on-device-ai-scam-detection-mddi": {
+    "title_zh": "Google DeepMind 与新加坡合作开发端侧反诈骗模型",
+    "summary": "Google DeepMind 与新加坡 GovTech 合作，利用本地诈骗对话微调轻量 Gemma 模型，识别冒充机构、虚假招聘等社会工程骗局。模型设计为直接在设备上分析对话，计划通过应用分阶段落地，并需用户同意后才能访问相关内容。官方强调对话无需上传云端；实际效果仍取决于各应用的集成、误报控制和部署验证。",
+    "summary_source": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+    "kind": "公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/uk-ecosystem-deployment": {
+    "title_zh": "NVIDIA 扩展英国 AI 合作，覆盖安全研究与行业应用",
+    "summary": "NVIDIA 宣布五年提供总计 2.5 亿美元算力支持英国智能体安全研究，并作为全球联盟创始合作伙伴参与 Earthshot Prize。官方同时介绍英国伙伴在医疗、能源及科学研究中的应用，以及 Locai Labs 发布的百万规模英国合成人物数据集。文章汇总的是企业承诺、产品进展和伙伴案例，具体部署效果需分别评估。",
+    "summary_source": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
+    "kind": "公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/european-cities-agents-urban-operations": {
+    "title_zh": "欧洲城市探索用 AI 智能体和数字孪生改善公共服务",
+    "summary": "NVIDIA 介绍欧洲城市与技术伙伴如何结合视频理解、传感器数据和数字孪生，支持交通、设施维护、能源及公共服务。法国 Côte-d’Or 的项目将多类数据接入运营智能体，英国多个地区则在探索或试点智慧交通与安全应用。不同项目的成熟度不一，仍应区分已部署系统、试点与未来计划。",
+    "summary_source": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+    "kind": "公司动态"
+  },
+  "url:https://openai.com/index/higgsfield-longer-videos-voice": {
+    "title_zh": "Higgsfield 案例：AI 视频工作流从约一分钟扩展至十分钟以上",
+    "summary": "OpenAI 发布 Higgsfield 客户案例：该公司称，借助 GPT-6 Astra 的规划和工具调用，其工作流已能制作十分钟以上的教学视频，并用 GPT-Image-2.5 改善带文字和信息图的视觉内容。创意团队也使用 Codex 构建原型。上述效果来自企业案例陈述；通过语音实时制作影片仍属于后续愿景。",
+    "summary_source": "https://openai.com/index/higgsfield-longer-videos-voice",
+    "kind": "公司动态"
+  },
+  "url:https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely": {
+    "title_zh": "Google 介绍 Gemini 4 Argon 的安全评估与分层防护",
+    "summary": "Google 介绍 Gemini 4 Argon 扩大开放前的安全工作，包括与防御团队开展有限访问测试，以及评估网络、生物、模型越权和提示注入风险。其防护结合输入检查、内部信号检测和持续监控，并训练模型遵守系统边界、如实报告结果。文章属于官方安全报告解读，所列测试表现不代表所有真实场景均已安全。",
+    "summary_source": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+    "kind": "安全报告 / 公司动态"
+  },
+  "url:https://openai.com/index/oracle": {
+    "title_zh": "Oracle 案例：用 ChatGPT 与 Codex 加速招聘和内部分析",
+    "summary": "OpenAI 发布 Oracle 客户案例，介绍其用 ChatGPT Work 汇总招聘岗位、薪酬与人才市场信息，并用 Codex 将业务问题转成查询和内部工具。Oracle 受访者称，部分招聘准备由过去数天缩短至约 15 至 20 分钟。此类效率数字来自企业自身场景，不能直接视为所有组织都会获得的收益。",
+    "summary_source": "https://openai.com/index/oracle",
+    "kind": "公司动态"
   }
 }
