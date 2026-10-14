@@ -1,0 +1,305 @@
+{
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T14:16:37+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Correspondence of high dimensional emotion structures elicited from video clips between humans and multimodal LLMs",
+      "doi": "10.1038/s41598-025-14961-6",
+      "url": "https://doi.org/10.1038/s41598-025-14961-6",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-09-01",
+      "authors": "Asanuma et al.",
+      "citations": 2,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-14961-6",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-14；来源：Crossref；引用数 2，距发表 408 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 Gemini、GPT 等模型对视频诱发情绪的估计，与两个既有人类自评数据集比较，并结合表征相似性分析和无监督结构对齐。模型能较好复现较粗的情绪类别关系，但对单个视频的精细匹配仍有限。研究关注模型预测人类情绪报告的能力，并不意味着模型拥有情绪体验。本篇为 2025 年发表于 Scientific Reports 的延伸阅读。",
+      "tag": "认知与行为建模",
+      "ranking_score": 4.6068,
+      "title_zh": "多模态大语言模型能在多大程度上预测人的情绪结构？",
+      "summary_source": "https://www.nature.com/articles/s41598-025-14961-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Humans and neural networks show similar patterns of transfer and interference during continual learning",
+      "doi": "10.1038/s41562-025-02318-y",
+      "url": "https://doi.org/10.1038/s41562-025-02318-y",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-10-30",
+      "authors": "Holton et al.",
+      "citations": 11,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02318-y",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-14；来源：Crossref；引用数 11，距发表 349 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究让人类参与者与配对的人工神经网络依次学习任务 A、任务 B，再回测任务 A。任务规则越相似，已有知识越能帮助新学习，也越容易干扰旧知识；独立发现与重复实验均支持这一模式。不同参与者在泛化与保留细节之间的差异，也能由网络表征方式模拟。结果揭示了共同的学习权衡，但尚不能证明人脑采用同样的内部机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.8863,
+      "title_zh": "人和神经网络持续学习时，都面临迁移与干扰的权衡",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02318-y",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Medical Management and Revascularization for Asymptomatic Carotid Stenosis",
+      "doi": "10.1056/nejmoa2508800",
+      "url": "https://doi.org/10.1056/nejmoa2508800",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2025-11-21",
+      "authors": "Brott et al.",
+      "citations": 153,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2508800",
+      "publication_date_source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2508800",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 153 次引用，约 14.04 次 / 月。",
+      "evidence": "检索时间：2026-10-14；来源：Crossref；引用数 153，距发表 327 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "两项平行随机试验分别纳入 1,245 和 1,240 名重度无症状颈动脉狭窄患者。在强化内科治疗基础上加用支架，4 年主要复合终点发生率为 2.8%，单用内科治疗为 6.0%；另一项试验中，内膜剥脱术组与其内科对照组为 3.7% 和 5.3%，差异未达统计学显著。终点包括前 44 天卒中或死亡及后续同侧缺血性卒中。两项试验并非支架与手术的直接比较，且重建组存在早期操作风险。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.2497,
+      "title_zh": "CREST-2：无症状颈动脉狭窄的强化内科治疗与血运重建比较",
+      "summary_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2508800",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "公司动态",
+      "published": "2026-10-14",
+      "title": "From Enterprise to Earthshot: UK’s Ecosystem Moves From Ambition to Application With NVIDIA",
+      "summary": "NVIDIA 宣布五年提供总计 2.5 亿美元算力支持英国智能体安全研究，并作为全球联盟创始合作伙伴参与 Earthshot Prize。官方同时介绍英国伙伴在医疗、能源及科学研究中的应用，以及 Locai Labs 发布的百万规模英国合成人物数据集。文章汇总的是企业承诺、产品进展和伙伴案例，具体部署效果需分别评估。",
+      "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 扩展英国 AI 合作，覆盖安全研究与行业应用",
+      "summary_source": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "公司动态",
+      "published": "2026-10-14",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "summary": "Google DeepMind 与新加坡 GovTech 合作，利用本地诈骗对话微调轻量 Gemma 模型，识别冒充机构、虚假招聘等社会工程骗局。模型设计为直接在设备上分析对话，计划通过应用分阶段落地，并需用户同意后才能访问相关内容。官方强调对话无需上传云端；实际效果仍取决于各应用的集成、误报控制和部署验证。",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google DeepMind 与新加坡合作开发端侧反诈骗模型",
+      "summary_source": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "公司动态",
+      "published": "2026-10-14",
+      "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+      "summary": "NVIDIA 介绍欧洲城市与技术伙伴如何结合视频理解、传感器数据和数字孪生，支持交通、设施维护、能源及公共服务。法国 Côte-d’Or 的项目将多类数据接入运营智能体，英国多个地区则在探索或试点智慧交通与安全应用。不同项目的成熟度不一，仍应区分已部署系统、试点与未来计划。",
+      "url": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "欧洲城市探索用 AI 智能体和数字孪生改善公共服务",
+      "summary_source": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "公司动态",
+      "published": "2026-10-13",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "summary": "OpenAI 发布 Higgsfield 客户案例：该公司称，借助 GPT-6 Astra 的规划和工具调用，其工作流已能制作十分钟以上的教学视频，并用 GPT-Image-2.5 改善带文字和信息图的视觉内容。创意团队也使用 Codex 构建原型。上述效果来自企业案例陈述；通过语音实时制作影片仍属于后续愿景。",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Higgsfield 案例：AI 视频工作流从约一分钟扩展至十分钟以上",
+      "summary_source": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "安全报告 / 公司动态",
+      "published": "2026-10-13",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "summary": "Google 介绍 Gemini 4 Argon 扩大开放前的安全工作，包括与防御团队开展有限访问测试，以及评估网络、生物、模型越权和提示注入风险。其防护结合输入检查、内部信号检测和持续监控，并训练模型遵守系统边界、如实报告结果。文章属于官方安全报告解读，所列测试表现不代表所有真实场景均已安全。",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 介绍 Gemini 4 Argon 的安全评估与分层防护",
+      "summary_source": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 125
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 111
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 137
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 44
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 22
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 9
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1596
+}

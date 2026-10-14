@@ -1111,6 +1111,42 @@
         "url:https://doi.org/10.1038/s41586-025-09820-3"
       ],
       "doi": "10.1038/s41586-025-09820-3"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Correspondence of high dimensional emotion structures elicited from video clips between humans and multimodal LLMs",
+      "url": "https://doi.org/10.1038/s41598-025-14961-6",
+      "keys": [
+        "doi:10.1038/s41598-025-14961-6",
+        "title:correspondenceofhighdimensionalemotionstructureselicitedfromvideoclipsbetweenhumansandmultimodalllms",
+        "title:多模态大语言模型能在多大程度上预测人的情绪结构",
+        "url:https://doi.org/10.1038/s41598-025-14961-6"
+      ],
+      "doi": "10.1038/s41598-025-14961-6"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Humans and neural networks show similar patterns of transfer and interference during continual learning",
+      "url": "https://doi.org/10.1038/s41562-025-02318-y",
+      "keys": [
+        "doi:10.1038/s41562-025-02318-y",
+        "title:humansandneuralnetworksshowsimilarpatternsoftransferandinterferenceduringcontinuallearning",
+        "title:人和神经网络持续学习时都面临迁移与干扰的权衡",
+        "url:https://doi.org/10.1038/s41562-025-02318-y"
+      ],
+      "doi": "10.1038/s41562-025-02318-y"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Medical Management and Revascularization for Asymptomatic Carotid Stenosis",
+      "url": "https://doi.org/10.1056/nejmoa2508800",
+      "keys": [
+        "doi:10.1056/nejmoa2508800",
+        "title:crest2无症状颈动脉狭窄的强化内科治疗与血运重建比较",
+        "title:medicalmanagementandrevascularizationforasymptomaticcarotidstenosis",
+        "url:https://doi.org/10.1056/nejmoa2508800"
+      ],
+      "doi": "10.1056/nejmoa2508800"
     }
   ],
   "news": [
@@ -2345,6 +2381,61 @@
         "url:https://microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring"
       ],
       "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "From Enterprise to Earthshot: UK’s Ecosystem Moves From Ambition to Application With NVIDIA",
+      "url": "https://blogs.nvidia.com/blog/uk-ecosystem-deployment/",
+      "keys": [
+        "title:fromenterprisetoearthshotuksecosystemmovesfromambitiontoapplicationwithnvidia",
+        "title:nvidia扩展英国ai合作覆盖安全研究与行业应用",
+        "url:https://blogs.nvidia.com/blog/uk-ecosystem-deployment"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Google DeepMind and Singapore Government collaborate to build fine-tuned AI model for scam detection",
+      "url": "https://deepmind.google/blog/on-device-ai-scam-detection-mddi/",
+      "keys": [
+        "title:googledeepmindandsingaporegovernmentcollaboratetobuildfinetunedaimodelforscamdetection",
+        "title:googledeepmind与新加坡合作开发端侧反诈骗模型",
+        "url:https://deepmind.google/blog/on-device-ai-scam-detection-mddi"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "European Cities Deploy NVIDIA-Powered AI Agents to Run Smarter Urban Operations",
+      "url": "https://blogs.nvidia.com/blog/european-cities-agents-urban-operations/",
+      "keys": [
+        "title:europeancitiesdeploynvidiapoweredaiagentstorunsmarterurbanoperations",
+        "title:欧洲城市探索用ai智能体和数字孪生改善公共服务",
+        "url:https://blogs.nvidia.com/blog/european-cities-agents-urban-operations"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Higgsfield takes AI video from 1 minute to over 10",
+      "url": "https://openai.com/index/higgsfield-longer-videos-voice",
+      "keys": [
+        "title:higgsfieldtakesaivideofrom1minutetoover10",
+        "title:higgsfield案例ai视频工作流从约一分钟扩展至十分钟以上",
+        "url:https://openai.com/index/higgsfield-longer-videos-voice"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-14",
+      "title": "Developing Gemini 4 Argon responsibly and safely",
+      "url": "https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely/",
+      "keys": [
+        "title:developinggemini4argonresponsiblyandsafely",
+        "title:google介绍gemini4argon的安全评估与分层防护",
+        "url:https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }
