@@ -1147,6 +1147,42 @@
         "url:https://doi.org/10.1056/nejmoa2508800"
       ],
       "doi": "10.1056/nejmoa2508800"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Large language models outperform humans at estimating society’s everyday norms",
+      "url": "https://doi.org/10.1038/s44488-026-00018-8",
+      "keys": [
+        "doi:10.1038/s44488-026-00018-8",
+        "title:largelanguagemodelsoutperformhumansatestimatingsocietyseverydaynorms",
+        "title:大语言模型估计日常社会规范比普通个体更准确",
+        "url:https://doi.org/10.1038/s44488-026-00018-8"
+      ],
+      "doi": "10.1038/s44488-026-00018-8"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Discovering cognitive strategies with tiny recurrent neural networks",
+      "url": "https://doi.org/10.1038/s41586-025-09142-4",
+      "keys": [
+        "doi:10.1038/s41586-025-09142-4",
+        "title:discoveringcognitivestrategieswithtinyrecurrentneuralnetworks",
+        "title:用小型循环神经网络发现认知策略",
+        "url:https://doi.org/10.1038/s41586-025-09142-4"
+      ],
+      "doi": "10.1038/s41586-025-09142-4"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Development and Validation of the Sequential Organ Failure Assessment (SOFA)-2 Score",
+      "url": "https://doi.org/10.1001/jama.2025.20516",
+      "keys": [
+        "doi:10.1001/jama.2025.20516",
+        "title:developmentandvalidationofthesequentialorganfailureassessmentsofa2score",
+        "title:sofa2评分在逾330万例重症患者数据中开发并验证",
+        "url:https://doi.org/10.1001/jama.2025.20516"
+      ],
+      "doi": "10.1001/jama.2025.20516"
     }
   ],
   "news": [
@@ -2436,6 +2472,61 @@
         "url:https://deepmind.google/blog/developing-gemini-4-argon-responsibly-and-safely"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "keys": [
+        "title:ampputsaiagentstoworkbeyondcodewithopenaimodels",
+        "title:amp借助openai模型将智能体扩展到编程之外",
+        "url:https://openai.com/index/amp-beyond-coding"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Policy Preparing for the 2026 US midterms",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "keys": [
+        "title:anthropic更新美国中期选举相关防护与信息服务",
+        "title:policypreparingforthe2026usmidterms",
+        "url:https://anthropic.com/news/2026-us-midterms"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "keys": [
+        "title:anthropicopenssingaporeofficeandsignsmouwiththegovernmentofsingapore",
+        "title:anthropic在新加坡设立办公室并签署政府合作备忘录",
+        "url:https://anthropic.com/news/singapore-office-opening"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "Gemini 4 Argon for Robotics",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "keys": [
+        "title:gemini4argonforrobotics",
+        "title:google展示gemini4argon的机器人应用",
+        "url:https://deepmind.google/blog/gemini-4-argon-for-robotics"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-15",
+      "title": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "keys": [
+        "title:allsystemsgoglobalpcappecosystemreadyfornvidiartxspark",
+        "title:nvidia为rtxspark笔记本扩展本地ai软件生态",
+        "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }

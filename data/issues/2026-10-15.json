@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T09:43:43+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models outperform humans at estimating society’s everyday norms",
+      "doi": "10.1038/s44488-026-00018-8",
+      "url": "https://doi.org/10.1038/s44488-026-00018-8",
+      "journal": "Communications AI & Computing",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-09-01",
+      "authors": "Eriksson et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44488-026-00018-8",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-15；来源：Crossref；引用数 0，距发表 44 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究让六个大语言模型估计 555 种日常情境中行为的适当性，并与 320 名人类参与者及既有人类评分数据比较。模型对群体平均判断的预测优于普通个体，但模型间错误高度相关，简单集成改善有限；汇总多人意见后再结合模型，准确性更高。结论限于美国样本的平均社会规范，不代表模型能理解每个人或处理真实互动中的全部社会情境。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.3494,
+      "title_zh": "大语言模型估计日常社会规范，比普通个体更准确",
+      "summary_source": "https://www.nature.com/articles/s44488-026-00018-8",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Discovering cognitive strategies with tiny recurrent neural networks",
+      "doi": "10.1038/s41586-025-09142-4",
+      "url": "https://doi.org/10.1038/s41586-025-09142-4",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-07-02",
+      "authors": "Ji-An et al.",
+      "citations": 50,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09142-4",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-15；来源：Crossref；引用数 50，距发表 470 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将循环神经网络拟合到人类与动物的奖励学习数据，并用动力系统分析解释决策策略。三个涉及人类参与者的任务借助知识蒸馏整合跨个体信息，小型网络比同维度的传统认知模型更准确地预测选择；人类任务的最佳拟合通常需要 5—20 个单元。结果为研究学习与决策提供了可解释工具，但不等于证明模型与大脑采用相同机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 14.0158,
+      "title_zh": "用小型循环神经网络发现认知策略",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09142-4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Development and Validation of the Sequential Organ Failure Assessment (SOFA)-2 Score",
+      "doi": "10.1001/jama.2025.20516",
+      "url": "https://doi.org/10.1001/jama.2025.20516",
+      "journal": "JAMA",
+      "publisher": "American Medical Association (AMA)",
+      "published": "2025-10-29",
+      "authors": "Ranzani et al.",
+      "citations": 152,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1001%2Fjama.2025.20516",
+      "publication_date_source": "https://jamanetwork.com/journals/jama/fullarticle/2840822",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 152 次引用，约 12.99 次 / 月。",
+      "evidence": "检索时间：2026-10-15；来源：Crossref；引用数 152，距发表 351 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "研究汇总九个国家、1319 个 ICU 的约 334 万例成人住院记录，更新用于描述器官功能障碍的 SOFA 评分。新评分仍覆盖六个器官系统，纳入当前常用支持治疗并调整阈值；对 ICU 死亡的区分能力略高于旧版，AUROC 为 0.79 对 0.77。结果支持其在重症人群中的评估用途，但不能据此认定使用评分本身能够降低死亡率。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.0169,
+      "title_zh": "SOFA-2 评分在逾 330 万例重症患者数据中开发并验证",
+      "summary_source": "https://jamanetwork.com/journals/jama/fullarticle/2840822",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-14",
+      "title": "Amp puts AI agents to work beyond code with OpenAI models",
+      "summary": "OpenAI 的客户案例介绍，Amp 将 GPT-6 Astra 用于文档写作、网页设计和产品工作，并接入 Sign in with ChatGPT。其 Puck 助手利用 GPT-Live-1 提供实时语音，让用户发起和管理智能体任务；团队还在测试 Ultrafast 模式。文中体验与效率判断来自 Amp 团队自述，不是独立性能评测。",
+      "url": "https://openai.com/index/amp-beyond-coding",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Amp 借助 OpenAI 模型将智能体扩展到编程之外",
+      "summary_source": "https://openai.com/index/amp-beyond-coding",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-14",
+      "title": "Policy Preparing for the 2026 US midterms",
+      "summary": "Anthropic 介绍 Claude 在政治中立性、选举滥用监测和投票信息方面的更新，计划接入 Democracy Works 的官方投票资料与选举结果。公司同时披露对约 25 万段美国对话的分析，并承认外部评估发现某些回答仍有不均衡的附加限定和反驳。文中模型评测属于公司报告，相关功能包含后续上线安排。",
+      "url": "https://www.anthropic.com/news/2026-us-midterms",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 更新美国中期选举相关防护与信息服务",
+      "summary_source": "https://www.anthropic.com/news/2026-us-midterms",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-14",
+      "title": "Anthropic opens Singapore office and signs MOU with the Government of Singapore",
+      "summary": "Anthropic 宣布开设亚太地区第五个办公室，并与新加坡数码发展及新闻部签署合作备忘录，重点涵盖 AI 安全、模型评估、采用影响研究和负责任应用。双方计划开展技术交流、人才培训和公共部门能力建设；公司还介绍了 GovTech、DBS 与 Grab 等客户案例。备忘录列出合作方向，并不代表所有项目已完成部署。",
+      "url": "https://www.anthropic.com/news/singapore-office-opening",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 在新加坡设立办公室并签署政府合作备忘录",
+      "summary_source": "https://www.anthropic.com/news/singapore-office-opening",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-13",
+      "title": "Gemini 4 Argon for Robotics",
+      "summary": "Google 展示 Gemini 4 Argon 在机器人控制、真实场景转仿真、物理理解及研究迭代中的用法，包括构建 MuJoCo 场景、视觉反馈控制和动作改进。公司报告其在 ERQA 具身推理评测中达到 87%，并提供多项示例。基准成绩和演示由发布方提供，不能直接等同于真实机器人在任意环境中的可靠表现。",
+      "url": "https://deepmind.google/blog/gemini-4-argon-for-robotics/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 展示 Gemini 4 Argon 的机器人应用",
+      "summary_source": "https://developers.googleblog.com/gemini-4-argon-for-robotics/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-13",
+      "title": "All Systems Go: Global PC App Ecosystem Ready for NVIDIA RTX Spark",
+      "summary": "NVIDIA 公布面向 RTX Spark 的应用和开发工具更新，涵盖本地智能体、Nemotron 3.5 Bolt、PAIR 的 llama.cpp 支持及 Broadcast 2.3。公告列出当前可用功能和后续发布计划，包括 10 月 16 日笔记本上市以及 Adobe、Blender 等软件优化；最高内存、算力及加速幅度属于公司给定配置或场景指标。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 为 RTX Spark 笔记本扩展本地 AI 软件生态",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 125
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 39
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 20
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1667
+}
