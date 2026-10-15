@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_social_norm_estimation_keeps_human_and_influence_gates(self):
+        p=paper('10.1/norms','Large language models outperform humans at estimating society’s everyday norms',
+                abstract='Models estimate social norms from a human ratings dataset and compare predictions with 320 human participants.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(human_research_source(p['abstract']))
+        self.assertFalse(relevant(p,2))
+        self.assertFalse(relevant(dict(p,title='Large language models generate everyday norms for artificial agents'),1))
+        self.assertFalse(relevant(dict(p,title='Humans estimate everyday norms',abstract='We analyze human ratings.'),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(human_research_source('Large language models simulate human participants to estimate social norms.'))
+
+    def test_cognitive_strategies_without_human_in_title_need_observed_data(self):
+        p=paper('10.1/strategies','Discovering cognitive strategies with tiny recurrent neural networks',
+                abstract='We fit recurrent neural networks to human data from participants in reward-learning tasks.',citations=50)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (
+            'We fit neural networks to mouse choices in reward-learning tasks.',
+            'We use neural networks to simulate human participants and predict human cognition.',
+            'Neural networks may help explain human cognition in future studies.',
+            'We compare human participants with a Bayesian inference rule.'):
+            self.assertFalse(relevant(dict(p,title='Discovering cognitive strategies',abstract=abstract),2))
+        self.assertFalse(relevant(dict(p,abstract='Neural networks simulate human participants in a reward task.'),2))
+
     def test_emotion_structure_and_continual_learning_keep_human_research_gates(self):
         emotion=paper('10.1/emotion',
                 'Correspondence of emotion structures between humans and multimodal LLMs',
@@ -365,9 +391,10 @@ class SelectionTests(unittest.TestCase):
         self.assertFalse(relevant(dict(p,citations=4),2))
         self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
     def test_reports_and_conceptual_items_do_not_fill_slots(self):
-        for title in ('Qwen Technical Report','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
+        for title in ('Qwen Technical Report','The Concise Guide to PHARMACOLOGY 2025/26: Introduction and Other Protein Targets','Human cognition: a systematic review','Human behaviour: a conceptual analysis','Retraction: Human cognition'):
             self.assertFalse(relevant(paper('10.1/no',title),1))
             self.assertFalse(relevant(paper('10.1/no',title),2))
+            self.assertFalse(relevant(paper('10.1/no',title),3))
 
     def test_nsc_requires_actual_journal_brand(self):
         self.assertTrue(is_nsc(paper('10.1/a')))

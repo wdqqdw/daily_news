@@ -31,17 +31,17 @@ from summarize import enrich, source_text, apply_editorial_corrections, verified
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
 CROSSREF_SLOTS = threading.BoundedSemaphore(2)
-BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|guideline|reply to|comment on|news and views)(\b|:)', re.I)
+BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|concise guide to pharmacology|guideline|reply to|comment on|news and views)(\b|:)', re.I)
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
-COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|emotion structures?|continual learning|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|(?:economic )?preferences?|intentions?|emotions?|empathy))\b', re.I)
+COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|emotion structures?|continual learning|(?:social|everyday) norms?|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|brain\w*|hippocamp\w*|neuronal|decision.making|social science experiments?|human(?:.like)? (?:(?:object )?concepts?|visual representations?|choices?|(?:economic )?preferences?|intentions?|emotions?|empathy))\b', re.I)
 # Sentence processing and compositional language structure qualify only with
 # humans in the title, an AI method and an actual human comparison in the source.
 LANGUAGE_COGNITION = re.compile(r'\b(?:sentence (?:representations?|processing|comprehension)|compositional language structure)\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
-PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|(?:economic )?preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?)\b', re.I)
+PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|(?:economic )?preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?|(?:social|everyday) norms?)\b', re.I)
 HUMAN_SUBJECT_TITLE = re.compile(r'\b(humans?|people|psycholog\w*|brain\w*|neuronal|personality|theory of mind|social science experiments?)\b',re.I)
 MODEL_PERSONALITY = re.compile(r'\b(?:(?:models?|chatbots?|agents?|LLMs?|AI)\s+personalit(?:y|ies)|personalit(?:y|ies)\s+(?:of|in)\s+(?:large language models?|LLMs?|AI|chatbots?)|(?:language models?|LLMs?|chatbots?)\s+(?:display|exhibit|show)\s+(?:human.like\s+)?(?:social desirability bias(?:es)?|personality traits))\b',re.I)
 NSC = re.compile(r'^(Nature(?:\s+.+)?|Science(?:\s+.+)?|Cell(?:\s+.+)?)$', re.I)
@@ -300,7 +300,12 @@ def relevant(p, slot):
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        # Cognitive-strategy studies may name the method rather than the species
+        # in their title. Require observed human data in the abstract or verified
+        # source notes; animal-only and simulated-agent studies do not qualify.
+        human_strategy = (re.search(r'\bcognitive (?:strategies|algorithms)\b',title,re.I)
+                          and OBSERVED_HUMANS.search(text) and human_research_source(text))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
@@ -489,6 +494,7 @@ def generate(today):
       'Indexed LLM human research':lambda:europe_pmc_candidates('(TITLE_ABS:"large language model" OR TITLE_ABS:"language models") AND (TITLE_ABS:brain OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"theory of mind" OR TITLE_ABS:personality OR TITLE_ABS:"social science experiments" OR TITLE_ABS:"human empathy")',today,seen),
       'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks" OR TITLE_ABS:"neural network") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward" OR TITLE_ABS:"human hippocampus")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
+      'AI cognitive strategies':lambda:crossref('cognitive strategies recurrent neural networks',today),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),
@@ -496,6 +502,7 @@ def generate(today):
       'Human visual representations':lambda:crossref('human visual representations',today,rows=180),
       'Human concept formation':lambda:crossref('neural network human concept formation',today,rows=180),
       'Human sentence representations':lambda:crossref('language models human sentence representation',today,rows=180),
+      'LLM social norms':lambda:crossref('large language models human social norms',today),
       'LLM belief modelling':lambda:crossref('large language models human beliefs',today,rows=180),
       'LLM social experiments':lambda:crossref('large language models social science experiments',today),
       'AI human empathy':lambda:crossref('human empathy artificial intelligence',today),

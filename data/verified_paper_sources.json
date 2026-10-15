@@ -59,5 +59,21 @@
     "checked_on": "2026-10-14",
     "discover": true,
     "notes": "The researchers study human cognition by comparing participants with paired artificial neural networks trained on matching sequences of two rule-based tasks. After learning task A and then task B, both learners are retested on A. Similar task rules promote transfer but also greater interference. Individual human learning patterns resemble networks that reuse or separate representations. Human experiments include independent discovery and replication samples. The observed behavioral similarities do not establish identical neural mechanisms. The publisher identifies this as a research Article first published on 30 October 2025."
+  },
+  "10.1038/s41586-025-09142-4": {
+    "doi": "10.1038/s41586-025-09142-4",
+    "title": "Discovering cognitive strategies with tiny recurrent neural networks",
+    "source": "https://www.nature.com/articles/s41586-025-09142-4",
+    "checked_on": "2026-10-15",
+    "discover": true,
+    "notes": "The study fits recurrent neural networks to observed human data and animal choices in reward-learning tasks to identify cognitive strategies. Human participants performed three tasks, with 150–200 trials each; knowledge distillation pooled information across participants. Small networks predicted choices better than classical cognitive models of equal dimensionality. The best human-task fits used 5–20 units, although 2–4-unit networks also beat equally dimensional classical models. Dynamical-systems analysis exposes interpretable decision strategies. These behavioral fits do not establish identical biological brain mechanisms. Nature published this research Article on 2 July 2025."
+  },
+  "10.1038/s44488-026-00018-8": {
+    "doi": "10.1038/s44488-026-00018-8",
+    "title": "Large language models outperform humans at estimating society’s everyday norms",
+    "source": "https://www.nature.com/articles/s44488-026-00018-8",
+    "checked_on": "2026-10-15",
+    "discover": true,
+    "notes": "Six large language models estimate population-average appropriateness judgements for 555 everyday scenarios, compared with estimates from 320 human participants and an earlier US human ratings dataset. Models outperform the average individual estimator, but share correlated errors; aggregating people improves accuracy, and combining human and model estimates works best. This measures inference of sampled US social norms, not universal morality or real-time social competence. Communications AI & Computing published this research Article on 1 September 2026."
   }
 }
