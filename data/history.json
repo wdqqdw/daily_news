@@ -1183,6 +1183,42 @@
         "url:https://doi.org/10.1001/jama.2025.20516"
       ],
       "doi": "10.1001/jama.2025.20516"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "AI can outperform humans in predicting correlations between personality items",
+      "url": "https://doi.org/10.1038/s44271-025-00205-w",
+      "keys": [
+        "doi:10.1038/s44271-025-00205-w",
+        "title:aicanoutperformhumansinpredictingcorrelationsbetweenpersonalityitems",
+        "title:ai能否预测人格问卷题目之间的关联",
+        "url:https://doi.org/10.1038/s44271-025-00205-w"
+      ],
+      "doi": "10.1038/s44271-025-00205-w"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "How human–AI feedback loops alter human perceptual, emotional and social judgements",
+      "url": "https://doi.org/10.1038/s41562-024-02077-2",
+      "keys": [
+        "doi:10.1038/s41562-024-02077-2",
+        "title:howhumanaifeedbackloopsalterhumanperceptualemotionalandsocialjudgements",
+        "title:人机反馈循环如何改变人的知觉情绪与社会判断",
+        "url:https://doi.org/10.1038/s41562-024-02077-2"
+      ],
+      "doi": "10.1038/s41562-024-02077-2"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "SILVA in 2026: a global core biodata resource for rRNA within the DSMZ digital diversity",
+      "url": "https://doi.org/10.1093/nar/gkaf1247",
+      "keys": [
+        "doi:10.1093/nar/gkaf1247",
+        "title:silva2026核糖体rna数据库更新与跨库整合",
+        "title:silvain2026aglobalcorebiodataresourceforrrnawithinthedsmzdigitaldiversity",
+        "url:https://doi.org/10.1093/nar/gkaf1247"
+      ],
+      "doi": "10.1093/nar/gkaf1247"
     }
   ],
   "news": [
@@ -2527,6 +2563,72 @@
         "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-software-updates"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "Qwen Code · Release v0.25.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2",
+      "keys": [
+        "title:qwencode0252增强测试诊断与托管代理功能",
+        "title:qwencodereleasev0252",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "keys": [
+        "title:bringinggptrosalindtoacademicresearchlabs",
+        "title:openai推出gptrosalind学术实验室资助计划",
+        "url:https://openai.com/index/introducing-the-rosalind-academic-plan"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "keys": [
+        "title:acceleratingthesearchforantimicrobialpeptideswithgoogleantigravity",
+        "title:google展示用antigravity辅助筛选抗菌肽",
+        "url:https://deepmind.google/blog/accelerating-antimicrobial-discovery"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
+      "keys": [
+        "title:bethereforthebeginningcelebratethelaunchofnvidiartxspark",
+        "title:nvidia公布rtxspark线下发布体验活动",
+        "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "Proof-based general-purpose computing with Magnetar",
+      "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+      "keys": [
+        "title:proofbasedgeneralpurposecomputingwithmagnetar",
+        "title:微软介绍magnetar为通用程序生成可验证计算证明",
+        "url:https://microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-16",
+      "title": "An update on independent evaluators",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "keys": [
+        "title:anthropic向metr评估团队开放更深入的内部访问",
+        "title:anupdateonindependentevaluators",
+        "url:https://anthropic.com/news/an-update-on-independent-evaluators"
+      ],
+      "company": "Anthropic"
     }
   ]
 }

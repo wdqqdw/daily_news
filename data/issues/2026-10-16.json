@@ -1,0 +1,336 @@
+{
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T09:42:57+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "AI can outperform humans in predicting correlations between personality items",
+      "doi": "10.1038/s44271-025-00205-w",
+      "url": "https://doi.org/10.1038/s44271-025-00205-w",
+      "journal": "Communications Psychology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-02-12",
+      "authors": "Schoenegger et al.",
+      "citations": 11,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44271-025-00205-w",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-16；来源：Crossref；引用数 11，距发表 611 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究比较 GPT-4o、Claude 3 Opus、专用神经网络 PersonalityMap，以及254名普通参与者和272名学术专家，对249对人格问卷题目的相关性进行预测。模型优于多数个体，但汇总专家判断后，其表现可匹敌专用模型，并在多数指标上超过通用大语言模型。结果针对群体层面的题目关联，不能直接等同于准确识别每个人的人格。",
+      "tag": "认知与行为建模",
+      "ranking_score": 9.5554,
+      "title_zh": "AI 能否预测人格问卷题目之间的关联？",
+      "summary_source": "https://www.nature.com/articles/s44271-025-00205-w",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "How human–AI feedback loops alter human perceptual, emotional and social judgements",
+      "doi": "10.1038/s41562-024-02077-2",
+      "url": "https://doi.org/10.1038/s41562-024-02077-2",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2024-12-18",
+      "authors": "Glickman et al.",
+      "citations": 272,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-024-02077-2",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-16；来源：Crossref；引用数 272，距发表 667 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在涉及1,401名参与者的系列实验中，考察卷积神经网络、算法反馈和 Stable Diffusion 图像对人类判断的影响。带有偏差的 AI 可放大细小偏差，参与者随后学习这些偏差，却低估其影响；准确的反馈则能改善判断。结果并不意味着所有人机互动都会制造偏见，影响能持续多久仍需进一步研究。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 17.9022,
+      "title_zh": "人机反馈循环如何改变人的知觉、情绪与社会判断",
+      "summary_source": "https://www.nature.com/articles/s41562-024-02077-2",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "SILVA in 2026: a global core biodata resource for rRNA within the DSMZ digital diversity",
+      "doi": "10.1093/nar/gkaf1247",
+      "url": "https://doi.org/10.1093/nar/gkaf1247",
+      "journal": "Nucleic Acids Research",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-11-18",
+      "authors": "Chuvochina et al.",
+      "citations": 149,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgkaf1247",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 149 次引用，约 13.46 次 / 月。",
+      "evidence": "检索时间：2026-10-16；来源：Crossref；引用数 149，距发表 332 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "这篇数据库研究介绍 SILVA 的方法与资源更新：整合 DSMZ Digital Diversity 数据服务，为数据版本分配 DOI，提供适配 QIIME2、DADA2、KRAKEN2 的分类资源，并以 TaxMap 支持分类整理和可视化。相关工具服务于微生物分类与多样性研究；论文同时区分已实现功能和后续数据发布、接口建设计划。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.1047,
+      "title_zh": "SILVA 2026：核糖体 RNA 数据库更新与跨库整合",
+      "summary_source": "https://academic.oup.com/nar/article/54/D1/D334/8326456",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-10-15",
+      "title": "Qwen Code · Release v0.25.2",
+      "summary": "Qwen Code 发布0.25.2版，加入可导入 Vitest 测试报告的诊断扩展，以及支持搜索、分页的测试失败浏览工具。更新还扩展了可选 TypeScript 模块和后台 Shell 能力，并修复 Windows 配置文件兼容、会话恢复和语音输入提示等问题。发行说明未列出已知的破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.25.2 增强测试诊断与托管代理功能",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Bringing GPT-Rosalind to academic research labs",
+      "summary": "OpenAI 面向美国高校的合资格实验室推出 Rosalind Academic Plan，最多提供30个 Business Standard 席位，免费期限最长12个月；GPT-Rosalind 需通过可信访问审核。计划提供生命科学模型及工作台，当前不含 API 访问。已有学校企业协议的实验室需走校方申请流程，研究数据默认不用于模型训练。",
+      "url": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 推出 GPT-Rosalind 学术实验室资助计划",
+      "summary_source": "https://openai.com/index/introducing-the-rosalind-academic-plan",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Accelerating the search for antimicrobial peptides with Google Antigravity",
+      "summary": "Google 介绍研究人员如何结合 Antigravity、ProtNLM 和公开蛋白数据库，完成候选搜索、结构比对及证据整理。案例中的候选抗菌肽已进入湿实验验证，所述活性仍属于计算预测，尚不能视为已证实的药效。研究人员负责提出问题和审查证据，代理协助执行跨数据库分析。",
+      "url": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 展示用 Antigravity 辅助筛选抗菌肽",
+      "summary_source": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-10-15",
+      "title": "Be There for the Beginning: Celebrate the Launch of NVIDIA RTX Spark",
+      "summary": "NVIDIA 宣布10月16日在旧金山、柏林、台北、北京和伊斯坦布尔举行 RTX Spark 发布体验活动，展示本地 AI、创作和游戏应用。北京场计划在双井京东 MALL 晚间举行，需通过微信报名；各城市的入场方式和时间以当地安排为准。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 公布 RTX Spark 线下发布体验活动",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Proof-based general-purpose computing with Magnetar",
+      "summary": "Microsoft Research 介绍零知识证明系统 Magnetar，可为 Rust、Go、C 程序的执行生成证明，让接收者快速核验结果并保护私有输入。官方称，其测试中的平均速度比先前可比系统快10至39倍，安全基础采用标准哈希函数。文章讨论了 AI 代理等潜在用途，性能数字来自研究团队的比较。",
+      "url": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软介绍 Magnetar：为通用程序生成可验证计算证明",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "An update on independent evaluators",
+      "summary": "Anthropic 表示已为六名 METR 员工提供设备、办公空间及接近内部风险评估团队的系统访问权限。METR 可公开风险评估，Anthropic 不能否决发表，但可要求删除预先约定类别的敏感信息。公司也与 SecureBio、Accenture 合作，其他伙伴目前的访问和发表权限仍较有限。",
+      "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 向 METR 评估团队开放更深入的内部访问",
+      "summary_source": "https://www.anthropic.com/news/an-update-on-independent-evaluators",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 124
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 42
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 21
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1832
+}
