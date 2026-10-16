@@ -669,5 +669,50 @@
     "title_zh": "Anthropic 在新加坡设立办公室并签署政府合作备忘录",
     "summary": "Anthropic 宣布开设亚太地区第五个办公室，并与新加坡数码发展及新闻部签署合作备忘录，重点涵盖 AI 安全、模型评估、采用影响研究和负责任应用。双方计划开展技术交流、人才培训和公共部门能力建设；公司还介绍了 GovTech、DBS 与 Grab 等客户案例。备忘录列出合作方向，并不代表所有项目已完成部署。",
     "summary_source": "https://www.anthropic.com/news/singapore-office-opening"
+  },
+  "doi:10.1038/s44271-025-00205-w": {
+    "title_zh": "AI 能否预测人格问卷题目之间的关联？",
+    "summary": "研究比较 GPT-4o、Claude 3 Opus、专用神经网络 PersonalityMap，以及254名普通参与者和272名学术专家，对249对人格问卷题目的相关性进行预测。模型优于多数个体，但汇总专家判断后，其表现可匹敌专用模型，并在多数指标上超过通用大语言模型。结果针对群体层面的题目关联，不能直接等同于准确识别每个人的人格。",
+    "summary_source": "https://www.nature.com/articles/s44271-025-00205-w"
+  },
+  "doi:10.1038/s41562-024-02077-2": {
+    "title_zh": "人机反馈循环如何改变人的知觉、情绪与社会判断",
+    "summary": "研究在涉及1,401名参与者的系列实验中，考察卷积神经网络、算法反馈和 Stable Diffusion 图像对人类判断的影响。带有偏差的 AI 可放大细小偏差，参与者随后学习这些偏差，却低估其影响；准确的反馈则能改善判断。结果并不意味着所有人机互动都会制造偏见，影响能持续多久仍需进一步研究。",
+    "summary_source": "https://www.nature.com/articles/s41562-024-02077-2"
+  },
+  "doi:10.1093/nar/gkaf1247": {
+    "title_zh": "SILVA 2026：核糖体 RNA 数据库更新与跨库整合",
+    "summary": "这篇数据库研究介绍 SILVA 的方法与资源更新：整合 DSMZ Digital Diversity 数据服务，为数据版本分配 DOI，提供适配 QIIME2、DADA2、KRAKEN2 的分类资源，并以 TaxMap 支持分类整理和可视化。相关工具服务于微生物分类与多样性研究；论文同时区分已实现功能和后续数据发布、接口建设计划。",
+    "summary_source": "https://academic.oup.com/nar/article/54/D1/D334/8326456"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2": {
+    "title_zh": "Qwen Code 0.25.2 增强测试诊断与托管代理功能",
+    "summary": "Qwen Code 发布0.25.2版，加入可导入 Vitest 测试报告的诊断扩展，以及支持搜索、分页的测试失败浏览工具。更新还扩展了可选 TypeScript 模块和后台 Shell 能力，并修复 Windows 配置文件兼容、会话恢复和语音输入提示等问题。发行说明未列出已知的破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.2"
+  },
+  "url:https://openai.com/index/introducing-the-rosalind-academic-plan": {
+    "title_zh": "OpenAI 推出 GPT-Rosalind 学术实验室资助计划",
+    "summary": "OpenAI 面向美国高校的合资格实验室推出 Rosalind Academic Plan，最多提供30个 Business Standard 席位，免费期限最长12个月；GPT-Rosalind 需通过可信访问审核。计划提供生命科学模型及工作台，当前不含 API 访问。已有学校企业协议的实验室需走校方申请流程，研究数据默认不用于模型训练。",
+    "summary_source": "https://openai.com/index/introducing-the-rosalind-academic-plan"
+  },
+  "url:https://deepmind.google/blog/accelerating-antimicrobial-discovery": {
+    "title_zh": "Google 展示用 Antigravity 辅助筛选抗菌肽",
+    "summary": "Google 介绍研究人员如何结合 Antigravity、ProtNLM 和公开蛋白数据库，完成候选搜索、结构比对及证据整理。案例中的候选抗菌肽已进入湿实验验证，所述活性仍属于计算预测，尚不能视为已证实的药效。研究人员负责提出问题和审查证据，代理协助执行跨数据库分析。",
+    "summary_source": "https://deepmind.google/blog/accelerating-antimicrobial-discovery/"
+  },
+  "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite": {
+    "title_zh": "NVIDIA 公布 RTX Spark 线下发布体验活动",
+    "summary": "NVIDIA 宣布10月16日在旧金山、柏林、台北、北京和伊斯坦布尔举行 RTX Spark 发布体验活动，展示本地 AI、创作和游戏应用。北京场计划在双井京东 MALL 晚间举行，需通过微信报名；各城市的入场方式和时间以当地安排为准。",
+    "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-launch-event-invite/"
+  },
+  "url:https://microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar": {
+    "title_zh": "微软介绍 Magnetar：为通用程序生成可验证计算证明",
+    "summary": "Microsoft Research 介绍零知识证明系统 Magnetar，可为 Rust、Go、C 程序的执行生成证明，让接收者快速核验结果并保护私有输入。官方称，其测试中的平均速度比先前可比系统快10至39倍，安全基础采用标准哈希函数。文章讨论了 AI 代理等潜在用途，性能数字来自研究团队的比较。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/"
+  },
+  "url:https://anthropic.com/news/an-update-on-independent-evaluators": {
+    "title_zh": "Anthropic 向 METR 评估团队开放更深入的内部访问",
+    "summary": "Anthropic 表示已为六名 METR 员工提供设备、办公空间及接近内部风险评估团队的系统访问权限。METR 可公开风险评估，Anthropic 不能否决发表，但可要求删除预先约定类别的敏感信息。公司也与 SecureBio、Accenture 合作，其他伙伴目前的访问和发表权限仍较有限。",
+    "summary_source": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
   }
 }

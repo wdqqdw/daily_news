@@ -39,6 +39,7 @@ COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|emotion structures?|continu
 # Sentence processing and compositional language structure qualify only with
 # humans in the title, an AI method and an actual human comparison in the source.
 LANGUAGE_COGNITION = re.compile(r'\b(?:sentence (?:representations?|processing|comprehension)|compositional language structure)\b', re.I)
+HUMAN_JUDGEMENT = re.compile(r'\bhuman (?:(?:perceptual|emotional|social|moral)[,\s]+(?:and\s+)?)*judg(?:e)?ments?\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|(?:economic )?preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?|(?:social|everyday) norms?)\b', re.I)
@@ -305,7 +306,13 @@ def relevant(p, slot):
         # source notes; animal-only and simulated-agent studies do not qualify.
         human_strategy = (re.search(r'\bcognitive (?:strategies|algorithms)\b',title,re.I)
                           and OBSERVED_HUMANS.search(text) and human_research_source(text))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        # Perceptual and social judgements are human cognition too. Only add
+        # this title route when the source supplies actual human observations.
+        judgement_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        judgement_sample = (OBSERVED_HUMANS.search(judgement_source)
+                            or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',judgement_source,re.I))
+        human_judgement = HUMAN_JUDGEMENT.search(title) and judgement_sample and human_research_source(judgement_source)
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
@@ -495,6 +502,8 @@ def generate(today):
       'Indexed AI human research':lambda:europe_pmc_candidates('(TITLE_ABS:"machine learning" OR TITLE_ABS:"artificial intelligence" OR TITLE_ABS:"deep learning" OR TITLE_ABS:"neural networks" OR TITLE_ABS:"neural network") AND (TITLE_ABS:"human decisions" OR TITLE_ABS:"human cognition" OR TITLE_ABS:"human behaviour" OR TITLE_ABS:"human brain" OR TITLE_ABS:"human reward" OR TITLE_ABS:"human hippocampus")',today,seen),
       'Human decision models':lambda:crossref('human decisions machine learning',today,rows=180),
       'AI cognitive strategies':lambda:crossref('cognitive strategies recurrent neural networks',today),
+      'AI human judgement':lambda:crossref('human AI feedback perceptual emotional social judgements',today),
+      'AI personality correlations':lambda:crossref('AI humans predicting correlations personality items',today),
       'LLM human modelling':lambda:crossref('large language models human behavior prediction',today),
       'Human reasoning models':lambda:crossref('large reasoning models humans',today,rows=180),
       'LLM human memory':lambda:crossref('language models human memory',today,rows=180),

@@ -75,5 +75,21 @@
     "checked_on": "2026-10-15",
     "discover": true,
     "notes": "Six large language models estimate population-average appropriateness judgements for 555 everyday scenarios, compared with estimates from 320 human participants and an earlier US human ratings dataset. Models outperform the average individual estimator, but share correlated errors; aggregating people improves accuracy, and combining human and model estimates works best. This measures inference of sampled US social norms, not universal morality or real-time social competence. Communications AI & Computing published this research Article on 1 September 2026."
+  },
+  "10.1038/s44271-025-00205-w": {
+    "doi": "10.1038/s44271-025-00205-w",
+    "title": "AI can outperform humans in predicting correlations between personality items",
+    "source": "https://www.nature.com/articles/s44271-025-00205-w",
+    "checked_on": "2026-10-16",
+    "discover": true,
+    "notes": "The researchers compare GPT-4o, Claude 3 Opus and a specialized neural network, PersonalityMap, with 254 lay participants and 272 academic experts in predicting correlations among 249 pairs of human personality questionnaire items. Empirical correlations from the SAPA Personality Inventory provide the reference. Models outperform most individual humans, but aggregated expert predictions match the specialized model and surpass the general LLMs on most measures. This tests population-level associations between questionnaire items, not the accurate assessment of every individual or general social intelligence. The publisher labels the study a research Article, published on 12 February 2025."
+  },
+  "10.1038/s41562-024-02077-2": {
+    "doi": "10.1038/s41562-024-02077-2",
+    "title": "How human–AI feedback loops alter human perceptual, emotional and social judgements",
+    "source": "https://www.nature.com/articles/s41562-024-02077-2",
+    "checked_on": "2026-10-16",
+    "discover": true,
+    "notes": "Across experiments involving 1,401 human participants, the authors examine how interactions with artificial intelligence change perceptual, emotional and social judgements. They study convolutional neural networks, controlled algorithmic feedback and Stable Diffusion outputs, comparing biased, accurate and human feedback. Biased systems can amplify small human biases, which people subsequently learn; participants underestimate this influence. Accurate feedback can instead improve judgements. The findings do not imply that every AI interaction increases bias, and the long-term persistence remains unresolved. The publisher labels this a research Article, first published on 18 December 2024."
   }
 }

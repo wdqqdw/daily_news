@@ -29,6 +29,21 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_human_judgements_require_observed_data_ai_and_influence(self):
+        p=paper('10.1/judgements','How human–AI feedback loops alter human perceptual, emotional and social judgements',
+                abstract='Experiments with 1,401 participants compare human judgements after interacting with artificial intelligence.',citations=272)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertTrue(relevant(dict(p,title='How artificial intelligence changes human moral judgments'),2))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='AI feedback loops alter robot judgements'),2))
+        self.assertFalse(relevant(dict(p,title='Human social judgements',abstract='We compare participants in a behavioural experiment.'),2))
+        for abstract in ('Artificial intelligence may affect human judgements in future.',
+                         'Artificial intelligence is used to simulate human participants to predict social judgements.',
+                         'Artificial intelligence learns mouse responses to reward.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_social_norm_estimation_keeps_human_and_influence_gates(self):
         p=paper('10.1/norms','Large language models outperform humans at estimating society’s everyday norms',
                 abstract='Models estimate social norms from a human ratings dataset and compare predictions with 320 human participants.',citations=0)
