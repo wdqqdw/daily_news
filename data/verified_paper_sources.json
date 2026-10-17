@@ -91,5 +91,13 @@
     "checked_on": "2026-10-16",
     "discover": true,
     "notes": "Across experiments involving 1,401 human participants, the authors examine how interactions with artificial intelligence change perceptual, emotional and social judgements. They study convolutional neural networks, controlled algorithmic feedback and Stable Diffusion outputs, comparing biased, accurate and human feedback. Biased systems can amplify small human biases, which people subsequently learn; participants underestimate this influence. Accurate feedback can instead improve judgements. The findings do not imply that every AI interaction increases bias, and the long-term persistence remains unresolved. The publisher labels this a research Article, first published on 18 December 2024."
+  },
+  "10.1038/s41598-025-16339-0": {
+    "doi": "10.1038/s41598-025-16339-0",
+    "title": "The role of personality traits in predicting educational use of generative AI in higher education",
+    "source": "https://www.nature.com/articles/s41598-025-16339-0",
+    "checked_on": "2026-10-17",
+    "discover": true,
+    "notes": "The authors use linear regression and artificial neural networks to examine associations between Big Five personality traits and educational use of generative AI. They analyze online questionnaires from 1,016 human participants, university students in Türkiye who reported prior educational use of these tools. Neural networks model nonlinear associations and identify openness as the strongest predictor. Openness, conscientiousness and extraversion are positively associated with use, while neuroticism is negatively associated. The cross-sectional convenience sample and self-reports do not establish causal effects or improved learning. Scientific Reports identifies the study as a research Article, first published on 19 August 2025."
   }
 }

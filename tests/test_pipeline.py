@@ -475,6 +475,7 @@ class SelectionTests(unittest.TestCase):
              'container-title':['JAMA'],'published':{'date-parts':[[2026,7,1]]}}
         for title,subtitle in [('Ovarian Cancer','A Review'),
                                ('Nomenclature for Factors of the HLA System, 2026',''),
+                               ('Guidelines for accurate evaluation of photodetectors based on emerging semiconductor technologies',''),
                                ('Muscle health: 2025 Consensus Update','')]:
             with self.subTest(title=title):
                 self.assertIsNone(normalize_work(dict(raw,title=[title],subtitle=[subtitle]),TODAY))

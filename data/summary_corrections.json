@@ -714,5 +714,45 @@
     "title_zh": "Anthropic 向 METR 评估团队开放更深入的内部访问",
     "summary": "Anthropic 表示已为六名 METR 员工提供设备、办公空间及接近内部风险评估团队的系统访问权限。METR 可公开风险评估，Anthropic 不能否决发表，但可要求删除预先约定类别的敏感信息。公司也与 SecureBio、Accenture 合作，其他伙伴目前的访问和发表权限仍较有限。",
     "summary_source": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+  },
+  "doi:10.1038/s41598-025-16339-0": {
+    "title_zh": "用神经网络分析人格与大学生教育场景 AI 使用的关联",
+    "summary": "研究用回归与人工神经网络分析土耳其1,016名有生成式 AI 使用经验的大学生问卷，考察人格、年龄与教育用途之间的关联。开放性在神经网络中最具预测力，尽责性、外向性等也与使用相关。样本来自便利抽样与自报数据，不能据此认定人格导致 AI 使用，或 AI 提升了学习效果。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-16339-0"
+  },
+  "doi:10.1038/s41592-025-02857-2": {
+    "title_zh": "CytoTRACE 2：从单细胞 RNA 数据推断细胞发育潜能",
+    "summary": "研究提出可解释的深度学习方法 CytoTRACE 2，从单细胞 RNA 测序数据预测细胞的发育潜能与分化层级，并让不同数据集中的结果更易比较。研究基于人和小鼠细胞数据，在多种组织与测序平台的基准测试中优于既有方法。这些输出属于计算预测，不能替代对具体细胞分化能力的功能实验验证。",
+    "summary_source": "https://www.nature.com/articles/s41592-025-02857-2"
+  },
+  "url:https://openai.com/index/itau-generative-ai": {
+    "title_zh": "巴西 Itaú 银行以对话助手和治理平台扩大生成式 AI 应用",
+    "summary": "OpenAI 介绍 Itaú 银行的 ia.i 对话服务和 IARA 模型治理平台。ia.i 首阶段覆盖约30万客户，通过文字和语音整合账户、信用卡等服务；IARA 统一管理模型访问、成本及内部政策。银行计划在2026年底扩大至全体客户。案例中的效率改善与推广目标由银行提供，目标尚不等于已实现的覆盖。",
+    "summary_source": "https://openai.com/index/itau-generative-ai"
+  },
+  "url:https://openai.com/index/stack-overflow-chatgpt-plugin": {
+    "title_zh": "Stack Overflow 用 Codex 开发代理产品，并通过 ChatGPT 插件扩大采用",
+    "summary": "OpenAI 发布 Stack Overflow 客户案例：两名工程师借助 Codex 在数周内构建面向代理的知识产品，并加速企业连接器开发。公司称，ChatGPT 插件上线后注册量增至三倍，代理创建量最高增至十倍。上述开发效率和增长数字来自客户报告，不能直接视为其他团队也会获得的效果。",
+    "summary_source": "https://openai.com/index/stack-overflow-chatgpt-plugin"
+  },
+  "url:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl": {
+    "title_zh": "NVIDIA 扩展 Nemotron 3.5 多模态与本地代理模型",
+    "summary": "NVIDIA 发布1200亿参数的 Nemotron 3.5 Super VL，面向视觉理解、工具调用和企业代理工作流；同时推出可装入24GB内存的 Bolt 74B-A9B 本地模型。4GB级 Bolt E4B 计划10月23日上线。官方同时开放权重、数据与训练资料，并公布性能比较；相关速度和精度结论需结合其测试条件理解。",
+    "summary_source": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+  },
+  "url:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update": {
+    "title_zh": "GeForce NOW 开放 DLSS 4.5 图像增强与帧生成控制",
+    "summary": "NVIDIA 为 GeForce NOW 增加 DLSS 4.5 设置，让用户调整超分辨率、动态多帧生成和光线重建，在画质与流畅度之间选择。使用 RTX 5080 云端设备的 Ultimate 会员可获得最高4倍动态多帧生成选项。功能适用于支持的游戏与客户端，具体可用项取决于会员等级和云端设备。",
+    "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/"
+  },
+  "url:https://deepmind.google/blog/introducing-gemini-4-argon": {
+    "title_zh": "Google 开放 Gemini 4 Argon，面向复杂推理与代理任务",
+    "summary": "Google 宣布向开发者、企业及符合订阅条件的消费者开放 Gemini 4 Argon，覆盖 API、Antigravity、Gemini 应用和搜索 AI 模式。公司展示代码重构、量子化学软件优化及科研应用，并给出多个基准和内部工程案例。文中的性能排名与效率增幅来自发布方报告，具体效果取决于任务和使用方式。",
+    "summary_source": "https://deepmind.google/blog/introducing-gemini-4-argon/"
+  },
+  "doi:10.2196/87129": {
+    "title_zh": "从半结构化访谈推断人格：不同语言模型方法的比较",
+    "summary": "研究用518名参与者的访谈转录文本与 BFI-10 自评量表，比较提示、参数高效微调、监督微调和向量回归。监督微调总体表现最好，尽责性和宜人性的预测更强；单靠提示的方法较弱且不稳定，开放性仍较难预测。结果说明人格推断依赖特质和训练方法，与自评一致并不等于获得客观人格真值。",
+    "summary_source": "https://www.jmir.org/2026/1/e87129"
   }
 }

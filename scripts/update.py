@@ -31,7 +31,7 @@ from summarize import enrich, source_text, apply_editorial_corrections, verified
 TZ = ZoneInfo('Asia/Shanghai')
 USER_AGENT = 'daily_news/1.0 (+https://github.com/wdqqdw/daily_news)'
 CROSSREF_SLOTS = threading.BoundedSemaphore(2)
-BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|concise guide to pharmacology|guideline|reply to|comment on|news and views)(\b|:)', re.I)
+BAD_TITLE = re.compile(r'(^|\b)(correction|corrigendum|erratum|retraction|retracted|editorial|commentary|perspective|review|survey|meta.analysis|bibliometric|technical report|system card|model card|study protocol|conceptual analysis|consensus (?:statement|update)|nomenclature for|concise guide to pharmacology|guidelines?|reply to|comment on|news and views)(\b|:)', re.I)
 # A foundation model can be a vision model (e.g. BrainIAC), not an LLM.
 LLM = re.compile(r'\b(large language model\w*|language model\w*|LLMs?|GPT[ -]?\d|ChatGPT)\b', re.I)
 HUMAN = re.compile(r'\b(human\w*|cogni\w*|behavio\w*|psycholog\w*|theory of mind|mentaliz\w*|mental states?|beliefs?|personality|social cognition|brain\w*|neural|neuronal|decision.making)\b', re.I)
@@ -522,6 +522,7 @@ def generate(today):
       'LLM brain alignment':lambda:crossref('language models human brain alignment',today,rows=180),
       'AI human decisions':lambda:crossref('machine learning human decision making behavior',today,rows=180),
       'AI personality prediction':lambda:crossref('artificial intelligence personality psychology prediction',today,rows=180),
+      'LLM personality inference':lambda:crossref('large language models text personality inference',today),
       'Neural models of cognition':lambda:crossref('deep learning human brain cognition',today,rows=180),
       'Cross-discipline annual citations':lambda:crossref('',today,days=365,rows=200,sort='is-referenced-by-count'),
       'Cross-discipline recent citations':lambda:crossref('',today,days=90,rows=150,sort='is-referenced-by-count'),

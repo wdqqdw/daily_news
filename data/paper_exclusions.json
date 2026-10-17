@@ -68,5 +68,23 @@
     ],
     "reason": "出版商将其列入 The Concise Guide to PHARMACOLOGY 专刊，摘要说明其为药物靶点分类、命名及既有药理学证据的汇编指南，不是新增原创实证研究。",
     "source": "https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bph.70234"
+  },
+  "10.1002/pip.70068": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "原文为既有太阳能电池和组件效率纪录的汇编，介绍收录标准并回顾新增纪录；不作为每日原创实证研究论文。",
+    "source": "https://publications.jrc.ec.europa.eu/repository/handle/JRC144305"
+  },
+  "10.3389/fncom.2026.1800284": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "出版商虽标为 Original Research，但原文明确回顾2020—2025年的既有研究，表格总结已发表工作；没有新增独立人类实验或原创数据分析，按内容作为综述性分析排除。",
+    "source": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2026.1800284/full"
   }
 }

@@ -30,5 +30,10 @@
     "published": "2025-11-08",
     "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2514428",
     "reason": "出版商标明首次在线发表于2025年11月8日；Crossref仅提供2026年1月8日卷期日期。"
+  },
+  "10.1056/nejmoa2503001": {
+    "published": "2025-09-06",
+    "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2503001",
+    "reason": "出版商标题与 History 标注首次在线发表于2025年9月6日（Notes 段落为9月7日）；两者均早于 Crossref 的2025年10月30日卷期日期，且超出当前热点筛选的一年窗口。"
   }
 }
