@@ -1219,6 +1219,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1247"
       ],
       "doi": "10.1093/nar/gkaf1247"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Personality Inference From Semistructured Interviews Using Large Language Models: Comparative Evaluation Study",
+      "url": "https://doi.org/10.2196/87129",
+      "keys": [
+        "doi:10.2196/87129",
+        "title:personalityinferencefromsemistructuredinterviewsusinglargelanguagemodelscomparativeevaluationstudy",
+        "title:从半结构化访谈推断人格不同语言模型方法的比较",
+        "url:https://doi.org/10.2196/87129"
+      ],
+      "doi": "10.2196/87129"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "The role of personality traits in predicting educational use of generative AI in higher education",
+      "url": "https://doi.org/10.1038/s41598-025-16339-0",
+      "keys": [
+        "doi:10.1038/s41598-025-16339-0",
+        "title:theroleofpersonalitytraitsinpredictingeducationaluseofgenerativeaiinhighereducation",
+        "title:用神经网络分析人格与大学生教育场景ai使用的关联",
+        "url:https://doi.org/10.1038/s41598-025-16339-0"
+      ],
+      "doi": "10.1038/s41598-025-16339-0"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Improved reconstruction of single-cell developmental potential with CytoTRACE 2",
+      "url": "https://doi.org/10.1038/s41592-025-02857-2",
+      "keys": [
+        "doi:10.1038/s41592-025-02857-2",
+        "title:cytotrace2从单细胞rna数据推断细胞发育潜能",
+        "title:improvedreconstructionofsinglecelldevelopmentalpotentialwithcytotrace2",
+        "url:https://doi.org/10.1038/s41592-025-02857-2"
+      ],
+      "doi": "10.1038/s41592-025-02857-2"
     }
   ],
   "news": [
@@ -2629,6 +2665,61 @@
         "url:https://anthropic.com/news/an-update-on-independent-evaluators"
       ],
       "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "keys": [
+        "title:howitaúisbuildinggenerativeaiforitsentirecustomerbase",
+        "title:巴西itaú银行以对话助手和治理平台扩大生成式ai应用",
+        "url:https://openai.com/index/itau-generative-ai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "keys": [
+        "title:stackoverflowforagentstriplessignupswithchatgptplugin",
+        "title:stackoverflow用codex开发代理产品并通过chatgpt插件扩大采用",
+        "url:https://openai.com/index/stack-overflow-chatgpt-plugin"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "keys": [
+        "title:nvidia扩展nemotron35多模态与本地代理模型",
+        "title:openfromdatacentertodesktopnvidiaexpandsnemotronfamilywithhighestefficiencysupervlandboltmodels",
+        "url:https://blogs.nvidia.com/blog/nemotron-3-5-super-vl"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
+      "keys": [
+        "title:dialupthecloudnvidiadlss45controlsarriveongeforcenow",
+        "title:geforcenow开放dlss45图像增强与帧生成控制",
+        "url:https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-17",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "keys": [
+        "title:gemini4argonbuilttosolveyourhardestproblems",
+        "title:google开放gemini4argon面向复杂推理与代理任务",
+        "url:https://deepmind.google/blog/introducing-gemini-4-argon"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }

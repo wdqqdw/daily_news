@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T09:50:13+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Personality Inference From Semistructured Interviews Using Large Language Models: Comparative Evaluation Study",
+      "doi": "10.2196/87129",
+      "url": "https://doi.org/10.2196/87129",
+      "journal": "Journal of Medical Internet Research",
+      "publisher": "JMIR Publications Inc.",
+      "published": "2026-10-16",
+      "authors": "Zhu et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.2196%2F87129",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-17；来源：Crossref；引用数 0，距发表 1 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用518名参与者的访谈转录文本与 BFI-10 自评量表，比较提示、参数高效微调、监督微调和向量回归。监督微调总体表现最好，尽责性和宜人性的预测更强；单靠提示的方法较弱且不稳定，开放性仍较难预测。结果说明人格推断依赖特质和训练方法，与自评一致并不等于获得客观人格真值。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.9834,
+      "title_zh": "从半结构化访谈推断人格：不同语言模型方法的比较",
+      "summary_source": "https://www.jmir.org/2026/1/e87129",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The role of personality traits in predicting educational use of generative AI in higher education",
+      "doi": "10.1038/s41598-025-16339-0",
+      "url": "https://doi.org/10.1038/s41598-025-16339-0",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-08-19",
+      "authors": "Arpaci et al.",
+      "citations": 22,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-16339-0",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-17；来源：Crossref；引用数 22，距发表 424 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用回归与人工神经网络分析土耳其1,016名有生成式 AI 使用经验的大学生问卷，考察人格、年龄与教育用途之间的关联。开放性在神经网络中最具预测力，尽责性、外向性等也与使用相关。样本来自便利抽样与自报数据，不能据此认定人格导致 AI 使用，或 AI 提升了学习效果。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 10.691,
+      "title_zh": "用神经网络分析人格与大学生教育场景 AI 使用的关联",
+      "summary_source": "https://www.nature.com/articles/s41598-025-16339-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Improved reconstruction of single-cell developmental potential with CytoTRACE 2",
+      "doi": "10.1038/s41592-025-02857-2",
+      "url": "https://doi.org/10.1038/s41592-025-02857-2",
+      "journal": "Nature Methods",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-10-27",
+      "authors": "Kang et al.",
+      "citations": 148,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41592-025-02857-2",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 148 次引用，约 12.51 次 / 月。",
+      "evidence": "检索时间：2026-10-17；来源：Crossref；引用数 148，距发表 355 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出可解释的深度学习方法 CytoTRACE 2，从单细胞 RNA 测序数据预测细胞的发育潜能与分化层级，并让不同数据集中的结果更易比较。研究基于人和小鼠细胞数据，在多种组织与测序平台的基准测试中优于既有方法。这些输出属于计算预测，不能替代对具体细胞分化能力的功能实验验证。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.8832,
+      "title_zh": "CytoTRACE 2：从单细胞 RNA 数据推断细胞发育潜能",
+      "summary_source": "https://www.nature.com/articles/s41592-025-02857-2",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-16",
+      "title": "How Itaú is building generative AI for its entire customer base",
+      "summary": "OpenAI 介绍 Itaú 银行的 ia.i 对话服务和 IARA 模型治理平台。ia.i 首阶段覆盖约30万客户，通过文字和语音整合账户、信用卡等服务；IARA 统一管理模型访问、成本及内部政策。银行计划在2026年底扩大至全体客户。案例中的效率改善与推广目标由银行提供，目标尚不等于已实现的覆盖。",
+      "url": "https://openai.com/index/itau-generative-ai",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "巴西 Itaú 银行以对话助手和治理平台扩大生成式 AI 应用",
+      "summary_source": "https://openai.com/index/itau-generative-ai",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-16",
+      "title": "Stack Overflow for Agents triples signups with ChatGPT plugin",
+      "summary": "OpenAI 发布 Stack Overflow 客户案例：两名工程师借助 Codex 在数周内构建面向代理的知识产品，并加速企业连接器开发。公司称，ChatGPT 插件上线后注册量增至三倍，代理创建量最高增至十倍。上述开发效率和增长数字来自客户报告，不能直接视为其他团队也会获得的效果。",
+      "url": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Stack Overflow 用 Codex 开发代理产品，并通过 ChatGPT 插件扩大采用",
+      "summary_source": "https://openai.com/index/stack-overflow-chatgpt-plugin",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Open From Data Center to Desktop: NVIDIA Expands Nemotron Family With Highest Efficiency Super VL and Bolt Models",
+      "summary": "NVIDIA 发布1200亿参数的 Nemotron 3.5 Super VL，面向视觉理解、工具调用和企业代理工作流；同时推出可装入24GB内存的 Bolt 74B-A9B 本地模型。4GB级 Bolt E4B 计划10月23日上线。官方同时开放权重、数据与训练资料，并公布性能比较；相关速度和精度结论需结合其测试条件理解。",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 扩展 Nemotron 3.5 多模态与本地代理模型",
+      "summary_source": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Dial Up the Cloud: NVIDIA DLSS 4.5 Controls Arrive on GeForce NOW",
+      "summary": "NVIDIA 为 GeForce NOW 增加 DLSS 4.5 设置，让用户调整超分辨率、动态多帧生成和光线重建，在画质与流畅度之间选择。使用 RTX 5080 云端设备的 Ultimate 会员可获得最高4倍动态多帧生成选项。功能适用于支持的游戏与客户端，具体可用项取决于会员等级和云端设备。",
+      "url": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "GeForce NOW 开放 DLSS 4.5 图像增强与帧生成控制",
+      "summary_source": "https://blogs.nvidia.com/blog/geforce-now-thursday-enshrouded-update/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-13",
+      "title": "Gemini 4 Argon: Built to solve your hardest problems",
+      "summary": "Google 宣布向开发者、企业及符合订阅条件的消费者开放 Gemini 4 Argon，覆盖 API、Antigravity、Gemini 应用和搜索 AI 模式。公司展示代码重构、量子化学软件优化及科研应用，并给出多个基准和内部工程案例。文中的性能排名与效率增幅来自发布方报告，具体效果取决于任务和使用方式。",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 开放 Gemini 4 Argon，面向复杂推理与代理任务",
+      "summary_source": "https://deepmind.google/blog/introducing-gemini-4-argon/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 125
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 111
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 19
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 41
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "candidate_count": 1882
+}
