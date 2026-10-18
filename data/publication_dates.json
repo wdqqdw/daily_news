@@ -35,5 +35,10 @@
     "published": "2025-09-06",
     "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2503001",
     "reason": "出版商标题与 History 标注首次在线发表于2025年9月6日（Notes 段落为9月7日）；两者均早于 Crossref 的2025年10月30日卷期日期，且超出当前热点筛选的一年窗口。"
+  },
+  "10.1056/nejmoa2601283": {
+    "published": "2026-05-25",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2601283",
+    "reason": "出版商标题、Notes 与 History 均标注首次在线发表于2026年5月25日；Crossref 使用2026年8月13日卷期日期。按首次发表时间计算新近程度和引用速度。"
   }
 }

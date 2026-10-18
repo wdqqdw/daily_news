@@ -754,5 +754,40 @@
     "title_zh": "从半结构化访谈推断人格：不同语言模型方法的比较",
     "summary": "研究用518名参与者的访谈转录文本与 BFI-10 自评量表，比较提示、参数高效微调、监督微调和向量回归。监督微调总体表现最好，尽责性和宜人性的预测更强；单靠提示的方法较弱且不稳定，开放性仍较难预测。结果说明人格推断依赖特质和训练方法，与自评一致并不等于获得客观人格真值。",
     "summary_source": "https://www.jmir.org/2026/1/e87129"
+  },
+  "doi:10.1038/s41598-026-62333-5": {
+    "title_zh": "用“访谈—评估—判断”流程从文本推断人格",
+    "summary": "研究让大语言模型检索相似文本、构建贴近语境的人物画像，再推断大五人格。评估覆盖真人作文、Facebook 用户文本和虚构人物对白；较长作文上的提升更明显，不同模型和数据集的收益并不一致。结果支持文本线索的作用，但不等于可靠的心理诊断，也不能将虚构人物测试等同于真人验证。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-62333-5"
+  },
+  "doi:10.1177/25152459251377093": {
+    "title_zh": "仅凭题目文本，语言模型能否预测心理量表之间的关系？",
+    "summary": "研究将句子编码模型微调为 SurveyBot3000，用题目文本预测问卷题目之间的相关性、量表信度和量表间关系。新题目的真人问卷验证中，校正抽样误差后的题目相关性预测与实测值相关为0.59，量表层面更强。主分析采用调整后的样本排除标准，结果也经稳健性检查；合成估计仍不能替代真实测量。",
+    "summary_source": "https://journals.sagepub.com/doi/10.1177/25152459251377093"
+  },
+  "doi:10.1093/nar/gkaf1209": {
+    "title_zh": "JASPAR 2026：扩展转录因子结合图谱并整合深度学习模型",
+    "summary": "这项数据库研究更新转录因子 DNA 结合图谱和八个物种的基因组预测轨道，并新增基于人类实验数据训练的1,259个 BPNet 模型，覆盖240个转录因子。模型解释得到的序列模式与传统图谱共同帮助研究基因调控。数据库同时区分有独立证据支持和待验证的条目，计算预测不等于所有结合关系已获实验确认。",
+    "summary_source": "https://academic.oup.com/nar/article/54/D1/D184/8343514"
+  },
+  "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration": {
+    "title_zh": "RTX Spark 笔记本开始上市，NVIDIA 举行六城体验活动",
+    "summary": "NVIDIA 宣布多家厂商的 RTX Spark Windows 笔记本已上市，主打本地 AI、内容创作和游戏，并回顾柏林、北京、首尔等六座城市的零售体验活动。文章同时提供经过 NVIDIA 测试的本地 AI 部署资源。具体机型、配置与供货情况依厂商和地区而异；活动展示不构成独立性能评测。",
+    "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/"
+  },
+  "url:https://openai.com/index/benefit-street-partners": {
+    "title_zh": "Benefit Street Partners 用 Codex 构建贷款估值与协议分析工具",
+    "summary": "OpenAI 介绍投资机构 Benefit Street Partners 的应用案例：团队借助 Codex 开发工具、审查代码，比较公开文件中的贷款估值，并分析长篇信贷协议。客户称协议初步分析约需20分钟，之后仍由人员复核一小时以上；效率数字来自客户经验，最终投资决策由人负责。",
+    "summary_source": "https://openai.com/index/benefit-street-partners"
+  },
+  "url:https://blogs.nvidia.com/blog/ec-scientific-computing-pledge": {
+    "title_zh": "NVIDIA 扩展面向欧洲科研的开放课程与算力合作",
+    "summary": "NVIDIA 参与欧盟 AI in Science Enablers Initiative，公布开放模型、数据、软件和可下载教学材料，并与法国、西班牙、瑞典等地的 AI 工厂合作，为初创企业和科研团队扩大算力及技术支持入口。文章区分现有试点、正在推广的计划与后续合作；具体访问资格和资源以各项目安排为准。",
+    "summary_source": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/"
+  },
+  "url:https://openai.com/index/teaching-students-to-think-and-learn-through-questions": {
+    "title_zh": "OpenAI 推出巴西葡萄牙语教师 AI 课程",
+    "summary": "OpenAI 在巴西教师节推出葡萄牙语版 AI for Educators 免费课程，介绍备课、活动设计、评估和沟通中的 AI 用法，并展示 Study Mode 如何通过提问、提示和理解检查引导学生逐步学习。文章提供课堂实践示例，强调教师判断；这些用例本身不是学习效果已获实验证实的证据。",
+    "summary_source": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
   }
 }

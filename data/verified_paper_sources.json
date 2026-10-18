@@ -99,5 +99,21 @@
     "checked_on": "2026-10-17",
     "discover": true,
     "notes": "The authors use linear regression and artificial neural networks to examine associations between Big Five personality traits and educational use of generative AI. They analyze online questionnaires from 1,016 human participants, university students in Türkiye who reported prior educational use of these tools. Neural networks model nonlinear associations and identify openness as the strongest predictor. Openness, conscientiousness and extraversion are positively associated with use, while neuroticism is negatively associated. The cross-sectional convenience sample and self-reports do not establish causal effects or improved learning. Scientific Reports identifies the study as a research Article, first published on 19 August 2025."
+  },
+  "10.1038/s41598-026-62333-5": {
+    "doi": "10.1038/s41598-026-62333-5",
+    "title": "An interviewer–evaluator–judger LLM framework for text-based personality inference",
+    "source": "https://www.nature.com/articles/s41598-026-62333-5",
+    "checked_on": "2026-10-17",
+    "discover": true,
+    "notes": "The study predicts human personality traits from text using large language models in an interviewer, evaluator and judger pipeline. It evaluates existing text and personality data from human participants: Essays contains 2,467 essays and myPersonality contains Facebook messages written by 251 users, with Big Five labels. The separate Big-Five Backstage benchmark contains fictional characters, not real people. Reference texts are retrieved to construct context-specific personas for evaluation. Performance generally improves over baseline and fixed-persona methods, particularly for longer essays; gains vary across datasets and models. These results do not establish reliable psychological diagnosis or general social intelligence. Scientific Reports identifies this as a peer-reviewed accepted research Article, published on 23 July 2026."
+  },
+  "10.1177/25152459251377093": {
+    "doi": "10.1177/25152459251377093",
+    "title": "Language Models Accurately Infer Correlations Between Psychological Items and Scales From Text Alone",
+    "source": "https://journals.sagepub.com/doi/10.1177/25152459251377093",
+    "checked_on": "2026-10-18",
+    "discover": true,
+    "notes": "The authors fine-tune a sentence-transformer language model, SurveyBot3000, to predict associations between psychological questionnaire items, scale reliabilities and scale correlations from item text. They evaluate predictions against data from real human participants in a completed preregistered validation study using previously unseen items. Of 470 recruited participants, the main analysis retains 387 under revised exclusion criteria; robustness checks compare alternative criteria. Item-correlation predictions correlate 0.59 with empirical estimates after accounting for sampling error. Scale-level results are stronger but vary across domains. Synthetic estimates cannot replace empirical validation. The publisher labels this as a research article, first published online on 17 December 2025."
   }
 }
