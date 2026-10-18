@@ -1255,6 +1255,42 @@
         "url:https://doi.org/10.1038/s41592-025-02857-2"
       ],
       "doi": "10.1038/s41592-025-02857-2"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "An interviewer–evaluator–judger LLM framework for text-based personality inference",
+      "url": "https://doi.org/10.1038/s41598-026-62333-5",
+      "keys": [
+        "doi:10.1038/s41598-026-62333-5",
+        "title:aninterviewerevaluatorjudgerllmframeworkfortextbasedpersonalityinference",
+        "title:用访谈评估判断流程从文本推断人格",
+        "url:https://doi.org/10.1038/s41598-026-62333-5"
+      ],
+      "doi": "10.1038/s41598-026-62333-5"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "Language Models Accurately Infer Correlations Between Psychological Items and Scales From Text Alone",
+      "url": "https://doi.org/10.1177/25152459251377093",
+      "keys": [
+        "doi:10.1177/25152459251377093",
+        "title:languagemodelsaccuratelyinfercorrelationsbetweenpsychologicalitemsandscalesfromtextalone",
+        "title:仅凭题目文本语言模型能否预测心理量表之间的关系",
+        "url:https://doi.org/10.1177/25152459251377093"
+      ],
+      "doi": "10.1177/25152459251377093"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "JASPAR 2026: expansion of transcription factor binding profiles and integration of deep learning models",
+      "url": "https://doi.org/10.1093/nar/gkaf1209",
+      "keys": [
+        "doi:10.1093/nar/gkaf1209",
+        "title:jaspar2026expansionoftranscriptionfactorbindingprofilesandintegrationofdeeplearningmodels",
+        "title:jaspar2026扩展转录因子结合图谱并整合深度学习模型",
+        "url:https://doi.org/10.1093/nar/gkaf1209"
+      ],
+      "doi": "10.1093/nar/gkaf1209"
     }
   ],
   "news": [
@@ -2720,6 +2756,50 @@
         "url:https://deepmind.google/blog/introducing-gemini-4-argon"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "RTX Spark Ignites Global Celebration as New Windows PCs Arrive",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration/",
+      "keys": [
+        "title:rtxsparkignitesglobalcelebrationasnewwindowspcsarrive",
+        "title:rtxspark笔记本开始上市nvidia举行六城体验活动",
+        "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-windows-laptops-celebration"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "Benefit Street Partners answers questions faster with Codex",
+      "url": "https://openai.com/index/benefit-street-partners",
+      "keys": [
+        "title:benefitstreetpartnersanswersquestionsfasterwithcodex",
+        "title:benefitstreetpartners用codex构建贷款估值与协议分析工具",
+        "url:https://openai.com/index/benefit-street-partners"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "Teaching students to think and learn through questions",
+      "url": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions",
+      "keys": [
+        "title:openai推出巴西葡萄牙语教师ai课程",
+        "title:teachingstudentstothinkandlearnthroughquestions",
+        "url:https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-18",
+      "title": "NVIDIA Expands Advanced Technology Access for Europe’s Scientific Community Through Open Learning Resources, Collaborations and Compute",
+      "url": "https://blogs.nvidia.com/blog/ec-scientific-computing-pledge/",
+      "keys": [
+        "title:nvidiaexpandsadvancedtechnologyaccessforeuropesscientificcommunitythroughopenlearningresourcescollaborationsandcompute",
+        "title:nvidia扩展面向欧洲科研的开放课程与算力合作",
+        "url:https://blogs.nvidia.com/blog/ec-scientific-computing-pledge"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
