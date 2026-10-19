@@ -115,5 +115,21 @@
     "checked_on": "2026-10-18",
     "discover": true,
     "notes": "The authors fine-tune a sentence-transformer language model, SurveyBot3000, to predict associations between psychological questionnaire items, scale reliabilities and scale correlations from item text. They evaluate predictions against data from real human participants in a completed preregistered validation study using previously unseen items. Of 470 recruited participants, the main analysis retains 387 under revised exclusion criteria; robustness checks compare alternative criteria. Item-correlation predictions correlate 0.59 with empirical estimates after accounting for sampling error. Scale-level results are stronger but vary across domains. Synthetic estimates cannot replace empirical validation. The publisher labels this as a research article, first published online on 17 December 2025."
+  },
+  "10.1038/s41598-026-66277-8": {
+    "doi": "10.1038/s41598-026-66277-8",
+    "title": "Persona-prompted LLM agents achieve modest but genuine prediction of human social media reactions",
+    "source": "https://www.nature.com/articles/s41598-026-66277-8",
+    "checked_on": "2026-10-19",
+    "discover": true,
+    "notes": "The authors compare persona-prompted large language models with self-reported hypothetical reactions recorded from 1,511 human participants in Serbia. Across 27 models, the experiments test predictions of social media responses. A second, binary like/dislike task reports a chance-corrected Matthews correlation coefficient of 0.29 for LLM agents, versus 0.36 for a traditional supervised text classifier. These results support modest prediction of human behaviour, not faithful simulation of individuals. The single-country sample and isolated-post task limit generalization to live social platforms. The publisher identifies this as a research Article first published on 3 September 2026."
+  },
+  "10.3389/frsps.2025.1460277": {
+    "doi": "10.3389/frsps.2025.1460277",
+    "title": "Validating the use of large language models for psychological text classification",
+    "source": "https://www.frontiersin.org/journals/social-psychology/articles/10.3389/frsps.2025.1460277/full",
+    "checked_on": "2026-10-19",
+    "discover": true,
+    "notes": "The researchers use GPT-4o to classify psychological phenomena in naturally occurring human text: reported speech in online diaries, other-initiated repair in Reddit conversations and harm described in NHS healthcare complaints. Model predictions are compared with human judgments in 1,500 manually labelled texts per task. One third of each dataset supports prompt development and exploratory validation; the remaining two thirds are held out for confirmatory validation. The paper demonstrates a validity-based workflow for these specific coding tasks, requiring researcher oversight rather than establishing general understanding of people. The publisher labels the work Original Research, published on 21 February 2025."
   }
 }

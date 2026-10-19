@@ -40,6 +40,7 @@ COGNITION = re.compile(r'\b(cogni\w*|memory|thinking|emotion structures?|continu
 # humans in the title, an AI method and an actual human comparison in the source.
 LANGUAGE_COGNITION = re.compile(r'\b(?:sentence (?:representations?|processing|comprehension)|compositional language structure)\b', re.I)
 HUMAN_JUDGEMENT = re.compile(r'\bhuman (?:(?:perceptual|emotional|social|moral)[,\s]+(?:and\s+)?)*judg(?:e)?ments?\b', re.I)
+HUMAN_SOCIAL_REACTION = re.compile(r'\bhuman (?:social media|online) reactions?\b', re.I)
 MODELLING = re.compile(r'\b(predict\w*|simulat\w*|model\w*|understand\w*|theory of mind|mentaliz\w*|represent\w*|align\w*|cogni\w*|reason\w*|beliefs?)\b', re.I)
 AI = re.compile(r'\b(artificial intelligence|machine learning|deep learning|neural network\w*|transformer\w*|AI|computational model\w*)\b', re.I)
 PERSON_TARGET = re.compile(r'\b(human(?:.like)? (?:(?:object )?concepts?|visual representations?|cogni\w*|behavio\w*|reason\w*|brain\w*|language|choices?|(?:economic )?preferences?|decisions?|emotions?|empathy)|cogni\w*|psycholog\w*|theory of mind|mental states?|beliefs?|personality|neuronal|neural (?:datasets?|responses?|activity)|brain.guided|social behavio\w*|social science experiments?|(?:social|everyday) norms?)\b', re.I)
@@ -296,7 +297,13 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title)) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title)) and MODELLING.search(text) and LLM.search(text))
+        # Predicting people's online reactions models human behaviour. Require
+        # observed people in the source, not only a simulated-agent population.
+        reaction_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1200])
+        reaction_sample = (OBSERVED_HUMANS.search(reaction_source)
+                           or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',reaction_source,re.I))
+        human_reactions = HUMAN_SOCIAL_REACTION.search(title) and reaction_sample and human_research_source(reaction_source)
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
@@ -523,6 +530,7 @@ def generate(today):
       'AI human decisions':lambda:crossref('machine learning human decision making behavior',today,rows=180),
       'AI personality prediction':lambda:crossref('artificial intelligence personality psychology prediction',today,rows=180),
       'LLM personality inference':lambda:crossref('large language models text personality inference',today),
+      'LLM social reaction prediction':lambda:crossref('large language models predict human social media reactions',today),
       'Neural models of cognition':lambda:crossref('deep learning human brain cognition',today,rows=180),
       'Cross-discipline annual citations':lambda:crossref('',today,days=365,rows=200,sort='is-referenced-by-count'),
       'Cross-discipline recent citations':lambda:crossref('',today,days=90,rows=150,sort='is-referenced-by-count'),

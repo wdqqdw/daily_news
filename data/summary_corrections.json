@@ -789,5 +789,45 @@
     "title_zh": "OpenAI 推出巴西葡萄牙语教师 AI 课程",
     "summary": "OpenAI 在巴西教师节推出葡萄牙语版 AI for Educators 免费课程，介绍备课、活动设计、评估和沟通中的 AI 用法，并展示 Study Mode 如何通过提问、提示和理解检查引导学生逐步学习。文章提供课堂实践示例，强调教师判断；这些用例本身不是学习效果已获实验证实的证据。",
     "summary_source": "https://openai.com/index/teaching-students-to-think-and-learn-through-questions"
+  },
+  "doi:10.1038/s41598-026-66277-8": {
+    "title_zh": "带人物设定的 LLM 能预测人的社交媒体反应吗？",
+    "summary": "研究用1,511名塞尔维亚参与者自报的假想反应，检验27个语言模型对社交媒体内容反应的预测。在二选一测试中，LLM 的马修斯相关系数（MCC）为0.29，高于随机水平，但低于传统监督文本分类器的0.36。结果支持有限的预测能力，不能证明模型能准确模拟个人行为；单一国家、孤立帖子的实验情境也不同于真实平台互动。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-66277-8"
+  },
+  "doi:10.3389/frsps.2025.1460277": {
+    "title_zh": "如何验证大语言模型对心理学文本的分类是否可靠",
+    "summary": "研究用 GPT-4o 识别在线日记中的转述、Reddit 对话中的沟通修复，以及英国 NHS 医疗投诉中描述的伤害。每项任务使用1,500条人工标注文本，其中三分之一用于开发提示与初步验证，其余用于确认性检验。论文展示了围绕效度开展模型评估的方法，强调分类结果需要研究者核查，不能把特定任务的表现等同于全面理解人的心理。",
+    "summary_source": "https://www.frontiersin.org/journals/social-psychology/articles/10.3389/frsps.2025.1460277/full"
+  },
+  "doi:10.1038/s41586-025-09922-y": {
+    "title_zh": "AI 工具与科学家的影响力提升、研究主题收窄同时相关",
+    "summary": "研究分析4,130万篇自然科学论文，用语言模型识别采用 AI 的研究，发现这类研究者通常发表更多论文、获得更多引用，也更早成为项目负责人。与此同时，AI 相关研究整体更集中于数据丰富的领域，研究主题范围和后续学术互动减少。这揭示了个人发展与科学整体多样性之间的张力；观察性关联不能直接证明采用 AI 会带来这些变化。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09922-y"
+  },
+  "url:https://anthropic.com/news/public-benefit-fund": {
+    "title_zh": "Anthropic 计划向公共利益基金配置公司股权",
+    "summary": "Anthropic 宣布设立公共利益基金，拟在股东批准后投入5%的公司股份；公司估值相对基准每增长50%，董事会可决定再增加2%。基金将以全资有限责任公司形式运作，探索公益捐赠等用途，并应对 AI 带来的就业影响。具体治理安排和估值里程碑仍待后续披露。",
+    "summary_source": "https://www.anthropic.com/news/public-benefit-fund"
+  },
+  "url:https://openai.com/index/sullivan-cromwell": {
+    "title_zh": "Sullivan & Cromwell 与 OpenAI 合作开发协议审阅工具",
+    "summary": "Sullivan & Cromwell 与 OpenAI 合作开发 Agreement Analyzer，将律所先例、谈判指引和 ChatGPT Enterprise 接入协议审阅流程。工具从多个角度检查条款，生成问题说明和修订建议，并展示依据与尚未确认的问题，供律师核查、修改或拒绝。案例强调专业人员对输出的审阅责任。",
+    "summary_source": "https://openai.com/index/sullivan-cromwell"
+  },
+  "url:https://blogs.nvidia.com/blog/nordics-technology-ecosystem": {
+    "title_zh": "NVIDIA 介绍北欧 AI 基础设施与行业应用进展",
+    "summary": "NVIDIA 介绍北欧在算力与开放模型方面的合作：瑞典企业联合体推出配备1,152块 GPU 的 Sferical One 共享超算；Lovable 使用 Dynamo 和 Nemotron 优化模型与推理；Elisa 正推出基于 Nemotron 的实时企业助手测试版。相关进展也涉及机器人仿真、专利分析和本地语言工具。",
+    "summary_source": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/"
+  },
+  "url:https://openai.com/index/sentinelone": {
+    "title_zh": "SentinelOne 使用 OpenAI Daybreak 加速恶意软件分析",
+    "summary": "据 OpenAI 发布的客户案例，SentinelOne 使用 Daybreak 辅助恶意软件逆向分析，其负责人称部分原需四至六周的工作可在约八小时内产出相应结果。团队希望借此分析更多样本、发现威胁之间的联系。该效率数据来自客户陈述；研究人员仍对结果负责，重要架构变更需要人工审查。",
+    "summary_source": "https://openai.com/index/sentinelone"
+  },
+  "url:https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing": {
+    "title_zh": "NVIDIA 宣布对法国四家 AI 初创公司的投资计划",
+    "summary": "NVIDIA 宣布计划投资 Doctolib、Entalpic、Genesis AI 和 Pigment，分别涉及医疗服务、材料发现、机器人与企业规划。公告同时介绍法国的 AI 服务器、在轨边缘计算和开放模型部署进展。四项投资仍以计划形式公布，文章未披露各项金额或完成时间。",
+    "summary_source": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/"
   }
 }

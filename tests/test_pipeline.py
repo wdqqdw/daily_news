@@ -29,6 +29,19 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_social_reaction_prediction_requires_llms_and_observed_people(self):
+        p=paper('10.1/reactions',
+                'Persona-prompted LLM agents predict human social media reactions',
+                abstract='We compare predictions from large language models with reactions collected from 1,511 participants.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='LLM agents predict bot social media reactions'),1))
+        self.assertFalse(relevant(dict(p,title='Neural agents predict human social media reactions',abstract='We compare neural network predictions with 1,511 participants.'),1))
+        for abstract in ('Large language models might predict human reactions in future studies.',
+                         'Large language models simulate human participants to generate reactions.',
+                         'We build a simulated society of AI agents and collect participant reactions.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
     def test_human_judgements_require_observed_data_ai_and_influence(self):
         p=paper('10.1/judgements','How human–AI feedback loops alter human perceptual, emotional and social judgements',
                 abstract='Experiments with 1,401 participants compare human judgements after interacting with artificial intelligence.',citations=272)
