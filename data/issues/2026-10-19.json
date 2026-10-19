@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-19",
+  "generated_at": "2026-10-19T09:42:51+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Persona-prompted LLM agents achieve modest but genuine prediction of human social media reactions",
+      "doi": "10.1038/s41598-026-66277-8",
+      "url": "https://doi.org/10.1038/s41598-026-66277-8",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-09-03",
+      "authors": "Bojić et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-026-66277-8",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-19；来源：Crossref；引用数 0，距发表 46 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用1,511名塞尔维亚参与者自报的假想反应，检验27个语言模型对社交媒体内容反应的预测。在二选一测试中，LLM 的马修斯相关系数（MCC）为0.29，高于随机水平，但低于传统监督文本分类器的0.36。结果支持有限的预测能力，不能证明模型能准确模拟个人行为；单一国家、孤立帖子的实验情境也不同于真实平台互动。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.3235,
+      "title_zh": "带人物设定的 LLM 能预测人的社交媒体反应吗？",
+      "summary_source": "https://www.nature.com/articles/s41598-026-66277-8",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Validating the use of large language models for psychological text classification",
+      "doi": "10.3389/frsps.2025.1460277",
+      "url": "https://doi.org/10.3389/frsps.2025.1460277",
+      "journal": "Frontiers in Social Psychology",
+      "publisher": "Frontiers Media SA",
+      "published": "2025-02-21",
+      "authors": "Bunt et al.",
+      "citations": 18,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.3389%2Ffrsps.2025.1460277",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-19；来源：Crossref；引用数 18，距发表 605 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用 GPT-4o 识别在线日记中的转述、Reddit 对话中的沟通修复，以及英国 NHS 医疗投诉中描述的伤害。每项任务使用1,500条人工标注文本，其中三分之一用于开发提示与初步验证，其余用于确认性检验。论文展示了围绕效度开展模型评估的方法，强调分类结果需要研究者核查，不能把特定任务的表现等同于全面理解人的心理。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.9374,
+      "title_zh": "如何验证大语言模型对心理学文本的分类是否可靠",
+      "summary_source": "https://www.frontiersin.org/journals/social-psychology/articles/10.3389/frsps.2025.1460277/full",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Artificial intelligence tools expand scientists’ impact but contract science’s focus",
+      "doi": "10.1038/s41586-025-09922-y",
+      "url": "https://doi.org/10.1038/s41586-025-09922-y",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-14",
+      "authors": "Hao et al.",
+      "citations": 120,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09922-y",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 120 次引用，约 12.95 次 / 月。",
+      "evidence": "检索时间：2026-10-19；来源：Crossref；引用数 120，距发表 278 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析4,130万篇自然科学论文，用语言模型识别采用 AI 的研究，发现这类研究者通常发表更多论文、获得更多引用，也更早成为项目负责人。与此同时，AI 相关研究整体更集中于数据丰富的领域，研究主题范围和后续学术互动减少。这揭示了个人发展与科学整体多样性之间的张力；观察性关联不能直接证明采用 AI 会带来这些变化。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.8089,
+      "title_zh": "AI 工具与科学家的影响力提升、研究主题收窄同时相关",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09922-y",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Anthropic",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-18",
+      "title": "Investing in the public benefit",
+      "summary": "Anthropic 宣布设立公共利益基金，拟在股东批准后投入5%的公司股份；公司估值相对基准每增长50%，董事会可决定再增加2%。基金将以全资有限责任公司形式运作，探索公益捐赠等用途，并应对 AI 带来的就业影响。具体治理安排和估值里程碑仍待后续披露。",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "source_page": "https://www.anthropic.com/news",
+      "title_zh": "Anthropic 计划向公共利益基金配置公司股权",
+      "summary_source": "https://www.anthropic.com/news/public-benefit-fund",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "summary": "Sullivan & Cromwell 与 OpenAI 合作开发 Agreement Analyzer，将律所先例、谈判指引和 ChatGPT Enterprise 接入协议审阅流程。工具从多个角度检查条款，生成问题说明和修订建议，并展示依据与尚未确认的问题，供律师核查、修改或拒绝。案例强调专业人员对输出的审阅责任。",
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Sullivan & Cromwell 与 OpenAI 合作开发协议审阅工具",
+      "summary_source": "https://openai.com/index/sullivan-cromwell",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-15",
+      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
+      "summary": "NVIDIA 介绍北欧在算力与开放模型方面的合作：瑞典企业联合体推出配备1,152块 GPU 的 Sferical One 共享超算；Lovable 使用 Dynamo 和 Nemotron 优化模型与推理；Elisa 正推出基于 Nemotron 的实时企业助手测试版。相关进展也涉及机器人仿真、专利分析和本地语言工具。",
+      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 介绍北欧 AI 基础设施与行业应用进展",
+      "summary_source": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-13",
+      "title": "NVIDIA Announces New Investments in France’s Startups",
+      "summary": "NVIDIA 宣布计划投资 Doctolib、Entalpic、Genesis AI 和 Pigment，分别涉及医疗服务、材料发现、机器人与企业规划。公告同时介绍法国的 AI 服务器、在轨边缘计算和开放模型部署进展。四项投资仍以计划形式公布，文章未披露各项金额或完成时间。",
+      "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 宣布对法国四家 AI 初创公司的投资计划",
+      "summary_source": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 109
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 99
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 42
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 12
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 141
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1919
+}

@@ -1291,6 +1291,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1209"
       ],
       "doi": "10.1093/nar/gkaf1209"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "Persona-prompted LLM agents achieve modest but genuine prediction of human social media reactions",
+      "url": "https://doi.org/10.1038/s41598-026-66277-8",
+      "keys": [
+        "doi:10.1038/s41598-026-66277-8",
+        "title:personapromptedllmagentsachievemodestbutgenuinepredictionofhumansocialmediareactions",
+        "title:带人物设定的llm能预测人的社交媒体反应吗",
+        "url:https://doi.org/10.1038/s41598-026-66277-8"
+      ],
+      "doi": "10.1038/s41598-026-66277-8"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "Validating the use of large language models for psychological text classification",
+      "url": "https://doi.org/10.3389/frsps.2025.1460277",
+      "keys": [
+        "doi:10.3389/frsps.2025.1460277",
+        "title:validatingtheuseoflargelanguagemodelsforpsychologicaltextclassification",
+        "title:如何验证大语言模型对心理学文本的分类是否可靠",
+        "url:https://doi.org/10.3389/frsps.2025.1460277"
+      ],
+      "doi": "10.3389/frsps.2025.1460277"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "Artificial intelligence tools expand scientists’ impact but contract science’s focus",
+      "url": "https://doi.org/10.1038/s41586-025-09922-y",
+      "keys": [
+        "doi:10.1038/s41586-025-09922-y",
+        "title:ai工具与科学家的影响力提升研究主题收窄同时相关",
+        "title:artificialintelligencetoolsexpandscientistsimpactbutcontractsciencesfocus",
+        "url:https://doi.org/10.1038/s41586-025-09922-y"
+      ],
+      "doi": "10.1038/s41586-025-09922-y"
     }
   ],
   "news": [
@@ -2798,6 +2834,50 @@
         "title:nvidiaexpandsadvancedtechnologyaccessforeuropesscientificcommunitythroughopenlearningresourcescollaborationsandcompute",
         "title:nvidia扩展面向欧洲科研的开放课程与算力合作",
         "url:https://blogs.nvidia.com/blog/ec-scientific-computing-pledge"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "Investing in the public benefit",
+      "url": "https://www.anthropic.com/news/public-benefit-fund",
+      "keys": [
+        "title:anthropic计划向公共利益基金配置公司股权",
+        "title:investinginthepublicbenefit",
+        "url:https://anthropic.com/news/public-benefit-fund"
+      ],
+      "company": "Anthropic"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "Sullivan & Cromwell brings legal expertise into agreement review",
+      "url": "https://openai.com/index/sullivan-cromwell",
+      "keys": [
+        "title:sullivancromwellbringslegalexpertiseintoagreementreview",
+        "title:sullivancromwell与openai合作开发协议审阅工具",
+        "url:https://openai.com/index/sullivan-cromwell"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "The Nordics and NVIDIA Show What’s Possible When a Region Commits to Advanced Computing",
+      "url": "https://blogs.nvidia.com/blog/nordics-technology-ecosystem/",
+      "keys": [
+        "title:nvidia介绍北欧ai基础设施与行业应用进展",
+        "title:thenordicsandnvidiashowwhatspossiblewhenaregioncommitstoadvancedcomputing",
+        "url:https://blogs.nvidia.com/blog/nordics-technology-ecosystem"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-19",
+      "title": "NVIDIA Announces New Investments in France’s Startups",
+      "url": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/",
+      "keys": [
+        "title:nvidiaannouncesnewinvestmentsinfrancesstartups",
+        "title:nvidia宣布对法国四家ai初创公司的投资计划",
+        "url:https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing"
       ],
       "company": "NVIDIA"
     }
