@@ -1327,6 +1327,42 @@
         "url:https://doi.org/10.1038/s41586-025-09922-y"
       ],
       "doi": "10.1038/s41586-025-09922-y"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "Decomposing deep neural network-brain representational similarity reveals distinct sources across the human visual hierarchy",
+      "url": "https://doi.org/10.1038/s41598-026-73438-2",
+      "keys": [
+        "doi:10.1038/s41598-026-73438-2",
+        "title:decomposingdeepneuralnetworkbrainrepresentationalsimilarityrevealsdistinctsourcesacrossthehumanvisualhierarchy",
+        "title:语言模型与人脑的表征相似究竟来自哪些因素",
+        "url:https://doi.org/10.1038/s41598-026-73438-2"
+      ],
+      "doi": "10.1038/s41598-026-73438-2"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "Dimensions underlying the representational alignment of deep neural networks with humans",
+      "url": "https://doi.org/10.1038/s42256-025-01041-7",
+      "keys": [
+        "doi:10.1038/s42256-025-01041-7",
+        "title:dimensionsunderlyingtherepresentationalalignmentofdeepneuralnetworkswithhumans",
+        "title:神经网络与人看似相近的物体表征究竟在哪些维度不同",
+        "url:https://doi.org/10.1038/s42256-025-01041-7"
+      ],
+      "doi": "10.1038/s42256-025-01041-7"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "GTDB release 10: a complete and systematic taxonomy for 715 230 bacterial and 17 245 archaeal genomes",
+      "url": "https://doi.org/10.1093/nar/gkaf1040",
+      "keys": [
+        "doi:10.1093/nar/gkaf1040",
+        "title:gtdbrelease10acompleteandsystematictaxonomyfor715230bacterialand17245archaealgenomes",
+        "title:gtdb第10版为逾73万个细菌和古菌基因组建立统一分类",
+        "url:https://doi.org/10.1093/nar/gkaf1040"
+      ],
+      "doi": "10.1093/nar/gkaf1040"
     }
   ],
   "news": [
@@ -2878,6 +2914,50 @@
         "title:nvidiaannouncesnewinvestmentsinfrancesstartups",
         "title:nvidia宣布对法国四家ai初创公司的投资计划",
         "url:https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "Qwen Code · Release v0.25.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3",
+      "keys": [
+        "title:qwencodereleasev0253",
+        "title:qwencodev0253改进托管会话工作区与执行记录",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "Advancing coding in low‑resource programming languages",
+      "url": "https://openai.com/index/low-resource-programming-languages",
+      "keys": [
+        "title:advancingcodinginlowresourceprogramminglanguages",
+        "title:openai公布低资源编程语言与cobol迁移评估",
+        "url:https://openai.com/index/low-resource-programming-languages"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "Germany Wants to Lead the World in Industrial AI: How NVIDIA Will Help",
+      "url": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/",
+      "keys": [
+        "title:germanywantstoleadtheworldinindustrialaihownvidiawillhelp",
+        "title:德国政府与nvidia签署工业ai合作意向声明",
+        "url:https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-20",
+      "title": "NVIDIA Advances Agentic Security for Media, From European Public Service Broadcasting to Global Content Production",
+      "url": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/",
+      "keys": [
+        "title:nvidiaadvancesagenticsecurityformediafromeuropeanpublicservicebroadcastingtoglobalcontentproduction",
+        "title:nvidia与欧洲广播联盟扩展媒体ai标准协助adobe加速视频检索",
+        "url:https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production"
       ],
       "company": "NVIDIA"
     }
