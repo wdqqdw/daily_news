@@ -319,7 +319,12 @@ def relevant(p, slot):
         judgement_sample = (OBSERVED_HUMANS.search(judgement_source)
                             or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',judgement_source,re.I))
         human_judgement = HUMAN_JUDGEMENT.search(title) and judgement_sample and human_research_source(judgement_source)
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        # Representation comparisons can study human cognition without naming
+        # cognition in the title. Require observed humans and cognitive content.
+        human_alignment = (re.search(r'\brepresentational alignment\b',title,re.I)
+                           and OBSERVED_HUMANS.search(text) and human_research_source(text)
+                           and re.search(r'\b(?:visual|semantic|cognitive) (?:representations?|dimensions?)\b',text,re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
@@ -531,6 +536,7 @@ def generate(today):
       'AI personality prediction':lambda:crossref('artificial intelligence personality psychology prediction',today,rows=180),
       'LLM personality inference':lambda:crossref('large language models text personality inference',today),
       'LLM social reaction prediction':lambda:crossref('large language models predict human social media reactions',today),
+      'Human representational alignment':lambda:crossref('representational alignment deep neural networks humans',today),
       'Neural models of cognition':lambda:crossref('deep learning human brain cognition',today,rows=180),
       'Cross-discipline annual citations':lambda:crossref('',today,days=365,rows=200,sort='is-referenced-by-count'),
       'Cross-discipline recent citations':lambda:crossref('',today,days=90,rows=150,sort='is-referenced-by-count'),

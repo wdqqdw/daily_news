@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_representational_alignment_requires_human_cognition_and_influence(self):
+        p=paper('10.1/alignment',
+                'Dimensions underlying the representational alignment of deep neural networks with humans',
+                abstract='We compare deep neural networks with human participants and their visual representations to model human cognition.',citations=5)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Dimensions underlying the representational alignment of deep neural networks with robots'),2))
+        for abstract in ('Deep neural networks learn visual representations that could inform human cognition.',
+                         'Deep neural networks compare human participants using genetic variants in DNA.',
+                         'Deep neural networks simulate human participants to study visual representations and human cognition.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_social_reaction_prediction_requires_llms_and_observed_people(self):
         p=paper('10.1/reactions',
                 'Persona-prompted LLM agents predict human social media reactions',

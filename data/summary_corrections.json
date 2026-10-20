@@ -829,5 +829,40 @@
     "title_zh": "NVIDIA 宣布对法国四家 AI 初创公司的投资计划",
     "summary": "NVIDIA 宣布计划投资 Doctolib、Entalpic、Genesis AI 和 Pigment，分别涉及医疗服务、材料发现、机器人与企业规划。公告同时介绍法国的 AI 服务器、在轨边缘计算和开放模型部署进展。四项投资仍以计划形式公布，文章未披露各项金额或完成时间。",
     "summary_source": "https://blogs.nvidia.com/blog/france-ecosystem-agentic-computing/"
+  },
+  "doi:10.1038/s42256-025-01041-7": {
+    "title_zh": "神经网络与人看似相近的物体表征，究竟在哪些维度不同",
+    "summary": "研究比较人类与 VGG-16 神经网络对物体图像的相似性判断，提取可直接比较的低维表征，并用人工标签解释这些维度。人类表征更重视语义属性，网络则更依赖视觉属性。结果表明，整体表征相似或某些维度易于解释，并不代表二者采用相同策略；逐个维度分析能揭示总体指标掩盖的差异。",
+    "summary_source": "https://www.nature.com/articles/s42256-025-01041-7"
+  },
+  "doi:10.1093/nar/gkaf1040": {
+    "title_zh": "GTDB 第10版：为逾73万个细菌和古菌基因组建立统一分类",
+    "summary": "研究发布 GTDB 第10版，按基因组系统发育关系统一分类715,230个细菌和17,245个古菌基因组，并改进方法、命名规则与检索功能。数据库中新增大型谱系逐渐减少，但物种层面的发现仍在持续；作者估计仍有超过95%的细菌和古菌物种缺乏基因组层面的刻画。这项资源支持微生物多样性与进化研究，论文讨论的是第10版的数据与方法。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41123020/"
+  },
+  "doi:10.1038/s41598-026-73438-2": {
+    "title_zh": "语言模型与人脑的表征相似，究竟来自哪些因素？",
+    "summary": "研究使用8名参与者观看自然图像的7T功能磁共振数据，将模型与人脑的表征相似度拆为学习到的表征、架构、低层统计和类别结构等来源。分析图像描述的语言模型时，MPNet 与 GPT-2 的独立贡献明显不同。结果提示，总体相似度可能掩盖共享统计因素，不能直接证明认知机制一致；模型解释的总变异仍较少。论文目前为已接收的在线先行版。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-73438-2"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3": {
+    "title_zh": "Qwen Code v0.25.3 改进托管会话、工作区与执行记录",
+    "summary": "Qwen Code 发布 v0.25.3，扩展托管会话和工作区管理，增加最近执行记录展示及文件操作，并支持基于工作区快照运行只读子代理。更新还修复中断会话恢复、任务取消和后台运行资源释放等问题。官方版本说明称没有已知的破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.25.3"
+  },
+  "url:https://openai.com/index/low-resource-programming-languages": {
+    "title_zh": "OpenAI 公布低资源编程语言与 COBOL 迁移评估",
+    "summary": "OpenAI 介绍面向 COBOL、Fortran 等代码资源较少语言的模型改进，并公布 MultiLangBench：要求模型用20种语言构建兼容 SQLite 的数据库引擎。官方报告 GPT-6 Astra 平均测试通过率为87.4%。另一项评估用隐藏测试检查 COBOL 迁移后输出是否保持一致；这些结果属于公司评测，生产系统迁移仍需结合业务规则验证。",
+    "summary_source": "https://openai.com/index/low-resource-programming-languages"
+  },
+  "url:https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help": {
+    "title_zh": "德国政府与 NVIDIA 签署工业 AI 合作意向声明",
+    "summary": "德国政府与 NVIDIA 签署联合意向声明，计划结合德国制造与工程经验，推进物理 AI 模型及工业应用。合作将拓展与德国“工业4.0平台”的联系，关注制造、汽车、数字孪生以及中小企业采用 AI。公告描述的是合作方向与推广目标，尚不代表各项计划均已完成落地。",
+    "summary_source": "https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/"
+  },
+  "url:https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production": {
+    "title_zh": "NVIDIA 与欧洲广播联盟扩展媒体 AI 标准，协助 Adobe 加速视频检索",
+    "summary": "欧洲广播联盟与 NVIDIA 扩展媒体自主可控框架，引入云服务、开放模型和系统集成伙伴，制定数据治理、部署与安全要求。Adobe 同时使用 NVIDIA GPU 加速 Frame.io 视频处理和检索；官方称嵌入生成约快5倍，检索处理吞吐量最高提高4倍。这些性能数字来自公司公告。",
+    "summary_source": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/"
   }
 }

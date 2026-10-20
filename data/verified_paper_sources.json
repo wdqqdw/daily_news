@@ -131,5 +131,13 @@
     "checked_on": "2026-10-19",
     "discover": true,
     "notes": "The researchers use GPT-4o to classify psychological phenomena in naturally occurring human text: reported speech in online diaries, other-initiated repair in Reddit conversations and harm described in NHS healthcare complaints. Model predictions are compared with human judgments in 1,500 manually labelled texts per task. One third of each dataset supports prompt development and exploratory validation; the remaining two thirds are held out for confirmatory validation. The paper demonstrates a validity-based workflow for these specific coding tasks, requiring researcher oversight rather than establishing general understanding of people. The publisher labels the work Original Research, published on 21 February 2025."
+  },
+  "10.1038/s42256-025-01041-7": {
+    "doi": "10.1038/s42256-025-01041-7",
+    "title": "Dimensions underlying the representational alignment of deep neural networks with humans",
+    "source": "https://www.nature.com/articles/s42256-025-01041-7",
+    "checked_on": "2026-10-20",
+    "discover": true,
+    "notes": "The authors study human cognition using observed human participants’ odd-one-out judgments of object images, comparing these choices with a deep neural network, VGG-16. They infer low-dimensional representations from matching tasks and compare visual and semantic dimensions. Human judgments also label the network dimensions. Human representations emphasize semantic properties more strongly, while the network relies more on visual properties. Apparent interpretability or overall alignment therefore does not establish equivalent image-processing strategies. The publisher labels it a research Article first published on 23 June 2025."
   }
 }
