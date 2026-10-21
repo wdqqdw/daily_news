@@ -1363,6 +1363,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1040"
       ],
       "doi": "10.1093/nar/gkaf1040"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "Predicting Effects, Missing Distributions: Evaluating Large Language Models as Human-Behavior Simulators in Operations Management",
+      "url": "https://doi.org/10.1287/ijds.2025.0124",
+      "keys": [
+        "doi:10.1287/ijds.2025.0124",
+        "title:predictingeffectsmissingdistributionsevaluatinglargelanguagemodelsashumanbehaviorsimulatorsinoperationsmanagement",
+        "title:语言模型能复现人类决策效应却难以还原完整分布",
+        "url:https://doi.org/10.1287/ijds.2025.0124"
+      ],
+      "doi": "10.1287/ijds.2025.0124"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "LLMs achieve adult human performance on higher-order theory of mind tasks",
+      "url": "https://doi.org/10.3389/fnhum.2025.1633272",
+      "keys": [
+        "doi:10.3389/fnhum.2025.1633272",
+        "title:llmsachieveadulthumanperformanceonhigherordertheoryofmindtasks",
+        "title:大语言模型在高阶心理理论任务中达到成人水平",
+        "url:https://doi.org/10.3389/fnhum.2025.1633272"
+      ],
+      "doi": "10.3389/fnhum.2025.1633272"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "SARS-CoV-2 mRNA vaccines sensitize tumours to immune checkpoint blockade",
+      "url": "https://doi.org/10.1038/s41586-025-09655-y",
+      "keys": [
+        "doi:10.1038/s41586-025-09655-y",
+        "title:sarscov2mrnavaccinessensitizetumourstoimmunecheckpointblockade",
+        "title:新冠mrna疫苗可能增强肿瘤对免疫检查点治疗的反应",
+        "url:https://doi.org/10.1038/s41586-025-09655-y"
+      ],
+      "doi": "10.1038/s41586-025-09655-y"
     }
   ],
   "news": [
@@ -2960,6 +2996,50 @@
         "url:https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "Franchisee reconciles cash in 94% less time with ChatGPT Work",
+      "url": "https://openai.com/index/ted-taylor-restaurant",
+      "keys": [
+        "title:franchiseereconcilescashin94lesstimewithchatgptwork",
+        "title:餐饮加盟商用chatgptwork加速调价分析与日常运营",
+        "url:https://openai.com/index/ted-taylor-restaurant"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "Spain-Based Startups Advance Regional Innovation With Barcelona Supercomputing Center",
+      "url": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/",
+      "keys": [
+        "title:nvidia与巴塞罗那超算中心支持西班牙初创企业",
+        "title:spainbasedstartupsadvanceregionalinnovationwithbarcelonasupercomputingcenter",
+        "url:https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "Called to serve: Tech, research, and positive impact",
+      "url": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/",
+      "keys": [
+        "title:calledtoservetechresearchandpositiveimpact",
+        "title:微软研究院访谈从数据分析到公共利益技术",
+        "url:https://microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-21",
+      "title": "Terminal X matches senior investor judgment 88.6% with GPT-6.1",
+      "url": "https://openai.com/index/terminal-x",
+      "keys": [
+        "title:terminalxmatchesseniorinvestorjudgment886withgpt61",
+        "title:terminalx用gpt61sol检查投资智能体的输出",
+        "url:https://openai.com/index/terminal-x"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
