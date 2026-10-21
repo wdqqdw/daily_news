@@ -864,5 +864,40 @@
     "title_zh": "NVIDIA 与欧洲广播联盟扩展媒体 AI 标准，协助 Adobe 加速视频检索",
     "summary": "欧洲广播联盟与 NVIDIA 扩展媒体自主可控框架，引入云服务、开放模型和系统集成伙伴，制定数据治理、部署与安全要求。Adobe 同时使用 NVIDIA GPU 加速 Frame.io 视频处理和检索；官方称嵌入生成约快5倍，检索处理吞吐量最高提高4倍。这些性能数字来自公司公告。",
     "summary_source": "https://blogs.nvidia.com/blog/media-agentic-security-european-public-service-broadcasting-global-content-production/"
+  },
+  "doi:10.3389/fnhum.2025.1633272": {
+    "title_zh": "大语言模型在高阶心理理论任务中达到成人水平",
+    "summary": "研究用140道英文叙事判断题测试最高六阶心理理论推理，并将五个语言模型与2023年采集的29,259份英国成人回答比较。GPT-4 的总体表现达到成人水平，在六阶推理上更高，Flan-PaLM 则接近成人水平。结果限于第三人称文本任务，不能据此断言模型具有完整的社会理解能力或与人相同的心理机制。",
+    "summary_source": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2025.1633272/full"
+  },
+  "doi:10.1287/ijds.2025.0124": {
+    "title_zh": "语言模型能复现人类决策效应，却难以还原完整分布",
+    "summary": "研究把语言模型与九项已发表的行为运营实验中的真实人类数据比较，分别检查统计效应能否复现，以及回答分布是否相似。模型往往能重现主要决策偏差，但完整分布与人类仍有明显差距，尤其是回答的离散程度。思维链提示和采样参数调节可缩小部分差距；模型生成的数据仍不能直接替代真实人的行为分布。",
+    "summary_source": "https://api.crossref.org/works/10.1287%2Fijds.2025.0124"
+  },
+  "doi:10.1038/s41586-025-09655-y": {
+    "title_zh": "新冠 mRNA 疫苗可能增强肿瘤对免疫检查点治疗的反应",
+    "summary": "研究结合小鼠实验、健康志愿者检测和癌症患者回顾性数据，发现新冠 mRNA 疫苗可激活Ⅰ型干扰素及抗肿瘤免疫。多个患者队列中，在免疫检查点治疗开始前后100天内接种疫苗与更长生存期相关。动物实验支持免疫机制，但患者数据属于观察性证据，尚不能证明接种本身带来治疗获益，仍需前瞻性试验验证。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09655-y"
+  },
+  "url:https://openai.com/index/ted-taylor-restaurant": {
+    "title_zh": "餐饮加盟商用 ChatGPT Work 加速调价分析与日常运营",
+    "summary": "OpenAI 分享一位经营三家加盟餐厅的客户案例：他用 ChatGPT Work 汇总成本、竞品价格和销售记录，将菜单调价分析从约5天缩短至1—2小时，并辅助排班、薪资和现金核对。经营者估计优化排班每年可能释放5万—10万美元现金流；这一金额是客户预估，尚非已实现收益。",
+    "summary_source": "https://openai.com/index/ted-taylor-restaurant"
+  },
+  "url:https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center": {
+    "title_zh": "NVIDIA 与巴塞罗那超算中心支持西班牙初创企业",
+    "summary": "巴塞罗那超算中心的 AI 工厂加速计划已正式运行，部分服务可经 NVIDIA Inception 门户申请，提供算力、技术支持与培训。公告介绍了水网运营、心电图风险识别及医药信息助手等应用，其中 Qatium 的新技术处于早期生产阶段。相关医疗应用仍以辅助专业人员为目标。",
+    "summary_source": "https://blogs.nvidia.com/blog/spain-startups-barcelona-supercomputing-center/"
+  },
+  "url:https://microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white": {
+    "title_zh": "微软研究院访谈：从数据分析到公共利益技术",
+    "summary": "微软研究院播客邀请 Catalyst Lab 负责人 Chris White，回顾他在 DARPA 从事数据分析、以及开发用于打击人口贩运的暗网搜索工具的经历。访谈讨论如何选择有现实影响的研究问题、推动成果落地和保持工作动力。这是一篇研究者访谈，未发布新的模型或性能评测。",
+    "summary_source": "https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/"
+  },
+  "url:https://openai.com/index/terminal-x": {
+    "title_zh": "Terminal X 用 GPT-6.1 Sol 检查投资智能体的输出",
+    "summary": "OpenAI 介绍 Terminal X 将投资团队的决策流程编码为专用智能体，并用54项标准检查来源、论证和建议是否符合基金要求。客户称，使用 GPT-6.1 Sol 后，比对照模型多识别约25%的偏离基金要求的建议，单次查询成本约低30%。这些数字来自公司案例，不能等同于投资收益或对未来回报的保证。",
+    "summary_source": "https://openai.com/index/terminal-x"
   }
 }

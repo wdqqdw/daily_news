@@ -29,6 +29,16 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_collected_human_benchmarks_require_observed_data(self):
+        self.assertTrue(human_research_source('We compare five LLMs with a newly gathered adult human benchmark.'))
+        self.assertTrue(human_research_source('We evaluate predictions against a newly collected human benchmark.'))
+        for text in ('We propose a human benchmark for future work.',
+                     'We generate a synthetic adult human benchmark.',
+                     'We compare models with an adult human benchmark.',
+                     'We use language models as test subjects in a newly gathered adult human benchmark.',
+                     'A simulated society of AI agents provides a newly gathered adult human benchmark.'):
+            self.assertFalse(human_research_source(text))
+
     def test_representational_alignment_requires_human_cognition_and_influence(self):
         p=paper('10.1/alignment',
                 'Dimensions underlying the representational alignment of deep neural networks with humans',

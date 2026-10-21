@@ -40,5 +40,15 @@
     "published": "2026-05-25",
     "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2601283",
     "reason": "出版商标题、Notes 与 History 均标注首次在线发表于2026年5月25日；Crossref 使用2026年8月13日卷期日期。按首次发表时间计算新近程度和引用速度。"
+  },
+  "10.1056/nejmoa2510308": {
+    "published": "2025-10-17",
+    "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2510308",
+    "reason": "出版商与 PubMed 均标明首次在线发表于2025年10月17日；Crossref 使用2026年1月1日卷期日期，不能据此将它纳入当前热点的一年窗口。"
+  },
+  "10.1056/nejmoa2604625": {
+    "published": "2026-06-04",
+    "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2604625",
+    "reason": "出版商与 PubMed 均标明首次在线发表于2026年6月4日；Crossref 使用2026年8月6日卷期日期。按首次发表时间计算新近程度和引用速度。"
   }
 }

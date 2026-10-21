@@ -139,5 +139,20 @@
     "checked_on": "2026-10-20",
     "discover": true,
     "notes": "The authors study human cognition using observed human participants’ odd-one-out judgments of object images, comparing these choices with a deep neural network, VGG-16. They infer low-dimensional representations from matching tasks and compare visual and semantic dimensions. Human judgments also label the network dimensions. Human representations emphasize semantic properties more strongly, while the network relies more on visual properties. Apparent interpretability or overall alignment therefore does not establish equivalent image-processing strategies. The publisher labels it a research Article first published on 23 June 2025."
+  },
+  "10.3389/fnhum.2025.1633272": {
+    "doi": "10.3389/fnhum.2025.1633272",
+    "title": "LLMs achieve adult human performance on higher-order theory of mind tasks",
+    "source": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2025.1633272/full",
+    "checked_on": "2026-10-21",
+    "discover": true,
+    "notes": "The authors compare five large language models with human participants on written stories requiring recursive inferences about mental states. The benchmark contains 29,259 responses from UK adults collected in April 2023, with 140 statements and up to six orders of theory of mind. GPT-4 reaches adult-level performance overall and exceeds the human reference on sixth-order inferences; Flan-PaLM approaches adult performance. The evidence concerns English third-person text tasks, without establishing interactive social understanding or shared cognitive mechanisms. The publisher labels this Original Research, first published on 2 January 2026."
+  },
+  "10.1287/ijds.2025.0124": {
+    "doi": "10.1287/ijds.2025.0124",
+    "title": "Predicting Effects, Missing Distributions: Evaluating Large Language Models as Human-Behavior Simulators in Operations Management",
+    "source": "https://api.crossref.org/works/10.1287%2Fijds.2025.0124",
+    "checked_on": "2026-10-21",
+    "notes": "The published article compares large language models with observed human data from nine behavioural operations experiments. It checks whether models reproduce hypothesis-test outcomes and the distributions of human choices, using Wasserstein distance for the latter. Models often recover decision effects but miss the dispersion of human responses, including strong proprietary models. Chain-of-thought prompting and sampling-parameter tuning can reduce some gaps. The publisher-supplied Crossref record identifies a journal article in INFORMS Journal on Data Science, published on 20 October 2026. The authors provide an accepted manuscript with the same study and manuscript identifier IJDS-2025-0124.R1 at https://arxiv.org/html/2510.03310v2."
   }
 }

@@ -70,13 +70,16 @@ def human_research_source(text):
     # Human studies may describe samples and diaries without saying "participants".
     sampled_self_reports = re.search(r'\b(?:samples?|participants?)\b',text,re.I) and re.search(r'\b(?:self.report measures|daily (?:video )?diaries|ecological momentary assessment)\b',text,re.I)
     human_dataset = re.search(r'\bdatasets? (?:of|from) humans?\b',text,re.I)
+    # Some abstracts identify a newly collected human benchmark and leave
+    # participant counts to the methods. A generic benchmark mention is not enough.
+    gathered_human_benchmark = re.search(r'\bnewly (?:gathered|collected) (?:adult )?human benchmark\b',text,re.I)
     # Published human norm datasets can identify their samples by N without
     # repeating "participants". A mere mention of conceptual norms is not data.
     sampled_human_norms = re.search(r'\bhumans?\s*\([^)]*\bnorms\b[^)]*\bN\s*=\s*[1-9][\d,]*',text,re.I)
     # Observed online debate records also contain human beliefs and choices;
     # these studies need not call the people in their corpus "participants".
     user_debate_data = re.search(r'\b(?:online )?user (?:debate|discussion) data\b',text,re.I)
-    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or sampled_human_norms or user_debate_data) and not MODEL_SUBJECTS.search(text))
+    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or gathered_human_benchmark or sampled_human_norms or user_debate_data) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
