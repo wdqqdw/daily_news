@@ -327,7 +327,13 @@ def relevant(p, slot):
         human_alignment = (re.search(r'\brepresentational alignment\b',title,re.I)
                            and OBSERVED_HUMANS.search(text) and human_research_source(text)
                            and re.search(r'\b(?:visual|semantic|cognitive) (?:representations?|dimensions?)\b',text,re.I))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        # Visual processing studies also model human cognition. Require actual
+        # human measurements, not a claim about human-like computer vision.
+        visual_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        human_visual_processing = (re.search(r'\bhuman visual (?:motion )?processing\b',title,re.I)
+                                   and OBSERVED_HUMANS.search(visual_source)
+                                   and human_research_source(visual_source))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment or human_visual_processing) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_visual_processing) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

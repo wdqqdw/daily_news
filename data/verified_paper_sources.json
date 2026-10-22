@@ -154,5 +154,21 @@
     "source": "https://api.crossref.org/works/10.1287%2Fijds.2025.0124",
     "checked_on": "2026-10-21",
     "notes": "The published article compares large language models with observed human data from nine behavioural operations experiments. It checks whether models reproduce hypothesis-test outcomes and the distributions of human choices, using Wasserstein distance for the latter. Models often recover decision effects but miss the dispersion of human responses, including strong proprietary models. Chain-of-thought prompting and sampling-parameter tuning can reduce some gaps. The publisher-supplied Crossref record identifies a journal article in INFORMS Journal on Data Science, published on 20 October 2026. The authors provide an accepted manuscript with the same study and manuscript identifier IJDS-2025-0124.R1 at https://arxiv.org/html/2510.03310v2."
+  },
+  "10.1162/tacl.a.807": {
+    "doi": "10.1162/tacl.a.807",
+    "title": "What Do You Mean? Exploring the Alleged Theory of Mind Abilities of Large Language Models",
+    "source": "https://aclanthology.org/2026.tacl-1.111.pdf",
+    "checked_on": "2026-10-22",
+    "discover": true,
+    "notes": "The authors compare large language models with 360 human participants, native English speakers from the US and UK, on multiple-choice interpretations of indirect speech and verbal irony. They manipulate characters’ belief contexts and conventional language cues. In these tasks, models remain below the human baseline and often fail to change interpretations appropriately when belief contexts change. Generation-based and probability-based evaluations produce different estimates. The findings concern the tested models, prompts and English text tasks, not all possible forms of social understanding. The journal identifies a research article published in September 2026; Crossref records 22 September."
+  },
+  "10.1038/s42256-025-01068-w": {
+    "doi": "10.1038/s42256-025-01068-w",
+    "title": "Machine learning modelling for multi-order human visual motion processing",
+    "source": "https://www.nature.com/articles/s42256-025-01068-w.pdf",
+    "checked_on": "2026-10-22",
+    "discover": true,
+    "notes": "The authors compare a dual-pathway deep neural network with visual motion estimates measured in human participants, using existing first-order motion datasets and a new second-order motion experiment. The latter includes three men, two of whom are authors, each completing 1,120 trials. A trainable motion-energy pathway and nonlinear 3D convolutional pathway feed recurrent integration. Training with glossy and transparent moving objects improves higher-order motion sensitivity and agreement with human perception relative to diffuse-material training. Model agreement supports a computational hypothesis, not proof of identical human neural mechanisms. The publisher identifies a research Article first published on 15 July 2025."
   }
 }

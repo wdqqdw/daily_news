@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_visual_processing_requires_observed_humans_ai_and_influence(self):
+        p=paper('10.1/motion','Machine learning modelling for multi-order human visual motion processing',
+                abstract='We compare model predictions with motion estimates measured in human participants.',citations=13)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Machine learning modelling for robot visual motion processing'),2))
+        self.assertFalse(relevant(dict(p,title='Multi-order human visual motion processing'),2))
+        for abstract in ('Machine learning could explain human visual processing in future studies.',
+                         'Machine learning is used to simulate human participants in visual motion tasks.',
+                         'Machine learning predicts mouse responses to visual motion.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_collected_human_benchmarks_require_observed_data(self):
         self.assertTrue(human_research_source('We compare five LLMs with a newly gathered adult human benchmark.'))
         self.assertTrue(human_research_source('We evaluate predictions against a newly collected human benchmark.'))
