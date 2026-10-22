@@ -1399,6 +1399,42 @@
         "url:https://doi.org/10.1038/s41586-025-09655-y"
       ],
       "doi": "10.1038/s41586-025-09655-y"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "What Do You Mean? Exploring the Alleged Theory of Mind Abilities of Large Language Models",
+      "url": "https://doi.org/10.1162/tacl.a.807",
+      "keys": [
+        "doi:10.1162/tacl.a.807",
+        "title:whatdoyoumeanexploringtheallegedtheoryofmindabilitiesoflargelanguagemodels",
+        "title:大语言模型理解言外之意是否真的依赖心理理论",
+        "url:https://doi.org/10.1162/tacl.a.807"
+      ],
+      "doi": "10.1162/tacl.a.807"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Machine learning modelling for multi-order human visual motion processing",
+      "url": "https://doi.org/10.1038/s42256-025-01068-w",
+      "keys": [
+        "doi:10.1038/s42256-025-01068-w",
+        "title:machinelearningmodellingformultiorderhumanvisualmotionprocessing",
+        "title:用机器学习模拟人类对多阶视觉运动的感知",
+        "url:https://doi.org/10.1038/s42256-025-01068-w"
+      ],
+      "doi": "10.1038/s42256-025-01068-w"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering",
+      "url": "https://doi.org/10.1038/s41566-025-01791-1",
+      "keys": [
+        "doi:10.1038/s41566-025-01791-1",
+        "title:stabilizinghighefficiencyperovskitesolarcellsviastrategicinterfacialcontactengineering",
+        "title:界面接触工程提升钙钛矿太阳能电池效率与稳定性",
+        "url:https://doi.org/10.1038/s41566-025-01791-1"
+      ],
+      "doi": "10.1038/s41566-025-01791-1"
     }
   ],
   "news": [
@@ -3040,6 +3076,72 @@
         "url:https://openai.com/index/terminal-x"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Qwen Code · Release v0.26.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0",
+      "keys": [
+        "title:qwencode0260增强会话恢复与工作区管理",
+        "title:qwencodereleasev0260",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "url": "https://openai.com/index/att-legal",
+      "keys": [
+        "title:att与openai探索企业法务知识管理",
+        "title:howattisrethinkinginhouselegalworkwithopenai",
+        "url:https://openai.com/index/att-legal"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+      "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "keys": [
+        "title:bringingthesparktoeuropelocalintelligencepowersnextwaveofagents",
+        "title:nvidia扩展欧洲本地ai硬件与智能体工具",
+        "url:https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "keys": [
+        "title:solvinga31yearoldgrandchallengeinmathematicstheklsconjecture",
+        "title:微软研究院介绍人类指导ai探索kls猜想的过程",
+        "url:https://microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Broad access through consistent standards",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "keys": [
+        "title:broadaccessthroughconsistentstandards",
+        "title:openai更新合作伙伴安全标准与使用政策",
+        "url:https://openai.com/index/broad-access-through-consistent-standards"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-22",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "keys": [
+        "title:googlecloudandnvidiaannouncegeneralavailabilityofnvidiaverarubininfrastructure",
+        "title:googlecloud计划下月全面提供verarubina5x实例",
+        "url:https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }

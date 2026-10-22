@@ -1,0 +1,351 @@
+{
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T09:47:54+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "What Do You Mean? Exploring the Alleged Theory of Mind Abilities of Large Language Models",
+      "doi": "10.1162/tacl.a.807",
+      "url": "https://doi.org/10.1162/tacl.a.807",
+      "journal": "Transactions of the Association for Computational Linguistics",
+      "publisher": "MIT Press",
+      "published": "2026-09-22",
+      "authors": "Lombardi et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1162%2Ftacl.a.807",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-22；来源：Crossref；引用数 0，距发表 30 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究让360名英美英语母语参与者与多种语言模型判断间接言语和反讽的含义，并操纵故事角色的信念背景。受测模型整体低于人类基线，往往不能随信念变化恰当调整解释，部分正确回答可能来自惯用表达线索。生成式与概率式评估也会产生不同结论；结果限于所测模型、提示和英文文本任务。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.5394,
+      "title_zh": "大语言模型理解言外之意，是否真的依赖心理理论？",
+      "summary_source": "https://aclanthology.org/2026.tacl-1.111.pdf",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Machine learning modelling for multi-order human visual motion processing",
+      "doi": "10.1038/s42256-025-01068-w",
+      "url": "https://doi.org/10.1038/s42256-025-01068-w",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-07-15",
+      "authors": "Sun et al.",
+      "citations": 13,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-025-01068-w",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-22；来源：Crossref；引用数 13，距发表 464 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究构建双通路神经网络，将模型预测与真实人的运动知觉数据比较。加入光泽、透明等材质的训练场景后，模型更能感知亮度变化之外的高阶运动，并接近人类的知觉判断。新增二阶运动实验只有三名男性参与者，其中两名是作者；结果支持一种计算假说，尚不能证明模型与人脑采用相同机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.145,
+      "title_zh": "用机器学习模拟人类对多阶视觉运动的感知",
+      "summary_source": "https://www.nature.com/articles/s42256-025-01068-w.pdf",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Stabilizing high-efficiency perovskite solar cells via strategic interfacial contact engineering",
+      "doi": "10.1038/s41566-025-01791-1",
+      "url": "https://doi.org/10.1038/s41566-025-01791-1",
+      "journal": "Nature Photonics",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-07",
+      "authors": "Li et al.",
+      "citations": 136,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41566-025-01791-1",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 136 次引用，约 11.69 次 / 月。",
+      "evidence": "检索时间：2026-10-22；来源：Crossref；引用数 136，距发表 349 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用七氟丁酸钠处理钙钛矿表面，减少缺陷并促进致密的电子传输层形成，从而抑制离子迁移。小面积电池的认证光电转换效率达到26.96%，1平方厘米器件达到25.95%。封装器件在实验室连续光照1200小时后保持初始效率，并通过高温和热循环测试；这些条件下的稳定性仍不等于户外商业组件的长期寿命。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.6145,
+      "title_zh": "界面接触工程提升钙钛矿太阳能电池效率与稳定性",
+      "summary_source": "https://www.nature.com/articles/s41566-025-01791-1",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-10-22",
+      "title": "Qwen Code · Release v0.26.0",
+      "summary": "Qwen Code 发布0.26.0版，加入会话级技能刷新、本地及 SSH 文件引用、部署预检查和工作区文件记录，并修复后台会话恢复和工具结果保存问题。网页界面新增 PDF、DOCX 预览及实验性交互卡片；更新重点是开发工作流与运行可靠性，没有公布新的基础模型性能。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.26.0 增强会话恢复与工作区管理",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "How AT&T is rethinking in-house legal work with OpenAI",
+      "summary": "AT&T 与 OpenAI 在 LegalEdge 团队工作的基础上，探索连接公司历史案例、研究资料和内部经验。计划中的自然语言受理系统将对请求分类和排序，并为法务人员提供相关背景与建议起点。公告描述的是合作方向和拟建功能，法律判断与决策仍由律师负责。",
+      "url": "https://openai.com/index/att-legal",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "AT&T 与 OpenAI 探索企业法务知识管理",
+      "summary_source": "https://openai.com/index/att-legal",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "Bringing the Spark to Europe: Local Intelligence Powers Next Wave of Agents",
+      "summary": "NVIDIA 在柏林 GTC 展示 RTX Spark、DGX Spark 和 DGX Station 的本地 AI 应用。64GB 版 DGX Spark 计划10月23日上市，Windows 版 DGX Station 预计12月推出；更新还包括多机集群、模型启动工具和机器人开源工作流。各项产品的可用时间不同，部分功能仍待发布。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 扩展欧洲本地 AI 硬件与智能体工具",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-gtc-rtx-dgx-spark-station-sync/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "Solving a 31-year-old grand challenge in mathematics – the KLS conjecture",
+      "summary": "微软研究院介绍研究者证明 KLS 猜想的工作，该问题关系到高维几何与随机采样。团队让 AI 探索一百多个候选方向，由数学家筛选、调整并完成关键递归论证。公告称已有独立证明和形式化验证跟进；AI 主要协助搜索与推导，研究方向、核心构造及最终验证由研究者掌握。",
+      "url": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究院介绍人类指导 AI 探索 KLS 猜想的过程",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "Broad access through consistent standards",
+      "summary": "OpenAI 表示正与托管和转售伙伴统一安全措施，并将在11月20日生效的使用政策中，明确模型路由器、AI 网关等直接接入服务需要事先获得审核批准。公司还在推进 SafetyIDs，以区分涉事终端用户并减少调查对其他用户的影响。这是政策与治理更新。",
+      "url": "https://openai.com/index/broad-access-through-consistent-standards",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 更新合作伙伴安全标准与使用政策",
+      "summary_source": "https://openai.com/index/broad-access-through-consistent-standards",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "Google Cloud and NVIDIA Announce General Availability of NVIDIA Vera Rubin Infrastructure",
+      "summary": "NVIDIA 宣布，搭载 Vera Rubin NVL72 的 Google Cloud A5X 实例预计下月全面可用，并计划扩展至欧洲，支持智能体推理和大规模强化学习。Ineffable Intelligence 已获得早期访问；Google Cloud 另计划跨站点扩展至最多96万颗 Rubin GPU，该规模仍是规划目标。",
+      "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Google Cloud 计划下月全面提供 Vera Rubin A5X 实例",
+      "summary_source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 106
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 95
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 144
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2007
+}
