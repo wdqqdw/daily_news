@@ -1,0 +1,328 @@
+{
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T09:49:31+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Natural language processing models reveal neural dynamics of human conversation",
+      "doi": "10.1038/s41467-025-58620-w",
+      "url": "https://doi.org/10.1038/s41467-025-58620-w",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-04-09",
+      "authors": "Cai et al.",
+      "citations": 31,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-58620-w",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-23；来源：Crossref；引用数 31，距发表 562 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 GPT-2 等语言模型的表征，与14名接受癫痫监测者在自由对话中的颅内脑电记录比较。模型表征与额颞等区域的活动相关，反映了说话、听话及两者切换时的部分共同与不同模式。这说明模型可作为研究语言加工的工具，但相关性不能证明模型与人脑采用相同机制，也不等于完整的社会理解能力。",
+      "tag": "认知与行为建模",
+      "ranking_score": 12.5294,
+      "title_zh": "语言模型帮助描绘自然对话中的脑活动",
+      "summary_source": "https://www.nature.com/articles/s41467-025-58620-w",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Adopting a human developmental visual diet yields robust and shape-based AI vision",
+      "doi": "10.1038/s42256-026-01228-6",
+      "url": "https://doi.org/10.1038/s42256-026-01228-6",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-04-24",
+      "authors": "Lu et al.",
+      "citations": 10,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-026-01228-6",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-23；来源：Crossref；引用数 10，距发表 182 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究按人类从婴儿到成人的视力、色觉和对比敏感度变化训练神经网络，并与既有的20名参与者模糊图像识别数据比较。模型更依赖整体形状，面对图像退化时更接近人类表现；模型消融实验尤其突出对比敏感度发展的作用。这为人类视觉发育提供计算假说，尚不能证明人在现实中依靠完全相同的机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.2851,
+      "title_zh": "模拟人类视觉发育，让 AI 更依赖形状识别",
+      "summary_source": "https://www.nature.com/articles/s42256-026-01228-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Ambient AI Scribes in Clinical Practice: A Randomized Trial",
+      "doi": "10.1056/aioa2501000",
+      "url": "https://doi.org/10.1056/aioa2501000",
+      "journal": "NEJM AI",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2025-11-26",
+      "authors": "Lukac et al.",
+      "citations": 131,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Faioa2501000",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 131 次引用，约 11.87 次 / 月。",
+      "evidence": "检索时间：2026-10-23；来源：Crossref；引用数 131，距发表 331 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将14个专科的238名门诊医生随机分配至 Nabla、DAX Copilot 或常规工作组三组。两个月内，Nabla 组在电子病历中撰写单份记录的时间相较对照减少9.5%，DAX 组未见显著变化。两种工具的部分工作体验指标有所改善，但仍有内容遗漏等错误；单中心、短期结果不能直接外推为长期临床收益。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.6277,
+      "title_zh": "随机试验评估 AI 病历助手对医生文书负担的影响",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12768499/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "summary": "Google DeepMind、Google Research 与合作机构发布 ForTy 2020，将全球土地按天然林、再生林、人工林、种植园、树木作物及其他土地等六类区分。模型结合 AlphaEarth 表征和约170万个标注地点，帮助识别森林被何种用途替代；同时公布2017—2025年的初步年度变化序列，供森林保护与土地利用监测使用。",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 发布全球10米分辨率森林类型地图",
+      "summary_source": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "summary": "Minerva 将 GPU、网络、存储和 AI 作业的监测数据结合成动态知识图谱，用机器学习识别异常、关联告警并定位可能的故障原因。平台还提供自然语言助手，辅助运维人员查询集群状态和处理问题。NVIDIA 表示 IREN 已在使用，多家合作伙伴计划部署；文章未提供统一的独立性能对比。",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 发布 Minerva，统一监测 AI 数据中心",
+      "summary_source": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "summary": "Flint-interactive 用高层事件和更新操作描述筛选、缩放、高亮及多图联动，由编译器处理交互与图形之间的依赖。它可用于聊天中的数据探索、仪表盘和交互报告，也能连接图表、文本、表格与应用状态。微软同时提供 MCP 和应用集成入口，目标是减少智能体编写底层交互代码的负担。",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软推出 Flint-interactive，帮助智能体生成交互图表",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
+      "summary": "NVIDIA 在柏林 GTC 介绍欧洲金融机构的开放模型应用：Revolut 将交易基础模型 PRAGMA 用于生产，Starling 在英国云基础设施上训练自有模型，NatWest 正开发适应英国口音与金融术语的语音技术。项目结合机构自有数据和加速计算，涵盖已运行系统及开发中应用，相关进展来自公司公告。",
+      "url": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "欧洲金融机构用开放模型构建专有 AI 系统",
+      "summary_source": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 51
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 144
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 45
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2005
+}

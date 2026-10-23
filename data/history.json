@@ -1435,6 +1435,42 @@
         "url:https://doi.org/10.1038/s41566-025-01791-1"
       ],
       "doi": "10.1038/s41566-025-01791-1"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Natural language processing models reveal neural dynamics of human conversation",
+      "url": "https://doi.org/10.1038/s41467-025-58620-w",
+      "keys": [
+        "doi:10.1038/s41467-025-58620-w",
+        "title:naturallanguageprocessingmodelsrevealneuraldynamicsofhumanconversation",
+        "title:语言模型帮助描绘自然对话中的脑活动",
+        "url:https://doi.org/10.1038/s41467-025-58620-w"
+      ],
+      "doi": "10.1038/s41467-025-58620-w"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Adopting a human developmental visual diet yields robust and shape-based AI vision",
+      "url": "https://doi.org/10.1038/s42256-026-01228-6",
+      "keys": [
+        "doi:10.1038/s42256-026-01228-6",
+        "title:adoptingahumandevelopmentalvisualdietyieldsrobustandshapebasedaivision",
+        "title:模拟人类视觉发育让ai更依赖形状识别",
+        "url:https://doi.org/10.1038/s42256-026-01228-6"
+      ],
+      "doi": "10.1038/s42256-026-01228-6"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Ambient AI Scribes in Clinical Practice: A Randomized Trial",
+      "url": "https://doi.org/10.1056/aioa2501000",
+      "keys": [
+        "doi:10.1056/aioa2501000",
+        "title:ambientaiscribesinclinicalpracticearandomizedtrial",
+        "title:随机试验评估ai病历助手对医生文书负担的影响",
+        "url:https://doi.org/10.1056/aioa2501000"
+      ],
+      "doi": "10.1056/aioa2501000"
     }
   ],
   "news": [
@@ -3140,6 +3176,50 @@
         "title:googlecloudandnvidiaannouncegeneralavailabilityofnvidiaverarubininfrastructure",
         "title:googlecloud计划下月全面提供verarubina5x实例",
         "url:https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Beyond tree cover: mapping the world’s forest types",
+      "url": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/",
+      "keys": [
+        "title:beyondtreecovermappingtheworldsforesttypes",
+        "title:google发布全球10米分辨率森林类型地图",
+        "url:https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "NVIDIA Unveils Minerva to Bring End-to-End Observability for AI Factories",
+      "url": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/",
+      "keys": [
+        "title:nvidiaunveilsminervatobringendtoendobservabilityforaifactories",
+        "title:nvidia发布minerva统一监测ai数据中心",
+        "url:https://blogs.nvidia.com/blog/minerva-platform-infrastructure"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Flint-interactive: A language for creating interactive data visualizations",
+      "url": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/",
+      "keys": [
+        "title:flintinteractivealanguageforcreatinginteractivedatavisualizations",
+        "title:微软推出flintinteractive帮助智能体生成交互图表",
+        "url:https://microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-23",
+      "title": "Leading European Financial Services Organizations Embrace Open Models to Build Proprietary Intelligence",
+      "url": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/",
+      "keys": [
+        "title:leadingeuropeanfinancialservicesorganizationsembraceopenmodelstobuildproprietaryintelligence",
+        "title:欧洲金融机构用开放模型构建专有ai系统",
+        "url:https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence"
       ],
       "company": "NVIDIA"
     }
