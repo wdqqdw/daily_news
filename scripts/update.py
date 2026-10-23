@@ -295,6 +295,12 @@ def relevant(p, slot):
     # background mentions of the human brain must not qualify it for these slots.
     if slot in (1,2) and BRAIN_TUMOR.search(title) and DIAGNOSTIC_TASK.search(title):return False
     if THEORY_ONLY.search(p.get('abstract','')):return False
+    # Natural conversation is human language cognition. For this additional
+    # title route, require observed human recordings rather than model activity.
+    conversation_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1200])
+    human_conversation = (re.search(r'\bneural dynamics of human conversation\b',title,re.I)
+                          and OBSERVED_HUMANS.search(conversation_source)
+                          and human_research_source(conversation_source))
     if slot == 1:
         # An LLM narrating another model's predictions does not model people.
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
@@ -306,7 +312,7 @@ def relevant(p, slot):
         reaction_sample = (OBSERVED_HUMANS.search(reaction_source)
                            or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',reaction_source,re.I))
         human_reactions = HUMAN_SOCIAL_REACTION.search(title) and reaction_sample and human_research_source(reaction_source)
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions) and MODELLING.search(text) and LLM.search(text))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
@@ -330,10 +336,10 @@ def relevant(p, slot):
         # Visual processing studies also model human cognition. Require actual
         # human measurements, not a claim about human-like computer vision.
         visual_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
-        human_visual_processing = (re.search(r'\bhuman visual (?:motion )?processing\b',title,re.I)
+        human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment or human_visual_processing) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_visual_processing) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment or human_visual_processing or human_conversation) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_visual_processing or human_conversation) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'conceptual|framework for|theoretical framework', title, re.I)
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
@@ -428,7 +434,7 @@ def parse_feed(content, config, today):
         published = parse_date(txt('pubDate','published','date','updated'))
         title = clean(txt('title'))
         # Weekly game catalogues are not AI research or company AI progress.
-        if config['company'] == 'NVIDIA' and '/geforce-now-thursday-' in url and re.search(r'\bgames?\b',title,re.I):
+        if config['company'] == 'NVIDIA' and '/geforce-now-thursday-' in url:
             continue
         if config['company'] == 'Qwen':
             if not re.fullmatch(r'(?:Release\s+)?v\d+\.\d+\.\d+',title):continue

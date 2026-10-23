@@ -944,5 +944,50 @@
     "title_zh": "Google Cloud 计划下月全面提供 Vera Rubin A5X 实例",
     "summary": "NVIDIA 宣布，搭载 Vera Rubin NVL72 的 Google Cloud A5X 实例预计下月全面可用，并计划扩展至欧洲，支持智能体推理和大规模强化学习。Ineffable Intelligence 已获得早期访问；Google Cloud 另计划跨站点扩展至最多96万颗 Rubin GPU，该规模仍是规划目标。",
     "summary_source": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
+  },
+  "doi:10.1038/s41467-025-58620-w": {
+    "title_zh": "语言模型帮助描绘自然对话中的脑活动",
+    "summary": "研究将 GPT-2 等语言模型的表征，与14名接受癫痫监测者在自由对话中的颅内脑电记录比较。模型表征与额颞等区域的活动相关，反映了说话、听话及两者切换时的部分共同与不同模式。这说明模型可作为研究语言加工的工具，但相关性不能证明模型与人脑采用相同机制，也不等于完整的社会理解能力。",
+    "summary_source": "https://www.nature.com/articles/s41467-025-58620-w"
+  },
+  "doi:10.1038/s42256-026-01228-6": {
+    "title_zh": "模拟人类视觉发育，让 AI 更依赖形状识别",
+    "summary": "研究按人类从婴儿到成人的视力、色觉和对比敏感度变化训练神经网络，并与既有的20名参与者模糊图像识别数据比较。模型更依赖整体形状，面对图像退化时更接近人类表现；模型消融实验尤其突出对比敏感度发展的作用。这为人类视觉发育提供计算假说，尚不能证明人在现实中依靠完全相同的机制。",
+    "summary_source": "https://www.nature.com/articles/s42256-026-01228-6"
+  },
+  "doi:10.1056/aioa2501000": {
+    "title_zh": "随机试验评估 AI 病历助手对医生文书负担的影响",
+    "summary": "研究将14个专科的238名门诊医生随机分配至 Nabla、DAX Copilot 或常规工作组三组。两个月内，Nabla 组在电子病历中撰写单份记录的时间相较对照减少9.5%，DAX 组未见显著变化。两种工具的部分工作体验指标有所改善，但仍有内容遗漏等错误；单中心、短期结果不能直接外推为长期临床收益。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12768499/"
+  },
+  "url:https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types": {
+    "title_zh": "Google 发布全球10米分辨率森林类型地图",
+    "summary": "Google DeepMind、Google Research 与合作机构发布 ForTy 2020，将全球土地按天然林、再生林、人工林、种植园、树木作物及其他土地等六类区分。模型结合 AlphaEarth 表征和约170万个标注地点，帮助识别森林被何种用途替代；同时公布2017—2025年的初步年度变化序列，供森林保护与土地利用监测使用。",
+    "summary_source": "https://deepmind.google/blog/beyond-tree-cover-mapping-the-worlds-forest-types/"
+  },
+  "url:https://blogs.nvidia.com/blog/minerva-platform-infrastructure": {
+    "title_zh": "NVIDIA 发布 Minerva，统一监测 AI 数据中心",
+    "summary": "Minerva 将 GPU、网络、存储和 AI 作业的监测数据结合成动态知识图谱，用机器学习识别异常、关联告警并定位可能的故障原因。平台还提供自然语言助手，辅助运维人员查询集群状态和处理问题。NVIDIA 表示 IREN 已在使用，多家合作伙伴计划部署；文章未提供统一的独立性能对比。",
+    "summary_source": "https://blogs.nvidia.com/blog/minerva-platform-infrastructure/"
+  },
+  "url:https://openai.com/index/decisions-api": {
+    "title_zh": "OpenAI Decisions API 正式开放，面向快速结构化决策",
+    "summary": "Decisions API 基于 GPT-6 Luna，为分类、路由和下一步动作等有限答案任务返回概率、选项或评分。正式版加入 GPT-Live 集成、提示缓存、原生 JSON 输入及美国和欧盟推理驻留，并将每次请求上限提高到400个问题。官方称速度最高可达通过 Responses API 调用 Luna 的10倍，实际效果随任务而异。",
+    "summary_source": "https://openai.com/index/decisions-api"
+  },
+  "url:https://microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations": {
+    "title_zh": "微软推出 Flint-interactive，帮助智能体生成交互图表",
+    "summary": "Flint-interactive 用高层事件和更新操作描述筛选、缩放、高亮及多图联动，由编译器处理交互与图形之间的依赖。它可用于聊天中的数据探索、仪表盘和交互报告，也能连接图表、文本、表格与应用状态。微软同时提供 MCP 和应用集成入口，目标是减少智能体编写底层交互代码的负担。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/flint-interactive-a-language-for-creating-interactive-data-visualizations/"
+  },
+  "url:https://openai.com/index/forward-deployed-engineering-means": {
+    "title_zh": "OpenAI 介绍前线部署工程团队如何推进企业应用",
+    "summary": "OpenAI 介绍前线部署工程团队与客户共同识别实际约束、搭建可靠应用，并把部署中发现的问题反馈给产品与研究团队。文章以约翰迪尔的农业设备咨询为例，说明自然语言问答和个性化配置指导如何接入业务。这是一篇团队工作方式与客户应用介绍，没有发布新的模型评测结果。",
+    "summary_source": "https://openai.com/index/forward-deployed-engineering-means"
+  },
+  "url:https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence": {
+    "title_zh": "欧洲金融机构用开放模型构建专有 AI 系统",
+    "summary": "NVIDIA 在柏林 GTC 介绍欧洲金融机构的开放模型应用：Revolut 将交易基础模型 PRAGMA 用于生产，Starling 在英国云基础设施上训练自有模型，NatWest 正开发适应英国口音与金融术语的语音技术。项目结合机构自有数据和加速计算，涵盖已运行系统及开发中应用，相关进展来自公司公告。",
+    "summary_source": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/"
   }
 }

@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_conversation_dynamics_requires_human_data_and_language_model(self):
+        p=paper('10.1/conversation','Natural language processing models reveal neural dynamics of human conversation',
+                abstract='We compare GPT-2 language model embeddings with recordings from human participants during conversation.',citations=31)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Neural dynamics of robot conversation'),1))
+        self.assertFalse(relevant(dict(p,abstract='We compare deep neural networks with human participants.'),1))
+        for abstract in ('Language models might explain conversation in future work.',
+                         'Language models simulate human participants in conversations.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
+    def test_visual_development_requires_observed_human_comparison(self):
+        p=paper('10.1/development','Adopting a human developmental visual diet yields robust and shape-based AI vision',
+                abstract='Deep neural networks are compared with recognition data from 20 human participants.',citations=10)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Adopting a human developmental visual diet',abstract='Recognition data from human participants are collected.'),2))
+        for abstract in ('AI models develop robust vision without comparison to observed people.',
+                         'AI models simulate human participants to generate recognition data.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_visual_processing_requires_observed_humans_ai_and_influence(self):
         p=paper('10.1/motion','Machine learning modelling for multi-order human visual motion processing',
                 abstract='We compare model predictions with motion estimates measured in human participants.',citations=13)
@@ -652,11 +678,12 @@ class NetworkTests(unittest.TestCase):
 class ParsingTests(unittest.TestCase):
     def test_nvidia_game_catalogue_does_not_displace_ai_news(self):
         articles=[('Fall Into 25 New Games on GeForce NOW This October','geforce-now-thursday-october-2026-games-list'),
+                  ('Cloud Deployment Incoming: Call of Duty Arrives on GeForce NOW','geforce-now-thursday-call-of-duty'),
                   ('How NVIDIA GPUs Help Accelerate OpenAI Models','gpus-openai-models'),
                   ('New AI Rendering Model for Games','neural-rendering-model')]
         rss='<rss><channel>'+''.join(f'<item><title>{title}</title><link>https://blogs.nvidia.com/blog/{slug}/</link><pubDate>2026-09-15</pubDate></item>' for title,slug in articles)+'</channel></rss>'
         rows=parse_feed(rss,{'company':'NVIDIA','url':'https://blogs.nvidia.com/feed/'},TODAY)
-        self.assertEqual([r['title'] for r in rows],[a[0] for a in articles[1:]])
+        self.assertEqual([r['title'] for r in rows],[a[0] for a in articles[2:]])
 
     def test_rss_filters_future_and_stale_items(self):
         rss='<rss><channel>'+''.join(f'<item><title>Release {i}</title><link>https://example.com/{i}</link><pubDate>{d}</pubDate></item>' for i,d in enumerate(['2026-09-15','2026-09-17','2025-09-15']))+'</channel></rss>'

@@ -170,5 +170,21 @@
     "checked_on": "2026-10-22",
     "discover": true,
     "notes": "The authors compare a dual-pathway deep neural network with visual motion estimates measured in human participants, using existing first-order motion datasets and a new second-order motion experiment. The latter includes three men, two of whom are authors, each completing 1,120 trials. A trainable motion-energy pathway and nonlinear 3D convolutional pathway feed recurrent integration. Training with glossy and transparent moving objects improves higher-order motion sensitivity and agreement with human perception relative to diffuse-material training. Model agreement supports a computational hypothesis, not proof of identical human neural mechanisms. The publisher identifies a research Article first published on 15 July 2025."
+  },
+  "10.1038/s41467-025-58620-w": {
+    "doi": "10.1038/s41467-025-58620-w",
+    "title": "Natural language processing models reveal neural dynamics of human conversation",
+    "source": "https://www.nature.com/articles/s41467-025-58620-w",
+    "checked_on": "2026-10-23",
+    "discover": true,
+    "notes": "The authors compare GPT-2 language model embeddings with intracranial brain recordings from 14 human participants undergoing clinical epilepsy monitoring. Participants held unscripted conversations with an experimenter, alternating speaking and listening. Model representations correlate with distributed neural responses and distinguish partly shared production and comprehension patterns; turn transitions show time-aligned changes. BERT and other language models provide complementary analyses. These correlations do not establish identical model and brain mechanisms or general social understanding. The publisher identifies a research Article first published on 9 April 2025."
+  },
+  "10.1038/s42256-026-01228-6": {
+    "doi": "10.1038/s42256-026-01228-6",
+    "title": "Adopting a human developmental visual diet yields robust and shape-based AI vision",
+    "source": "https://www.nature.com/articles/s42256-026-01228-6",
+    "checked_on": "2026-10-23",
+    "discover": true,
+    "notes": "The authors model human visual development using deep neural networks trained with an approximate progression of visual acuity, colour sensitivity and contrast sensitivity from infancy to adulthood. They compare face and object recognition under blur with existing behavioural data from 20 human participants. Developmental training increases shape-based decisions and robustness, bringing recognition profiles closer to those human observations. Model ablations identify contrast-sensitivity development as particularly important. These computational experiments generate hypotheses about human vision, but do not reproduce all infant sensory experience or establish causality in humans. The publisher identifies a research Article first published on 24 April 2026."
   }
 }
