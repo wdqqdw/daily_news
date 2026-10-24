@@ -989,5 +989,45 @@
     "title_zh": "欧洲金融机构用开放模型构建专有 AI 系统",
     "summary": "NVIDIA 在柏林 GTC 介绍欧洲金融机构的开放模型应用：Revolut 将交易基础模型 PRAGMA 用于生产，Starling 在英国云基础设施上训练自有模型，NatWest 正开发适应英国口音与金融术语的语音技术。项目结合机构自有数据和加速计算，涵盖已运行系统及开发中应用，相关进展来自公司公告。",
     "summary_source": "https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence/"
+  },
+  "doi:10.7554/elife.108442": {
+    "title_zh": "语言模型难以复现人脑如何利用词序理解句意",
+    "summary": "研究分析了30名参与者阅读108个句子时的7T脑成像数据，并比较8个Transformer模型及11种其他语义模型。语言模型优于完全忽略词序的模型，但在区分“谁对谁做了什么”等结构关系时，与人脑表征的匹配较差，也弱于显式编码语义关系的模型。结论限于这些模型和受控句子，不能直接推广为所有语言模型都无法理解句意。",
+    "summary_source": "https://elifesciences.org/articles/108442"
+  },
+  "doi:10.7554/elife.108442.4": {
+    "title_zh": "语言模型难以复现人脑如何利用词序理解句意",
+    "summary": "研究分析了30名参与者阅读108个句子时的7T脑成像数据，并比较8个Transformer模型及11种其他语义模型。语言模型优于完全忽略词序的模型，但在区分“谁对谁做了什么”等结构关系时，与人脑表征的匹配较差，也弱于显式编码语义关系的模型。结论限于这些模型和受控句子，不能直接推广为所有语言模型都无法理解句意。",
+    "summary_source": "https://elifesciences.org/articles/108442"
+  },
+  "doi:10.1038/s42003-025-09158-6": {
+    "title_zh": "深度学习从静息态脑扫描预测认知任务活动图",
+    "summary": "DeepTaskGen利用真实人类脑成像数据，从静息态扫描预测任务相关活动图。研究使用958名成人的数据训练和验证模型，并在637人的发育队列中检验迁移效果，并为英国生物样本库20,792人生成7类认知任务的47种对比图。生成结果保留了部分个体差异，可用于预测认知和健康相关指标，但它们是合成估计，不能当作实际测得的任务脑活动，跨任务和人群的准确性也不一致。",
+    "summary_source": "https://www.nature.com/articles/s42003-025-09158-6"
+  },
+  "doi:10.1056/nejmoa2514428": {
+    "title_zh": "依洛尤单抗降低特定高风险人群首次心血管事件风险",
+    "summary": "这项国际双盲随机试验纳入12,257名有动脉粥样硬化或糖尿病、但无既往心梗或卒中的患者。中位随访4.6年后，依洛尤单抗组冠心病死亡、心梗或缺血性卒中的5年估计发生率为6.2%，安慰剂组为8.0%，风险比0.75；安全性事件未见组间差异。结果支持其在该高风险人群中的预防作用，不能直接推广到一般低风险人群。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41211925/"
+  },
+  "url:https://openai.com/index/scaling-storage-one-billion-users-part-two": {
+    "title_zh": "OpenAI 介绍面向十亿用户的存储扩容方案",
+    "summary": "OpenAI 在 Habitat 存储架构系列第二篇中介绍，如何利用 Azure Cosmos DB 支撑跨40个地区、超过十亿用户的数据访问。文章重点讨论从单租户到多租户容器的取舍、共享容量与负载隔离，以及缓存和读取性能优化。这是一份公司工程实践介绍，其规模和性能数据来自官方披露。",
+    "summary_source": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+  },
+  "url:https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem": {
+    "title_zh": "英伟达与哈萨克斯坦推进 AI 算力和本土应用",
+    "summary": "英伟达介绍哈萨克斯坦围绕算力、模型和应用扩展 AI 生态的进展，包括计划部署 Vera Rubin 基础设施、发展哈萨克语模型及探索工业、农业和物流中的物理 AI。黄仁勋在阿斯塔纳活动中宣布投资哈萨克斯坦创立的 Higgsfield AI。文中的基础设施计划应与已经完成的部署区分看待。",
+    "summary_source": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/"
+  },
+  "url:https://openai.com/index/securing-our-frontier-model-training-environment": {
+    "title_zh": "OpenAI 加强前沿模型训练与评估环境的隔离",
+    "summary": "OpenAI 披露已加强内部训练和评估环境的隔离，采用无实时互联网访问的离线环境，并用前沿模型开展高算力红队测试，排查漏洞和配置错误。公司称在9月一次越界访问事件后暂停相关训练、加固基础设施，并于10月1日恢复强化学习训练及内部推理。持续红队测试被纳入其运行安全评估；这些措施并不意味着风险已经消除。",
+    "summary_source": "https://openai.com/index/securing-our-frontier-model-training-environment"
+  },
+  "url:https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models": {
+    "title_zh": "英伟达扩展 Cosmos 世界模型训练和数据工具",
+    "summary": "英伟达为 Cosmos 平台新增训练工具、仿真检查点和 Data Factory 工作流，覆盖驾驶数据、图像属性、罕见事件视频、缺陷图像及视频天气光照增强。Cosmos Curator 也扩展了多模态、多传感器数据处理。官方以保时捷和 ANYbotics 为例说明合成数据的应用，目标是帮助物理 AI 开发者准备数据、适配模型并在部署前评估性能。",
+    "summary_source": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/"
   }
 }

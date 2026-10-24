@@ -186,5 +186,13 @@
     "checked_on": "2026-10-23",
     "discover": true,
     "notes": "The authors model human visual development using deep neural networks trained with an approximate progression of visual acuity, colour sensitivity and contrast sensitivity from infancy to adulthood. They compare face and object recognition under blur with existing behavioural data from 20 human participants. Developmental training increases shape-based decisions and robustness, bringing recognition profiles closer to those human observations. Model ablations identify contrast-sensitivity development as particularly important. These computational experiments generate hypotheses about human vision, but do not reproduce all infant sensory experience or establish causality in humans. The publisher identifies a research Article first published on 24 April 2026."
+  },
+  "10.1038/s42003-025-09158-6": {
+    "doi": "10.1038/s42003-025-09158-6",
+    "title": "Generating synthetic task-based brain fingerprints for population neuroscience using deep learning",
+    "source": "https://www.nature.com/articles/s42003-025-09158-6",
+    "checked_on": "2026-10-24",
+    "discover": true,
+    "notes": "The authors use deep learning to model human brain activity and cognitive differences from observed fMRI data. DeepTaskGen predicts task-related activation maps from resting-state scans. The study uses 958 human participants from the HCP Young Adult dataset, tests transfer in 637 HCP Development participants, and generates 47 contrast maps across seven cognitive tasks for 20,792 UK Biobank participants. Synthetic maps preserve some individual differences and predict demographic, cognitive and clinical variables comparably to or better than the tested actual maps and resting-state connectomes. Predictions are synthetic estimates rather than acquired task measurements; accuracy varies across tasks and transfer populations. The publisher labels this as an original research Article first published on 14 November 2025."
   }
 }

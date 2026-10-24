@@ -86,5 +86,23 @@
     ],
     "reason": "出版商虽标为 Original Research，但原文明确回顾2020—2025年的既有研究，表格总结已发表工作；没有新增独立人类实验或原创数据分析，按内容作为综述性分析排除。",
     "source": "https://www.frontiersin.org/journals/computational-neuroscience/articles/10.3389/fncom.2026.1800284/full"
+  },
+  "10.1007/s00239-025-10287-z": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The publisher classifies this MEGA 12.1 cross-platform software release as a Letter to the Editor, not an original research Article.",
+    "source": "https://link.springer.com/article/10.1007/s00239-025-10287-z"
+  },
+  "10.1186/s13007-025-01450-0": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "The publisher explicitly labels this as a Review and the abstract describes a systematic review of plant disease detection methods.",
+    "source": "https://link.springer.com/article/10.1186/s13007-025-01450-0"
   }
 }
