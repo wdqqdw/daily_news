@@ -1,0 +1,317 @@
+{
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T09:46:31+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models poorly capture how word order shapes representations of sentence meaning in the human brain",
+      "doi": "10.7554/elife.108442.4",
+      "url": "https://doi.org/10.7554/elife.108442.4",
+      "journal": "eLife",
+      "publisher": "eLife Sciences Publications, Ltd",
+      "published": "2026-10-23",
+      "authors": "Fodor et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.7554%2Felife.108442.4",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-24；来源：Crossref；引用数 0，距发表 1 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析了30名参与者阅读108个句子时的7T脑成像数据，并比较8个Transformer模型及11种其他语义模型。语言模型优于完全忽略词序的模型，但在区分“谁对谁做了什么”等结构关系时，与人脑表征的匹配较差，也弱于显式编码语义关系的模型。结论限于这些模型和受控句子，不能直接推广为所有语言模型都无法理解句意。",
+      "tag": "认知与行为建模",
+      "ranking_score": 4.9834,
+      "title_zh": "语言模型难以复现人脑如何利用词序理解句意",
+      "summary_source": "https://elifesciences.org/articles/108442",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Generating synthetic task-based brain fingerprints for population neuroscience using deep learning",
+      "doi": "10.1038/s42003-025-09158-6",
+      "url": "https://doi.org/10.1038/s42003-025-09158-6",
+      "journal": "Communications Biology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-14",
+      "authors": "Serin et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42003-025-09158-6",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-24；来源：Crossref；引用数 6，距发表 344 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "DeepTaskGen利用真实人类脑成像数据，从静息态扫描预测任务相关活动图。研究使用958名成人的数据训练和验证模型，并在637人的发育队列中检验迁移效果，并为英国生物样本库20,792人生成7类认知任务的47种对比图。生成结果保留了部分个体差异，可用于预测认知和健康相关指标，但它们是合成估计，不能当作实际测得的任务脑活动，跨任务和人群的准确性也不一致。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 7.2815,
+      "title_zh": "深度学习从静息态脑扫描预测认知任务活动图",
+      "summary_source": "https://www.nature.com/articles/s42003-025-09158-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Evolocumab in Patients without a Previous Myocardial Infarction or Stroke",
+      "doi": "10.1056/nejmoa2514428",
+      "url": "https://doi.org/10.1056/nejmoa2514428",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2025-11-08",
+      "authors": "Bohula et al.",
+      "citations": 132,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2514428",
+      "publication_date_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2514428",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 132 次引用，约 11.31 次 / 月。",
+      "evidence": "检索时间：2026-10-24；来源：Crossref；引用数 132，距发表 350 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "这项国际双盲随机试验纳入12,257名有动脉粥样硬化或糖尿病、但无既往心梗或卒中的患者。中位随访4.6年后，依洛尤单抗组冠心病死亡、心梗或缺血性卒中的5年估计发生率为6.2%，安慰剂组为8.0%，风险比0.75；安全性事件未见组间差异。结果支持其在该高风险人群中的预防作用，不能直接推广到一般低风险人群。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.4942,
+      "title_zh": "依洛尤单抗降低特定高风险人群首次心血管事件风险",
+      "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41211925/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-23",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "summary": "OpenAI 在 Habitat 存储架构系列第二篇中介绍，如何利用 Azure Cosmos DB 支撑跨40个地区、超过十亿用户的数据访问。文章重点讨论从单租户到多租户容器的取舍、共享容量与负载隔离，以及缓存和读取性能优化。这是一份公司工程实践介绍，其规模和性能数据来自官方披露。",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 介绍面向十亿用户的存储扩容方案",
+      "summary_source": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-23",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "summary": "英伟达介绍哈萨克斯坦围绕算力、模型和应用扩展 AI 生态的进展，包括计划部署 Vera Rubin 基础设施、发展哈萨克语模型及探索工业、农业和物流中的物理 AI。黄仁勋在阿斯塔纳活动中宣布投资哈萨克斯坦创立的 Higgsfield AI。文中的基础设施计划应与已经完成的部署区分看待。",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达与哈萨克斯坦推进 AI 算力和本土应用",
+      "summary_source": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+      "summary": "英伟达为 Cosmos 平台新增训练工具、仿真检查点和 Data Factory 工作流，覆盖驾驶数据、图像属性、罕见事件视频、缺陷图像及视频天气光照增强。Cosmos Curator 也扩展了多模态、多传感器数据处理。官方以保时捷和 ANYbotics 为例说明合成数据的应用，目标是帮助物理 AI 开发者准备数据、适配模型并在部署前评估性能。",
+      "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达扩展 Cosmos 世界模型训练和数据工具",
+      "summary_source": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 51
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 18
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 46
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 144
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 1
+    }
+  ],
+  "candidate_count": 2005
+}

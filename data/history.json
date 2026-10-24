@@ -1471,6 +1471,42 @@
         "url:https://doi.org/10.1056/aioa2501000"
       ],
       "doi": "10.1056/aioa2501000"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "Large language models poorly capture how word order shapes representations of sentence meaning in the human brain",
+      "url": "https://doi.org/10.7554/elife.108442.4",
+      "keys": [
+        "doi:10.7554/elife.108442.4",
+        "title:largelanguagemodelspoorlycapturehowwordordershapesrepresentationsofsentencemeaninginthehumanbrain",
+        "title:语言模型难以复现人脑如何利用词序理解句意",
+        "url:https://doi.org/10.7554/elife.108442.4"
+      ],
+      "doi": "10.7554/elife.108442.4"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "Generating synthetic task-based brain fingerprints for population neuroscience using deep learning",
+      "url": "https://doi.org/10.1038/s42003-025-09158-6",
+      "keys": [
+        "doi:10.1038/s42003-025-09158-6",
+        "title:generatingsynthetictaskbasedbrainfingerprintsforpopulationneuroscienceusingdeeplearning",
+        "title:深度学习从静息态脑扫描预测认知任务活动图",
+        "url:https://doi.org/10.1038/s42003-025-09158-6"
+      ],
+      "doi": "10.1038/s42003-025-09158-6"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "Evolocumab in Patients without a Previous Myocardial Infarction or Stroke",
+      "url": "https://doi.org/10.1056/nejmoa2514428",
+      "keys": [
+        "doi:10.1056/nejmoa2514428",
+        "title:evolocumabinpatientswithoutapreviousmyocardialinfarctionorstroke",
+        "title:依洛尤单抗降低特定高风险人群首次心血管事件风险",
+        "url:https://doi.org/10.1056/nejmoa2514428"
+      ],
+      "doi": "10.1056/nejmoa2514428"
     }
   ],
   "news": [
@@ -3220,6 +3256,39 @@
         "title:leadingeuropeanfinancialservicesorganizationsembraceopenmodelstobuildproprietaryintelligence",
         "title:欧洲金融机构用开放模型构建专有ai系统",
         "url:https://blogs.nvidia.com/blog/european-financial-services-organizations-open-models-proprietary-intelligence"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two",
+      "keys": [
+        "title:openai介绍面向十亿用户的存储扩容方案",
+        "title:rapidlyscalingonlinestoragetoserveover1billionchatgptuserspartii",
+        "url:https://openai.com/index/scaling-storage-one-billion-users-part-two"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "Kazakhstan Expands Compute for Its AI Future",
+      "url": "https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem/",
+      "keys": [
+        "title:kazakhstanexpandscomputeforitsaifuture",
+        "title:英伟达与哈萨克斯坦推进ai算力和本土应用",
+        "url:https://blogs.nvidia.com/blog/kazakhstan-ai-compute-ecosystem"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-24",
+      "title": "NVIDIA Cosmos Opens New Tools to Train, Evaluate and Deploy World Models",
+      "url": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/",
+      "keys": [
+        "title:nvidiacosmosopensnewtoolstotrainevaluateanddeployworldmodels",
+        "title:英伟达扩展cosmos世界模型训练和数据工具",
+        "url:https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models"
       ],
       "company": "NVIDIA"
     }
