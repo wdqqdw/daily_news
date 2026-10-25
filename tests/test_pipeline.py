@@ -29,6 +29,19 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_human_communication_requires_observed_comparison_and_llm(self):
+        p=paper('10.1/communication',
+                'AI-generated language differs from human communication',
+                abstract='We model human behaviour using large language models and compare outputs with observed human responses in online conversations.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='AI-generated language differs from robot communication'),1))
+        for abstract in ('Neural networks predict human responses and human behaviour.',
+                         'Language models may explain human communication in future work.',
+                         'Language models simulate human participants in online conversations.',
+                         'A simulated society of AI chatbots models human behaviour.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
     def test_conversation_dynamics_requires_human_data_and_language_model(self):
         p=paper('10.1/conversation','Natural language processing models reveal neural dynamics of human conversation',
                 abstract='We compare GPT-2 language model embeddings with recordings from human participants during conversation.',citations=31)

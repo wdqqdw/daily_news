@@ -104,5 +104,23 @@
     ],
     "reason": "The publisher explicitly labels this as a Review and the abstract describes a systematic review of plant disease detection methods.",
     "source": "https://link.springer.com/article/10.1186/s13007-025-01450-0"
+  },
+  "10.1001/jamanetworkopen.2025.42281": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "Publisher labels this original survey as a Research Letter. Excluded under the existing letter-publication-type rule; the Crossref journal-article record omits that subtype.",
+    "source": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2841067"
+  },
+  "10.1021/jacs.5c17673": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "ACS identifies this article as a Perspective, which discusses and synthesizes catalyst-design approaches rather than reporting an original empirical study.",
+    "source": "https://pubs.acs.org/doi/abs/10.1021/jacs.5c17673"
   }
 }

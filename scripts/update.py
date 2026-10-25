@@ -312,7 +312,12 @@ def relevant(p, slot):
         reaction_sample = (OBSERVED_HUMANS.search(reaction_source)
                            or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',reaction_source,re.I))
         human_reactions = HUMAN_SOCIAL_REACTION.search(title) and reaction_sample and human_research_source(reaction_source)
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation) and MODELLING.search(text) and LLM.search(text))
+        # Modelling human communication also studies people. Require observed
+        # human comparison data, rather than a claim about synthetic dialogue.
+        human_communication = (re.search(r'\bhuman communication\b',title,re.I)
+                               and OBSERVED_HUMANS.search(reaction_source)
+                               and human_research_source(reaction_source))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication) and MODELLING.search(text) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.

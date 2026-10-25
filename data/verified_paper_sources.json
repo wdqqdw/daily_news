@@ -194,5 +194,21 @@
     "checked_on": "2026-10-24",
     "discover": true,
     "notes": "The authors use deep learning to model human brain activity and cognitive differences from observed fMRI data. DeepTaskGen predicts task-related activation maps from resting-state scans. The study uses 958 human participants from the HCP Young Adult dataset, tests transfer in 637 HCP Development participants, and generates 47 contrast maps across seven cognitive tasks for 20,792 UK Biobank participants. Synthetic maps preserve some individual differences and predict demographic, cognitive and clinical variables comparably to or better than the tested actual maps and resting-state connectomes. Predictions are synthetic estimates rather than acquired task measurements; accuracy varies across tasks and transfer populations. The publisher labels this as an original research Article first published on 14 November 2025."
+  },
+  "10.1073/pnas.2531748123": {
+    "doi": "10.1073/pnas.2531748123",
+    "title": "AI-generated language remains systematically distinguishable from human communication",
+    "source": "https://www.pnas.org/doi/10.1073/pnas.2531748123",
+    "checked_on": "2026-10-25",
+    "discover": true,
+    "notes": "The authors test whether large language models reproduce observed human behaviour by comparing generated replies with real human responses from Twitter/X, Reddit and Bluesky. They evaluate nine open-weight models and five calibration approaches using the CHAT validation framework. The data include 275 Twitter/X users, 492 Reddit users and 59 Bluesky account clusters, with 20 held-out reply messages per user or cluster. Automated detectability, semantic similarity and interpretable language features reveal persistent differences, particularly in emotional expression. Calibration can trade greater human-likeness against fidelity to the original human response. Larger and instruction-tuned models do not consistently improve realism. These findings concern the evaluated models and platform datasets, not every form of human communication. PNAS labels the work a Research Article first published on 12 October 2026."
+  },
+  "10.1038/s41467-024-53147-y": {
+    "doi": "10.1038/s41467-024-53147-y",
+    "title": "A large-scale examination of inductive biases shaping high-level visual representation in brains and machines",
+    "source": "https://www.nature.com/articles/s41467-024-53147-y",
+    "checked_on": "2026-10-25",
+    "discover": true,
+    "notes": "The authors compare 224 computer vision models, including deep neural networks and Transformers, with observed human fMRI responses to study human brain visual representations. The analysis uses occipitotemporal cortex data from four human participants viewing 1,000 natural images in the Natural Scenes Dataset. Controlled comparisons examine model architecture, training objectives and visual training data. Training data differences have the largest and most consistent effects on brain predictivity; different architectures and objectives can achieve similar predictivity when other factors are controlled. Many internally different models fit the brain data similarly, so predictive alignment alone does not establish identical neural mechanisms. The publisher labels this an original research Article first published on 30 October 2024."
   }
 }

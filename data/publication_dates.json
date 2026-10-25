@@ -50,5 +50,10 @@
     "published": "2026-06-04",
     "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2604625",
     "reason": "出版商与 PubMed 均标明首次在线发表于2026年6月4日；Crossref 使用2026年8月6日卷期日期。按首次发表时间计算新近程度和引用速度。"
+  },
+  "10.1056/nejmoa2504735": {
+    "published": "2025-08-30",
+    "source": "https://www.nejm.org/doi/abs/10.1056/NEJMoa2504735",
+    "reason": "The publisher gives first online publication as 30 August 2025; Crossref supplied the later 13 November issue date."
   }
 }

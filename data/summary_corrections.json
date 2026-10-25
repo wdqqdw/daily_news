@@ -1029,5 +1029,40 @@
     "title_zh": "英伟达扩展 Cosmos 世界模型训练和数据工具",
     "summary": "英伟达为 Cosmos 平台新增训练工具、仿真检查点和 Data Factory 工作流，覆盖驾驶数据、图像属性、罕见事件视频、缺陷图像及视频天气光照增强。Cosmos Curator 也扩展了多模态、多传感器数据处理。官方以保时捷和 ANYbotics 为例说明合成数据的应用，目标是帮助物理 AI 开发者准备数据、适配模型并在部署前评估性能。",
     "summary_source": "https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models/"
+  },
+  "doi:10.1073/pnas.2531748123": {
+    "title_zh": "AI 生成语言与真实人类交流仍存在系统性差异",
+    "summary": "研究提出 CHAT 评估框架，将9个开放权重语言模型的生成回复与 X、Reddit 和 Bluesky 上的真实用户回复比较，并检验微调、风格提示和上下文检索等5种校准策略。校准后仍存在明显差异，尤其体现在情感表达；更大或经过指令微调的模型并不总是更像人。降低可识别性有时还会损失对真实回复语义的还原，提示社会模拟需要针对具体数据验证。",
+    "summary_source": "https://www.pnas.org/doi/10.1073/pnas.2531748123"
+  },
+  "doi:10.1038/s41467-024-53147-y": {
+    "title_zh": "比较224个视觉模型，揭示影响模型与人脑对齐的因素",
+    "summary": "研究将224个视觉模型与4名参与者观看1,000张自然图片时的脑成像数据比较，系统考察架构、训练目标和训练图像。控制其他因素后，不同架构和目标可达到相近的人脑预测表现，训练图像差异的影响更稳定。多个内部表征不同的模型也能同样拟合脑活动，说明高预测分数不足以证明模型采用了与人脑相同的机制。",
+    "summary_source": "https://www.nature.com/articles/s41467-024-53147-y"
+  },
+  "doi:10.1093/nar/gkaf1110": {
+    "title_zh": "原核生物分类数据库扩充名称、基因组与检索功能",
+    "summary": "这项数据库资源研究介绍 TYGS 与 LPSN 的2025年更新，用于原核生物的基因组分类和规范命名。LPSN 收录超过59,000个分类单元名称，TYGS 新增超过23,500条基因组序列，并加强检索、提交和平台间互联。更新还纳入大量蓝细菌名称与医学细菌推荐命名列表，方便研究者核查分类依据和统一名称。",
+    "summary_source": "https://academic.oup.com/nar/article/54/D1/D884/8306133"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1": {
+    "title_zh": "Qwen Code 更新会话管理、恢复与终端交互功能",
+    "summary": "Qwen Code v0.26.1 增加按标题搜索会话和归档筛选，支持空闲会话手动压缩上下文，并改善异常恢复时的状态提示与操作引导。更新还补齐终端输入、Vim 操作和历史记录等交互功能。QQbot 恢复按群隔离会话，属于可能影响现有使用方式的变更；这是开发工具发布，不计入论文。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1"
+  },
+  "url:https://openai.com/index/openai-nask-ai-safety-security-partnership": {
+    "title_zh": "OpenAI 与波兰 NASK 合作开展 AI 安全研究",
+    "summary": "OpenAI 与波兰国家研究机构 NASK 达成合作，计划围绕 AI 能力评估、系统漏洞和防护措施开展技术研究。双方将结合 NASK 的安全研究与网络安全经验，探索风险报告和共同评估方法。公告介绍的是合作方向，尚未给出这项合作的新实验结果。",
+    "summary_source": "https://openai.com/index/openai-nask-ai-safety-security-partnership"
+  },
+  "url:https://blogs.nvidia.com/blog/dsx-power": {
+    "title_zh": "英伟达 DSX 协同规划电网与 AI 数据中心供电",
+    "summary": "英伟达介绍 DSX 如何把电网、变电站和数据中心算力纳入共同规划，通过数字仿真在建设前检验设计，并协调计算负载与供电条件。GE Vernova、Hitachi Energy、施耐德及西门子能源等参与设备、参考架构或仿真工具开发。相关案例包含验证和规划阶段项目，公告中的潜在增容量不能视为已经建成的供电能力。",
+    "summary_source": "https://blogs.nvidia.com/blog/dsx-power/"
+  },
+  "url:https://blogs.nvidia.com/blog/european-retail-open-models-robotics": {
+    "title_zh": "欧洲零售商应用英伟达开放模型与数字孪生",
+    "summary": "英伟达介绍欧洲零售企业在购物助手、商品搜索、视觉内容和仓储仿真中的 AI 应用。Shopify 微调 Nemotron 模型支持 Sidekick 的 GraphQL 子智能体，并报告其内部基准中的成本和速度改善；这些指标限于该评测。Otto 与 Reply 等利用仓库数字孪生预先模拟机器人协作，公告同时涵盖原型、生产应用和后续部署计划。",
+    "summary_source": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/"
   }
 }
