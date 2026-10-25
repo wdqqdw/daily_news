@@ -1507,6 +1507,42 @@
         "url:https://doi.org/10.1056/nejmoa2514428"
       ],
       "doi": "10.1056/nejmoa2514428"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "AI-generated language remains systematically distinguishable from human communication",
+      "url": "https://doi.org/10.1073/pnas.2531748123",
+      "keys": [
+        "doi:10.1073/pnas.2531748123",
+        "title:aigeneratedlanguageremainssystematicallydistinguishablefromhumancommunication",
+        "title:ai生成语言与真实人类交流仍存在系统性差异",
+        "url:https://doi.org/10.1073/pnas.2531748123"
+      ],
+      "doi": "10.1073/pnas.2531748123"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "A large-scale examination of inductive biases shaping high-level visual representation in brains and machines",
+      "url": "https://doi.org/10.1038/s41467-024-53147-y",
+      "keys": [
+        "doi:10.1038/s41467-024-53147-y",
+        "title:alargescaleexaminationofinductivebiasesshapinghighlevelvisualrepresentationinbrainsandmachines",
+        "title:比较224个视觉模型揭示影响模型与人脑对齐的因素",
+        "url:https://doi.org/10.1038/s41467-024-53147-y"
+      ],
+      "doi": "10.1038/s41467-024-53147-y"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "TYGS and LPSN in 2025: a Global Core Biodata Resource for genome-based classification and nomenclature of prokaryotes within DSMZ Digital Diversity",
+      "url": "https://doi.org/10.1093/nar/gkaf1110",
+      "keys": [
+        "doi:10.1093/nar/gkaf1110",
+        "title:tygsandlpsnin2025aglobalcorebiodataresourceforgenomebasedclassificationandnomenclatureofprokaryoteswithindsmzdigitaldiversity",
+        "title:原核生物分类数据库扩充名称基因组与检索功能",
+        "url:https://doi.org/10.1093/nar/gkaf1110"
+      ],
+      "doi": "10.1093/nar/gkaf1110"
     }
   ],
   "news": [
@@ -3289,6 +3325,50 @@
         "title:nvidiacosmosopensnewtoolstotrainevaluateanddeployworldmodels",
         "title:英伟达扩展cosmos世界模型训练和数据工具",
         "url:https://blogs.nvidia.com/blog/cosmos-open-train-evaluate-deploy-world-models"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "Qwen Code · Release v0.26.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1",
+      "keys": [
+        "title:qwencodereleasev0261",
+        "title:qwencode更新会话管理恢复与终端交互功能",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.1"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "OpenAI and Poland’s NASK partner to advance AI safety and security",
+      "url": "https://openai.com/index/openai-nask-ai-safety-security-partnership",
+      "keys": [
+        "title:openaiandpolandsnaskpartnertoadvanceaisafetyandsecurity",
+        "title:openai与波兰nask合作开展ai安全研究",
+        "url:https://openai.com/index/openai-nask-ai-safety-security-partnership"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "How Companies Are Using NVIDIA DSX to Break the Power Bottleneck",
+      "url": "https://blogs.nvidia.com/blog/dsx-power/",
+      "keys": [
+        "title:howcompaniesareusingnvidiadsxtobreakthepowerbottleneck",
+        "title:英伟达dsx协同规划电网与ai数据中心供电",
+        "url:https://blogs.nvidia.com/blog/dsx-power"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-25",
+      "title": "NVIDIA Transforms European Retail, From Digital Discovery to Physical Operations",
+      "url": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/",
+      "keys": [
+        "title:nvidiatransformseuropeanretailfromdigitaldiscoverytophysicaloperations",
+        "title:欧洲零售商应用英伟达开放模型与数字孪生",
+        "url:https://blogs.nvidia.com/blog/european-retail-open-models-robotics"
       ],
       "company": "NVIDIA"
     }
