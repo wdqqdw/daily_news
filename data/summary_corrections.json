@@ -1064,5 +1064,30 @@
     "title_zh": "欧洲零售商应用英伟达开放模型与数字孪生",
     "summary": "英伟达介绍欧洲零售企业在购物助手、商品搜索、视觉内容和仓储仿真中的 AI 应用。Shopify 微调 Nemotron 模型支持 Sidekick 的 GraphQL 子智能体，并报告其内部基准中的成本和速度改善；这些指标限于该评测。Otto 与 Reply 等利用仓库数字孪生预先模拟机器人协作，公告同时涵盖原型、生产应用和后续部署计划。",
     "summary_source": "https://blogs.nvidia.com/blog/european-retail-open-models-robotics/"
+  },
+  "doi:10.1073/pnas.2512075122": {
+    "title_zh": "用语言模型提示词比较经济博弈中的人类行为",
+    "summary": "研究利用58个国家68,779名参与者的经济博弈记录，在5种游戏、7类角色情境中调整语言模型提示词，使模型回答覆盖并拟合真人行为分布。提示词组合可用于比较不同游戏及人群的行为倾向。但行为匹配不能证明模型找到了人的真实动机，相关解释仍是需要进一步检验的假设；样本也以社会科学专业大学生为主。",
+    "summary_source": "https://www.pnas.org/doi/10.1073/pnas.2512075122"
+  },
+  "doi:10.1093/pnasnexus/pgae519": {
+    "title_zh": "从脑连接预测智力：解释哪些连接重要比追求高分更有价值",
+    "summary": "这项预注册研究分析806名健康成人的脑成像数据，并在另322人的独立样本中验证，比较机器学习在静息态和不同任务状态下对多种智力指标的预测。结果显示，预测信息分散于全脑，多组连接能够互相补充或部分替代，表现也随任务和智力成分变化。研究强调系统检查模型使用的脑特征；预测相关性本身不能证明因果机制。",
+    "summary_source": "https://academic.oup.com/pnasnexus/article/3/12/pgae519/7915712"
+  },
+  "doi:10.1126/science.adz4351": {
+    "title_zh": "Biomni 用 AI 智能体串联生物医学研究任务",
+    "summary": "研究提出通用生物医学智能体 Biomni，将语言模型推理、检索规划与代码执行结合，自动组合工具和数据库完成研究流程。作者在基因筛选、药物再利用、罕见病诊断及分子克隆等任务中测试，并展示多模态数据分析、蛋白稳定性优化和实验设备协同案例。结果支持其辅助科研的潜力，但评估只覆盖部分任务，不能据此认为它能独立完成所有生物医学研究。",
+    "summary_source": "https://www.science.org/doi/10.1126/science.adz4351"
+  },
+  "url:https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction": {
+    "title_zh": "英伟达 Earth-2 扩展欧洲天气与气候预测应用",
+    "summary": "英伟达介绍面向欧洲的 StormScope EU 短临预报模型，利用卫星观测预测云层变化，演示系统每10分钟更新一次。AXA 用 Earth-2 模拟大量气旋季节评估风险，曼彻斯特大学将 CorrDiff 用于英国空气质量建模，TotalEnergies 正在两个光伏站点评估太阳辐射预报。公告涵盖不同成熟度的应用，相关成效来自公司披露。",
+    "summary_source": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/"
+  },
+  "url:https://blogs.nvidia.com/blog/european-public-sector-open-models": {
+    "title_zh": "欧洲公共部门推进开放模型与本地 AI 部署",
+    "summary": "英伟达介绍欧洲公共服务的开放模型项目：deepset 扩展面向欧盟委员会的 AI 平台能力，波兰正在建设医疗影像和就业服务系统，德国团队推进本地部署助手及云服务。英国和德国的合成人物数据集也用于模型评估与训练；这些记录不是真人样本。多项项目仍在开发，不能将规划规模视为已经落地的服务覆盖。",
+    "summary_source": "https://blogs.nvidia.com/blog/european-public-sector-open-models/"
   }
 }

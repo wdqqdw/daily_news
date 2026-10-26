@@ -210,5 +210,21 @@
     "checked_on": "2026-10-25",
     "discover": true,
     "notes": "The authors compare 224 computer vision models, including deep neural networks and Transformers, with observed human fMRI responses to study human brain visual representations. The analysis uses occipitotemporal cortex data from four human participants viewing 1,000 natural images in the Natural Scenes Dataset. Controlled comparisons examine model architecture, training objectives and visual training data. Training data differences have the largest and most consistent effects on brain predictivity; different architectures and objectives can achieve similar predictivity when other factors are controlled. Many internally different models fit the brain data similarly, so predictive alignment alone does not establish identical neural mechanisms. The publisher labels this an original research Article first published on 30 October 2024."
+  },
+  "10.1073/pnas.2512075122": {
+    "doi": "10.1073/pnas.2512075122",
+    "title": "Using large language models to categorize strategic situations and decipher motivations behind human behaviors",
+    "source": "https://www.pnas.org/doi/10.1073/pnas.2512075122",
+    "checked_on": "2026-10-26",
+    "discover": true,
+    "notes": "The authors use large language models to model observed human behavior in five economic games with seven role-specific scenarios. They compare model responses with recorded decisions from 68,779 human subjects across 58 countries in MobLab, mostly social-science college students. Iteratively varied natural-language prompts broaden the model response distributions and mixtures of prompts are fitted to human behavior distributions. Prompt-based representations distinguish games and population groups. The paper explicitly warns that matching behavior does not establish that the model prompts recover actual human motives; the resulting explanations remain model-based hypotheses. PNAS labels this an original Research Article first published on 28 August 2025."
+  },
+  "10.1093/pnasnexus/pgae519": {
+    "doi": "10.1093/pnasnexus/pgae519",
+    "title": "Choosing explanation over performance: Insights from machine learning-based prediction of human intelligence from brain connectivity",
+    "source": "https://academic.oup.com/pnasnexus/article/3/12/pgae519/7915712",
+    "checked_on": "2026-10-26",
+    "discover": true,
+    "notes": "This preregistered original study uses machine learning to predict human intelligence and investigate human cognition from observed functional brain connectivity. It analyzes fMRI data from 806 healthy adult participants, divided into a 610-person main sample and a 196-person lockbox sample, with external replication in 322 adults. Nonlinear prediction models are compared across resting state and seven task conditions, different intelligence components, and selected brain connections. Predictive information is distributed and partly redundant across the brain; accuracy depends on the cognitive state and intelligence component. The results support systematic interpretation of predictive features, without establishing causal brain mechanisms. The journal published the article on 10 December 2024."
   }
 }
