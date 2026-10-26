@@ -1,0 +1,304 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T09:38:51+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Using large language models to categorize strategic situations and decipher motivations behind human behaviors",
+      "doi": "10.1073/pnas.2512075122",
+      "url": "https://doi.org/10.1073/pnas.2512075122",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "publisher": "National Academy of Sciences",
+      "published": "2025-08-28",
+      "authors": "Xie et al.",
+      "citations": 5,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1073%2Fpnas.2512075122",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-26；来源：Crossref；引用数 5，距发表 424 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究利用58个国家68,779名参与者的经济博弈记录，在5种游戏、7类角色情境中调整语言模型提示词，使模型回答覆盖并拟合真人行为分布。提示词组合可用于比较不同游戏及人群的行为倾向。但行为匹配不能证明模型找到了人的真实动机，相关解释仍是需要进一步检验的假设；样本也以社会科学专业大学生为主。",
+      "tag": "认知与行为建模",
+      "ranking_score": 7.6598,
+      "title_zh": "用语言模型提示词比较经济博弈中的人类行为",
+      "summary_source": "https://www.pnas.org/doi/10.1073/pnas.2512075122",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Choosing explanation over performance: Insights from machine learning-based prediction of human intelligence from brain connectivity",
+      "doi": "10.1093/pnasnexus/pgae519",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae519",
+      "journal": "PNAS Nexus",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2024-12-10",
+      "authors": "Thiele et al.",
+      "citations": 18,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgae519",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-26；来源：Crossref；引用数 18，距发表 685 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "这项预注册研究分析806名健康成人的脑成像数据，并在另322人的独立样本中验证，比较机器学习在静息态和不同任务状态下对多种智力指标的预测。结果显示，预测信息分散于全脑，多组连接能够互相补充或部分替代，表现也随任务和智力成分变化。研究强调系统检查模型使用的脑特征；预测相关性本身不能证明因果机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 10.9001,
+      "title_zh": "从脑连接预测智力：解释哪些连接重要比追求高分更有价值",
+      "summary_source": "https://academic.oup.com/pnasnexus/article/3/12/pgae519/7915712",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Autonomous biomedical research with an artificial intelligence agent",
+      "doi": "10.1126/science.adz4351",
+      "url": "https://doi.org/10.1126/science.adz4351",
+      "journal": "Science",
+      "publisher": "American Association for the Advancement of Science (AAAS)",
+      "published": "2026-07-09",
+      "authors": "Huang et al.",
+      "citations": 52,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1126%2Fscience.adz4351",
+      "publication_date_source": "https://www.eurekalert.org/news-releases/1134718",
+      "slot": 3,
+      "freshness": "近期研究",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 52 次引用，约 14.31 次 / 月。",
+      "evidence": "检索时间：2026-10-26；来源：Crossref；引用数 52，距发表 109 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "研究提出通用生物医学智能体 Biomni，将语言模型推理、检索规划与代码执行结合，自动组合工具和数据库完成研究流程。作者在基因筛选、药物再利用、罕见病诊断及分子克隆等任务中测试，并展示多模态数据分析、蛋白稳定性优化和实验设备协同案例。结果支持其辅助科研的潜力，但评估只覆盖部分任务，不能据此认为它能独立完成所有生物医学研究。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.4291,
+      "title_zh": "Biomni 用 AI 智能体串联生物医学研究任务",
+      "summary_source": "https://www.science.org/doi/10.1126/science.adz4351",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+      "summary": "英伟达介绍面向欧洲的 StormScope EU 短临预报模型，利用卫星观测预测云层变化，演示系统每10分钟更新一次。AXA 用 Earth-2 模拟大量气旋季节评估风险，曼彻斯特大学将 CorrDiff 用于英国空气质量建模，TotalEnergies 正在两个光伏站点评估太阳辐射预报。公告涵盖不同成熟度的应用，相关成效来自公司披露。",
+      "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达 Earth-2 扩展欧洲天气与气候预测应用",
+      "summary_source": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-22",
+      "title": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+      "summary": "英伟达介绍欧洲公共服务的开放模型项目：deepset 扩展面向欧盟委员会的 AI 平台能力，波兰正在建设医疗影像和就业服务系统，德国团队推进本地部署助手及云服务。英国和德国的合成人物数据集也用于模型评估与训练；这些记录不是真人样本。多项项目仍在开发，不能将规划规模视为已经落地的服务覆盖。",
+      "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "欧洲公共部门推进开放模型与本地 AI 部署",
+      "summary_source": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 100
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 46
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 143
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2002
+}

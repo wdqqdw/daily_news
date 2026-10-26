@@ -1543,6 +1543,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1110"
       ],
       "doi": "10.1093/nar/gkaf1110"
+    },
+    {
+      "first_pushed": "2026-10-26",
+      "title": "Using large language models to categorize strategic situations and decipher motivations behind human behaviors",
+      "url": "https://doi.org/10.1073/pnas.2512075122",
+      "keys": [
+        "doi:10.1073/pnas.2512075122",
+        "title:usinglargelanguagemodelstocategorizestrategicsituationsanddeciphermotivationsbehindhumanbehaviors",
+        "title:用语言模型提示词比较经济博弈中的人类行为",
+        "url:https://doi.org/10.1073/pnas.2512075122"
+      ],
+      "doi": "10.1073/pnas.2512075122"
+    },
+    {
+      "first_pushed": "2026-10-26",
+      "title": "Choosing explanation over performance: Insights from machine learning-based prediction of human intelligence from brain connectivity",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae519",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgae519",
+        "title:choosingexplanationoverperformanceinsightsfrommachinelearningbasedpredictionofhumanintelligencefrombrainconnectivity",
+        "title:从脑连接预测智力解释哪些连接重要比追求高分更有价值",
+        "url:https://doi.org/10.1093/pnasnexus/pgae519"
+      ],
+      "doi": "10.1093/pnasnexus/pgae519"
+    },
+    {
+      "first_pushed": "2026-10-26",
+      "title": "Autonomous biomedical research with an artificial intelligence agent",
+      "url": "https://doi.org/10.1126/science.adz4351",
+      "keys": [
+        "doi:10.1126/science.adz4351",
+        "title:autonomousbiomedicalresearchwithanartificialintelligenceagent",
+        "title:biomni用ai智能体串联生物医学研究任务",
+        "url:https://doi.org/10.1126/science.adz4351"
+      ],
+      "doi": "10.1126/science.adz4351"
     }
   ],
   "news": [
@@ -3369,6 +3405,28 @@
         "title:nvidiatransformseuropeanretailfromdigitaldiscoverytophysicaloperations",
         "title:欧洲零售商应用英伟达开放模型与数字孪生",
         "url:https://blogs.nvidia.com/blog/european-retail-open-models-robotics"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-26",
+      "title": "Pioneers Across Europe Deploy NVIDIA Earth-2 Open Models to Power Real-World Weather and Climate Prediction",
+      "url": "https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction/",
+      "keys": [
+        "title:pioneersacrosseuropedeploynvidiaearth2openmodelstopowerrealworldweatherandclimateprediction",
+        "title:英伟达earth2扩展欧洲天气与气候预测应用",
+        "url:https://blogs.nvidia.com/blog/europe-earth-2-open-models-weather-climate-prediction"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-26",
+      "title": "NVIDIA Open Models Power a New Wave of European Public Sector Projects",
+      "url": "https://blogs.nvidia.com/blog/european-public-sector-open-models/",
+      "keys": [
+        "title:nvidiaopenmodelspoweranewwaveofeuropeanpublicsectorprojects",
+        "title:欧洲公共部门推进开放模型与本地ai部署",
+        "url:https://blogs.nvidia.com/blog/european-public-sector-open-models"
       ],
       "company": "NVIDIA"
     }
