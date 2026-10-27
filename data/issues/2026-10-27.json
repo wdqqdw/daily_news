@@ -1,0 +1,316 @@
+{
+  "date": "2026-10-27",
+  "generated_at": "2026-10-27T09:54:58+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Parallel trade-offs in human cognition and neural networks: The dynamic interplay between in-context and in-weight learning",
+      "doi": "10.1073/pnas.2510270122",
+      "url": "https://doi.org/10.1073/pnas.2510270122",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "publisher": "National Academy of Sciences",
+      "published": "2025-08-28",
+      "authors": "Russin et al.",
+      "citations": 19,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1073%2Fpnas.2510270122",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-27；来源：Crossref；引用数 19，距发表 425 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 Transformer 的上下文学习与权重更新结合，用已有的人类分类和组合学习实验检验模型，并测试 GPT-3.5 与 Llama2。两种学习方式的互动可复现不同教学顺序的效果，以及灵活泛化与长期保持之间的取舍：依靠上下文迅速解题时，推动权重更新的误差可能更少。论文提供的是对既有人类行为的计算解释，尚不能证明人脑采用相同机制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 12.2701,
+      "title_zh": "神经网络中的两种学习方式复现人类学习取舍",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415290/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Revealing emergent human-like conceptual representations from language prediction",
+      "doi": "10.1073/pnas.2512514122",
+      "url": "https://doi.org/10.1073/pnas.2512514122",
+      "journal": "Proceedings of the National Academy of Sciences",
+      "publisher": "National Academy of Sciences",
+      "published": "2025-10-31",
+      "authors": "Xu et al.",
+      "citations": 12,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1073%2Fpnas.2512514122",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-27；来源：Crossref；引用数 12，距发表 361 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过反向词典任务提取语言模型的概念表征，与已有的人类相似性判断、概念选择和脑成像数据比较。模型表征能够预测部分行为判断和脑活动，并在多项比较中优于常规词嵌入，但概念选择表现仍低于真人之间的一致性，对颜色、纹理等视觉属性的刻画也较弱。预测上的对应关系不能证明模型具有与人相同的理解机制。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.0986,
+      "title_zh": "语言模型的概念表征能预测部分人类判断与脑活动",
+      "summary_source": "https://www.pnas.org/doi/10.1073/pnas.2512514122",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Accuracy, precision, recall, f1-score, or MCC? empirical evidence from advanced statistics, ML, and XAI for evaluating business predictive models",
+      "doi": "10.1186/s40537-025-01313-4",
+      "url": "https://doi.org/10.1186/s40537-025-01313-4",
+      "journal": "Journal of Big Data",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-12-09",
+      "authors": "Sujon et al.",
+      "citations": 120,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1186%2Fs40537-025-01313-4",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 120 次引用，约 11.18 次 / 月。",
+      "evidence": "检索时间：2026-10-27；来源：Crossref；引用数 120，距发表 322 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在信用卡违约与电信客户流失两个数据集上，比较逻辑回归、随机森林等5类模型的准确率、精确率、召回率、F1和马修斯相关系数，并检验分类阈值、噪声及特征贡献的影响。作者在这些实验中发现 F1 较稳定，马修斯相关系数可提供补充信息，而准确率容易掩盖少数类表现。结论受这两个数据集和实验设定限制，不能据此把 F1 视为所有任务的最佳指标。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.3788,
+      "title_zh": "不平衡分类该看哪个指标？两组商业数据的实证比较",
+      "summary_source": "https://link.springer.com/article/10.1186/s40537-025-01313-4",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-26",
+      "title": "Working with academic communities to build scientific understanding",
+      "summary": "OpenAI 公布涉及调和分析、计算复杂性和量子场论的三项 AI 研究输出，并采用不同方式与外部学者合作。数学材料公开发布，计算机科学项目公开自然语言证明和 Lean 形式化材料，物理项目的材料发布交由外部团队决定。公司将这些手稿定位为仍需学界理解与核查的原始研究材料；这里记录的是公司公告，不计入每日三篇论文。",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 邀请学术团队核查和解释 AI 科研输出",
+      "summary_source": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+      "summary": "英伟达介绍欧洲及周边地区云伙伴扩建训练、推理和物理 AI 基础设施，并支持 OpenShell 架构限制智能体访问资源和使用工具的范围。Nscale 报告同等供电预算下的吞吐量测试，Mistral 等也公布后续硬件部署计划。公告同时包含现有服务、测试结果和未来建设安排，不能将计划容量视为已经上线的算力。",
+      "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达云伙伴扩展欧洲算力与 AI 智能体部署服务",
+      "summary_source": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+      "summary": "英伟达推出可抢先体验的 FOX 工厂运营蓝图，用于构建巡检、根因分析和车间协同智能体。西门子将相关能力用于工厂系统和缺陷图像生成，奥迪等通过数字孪生验证生产与机器人方案。公告也介绍仿真软件加速案例；性能及成本数据来自企业测试或估计，各项目的部署成熟度不同。",
+      "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "欧洲制造商结合英伟达工业智能体与数字孪生",
+      "summary_source": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 106
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 51
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2007
+}

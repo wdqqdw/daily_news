@@ -1579,6 +1579,42 @@
         "url:https://doi.org/10.1126/science.adz4351"
       ],
       "doi": "10.1126/science.adz4351"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "Parallel trade-offs in human cognition and neural networks: The dynamic interplay between in-context and in-weight learning",
+      "url": "https://doi.org/10.1073/pnas.2510270122",
+      "keys": [
+        "doi:10.1073/pnas.2510270122",
+        "title:paralleltradeoffsinhumancognitionandneuralnetworksthedynamicinterplaybetweenincontextandinweightlearning",
+        "title:神经网络中的两种学习方式复现人类学习取舍",
+        "url:https://doi.org/10.1073/pnas.2510270122"
+      ],
+      "doi": "10.1073/pnas.2510270122"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "Revealing emergent human-like conceptual representations from language prediction",
+      "url": "https://doi.org/10.1073/pnas.2512514122",
+      "keys": [
+        "doi:10.1073/pnas.2512514122",
+        "title:revealingemergenthumanlikeconceptualrepresentationsfromlanguageprediction",
+        "title:语言模型的概念表征能预测部分人类判断与脑活动",
+        "url:https://doi.org/10.1073/pnas.2512514122"
+      ],
+      "doi": "10.1073/pnas.2512514122"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "Accuracy, precision, recall, f1-score, or MCC? empirical evidence from advanced statistics, ML, and XAI for evaluating business predictive models",
+      "url": "https://doi.org/10.1186/s40537-025-01313-4",
+      "keys": [
+        "doi:10.1186/s40537-025-01313-4",
+        "title:accuracyprecisionrecallf1scoreormccempiricalevidencefromadvancedstatisticsmlandxaiforevaluatingbusinesspredictivemodels",
+        "title:不平衡分类该看哪个指标两组商业数据的实证比较",
+        "url:https://doi.org/10.1186/s40537-025-01313-4"
+      ],
+      "doi": "10.1186/s40537-025-01313-4"
     }
   ],
   "news": [
@@ -3427,6 +3463,39 @@
         "title:nvidiaopenmodelspoweranewwaveofeuropeanpublicsectorprojects",
         "title:欧洲公共部门推进开放模型与本地ai部署",
         "url:https://blogs.nvidia.com/blog/european-public-sector-open-models"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "Working with academic communities to build scientific understanding",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "keys": [
+        "title:openai邀请学术团队核查和解释ai科研输出",
+        "title:workingwithacademiccommunitiestobuildscientificunderstanding",
+        "url:https://openai.com/index/building-scientific-understanding-with-academic-communities"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "NVIDIA Cloud Partners Scale Across Europe — Sovereign, Open and Built for Safe AI Agents",
+      "url": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/",
+      "keys": [
+        "title:nvidiacloudpartnersscaleacrosseuropesovereignopenandbuiltforsafeaiagents",
+        "title:英伟达云伙伴扩展欧洲算力与ai智能体部署服务",
+        "url:https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-27",
+      "title": "Europe’s Industrial Leaders Reinvent Engineering and Manufacturing With NVIDIA",
+      "url": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/",
+      "keys": [
+        "title:europesindustrialleadersreinventengineeringandmanufacturingwithnvidia",
+        "title:欧洲制造商结合英伟达工业智能体与数字孪生",
+        "url:https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing"
       ],
       "company": "NVIDIA"
     }
