@@ -226,5 +226,28 @@
     "checked_on": "2026-10-26",
     "discover": true,
     "notes": "This preregistered original study uses machine learning to predict human intelligence and investigate human cognition from observed functional brain connectivity. It analyzes fMRI data from 806 healthy adult participants, divided into a 610-person main sample and a 196-person lockbox sample, with external replication in 322 adults. Nonlinear prediction models are compared across resting state and seven task conditions, different intelligence components, and selected brain connections. Predictive information is distributed and partly redundant across the brain; accuracy depends on the cognitive state and intelligence component. The results support systematic interpretation of predictive features, without establishing causal brain mechanisms. The journal published the article on 10 December 2024."
+  },
+  "10.1073/pnas.2512514122": {
+    "title": "Revealing emergent human-like conceptual representations from language prediction",
+    "source": "https://www.pnas.org/doi/10.1073/pnas.2512514122",
+    "checked_on": "2026-10-27",
+    "discover": true,
+    "notes": "This original empirical study compares large language model concept representations with observed human ratings and human fMRI data. A reverse-dictionary task extracts representations from LLaMA3-70B and other language models. Tests use published similarity judgments, odd-one-out choices, category-feature ratings, and brain responses recorded while three human participants viewed concept images. The representations predict several human judgments and neural response patterns better than standard embeddings, but odd-one-out performance remains below human agreement and visual features such as color and texture are less well captured. Predictive correspondence does not establish identical mechanisms or fully human-equivalent conceptual understanding.",
+    "doi": "10.1073/pnas.2512514122"
+  },
+  "10.1073/pnas.2510270122": {
+    "title": "Parallel trade-offs in human cognition and neural networks: The dynamic interplay between in-context and in-weight learning",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415290/",
+    "checked_on": "2026-10-27",
+    "discover": true,
+    "notes": "This original computational study compares transformer neural network predictions with published human category-learning and compositional-learning experiments. It also tests GPT-3.5 and Llama2 large language models on a compositional task. The models combine in-context learning through activation dynamics with in-weight learning through parameter updates. Their interaction reproduces contrasting curriculum effects observed in human participants and a trade-off between flexible generalization and retention. Successful in-context solutions reduce the error driving weight updates; disrupting attention impairs rapid generalization but can strengthen retention through additional weight learning. The study models existing human observations rather than recruiting a new human sample, and provides a computational account rather than proof of identical biological mechanisms.",
+    "doi": "10.1073/pnas.2510270122"
+  },
+  "10.1186/s40537-025-01313-4": {
+    "doi": "10.1186/s40537-025-01313-4",
+    "title": "Accuracy, precision, recall, f1-score, or MCC? empirical evidence from advanced statistics, ML, and XAI for evaluating business predictive models",
+    "source": "https://link.springer.com/article/10.1186/s40537-025-01313-4",
+    "checked_on": "2026-10-27",
+    "notes": "This original empirical study evaluates classification metrics on credit-card default and telecommunications customer-churn datasets. Five machine-learning methods are tested across decision thresholds and Gaussian input noise, with statistical comparisons and SHAP-based analyses of feature contributions. In the reported experiments, the authors find F1 relatively stable and MCC useful as a complementary measure, while accuracy and precision are sensitive to class imbalance. The evidence is limited to two business datasets and the evaluated configurations; it does not establish one universally optimal metric for all classification problems. The publisher identifies the paper as Research, first published on 9 December 2025."
   }
 }

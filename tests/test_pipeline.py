@@ -29,6 +29,22 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_empirical_human_concepts_require_observed_data_and_keep_influence_gate(self):
+        p=paper('10.1/concepts',
+                'Revealing emergent human-like conceptual representations from language prediction',
+                abstract='Large language models derive concept representations, compared with human ratings and fMRI recordings.',citations=12)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,abstract='Neural networks are compared with human ratings.'),1))
+        for slot in (1,2):
+            self.assertFalse(relevant(dict(p,publication_types=['Review']),slot))
+            for abstract in ('Language models may explain human-like concepts in future work.',
+                             'Language models simulate human participants to derive concept representations.',
+                             'This conceptual framework compares language models with human ratings.'):
+                self.assertFalse(relevant(dict(p,abstract=abstract),slot))
+        self.assertFalse(relevant(dict(p,title='A framework for human-like conceptual representations'),2))
+
     def test_human_communication_requires_observed_comparison_and_llm(self):
         p=paper('10.1/communication',
                 'AI-generated language differs from human communication',

@@ -1089,5 +1089,40 @@
     "title_zh": "欧洲公共部门推进开放模型与本地 AI 部署",
     "summary": "英伟达介绍欧洲公共服务的开放模型项目：deepset 扩展面向欧盟委员会的 AI 平台能力，波兰正在建设医疗影像和就业服务系统，德国团队推进本地部署助手及云服务。英国和德国的合成人物数据集也用于模型评估与训练；这些记录不是真人样本。多项项目仍在开发，不能将规划规模视为已经落地的服务覆盖。",
     "summary_source": "https://blogs.nvidia.com/blog/european-public-sector-open-models/"
+  },
+  "doi:10.1073/pnas.2512514122": {
+    "title_zh": "语言模型的概念表征能预测部分人类判断与脑活动",
+    "summary": "研究通过反向词典任务提取语言模型的概念表征，与已有的人类相似性判断、概念选择和脑成像数据比较。模型表征能够预测部分行为判断和脑活动，并在多项比较中优于常规词嵌入，但概念选择表现仍低于真人之间的一致性，对颜色、纹理等视觉属性的刻画也较弱。预测上的对应关系不能证明模型具有与人相同的理解机制。",
+    "summary_source": "https://www.pnas.org/doi/10.1073/pnas.2512514122"
+  },
+  "doi:10.1073/pnas.2510270122": {
+    "title_zh": "神经网络中的两种学习方式复现人类学习取舍",
+    "summary": "研究将 Transformer 的上下文学习与权重更新结合，用已有的人类分类和组合学习实验检验模型，并测试 GPT-3.5 与 Llama2。两种学习方式的互动可复现不同教学顺序的效果，以及灵活泛化与长期保持之间的取舍：依靠上下文迅速解题时，推动权重更新的误差可能更少。论文提供的是对既有人类行为的计算解释，尚不能证明人脑采用相同机制。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12415290/"
+  },
+  "doi:10.1186/s40537-025-01313-4": {
+    "title_zh": "不平衡分类该看哪个指标？两组商业数据的实证比较",
+    "summary": "研究在信用卡违约与电信客户流失两个数据集上，比较逻辑回归、随机森林等5类模型的准确率、精确率、召回率、F1和马修斯相关系数，并检验分类阈值、噪声及特征贡献的影响。作者在这些实验中发现 F1 较稳定，马修斯相关系数可提供补充信息，而准确率容易掩盖少数类表现。结论受这两个数据集和实验设定限制，不能据此把 F1 视为所有任务的最佳指标。",
+    "summary_source": "https://link.springer.com/article/10.1186/s40537-025-01313-4"
+  },
+  "url:https://openai.com/index/greptile-code-review-codex-astra": {
+    "title_zh": "Greptile 用 GPT-6 Astra 扩展应用测试与代码审查",
+    "summary": "OpenAI 介绍 Greptile 如何通过 GPT-6 Astra 的电脑操作能力启动应用、调整浏览器尺寸并模拟用户流程，检查仅阅读代码难以发现的界面问题。Greptile 还通过 MCP 向 Codex 提供代码库知识，并结合 Daybreak 开展安全防护。相关效率和返工改善来自客户案例陈述，文章没有给出独立对照评测。",
+    "summary_source": "https://openai.com/index/greptile-code-review-codex-astra"
+  },
+  "url:https://openai.com/index/building-scientific-understanding-with-academic-communities": {
+    "title_zh": "OpenAI 邀请学术团队核查和解释 AI 科研输出",
+    "summary": "OpenAI 公布涉及调和分析、计算复杂性和量子场论的三项 AI 研究输出，并采用不同方式与外部学者合作。数学材料公开发布，计算机科学项目公开自然语言证明和 Lean 形式化材料，物理项目的材料发布交由外部团队决定。公司将这些手稿定位为仍需学界理解与核查的原始研究材料；这里记录的是公司公告，不计入每日三篇论文。",
+    "summary_source": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+  },
+  "url:https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents": {
+    "title_zh": "英伟达云伙伴扩展欧洲算力与 AI 智能体部署服务",
+    "summary": "英伟达介绍欧洲及周边地区云伙伴扩建训练、推理和物理 AI 基础设施，并支持 OpenShell 架构限制智能体访问资源和使用工具的范围。Nscale 报告同等供电预算下的吞吐量测试，Mistral 等也公布后续硬件部署计划。公告同时包含现有服务、测试结果和未来建设安排，不能将计划容量视为已经上线的算力。",
+    "summary_source": "https://blogs.nvidia.com/blog/cloud-partners-europe-sovereign-safety-open-agents/"
+  },
+  "url:https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing": {
+    "title_zh": "欧洲制造商结合英伟达工业智能体与数字孪生",
+    "summary": "英伟达推出可抢先体验的 FOX 工厂运营蓝图，用于构建巡检、根因分析和车间协同智能体。西门子将相关能力用于工厂系统和缺陷图像生成，奥迪等通过数字孪生验证生产与机器人方案。公告也介绍仿真软件加速案例；性能及成本数据来自企业测试或估计，各项目的部署成熟度不同。",
+    "summary_source": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/"
   }
 }
