@@ -1615,6 +1615,42 @@
         "url:https://doi.org/10.1186/s40537-025-01313-4"
       ],
       "doi": "10.1186/s40537-025-01313-4"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Turing-like tests for language and vision demonstrate a narrowing gap between humans and AI",
+      "url": "https://doi.org/10.1038/s41562-026-02590-6",
+      "keys": [
+        "doi:10.1038/s41562-026-02590-6",
+        "title:turingliketestsforlanguageandvisiondemonstrateanarrowinggapbetweenhumansandai",
+        "title:类图灵测试显示人机模仿能力取决于任务与互动方式",
+        "url:https://doi.org/10.1038/s41562-026-02590-6"
+      ],
+      "doi": "10.1038/s41562-026-02590-6"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries",
+      "url": "https://doi.org/10.1073/pnas.2519394122",
+      "keys": [
+        "doi:10.1073/pnas.2519394122",
+        "title:simulatinghumanwellbeingwithlargelanguagemodelssystematicvalidationandmisestimationacross64000individualsfrom64countries",
+        "title:跨64国检验语言模型仍难准确预测人的幸福感",
+        "url:https://doi.org/10.1073/pnas.2519394122"
+      ],
+      "doi": "10.1073/pnas.2519394122"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Environmental impact and net-zero pathways for sustainable artificial intelligence servers in the USA",
+      "url": "https://doi.org/10.1038/s41893-025-01681-y",
+      "keys": [
+        "doi:10.1038/s41893-025-01681-y",
+        "title:ai服务器扩张的水与碳足迹取决于选址和电网转型",
+        "title:environmentalimpactandnetzeropathwaysforsustainableartificialintelligenceserversintheusa",
+        "url:https://doi.org/10.1038/s41893-025-01681-y"
+      ],
+      "doi": "10.1038/s41893-025-01681-y"
     }
   ],
   "news": [
@@ -3496,6 +3532,72 @@
         "title:europesindustrialleadersreinventengineeringandmanufacturingwithnvidia",
         "title:欧洲制造商结合英伟达工业智能体与数字孪生",
         "url:https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Qwen Code · Release v0.26.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.2",
+      "keys": [
+        "title:qwencodereleasev0262",
+        "title:qwencode更新权限规则会话恢复与网页工作区",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.2"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Retell uses OpenAI models to help power 100M monthly calls",
+      "url": "https://openai.com/index/retell-ai",
+      "keys": [
+        "title:retellusesopenaimodelstohelppower100mmonthlycalls",
+        "title:retell披露openai模型在大规模语音客服中的应用",
+        "url:https://openai.com/index/retell-ai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "Genie 4: A new generation of world simulation",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "keys": [
+        "title:deepmind发布支持原生音频的genie4世界模拟预览",
+        "title:genie4anewgenerationofworldsimulation",
+        "url:https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "How AI Is Changing the Pace of Discovery for Millions Living With Dementia",
+      "url": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/",
+      "keys": [
+        "title:howaiischangingthepaceofdiscoveryformillionslivingwithdementia",
+        "title:英伟达与cbrain推进神经退行性疾病研究工具",
+        "url:https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "OpenAI expands partnership with Oracle to bring its apps to ChatGPT",
+      "url": "https://openai.com/index/oracle-apps-in-chatgpt",
+      "keys": [
+        "title:openaiexpandspartnershipwithoracletobringitsappstochatgpt",
+        "title:openai与oracle扩展企业应用安全和开发合作",
+        "url:https://openai.com/index/oracle-apps-in-chatgpt"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-28",
+      "title": "NVIDIA cuDSS Now Generally Available to Accelerate Engineering and Scientific Simulations",
+      "url": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/",
+      "keys": [
+        "title:nvidiacudssnowgenerallyavailabletoaccelerateengineeringandscientificsimulations",
+        "title:英伟达cudss正式发布加速稀疏方程求解与工程仿真",
+        "url:https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation"
       ],
       "company": "NVIDIA"
     }
