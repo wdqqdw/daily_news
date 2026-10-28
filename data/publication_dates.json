@@ -60,5 +60,10 @@
     "published": "2026-05-31",
     "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2603878",
     "reason": "出版商与 PubMed 均标明首次在线发表于2026年5月31日；Crossref 提供2026年8月6日卷期日期，按首次发表日期计算热度。"
+  },
+  "10.1001/jama.2025.20402": {
+    "published": "2025-10-29",
+    "source": "https://doi.org/10.1001/jama.2025.20402",
+    "reason": "JAMA states first online publication on 29 October 2025; Crossref supplies the later 9 December issue date. Use the first publication date for ranking."
   }
 }

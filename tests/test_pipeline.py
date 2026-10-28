@@ -29,6 +29,34 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_human_affect_models_require_observed_data_and_keep_influence_threshold(self):
+        for title in ('Simulating human well-being with large language models',
+                      'Large language models rate human happiness higher than humans do'):
+            p=paper('10.1/affect',title,
+                    abstract='Large language models predict self-reports from observed human respondents, compared with survey data.',citations=12)
+            self.assertTrue(relevant(p,1))
+            self.assertTrue(relevant(p,2))
+            self.assertFalse(relevant(dict(p,citations=4),2))
+            non_llm_title=title.replace('large language models','neural networks').replace('Large language models','Neural networks')
+            self.assertFalse(relevant(dict(p,title=non_llm_title,abstract='Machine learning predicts human ratings.'),1))
+            for slot in (1,2):
+                self.assertFalse(relevant(dict(p,publication_types=['Review']),slot))
+                for abstract in ('Language models simulate human participants and estimate their well-being.',
+                                 'Language models may improve human well-being in future work.'):
+                    self.assertFalse(relevant(dict(p,abstract=abstract),slot))
+
+    def test_turing_comparisons_need_humans_and_language_models_for_first_slot(self):
+        p=paper('10.1/turing','Turing-like tests for language and vision compare humans and AI',
+                abstract='We model human language behaviour with large language models and compare responses from human participants.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(p,2))
+        self.assertTrue(relevant(dict(p,citations=5),2))
+        for abstract in ('Neural networks classify images from human participants.',
+                         'Language models simulate human participants without observed comparison data.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,title='Turing-like tests compare robots and AI'),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
     def test_empirical_human_concepts_require_observed_data_and_keep_influence_gate(self):
         p=paper('10.1/concepts',
                 'Revealing emergent human-like conceptual representations from language prediction',

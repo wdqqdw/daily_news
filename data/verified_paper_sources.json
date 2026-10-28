@@ -249,5 +249,28 @@
     "source": "https://link.springer.com/article/10.1186/s40537-025-01313-4",
     "checked_on": "2026-10-27",
     "notes": "This original empirical study evaluates classification metrics on credit-card default and telecommunications customer-churn datasets. Five machine-learning methods are tested across decision thresholds and Gaussian input noise, with statistical comparisons and SHAP-based analyses of feature contributions. In the reported experiments, the authors find F1 relatively stable and MCC useful as a complementary measure, while accuracy and precision are sensitive to class imbalance. The evidence is limited to two business datasets and the evaluated configurations; it does not establish one universally optimal metric for all classification problems. The publisher identifies the paper as Research, first published on 9 December 2025."
+  },
+  "10.1038/s41562-026-02590-6": {
+    "doi": "10.1038/s41562-026-02590-6",
+    "title": "Turing-like tests for language and vision demonstrate a narrowing gap between humans and AI",
+    "source": "https://www.nature.com/articles/s41562-026-02590-6",
+    "notes": "This original empirical study evaluates whether large language models and vision models reproduce human behaviour. It compares responses from 636 human participants and 37 AI models across three language and three vision tasks, then measures judgments by 1,916 human judges and ten AI judges in 72,191 Turing-like trials. Human judges often struggle with offline answers, while AI classifiers discriminate better. Imitation and conventional task accuracy are weakly related. Results depend strongly on test format: interactive GPT-3.5 conversations were fully distinguishable, with different outcomes in a Llama-3 follow-up. These restricted tests do not establish general human-equivalent intelligence.",
+    "checked_on": "2026-10-28",
+    "discover": true
+  },
+  "10.1073/pnas.2519394122": {
+    "doi": "10.1073/pnas.2519394122",
+    "title": "Simulating human well-being with large language models: Systematic validation and misestimation across 64,000 individuals from 64 countries",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12685116/",
+    "notes": "This empirical study predicts subjective well-being using four large language models and observed survey data from 64,000 human respondents in 64 countries. Natural-language demographic and attitudinal profiles are used to predict self-reported life satisfaction. The authors compare held-out predictions with OLS and Lasso models fitted to survey responses. LLM predictions recover some broad associations but have larger errors, especially in underrepresented settings, and compress differences across countries. Synthetic prompting experiments probe semantic generalization; adding contextual information only partly corrects biases. The evidence concerns the evaluated models and survey design and does not support replacing direct human self-reports.",
+    "checked_on": "2026-10-28",
+    "discover": true
+  },
+  "10.1038/s41893-025-01681-y": {
+    "doi": "10.1038/s41893-025-01681-y",
+    "title": "Environmental impact and net-zero pathways for sustainable artificial intelligence servers in the USA",
+    "source": "https://www.nature.com/articles/s41893-025-01681-y",
+    "notes": "This original scenario analysis estimates the energy, water and climate consequences of expanding AI servers across the United States from 2024 to 2030. It models demand growth, hardware and operational efficiency, grid decarbonization and spatial deployment. The resulting water and carbon footprints vary substantially across assumptions. Best practices can reduce impacts, but current energy infrastructure limits their effectiveness and modeled net-zero targets depend heavily on uncertain offsets and water restoration. These are scenario-dependent projections rather than observed future emissions. Nature Sustainability published this Analysis on 10 November 2025.",
+    "checked_on": "2026-10-28"
   }
 }

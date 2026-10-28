@@ -1124,5 +1124,50 @@
     "title_zh": "欧洲制造商结合英伟达工业智能体与数字孪生",
     "summary": "英伟达推出可抢先体验的 FOX 工厂运营蓝图，用于构建巡检、根因分析和车间协同智能体。西门子将相关能力用于工厂系统和缺陷图像生成，奥迪等通过数字孪生验证生产与机器人方案。公告也介绍仿真软件加速案例；性能及成本数据来自企业测试或估计，各项目的部署成熟度不同。",
     "summary_source": "https://blogs.nvidia.com/blog/europe-industrial-leaders-engineering-manufacturing/"
+  },
+  "doi:10.1038/s41562-026-02590-6": {
+    "title_zh": "类图灵测试显示人机模仿能力取决于任务与互动方式",
+    "summary": "研究收集636名真人与37个 AI 模型在3类语言和3类视觉任务中的回答，再由1,916名人类评判者及10个 AI 评判器开展类图灵测试。人类常难以区分离线回答，AI 评判器总体更准确；模仿程度与常规任务成绩关联较弱。但互动测试中 GPT-3.5 可被全部辨认，Llama-3 的结果也不同，说明结论依赖具体模型和测试方式，不能据此认定 AI 已具有人类通用智能。",
+    "summary_source": "https://www.nature.com/articles/s41562-026-02590-6"
+  },
+  "doi:10.1073/pnas.2519394122": {
+    "title_zh": "跨64国检验：语言模型仍难准确预测人的幸福感",
+    "summary": "研究用64个国家64,000名受访者的资料，让4种语言模型预测生活满意度，并与真人自报及回归模型比较。语言模型能复现部分常见关联，但预测误差更大，尤其在代表不足的国家，还会压缩国家间差异。补充背景信息只能部分改善偏差。回归模型利用调查数据拟合，语言模型主要依靠提示与预训练知识；这些结果不支持用模拟回答替代真实人的幸福感自报。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12685116/"
+  },
+  "doi:10.1038/s41893-025-01681-y": {
+    "title_zh": "AI 服务器扩张的水与碳足迹取决于选址和电网转型",
+    "summary": "研究对2024至2030年美国 AI 服务器扩张进行情景建模，联合评估能源、水资源和碳排放。需求增长速度、能效、电网脱碳及服务器选址共同影响环境成本，现有能源基础设施也限制了最佳实践的减排效果。作者估计，若不依赖不确定的碳抵消和水资源补偿，行业难以在2030年实现净零目标。这些属于依赖假设的情景预测，不能当作已经发生的排放量。",
+    "summary_source": "https://www.nature.com/articles/s41893-025-01681-y"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.2": {
+    "title_zh": "Qwen Code 更新权限规则、会话恢复与网页工作区",
+    "summary": "Qwen Code v0.26.2 新增会话权限规则和自动审批模式，改进对话、图片及工具结果的恢复，并支持在网页工作区通过 Git 地址克隆仓库。更新还扩展消息队列、检查点和文件上传能力。Web Shell 控件简化并移除旧的工作目录提交方式，属于可能影响现有集成的变更；本条为开发工具发布。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.2"
+  },
+  "url:https://openai.com/index/retell-ai": {
+    "title_zh": "Retell 披露 OpenAI 模型在大规模语音客服中的应用",
+    "summary": "OpenAI 发布 Retell 的语音客服案例。Retell 称平台月通话量已超过1亿，OpenAI 模型为其中约80%的通话生成回复，并用自建的多轮对话评测选择模型。团队也将 Codex 用于代码研究、开发和调试，用 GPT-6 Astra 测试前端界面。这些规模与效果数据来自企业披露，适用范围是该平台的实际业务和内部评测。",
+    "summary_source": "https://openai.com/index/retell-ai"
+  },
+  "url:https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation": {
+    "title_zh": "DeepMind 发布支持原生音频的 Genie 4 世界模拟预览",
+    "summary": "DeepMind 介绍 Genie 4，可在实时交互场景中共同生成画面、环境声音与对话，并结合 Gemini 按自然语言指令调整场景和事件。模型先向受信任测试者提供研究预览，后续计划进入 Project Genie 及部分开发者渠道。官方仍列出物体持续性、长时一致性、物理交互和音频准确性等限制；演示不等于对真实世界的精确仿真。",
+    "summary_source": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+  },
+  "url:https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia": {
+    "title_zh": "英伟达与 C-BRAIN 推进神经退行性疾病研究工具",
+    "summary": "英伟达介绍与 C-BRAIN 联盟的合作，将 BioNeMo、MONAI 及集中式与联邦式数据基础设施用于神经退行性疾病研究。联盟已开发 OpenScientist 和 InsightEngine，辅助提出假设、分析数据及核查文献证据，并计划构建多模态生物学模型。公告中的效率收益来自案例或规模化估算，相关工具进展不能等同于已经发现新疗法。",
+    "summary_source": "https://blogs.nvidia.com/blog/open-source-ai-tools-cbrain-dementia/"
+  },
+  "url:https://openai.com/index/oracle-apps-in-chatgpt": {
+    "title_zh": "OpenAI 与 Oracle 扩展企业应用、安全和开发合作",
+    "summary": "双方计划通过 Oracle AI Workspace 将企业应用和数据接入 ChatGPT，在组织权限与审批范围内连接财务、采购等流程。Oracle 同时介绍基于 OpenAI 工具的安全检测、应用开发和中小企业产品组合。美国客户可通过 Oracle Marketplace 采购相关服务；AI Workspace 等仍包含开发中的能力，公告目标不能视为全部功能已上线。",
+    "summary_source": "https://openai.com/index/oracle-apps-in-chatgpt"
+  },
+  "url:https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation": {
+    "title_zh": "英伟达 cuDSS 正式发布，加速稀疏方程求解与工程仿真",
+    "summary": "英伟达宣布 CUDA-X 库 cuDSS 正式可用，将工程和科学仿真中的大型稀疏方程求解转移到 GPU，并支持从工作站扩展到计算集群。应用材料、COMSOL、西门子等已将其接入仿真工具，开发者可使用 C、C++、Python 和 Fortran 接口。公告中的加速比例来自特定企业工作负载，不能直接外推到所有仿真。",
+    "summary_source": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/"
   }
 }
