@@ -1,0 +1,341 @@
+{
+  "date": "2026-10-29",
+  "generated_at": "2026-10-29T09:45:20+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large language models rate human happiness higher than humans do",
+      "doi": "10.1038/s44482-026-00049-z",
+      "url": "https://doi.org/10.1038/s44482-026-00049-z",
+      "journal": "npj Digital Public Health",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-10-27",
+      "authors": "Fang et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44482-026-00049-z",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-29；来源：Crossref；引用数 0，距发表 2 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将83名参与者最长17周的手机活动转成文本日记，让 Gemini 2.5 Flash Lite 预测每周情绪，再与本人自报比较。模型对细分情绪的预测不如利用个人过往自报的简单基线，并倾向于把不愉快状态判断为愉快；增加历史数据窗口也未稳定改善表现。结果限于特定模型、提示及以年轻安卓用户为主的样本，不能据此替代真实情绪自报。",
+      "tag": "认知与行为建模",
+      "ranking_score": 4.9669,
+      "title_zh": "语言模型从手机日记推测情绪时，容易高估人的愉快程度",
+      "summary_source": "https://www.nature.com/articles/s44482-026-00049-z",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human",
+      "doi": "10.1038/s44271-025-00391-7",
+      "url": "https://doi.org/10.1038/s44271-025-00391-7",
+      "journal": "Communications Psychology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-14",
+      "authors": "Kleinert et al.",
+      "citations": 17,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44271-025-00391-7",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-29；来源：Crossref；引用数 17，距发表 288 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "两项预注册随机实验让492名参与者与预先准备的真人或 PaLM 2 回答进行简短文字交流。当对方被标为真人时，AI 回答在深入谈话中带来更强亲近感，闲聊中则没有这一优势；揭示 AI 身份会削弱亲近感，但未使其消失。探索性分析将效果与自我披露程度联系起来。这是特定模型和样本下的短时实验，不能推断 AI 更擅长实时交流或长期关系。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.2768,
+      "title_zh": "人机对话中的亲近感受到身份标签和谈话内容影响",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12876889/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Precision Immunotherapy to Improve Sepsis Outcomes",
+      "doi": "10.1001/jama.2025.24175",
+      "url": "https://doi.org/10.1001/jama.2025.24175",
+      "journal": "JAMA",
+      "publisher": "American Medical Association (AMA)",
+      "published": "2025-12-08",
+      "authors": "Giamarellos-Bourboulis et al.",
+      "citations": 116,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1001%2Fjama.2025.24175",
+      "publication_date_source": "https://jamanetwork.com/journals/jama/fullarticle/2842634",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 116 次引用，约 10.71 次 / 月。",
+      "evidence": "检索时间：2026-10-29；来源：Crossref；引用数 116，距发表 325 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "ImmunoSep 随机双盲试验在6个国家开展，主要分析纳入276名脓毒症患者，按免疫异常类型给予阿那白滞素或重组人干扰素γ，并与安慰剂比较。第9天达到预设器官功能改善标准的比例为35.1%和17.9%，但28天死亡率差异未达到统计显著。治疗组还观察到贫血或出血增多，结果支持进一步研究分型治疗，不能解读为已证实降低死亡风险。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.2251,
+      "title_zh": "按免疫状态分型治疗脓毒症，可改善早期器官功能",
+      "summary_source": "https://jamanetwork.com/journals/jama/fullarticle/2842634",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-10-28",
+      "title": "Qwen Code · Release v0.26.3",
+      "summary": "Qwen Code v0.26.3 增加可跨会话保持的工作流模式，生成式界面卡片在切换页面和分栏时可保留输入及状态。更新还会按剩余上下文容量缩减工具结果，并改进 XML 工具调用解析，避免把引用中的示例误当成调用执行。自动修复 PR 功能遇到未提交或未推送改动时会停止，以保护已有工作；发布说明未列出已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 更新工作流模式、界面状态保持和工具调用解析",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-28",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "summary": "双方计划将 OpenAI 模型与智能体接入 ServiceNow 的应用开发、安全及语音流程，并让用户在 ChatGPT 中查询和操作企业记录，沿用组织权限。ServiceNow 的 MCP 插件已上架，但增强功能、安全能力及 Codex 集成将分阶段推出，部分计划延至2027年。ServiceNow 还计划向全体员工提供 ChatGPT Work 和 Codex。",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+      "summary_source": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-28",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "summary": "谷歌公布 Gemini 4 Carbon，称其改进了长时间软件工程任务、漏洞发现及修复能力，并披露多项基准成绩和内部测试结果。模型先通过 Fairwind 项目向部分网络安全防御者及可信伙伴逐步开放，面向普通开发者、企业和消费者的上线仍待推进。相关优势来自公告所列评测条件，不能等同于所有实际任务中的表现或已全面可用。",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "谷歌发布 Gemini 4 Carbon，先向部分安全防御伙伴开放",
+      "summary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-28",
+      "title": "Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "summary": "英伟达公布面向 RTX Spark 的新进展：Nemotron 3.5 Transcribe 开放权重，可用同一模型处理转写、说话人标注和翻译；Liquid AI 的 LFM3 系列也获得本地运行支持。NVIDIA App 新增前台应用与后台智能体之间的 GPU 资源分配选项。语音模型权重已发布，部分量化版本仍在筹备，公告中的性能比较需结合具体评测条件理解。",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达为 RTX Spark 增加语音模型和本地智能体资源控制",
+      "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-21",
+      "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+      "summary": "英伟达推出 Confidential Bare Metal 部署选项，使模型开发者可在第三方专用基础设施上运行自己的软件栈，利用硬件隔离、加密和完整性验证保护运行中的模型及数据。支持范围扩展至 Grace Blackwell 和 Rubin 系统；Cohere、Google Cloud 及 DSX OS 的相关集成按各自计划推进。这些机制有助于保护工作负载，不代表消除全部安全风险。",
+      "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达扩展机密计算，支持第三方裸金属基础设施",
+      "summary_source": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 97
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 15
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 141
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 5
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2006
+}

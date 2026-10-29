@@ -1651,6 +1651,42 @@
         "url:https://doi.org/10.1038/s41893-025-01681-y"
       ],
       "doi": "10.1038/s41893-025-01681-y"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "Large language models rate human happiness higher than humans do",
+      "url": "https://doi.org/10.1038/s44482-026-00049-z",
+      "keys": [
+        "doi:10.1038/s44482-026-00049-z",
+        "title:largelanguagemodelsratehumanhappinesshigherthanhumansdo",
+        "title:语言模型从手机日记推测情绪时容易高估人的愉快程度",
+        "url:https://doi.org/10.1038/s44482-026-00049-z"
+      ],
+      "doi": "10.1038/s44482-026-00049-z"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human",
+      "url": "https://doi.org/10.1038/s44271-025-00391-7",
+      "keys": [
+        "doi:10.1038/s44271-025-00391-7",
+        "title:aioutperformshumansinestablishinginterpersonalclosenessinemotionallyengaginginteractionsbutonlywhenlabelledashuman",
+        "title:人机对话中的亲近感受到身份标签和谈话内容影响",
+        "url:https://doi.org/10.1038/s44271-025-00391-7"
+      ],
+      "doi": "10.1038/s44271-025-00391-7"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "Precision Immunotherapy to Improve Sepsis Outcomes",
+      "url": "https://doi.org/10.1001/jama.2025.24175",
+      "keys": [
+        "doi:10.1001/jama.2025.24175",
+        "title:precisionimmunotherapytoimprovesepsisoutcomes",
+        "title:按免疫状态分型治疗脓毒症可改善早期器官功能",
+        "url:https://doi.org/10.1001/jama.2025.24175"
+      ],
+      "doi": "10.1001/jama.2025.24175"
     }
   ],
   "news": [
@@ -3598,6 +3634,61 @@
         "title:nvidiacudssnowgenerallyavailabletoaccelerateengineeringandscientificsimulations",
         "title:英伟达cudss正式发布加速稀疏方程求解与工程仿真",
         "url:https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "Qwen Code · Release v0.26.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3",
+      "keys": [
+        "title:qwencodereleasev0263",
+        "title:qwencode更新工作流模式界面状态保持和工具调用解析",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "OpenAI and ServiceNow expand partnership across enterprise workflows",
+      "url": "https://openai.com/index/openai-servicenow-partnership-expansion",
+      "keys": [
+        "title:openaiandservicenowexpandpartnershipacrossenterpriseworkflows",
+        "title:openai与servicenow扩大企业工作流合作",
+        "url:https://openai.com/index/openai-servicenow-partnership-expansion"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "Gemini 4 Carbon: Our next frontier model",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model/",
+      "keys": [
+        "title:gemini4carbonournextfrontiermodel",
+        "title:谷歌发布gemini4carbon先向部分安全防御伙伴开放",
+        "url:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games",
+      "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/",
+      "keys": [
+        "title:thinlightandbuiltforeverythingnvidiartxsparkwindowslaptopsgainnewmodelsagenttoolsandgames",
+        "title:英伟达为rtxspark增加语音模型和本地智能体资源控制",
+        "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-29",
+      "title": "NVIDIA Confidential Computing Expands, Enabling Frontier Model Builders to Securely Scale Across Global Infrastructure",
+      "url": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/",
+      "keys": [
+        "title:nvidiaconfidentialcomputingexpandsenablingfrontiermodelbuilderstosecurelyscaleacrossglobalinfrastructure",
+        "title:英伟达扩展机密计算支持第三方裸金属基础设施",
+        "url:https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure"
       ],
       "company": "NVIDIA"
     }
