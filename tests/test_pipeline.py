@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_interpersonal_closeness_needs_observed_humans_and_influence(self):
+        p=paper('10.1/closeness','AI outperforms humans in establishing interpersonal closeness',
+                abstract='We compare responses from human participants interacting with pre-generated large language model answers.',citations=17)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Robots establish interpersonal closeness with AI'),2))
+        self.assertFalse(relevant(dict(p,title='Humans establish interpersonal closeness',abstract='Human participants rate responses from other people.'),2))
+        for abstract in ('Language models simulate human participants and establish interpersonal closeness.',
+                         'AI may improve interpersonal closeness in future human interactions.',
+                         'This conceptual framework discusses human participants and artificial intelligence.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_human_affect_models_require_observed_data_and_keep_influence_threshold(self):
         for title in ('Simulating human well-being with large language models',
                       'Large language models rate human happiness higher than humans do'):

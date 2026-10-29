@@ -1169,5 +1169,50 @@
     "title_zh": "英伟达 cuDSS 正式发布，加速稀疏方程求解与工程仿真",
     "summary": "英伟达宣布 CUDA-X 库 cuDSS 正式可用，将工程和科学仿真中的大型稀疏方程求解转移到 GPU，并支持从工作站扩展到计算集群。应用材料、COMSOL、西门子等已将其接入仿真工具，开发者可使用 C、C++、Python 和 Fortran 接口。公告中的加速比例来自特定企业工作负载，不能直接外推到所有仿真。",
     "summary_source": "https://blogs.nvidia.com/blog/cudss-generally-available-engineering-scientific-simulation/"
+  },
+  "doi:10.1038/s44482-026-00049-z": {
+    "title_zh": "语言模型从手机日记推测情绪时，容易高估人的愉快程度",
+    "summary": "研究将83名参与者最长17周的手机活动转成文本日记，让 Gemini 2.5 Flash Lite 预测每周情绪，再与本人自报比较。模型对细分情绪的预测不如利用个人过往自报的简单基线，并倾向于把不愉快状态判断为愉快；增加历史数据窗口也未稳定改善表现。结果限于特定模型、提示及以年轻安卓用户为主的样本，不能据此替代真实情绪自报。",
+    "summary_source": "https://www.nature.com/articles/s44482-026-00049-z"
+  },
+  "doi:10.1038/s44271-025-00391-7": {
+    "title_zh": "人机对话中的亲近感受到身份标签和谈话内容影响",
+    "summary": "两项预注册随机实验让492名参与者与预先准备的真人或 PaLM 2 回答进行简短文字交流。当对方被标为真人时，AI 回答在深入谈话中带来更强亲近感，闲聊中则没有这一优势；揭示 AI 身份会削弱亲近感，但未使其消失。探索性分析将效果与自我披露程度联系起来。这是特定模型和样本下的短时实验，不能推断 AI 更擅长实时交流或长期关系。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12876889/"
+  },
+  "doi:10.1001/jama.2025.24175": {
+    "title_zh": "按免疫状态分型治疗脓毒症，可改善早期器官功能",
+    "summary": "ImmunoSep 随机双盲试验在6个国家开展，主要分析纳入276名脓毒症患者，按免疫异常类型给予阿那白滞素或重组人干扰素γ，并与安慰剂比较。第9天达到预设器官功能改善标准的比例为35.1%和17.9%，但28天死亡率差异未达到统计显著。治疗组还观察到贫血或出血增多，结果支持进一步研究分型治疗，不能解读为已证实降低死亡风险。",
+    "summary_source": "https://jamanetwork.com/journals/jama/fullarticle/2842634"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3": {
+    "title_zh": "Qwen Code 更新工作流模式、界面状态保持和工具调用解析",
+    "summary": "Qwen Code v0.26.3 增加可跨会话保持的工作流模式，生成式界面卡片在切换页面和分栏时可保留输入及状态。更新还会按剩余上下文容量缩减工具结果，并改进 XML 工具调用解析，避免把引用中的示例误当成调用执行。自动修复 PR 功能遇到未提交或未推送改动时会停止，以保护已有工作；发布说明未列出已知破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.3"
+  },
+  "url:https://openai.com/index/openai-servicenow-partnership-expansion": {
+    "title_zh": "OpenAI 与 ServiceNow 扩大企业工作流合作",
+    "summary": "双方计划将 OpenAI 模型与智能体接入 ServiceNow 的应用开发、安全及语音流程，并让用户在 ChatGPT 中查询和操作企业记录，沿用组织权限。ServiceNow 的 MCP 插件已上架，但增强功能、安全能力及 Codex 集成将分阶段推出，部分计划延至2027年。ServiceNow 还计划向全体员工提供 ChatGPT Work 和 Codex。",
+    "summary_source": "https://openai.com/index/openai-servicenow-partnership-expansion/"
+  },
+  "url:https://deepmind.google/blog/gemini-4-carbon-our-next-frontier-model": {
+    "title_zh": "谷歌发布 Gemini 4 Carbon，先向部分安全防御伙伴开放",
+    "summary": "谷歌公布 Gemini 4 Carbon，称其改进了长时间软件工程任务、漏洞发现及修复能力，并披露多项基准成绩和内部测试结果。模型先通过 Fairwind 项目向部分网络安全防御者及可信伙伴逐步开放，面向普通开发者、企业和消费者的上线仍待推进。相关优势来自公告所列评测条件，不能等同于所有实际任务中的表现或已全面可用。",
+    "summary_source": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+  },
+  "url:https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games": {
+    "title_zh": "英伟达为 RTX Spark 增加语音模型和本地智能体资源控制",
+    "summary": "英伟达公布面向 RTX Spark 的新进展：Nemotron 3.5 Transcribe 开放权重，可用同一模型处理转写、说话人标注和翻译；Liquid AI 的 LFM3 系列也获得本地运行支持。NVIDIA App 新增前台应用与后台智能体之间的 GPU 资源分配选项。语音模型权重已发布，部分量化版本仍在筹备，公告中的性能比较需结合具体评测条件理解。",
+    "summary_source": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-laptops-updates-models-agents-games/"
+  },
+  "url:https://openai.com/index/the-future-of-the-firm": {
+    "title_zh": "OpenAI 平台文章探讨 AI 进入企业组织的三种方式",
+    "summary": "两位作者讨论 AI 可能作为个人下属、并列同事或上下级之间的协调者进入企业，并分析这些安排对管理层级、员工自主权、企业规模和薪酬差距的影响。文章强调，采用效果取决于模型能力、组织调整及人类贡献。这是作者对未来经济的观点文章，明确不代表 OpenAI 立场，也不是已经验证的组织变革效果或产品发布。",
+    "summary_source": "https://openai.com/index/the-future-of-the-firm/"
+  },
+  "url:https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure": {
+    "title_zh": "英伟达扩展机密计算，支持第三方裸金属基础设施",
+    "summary": "英伟达推出 Confidential Bare Metal 部署选项，使模型开发者可在第三方专用基础设施上运行自己的软件栈，利用硬件隔离、加密和完整性验证保护运行中的模型及数据。支持范围扩展至 Grace Blackwell 和 Rubin 系统；Cohere、Google Cloud 及 DSX OS 的相关集成按各自计划推进。这些机制有助于保护工作负载，不代表消除全部安全风险。",
+    "summary_source": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/"
   }
 }

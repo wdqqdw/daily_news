@@ -65,5 +65,10 @@
     "published": "2025-10-29",
     "source": "https://doi.org/10.1001/jama.2025.20402",
     "reason": "JAMA states first online publication on 29 October 2025; Crossref supplies the later 9 December issue date. Use the first publication date for ranking."
+  },
+  "10.1001/jama.2025.24175": {
+    "published": "2025-12-08",
+    "source": "https://jamanetwork.com/journals/jama/fullarticle/2842634",
+    "reason": "The publisher states first online publication on 8 December 2025; Crossref supplies the later 3 March 2026 issue date. Use first publication for age and citation-rate ranking."
   }
 }

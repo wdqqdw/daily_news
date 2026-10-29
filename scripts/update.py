@@ -344,6 +344,11 @@ def relevant(p, slot):
         judgement_sample = (OBSERVED_HUMANS.search(judgement_source)
                             or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',judgement_source,re.I))
         human_judgement = HUMAN_JUDGEMENT.search(title) and judgement_sample and human_research_source(judgement_source)
+        # Human relationship responses to AI are measurable social behaviour.
+        # Require observed people, not a discussion of future or simulated bonds.
+        human_closeness = (re.search(r'\binterpersonal closeness\b',title,re.I)
+                           and OBSERVED_HUMANS.search(judgement_source)
+                           and human_research_source(judgement_source))
         # Representation comparisons can study human cognition without naming
         # cognition in the title. Require observed humans and cognitive content.
         human_alignment = (re.search(r'\brepresentational alignment\b',title,re.I)
@@ -355,7 +360,7 @@ def relevant(p, slot):
         human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

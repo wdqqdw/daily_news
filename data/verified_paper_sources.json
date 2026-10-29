@@ -272,5 +272,21 @@
     "source": "https://www.nature.com/articles/s41893-025-01681-y",
     "notes": "This original scenario analysis estimates the energy, water and climate consequences of expanding AI servers across the United States from 2024 to 2030. It models demand growth, hardware and operational efficiency, grid decarbonization and spatial deployment. The resulting water and carbon footprints vary substantially across assumptions. Best practices can reduce impacts, but current energy infrastructure limits their effectiveness and modeled net-zero targets depend heavily on uncertain offsets and water restoration. These are scenario-dependent projections rather than observed future emissions. Nature Sustainability published this Analysis on 10 November 2025.",
     "checked_on": "2026-10-28"
+  },
+  "10.1038/s44482-026-00049-z": {
+    "doi": "10.1038/s44482-026-00049-z",
+    "title": "Large language models rate human happiness higher than humans do",
+    "source": "https://www.nature.com/articles/s44482-026-00049-z",
+    "notes": "This original study tests whether a large language model can predict human affect from observed smartphone behaviour. Researchers compared Gemini 2.5 Flash Lite predictions with weekly self-reported affect from 83 human participants over up to 17 weeks. Sensor traces were converted into text diaries, with context windows between one hour and seven days. Fine-grained emotion predictions were less accurate than using participants' previous self-reports. The model tended to infer positive overall feelings even when people reported negative ones. Longer context did not consistently improve accuracy. Results concern this model, prompting design and predominantly young Android users, not all LLMs or clinical diagnosis.",
+    "checked_on": "2026-10-29",
+    "discover": true
+  },
+  "10.1038/s44271-025-00391-7": {
+    "doi": "10.1038/s44271-025-00391-7",
+    "title": "AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12876889/",
+    "notes": "This empirical study measures interpersonal closeness reported by 492 human participants across two preregistered randomized experiments. Participants read pre-generated answers from either human partners or PaLM 2 fictional characters during short structured text exchanges. When partners were labelled human, AI answers elicited greater closeness in deep-talk but not small-talk conditions. Disclosing AI identity reduced closeness without eliminating it. Exploratory language analysis associated greater partner self-disclosure with closeness. These results use prepared responses, a narrow participant sample and a specific model; they do not demonstrate superior real-time conversation or durable relationships.",
+    "checked_on": "2026-10-29",
+    "discover": true
   }
 }
