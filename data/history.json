@@ -1687,6 +1687,42 @@
         "url:https://doi.org/10.1001/jama.2025.24175"
       ],
       "doi": "10.1001/jama.2025.24175"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "Attention, not scale, drives human-AI alignment in multimodal language prediction",
+      "url": "https://doi.org/10.1038/s44387-026-00086-2",
+      "keys": [
+        "doi:10.1038/s44387-026-00086-2",
+        "title:attentionnotscaledriveshumanaialignmentinmultimodallanguageprediction",
+        "title:多模态语言预测中视觉注意有助于模型与人类表现对齐",
+        "url:https://doi.org/10.1038/s44387-026-00086-2"
+      ],
+      "doi": "10.1038/s44387-026-00086-2"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "Persuading voters using human–artificial intelligence dialogues",
+      "url": "https://doi.org/10.1038/s41586-025-09771-9",
+      "keys": [
+        "doi:10.1038/s41586-025-09771-9",
+        "title:persuadingvotersusinghumanartificialintelligencedialogues",
+        "title:随机实验发现与ai对话可改变选民自报的候选人态度",
+        "url:https://doi.org/10.1038/s41586-025-09771-9"
+      ],
+      "doi": "10.1038/s41586-025-09771-9"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "Nicheformer: a foundation model for single-cell and spatial omics",
+      "url": "https://doi.org/10.1038/s41592-025-02814-z",
+      "keys": [
+        "doi:10.1038/s41592-025-02814-z",
+        "title:nicheformerafoundationmodelforsinglecellandspatialomics",
+        "title:nicheformer用单细胞与空间组学学习细胞所处的微环境",
+        "url:https://doi.org/10.1038/s41592-025-02814-z"
+      ],
+      "doi": "10.1038/s41592-025-02814-z"
     }
   ],
   "news": [
@@ -3691,6 +3727,50 @@
         "url:https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "Qwen Code · Release v0.26.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+      "keys": [
+        "title:qwencodereleasev0264",
+        "title:qwencodev0264改进交互视图独立工作树与会话恢复",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "url": "https://openai.com/index/updated-model-spec",
+      "keys": [
+        "title:anupdatedmodelspecformorecapableandbeneficialai",
+        "title:openai更新modelspec以五项核心价值组织模型行为规范",
+        "url:https://openai.com/index/updated-model-spec"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "Microsoft Research Focus – Edition #97",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "keys": [
+        "title:microsoftresearchfocusedition97",
+        "title:微软研究简报介绍智能体学习天气预测及bioemu2预览",
+        "url:https://microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-30",
+      "title": "How we detect frontier model misalignment",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "keys": [
+        "title:howwedetectfrontiermodelmisalignment",
+        "title:openai披露监测前沿模型越权与失配行为的分层系统",
+        "url:https://openai.com/index/how-we-detect-frontier-model-misalignment"
+      ],
+      "company": "OpenAI"
     }
   ]
 }

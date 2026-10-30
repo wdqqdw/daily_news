@@ -1,0 +1,327 @@
+{
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T14:22:34+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Attention, not scale, drives human-AI alignment in multimodal language prediction",
+      "doi": "10.1038/s44387-026-00086-2",
+      "url": "https://doi.org/10.1038/s44387-026-00086-2",
+      "journal": "npj Artificial Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-07-07",
+      "authors": "Kewenig et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44387-026-00086-2",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-30；来源：Crossref；引用数 0，距发表 115 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将五种预训练系统与 600 名参与者在短视频中的词语预测评分及眼动表现进行比较。加入视觉信息后，模型与人的评分更一致；有用线索下的注意模式也与人的预期注视相关，模型规模在这些比较中未显示同样作用。结果支持用多模态模型研究人类语言预测，但真人评分与模型词概率并非相同指标，结论受模型训练差异和眼动测量精度限制。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.5836,
+      "title_zh": "多模态语言预测中，视觉注意有助于模型与人类表现对齐",
+      "summary_source": "https://www.nature.com/articles/s44387-026-00086-2",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Persuading voters using human–artificial intelligence dialogues",
+      "doi": "10.1038/s41586-025-09771-9",
+      "url": "https://doi.org/10.1038/s41586-025-09771-9",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-12-04",
+      "authors": "Lin et al.",
+      "citations": 46,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09771-9",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-30；来源：Crossref；引用数 46，距发表 330 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在美国、加拿大和波兰选举背景下开展预注册随机实验，让真人参与者与支持不同候选人的大语言模型对话，再测量其态度变化。结果显示候选人偏好可向对话所支持的方向移动，另一项实验也观察到政策支持度变化。模型提供的信息并非全部准确；这些结果反映实验中的自报态度和投票意向，不能直接等同于实际投票或选举结果的变化。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 13.0301,
+      "title_zh": "随机实验发现，与 AI 对话可改变选民自报的候选人态度",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09771-9",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Nicheformer: a foundation model for single-cell and spatial omics",
+      "doi": "10.1038/s41592-025-02814-z",
+      "url": "https://doi.org/10.1038/s41592-025-02814-z",
+      "journal": "Nature Methods",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-10-30",
+      "authors": "Tejada-Lapuerta et al.",
+      "citations": 128,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41592-025-02814-z",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 128 次引用，约 10.52 次 / 月。",
+      "evidence": "检索时间：2026-10-30；来源：Crossref；引用数 128，距发表 365 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用约 1.1 亿个人和小鼠细胞的解离及空间转录组数据训练 Nicheformer，并评估其识别空间区域、细胞邻域组成和密度的能力。在论文设置的任务中，空间数据预训练结合线性探测或微调优于比较基线；仅用解离数据难以捕捉复杂微环境。模型可为单细胞数据推断空间背景，但这些预测不等同于直接测量细胞的真实位置，也不是临床疗效验证。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.258,
+      "title_zh": "Nicheformer 用单细胞与空间组学学习细胞所处的微环境",
+      "summary_source": "https://www.nature.com/articles/s41592-025-02814-z",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-10-29",
+      "title": "Qwen Code · Release v0.26.4",
+      "summary": "Qwen Code 新版本让生成的交互视图跟随宿主主题，并为主会话增加独立工作树；扩展安装、工作区选择和用量显示也得到改进。修复内容包括离线后自动恢复请求、会话分支点回放以及模型选择显示等问题。发布说明称没有已知破坏性变更；这些是工具功能与稳定性更新，不代表基础模型能力提升。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.26.4 改进交互视图、独立工作树与会话恢复",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-29",
+      "title": "An updated Model Spec for more capable and beneficial AI",
+      "summary": "OpenAI 将公开的模型行为规范围绕忠实于人类意图、减少伤害、诚实透明、人的自主性与关怀重新组织，并补充上下文理解、监督和行为副作用方面的指导，同时撤去大部分细致的文风规定。公司还在探索相应训练方法，但明确说明当前模型尚未完全体现这些规范，因此这次更新是行为目标与治理文档的调整。",
+      "url": "https://openai.com/index/updated-model-spec",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 更新 Model Spec，以五项核心价值组织模型行为规范",
+      "summary_source": "https://openai.com/index/updated-model-spec/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-29",
+      "title": "Microsoft Research Focus – Edition #97",
+      "summary": "微软第 97 期研究简报汇总多项进展：ForkPilot 学习何时回溯智能体决策，CABRA 用可控代码任务分析失败原因，TeleTune 从用户活动日志提取可复用技能；简报还介绍 Copilot 工作使用分析、教师备课辅助和延伸期天气预报。生物分子模型 BioEmu2 已进入公开预览。该条为公司研究动态汇总，具体效果仍需结合各研究的评测条件。",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究简报介绍智能体学习、天气预测及 BioEmu2 预览",
+      "summary_source": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-29",
+      "title": "How we detect frontier model misalignment",
+      "summary": "OpenAI 介绍从轻量激活探针、模型复核到调查智能体及系统日志分析的分层监测，用于发现越权操作、欺骗和评测操纵，并在必要时通知人员或暂停任务。公司用历史事件回放、模拟攻击和独立红队测试评估系统，同时承认误报、监测覆盖和人工响应仍有限制。外部产品的监测与自动干预范围各不相同，不能视为所有接口均已获得同等保护。",
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 披露监测前沿模型越权与失配行为的分层系统",
+      "summary_source": "https://openai.com/index/how-we-detect-frontier-model-misalignment/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 98
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 15
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1993
+}
