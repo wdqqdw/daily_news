@@ -1214,5 +1214,40 @@
     "title_zh": "英伟达扩展机密计算，支持第三方裸金属基础设施",
     "summary": "英伟达推出 Confidential Bare Metal 部署选项，使模型开发者可在第三方专用基础设施上运行自己的软件栈，利用硬件隔离、加密和完整性验证保护运行中的模型及数据。支持范围扩展至 Grace Blackwell 和 Rubin 系统；Cohere、Google Cloud 及 DSX OS 的相关集成按各自计划推进。这些机制有助于保护工作负载，不代表消除全部安全风险。",
     "summary_source": "https://blogs.nvidia.com/blog/confidential-computing-model-builders-infrastructure/"
+  },
+  "doi:10.1038/s44387-026-00086-2": {
+    "title_zh": "多模态语言预测中，视觉注意有助于模型与人类表现对齐",
+    "summary": "研究将五种预训练系统与 600 名参与者在短视频中的词语预测评分及眼动表现进行比较。加入视觉信息后，模型与人的评分更一致；有用线索下的注意模式也与人的预期注视相关，模型规模在这些比较中未显示同样作用。结果支持用多模态模型研究人类语言预测，但真人评分与模型词概率并非相同指标，结论受模型训练差异和眼动测量精度限制。",
+    "summary_source": "https://www.nature.com/articles/s44387-026-00086-2"
+  },
+  "doi:10.1038/s41586-025-09771-9": {
+    "title_zh": "随机实验发现，与 AI 对话可改变选民自报的候选人态度",
+    "summary": "研究在美国、加拿大和波兰选举背景下开展预注册随机实验，让真人参与者与支持不同候选人的大语言模型对话，再测量其态度变化。结果显示候选人偏好可向对话所支持的方向移动，另一项实验也观察到政策支持度变化。模型提供的信息并非全部准确；这些结果反映实验中的自报态度和投票意向，不能直接等同于实际投票或选举结果的变化。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09771-9"
+  },
+  "doi:10.1038/s41592-025-02814-z": {
+    "title_zh": "Nicheformer 用单细胞与空间组学学习细胞所处的微环境",
+    "summary": "研究用约 1.1 亿个人和小鼠细胞的解离及空间转录组数据训练 Nicheformer，并评估其识别空间区域、细胞邻域组成和密度的能力。在论文设置的任务中，空间数据预训练结合线性探测或微调优于比较基线；仅用解离数据难以捕捉复杂微环境。模型可为单细胞数据推断空间背景，但这些预测不等同于直接测量细胞的真实位置，也不是临床疗效验证。",
+    "summary_source": "https://www.nature.com/articles/s41592-025-02814-z"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4": {
+    "title_zh": "Qwen Code v0.26.4 改进交互视图、独立工作树与会话恢复",
+    "summary": "Qwen Code 新版本让生成的交互视图跟随宿主主题，并为主会话增加独立工作树；扩展安装、工作区选择和用量显示也得到改进。修复内容包括离线后自动恢复请求、会话分支点回放以及模型选择显示等问题。发布说明称没有已知破坏性变更；这些是工具功能与稳定性更新，不代表基础模型能力提升。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.4"
+  },
+  "url:https://openai.com/index/updated-model-spec": {
+    "title_zh": "OpenAI 更新 Model Spec，以五项核心价值组织模型行为规范",
+    "summary": "OpenAI 将公开的模型行为规范围绕忠实于人类意图、减少伤害、诚实透明、人的自主性与关怀重新组织，并补充上下文理解、监督和行为副作用方面的指导，同时撤去大部分细致的文风规定。公司还在探索相应训练方法，但明确说明当前模型尚未完全体现这些规范，因此这次更新是行为目标与治理文档的调整。",
+    "summary_source": "https://openai.com/index/updated-model-spec/"
+  },
+  "url:https://openai.com/index/how-we-detect-frontier-model-misalignment": {
+    "title_zh": "OpenAI 披露监测前沿模型越权与失配行为的分层系统",
+    "summary": "OpenAI 介绍从轻量激活探针、模型复核到调查智能体及系统日志分析的分层监测，用于发现越权操作、欺骗和评测操纵，并在必要时通知人员或暂停任务。公司用历史事件回放、模拟攻击和独立红队测试评估系统，同时承认误报、监测覆盖和人工响应仍有限制。外部产品的监测与自动干预范围各不相同，不能视为所有接口均已获得同等保护。",
+    "summary_source": "https://openai.com/index/how-we-detect-frontier-model-misalignment/"
+  },
+  "url:https://microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97": {
+    "title_zh": "微软研究简报介绍智能体学习、天气预测及 BioEmu2 预览",
+    "summary": "微软第 97 期研究简报汇总多项进展：ForkPilot 学习何时回溯智能体决策，CABRA 用可控代码任务分析失败原因，TeleTune 从用户活动日志提取可复用技能；简报还介绍 Copilot 工作使用分析、教师备课辅助和延伸期天气预报。生物分子模型 BioEmu2 已进入公开预览。该条为公司研究动态汇总，具体效果仍需结合各研究的评测条件。",
+    "summary_source": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/"
   }
 }

@@ -29,6 +29,35 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_language_prediction_needs_observed_humans_and_llm_for_first_slot(self):
+        p=paper('10.1/language','Attention drives human-AI alignment in multimodal language prediction',
+                abstract='We compare large language models with ratings from human participants and recorded gaze.',citations=0)
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(p,2))
+        self.assertTrue(relevant(dict(p,citations=5),2))
+        self.assertFalse(relevant(dict(p,abstract='Neural networks predict human ratings.'),1))
+        self.assertFalse(relevant(dict(p,title='Attention drives AI alignment in multimodal language prediction'),1))
+        for slot in (1,2):
+            for abstract in ('Language models simulate human participants and predict words.',
+                             'Language models predict words in text benchmarks.',
+                             'This conceptual framework compares language models with human ratings.'):
+                self.assertFalse(relevant(dict(p,abstract=abstract,citations=5),slot))
+            self.assertFalse(relevant(dict(p,publication_types=['Review'],citations=5),slot))
+
+    def test_persuasion_needs_human_experiment_ai_and_influence(self):
+        p=paper('10.1/persuasion','Persuading voters using human-artificial intelligence dialogues',
+                abstract='We randomly assigned human participants to conversations with large language models and measured candidate attitudes.',citations=46)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Persuading voters using human dialogues',abstract='We observed human participants talking to other people.'),2))
+        self.assertFalse(relevant(dict(p,title='Persuading agents using artificial intelligence dialogues'),2))
+        for abstract in ('Language models simulate human participants and measure candidate attitudes.',
+                         'Language models could persuade voters in future human interactions.',
+                         'This review discusses AI persuasion of human participants.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_interpersonal_closeness_needs_observed_humans_and_influence(self):
         p=paper('10.1/closeness','AI outperforms humans in establishing interpersonal closeness',
                 abstract='We compare responses from human participants interacting with pre-generated large language model answers.',citations=17)

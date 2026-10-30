@@ -288,5 +288,21 @@
     "notes": "This empirical study measures interpersonal closeness reported by 492 human participants across two preregistered randomized experiments. Participants read pre-generated answers from either human partners or PaLM 2 fictional characters during short structured text exchanges. When partners were labelled human, AI answers elicited greater closeness in deep-talk but not small-talk conditions. Disclosing AI identity reduced closeness without eliminating it. Exploratory language analysis associated greater partner self-disclosure with closeness. These results use prepared responses, a narrow participant sample and a specific model; they do not demonstrate superior real-time conversation or durable relationships.",
     "checked_on": "2026-10-29",
     "discover": true
+  },
+  "10.1038/s44387-026-00086-2": {
+    "doi": "10.1038/s44387-026-00086-2",
+    "title": "Attention, not scale, drives human-AI alignment in multimodal language prediction",
+    "source": "https://www.nature.com/articles/s44387-026-00086-2",
+    "notes": "This original study compares five pretrained systems, including large language models, with 600 human participants in a web-based Visual-World Paradigm using 100 six-second movie clips. Researchers measured human ratings of target-word predictability and recorded gaze in visual conditions. Visual context improved model-human rating alignment across the tested architectures. Transformer attention was associated with greater alignment when visual cues were informative, and attention maps from two models corresponded with anticipatory human gaze. Parameter size did not explain alignment in these comparisons. Human relevance ratings and model next-word probabilities are not identical measures; webcam gaze accuracy, model training differences and the tested architectures limit generalization. The final published study appeared on 7 July 2026, expanding the sample beyond its earlier preprint.",
+    "checked_on": "2026-10-30",
+    "discover": true
+  },
+  "10.1038/s41586-025-09771-9": {
+    "doi": "10.1038/s41586-025-09771-9",
+    "title": "Persuading voters using human–artificial intelligence dialogues",
+    "source": "https://www.nature.com/articles/s41586-025-09771-9",
+    "notes": "This original empirical study randomly assigned human participants to conversations with large language models in preregistered experiments around the 2024 United States, 2025 Canadian and 2025 Polish elections. Researchers measured changes in self-reported candidate preferences and voting intentions after AI dialogues advocating one of the leading candidates. Candidate preferences shifted in the assigned direction. A separate Massachusetts ballot-measure experiment also measured changes in policy support. The models' factual claims were not always accurate. These experiments demonstrate changes in reported attitudes under study conditions, not verified changes in actual ballots or election outcomes. The article was published online in Nature on 4 December 2025.",
+    "checked_on": "2026-10-30",
+    "discover": true
   }
 }
