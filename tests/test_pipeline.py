@@ -29,6 +29,34 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_empathic_judging_requires_observed_humans_and_llm(self):
+        p=paper('10.1/empathic','When large language models are reliable for judging empathic communication',
+                abstract='We compare model annotations with human ratings from expert participants on real conversations.',citations=16)
+        self.assertTrue(relevant(p,1))
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,title='Judging empathic communication with computer vision'),1))
+        for slot in (1,2):
+            self.assertFalse(relevant(dict(p,publication_types=['Review']),slot))
+            for abstract in ('Language models simulate human participants and judge empathic communication.',
+                             'Models rate synthetic dialogue without human comparison data.',
+                             'This conceptual framework proposes judging human ratings with models.'):
+                self.assertFalse(relevant(dict(p,abstract=abstract),slot))
+
+    def test_emotion_tests_require_empirical_human_validation_and_influence(self):
+        p=paper('10.1/emotion-tests','Large language models solve and create emotional intelligence tests',
+                abstract='We administered original and AI-generated tests to human participants and assessed psychometric validity.',citations=48)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Creating emotional intelligence tests',abstract='Human participants completed psychometric validation of tests written by experts.'),2))
+        for abstract in ('Language models simulate human participants for psychometric validation.',
+                         'Language models score well on emotional intelligence tests.',
+                         'Human participants use AI tests and rate their enjoyment.',
+                         'This review compares human participants and AI psychometric tests.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_language_prediction_needs_observed_humans_and_llm_for_first_slot(self):
         p=paper('10.1/language','Attention drives human-AI alignment in multimodal language prediction',
                 abstract='We compare large language models with ratings from human participants and recorded gaze.',citations=0)

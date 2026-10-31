@@ -315,6 +315,9 @@ def relevant(p, slot):
     # Language prediction can compare models with human ratings and gaze.
     # This route needs observed people, not just a language-model benchmark.
     human_language_prediction = re.search(r'\blanguage prediction\b',title,re.I) and observed_comparison
+    # Judging empathic communication studies social understanding even when
+    # the title omits "human". Require actual human comparison ratings.
+    empathic_judgement = re.search(r'\bjudg\w* empathic communication\b',title,re.I) and observed_comparison
     if slot == 1:
         # An LLM narrating another model's predictions does not model people.
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
@@ -331,7 +334,7 @@ def relevant(p, slot):
         human_communication = (re.search(r'\bhuman communication\b',title,re.I)
                                and OBSERVED_HUMANS.search(reaction_source)
                                and human_research_source(reaction_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction) and HUMAN_SUBJECT_TITLE.search(title) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction) and MODELLING.search(text) and LLM.search(text))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement) and (MODELLING.search(text) or empathic_judgement) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
@@ -357,6 +360,12 @@ def relevant(p, slot):
         human_persuasion = (re.search(r'\bpersuad\w* (?:voters|people|humans)\b',title,re.I)
                             and OBSERVED_HUMANS.search(judgement_source)
                             and human_research_source(judgement_source))
+        # AI-generated emotional-intelligence tests can study human measurement.
+        # A model-only test score is insufficient: require human validation.
+        human_emotion_tests = (re.search(r'\bemotional intelligence tests?\b',title,re.I)
+                              and OBSERVED_HUMANS.search(judgement_source)
+                              and human_research_source(judgement_source)
+                              and re.search(r'\b(?:psychometric|validation|validity)\b',judgement_source,re.I))
         # Representation comparisons can study human cognition without naming
         # cognition in the title. Require observed humans and cognitive content.
         human_alignment = (re.search(r'\brepresentational alignment\b',title,re.I)
@@ -368,7 +377,7 @@ def relevant(p, slot):
         human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

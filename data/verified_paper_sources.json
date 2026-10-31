@@ -304,5 +304,21 @@
     "notes": "This original empirical study randomly assigned human participants to conversations with large language models in preregistered experiments around the 2024 United States, 2025 Canadian and 2025 Polish elections. Researchers measured changes in self-reported candidate preferences and voting intentions after AI dialogues advocating one of the leading candidates. Candidate preferences shifted in the assigned direction. A separate Massachusetts ballot-measure experiment also measured changes in policy support. The models' factual claims were not always accurate. These experiments demonstrate changes in reported attitudes under study conditions, not verified changes in actual ballots or election outcomes. The article was published online in Nature on 4 December 2025.",
     "checked_on": "2026-10-30",
     "discover": true
+  },
+  "10.1038/s42256-025-01169-6": {
+    "doi": "10.1038/s42256-025-01169-6",
+    "title": "When large language models are reliable for judging empathic communication",
+    "source": "https://www.nature.com/articles/s42256-025-01169-6",
+    "notes": "This original study compares large language models with observed human ratings of empathic communication in 200 conversations across four evaluation frameworks. Researchers gathered 3,150 expert annotations, 2,844 crowd annotations and 3,150 model annotations. With detailed framework instructions and expert examples, model ratings approached expert agreement and exceeded crowd-expert reliability. Agreement varied with construct clarity and subjectivity; crowdworkers tended to give higher empathy scores. The results concern judgments of English text conversations under the tested prompts, not proof that models feel empathy or provide effective therapy. The final Nature Machine Intelligence article appeared on 11 February 2026.",
+    "checked_on": "2026-10-31",
+    "discover": true
+  },
+  "10.1038/s44271-025-00258-x": {
+    "doi": "10.1038/s44271-025-00258-x",
+    "title": "Large language models are proficient in solving and creating emotional intelligence tests",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095572/",
+    "notes": "This original study assesses six large language models on five emotional intelligence tests and evaluates AI-generated test items using actual human participants. Model accuracy averaged 81%, compared with 56% reported for human samples in earlier validation studies. Separately, 467 human participants across five studies completed original and ChatGPT-4-generated tests for psychometric validation. Test difficulty was statistically equivalent, but equivalence was not established for clarity, realism, diversity, internal consistency or external correlations, despite small estimated differences. These findings concern structured emotion-knowledge tests and measurement development; they do not demonstrate real-world emotional competence or subjective feelings. The article was published on 21 May 2025.",
+    "checked_on": "2026-10-31",
+    "discover": true
   }
 }

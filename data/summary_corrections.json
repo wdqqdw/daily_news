@@ -1249,5 +1249,40 @@
     "title_zh": "微软研究简报介绍智能体学习、天气预测及 BioEmu2 预览",
     "summary": "微软第 97 期研究简报汇总多项进展：ForkPilot 学习何时回溯智能体决策，CABRA 用可控代码任务分析失败原因，TeleTune 从用户活动日志提取可复用技能；简报还介绍 Copilot 工作使用分析、教师备课辅助和延伸期天气预报。生物分子模型 BioEmu2 已进入公开预览。该条为公司研究动态汇总，具体效果仍需结合各研究的评测条件。",
     "summary_source": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-97/"
+  },
+  "doi:10.1038/s42256-025-01169-6": {
+    "title_zh": "何时可以用大语言模型可靠地评价对话中的共情表达",
+    "summary": "研究比较专家、众包标注者与大语言模型对 200 段对话的评价，覆盖四种共情评估框架。在提供清晰框架和专家示例后，模型与专家的一致程度接近专家彼此之间的水平，并高于众包标注者；但主观、模糊的维度仍更难达成一致。结果支持在具体任务中验证模型评审的可靠性，不能据此认定模型具有情感体验或真实心理支持能力。",
+    "summary_source": "https://www.nature.com/articles/s42256-025-01169-6"
+  },
+  "doi:10.1038/s44271-025-00258-x": {
+    "title_zh": "大语言模型生成情绪智力试题，并接受 467 名真人的测量验证",
+    "summary": "六种大语言模型在五类情绪智力测试上的平均正确率为 81%，对照的是原始验证研究中人类样本的 56%。研究另让 467 名参与者完成原题和 ChatGPT 生成题，发现两者难度具有统计等价性，但清晰度、内部一致性等其他指标尚未证明等价。该工作展示了辅助编制情绪测验的潜力，测试表现不等于现实互动中的情绪能力。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095572/"
+  },
+  "doi:10.1038/s41592-025-02923-9": {
+    "title_zh": "MaAsLin 3 区分微生物的出现与丰度，改进多组学关联分析",
+    "summary": "研究提出 MaAsLin 3，分别建模微生物特征是否出现及出现后的丰度，并处理数据稀疏、组成性和复杂协变量。模拟与真实数据评估显示，该方法能改善关联检出的精确率；在炎症性肠病队列中，检出关联的 77% 涉及出现率而非丰度。工具有助于细化微生物关联分析，但结果仍受测序深度和模型假设限制，不能直接解释为疾病因果关系。",
+    "summary_source": "https://www.nature.com/articles/s41592-025-02923-9"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals": {
+    "title_zh": "英伟达介绍用智能体和实时 GPU 处理辅助搜寻地外信号",
+    "summary": "Breakthrough Listen 与 SETI 研究所将智能体引入艾伦望远镜阵列，结合 Holoscan、CyberEther 和 Nexus，支持通过自然语言调度观测、校准设备及分析实时数据。英伟达称系统可处理每秒 2.4 太比特的数据，并已用蟹状星云脉冲星信号验证实时 AI 检测流程。这是观测与信号处理能力的进展，公告没有报告发现外星文明信号。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/"
+  },
+  "url:https://openai.com/index/helping-websites-express-ai-training-preferences": {
+    "title_zh": "OpenAI 将支持网站统一表达 AI 训练使用偏好",
+    "summary": "OpenAI 宣布将遵守 robots.txt 中用于表达基础生成式 AI 训练偏好的共同信号，让网站运营者可一次向多个参与厂商表达选择，减少逐一维护爬虫规则的工作。公司计划在未来数月实施，并继续保留现有爬虫控制。这项自愿机制参考 IETF 正在进行的相关工作；公告并不意味着所有厂商已经采用或实现细节已经完成。",
+    "summary_source": "https://openai.com/index/helping-websites-express-ai-training-preferences/"
+  },
+  "url:https://microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence": {
+    "title_zh": "微软用合成企业环境评估 Copilot 的工作表现",
+    "summary": "微软介绍行业评估数据生成平台，依据职业资料、招聘信息和企业公开文件构造合成组织、邮件、会议与文档，再自动生成查询并进行质量检查，以测试 Copilot 在复杂企业流程中的表现。平台旨在覆盖通用基准容易遗漏的问题，并在评估中避免使用客户数据。合成环境提供可复现的测试基础，其成绩仍不能直接等同于真实企业的全部使用效果。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/"
+  },
+  "url:https://openai.com/index/community-safety-report-and-new-protections-for-teens": {
+    "title_zh": "OpenAI 计划发布社区安全报告，并加强青少年保护",
+    "summary": "OpenAI 宣布将在 2027 年初发布首份社区安全报告，覆盖 2026 年下半年，随后每半年更新；同时将加强暴力相关内容限制和未成年人保护。公司还在推进对持续危险信号的自动干预、账号暂时停用及家长通知。相关保护措施计划在未来数周开始推出，因此不能把公告中的全部功能视为已经普遍上线。",
+    "summary_source": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/"
   }
 }
