@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T09:41:52+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "When large language models are reliable for judging empathic communication",
+      "doi": "10.1038/s42256-025-01169-6",
+      "url": "https://doi.org/10.1038/s42256-025-01169-6",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-11",
+      "authors": "Kumar et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-025-01169-6",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-10-31；来源：Crossref；引用数 16，距发表 262 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究比较专家、众包标注者与大语言模型对 200 段对话的评价，覆盖四种共情评估框架。在提供清晰框架和专家示例后，模型与专家的一致程度接近专家彼此之间的水平，并高于众包标注者；但主观、模糊的维度仍更难达成一致。结果支持在具体任务中验证模型评审的可靠性，不能据此认定模型具有情感体验或真实心理支持能力。",
+      "tag": "认知与行为建模",
+      "ranking_score": 9.1995,
+      "title_zh": "何时可以用大语言模型可靠地评价对话中的共情表达",
+      "summary_source": "https://www.nature.com/articles/s42256-025-01169-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Large language models are proficient in solving and creating emotional intelligence tests",
+      "doi": "10.1038/s44271-025-00258-x",
+      "url": "https://doi.org/10.1038/s44271-025-00258-x",
+      "journal": "Communications Psychology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-05-21",
+      "authors": "Schlegel et al.",
+      "citations": 48,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs44271-025-00258-x",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-10-31；来源：Crossref；引用数 48，距发表 528 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "六种大语言模型在五类情绪智力测试上的平均正确率为 81%，对照的是原始验证研究中人类样本的 56%。研究另让 467 名参与者完成原题和 ChatGPT 生成题，发现两者难度具有统计等价性，但清晰度、内部一致性等其他指标尚未证明等价。该工作展示了辅助编制情绪测验的潜力，测试表现不等于现实互动中的情绪能力。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.8351,
+      "title_zh": "大语言模型生成情绪智力试题，并接受 467 名真人的测量验证",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12095572/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "MaAsLin 3: refining and extending generalized multivariable linear models for meta-omic association discovery",
+      "doi": "10.1038/s41592-025-02923-9",
+      "url": "https://doi.org/10.1038/s41592-025-02923-9",
+      "journal": "Nature Methods",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-15",
+      "authors": "Nickols et al.",
+      "citations": 116,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41592-025-02923-9",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 116 次引用，约 12.04 次 / 月。",
+      "evidence": "检索时间：2026-10-31；来源：Crossref；引用数 116，距发表 289 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究提出 MaAsLin 3，分别建模微生物特征是否出现及出现后的丰度，并处理数据稀疏、组成性和复杂协变量。模拟与真实数据评估显示，该方法能改善关联检出的精确率；在炎症性肠病队列中，检出关联的 77% 涉及出现率而非丰度。工具有助于细化微生物关联分析，但结果仍受测序深度和模型假设限制，不能直接解释为疾病因果关系。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.567,
+      "title_zh": "MaAsLin 3 区分微生物的出现与丰度，改进多组学关联分析",
+      "summary_source": "https://www.nature.com/articles/s41592-025-02923-9",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-30",
+      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
+      "summary": "Breakthrough Listen 与 SETI 研究所将智能体引入艾伦望远镜阵列，结合 Holoscan、CyberEther 和 Nexus，支持通过自然语言调度观测、校准设备及分析实时数据。英伟达称系统可处理每秒 2.4 太比特的数据，并已用蟹状星云脉冲星信号验证实时 AI 检测流程。这是观测与信号处理能力的进展，公告没有报告发现外星文明信号。",
+      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达介绍用智能体和实时 GPU 处理辅助搜寻地外信号",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-10-30",
+      "title": "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence",
+      "summary": "微软介绍行业评估数据生成平台，依据职业资料、招聘信息和企业公开文件构造合成组织、邮件、会议与文档，再自动生成查询并进行质量检查，以测试 Copilot 在复杂企业流程中的表现。平台旨在覆盖通用基准容易遗漏的问题，并在评估中避免使用客户数据。合成环境提供可复现的测试基础，其成绩仍不能直接等同于真实企业的全部使用效果。",
+      "url": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软用合成企业环境评估 Copilot 的工作表现",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "安全 / 报告",
+      "published": "2026-10-30",
+      "title": "Community safety report and new protections for teens",
+      "summary": "OpenAI 宣布将在 2027 年初发布首份社区安全报告，覆盖 2026 年下半年，随后每半年更新；同时将加强暴力相关内容限制和未成年人保护。公司还在推进对持续危险信号的自动干预、账号暂时停用及家长通知。相关保护措施计划在未来数周开始推出，因此不能把公告中的全部功能视为已经普遍上线。",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 计划发布社区安全报告，并加强青少年保护",
+      "summary_source": "https://openai.com/index/community-safety-report-and-new-protections-for-teens/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 86
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 108
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 96
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 19
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 54
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 70
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2009
+}

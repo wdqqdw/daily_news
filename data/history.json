@@ -1723,6 +1723,42 @@
         "url:https://doi.org/10.1038/s41592-025-02814-z"
       ],
       "doi": "10.1038/s41592-025-02814-z"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "When large language models are reliable for judging empathic communication",
+      "url": "https://doi.org/10.1038/s42256-025-01169-6",
+      "keys": [
+        "doi:10.1038/s42256-025-01169-6",
+        "title:whenlargelanguagemodelsarereliableforjudgingempathiccommunication",
+        "title:何时可以用大语言模型可靠地评价对话中的共情表达",
+        "url:https://doi.org/10.1038/s42256-025-01169-6"
+      ],
+      "doi": "10.1038/s42256-025-01169-6"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "Large language models are proficient in solving and creating emotional intelligence tests",
+      "url": "https://doi.org/10.1038/s44271-025-00258-x",
+      "keys": [
+        "doi:10.1038/s44271-025-00258-x",
+        "title:largelanguagemodelsareproficientinsolvingandcreatingemotionalintelligencetests",
+        "title:大语言模型生成情绪智力试题并接受467名真人的测量验证",
+        "url:https://doi.org/10.1038/s44271-025-00258-x"
+      ],
+      "doi": "10.1038/s44271-025-00258-x"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "MaAsLin 3: refining and extending generalized multivariable linear models for meta-omic association discovery",
+      "url": "https://doi.org/10.1038/s41592-025-02923-9",
+      "keys": [
+        "doi:10.1038/s41592-025-02923-9",
+        "title:maaslin3refiningandextendinggeneralizedmultivariablelinearmodelsformetaomicassociationdiscovery",
+        "title:maaslin3区分微生物的出现与丰度改进多组学关联分析",
+        "url:https://doi.org/10.1038/s41592-025-02923-9"
+      ],
+      "doi": "10.1038/s41592-025-02923-9"
     }
   ],
   "news": [
@@ -3769,6 +3805,39 @@
         "title:howwedetectfrontiermodelmisalignment",
         "title:openai披露监测前沿模型越权与失配行为的分层系统",
         "url:https://openai.com/index/how-we-detect-frontier-model-misalignment"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals",
+      "url": "https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals/",
+      "keys": [
+        "title:thingsthatgobeepinthenightagenticaijoinsthesearchforextraterrestrialsignals",
+        "title:英伟达介绍用智能体和实时gpu处理辅助搜寻地外信号",
+        "url:https://blogs.nvidia.com/blog/ai-joins-the-search-for-extraterrestrial-signals"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "From synthetic enterprise data evaluations to real Microsoft Copilot AI confidence",
+      "url": "https://www.microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence/",
+      "keys": [
+        "title:fromsyntheticenterprisedataevaluationstorealmicrosoftcopilotaiconfidence",
+        "title:微软用合成企业环境评估copilot的工作表现",
+        "url:https://microsoft.com/en-us/research/blog/from-synthetic-enterprise-data-evaluations-to-real-microsoft-copilot-ai-confidence"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-10-31",
+      "title": "Community safety report and new protections for teens",
+      "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+      "keys": [
+        "title:communitysafetyreportandnewprotectionsforteens",
+        "title:openai计划发布社区安全报告并加强青少年保护",
+        "url:https://openai.com/index/community-safety-report-and-new-protections-for-teens"
       ],
       "company": "OpenAI"
     }
