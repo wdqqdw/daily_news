@@ -320,5 +320,21 @@
     "notes": "This original study assesses six large language models on five emotional intelligence tests and evaluates AI-generated test items using actual human participants. Model accuracy averaged 81%, compared with 56% reported for human samples in earlier validation studies. Separately, 467 human participants across five studies completed original and ChatGPT-4-generated tests for psychometric validation. Test difficulty was statistically equivalent, but equivalence was not established for clarity, realism, diversity, internal consistency or external correlations, despite small estimated differences. These findings concern structured emotion-knowledge tests and measurement development; they do not demonstrate real-world emotional competence or subjective feelings. The article was published on 21 May 2025.",
     "checked_on": "2026-10-31",
     "discover": true
+  },
+  "10.1073/pnas.2519941123": {
+    "doi": "10.1073/pnas.2519941123",
+    "title": "Moral stereotyping in large language models",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12974530/",
+    "checked_on": "2026-11-01",
+    "discover": true,
+    "notes": "This original empirical study compares large language model estimates of country-level moral values with survey responses from 90,802 human participants across 48 countries. GPT-3.5, GPT-4 and GPT-4o estimate six moral values for the average person in each country. The authors compare estimates with observed questionnaire data and poststratify by age, sex and country. Models systematically overestimate some concerns, especially Care, and underestimate others, especially Purity, with uneven errors across countries. Country-average estimates do not measure individual beliefs. The initial English-language convenience sample and model versions limit generalization; the findings do not directly prove which training data caused the biases."
+  },
+  "10.1038/s41562-025-02194-6": {
+    "doi": "10.1038/s41562-025-02194-6",
+    "title": "On the conversational persuasiveness of GPT-4",
+    "source": "https://www.nature.com/articles/s41562-025-02194-6",
+    "checked_on": "2026-11-01",
+    "discover": true,
+    "notes": "This preregistered randomized study measures opinion changes in 900 human participants after short multiround debates with GPT-4 or human partners. Conditions vary opponent identity, access to participants' demographic information and topic opinion strength. Personalized GPT-4 produces greater post-debate agreement than the human-human baseline. The Author Correction published on 3 September 2026 (doi:10.1038/s41562-026-02588-0) fixes a reference-category calculation: the direct personalized versus non-personalized GPT-4 comparison has P=0.0678 and is not statistically significant. Thus the study does not establish an additional personalization advantage over GPT-4 alone. Outcomes are immediate reported attitudes under a structured experimental design, not evidence of durable behaviour change."
   }
 }

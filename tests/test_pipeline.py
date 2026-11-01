@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_moral_estimation_requires_observed_values_and_llm(self):
+        p=paper('10.1/moral','Moral stereotyping in large language models',
+                abstract='We estimate country-level moral values and compare them with survey responses from human participants.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,title='Moral stereotyping in computer vision'),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        for abstract in ('Language models estimate moral values of simulated human participants.',
+                         'Language models estimate moral values in synthetic societies.',
+                         'Human participants rate language models for politeness.',
+                         'Human participants report moral values; we measure model toxicity.',
+                         'This conceptual framework predicts moral values of human participants.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_conversational_persuasion_requires_human_data_ai_and_influence(self):
+        p=paper('10.1/dialogue','On the conversational persuasiveness of GPT-4',
+                abstract='We randomly assigned human participants to short debates and measured changes in agreement.',citations=150)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Conversational persuasiveness of human speakers'),2))
+        for abstract in ('Language models simulate human participants for debates.',
+                         'Language models score persuasive dialogue on text benchmarks.',
+                         'This review discusses human participants and persuasion.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_empathic_judging_requires_observed_humans_and_llm(self):
         p=paper('10.1/empathic','When large language models are reliable for judging empathic communication',
                 abstract='We compare model annotations with human ratings from expert participants on real conversations.',citations=16)
