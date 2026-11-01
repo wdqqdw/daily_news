@@ -1759,6 +1759,42 @@
         "url:https://doi.org/10.1038/s41592-025-02923-9"
       ],
       "doi": "10.1038/s41592-025-02923-9"
+    },
+    {
+      "first_pushed": "2026-11-01",
+      "title": "Moral stereotyping in large language models",
+      "url": "https://doi.org/10.1073/pnas.2519941123",
+      "keys": [
+        "doi:10.1073/pnas.2519941123",
+        "title:moralstereotypinginlargelanguagemodels",
+        "title:大语言模型对不同国家道德价值的估计存在系统性偏差",
+        "url:https://doi.org/10.1073/pnas.2519941123"
+      ],
+      "doi": "10.1073/pnas.2519941123"
+    },
+    {
+      "first_pushed": "2026-11-01",
+      "title": "On the conversational persuasiveness of GPT-4",
+      "url": "https://doi.org/10.1038/s41562-025-02194-6",
+      "keys": [
+        "doi:10.1038/s41562-025-02194-6",
+        "title:900人对话实验检验gpt4的说服效果",
+        "title:ontheconversationalpersuasivenessofgpt4",
+        "url:https://doi.org/10.1038/s41562-025-02194-6"
+      ],
+      "doi": "10.1038/s41562-025-02194-6"
+    },
+    {
+      "first_pushed": "2026-11-01",
+      "title": "PhyloSuite v2: The development of an all‐in‐one, efficient and visualization‐oriented suite for molecular dating analysis and other advanced features",
+      "url": "https://doi.org/10.1002/imt2.70095",
+      "keys": [
+        "doi:10.1002/imt2.70095",
+        "title:phylosuitev2thedevelopmentofanallinoneefficientandvisualizationorientedsuiteformoleculardatinganalysisandotheradvancedfeatures",
+        "title:phylosuitev2整合分子定年与可视化分析流程",
+        "url:https://doi.org/10.1002/imt2.70095"
+      ],
+      "doi": "10.1002/imt2.70095"
     }
   ],
   "news": [
@@ -3838,6 +3874,17 @@
         "title:communitysafetyreportandnewprotectionsforteens",
         "title:openai计划发布社区安全报告并加强青少年保护",
         "url:https://openai.com/index/community-safety-report-and-new-protections-for-teens"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-01",
+      "title": "Fair use benefits everyone",
+      "url": "https://openai.com/index/fair-use-benefits-everyone",
+      "keys": [
+        "title:fairusebenefitseveryone",
+        "title:openai汇集多方关于ai训练合理使用的法院意见",
+        "url:https://openai.com/index/fair-use-benefits-everyone"
       ],
       "company": "OpenAI"
     }
