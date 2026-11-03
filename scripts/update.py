@@ -53,7 +53,7 @@ THEORY_ONLY = re.compile(r'middle.range theoretical framework|synthesi[sz]ing .*
 NON_RESEARCH_TYPE = re.compile(r'review|editorial|comment|perspective|news|letter|preprint|retract',re.I)
 HUMAN_DATA = re.compile(r'\b(participants?|subjects?|patients?|respondents?|volunteers?|fMRI|EEG|ECoG|electrocorticograph\w*|magnetic resonance|neural (?:datasets?|responses?|activity)|brain (?:recordings?|activity|responses?)|human (?:behavio\w*|choices?|decisions?|ratings?|judg\w*|performance|memory|(?:reaction|response|reading) times?))\b',re.I)
 MODEL_SUBJECTS = re.compile(r'\b(?:LLMs?|language models?)\)?\s+as (?:test )?subjects\b',re.I)
-SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:e|ed|ing)|proxies for|substitutes for)\s+(?:data from\s+)?human\s+(?:participants?|subjects?|respondents?)\b',re.I)
+SIMULATED_HUMAN_REFERENCES = re.compile(r'\b(?:simulat(?:es?|ed|ing)|proxies for|substitutes for)\s+(?:data from\s+)?human\s+(?:participants?|subjects?|respondents?)\b',re.I)
 BOT_SOCIETY = re.compile(r'\b(?:simulated (?:online )?societ(?:y|ies)|artificial societ(?:y|ies)) of (?:AI )?(?:chatbots?|agents?)\b',re.I)
 OBSERVED_HUMANS = re.compile(r'\b(?:human (?:participants?|subjects?|respondents?|data|ratings?|responses?)|(?:data|observations|ratings|responses) (?:from|of) (?:real |actual )?(?:humans?|people)|fMRI|EEG|ECoG)\b',re.I)
 LLM_REPORTING_ONLY = re.compile(r'\b(?:generat\w* (?:clinical.style |clinical )?(?:summaries|reports) based on model outputs|LLM.based (?:reporting|interpretation) layer)\b',re.I)
@@ -324,6 +324,8 @@ def relevant(p, slot):
                               and observed_comparison
                               and re.search(r'\bmoral values?\b',conversation_source,re.I)
                               and re.search(r'\b(?:estimat\w*|predict\w*|simulat\w*)\b',conversation_source,re.I))
+    # Lexical organization is language cognition when tested against real people.
+    human_lexical = re.search(r'\blexical organi[sz]ation\b',title,re.I) and observed_comparison
     if slot == 1:
         # An LLM narrating another model's predictions does not model people.
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
@@ -340,7 +342,7 @@ def relevant(p, slot):
         human_communication = (re.search(r'\bhuman communication\b',title,re.I)
                                and OBSERVED_HUMANS.search(reaction_source)
                                and human_research_source(reaction_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation) and LLM.search(text))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
@@ -366,6 +368,13 @@ def relevant(p, slot):
         human_persuasion = (re.search(r'\b(?:persuad\w* (?:voters|people|humans)|conversational persuasiveness)\b',title,re.I)
                             and OBSERVED_HUMANS.search(judgement_source)
                             and human_research_source(judgement_source))
+        # Learning experiments study skill acquisition, not AI benchmark scores.
+        human_learning = (re.search(r'\blearning\b',title,re.I)
+                          and OBSERVED_HUMANS.search(judgement_source)
+                          and human_research_source(judgement_source)
+                          and re.search(r'\bstudents?\b',judgement_source,re.I)
+                          and re.search(r'\b(?:field experiment|randomi[sz]ed)\b',judgement_source,re.I)
+                          and re.search(r'\b(?:exams?|learning outcomes?|skill acquisition)\b',judgement_source,re.I))
         # AI-generated emotional-intelligence tests can study human measurement.
         # A model-only test score is insufficient: require human validation.
         human_emotion_tests = (re.search(r'\bemotional intelligence tests?\b',title,re.I)
@@ -383,7 +392,7 @@ def relevant(p, slot):
         human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion or human_learning) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

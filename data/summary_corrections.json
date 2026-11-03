@@ -1304,5 +1304,45 @@
     "title_zh": "OpenAI 汇集多方关于 AI 训练合理使用的法院意见",
     "summary": "OpenAI 发布创作者、学者、无障碍倡导者和法律专家等提交的法院意见摘录，介绍这些群体如何看待合理使用对 AI 训练和创新的作用。这条动态聚焦围绕训练数据使用的法律与政策讨论；相关表述属于提交意见者和公司的主张，不应理解为法院已经作出相应裁决。",
     "summary_source": "https://openai.com/news/rss.xml"
+  },
+  "doi:10.1017/langcog.2026.10119": {
+    "title_zh": "真人与语言模型的词汇网络存在结构差异",
+    "summary": "研究比较了 50 名西班牙语母语者、50 名高级二语学习者与 ChatGPT 的词语联想网络。两组真人的整体结构相近，模型则呈现更高的模块化、更长的路径及更集中的词汇选择。结果说明词语内容相似不代表组织方式相同；研究仅涉及一个语义类别和一个模型，真人限时作答与模型固定词数的差别也限制了结论。",
+    "summary_source": "https://www.cambridge.org/core/journals/language-and-cognition/article/lexical-organization-in-humans-and-large-language-models-evidence-from-l1-l2-and-llm-networks/6ED9E57465DC4F496BFC2B00393AF5FC"
+  },
+  "doi:10.1073/pnas.2422633122": {
+    "title_zh": "课堂随机实验：AI 练习表现提升未必转化为独立学习收益",
+    "summary": "研究在土耳其一所高中对近千名学生开展随机实验，比较普通 GPT‑4 辅导、带教师设计提示与保护措施的辅导，以及教材学习。两种 AI 均提高了辅助练习成绩，但撤去工具后，普通辅导组的独立考试表现下降；有保护措施的版本明显减轻了这一问题。研究提示应区分即时完成题目与真正掌握技能，结论受学校、学科和工具设计限制。",
+    "summary_source": "https://doi.org/10.1073/pnas.2422633122"
+  },
+  "doi:10.1038/s41586-026-10644-y": {
+    "title_zh": "Co‑Scientist 通过多智能体协作生成并验证科研假设",
+    "summary": "研究提出基于 Gemini 的 Co‑Scientist，让多个智能体反复生成、评议和筛选假设，并接受科学家的目标与反馈。团队在药物再利用、新靶点发现和耐药机制等任务中开展验证，其中急性髓系白血病候选药物及组合获得了体外实验支持。结果显示其辅助科研探索的潜力，但有限领域的实验验证不能替代进一步的临床前与临床研究。",
+    "summary_source": "https://www.nature.com/articles/s41586-026-10644-y"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6": {
+    "title_zh": "Qwen Code 0.26.6 改进会话管理与运行状态展示",
+    "summary": "Qwen Code 发布 0.26.6，新增侧栏活动视图和分屏入口，并在用量面板展示请求成功率、输出速度及延迟，方便跟踪并行会话。更新同时修复 OAuth 刷新锁、MCP 同名工具发现和 Windows 安装更新等问题，并补充 Linux RPM 安装包。官方列出的改动主要围绕交互、可观测性和运行稳定性。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5": {
+    "title_zh": "Qwen Code 0.26.5 增强交互界面与历史会话访问",
+    "summary": "Qwen Code 0.26.5 默认启用生成式界面，允许将交互卡片的值附入后续对话，并增加历史消息分页、后台智能体数量展示和归档会话的导出与恢复入口。版本还改进升级流程、代码审查及运行恢复。它与后续 0.26.6 的修复分属不同发布记录，本条保留该版本首次引入的主要功能。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5"
+  },
+  "url:https://openai.com/index/grid-protectors-program": {
+    "title_zh": "OpenAI 推出电网支持计划，拟让算力园区灵活调节用电",
+    "summary": "OpenAI 宣布 Grid Protectors 计划，将与电力公司及监管机构合作，让未来算力园区在电网紧张时降低用电需求，并视条件利用现场发电或储能提供支持。公司将仍在开发的佐治亚州园区作为起点，称相关协议包含最高 1,000 兆瓦的灵活需求响应安排。这是未来设施的建设与运营承诺，不代表所有能力已经投运。",
+    "summary_source": "https://openai.com/index/grid-protectors-program/"
+  },
+  "url:https://openai.com/index/scaling-git-at-openai": {
+    "title_zh": "OpenAI 介绍支撑大规模并行开发的 Git 后端 Pando",
+    "summary": "OpenAI 介绍已用于内部单体仓库的 Pando，在兼容 Git 协议和客户端的前提下，按分支协调并行写入，并复用打包文件提高读取吞吐。公司报告生产环境中推送延迟中位数降至此前约五分之一，每天传输接近一拍字节数据。文章属于工程实践分享，指标来自其自身工作负载，不能直接视为其他仓库的预期收益。",
+    "summary_source": "https://openai.com/index/scaling-git-at-openai/"
+  },
+  "url:https://deepmind.google/blog/speeding-up-planning-decisions-with-ai": {
+    "title_zh": "DeepMind 扩大 PlanAssist 试点，辅助英国规划审批",
+    "summary": "Google DeepMind 表示，基于 Gemini 的 PlanAssist 可辅助检查申请材料、规划约束并起草带引用的评估报告。三个地方政府的早期试点中，相关评估任务平均耗时减少约 58%；接下来计划新增 12 个地方政府进入测试。最终决定仍由规划人员审阅作出，试点的任务耗时改善不等同于所有审批周期均缩短相同比例。",
+    "summary_source": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
   }
 }

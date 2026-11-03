@@ -336,5 +336,21 @@
     "checked_on": "2026-11-01",
     "discover": true,
     "notes": "This preregistered randomized study measures opinion changes in 900 human participants after short multiround debates with GPT-4 or human partners. Conditions vary opponent identity, access to participants' demographic information and topic opinion strength. Personalized GPT-4 produces greater post-debate agreement than the human-human baseline. The Author Correction published on 3 September 2026 (doi:10.1038/s41562-026-02588-0) fixes a reference-category calculation: the direct personalized versus non-personalized GPT-4 comparison has P=0.0678 and is not statistically significant. Thus the study does not establish an additional personalization advantage over GPT-4 alone. Outcomes are immediate reported attitudes under a structured experimental design, not evidence of durable behaviour change."
+  },
+  "10.1017/langcog.2026.10119": {
+    "doi": "10.1017/langcog.2026.10119",
+    "title": "Lexical organization in humans and large language models: Evidence from L1, L2 and LLM networks",
+    "source": "https://www.cambridge.org/core/journals/language-and-cognition/article/lexical-organization-in-humans-and-large-language-models-evidence-from-l1-l2-and-llm-networks/6ED9E57465DC4F496BFC2B00393AF5FC",
+    "checked_on": "2026-11-03",
+    "discover": true,
+    "notes": "This original study compares lexical networks from 100 human participants, comprising 50 native and 50 advanced second-language Spanish speakers, with 50 ChatGPT GPT-5.2 runs. Human participants list house-related words for two minutes; the model generates 40 words per run. Human networks converge structurally, while model networks have greater modularity, longer paths and less varied vocabulary. The findings concern one category and one model. Different elicitation constraints and group-level network construction limit interpretation; model runs are not independent people, and network differences do not directly prove different cognitive mechanisms."
+  },
+  "10.1073/pnas.2422633122": {
+    "doi": "10.1073/pnas.2422633122",
+    "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+    "source": "https://doi.org/10.1073/pnas.2422633122",
+    "checked_on": "2026-11-03",
+    "discover": true,
+    "notes": "This preregistered randomized field experiment studies skill acquisition in nearly 1,000 high-school students as human participants in Turkey. Classes use a basic GPT-4 tutor, a tutor with teacher-designed safeguards, or textbooks. Both AI conditions improve assisted practice scores, but the basic-tutor group performs worse on subsequent unassisted exams. The safeguarded tutor substantially mitigates that decline without establishing an unassisted improvement over controls. Results concern a single school's mathematics lessons and specific tutoring designs, not all AI education. The August 2025 correction fixes an author affiliation, not experimental findings."
   }
 }

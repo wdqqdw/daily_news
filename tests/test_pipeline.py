@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_lexical_organization_requires_human_comparison_and_llm(self):
+        p=paper('10.1/lexical','Lexical organization in humans and large language models',
+                abstract='We compare lexical networks from observed human participants with ChatGPT outputs.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,title='Lexical organization in large language models'),1))
+        self.assertFalse(relevant(dict(p,title='Lexical organization in humans',abstract='Human participants produce word lists.'),1))
+        for abstract in ('Models simulate human participants producing words.',
+                         'Language models generate word lists without comparison data.',
+                         'This review compares human participants and language models.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
+    def test_learning_requires_observed_student_experiment_and_influence(self):
+        p=paper('10.1/learning','Generative AI can affect learning',
+                abstract='A randomized field experiment with human participants measures students on unassisted exams after AI tutoring.',citations=331)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Tutoring can affect learning',abstract=p['abstract'].replace('AI','human')),2))
+        for abstract in ('AI simulates human participants in a randomized student exam experiment.',
+                         'AI scores on exams and discusses students.',
+                         'Human participants annotate a randomized AI benchmark dataset.',
+                         'This review describes a randomized field experiment with human participants on student exams.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_moral_estimation_requires_observed_values_and_llm(self):
         p=paper('10.1/moral','Moral stereotyping in large language models',
                 abstract='We estimate country-level moral values and compare them with survey responses from human participants.')
