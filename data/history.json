@@ -1795,6 +1795,42 @@
         "url:https://doi.org/10.1002/imt2.70095"
       ],
       "doi": "10.1002/imt2.70095"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Lexical organization in humans and large language models: Evidence from L1, L2 and LLM networks",
+      "url": "https://doi.org/10.1017/langcog.2026.10119",
+      "keys": [
+        "doi:10.1017/langcog.2026.10119",
+        "title:lexicalorganizationinhumansandlargelanguagemodelsevidencefroml1l2andllmnetworks",
+        "title:真人与语言模型的词汇网络存在结构差异",
+        "url:https://doi.org/10.1017/langcog.2026.10119"
+      ],
+      "doi": "10.1017/langcog.2026.10119"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Generative AI without guardrails can harm learning: Evidence from high school mathematics",
+      "url": "https://doi.org/10.1073/pnas.2422633122",
+      "keys": [
+        "doi:10.1073/pnas.2422633122",
+        "title:generativeaiwithoutguardrailscanharmlearningevidencefromhighschoolmathematics",
+        "title:课堂随机实验ai练习表现提升未必转化为独立学习收益",
+        "url:https://doi.org/10.1073/pnas.2422633122"
+      ],
+      "doi": "10.1073/pnas.2422633122"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Accelerating scientific discovery with Co-Scientist",
+      "url": "https://doi.org/10.1038/s41586-026-10644-y",
+      "keys": [
+        "doi:10.1038/s41586-026-10644-y",
+        "title:acceleratingscientificdiscoverywithcoscientist",
+        "title:coscientist通过多智能体协作生成并验证科研假设",
+        "url:https://doi.org/10.1038/s41586-026-10644-y"
+      ],
+      "doi": "10.1038/s41586-026-10644-y"
     }
   ],
   "news": [
@@ -3887,6 +3923,50 @@
         "url:https://openai.com/index/fair-use-benefits-everyone"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Qwen Code · Release v0.26.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6",
+      "keys": [
+        "title:qwencode0266改进会话管理与运行状态展示",
+        "title:qwencodereleasev0266",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.6"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Introducing the Grid Protectors Program",
+      "url": "https://openai.com/index/grid-protectors-program",
+      "keys": [
+        "title:introducingthegridprotectorsprogram",
+        "title:openai推出电网支持计划拟让算力园区灵活调节用电",
+        "url:https://openai.com/index/grid-protectors-program"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Qwen Code · Release v0.26.5",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5",
+      "keys": [
+        "title:qwencode0265增强交互界面与历史会话访问",
+        "title:qwencodereleasev0265",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.5"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-03",
+      "title": "Speeding up planning decisions with AI",
+      "url": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/",
+      "keys": [
+        "title:deepmind扩大planassist试点辅助英国规划审批",
+        "title:speedingupplanningdecisionswithai",
+        "url:https://deepmind.google/blog/speeding-up-planning-decisions-with-ai"
+      ],
+      "company": "Google DeepMind"
     }
   ]
 }
