@@ -1831,6 +1831,42 @@
         "url:https://doi.org/10.1038/s41586-026-10644-y"
       ],
       "doi": "10.1038/s41586-026-10644-y"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Personality expression and perception in large language models and humans",
+      "url": "https://doi.org/10.1038/s41598-026-75546-5",
+      "keys": [
+        "doi:10.1038/s41598-026-75546-5",
+        "title:personalityexpressionandperceptioninlargelanguagemodelsandhumans",
+        "title:语言模型与人类如何从简短自述判断人格",
+        "url:https://doi.org/10.1038/s41598-026-75546-5"
+      ],
+      "doi": "10.1038/s41598-026-75546-5"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Combined evidence from artificial neural networks and human brain-lesion models reveals that language modulates vision in human perception",
+      "url": "https://doi.org/10.1038/s41562-025-02357-5",
+      "keys": [
+        "doi:10.1038/s41562-025-02357-5",
+        "title:combinedevidencefromartificialneuralnetworksandhumanbrainlesionmodelsrevealsthatlanguagemodulatesvisioninhumanperception",
+        "title:神经网络与脑损伤证据揭示语言如何影响人的视觉加工",
+        "url:https://doi.org/10.1038/s41562-025-02357-5"
+      ],
+      "doi": "10.1038/s41562-025-02357-5"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Daraxonrasib in Previously Treated Advanced RAS -Mutated Pancreatic Cancer",
+      "url": "https://doi.org/10.1056/nejmoa2505783",
+      "keys": [
+        "doi:10.1056/nejmoa2505783",
+        "title:daraxonrasibinpreviouslytreatedadvancedrasmutatedpancreaticcancer",
+        "title:daraxonrasib早期试验报告胰腺癌抗肿瘤信号与安全性风险",
+        "url:https://doi.org/10.1056/nejmoa2505783"
+      ],
+      "doi": "10.1056/nejmoa2505783"
     }
   ],
   "news": [
@@ -3967,6 +4003,61 @@
         "url:https://deepmind.google/blog/speeding-up-planning-decisions-with-ai"
       ],
       "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Accelerating engineering for the physical world",
+      "url": "https://openai.com/index/accelerating-engineering-for-the-physical-world",
+      "keys": [
+        "title:acceleratingengineeringforthephysicalworld",
+        "title:openai展示ai辅助硬件设计并与马自达开展研究合作",
+        "url:https://openai.com/index/accelerating-engineering-for-the-physical-world"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Agentic cheminformatics with Google Antigravity",
+      "url": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/",
+      "keys": [
+        "title:agenticcheminformaticswithgoogleantigravity",
+        "title:deepmind为antigravity提供化学信息学技能",
+        "url:https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "AI Is Changing How Semiconductor Fabs Work — and Engineers Are Moving Faster Because of It",
+      "url": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/",
+      "keys": [
+        "title:aiischanginghowsemiconductorfabsworkandengineersaremovingfasterbecauseofit",
+        "title:英伟达介绍ai仿真和数字孪生在晶圆厂的应用",
+        "url:https://blogs.nvidia.com/blog/ai-semiconductor-fabs"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Learn the rules: The hacker mindset",
+      "url": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/",
+      "keys": [
+        "title:learntherulesthehackermindset",
+        "title:微软研究院访谈从黑客思维到ai网络防御",
+        "url:https://microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-04",
+      "title": "Cities Worldwide Build and Scale AI Services With NVIDIA Physical and Agentic AI",
+      "url": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/",
+      "keys": [
+        "title:citiesworldwidebuildandscaleaiserviceswithnvidiaphysicalandagenticai",
+        "title:英伟达与合作伙伴拓展城市ai服务和数字孪生",
+        "url:https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
