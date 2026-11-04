@@ -70,5 +70,10 @@
     "published": "2025-12-08",
     "source": "https://jamanetwork.com/journals/jama/fullarticle/2842634",
     "reason": "The publisher states first online publication on 8 December 2025; Crossref supplies the later 3 March 2026 issue date. Use first publication for age and citation-rate ranking."
+  },
+  "10.1056/nejmoa2505783": {
+    "published": "2026-05-06",
+    "source": "https://www.nejm.org/doi/10.1056/NEJMoa2505783",
+    "reason": "出版商标明首次在线发表于2026年5月6日；Crossref 使用5月7日卷期日期。按首次发表日期计算新近程度和引用速度。"
   }
 }

@@ -1344,5 +1344,45 @@
     "title_zh": "DeepMind 扩大 PlanAssist 试点，辅助英国规划审批",
     "summary": "Google DeepMind 表示，基于 Gemini 的 PlanAssist 可辅助检查申请材料、规划约束并起草带引用的评估报告。三个地方政府的早期试点中，相关评估任务平均耗时减少约 58%；接下来计划新增 12 个地方政府进入测试。最终决定仍由规划人员审阅作出，试点的任务耗时改善不等同于所有审批周期均缩短相同比例。",
     "summary_source": "https://deepmind.google/blog/speeding-up-planning-decisions-with-ai/"
+  },
+  "doi:10.1038/s41598-026-75546-5": {
+    "title_zh": "语言模型与人类如何从简短自述判断人格",
+    "summary": "研究者收集七种语言模型和真实参与者的问卷及自述，由六种模型与十名人类评审判断共 140 篇文本的人格和作者来源。两类评审都能提取人格线索；在该数据集中，模型的人格推断略优，人类识别作者来源更好，但不同模型差异明显。模型输出中的人格模式依赖提示与实验条件，不能据此认定模型具有稳定人格或普遍理解人的能力。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-75546-5"
+  },
+  "doi:10.1038/s41562-025-02357-5": {
+    "title_zh": "神经网络与脑损伤证据揭示语言如何影响人的视觉加工",
+    "summary": "研究结合四组数据与 33 名卒中患者的脑损伤信息，比较 CLIP、ResNet 和 MoCo 对人类腹侧枕颞皮层活动的解释能力。视觉语言模型 CLIP 提供了额外解释力；视觉区与左角回语言区之间的白质完整性较低时，其与脑活动的对应减弱，而 MoCo 的对应增强。结果支持语言参与视觉加工，但模型与脑的相关性不意味着两者机制完全相同。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02357-5"
+  },
+  "doi:10.1056/nejmoa2505783": {
+    "title_zh": "Daraxonrasib 早期试验报告胰腺癌抗肿瘤信号与安全性风险",
+    "summary": "这项 1—2 期研究报告了 168 名既往接受治疗的 RAS 突变晚期胰腺导管腺癌患者。使用每日不超过 300 毫克剂量者中，96% 出现治疗相关不良事件，30% 达到 3 级或以上。在接受每日 300 毫克二线治疗、携带 RAS G12 突变的 26 人亚组中，客观缓解率为 35%。这是早期单臂研究，不能据此认定优于标准治疗；后续需随机对照证据。",
+    "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2505783"
+  },
+  "url:https://openai.com/index/accelerating-engineering-for-the-physical-world": {
+    "title_zh": "OpenAI 展示 AI 辅助硬件设计，并与马自达开展研究合作",
+    "summary": "OpenAI 展示了 ChatGPT、Codex 与 Astra 在 CAD、线路板设计、仿真和工程协作中的应用，并宣布与马自达探索空气动力学及碰撞安全设计。公司介绍了 AI 辅助原型设备的案例，同时指出制造公差、装配和生产限制仍需多轮审查。这些是公司展示的工程进展，模型输出仍由工程师验证。",
+    "summary_source": "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+  },
+  "url:https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity": {
+    "title_zh": "DeepMind 为 Antigravity 提供化学信息学技能",
+    "summary": "Google DeepMind 展示让 Antigravity 调用化学信息学工具的工作流程：检索化合物、分析分子对，并提出刚性大环候选及合成路线。公司称示例任务约一小时完成，语言模型负责组织流程，专用工具处理化学结构计算。演示产生的是待验证的设计建议，不能等同于已合成、有效或安全的新药。",
+    "summary_source": "https://deepmind.google/blog/agentic-cheminformatics-with-google-antigravity/"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-semiconductor-fabs": {
+    "title_zh": "英伟达介绍 AI、仿真和数字孪生在晶圆厂的应用",
+    "summary": "英伟达介绍通过加速仿真、学习物理规律的模型、AI 智能体及数字孪生支持半导体设计与制造。目标是在实体试验前更快评估工艺变化、材料行为和缺陷原因，让工程师比较更多方案。文中展示的是不同任务与合作案例的进展，不能直接推导为整座晶圆厂的统一效率或良率提升。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-semiconductor-fabs/"
+  },
+  "url:https://microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset": {
+    "title_zh": "微软研究院访谈：从黑客思维到 AI 网络防御",
+    "summary": "微软研究院研究经理 Mike Walker 回顾黑客竞赛、自动化漏洞发现与修补等经历，讨论 AI、网络安全和大规模系统中的信任、团队协作及判断力。他强调理解规则及其社会背景对安全工作的重要性。这是研究人员访谈和经验分享，并非新的产品发布或独立实验结果。",
+    "summary_source": "https://www.microsoft.com/en-us/research/podcast/learn-the-rules-the-hacker-mindset/"
+  },
+  "url:https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications": {
+    "title_zh": "英伟达与合作伙伴拓展城市 AI 服务和数字孪生",
+    "summary": "英伟达介绍各地城市利用 Nemotron、Cosmos、Omniverse 和视觉 AI 工具提供居民服务、交通分析及基础设施规划。案例包括西班牙政务服务智能体和马来西亚视频分析；部分项目仍处扩展或规划阶段。公司主张共用计算资源支持不同部门，具体收益取决于场景、部署进度和当地验证。",
+    "summary_source": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/"
   }
 }
