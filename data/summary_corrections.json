@@ -1,4 +1,34 @@
 {
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7": {
+    "title_zh": "Qwen Code 0.26.7 增强会话配置、事件查看和项目安全",
+    "summary": "Qwen Code 新版本支持创建托管会话时设置完整模型配置，并增加可筛选、自动刷新的频道事件时间线。更新还改进远程连接、并发上传和会话回放，要求用户先信任项目目录，才运行仓库提供的钩子、权限设置和语言服务器。这些是开发工具的功能与稳定性改进，官方说明未报告已知破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7"
+  },
+  "url:https://openai.com/index/openai-to-acquire-pierre": {
+    "title_zh": "OpenAI 拟收购 Pierre，扩展 Codex 的代码与 Git 工具",
+    "summary": "OpenAI 宣布拟收购 Code Storage 及 Trees、Diffs 等开发工具背后的 Pierre 团队，计划加强 Codex 的代码浏览、审查和版本管理。公司表示相关开源项目将继续开源，Code Storage 客户可继续使用服务。交易仍需满足监管批准等交割条件，完成前双方保持独立，不能将公告视为收购已经完成。",
+    "summary_source": "https://openai.com/index/openai-to-acquire-pierre/"
+  },
+  "url:https://openai.com/index/daybreak-red-aws-govcloud": {
+    "title_zh": "Daybreak Red 扩展至 AWS 美国东部政府云",
+    "summary": "OpenAI 宣布通过 Amazon Bedrock 向获批的 AWS GovCloud 美国东部客户提供 GPT-5.6 Cyber，用于授权漏洞研究、验证和安全测试。接入需要 OpenAI 的 Daybreak Red 审批以及 AWS 侧配置，获得前者并不代表模型已自动开通。公告强调由专业人员审查发现与修复建议，这是受控访问范围的扩展。",
+    "summary_source": "https://openai.com/index/daybreak-red-aws-govcloud/"
+  },
+  "doi:10.1038/s41598-026-76359-2": {
+    "title_zh": "语言模型从日常文字评估人的幸福感",
+    "summary": "研究追踪 764 名美国酒店及餐饮服务业工作者 12 周，比较传统自评量表、描述词和短文对幸福感的测量。语言模型结合机器学习得到的语言指标，在内部测量上表现相近，对行为、特质等外部指标的预测相关性更高，但绝对相关仍较弱。结果支持文字作为心理测量的补充，尚不能证明其可可靠诊断个体或推广到所有人群。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-76359-2"
+  },
+  "doi:10.1093/pnasnexus/pgaf316": {
+    "title_zh": "随机实验：依赖 AI 摘要学习可能形成更浅的知识",
+    "summary": "研究通过七项线上与实验室实验，比较真实参与者阅读语言模型摘要和自行浏览网页后的知识形成。使用 AI 摘要者自报理解较浅，写出的建议更稀疏、较缺乏原创性，也更少被独立评审者采纳；部分实验控制了信息内容或搜索引擎。结果针对这些学习与建议任务，不能直接推断长期认知衰退，也不意味着所有 AI 辅导都无效。",
+    "summary_source": "https://academic.oup.com/pnasnexus/article/4/10/pgaf316/8303888"
+  },
+  "doi:10.1056/nejmoa2513310": {
+    "title_zh": "高风险房颤试验：左心耳封堵未证实不劣于药物治疗",
+    "summary": "德国多中心随机试验纳入 912 名卒中和出血风险较高的房颤患者，比较经导管左心耳封堵与医生指导的最佳药物治疗。中位随访三年，卒中、栓塞、大出血或相关死亡这一复合终点的发生率分别为每百人年 16.8 和 13.3 次，未达到预设的非劣效标准。结论适用于该高风险人群及试验方案，不能直接外推到所有房颤患者。",
+    "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2513310"
+  },
   "doi:10.1038/s42256-025-01072-0": {
     "title_zh": "人脑的高级视觉表征与大语言模型如何对齐",
     "summary": "研究将自然场景的文字描述输入大语言模型，发现生成的表征能预测观看相应图像时的脑活动，并可据脑活动重建场景描述。对照实验表明，整合上下文的信息比孤立词语更有助于匹配脑表征。结果支持把语言模型表征用于视觉认知建模，但不能据此认定人脑与模型采用相同机制。",

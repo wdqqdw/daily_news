@@ -331,6 +331,13 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Language-based well-being assessment measures a human mental state.
+        # Require observed people and ratings, not chatbot self-reports.
+        measured_wellbeing = (re.search(r'\blanguage.based assessments?\b',title,re.I)
+                              and re.search(r'\b(?:experienced|subjective) well.being\b',title,re.I)
+                              and observed_comparison
+                              and re.search(r'\b(?:self.report\w*|ratings?)\b',conversation_source,re.I))
+        if measured_wellbeing and LLM.search(text):return True
         # Predicting people's online reactions models human behaviour. Require
         # observed people in the source, not only a simulated-agent population.
         reaction_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1200])
@@ -368,13 +375,16 @@ def relevant(p, slot):
         human_persuasion = (re.search(r'\b(?:persuad\w* (?:voters|people|humans)|conversational persuasiveness)\b',title,re.I)
                             and OBSERVED_HUMANS.search(judgement_source)
                             and human_research_source(judgement_source))
-        # Learning experiments study skill acquisition, not AI benchmark scores.
+        # Human learning includes skill acquisition and knowledge formation.
+        # Require an observed experiment, not AI benchmark learning curves.
         human_learning = (re.search(r'\blearning\b',title,re.I)
                           and OBSERVED_HUMANS.search(judgement_source)
                           and human_research_source(judgement_source)
-                          and re.search(r'\bstudents?\b',judgement_source,re.I)
-                          and re.search(r'\b(?:field experiment|randomi[sz]ed)\b',judgement_source,re.I)
-                          and re.search(r'\b(?:exams?|learning outcomes?|skill acquisition)\b',judgement_source,re.I))
+                          and re.search(r'\b(?:field experiment|randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)
+                          and ((re.search(r'\bstudents?\b',judgement_source,re.I)
+                                and re.search(r'\b(?:exams?|learning outcomes?|skill acquisition)\b',judgement_source,re.I))
+                               or (re.search(r'\bdepth of learning\b',title,re.I)
+                                   and re.search(r'\bknowledge\b',judgement_source,re.I))))
         # AI-generated emotional-intelligence tests can study human measurement.
         # A model-only test score is insufficient: require human validation.
         human_emotion_tests = (re.search(r'\bemotional intelligence tests?\b',title,re.I)

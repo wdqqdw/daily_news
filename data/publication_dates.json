@@ -75,5 +75,10 @@
     "published": "2026-05-06",
     "source": "https://www.nejm.org/doi/10.1056/NEJMoa2505783",
     "reason": "出版商标明首次在线发表于2026年5月6日；Crossref 使用5月7日卷期日期。按首次发表日期计算新近程度和引用速度。"
+  },
+  "10.1056/nejmoa2513310": {
+    "published": "2026-03-18",
+    "source": "https://www.nejm.org/doi/10.1056/NEJMoa2513310",
+    "reason": "出版商标明首次在线发表于2026年3月18日；Crossref 提供4月2日卷期日期，按首次发表时间计算引用热度。"
   }
 }

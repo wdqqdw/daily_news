@@ -1,4 +1,9 @@
 {
+  "10.1038/d41586-025-01500-6": {
+    "slots": [1, 2, 3],
+    "reason": "Nature 将该条目标为 NEWS，是对另一篇研究的新闻报道，不是原创研究论文。",
+    "source": "https://www.nature.com/articles/d41586-025-01500-6"
+  },
   "10.46627/sipose.v5i3.676": {
     "slots": [
       1,
@@ -131,5 +136,14 @@
     ],
     "reason": "Nature Materials explicitly labels this paper as a Review Article; its abstract reviews computational materials-design approaches rather than reporting original research.",
     "source": "https://www.nature.com/articles/s41563-025-02403-7"
+  },
+  "10.1007/s10238-025-01965-9": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "原文摘要明确标为综述（This review synthesizes），不属于原创实证研究。",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/41266662/"
   }
 }

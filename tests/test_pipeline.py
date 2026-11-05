@@ -29,6 +29,31 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_wellbeing_assessment_requires_observed_ratings_and_llm(self):
+        p=paper('10.1/wellbeing','Language-based assessments for experienced well-being',
+                abstract='Large language models predict self-report ratings from essays by human participants.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        for abstract in ('Language models simulate human participants and their ratings.',
+                         'Language models rate their own subjective well-being.',
+                         'Human participants provide self-report ratings using traditional statistics.',
+                         'Human participants provide essays; large language models classify topics.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_learning_depth_requires_human_experiment_knowledge_and_influence(self):
+        p=paper('10.1/depth','Effects of large language models versus web search on depth of learning',
+                abstract='Human participants were randomly assigned to use different search tools; we measured knowledge and advice quality.',citations=52)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Web search and depth of learning'),2))
+        for abstract in ('LLMs simulate human participants randomly assigned to knowledge tasks.',
+                         'Human participants answer a knowledge survey about LLMs.',
+                         'Human participants were randomly assigned to label model training data.',
+                         'This review examines knowledge in randomized experiments with human participants.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_lexical_organization_requires_human_comparison_and_llm(self):
         p=paper('10.1/lexical','Lexical organization in humans and large language models',
                 abstract='We compare lexical networks from observed human participants with ChatGPT outputs.')
