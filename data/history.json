@@ -1867,6 +1867,42 @@
         "url:https://doi.org/10.1056/nejmoa2505783"
       ],
       "doi": "10.1056/nejmoa2505783"
+    },
+    {
+      "first_pushed": "2026-11-05",
+      "title": "Language-based assessments for experienced well-being: accuracy and external validity across behaviors, traits, and states",
+      "url": "https://doi.org/10.1038/s41598-026-76359-2",
+      "keys": [
+        "doi:10.1038/s41598-026-76359-2",
+        "title:languagebasedassessmentsforexperiencedwellbeingaccuracyandexternalvalidityacrossbehaviorstraitsandstates",
+        "title:语言模型从日常文字评估人的幸福感",
+        "url:https://doi.org/10.1038/s41598-026-76359-2"
+      ],
+      "doi": "10.1038/s41598-026-76359-2"
+    },
+    {
+      "first_pushed": "2026-11-05",
+      "title": "Experimental evidence of the effects of large language models versus web search on depth of learning",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf316",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgaf316",
+        "title:experimentalevidenceoftheeffectsoflargelanguagemodelsversuswebsearchondepthoflearning",
+        "title:随机实验依赖ai摘要学习可能形成更浅的知识",
+        "url:https://doi.org/10.1093/pnasnexus/pgaf316"
+      ],
+      "doi": "10.1093/pnasnexus/pgaf316"
+    },
+    {
+      "first_pushed": "2026-11-05",
+      "title": "Left Atrial Appendage Closure or Medical Therapy in Atrial Fibrillation",
+      "url": "https://doi.org/10.1056/nejmoa2513310",
+      "keys": [
+        "doi:10.1056/nejmoa2513310",
+        "title:leftatrialappendageclosureormedicaltherapyinatrialfibrillation",
+        "title:高风险房颤试验左心耳封堵未证实不劣于药物治疗",
+        "url:https://doi.org/10.1056/nejmoa2513310"
+      ],
+      "doi": "10.1056/nejmoa2513310"
     }
   ],
   "news": [
@@ -4058,6 +4094,17 @@
         "url:https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-05",
+      "title": "Qwen Code · Release v0.26.7",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7",
+      "keys": [
+        "title:qwencode0267增强会话配置事件查看和项目安全",
+        "title:qwencodereleasev0267",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7"
+      ],
+      "company": "Qwen"
     }
   ]
 }

@@ -1,0 +1,292 @@
+{
+  "date": "2026-11-05",
+  "generated_at": "2026-11-05T09:53:33+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Language-based assessments for experienced well-being: accuracy and external validity across behaviors, traits, and states",
+      "doi": "10.1038/s41598-026-76359-2",
+      "url": "https://doi.org/10.1038/s41598-026-76359-2",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-10-26",
+      "authors": "Nilsson et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-026-76359-2",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-05；来源：Crossref；引用数 0，距发表 10 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究追踪 764 名美国酒店及餐饮服务业工作者 12 周，比较传统自评量表、描述词和短文对幸福感的测量。语言模型结合机器学习得到的语言指标，在内部测量上表现相近，对行为、特质等外部指标的预测相关性更高，但绝对相关仍较弱。结果支持文字作为心理测量的补充，尚不能证明其可可靠诊断个体或推广到所有人群。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.8379,
+      "title_zh": "语言模型从日常文字评估人的幸福感",
+      "summary_source": "https://www.nature.com/articles/s41598-026-76359-2",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Experimental evidence of the effects of large language models versus web search on depth of learning",
+      "doi": "10.1093/pnasnexus/pgaf316",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf316",
+      "journal": "PNAS Nexus",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-10-28",
+      "authors": "Melumad et al.",
+      "citations": 52,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgaf316",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-05；来源：Crossref；引用数 52，距发表 373 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过七项线上与实验室实验，比较真实参与者阅读语言模型摘要和自行浏览网页后的知识形成。使用 AI 摘要者自报理解较浅，写出的建议更稀疏、较缺乏原创性，也更少被独立评审者采纳；部分实验控制了信息内容或搜索引擎。结果针对这些学习与建议任务，不能直接推断长期认知衰退，也不意味着所有 AI 辅导都无效。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 12.2886,
+      "title_zh": "随机实验：依赖 AI 摘要学习可能形成更浅的知识",
+      "summary_source": "https://academic.oup.com/pnasnexus/article/4/10/pgaf316/8303888",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Left Atrial Appendage Closure or Medical Therapy in Atrial Fibrillation",
+      "doi": "10.1056/nejmoa2513310",
+      "url": "https://doi.org/10.1056/nejmoa2513310",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2026-03-18",
+      "authors": "Landmesser et al.",
+      "citations": 111,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2513310",
+      "publication_date_source": "https://www.nejm.org/doi/10.1056/NEJMoa2513310",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 111 次引用，约 14.35 次 / 月。",
+      "evidence": "检索时间：2026-11-05；来源：Crossref；引用数 111，距发表 232 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按出版商原文的首次在线日期校正。",
+      "summary": "德国多中心随机试验纳入 912 名卒中和出血风险较高的房颤患者，比较经导管左心耳封堵与医生指导的最佳药物治疗。中位随访三年，卒中、栓塞、大出血或相关死亡这一复合终点的发生率分别为每百人年 16.8 和 13.3 次，未达到预设的非劣效标准。结论适用于该高风险人群及试验方案，不能直接外推到所有房颤患者。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.0503,
+      "title_zh": "高风险房颤试验：左心耳封堵未证实不劣于药物治疗",
+      "summary_source": "https://www.nejm.org/doi/10.1056/NEJMoa2513310",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-04",
+      "title": "Qwen Code · Release v0.26.7",
+      "summary": "Qwen Code 新版本支持创建托管会话时设置完整模型配置，并增加可筛选、自动刷新的频道事件时间线。更新还改进远程连接、并发上传和会话回放，要求用户先信任项目目录，才运行仓库提供的钩子、权限设置和语言服务器。这些是开发工具的功能与稳定性改进，官方说明未报告已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.26.7 增强会话配置、事件查看和项目安全",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 70
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 93
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 4
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 15
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2000
+}
