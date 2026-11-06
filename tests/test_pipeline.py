@@ -29,6 +29,31 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_narrative_metrics_require_observed_human_validation(self):
+        p=paper('10.1/narrative','LLM-derived narrative metrics: cognitive constructs',
+                abstract='We evaluate interviews from human participants, correlating model scores with validated self-report questionnaires.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Narrative metrics: cognitive constructs'),1))
+        for abstract in ('LLMs simulate human participants with interviews and validated questionnaires.',
+                         'Human participants provide interviews but only model classification accuracy is measured.',
+                         'LLMs generate clinical summaries based on model outputs for human participants; scores correlate with questionnaires.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_decision_support_requires_observed_randomized_human_choices(self):
+        p=paper('10.1/decisions','Reliability of LLMs as medical assistants for the general public',
+                abstract='Human participants were randomly assigned to use an LLM or usual sources when choosing a course of action.',citations=117)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Reliability of medical assistants for the general public',abstract=p['abstract'].replace('an LLM','a handbook')),2))
+        for abstract in ('LLMs simulate human participants randomly assigned to choose a course of action.',
+                         'Human participants annotate medical benchmark questions for randomized model testing.',
+                         'Human participants choose a course of action without an experimental intervention.',
+                         'This review covers human participants randomly assigned to choose a course of action.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_wellbeing_assessment_requires_observed_ratings_and_llm(self):
         p=paper('10.1/wellbeing','Language-based assessments for experienced well-being',
                 abstract='Large language models predict self-report ratings from essays by human participants.')

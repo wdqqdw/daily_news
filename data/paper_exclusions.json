@@ -145,5 +145,32 @@
     ],
     "reason": "原文摘要明确标为综述（This review synthesizes），不属于原创实证研究。",
     "source": "https://pubmed.ncbi.nlm.nih.gov/41266662/"
+  },
+  "10.1056/nejmra2500106": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "NEJM labels this a Review Article, not original research.",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMra2500106"
+  },
+  "10.1056/nejmra2504516": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "NEJM labels this a Review Article, not original research.",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMx260007"
+  },
+  "10.1093/cid/ciag481": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "IDSA treatment guidance produced by an expert panel; recommendations and evidence synthesis, not an original empirical study.",
+    "source": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag481/8756906"
   }
 }

@@ -368,5 +368,21 @@
     "checked_on": "2026-11-05",
     "discover": true,
     "notes": "The authors study human knowledge formation in seven online and laboratory experiments involving more than ten thousand people. Human participants were randomly assigned to learn from large language model syntheses or web links, then wrote advice. LLM users reported shallower knowledge and produced less detailed, less original advice that independent recipients were less willing to adopt. Controlled conditions held facts or the search engine constant. The work does not establish long-term cognitive decline or general failure of AI tutoring. PNAS Nexus identifies this as original research published online on 28 October 2025."
+  },
+  "10.1038/s41746-026-03359-x": {
+    "doi": "10.1038/s41746-026-03359-x",
+    "title": "LLM-derived narrative metrics in chronic pain: convergent validity and novel cognitive constructs",
+    "source": "https://www.nature.com/articles/s41746-026-03359-x_reference.pdf",
+    "checked_on": "2026-11-06",
+    "discover": true,
+    "notes": "In this original observational study, 131 human participants include 67 chronic low-back pain patients, 33 patients with major depression and 31 healthy controls, all over 40. Large language models score cognitive and affective constructs from patient interviews and narratives. Ratings correlate with validated questionnaires, but context and model choice affect results. Narrative fragmentation remains exploratory and needs further validation. The study concerns measurement of subjective human experience, not clinical readiness or a causal treatment effect."
+  },
+  "10.1038/s41591-025-04074-y": {
+    "doi": "10.1038/s41591-025-04074-y",
+    "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study",
+    "source": "https://www.nature.com/articles/s41591-025-04074-y",
+    "checked_on": "2026-11-06",
+    "discover": true,
+    "notes": "This original preregistered experiment randomly assigned 1,298 human participants to three large language models or their usual sources when choosing a course of action in ten hypothetical medical scenarios. LLM-assisted people did not outperform controls in identifying conditions or care urgency, despite much stronger model-only performance. The work examines actual human decisions and interaction failures, not only simulated patients or benchmark scores. These controlled scenarios do not measure clinical outcomes. The April 2026 publisher correction fixes a figure axis label, not the conclusions."
   }
 }

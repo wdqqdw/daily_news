@@ -1414,5 +1414,50 @@
     "title_zh": "英伟达与合作伙伴拓展城市 AI 服务和数字孪生",
     "summary": "英伟达介绍各地城市利用 Nemotron、Cosmos、Omniverse 和视觉 AI 工具提供居民服务、交通分析及基础设施规划。案例包括西班牙政务服务智能体和马来西亚视频分析；部分项目仍处扩展或规划阶段。公司主张共用计算资源支持不同部门，具体收益取决于场景、部署进度和当地验证。",
     "summary_source": "https://blogs.nvidia.com/blog/cities-physical-agentic-ai-applications/"
+  },
+  "doi:10.1038/s41746-026-03359-x": {
+    "title_zh": "从慢性疼痛叙事中提取心理指标：大语言模型的效度与新认知构念",
+    "summary": "研究分析131名参与者的访谈，用大语言模型评估疼痛、情绪和能动感等维度，并与临床量表比较。部分评分与量表相关，但叙事碎片化等探索性指标及跨情境可靠性仍待验证，尚不能据此替代临床评估。",
+    "summary_source": "https://www.nature.com/articles/s41746-026-03359-x_reference.pdf"
+  },
+  "doi:10.1038/s41591-025-04074-y": {
+    "title_zh": "大语言模型能否帮助公众作医疗决策？一项预注册随机研究",
+    "summary": "研究将1,298名参与者随机分配至三种大语言模型或自选信息来源，完成十个模拟医疗情境。尽管模型单独答题表现较好，使用模型的人在辨认疾病和选择就医紧迫程度上未优于对照组，提示模型测试成绩不能直接代表真实人机协作效果。",
+    "summary_source": "https://www.nature.com/articles/s41591-025-04074-y"
+  },
+  "doi:10.1038/s41564-025-02180-8": {
+    "title_zh": "CRISPR–Cas 进化分类更新：纳入稀有变体",
+    "summary": "研究结合基因组、宏基因组分析和已有功能证据，将CRISPR–Cas体系整理为两大类、七种类型和46个亚型，并分析稀有变体的分布与进化关系。这为寻找新系统提供线索，但许多低丰度变体仍需实验验证，分类扩展不等于已获得可用的编辑工具。",
+    "summary_source": "https://www.nature.com/articles/s41564-025-02180-8"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8": {
+    "title_zh": "Qwen Code 发布 v0.26.8：完善订阅支持和代理协作",
+    "summary": "新版在命令行、VS Code和桌面端加入Qwen订阅支持，改进GitHub绑定会话的操作模板、终端提示提交和工作区并发回退，并修复工具重放、上下文溢出等问题。官方说明目前没有已知破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8"
+  },
+  "url:https://openai.com/index/cultfit-builds-with-codex": {
+    "title_zh": "Cult.fit 分享使用 Codex 构建内部工具的经验",
+    "summary": "OpenAI公布Cult.fit的应用案例：该公司将Codex扩展至工程以外团队，用于数据分析、内部应用和运维。案例称非工程团队近月构建了20多个应用；相关效率和成本收益来自企业自述，不代表所有组织都能取得同样结果。",
+    "summary_source": "https://openai.com/index/cultfit-builds-with-codex"
+  },
+  "url:https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips": {
+    "title_zh": "Google 发布 Gemini Omni 1.2 Flash：支持15秒视频和多轮编辑",
+    "summary": "Google宣布新版支持最长15秒的视频生成与编辑，增强参考素材一致性，并支持通过多轮对话修改同一片段。官方公布720p视频每秒0.07美元，较1.1版降低30%，正向开发接口和相关产品推出。",
+    "summary_source": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/"
+  },
+  "url:https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents": {
+    "title_zh": "NVIDIA 公布 Vera CPU 的代理任务性能测试",
+    "summary": "NVIDIA展示Vera在代理编排、代码执行和沙盒任务中的吞吐与能效表现，并列举Perplexity、DeepInfra等伙伴测试。数据来自厂商及伙伴的特定配置，反映CPU执行环节的改进，不能直接视为所有AI任务的统一加速幅度。",
+    "summary_source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/"
+  },
+  "url:https://microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit": {
+    "title_zh": "微软研究院展示 PDD Kit：验证代理代码是否符合规格",
+    "summary": "PDD Kit将开发者意图转为Verus形式化规格，对可证明部分生成证明，对其余部分使用测试。微软以Rust商店应用的登录逻辑演示发现和修复缺陷；保证范围取决于规格与可信边界，并非证明整个应用没有漏洞。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/"
+  },
+  "url:https://openai.com/index/introducing-gpt-6-cyber": {
+    "title_zh": "OpenAI 发布 GPT‑6 Cyber：面向授权安全研究",
+    "summary": "OpenAI公布用于发现漏洞、验证可利用性和辅助修复的GPT‑6 Cyber，称其在安全测试和遵守授权范围方面较前代改善。相关能力通过Daybreak面向经审核的防御方开放；系统卡中的测试结果不等于任意环境下都不会越界。",
+    "summary_source": "https://openai.com/index/introducing-gpt-6-cyber"
   }
 }

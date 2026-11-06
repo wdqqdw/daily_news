@@ -338,6 +338,14 @@ def relevant(p, slot):
                               and observed_comparison
                               and re.search(r'\b(?:self.report\w*|ratings?)\b',conversation_source,re.I))
         if measured_wellbeing and LLM.search(text):return True
+        # Narrative measures can model people's cognitive and affective states.
+        # Require observed interviews and validation against human questionnaires.
+        narrative_metrics = (re.search(r'\bnarrative (?:metrics|assessments?)\b',title,re.I)
+                             and COGNITION.search(title) and observed_comparison
+                             and re.search(r'\b(?:interviews?|narratives?)\b',conversation_source,re.I)
+                             and re.search(r'\b(?:questionnaires?|self.report ratings?)\b',conversation_source,re.I)
+                             and re.search(r'\b(?:correlat\w*|validat\w*)\b',conversation_source,re.I))
+        if narrative_metrics and LLM.search(text):return True
         # Predicting people's online reactions models human behaviour. Require
         # observed people in the source, not only a simulated-agent population.
         reaction_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1200])
@@ -391,6 +399,13 @@ def relevant(p, slot):
                               and OBSERVED_HUMANS.search(judgement_source)
                               and human_research_source(judgement_source)
                               and re.search(r'\b(?:psychometric|validation|validity)\b',judgement_source,re.I))
+        # Decision-support experiments study how people actually use AI advice.
+        # Model-only medical benchmarks and simulated users are insufficient.
+        human_decision_support = (re.search(r'\b(?:decision support|medical assistants? for (?:the )?general public)\b',title,re.I)
+                                  and OBSERVED_HUMANS.search(judgement_source)
+                                  and human_research_source(judgement_source)
+                                  and re.search(r'\b(?:randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)
+                                  and re.search(r'\b(?:human decisions?|choos\w* a course of action)\b',judgement_source,re.I))
         # Representation comparisons can study human cognition without naming
         # cognition in the title. Require observed humans and cognitive content.
         human_alignment = (re.search(r'\brepresentational alignment\b',title,re.I)
@@ -402,7 +417,7 @@ def relevant(p, slot):
         human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion or human_learning) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion or human_learning or human_decision_support) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):
