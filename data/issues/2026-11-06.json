@@ -1,0 +1,328 @@
+{
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T09:43:49+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "LLM-derived narrative metrics in chronic pain: convergent validity and novel cognitive constructs",
+      "doi": "10.1038/s41746-026-03359-x",
+      "url": "https://doi.org/10.1038/s41746-026-03359-x",
+      "journal": "npj Digital Medicine",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-10-06",
+      "authors": "Norel et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41746-026-03359-x",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-06；来源：Crossref；引用数 0，距发表 31 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析131名参与者的访谈，用大语言模型评估疼痛、情绪和能动感等维度，并与临床量表比较。部分评分与量表相关，但叙事碎片化等探索性指标及跨情境可靠性仍待验证，尚不能据此替代临床评估。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.5254,
+      "title_zh": "从慢性疼痛叙事中提取心理指标：大语言模型的效度与新认知构念",
+      "summary_source": "https://www.nature.com/articles/s41746-026-03359-x_reference.pdf",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study",
+      "doi": "10.1038/s41591-025-04074-y",
+      "url": "https://doi.org/10.1038/s41591-025-04074-y",
+      "journal": "Nature Medicine",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-02-09",
+      "authors": "Bean et al.",
+      "citations": 117,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41591-025-04074-y",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-06；来源：Crossref；引用数 117，距发表 270 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将1,298名参与者随机分配至三种大语言模型或自选信息来源，完成十个模拟医疗情境。尽管模型单独答题表现较好，使用模型的人在辨认疾病和选择就医紧迫程度上未优于对照组，提示模型测试成绩不能直接代表真实人机协作效果。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 14.9814,
+      "title_zh": "大语言模型能否帮助公众作医疗决策？一项预注册随机研究",
+      "summary_source": "https://www.nature.com/articles/s41591-025-04074-y",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "An updated evolutionary classification of CRISPR–Cas systems including rare variants",
+      "doi": "10.1038/s41564-025-02180-8",
+      "url": "https://doi.org/10.1038/s41564-025-02180-8",
+      "journal": "Nature Microbiology",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-11-06",
+      "authors": "Makarova et al.",
+      "citations": 127,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41564-025-02180-8",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 127 次引用，约 10.44 次 / 月。",
+      "evidence": "检索时间：2026-11-06；来源：Crossref；引用数 127，距发表 365 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究结合基因组、宏基因组分析和已有功能证据，将CRISPR–Cas体系整理为两大类、七种类型和46个亚型，并分析稀有变体的分布与进化关系。这为寻找新系统提供线索，但许多低丰度变体仍需实验验证，分类扩展不等于已获得可用的编辑工具。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.2288,
+      "title_zh": "CRISPR–Cas 进化分类更新：纳入稀有变体",
+      "summary_source": "https://www.nature.com/articles/s41564-025-02180-8",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-05",
+      "title": "Qwen Code · Release v0.26.8",
+      "summary": "新版在命令行、VS Code和桌面端加入Qwen订阅支持，改进GitHub绑定会话的操作模板、终端提示提交和工作区并发回退，并修复工具重放、上下文溢出等问题。官方说明目前没有已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.26.8：完善订阅支持和代理协作",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-05",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "summary": "Google宣布新版支持最长15秒的视频生成与编辑，增强参考素材一致性，并支持通过多轮对话修改同一片段。官方公布720p视频每秒0.07美元，较1.1版降低30%，正向开发接口和相关产品推出。",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 发布 Gemini Omni 1.2 Flash：支持15秒视频和多轮编辑",
+      "summary_source": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-05",
+      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "summary": "NVIDIA展示Vera在代理编排、代码执行和沙盒任务中的吞吐与能效表现，并列举Perplexity、DeepInfra等伙伴测试。数据来自厂商及伙伴的特定配置，反映CPU执行环节的改进，不能直接视为所有AI任务的统一加速幅度。",
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 公布 Vera CPU 的代理任务性能测试",
+      "summary_source": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-05",
+      "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "summary": "PDD Kit将开发者意图转为Verus形式化规格，对可证明部分生成证明，对其余部分使用测试。微软以Rust商店应用的登录逻辑演示发现和修复缺陷；保证范围取决于规格与可信边界，并非证明整个应用没有漏洞。",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究院展示 PDD Kit：验证代理代码是否符合规格",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 64
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 70
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 93
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 52
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 68
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 15
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 14
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 4
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2000
+}

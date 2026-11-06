@@ -1903,6 +1903,42 @@
         "url:https://doi.org/10.1056/nejmoa2513310"
       ],
       "doi": "10.1056/nejmoa2513310"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "LLM-derived narrative metrics in chronic pain: convergent validity and novel cognitive constructs",
+      "url": "https://doi.org/10.1038/s41746-026-03359-x",
+      "keys": [
+        "doi:10.1038/s41746-026-03359-x",
+        "title:llmderivednarrativemetricsinchronicpainconvergentvalidityandnovelcognitiveconstructs",
+        "title:从慢性疼痛叙事中提取心理指标大语言模型的效度与新认知构念",
+        "url:https://doi.org/10.1038/s41746-026-03359-x"
+      ],
+      "doi": "10.1038/s41746-026-03359-x"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "Reliability of LLMs as medical assistants for the general public: a randomized preregistered study",
+      "url": "https://doi.org/10.1038/s41591-025-04074-y",
+      "keys": [
+        "doi:10.1038/s41591-025-04074-y",
+        "title:reliabilityofllmsasmedicalassistantsforthegeneralpublicarandomizedpreregisteredstudy",
+        "title:大语言模型能否帮助公众作医疗决策一项预注册随机研究",
+        "url:https://doi.org/10.1038/s41591-025-04074-y"
+      ],
+      "doi": "10.1038/s41591-025-04074-y"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "An updated evolutionary classification of CRISPR–Cas systems including rare variants",
+      "url": "https://doi.org/10.1038/s41564-025-02180-8",
+      "keys": [
+        "doi:10.1038/s41564-025-02180-8",
+        "title:anupdatedevolutionaryclassificationofcrisprcassystemsincludingrarevariants",
+        "title:crisprcas进化分类更新纳入稀有变体",
+        "url:https://doi.org/10.1038/s41564-025-02180-8"
+      ],
+      "doi": "10.1038/s41564-025-02180-8"
     }
   ],
   "news": [
@@ -4105,6 +4141,50 @@
         "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.7"
       ],
       "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "Qwen Code · Release v0.26.8",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8",
+      "keys": [
+        "title:qwencodereleasev0268",
+        "title:qwencode发布v0268完善订阅支持和代理协作",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.8"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "Gemini Omni 1.2 Flash: Fast and cost-effective with longer clips",
+      "url": "https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips/",
+      "keys": [
+        "title:geminiomni12flashfastandcosteffectivewithlongerclips",
+        "title:google发布geminiomni12flash支持15秒视频和多轮编辑",
+        "url:https://deepmind.google/blog/gemini-omni-12-flash-fast-and-cost-effective-with-longer-clips"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "Vera Delivers the Best of Both Worlds: Highest Throughput and Fastest Agents",
+      "url": "https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents/",
+      "keys": [
+        "title:nvidia公布veracpu的代理任务性能测试",
+        "title:veradeliversthebestofbothworldshighestthroughputandfastestagents",
+        "url:https://blogs.nvidia.com/blog/vera-cpu-highest-throughput-fastest-agents"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-06",
+      "title": "Formally verifying agent-written full-stack web apps with PDD Kit",
+      "url": "https://www.microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit/",
+      "keys": [
+        "title:formallyverifyingagentwrittenfullstackwebappswithpddkit",
+        "title:微软研究院展示pddkit验证代理代码是否符合规格",
+        "url:https://microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit"
+      ],
+      "company": "Microsoft Research"
     }
   ]
 }
