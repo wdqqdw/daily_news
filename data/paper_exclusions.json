@@ -172,5 +172,23 @@
     ],
     "reason": "IDSA treatment guidance produced by an expert panel; recommendations and evidence synthesis, not an original empirical study.",
     "source": "https://academic.oup.com/cid/advance-article/doi/10.1093/cid/ciag481/8756906"
+  },
+  "10.1073/pnas.2507080122": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "出版商期刊记录和作者机构库均标为Letter，是针对既有研究的评论，不是原创实证研究论文。",
+    "source": "https://ora.ox.ac.uk/objects/uuid:fa53d21c-9e66-4586-945c-6468e8dac128"
+  },
+  "10.1200/jco.2026.44.16_suppl.e13703": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "ASCO出版商明确标为Meeting Abstract且没有全文，并且研究的是模型的手术建议风格，不是对真实人的人格建模。",
+    "source": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.e13703"
   }
 }

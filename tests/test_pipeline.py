@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_loneliness_requires_observed_randomized_human_outcomes(self):
+        p=paper('10.1/loneliness','AI Companions Reduce Loneliness',
+                abstract='Human participants were randomly assigned to an AI companion or control; we measured self-reported loneliness.',citations=187)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Companions Reduce Loneliness',abstract=p['abstract'].replace('AI companion','journal')),2))
+        for abstract in ('LLMs simulate human participants randomly assigned to report loneliness ratings.',
+                         'Human participants annotate chatbot conversations in a randomized benchmark.',
+                         'Human participants provided self-reported loneliness in an observational poll.',
+                         'This review discusses human participants randomly assigned to report loneliness ratings.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_narrative_metrics_require_observed_human_validation(self):
         p=paper('10.1/narrative','LLM-derived narrative metrics: cognitive constructs',
                 abstract='We evaluate interviews from human participants, correlating model scores with validated self-report questionnaires.')

@@ -378,6 +378,13 @@ def relevant(p, slot):
         human_closeness = (re.search(r'\binterpersonal closeness\b',title,re.I)
                            and OBSERVED_HUMANS.search(judgement_source)
                            and human_research_source(judgement_source))
+        # Loneliness experiments measure human responses to AI companionship.
+        # Require real participants and reported outcomes, not chatbot feelings.
+        human_loneliness = (re.search(r'\bloneliness\b',title,re.I)
+                            and OBSERVED_HUMANS.search(judgement_source)
+                            and human_research_source(judgement_source)
+                            and re.search(r'\b(?:randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)
+                            and re.search(r'\b(?:self.report\w*|loneliness ratings?)\b',judgement_source,re.I))
         # Persuasion experiments study people's responses to AI. Keep this in
         # slot 2 and require observed people plus the existing influence gate.
         human_persuasion = (re.search(r'\b(?:persuad\w* (?:voters|people|humans)|conversational persuasiveness)\b',title,re.I)
@@ -417,7 +424,7 @@ def relevant(p, slot):
         human_visual_processing = (re.search(r'\bhuman (?:visual (?:motion )?processing|developmental visual (?:diet|experience))\b',title,re.I)
                                    and OBSERVED_HUMANS.search(visual_source)
                                    and human_research_source(visual_source))
-        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion or human_learning or human_decision_support) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
+        return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_alignment or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support or human_loneliness) and (HUMAN_SUBJECT_TITLE.search(title) or human_strategy or empathic_judgement or human_emotion_tests or human_persuasion or human_learning or human_decision_support or human_loneliness) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_judgement or human_closeness or human_persuasion or human_visual_processing or human_conversation or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_emotion_tests or human_learning or human_decision_support or human_loneliness) and (LLM.search(text) or AI.search(text))) and p.get('citations',0) >= 5 and not re.search(r'framework for|theoretical framework', title, re.I) and (bool(human_concepts) or not re.search(r'conceptual', title, re.I))
     return p.get('citations',0) > 0 and bool(ESTABLISHED_PUBLISHERS.search(p.get('publisher','')))
 
 def score(p, slot, today):

@@ -1459,5 +1459,46 @@
     "title_zh": "OpenAI 发布 GPT‑6 Cyber：面向授权安全研究",
     "summary": "OpenAI公布用于发现漏洞、验证可利用性和辅助修复的GPT‑6 Cyber，称其在安全测试和遵守授权范围方面较前代改善。相关能力通过Daybreak面向经审核的防御方开放；系统卡中的测试结果不等于任意环境下都不会越界。",
     "summary_source": "https://openai.com/index/introducing-gpt-6-cyber"
+  },
+  "doi:10.20900/jpbs.20250020": {
+    "title_zh": "基于真实对话的大语言模型人格推断评测",
+    "summary": "研究从555名成人的访谈中保留518份有效数据，比较四种语言模型的人格推断与BFI-10自评。模型输出可以较稳定，但与自评的相关性偏弱；思维链和更长上下文也未稳定改善准确性。结论限于该访谈样本与简短自评量表。",
+    "summary_source": "https://jpbs.hapres.com/htmls/JPBS_1832_Detail.html"
+  },
+  "doi:10.1093/jcr/ucaf040": {
+    "title_zh": "AI陪伴能否缓解孤独感？多项行为实验的证据",
+    "summary": "研究结合应用评论、随机实验和一周观察，发现与AI陪伴交流后，人们的即时孤独感有所下降，“感到被倾听”可能是重要因素。结果支持特定情境下的短时效果，尚不能证明长期改善社会关系或替代真人陪伴。",
+    "summary_source": "https://doi.org/10.1093/jcr/ucaf040"
+  },
+  "doi:10.1038/s41586-026-10652-y": {
+    "title_zh": "Robin多智能体系统辅助科学发现与实验分析",
+    "summary": "Robin串联文献检索、假设生成和数据分析，提出干性年龄相关性黄斑变性的潜在治疗方向，由研究人员执行实验。细胞实验发现ripasudil等候选物可增强视网膜色素上皮细胞吞噬作用；这些是机制与药物再利用线索，并非已证明临床疗效。",
+    "summary_source": "https://www.nature.com/articles/s41586-026-10652-y"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.9": {
+    "title_zh": "Qwen Code 发布v0.26.9：增强技能安装与会话管理",
+    "summary": "新版完善技能压缩包上传、批量启停和安装失败后的恢复，改进网页终端草稿保留、会话分页及托管代理稳定性，并加强GitHub审查与修复流程。官方发布说明列出多项兼容性修复，目前没有已知破坏性变更。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.9"
+  },
+  "url:https://openai.com/index/partnering-with-hacktron": {
+    "title_zh": "OpenAI与Hacktron合作检查系统连接中的安全漏洞",
+    "summary": "OpenAI宣布与Hacktron联合选择高优先级目标开展安全测试，重点检查其系统与第三方服务的交互，并通过Daybreak Red扩大对方的模型访问。合作将结合人工安全研究与AI工具，推动漏洞发现、报告和防御改进。",
+    "summary_source": "https://openai.com/index/partnering-with-hacktron"
+  },
+  "url:https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks": {
+    "title_zh": "NVIDIA介绍开源工具在6G网络研究中的进展",
+    "summary": "NVIDIA汇总Aerial、Sionna等工具支持的研究，包括机器人语义通信、神经接收机、基站节能和加速网络仿真。公司称相关工具下载量超过一百万；展示的性能收益来自特定实验配置，仍属于面向未来网络的研究验证。",
+    "summary_source": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/"
+  },
+  "url:https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science": {
+    "title_zh": "OpenAI发布BioBasicsBench，评测AI对湿实验数据的理解",
+    "summary": "OpenAI与Ligo构建100项日常湿实验分析任务，要求模型解释原始图像和仪器数据、识别实验错误及证据不足。官方报告显示模型取得进步，但图像理解、对照检查和情境推理仍有缺陷；这项企业评测收录于公司动态。",
+    "summary_source": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+    "kind": "技术报告"
+  },
+  "url:https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk": {
+    "title_zh": "NVIDIA介绍Chris Alexiuk的开放模型开发者教育工作",
+    "summary": "NVIDIA人物报道介绍Chris Alexiuk如何通过直播和教程帮助开发者构建、微调、评测及部署开放模型应用。他以Nemotron生态为例分享工具与实践，强调让更多开发者掌握模型和代理开发能力，属于公司开发者社区动态。",
+    "summary_source": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/"
   }
 }

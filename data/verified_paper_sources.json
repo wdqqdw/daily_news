@@ -384,5 +384,21 @@
     "checked_on": "2026-11-06",
     "discover": true,
     "notes": "This original preregistered experiment randomly assigned 1,298 human participants to three large language models or their usual sources when choosing a course of action in ten hypothetical medical scenarios. LLM-assisted people did not outperform controls in identifying conditions or care urgency, despite much stronger model-only performance. The work examines actual human decisions and interaction failures, not only simulated patients or benchmark scores. These controlled scenarios do not measure clinical outcomes. The April 2026 publisher correction fixes a figure axis label, not the conclusions."
+  },
+  "10.20900/jpbs.20250020": {
+    "doi": "10.20900/jpbs.20250020",
+    "title": "Benchmarking Personality Inference in Large Language Models Using Real-World Conversations",
+    "source": "https://jpbs.hapres.com/htmls/JPBS_1832_Detail.html",
+    "checked_on": "2026-11-07",
+    "discover": true,
+    "notes": "This original study uses interviews with 555 adult human participants, retaining 518 with valid BFI-10 self-report scores. Four large language models infer personality from these transcripts. Repeated predictions can be consistent while correlations with human self-ratings remain weak. Reasoning prompts and longer inputs offer limited, inconsistent gains. The findings concern this interview sample and brief self-report instrument, not reliable individual profiling across settings. The publisher identifies it as an Article first published on 31 December 2025."
+  },
+  "10.1093/jcr/ucaf040": {
+    "doi": "10.1093/jcr/ucaf040",
+    "title": "AI Companions Reduce Loneliness",
+    "source": "https://doi.org/10.1093/jcr/ucaf040",
+    "checked_on": "2026-11-07",
+    "discover": true,
+    "notes": "This original behavioral research includes app-review analysis and experiments in which human participants were randomly assigned to an AI companion, another activity or a control. Self-reported loneliness ratings fell after brief companion interactions. A week-long study measured repeated immediate reductions, while further experiments investigated feeling heard and alternative explanations. These findings address momentary loneliness, not durable social connection or replacement of human relationships. The Journal of Consumer Research first published the article online on 25 June 2025; the April 2026 issue date is later."
   }
 }
