@@ -1939,6 +1939,42 @@
         "url:https://doi.org/10.1038/s41564-025-02180-8"
       ],
       "doi": "10.1038/s41564-025-02180-8"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "Benchmarking Personality Inference in Large Language Models Using Real-World Conversations",
+      "url": "https://doi.org/10.20900/jpbs.20250020",
+      "keys": [
+        "doi:10.20900/jpbs.20250020",
+        "title:benchmarkingpersonalityinferenceinlargelanguagemodelsusingrealworldconversations",
+        "title:基于真实对话的大语言模型人格推断评测",
+        "url:https://doi.org/10.20900/jpbs.20250020"
+      ],
+      "doi": "10.20900/jpbs.20250020"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "AI Companions Reduce Loneliness",
+      "url": "https://doi.org/10.1093/jcr/ucaf040",
+      "keys": [
+        "doi:10.1093/jcr/ucaf040",
+        "title:aicompanionsreduceloneliness",
+        "title:ai陪伴能否缓解孤独感多项行为实验的证据",
+        "url:https://doi.org/10.1093/jcr/ucaf040"
+      ],
+      "doi": "10.1093/jcr/ucaf040"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "A multi-agent system for automating scientific discovery",
+      "url": "https://doi.org/10.1038/s41586-026-10652-y",
+      "keys": [
+        "doi:10.1038/s41586-026-10652-y",
+        "title:amultiagentsystemforautomatingscientificdiscovery",
+        "title:robin多智能体系统辅助科学发现与实验分析",
+        "url:https://doi.org/10.1038/s41586-026-10652-y"
+      ],
+      "doi": "10.1038/s41586-026-10652-y"
     }
   ],
   "news": [
@@ -4185,6 +4221,50 @@
         "url:https://microsoft.com/en-us/research/blog/formally-verifying-agent-written-full-stack-web-apps-with-pdd-kit"
       ],
       "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "Qwen Code · Release v0.26.9",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.26.9",
+      "keys": [
+        "title:qwencodereleasev0269",
+        "title:qwencode发布v0269增强技能安装与会话管理",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.26.9"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+      "keys": [
+        "title:hownvidiaopensourcetoolsarehelpingresearchersbuildnextgeneration6gnetworks",
+        "title:nvidia介绍开源工具在6g网络研究中的进展",
+        "url:https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "Measuring how AI agents handle everyday wet-lab science",
+      "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science",
+      "keys": [
+        "title:measuringhowaiagentshandleeverydaywetlabscience",
+        "title:openai发布biobasicsbench评测ai对湿实验数据的理解",
+        "url:https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-07",
+      "title": "The Wizard of Open Weights: Chris Alexiuk Makes AI Easy With Open Models",
+      "url": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/",
+      "keys": [
+        "title:nvidia介绍chrisalexiuk的开放模型开发者教育工作",
+        "title:thewizardofopenweightschrisalexiukmakesaieasywithopenmodels",
+        "url:https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
