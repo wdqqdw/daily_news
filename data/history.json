@@ -1975,6 +1975,42 @@
         "url:https://doi.org/10.1038/s41586-026-10652-y"
       ],
       "doi": "10.1038/s41586-026-10652-y"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "Like humans, language models demonstrate face-to-character biases",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag247",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgag247",
+        "title:likehumanslanguagemodelsdemonstratefacetocharacterbiases",
+        "title:语言模型也会以貌取人与人类面孔印象偏差的比较",
+        "url:https://doi.org/10.1093/pnasnexus/pgag247"
+      ],
+      "doi": "10.1093/pnasnexus/pgag247"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "AI-generated poetry is indistinguishable from human-written poetry and is rated more favorably",
+      "url": "https://doi.org/10.1038/s41598-024-76900-1",
+      "keys": [
+        "doi:10.1038/s41598-024-76900-1",
+        "title:aigeneratedpoetryisindistinguishablefromhumanwrittenpoetryandisratedmorefavorably",
+        "title:读者如何判断和评价ai诗歌两项人类行为实验",
+        "url:https://doi.org/10.1038/s41598-024-76900-1"
+      ],
+      "doi": "10.1038/s41598-024-76900-1"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "Investigating the Interplay of Chinese English as Foreign Language Learners' Growth Mindset, Enjoyment, Adaptability, and Engagement in AI ‐Mediated Informal Digital Learning of English",
+      "url": "https://doi.org/10.1002/jcal.70189",
+      "keys": [
+        "doi:10.1002/jcal.70189",
+        "title:ai课外英语学习成长心态适应性与学习投入的关联",
+        "title:investigatingtheinterplayofchineseenglishasforeignlanguagelearnersgrowthmindsetenjoymentadaptabilityandengagementinaimediatedinformaldigitallearningofenglish",
+        "url:https://doi.org/10.1002/jcal.70189"
+      ],
+      "doi": "10.1002/jcal.70189"
     }
   ],
   "news": [
@@ -4265,6 +4301,39 @@
         "url:https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "Qwen Code · Release v0.27.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0",
+      "keys": [
+        "title:qwencode0270并行问题处理与github渠道筛选",
+        "title:qwencodereleasev0270",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+      "keys": [
+        "title:moreperformancefromeverybytehowfullstackcodesignsolvesaismemorychallenge",
+        "title:英伟达介绍通过软硬件协同设计缓解ai内存瓶颈",
+        "url:https://blogs.nvidia.com/blog/memory-full-stack-codesign"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-08",
+      "title": "Australian universities are creating AI-native graduates",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "keys": [
+        "title:australianuniversitiesarecreatingainativegraduates",
+        "title:澳大利亚高校扩大ai工具接入与实践教学合作",
+        "url:https://openai.com/index/australian-universities-ai-native-graduates"
+      ],
+      "company": "OpenAI"
     }
   ]
 }

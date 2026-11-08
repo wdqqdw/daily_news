@@ -1,0 +1,315 @@
+{
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T09:40:40+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Like humans, language models demonstrate face-to-character biases",
+      "doi": "10.1093/pnasnexus/pgag247",
+      "url": "https://doi.org/10.1093/pnasnexus/pgag247",
+      "journal": "PNAS Nexus",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2026-08-18",
+      "authors": "Lehr et al.",
+      "citations": 2,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgag247",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-08；来源：Crossref；引用数 2，距发表 82 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在13项实验中比较四种语言模型与既有人类评分数据，发现模型会根据面孔推断能力和可信度，部分偏差比人类更强。这反映的是对人类社会印象偏差的复现，不能证明外貌能揭示真实人格，也不能排除训练数据暴露的影响。",
+      "tag": "认知与行为建模",
+      "ranking_score": 6.1981,
+      "title_zh": "语言模型也会“以貌取人”：与人类面孔印象偏差的比较",
+      "summary_source": "https://academic.oup.com/pnasnexus/article/5/8/pgag247/8762453",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "AI-generated poetry is indistinguishable from human-written poetry and is rated more favorably",
+      "doi": "10.1038/s41598-024-76900-1",
+      "url": "https://doi.org/10.1038/s41598-024-76900-1",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2024-11-14",
+      "authors": "Porter et al.",
+      "citations": 131,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-024-76900-1",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-08；来源：Crossref；引用数 131，距发表 724 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "两项实验分别让1634人与696名非专业读者辨别诗歌作者或评价作品。读者难以区分ChatGPT生成的诗与人类诗作，并在多项维度上更偏好前者；但标注为AI创作又会降低评价。结论限于这些读者、诗作与模型，不代表AI具有普遍的艺术优势。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 15.7021,
+      "title_zh": "读者如何判断和评价AI诗歌：两项人类行为实验",
+      "summary_source": "https://www.nature.com/articles/s41598-024-76900-1",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Investigating the Interplay of Chinese English as Foreign Language Learners' Growth Mindset, Enjoyment, Adaptability, and Engagement in AI ‐Mediated Informal Digital Learning of English",
+      "doi": "10.1002/jcal.70189",
+      "url": "https://doi.org/10.1002/jcal.70189",
+      "journal": "Journal of Computer Assisted Learning",
+      "publisher": "Wiley",
+      "published": "2026-01-20",
+      "authors": "Wang et al.",
+      "citations": 111,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1002%2Fjcal.70189",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 111 次引用，约 11.4 次 / 月。",
+      "evidence": "检索时间：2026-11-08；来源：Crossref；引用数 111，距发表 292 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究结合357名中国英语学习者的问卷与20次后续访谈，分析AI辅助课外学习中的心理因素。成长心态与学习投入相关，适应性呈统计中介关联，而外语愉悦感的中介作用未获支持。这是观察性研究，不能据此认定AI或成长心态造成学习提升。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.3713,
+      "title_zh": "AI课外英语学习：成长心态、适应性与学习投入的关联",
+      "summary_source": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70189",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-08",
+      "title": "Qwen Code · Release v0.27.0",
+      "summary": "新版支持同一托管会话同时处理多个子任务问题，分别保存草稿和错误状态；网页端增加问答活动展示与选项详情任务。GitHub渠道新增仓库白名单、黑名单，并改进PR评论投递、会话恢复及工具执行稳定性。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.27.0：并行问题处理与GitHub渠道筛选",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-05",
+      "title": "More Performance From Every Byte: How Full-Stack Codesign Solves AI’s Memory Challenge",
+      "summary": "英伟达介绍结合低精度量化、多GPU分片、KV缓存分层卸载与检索索引优化，提高显存利用率。方案涉及Vera CPU、Dynamo和CMX等组件；文中的吞吐与成本收益来自特定测试条件，不代表所有模型和部署都能获得相同提升。",
+      "url": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "英伟达介绍通过软硬件协同设计缓解AI内存瓶颈",
+      "summary_source": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-05",
+      "title": "Australian universities are creating AI-native graduates",
+      "summary": "OpenAI介绍与新南威尔士大学、悉尼大学、乐卓博大学等高校的合作，通过分阶段开放ChatGPT Edu、师生培训和实践项目培养AI技能。应用涵盖临床情景模拟、教师训练与学生创业；这些是公司披露的合作案例，并非已证实的普遍教学效果。",
+      "url": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "澳大利亚高校扩大AI工具接入与实践教学合作",
+      "summary_source": "https://openai.com/index/australian-universities-ai-native-graduates",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 64
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 115
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 93
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 66
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 15
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 13
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2001
+}
