@@ -331,6 +331,14 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Face impressions model human social judgements, not actual character.
+        # Require a comparison with observed human ratings, not synthetic raters.
+        face_impressions = (re.search(r'\bface.to.character biases\b',title,re.I)
+                            and observed_comparison
+                            and re.search(r'\bhuman ratings\b',conversation_source,re.I)
+                            and re.search(r'\bcompar\w*\b',conversation_source,re.I)
+                            and re.search(r'\b(?:competence|trustworthiness)\b',conversation_source,re.I))
+        if face_impressions and LLM.search(text):return True
         # Language-based well-being assessment measures a human mental state.
         # Require observed people and ratings, not chatbot self-reports.
         measured_wellbeing = (re.search(r'\blanguage.based assessments?\b',title,re.I)
@@ -370,6 +378,16 @@ def relevant(p, slot):
         # Perceptual and social judgements are human cognition too. Only add
         # this title route when the source supplies actual human observations.
         judgement_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        # Authorship attribution and aesthetic ratings measure people's responses
+        # to AI poetry. A model-only writing benchmark does not meet this route.
+        poetry_judgements = (re.search(r'\bpoetry\b',title,re.I)
+                             and OBSERVED_HUMANS.search(judgement_source)
+                             and human_research_source(judgement_source)
+                             and re.search(r'\b(?:randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)
+                             and re.search(r'\b(?:authorship|human.authored)\b',judgement_source,re.I)
+                             and re.search(r'\b(?:aesthetic|qualitative) ratings\b',judgement_source,re.I))
+        if poetry_judgements and (LLM.search(text) or AI.search(text)):
+            return p.get('citations',0) >= 5
         judgement_sample = (OBSERVED_HUMANS.search(judgement_source)
                             or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',judgement_source,re.I))
         human_judgement = HUMAN_JUDGEMENT.search(title) and judgement_sample and human_research_source(judgement_source)

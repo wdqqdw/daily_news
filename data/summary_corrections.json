@@ -1500,5 +1500,35 @@
     "title_zh": "NVIDIA介绍Chris Alexiuk的开放模型开发者教育工作",
     "summary": "NVIDIA人物报道介绍Chris Alexiuk如何通过直播和教程帮助开发者构建、微调、评测及部署开放模型应用。他以Nemotron生态为例分享工具与实践，强调让更多开发者掌握模型和代理开发能力，属于公司开发者社区动态。",
     "summary_source": "https://blogs.nvidia.com/blog/nvidia-life-chris-alexiuk/"
+  },
+  "doi:10.1093/pnasnexus/pgag247": {
+    "title_zh": "语言模型也会“以貌取人”：与人类面孔印象偏差的比较",
+    "summary": "研究在13项实验中比较四种语言模型与既有人类评分数据，发现模型会根据面孔推断能力和可信度，部分偏差比人类更强。这反映的是对人类社会印象偏差的复现，不能证明外貌能揭示真实人格，也不能排除训练数据暴露的影响。",
+    "summary_source": "https://academic.oup.com/pnasnexus/article/5/8/pgag247/8762453"
+  },
+  "doi:10.1038/s41598-024-76900-1": {
+    "title_zh": "读者如何判断和评价AI诗歌：两项人类行为实验",
+    "summary": "两项实验分别让1634人与696名非专业读者辨别诗歌作者或评价作品。读者难以区分ChatGPT生成的诗与人类诗作，并在多项维度上更偏好前者；但标注为AI创作又会降低评价。结论限于这些读者、诗作与模型，不代表AI具有普遍的艺术优势。",
+    "summary_source": "https://www.nature.com/articles/s41598-024-76900-1"
+  },
+  "doi:10.1002/jcal.70189": {
+    "title_zh": "AI课外英语学习：成长心态、适应性与学习投入的关联",
+    "summary": "研究结合357名中国英语学习者的问卷与20次后续访谈，分析AI辅助课外学习中的心理因素。成长心态与学习投入相关，适应性呈统计中介关联，而外语愉悦感的中介作用未获支持。这是观察性研究，不能据此认定AI或成长心态造成学习提升。",
+    "summary_source": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70189"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0": {
+    "title_zh": "Qwen Code 0.27.0：并行问题处理与GitHub渠道筛选",
+    "summary": "新版支持同一托管会话同时处理多个子任务问题，分别保存草稿和错误状态；网页端增加问答活动展示与选项详情任务。GitHub渠道新增仓库白名单、黑名单，并改进PR评论投递、会话恢复及工具执行稳定性。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.0"
+  },
+  "url:https://blogs.nvidia.com/blog/memory-full-stack-codesign": {
+    "title_zh": "英伟达介绍通过软硬件协同设计缓解AI内存瓶颈",
+    "summary": "英伟达介绍结合低精度量化、多GPU分片、KV缓存分层卸载与检索索引优化，提高显存利用率。方案涉及Vera CPU、Dynamo和CMX等组件；文中的吞吐与成本收益来自特定测试条件，不代表所有模型和部署都能获得相同提升。",
+    "summary_source": "https://blogs.nvidia.com/blog/memory-full-stack-codesign/"
+  },
+  "url:https://openai.com/index/australian-universities-ai-native-graduates": {
+    "title_zh": "澳大利亚高校扩大AI工具接入与实践教学合作",
+    "summary": "OpenAI介绍与新南威尔士大学、悉尼大学、乐卓博大学等高校的合作，通过分阶段开放ChatGPT Edu、师生培训和实践项目培养AI技能。应用涵盖临床情景模拟、教师训练与学生创业；这些是公司披露的合作案例，并非已证实的普遍教学效果。",
+    "summary_source": "https://openai.com/index/australian-universities-ai-native-graduates"
   }
 }

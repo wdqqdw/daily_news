@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_face_bias_requires_observed_human_rating_comparison(self):
+        p=paper('10.1/faces','Like humans, language models demonstrate face-to-character biases',
+                abstract='We compare language model judgements with observed human ratings of competence and trustworthiness from human participants.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Face-to-character biases',abstract=p['abstract'].replace('language model','statistical')),1))
+        for abstract in ('Language models simulate human participants and compare synthetic competence ratings.',
+                         'Language models judge competence and trustworthiness without human comparison data.',
+                         'Human participants annotate photos; language models compare image quality.',
+                         'This review compares human ratings of competence with language model outputs.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_poetry_requires_human_authorship_and_aesthetic_experiment(self):
+        p=paper('10.1/poetry','AI-generated poetry and human-written poetry',
+                abstract='Human participants were randomly assigned to authorship labels and gave aesthetic ratings of poems.',citations=100)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Poetry and human-written verse'),2))
+        for abstract in ('AI simulates human participants randomly assigned to authorship labels and aesthetic ratings.',
+                         'Human participants annotate poems for a randomized AI benchmark.',
+                         'Human participants give aesthetic ratings and authorship guesses in an observational study.',
+                         'This review examines human participants randomly assigned authorship labels and aesthetic ratings.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_loneliness_requires_observed_randomized_human_outcomes(self):
         p=paper('10.1/loneliness','AI Companions Reduce Loneliness',
                 abstract='Human participants were randomly assigned to an AI companion or control; we measured self-reported loneliness.',citations=187)

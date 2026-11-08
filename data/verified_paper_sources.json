@@ -400,5 +400,21 @@
     "checked_on": "2026-11-07",
     "discover": true,
     "notes": "This original behavioral research includes app-review analysis and experiments in which human participants were randomly assigned to an AI companion, another activity or a control. Self-reported loneliness ratings fell after brief companion interactions. A week-long study measured repeated immediate reductions, while further experiments investigated feeling heard and alternative explanations. These findings address momentary loneliness, not durable social connection or replacement of human relationships. The Journal of Consumer Research first published the article online on 25 June 2025; the April 2026 issue date is later."
+  },
+  "10.1093/pnasnexus/pgag247": {
+    "doi": "10.1093/pnasnexus/pgag247",
+    "title": "Like humans, language models demonstrate face-to-character biases",
+    "source": "https://academic.oup.com/pnasnexus/article/5/8/pgag247/8762453",
+    "checked_on": "2026-11-08",
+    "discover": true,
+    "notes": "This original study compares four large language models with observed human ratings of competence and trustworthiness from previously validated face datasets. Across 13 model experiments, face-based impressions resemble human biases and sometimes amplify them. A reanalysis compares model choices with human rating data, rather than recruiting a new human sample. The findings concern biased social perception, not accurate inference of actual character from appearance. Possible training-data exposure cannot be fully ruled out. PNAS Nexus first published the research on 18 August 2026."
+  },
+  "10.1038/s41598-024-76900-1": {
+    "doi": "10.1038/s41598-024-76900-1",
+    "title": "AI-generated poetry is indistinguishable from human-written poetry and is rated more favorably",
+    "source": "https://www.nature.com/articles/s41598-024-76900-1",
+    "checked_on": "2026-11-08",
+    "discover": true,
+    "notes": "This original study tests human authorship judgements and aesthetic ratings of ChatGPT-3.5 poems versus poems by well-known English-language poets. In one experiment, 1,634 human participants were randomly assigned to a poet and judged authorship. In another, 696 human participants were randomly assigned authorship labels and gave qualitative ratings. Non-expert readers struggled to distinguish sources and rated AI poems more favorably on several dimensions, while an AI label lowered evaluations. The findings concern these readers, stimuli and model, not universal artistic superiority. Scientific Reports published the article on 14 November 2024."
   }
 }
