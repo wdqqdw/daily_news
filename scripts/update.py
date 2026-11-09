@@ -224,8 +224,16 @@ def verified_fulltext_candidates(today, seen):
         if entry.get('discover') is not True or 'doi:'+doi in seen:continue
         with CROSSREF_SLOTS:
             work=json.loads(fetch('https://api.crossref.org/works/'+urllib.parse.quote(doi,safe='')))['message']
+        if canonical_doi(work.get('DOI',''))!=doi:raise ValueError('Verified candidate DOI mismatch: '+doi)
+        # Some publishers deposit only an issue month. Recover an exact day only
+        # from the separately source-verified first-publication record.
+        dated=apply_publication_date_corrections([{'doi':doi}],today)[0]
+        if dated.get('published'):
+            work=copy.deepcopy(work)
+            work['published-online']={'date-parts':[[int(x) for x in dated['published'].split('-')]]}
         paper=normalize_work(work,today)
         if not paper:continue
+        if dated.get('published'):paper.update(dated)
         if canonical_doi(paper['doi'])!=doi:raise ValueError('Verified candidate DOI mismatch: '+doi)
         if item_keys(paper,'papers').intersection(seen):continue
         reviewed=verified_paper_notes(paper)
@@ -339,6 +347,12 @@ def relevant(p, slot):
                             and re.search(r'\bcompar\w*\b',conversation_source,re.I)
                             and re.search(r'\b(?:competence|trustworthiness)\b',conversation_source,re.I))
         if face_impressions and LLM.search(text):return True
+        implicit_associations = (re.search(r'\bimplicit bias\b',title,re.I)
+                                 and observed_comparison
+                                 and re.search(r'\bimplicit association test\b',conversation_source,re.I)
+                                 and re.search(r'\b(?:response|reaction) time\w*\b',conversation_source,re.I)
+                                 and re.search(r'\bcompar\w*\b',conversation_source,re.I))
+        if implicit_associations and LLM.search(text):return True
         # Language-based well-being assessment measures a human mental state.
         # Require observed people and ratings, not chatbot self-reports.
         measured_wellbeing = (re.search(r'\blanguage.based assessments?\b',title,re.I)
@@ -387,6 +401,18 @@ def relevant(p, slot):
                              and re.search(r'\b(?:authorship|human.authored)\b',judgement_source,re.I)
                              and re.search(r'\b(?:aesthetic|qualitative) ratings\b',judgement_source,re.I))
         if poetry_judgements and (LLM.search(text) or AI.search(text)):
+            return p.get('citations',0) >= 5
+        # Perceived feedback quality is a human judgement, not model accuracy.
+        # Require the same students' ratings with and without provider identity.
+        feedback_judgements = (re.search(r'\bstudent biases\b',title,re.I)
+                               and re.search(r'\bfeedback\b',title,re.I)
+                               and OBSERVED_HUMANS.search(judgement_source)
+                               and human_research_source(judgement_source)
+                               and re.search(r'\bwithin.subject\b',judgement_source,re.I)
+                               and re.search(r'\bblind condition\b',judgement_source,re.I)
+                               and re.search(r'\binformed condition\b',judgement_source,re.I)
+                               and re.search(r'\b(?:ratings|evaluat\w*)\b',judgement_source,re.I))
+        if feedback_judgements and (LLM.search(text) or AI.search(text)):
             return p.get('citations',0) >= 5
         judgement_sample = (OBSERVED_HUMANS.search(judgement_source)
                             or re.search(r'\b(?:participants?|subjects?|respondents?|volunteers?)\b',judgement_source,re.I))
@@ -483,7 +509,7 @@ def select_papers(pool, seen, today):
         }[slot]
         chosen['evidence'] = f'检索时间：{today}；来源：Crossref；引用数 {cite}，距发表 {age} 天。'+ ('优先匹配期刊品牌与主题，再考虑新近程度和引用。' if slot == 1 else '评分依据公开题录、引用总数与发表时间。') + '引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。'
         if chosen.get('publication_date_source'):
-            chosen['evidence'] += '发表日期已按出版商原文的首次在线日期校正。'
+            chosen['evidence'] += '发表日期已按经来源核实的首次在线日期校正。'
         abstract = chosen.pop('abstract','')
         chosen['_source_text'] = abstract
         if chosen.get('abstract_source'):

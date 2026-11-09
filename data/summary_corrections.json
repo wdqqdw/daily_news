@@ -1530,5 +1530,20 @@
     "title_zh": "澳大利亚高校扩大AI工具接入与实践教学合作",
     "summary": "OpenAI介绍与新南威尔士大学、悉尼大学、乐卓博大学等高校的合作，通过分阶段开放ChatGPT Edu、师生培训和实践项目培养AI技能。应用涵盖临床情景模拟、教师训练与学生创业；这些是公司披露的合作案例，并非已证实的普遍教学效果。",
     "summary_source": "https://openai.com/index/australian-universities-ai-native-graduates"
+  },
+  "doi:10.1016/j.ipm.2026.104840": {
+    "title_zh": "语言模型能否刻画人类的性别—职业内隐偏差？",
+    "summary": "研究将英美逾80万人的内隐联想测验反应时间，与25个语言模型的675种变体比较。多种模型与人类行为相关，但大语言模型与较简单模型有时呈相反的相关方向。结果说明语言统计可反映群体偏差，不能直接作为个人偏见的可靠测量。",
+    "summary_source": "https://research.birmingham.ac.uk/en/publications/modelling-implicit-bias-in-gendercareer-associations-a-systematic/"
+  },
+  "doi:10.1111/jcal.70153": {
+    "title_zh": "反馈来自谁会改变评价：学生对AI反馈的来源偏差",
+    "summary": "472名大学生在不知道、随后知道来源的条件下评价同一组人类和GPT-4反馈。披露AI身份后，真诚感评价显著下降，客观性与有用性评价的变化未达显著。研究揭示学生对AI反馈的信任与判断偏差，没有检验长期学习成效。",
+    "summary_source": "https://onlinelibrary.wiley.com/doi/10.1111/jcal.70153"
+  },
+  "doi:10.1093/nar/gkaf1223": {
+    "title_zh": "Reactome 2026：人类生物通路知识库与分析工具更新",
+    "summary": "论文介绍Reactome通路知识库的更新：改进正常与疾病状态的可视化比较、多组学分析和自然语言查询，并增加引用文献撤稿监测。它提供可复用的生物学数据与研究工具，主要贡献是数据库和分析基础设施，而非某种治疗效果或新的临床结论。",
+    "summary_source": "https://academic.oup.com/nar/article/54/D1/D673/8326464"
   }
 }

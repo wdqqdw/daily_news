@@ -29,6 +29,32 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_implicit_bias_requires_human_response_time_comparison(self):
+        p=paper('10.1/iat','Modelling implicit bias: a comparison of language models',
+                abstract='We compare large language models with response times from human participants in an implicit association test.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Modelling implicit bias',abstract=p['abstract'].replace('large language models','word counts')),1))
+        for abstract in ('Language models simulate human participants in an implicit association test and compare response times.',
+                         'Language models compare gendered words without human response time data.',
+                         'Human participants annotate language model bias; we compare annotation counts.',
+                         'This review compares human participants and their response times in an implicit association test.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_feedback_bias_requires_observed_student_rating_conditions(self):
+        p=paper('10.1/feedback','Student biases towards human and AI-generated feedback',
+                abstract='Human participants evaluate feedback in a within-subject design, first in a blind condition and then an informed condition.',citations=29)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Student biases towards human-generated feedback'),2))
+        for abstract in ('AI simulates human participants who evaluate feedback in a within-subject blind condition and informed condition.',
+                         'Human participants annotate feedback for model training.',
+                         'Human participants evaluate feedback only in a blind condition.',
+                         'This review examines human participants who evaluate feedback in within-subject blind condition and informed condition.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_face_bias_requires_observed_human_rating_comparison(self):
         p=paper('10.1/faces','Like humans, language models demonstrate face-to-character biases',
                 abstract='We compare language model judgements with observed human ratings of competence and trustworthiness from human participants.')
@@ -511,6 +537,32 @@ class SelectionTests(unittest.TestCase):
                     with self.assertRaises(ValueError):verified_fulltext_candidates(TODAY,set())
             for change in ({'type':'posted-content'},{'update-to':[{'type':'retraction'}]},
                            {'published-online':{'date-parts':[[2027,1,1]]}}):
+                with patch('update.fetch',return_value=json.dumps({'message':{**work,**change}})):
+                    self.assertEqual(verified_fulltext_candidates(TODAY,set()),[])
+
+    def test_verified_discovery_recovers_partial_date_only_with_verified_day(self):
+        doi='10.1234/partial';title='Human memory studied with language models'
+        entry={'doi':doi,'title':title,'source':'https://publisher.example/article',
+               'checked_on':'2026-09-16','notes':'Researchers compare language model predictions with observed human memory responses. '*6,'discover':True}
+        work={'DOI':doi,'title':[title],'type':'journal-article','container-title':['Journal'],
+              'published-print':{'date-parts':[[2026,11]]},'is-referenced-by-count':3}
+        with tempfile.TemporaryDirectory() as tmp,patch('update.ROOT',Path(tmp)),patch('summarize.ROOT',Path(tmp)):
+            path=Path(tmp)/'data/verified_paper_sources.json';path.parent.mkdir()
+            path.write_text(json.dumps({doi:entry}))
+            dates=path.with_name('publication_dates.json')
+            with patch('update.fetch',return_value=json.dumps({'message':work})):
+                self.assertEqual(verified_fulltext_candidates(TODAY,set()),[])
+                dates.write_text(json.dumps({doi:{'published':'2026-05-08','source':entry['source']}}))
+                row=verified_fulltext_candidates(TODAY,set())[0]
+                self.assertEqual(row['published'],'2026-05-08')
+                self.assertEqual(row['publication_date_source'],entry['source'])
+                self.assertEqual(row['citations'],3)
+                self.assertEqual(verified_fulltext_candidates(TODAY,{'doi:'+doi}),[])
+                for change in ({'published':'2027-01-01'},{'published':'2026-05'}, {'source':'unverified'}):
+                    dates.write_text(json.dumps({doi:{'published':'2026-05-08','source':entry['source'],**change}}))
+                    with self.assertRaises(ValueError):verified_fulltext_candidates(TODAY,set())
+                dates.write_text(json.dumps({doi:{'published':'2026-05-08','source':entry['source']}}))
+            for change in ({'type':'posted-content'},{'update-to':[{'type':'retraction'}]}):
                 with patch('update.fetch',return_value=json.dumps({'message':{**work,**change}})):
                     self.assertEqual(verified_fulltext_candidates(TODAY,set()),[])
 

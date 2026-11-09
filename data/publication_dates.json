@@ -85,5 +85,10 @@
     "published": "2025-12-09",
     "source": "https://www.nejm.org/doi/10.1056/NEJMoa2514663",
     "reason": "Publisher records first online publication on 9 December 2025; Crossref supplies the later 19 February 2026 issue date."
+  },
+  "10.1016/j.ipm.2026.104840": {
+    "published": "2026-05-08",
+    "source": "https://research.birmingham.ac.uk/en/publications/modelling-implicit-bias-in-gendercareer-associations-a-systematic/",
+    "reason": "The author institution identifies the final peer-reviewed article and an early online date of 8 May 2026. Crossref supplies only the later November 2026 issue month; no day is inferred from that month."
   }
 }
