@@ -2011,6 +2011,42 @@
         "url:https://doi.org/10.1002/jcal.70189"
       ],
       "doi": "10.1002/jcal.70189"
+    },
+    {
+      "first_pushed": "2026-11-09",
+      "title": "Modelling implicit bias in gender–career associations: A systematic comparison of language models",
+      "url": "https://doi.org/10.1016/j.ipm.2026.104840",
+      "keys": [
+        "doi:10.1016/j.ipm.2026.104840",
+        "title:modellingimplicitbiasingendercareerassociationsasystematiccomparisonoflanguagemodels",
+        "title:语言模型能否刻画人类的性别职业内隐偏差",
+        "url:https://doi.org/10.1016/j.ipm.2026.104840"
+      ],
+      "doi": "10.1016/j.ipm.2026.104840"
+    },
+    {
+      "first_pushed": "2026-11-09",
+      "title": "Who Gives Feedback Matters: Student Biases Towards Human and AI ‐Generated Formative Feedback",
+      "url": "https://doi.org/10.1111/jcal.70153",
+      "keys": [
+        "doi:10.1111/jcal.70153",
+        "title:whogivesfeedbackmattersstudentbiasestowardshumanandaigeneratedformativefeedback",
+        "title:反馈来自谁会改变评价学生对ai反馈的来源偏差",
+        "url:https://doi.org/10.1111/jcal.70153"
+      ],
+      "doi": "10.1111/jcal.70153"
+    },
+    {
+      "first_pushed": "2026-11-09",
+      "title": "The Reactome Knowledgebase 2026",
+      "url": "https://doi.org/10.1093/nar/gkaf1223",
+      "keys": [
+        "doi:10.1093/nar/gkaf1223",
+        "title:reactome2026人类生物通路知识库与分析工具更新",
+        "title:thereactomeknowledgebase2026",
+        "url:https://doi.org/10.1093/nar/gkaf1223"
+      ],
+      "doi": "10.1093/nar/gkaf1223"
     }
   ],
   "news": [
