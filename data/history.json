@@ -2047,6 +2047,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1223"
       ],
       "doi": "10.1093/nar/gkaf1223"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Core Vocabulary Reveals Differences Between Human Word Prediction and Large Language Models",
+      "url": "https://doi.org/10.1525/collabra.160142",
+      "keys": [
+        "doi:10.1525/collabra.160142",
+        "title:corevocabularyrevealsdifferencesbetweenhumanwordpredictionandlargelanguagemodels",
+        "title:核心词汇揭示人类与语言模型预测词语的差异",
+        "url:https://doi.org/10.1525/collabra.160142"
+      ],
+      "doi": "10.1525/collabra.160142"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+      "url": "https://doi.org/10.1287/orsc.2025.20702",
+      "keys": [
+        "doi:10.1287/orsc.2025.20702",
+        "title:ai队友如何改变团队协作791名专业人员的实地实验",
+        "title:thecyberneticteammateafieldexperimentongenerativeaiandteamwork",
+        "url:https://doi.org/10.1287/orsc.2025.20702"
+      ],
+      "doi": "10.1287/orsc.2025.20702"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Global burden of colorectal cancer in 2022 and projections to 2050: incidence and mortality estimates from GLOBOCAN",
+      "url": "https://doi.org/10.1186/s12885-025-15138-0",
+      "keys": [
+        "doi:10.1186/s12885-025-15138-0",
+        "title:globalburdenofcolorectalcancerin2022andprojectionsto2050incidenceandmortalityestimatesfromglobocan",
+        "title:全球结直肠癌负担2022年估计与2050年情景预测",
+        "url:https://doi.org/10.1186/s12885-025-15138-0"
+      ],
+      "doi": "10.1186/s12885-025-15138-0"
     }
   ],
   "news": [
@@ -4370,6 +4406,61 @@
         "url:https://openai.com/index/australian-universities-ai-native-graduates"
       ],
       "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Qwen Code · Release v0.27.2",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.2",
+      "keys": [
+        "title:qwencode0272新增通信渠道配置与审批提醒",
+        "title:qwencodereleasev0272",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.2"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Helping caregivers use AI in everyday life",
+      "url": "https://openai.com/index/helping-caregivers-use-ai-in-everyday-life",
+      "keys": [
+        "title:helpingcaregiversuseaiineverydaylife",
+        "title:openai在美国五城开展照护者ai实操培训",
+        "url:https://openai.com/index/helping-caregivers-use-ai-in-everyday-life"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Gemini 4 Carbon is now available",
+      "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+      "keys": [
+        "title:gemini4carbonisnowavailable",
+        "title:google开放gemini4carbon面向复杂推理与智能体任务",
+        "url:https://deepmind.google/blog/gemini-4-carbon-is-now-available"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "NVIDIA Expands Open Source Commitment With OpenShell Donation and New AI Infrastructure",
+      "url": "https://blogs.nvidia.com/blog/open-source-openshell-infrastructure/",
+      "keys": [
+        "title:nvidiaexpandsopensourcecommitmentwithopenshelldonationandnewaiinfrastructure",
+        "title:nvidia捐赠openshell并扩展开源ai基础设施",
+        "url:https://blogs.nvidia.com/blog/open-source-openshell-infrastructure"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-11",
+      "title": "Lazare, veni foras: Reprogramming Dormant Neurons to Backdoor AI Agents",
+      "url": "https://www.microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents/",
+      "keys": [
+        "title:lazareveniforasreprogrammingdormantneuronstobackdooraiagents",
+        "title:微软披露lazarus模型后门研究强调权重来源验证",
+        "url:https://microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents"
+      ],
+      "company": "Microsoft Research"
     }
   ]
 }
