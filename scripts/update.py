@@ -322,7 +322,7 @@ def relevant(p, slot):
     human_imitation = re.search(r'\bTuring.like tests?\b',title,re.I) and observed_comparison
     # Language prediction can compare models with human ratings and gaze.
     # This route needs observed people, not just a language-model benchmark.
-    human_language_prediction = re.search(r'\blanguage prediction\b',title,re.I) and observed_comparison
+    human_language_prediction = re.search(r'\b(?:language|word) prediction\b',title,re.I) and observed_comparison
     # Judging empathic communication studies social understanding even when
     # the title omits "human". Require actual human comparison ratings.
     empathic_judgement = re.search(r'\bjudg\w* empathic communication\b',title,re.I) and observed_comparison
@@ -392,6 +392,17 @@ def relevant(p, slot):
         # Perceptual and social judgements are human cognition too. Only add
         # this title route when the source supplies actual human observations.
         judgement_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        # Teamwork experiments study people's performance and social responses
+        # to AI. Require observed people, random assignment and both outcomes.
+        human_teamwork = (re.search(r'\bteamwork\b',title,re.I)
+                          and OBSERVED_HUMANS.search(judgement_source)
+                          and human_research_source(judgement_source)
+                          and re.search(r'\bfield experiment\b',judgement_source,re.I)
+                          and re.search(r'\b(?:randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)
+                          and re.search(r'\bperformance\b',judgement_source,re.I)
+                          and re.search(r'\bself.reported emotional responses\b',judgement_source,re.I))
+        if human_teamwork and (LLM.search(text) or AI.search(text)):
+            return p.get('citations',0) >= 5
         # Authorship attribution and aesthetic ratings measure people's responses
         # to AI poetry. A model-only writing benchmark does not meet this route.
         poetry_judgements = (re.search(r'\bpoetry\b',title,re.I)

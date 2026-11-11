@@ -90,5 +90,10 @@
     "published": "2026-05-08",
     "source": "https://research.birmingham.ac.uk/en/publications/modelling-implicit-bias-in-gendercareer-associations-a-systematic/",
     "reason": "The author institution identifies the final peer-reviewed article and an early online date of 8 May 2026. Crossref supplies only the later November 2026 issue month; no day is inferred from that month."
+  },
+  "10.1287/orsc.2025.20702": {
+    "published": "2026-06-12",
+    "source": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.20702",
+    "reason": "Publisher explicitly records Published Online: 12 Jun 2026. Crossref provides only the later July issue month; no day is inferred from that month."
   }
 }

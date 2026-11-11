@@ -432,5 +432,21 @@
     "checked_on": "2026-11-09",
     "discover": true,
     "notes": "This original within-subject study involves 472 human participants, students in six EPFL courses. They evaluate the same human-written and GPT-4 feedback first in a blind condition and then in an informed condition after provider identity is disclosed. AI feedback receives lower credibility ratings. Disclosure lowers perceived genuineness significantly, while changes in objectivity and usefulness are not statistically significant. The study measures students perceptions of feedback and provider identity, not long-term learning gains. Wiley first published the article online on 2 December 2025."
+  },
+  "10.1287/orsc.2025.20702": {
+    "doi": "10.1287/orsc.2025.20702",
+    "title": "The Cybernetic Teammate: A Field Experiment on Generative AI and Teamwork",
+    "source": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.20702",
+    "checked_on": "2026-11-11",
+    "discover": true,
+    "notes": "This original preregistered field experiment analyzes 791 human participants, professionals at Procter & Gamble. They were randomly assigned to work individually or in two-person teams, with or without generative AI, on real product innovation tasks. Independent evaluators measured proposal performance; participants provided self-reported emotional responses. Individuals using AI matched the quality of teams without AI. AI users produced more balanced technical and commercial proposals and reported more positive emotions. The one-day, single-company design does not establish universal replacement of human teammates. Organization Science first published the final journal article online on 12 June 2026."
+  },
+  "10.1525/collabra.160142": {
+    "doi": "10.1525/collabra.160142",
+    "title": "Core Vocabulary Reveals Differences Between Human Word Prediction and Large Language Models",
+    "source": "https://online.ucpress.edu/collabra/article/12/1/160142/217957/Core-Vocabulary-Reveals-Differences-Between-Human",
+    "checked_on": "2026-11-11",
+    "discover": true,
+    "notes": "This original study compares responses from human participants with the language model BERT on word prediction in sentence completion tasks. Across two experiments, 867 participants guessed missing words. Frequency-based core words were easier overall, but after accounting for predictability, word-association and early-acquired core words had an advantage. Word-association coreness best captured systematic differences between human responses and model predictions. The comparison probes the limits of distributional models of human language cognition; multimodal and communicative explanations are interpretations rather than experimentally isolated causes. The restricted target vocabulary and sentence task limit generalization."
   }
 }

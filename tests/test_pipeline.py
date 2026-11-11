@@ -29,6 +29,30 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_word_prediction_requires_human_comparison_and_language_model(self):
+        p=paper('10.1/cloze','Core vocabulary and human word prediction in large language models',
+                abstract='We compare word predictions from BERT with responses from human participants in sentence completion experiments.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Core vocabulary and human word prediction'),1))
+        self.assertFalse(relevant(dict(p,abstract='Language models simulate human participants in word prediction.'),1))
+        self.assertFalse(relevant(dict(p,abstract='We compare language models on synthetic sentence completion benchmarks.'),1))
+
+    def test_teamwork_requires_observed_randomized_performance_and_emotion(self):
+        p=paper('10.1/teamwork','Generative AI and teamwork',citations=19,
+                abstract='Human participants were randomly assigned in a field experiment; we measured performance and self-reported emotional responses.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Teamwork'),2))
+        for abstract in ('AI simulates human participants randomly assigned in a field experiment with performance and self-reported emotional responses.',
+                         'Human participants annotate an AI teamwork benchmark.',
+                         'Human participants join an observational field experiment with performance and self-reported emotional responses.',
+                         'Human participants were randomly assigned in a field experiment measuring model performance only.',
+                         'This review examines human participants randomly assigned in a field experiment with performance and self-reported emotional responses.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_implicit_bias_requires_human_response_time_comparison(self):
         p=paper('10.1/iat','Modelling implicit bias: a comparison of language models',
                 abstract='We compare large language models with response times from human participants in an implicit association test.')
