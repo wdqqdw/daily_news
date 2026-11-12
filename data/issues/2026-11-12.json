@@ -1,0 +1,340 @@
+{
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T11:45:06+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "The Good, the Bad, and the Language: Capturing Implicit Social Evaluation of Personality Traits via the Fill‑Mask Association Test",
+      "doi": "10.1111/jopy.70103",
+      "url": "https://doi.org/10.1111/jopy.70103",
+      "journal": "Journal of Personality",
+      "publisher": "Wiley",
+      "published": "2026-10-14",
+      "authors": "Ye",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1111%2Fjopy.70103",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-12；来源：Crossref；引用数 0，距发表 29 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用12个BERT模型分析733个人格形容词，将“好”与“坏”的概率比同人类评分比较。模型与人类的情感效价、社会赞许度高度相关，与可观察性关系较弱；宜人性和尽责性的评价差异更大。这反映群体对词语的评价模式，并非对个人性格或无意识状态的诊断。",
+      "tag": "认知与行为建模",
+      "ranking_score": 3.5536,
+      "title_zh": "语言模型如何刻画人格词汇中的社会评价",
+      "summary_source": "https://pubmed.ncbi.nlm.nih.gov/42872548/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Divergent creativity in humans and large language models",
+      "doi": "10.1038/s41598-025-25157-3",
+      "url": "https://doi.org/10.1038/s41598-025-25157-3",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-21",
+      "authors": "Bellemare-Pepin et al.",
+      "citations": 27,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-25157-3",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-12；来源：Crossref；引用数 27，距发表 295 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究比较十万人的发散联想任务数据与多种语言模型，并扩展到创意写作的语义指标。部分模型超过人类整体平均水平，但仍低于得分较高半数人群的平均水平；提示方式和采样温度也会影响结果。这些指标只衡量创造力的部分维度，不能据此断言AI能替代创作者。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 11.5792,
+      "title_zh": "十万人与语言模型的发散创造力比较",
+      "summary_source": "https://www.nature.com/articles/s41598-025-25157-3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "SAM2-UNet: segment anything 2 makes strong encoder for natural and medical image segmentation",
+      "doi": "10.1007/s44267-025-00106-w",
+      "url": "https://doi.org/10.1007/s44267-025-00106-w",
+      "journal": "Visual Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-13",
+      "authors": "Xiong et al.",
+      "citations": 113,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1007%2Fs44267-025-00106-w",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 113 次引用，约 11.19 次 / 月。",
+      "evidence": "检索时间：2026-11-12；来源：Crossref；引用数 113，距发表 303 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将SAM2的Hiera骨干作为编码器，结合U形解码器和可训练适配器，在保留基础模型表征的同时减少微调参数。作者在18个公开数据集上测试伪装目标、显著目标、海洋动物、镜面和息肉分割，报告优于多种专用方法；这些是图像分割基准结果，并非临床疗效证据。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.3305,
+      "title_zh": "SAM2-UNet：将基础视觉模型用于自然与医学图像分割",
+      "summary_source": "https://link.springer.com/article/10.1007/s44267-025-00106-w",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Google DeepMind",
+      "kind": "技术报告",
+      "published": "2026-11-11",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "summary": "Google DeepMind发布AlphaGenome 2，将DNA序列与细胞类型或状态共同作为输入，预测基因调控及遗传变异的影响。官方称模型利用逾一亿个细胞表达谱训练，并可适配新的单细胞数据；现向非商业研究开放接口，商业研究处于预览阶段，预测结果仍需实验验证。",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "AlphaGenome 2：预测DNA变异对特定细胞类型的影响",
+      "summary_source": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "公司动态",
+      "published": "2026-11-11",
+      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "summary": "NVIDIA介绍四家初创公司利用视觉识别和机器人分拣塑料、衣物及混合可回收物，并通过边缘计算分析传送带上的材料。公告展示试点与已部署系统的企业自报数据，同时包含未来扩产计划；这些案例不能直接代表所有回收设施的实际收益。",
+      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA介绍视觉AI与机器人辅助废物回收案例",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "公司动态",
+      "published": "2026-11-11",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "summary": "OpenAI称，过去一年已有逾两万名退伍及转业军人领取免费一年ChatGPT Plus，并分享其用于整理求职计划、练习面试和准备简历的案例。公司与合作组织还开展AI培训；这些是项目参与数据和个案介绍，并非对就业改善的因果评估。",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI公布退伍军人ChatGPT支持项目进展",
+      "summary_source": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "技术报告",
+      "published": "2026-11-10",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "summary": "Google DeepMind介绍由人类专家与AI智能体协作的形式化验证框架：专家审定安全规格，智能体生成由Lean检查的证明，覆盖Signal部分核心密码代码直至机器指令。官方还报告了对重新植入的已知漏洞的验证实验；结果针对所规定的安全性质，不能视为整个应用绝无漏洞。",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "AlphaProof Code验证Signal核心密码代码的安全性质",
+      "summary_source": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-09",
+      "title": "Qwen Code · Release v0.27.1",
+      "summary": "这一版本增加可配置的默认后台执行、用户级语言服务器设置，以及会话归档、工作区排序和批量置顶等功能。更新还修复预览恢复、模型切换和会话同步问题，并提供需主动开启的个人记忆集成；本条补充此前未收录的0.27.1版说明。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.27.1：会话管理、语言服务与界面改进",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 1 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 64
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 82
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 106
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 91
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 118
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 66
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 2002
+}

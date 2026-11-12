@@ -2083,6 +2083,42 @@
         "url:https://doi.org/10.1186/s12885-025-15138-0"
       ],
       "doi": "10.1186/s12885-025-15138-0"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "The Good, the Bad, and the Language: Capturing Implicit Social Evaluation of Personality Traits via the Fill‑Mask Association Test",
+      "url": "https://doi.org/10.1111/jopy.70103",
+      "keys": [
+        "doi:10.1111/jopy.70103",
+        "title:thegoodthebadandthelanguagecapturingimplicitsocialevaluationofpersonalitytraitsviathefillmaskassociationtest",
+        "title:语言模型如何刻画人格词汇中的社会评价",
+        "url:https://doi.org/10.1111/jopy.70103"
+      ],
+      "doi": "10.1111/jopy.70103"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "Divergent creativity in humans and large language models",
+      "url": "https://doi.org/10.1038/s41598-025-25157-3",
+      "keys": [
+        "doi:10.1038/s41598-025-25157-3",
+        "title:divergentcreativityinhumansandlargelanguagemodels",
+        "title:十万人与语言模型的发散创造力比较",
+        "url:https://doi.org/10.1038/s41598-025-25157-3"
+      ],
+      "doi": "10.1038/s41598-025-25157-3"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "SAM2-UNet: segment anything 2 makes strong encoder for natural and medical image segmentation",
+      "url": "https://doi.org/10.1007/s44267-025-00106-w",
+      "keys": [
+        "doi:10.1007/s44267-025-00106-w",
+        "title:sam2unetsegmentanything2makesstrongencoderfornaturalandmedicalimagesegmentation",
+        "title:sam2unet将基础视觉模型用于自然与医学图像分割",
+        "url:https://doi.org/10.1007/s44267-025-00106-w"
+      ],
+      "doi": "10.1007/s44267-025-00106-w"
     }
   ],
   "news": [
@@ -4461,6 +4497,61 @@
         "url:https://microsoft.com/en-us/research/blog/lazare-veni-foras-reprogramming-dormant-neurons-to-backdoor-ai-agents"
       ],
       "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "keys": [
+        "title:alphagenome2decipheringhowcellsreaddnatobetterunderstanddisease",
+        "title:alphagenome2预测dna变异对特定细胞类型的影响",
+        "url:https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "How AI Helps Recyclers Turn Mixed Waste Into Reusable Material",
+      "url": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+      "keys": [
+        "title:howaihelpsrecyclersturnmixedwasteintoreusablematerial",
+        "title:nvidia介绍视觉ai与机器人辅助废物回收案例",
+        "url:https://blogs.nvidia.com/blog/ai-recycling-startups"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "ChatGPT Plus for veterans and servicemembers",
+      "url": "https://openai.com/index/chatgpt-plus-for-veterans",
+      "keys": [
+        "title:chatgptplusforveteransandservicemembers",
+        "title:openai公布退伍军人chatgpt支持项目进展",
+        "url:https://openai.com/index/chatgpt-plus-for-veterans"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "keys": [
+        "title:alphaproofcode验证signal核心密码代码的安全性质",
+        "title:introducingalphaproofcodeabreakthroughinverifyingcomplexsoftwareatdepth",
+        "url:https://deepmind.google/blog/introducing-alphaproof-code"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-12",
+      "title": "Qwen Code · Release v0.27.1",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1",
+      "keys": [
+        "title:qwencode0271会话管理语言服务与界面改进",
+        "title:qwencodereleasev0271",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1"
+      ],
+      "company": "Qwen"
     }
   ]
 }
