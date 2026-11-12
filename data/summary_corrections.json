@@ -1602,5 +1602,50 @@
     "summary": "OpenAI推出Businesses in ChatGPT测试版，允许商家认领资料、更新商品信息，并查看满足隐私阈值的汇总互动统计。符合条件的美国电商和在线服务企业还可推出单独标识的商业智能体，帮助用户了解产品；更多地区与类别仍属后续扩展计划。",
     "summary_source": "https://openai.com/index/introducing-businesses-chatgpt",
     "kind": "产品发布"
+  },
+  "doi:10.1111/jopy.70103": {
+    "title_zh": "语言模型如何刻画人格词汇中的社会评价",
+    "summary": "研究用12个BERT模型分析733个人格形容词，将“好”与“坏”的概率比同人类评分比较。模型与人类的情感效价、社会赞许度高度相关，与可观察性关系较弱；宜人性和尽责性的评价差异更大。这反映群体对词语的评价模式，并非对个人性格或无意识状态的诊断。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/42872548/"
+  },
+  "doi:10.1038/s41598-025-25157-3": {
+    "title_zh": "十万人与语言模型的发散创造力比较",
+    "summary": "研究比较十万人的发散联想任务数据与多种语言模型，并扩展到创意写作的语义指标。部分模型超过人类整体平均水平，但仍低于得分较高半数人群的平均水平；提示方式和采样温度也会影响结果。这些指标只衡量创造力的部分维度，不能据此断言AI能替代创作者。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-25157-3"
+  },
+  "doi:10.1007/s44267-025-00106-w": {
+    "title_zh": "SAM2-UNet：将基础视觉模型用于自然与医学图像分割",
+    "summary": "研究将SAM2的Hiera骨干作为编码器，结合U形解码器和可训练适配器，在保留基础模型表征的同时减少微调参数。作者在18个公开数据集上测试伪装目标、显著目标、海洋动物、镜面和息肉分割，报告优于多种专用方法；这些是图像分割基准结果，并非临床疗效证据。",
+    "summary_source": "https://link.springer.com/article/10.1007/s44267-025-00106-w"
+  },
+  "url:https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease": {
+    "title_zh": "AlphaGenome 2：预测DNA变异对特定细胞类型的影响",
+    "summary": "Google DeepMind发布AlphaGenome 2，将DNA序列与细胞类型或状态共同作为输入，预测基因调控及遗传变异的影响。官方称模型利用逾一亿个细胞表达谱训练，并可适配新的单细胞数据；现向非商业研究开放接口，商业研究处于预览阶段，预测结果仍需实验验证。",
+    "summary_source": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "kind": "技术报告"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-recycling-startups": {
+    "title_zh": "NVIDIA介绍视觉AI与机器人辅助废物回收案例",
+    "summary": "NVIDIA介绍四家初创公司利用视觉识别和机器人分拣塑料、衣物及混合可回收物，并通过边缘计算分析传送带上的材料。公告展示试点与已部署系统的企业自报数据，同时包含未来扩产计划；这些案例不能直接代表所有回收设施的实际收益。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-recycling-startups/",
+    "kind": "公司动态"
+  },
+  "url:https://openai.com/index/chatgpt-plus-for-veterans": {
+    "title_zh": "OpenAI公布退伍军人ChatGPT支持项目进展",
+    "summary": "OpenAI称，过去一年已有逾两万名退伍及转业军人领取免费一年ChatGPT Plus，并分享其用于整理求职计划、练习面试和准备简历的案例。公司与合作组织还开展AI培训；这些是项目参与数据和个案介绍，并非对就业改善的因果评估。",
+    "summary_source": "https://openai.com/index/chatgpt-plus-for-veterans",
+    "kind": "公司动态"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1": {
+    "title_zh": "Qwen Code 0.27.1：会话管理、语言服务与界面改进",
+    "summary": "这一版本增加可配置的默认后台执行、用户级语言服务器设置，以及会话归档、工作区排序和批量置顶等功能。更新还修复预览恢复、模型切换和会话同步问题，并提供需主动开启的个人记忆集成；本条补充此前未收录的0.27.1版说明。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1",
+    "kind": "产品发布"
+  },
+  "url:https://openai.com/index/gilbert-tobin-sam-nickless": {
+    "title_zh": "Gilbert + Tobin分享AI在律所工作中的应用",
+    "summary": "OpenAI访谈介绍澳大利亚律所Gilbert + Tobin从员工试用AI，逐步转向使用ChatGPT与Codex支持多步骤工作流程的经验。律所强调人员负责定义任务、审查输出和批准最终工作，内容主要反映企业自述，不能据此推断普遍的效率或服务质量提升。",
+    "summary_source": "https://openai.com/index/gilbert-tobin-sam-nickless",
+    "kind": "公司动态"
   }
 }

@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_divergent_creativity_requires_observed_human_task_comparison(self):
+        p=paper('10.1/creativity','Divergent creativity in humans and large language models',citations=27,
+                abstract='We compare human participants with language models on the divergent association task, scoring semantic divergence.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Divergent creativity in humans',abstract=p['abstract'].replace('language models','word lists')),2))
+        for abstract in ('Language models simulate human participants and compare semantic divergence on the divergent association task.',
+                         'We compare language models on the divergent association task, scoring semantic divergence.',
+                         'We compare human participants with models on an unrelated annotation task.',
+                         'This review compares human participants with language models on the divergent association task, scoring semantic divergence.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_word_prediction_requires_human_comparison_and_language_model(self):
         p=paper('10.1/cloze','Core vocabulary and human word prediction in large language models',
                 abstract='We compare word predictions from BERT with responses from human participants in sentence completion experiments.')

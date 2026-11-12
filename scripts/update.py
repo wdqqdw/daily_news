@@ -392,6 +392,16 @@ def relevant(p, slot):
         # Perceptual and social judgements are human cognition too. Only add
         # this title route when the source supplies actual human observations.
         judgement_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        # Divergent-thinking comparisons study human creative cognition. Require
+        # observed human task data and semantic scoring, not model-only output.
+        human_creativity = (re.search(r'\bdivergent creativity\b',title,re.I)
+                            and OBSERVED_HUMANS.search(judgement_source)
+                            and human_research_source(judgement_source)
+                            and re.search(r'\bdivergent association task\b',judgement_source,re.I)
+                            and re.search(r'\bsemantic divergence\b',judgement_source,re.I)
+                            and re.search(r'\bcompar\w*\b',judgement_source,re.I))
+        if human_creativity and (LLM.search(text) or AI.search(text)):
+            return p.get('citations',0) >= 5
         # Teamwork experiments study people's performance and social responses
         # to AI. Require observed people, random assignment and both outcomes.
         human_teamwork = (re.search(r'\bteamwork\b',title,re.I)

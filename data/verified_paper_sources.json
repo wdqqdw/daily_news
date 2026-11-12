@@ -448,5 +448,21 @@
     "checked_on": "2026-11-11",
     "discover": true,
     "notes": "This original study compares responses from human participants with the language model BERT on word prediction in sentence completion tasks. Across two experiments, 867 participants guessed missing words. Frequency-based core words were easier overall, but after accounting for predictability, word-association and early-acquired core words had an advantage. Word-association coreness best captured systematic differences between human responses and model predictions. The comparison probes the limits of distributional models of human language cognition; multimodal and communicative explanations are interpretations rather than experimentally isolated causes. The restricted target vocabulary and sentence task limit generalization."
+  },
+  "10.1111/jopy.70103": {
+    "doi": "10.1111/jopy.70103",
+    "title": "The Good, the Bad, and the Language: Capturing Implicit Social Evaluation of Personality Traits via the Fill‑Mask Association Test",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/42872548/",
+    "checked_on": "2026-11-12",
+    "discover": true,
+    "notes": "This original study uses 12 BERT masked language models to map social evaluation of 733 personality adjectives in three sentence contexts. Model log probability ratios for good versus bad are compared with human ratings from normative datasets measuring valence, social desirability and observability, plus three independent Big Five lexical taxonomies. Model scores correlate strongly with human valence and desirability, but weakly with observability. Agreeableness and Conscientiousness show larger evaluative gaps than Extraversion. This models group-level evaluation of trait words, not an individual person's personality or unconscious mental state. Published online 14 October 2026 in Journal of Personality."
+  },
+  "10.1038/s41598-025-25157-3": {
+    "doi": "10.1038/s41598-025-25157-3",
+    "title": "Divergent creativity in humans and large language models",
+    "source": "https://www.nature.com/articles/s41598-025-25157-3",
+    "checked_on": "2026-11-12",
+    "discover": true,
+    "notes": "This original study compares large language models with a dataset of 100,000 human participants on the Divergent Association Task, using the same semantic divergence scoring. It also compares creative-writing outputs using semantic measures. Some models exceed the overall human mean, but even leading models remain below the mean of the higher-scoring half of humans. Prompt strategy and temperature affect model scores. The task measures associative divergent thinking rather than all dimensions of creativity, and similar scores do not establish human-like mechanisms or replacement of creative workers. Scientific Reports published this research on 21 January 2026."
   }
 }
