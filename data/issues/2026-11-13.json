@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T09:46:46+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large Language Models Estimate Fine‐Grained Human Color–Concept Associations",
+      "doi": "10.1111/cogs.70219",
+      "url": "https://doi.org/10.1111/cogs.70219",
+      "journal": "Cognitive Science",
+      "publisher": "Wiley",
+      "published": "2026-06-22",
+      "authors": "Mukherjee et al.",
+      "citations": 2,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1111%2Fcogs.70219",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-13；来源：Crossref；引用数 2，距发表 144 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 GPT-4 对71种颜色与抽象、具体概念的关联评分，与真实人类评分比较。模型评分与人类评分较强相关，并优于此前基于图像的自动估计方法；后续可视化理解实验中，模型评分生成的配色可被参与者理解，部分条件下效果更好。这表明模型能够近似特定感知知识，但样本主要来自美国英语使用者，不能据此认定模型具有人类认知机制或跨文化普遍适用性。",
+      "tag": "认知与行为建模",
+      "ranking_score": 5.6438,
+      "title_zh": "大语言模型估计人类细粒度颜色—概念联想",
+      "summary_source": "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.70219",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Adverse reactions to the use of large language models in social interactions",
+      "doi": "10.1093/pnasnexus/pgaf112",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf112",
+      "journal": "PNAS Nexus",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-04-07",
+      "authors": "Dvorak et al.",
+      "citations": 10,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fpnasnexus%2Fpgaf112",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-13；来源：Crossref；引用数 10，距发表 585 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "一项预注册在线实验让真人参与五类双人经济博弈，并让 ChatGPT 代替其中一方决策。明确知道对方由 AI 代理时，人们的公平、信任、可信行为、合作和协调表现下降；不确定对方是否使用 AI 时，研究未观察到同样的负面反应。参与者也会主动委托 AI，尤其在无需披露时。结果反映受控博弈及所测模型下的人类行为，收益变化因博弈而异，不能概括为所有 AI 互动都会使人受损。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 7.31,
+      "title_zh": "当 ChatGPT 代替他人做决定：人们在社会互动中的反应",
+      "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11997303/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Fe–N 3 S Single-Atom Nanozyme with Asymmetric Coordination for Ultra-Low-Background Colorimetric Immunoassays",
+      "doi": "10.1021/acs.analchem.5c07715",
+      "url": "https://doi.org/10.1021/acs.analchem.5c07715",
+      "journal": "Analytical Chemistry",
+      "publisher": "American Chemical Society (ACS)",
+      "published": "2026-01-05",
+      "authors": "Yu et al.",
+      "citations": 113,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1021%2Facs.analchem.5c07715",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 113 次引用，约 10.87 次 / 月。",
+      "evidence": "检索时间：2026-11-13；来源：Crossref；引用数 113，距发表 312 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过引入硫改变铁单原子纳米酶的配位结构，增强过氧化物酶样活性并抑制容易产生背景信号的氧化酶样反应。结合密度泛函理论计算，作者提出反应能垒变化的机制，并构建针对 CD40L 蛋白的级联催化比色免疫传感器，报告检出限为0.69 pg/mL。这是材料与检测方法研究，支持降低背景干扰的技术潜力，尚不能等同于临床诊断效果得到验证。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.2454,
+      "title_zh": "非对称配位的 Fe–N₃S 单原子纳米酶实现低背景比色免疫检测",
+      "summary_source": "https://pubs.acs.org/doi/10.1021/acs.analchem.5c07715",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-13",
+      "title": "Qwen Code · Release v0.27.3",
+      "summary": "Qwen Code 更新了后台工作流和本地代理的状态展示，增加中文 GitHub 事件提示、钉钉群机器人通知配置及手动关联 PR 等功能。该版本还修复权限确认、会话恢复和消息重试等问题。更新重点是开发工作流与运行可靠性，属于软件版本发布，不代表新的基础模型能力评测。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.3",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 发布 v0.27.3：完善后台任务、中文提示和消息渠道",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-12",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "summary": "OpenAI 发布 Amplitude 的 Wave 产品代理案例：系统结合产品数据、会话回放、客户反馈和代码识别改进机会，生成实施方案，再交给团队和编程代理执行并跟踪结果。Amplitude 估计部分产品改进可在1至2天内交付，并按质量、延迟和成本分配不同模型。这是厂商公开的客户实践，所述效率不代表所有团队都能达到相同水平。",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Amplitude 用 OpenAI 模型将产品洞察转为开发与效果验证",
+      "summary_source": "https://openai.com/business/customer-stories/amplitude",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "产品发布",
+      "published": "2026-11-12",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "summary": "Google 将 Gemini 4 Hydrogen 定位为面向日常编程和代理工作流的高效率模型，并提供百万 token 上下文。同期推出的 Antigravity Orchestrator 可按任务在 Carbon 与 Hydrogen 等模型之间切换，让复杂规划和快速执行分工。官方报告了速度、成本和部分基准优势；这些结果来自其披露的测试条件，实际效果仍取决于任务与配置。",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google 发布 Gemini 4 Hydrogen，聚焦快速执行与多模型协作",
+      "summary_source": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-12",
+      "title": "Microsoft Research Focus – Edition #98",
+      "summary": "微软研究院汇总近期项目，涵盖 AI 语音翻译、KLS 猜想相关数学进展，以及长期代理任务中的上下文压缩评测 CompactionBench。节目还介绍跨语言分词与东京研究团队的物理智能实践，并提供进一步阅读入口。这是一则研究动态导读，各项工作的结论和适用范围需分别查看原始研究。",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究播客第98期：语音翻译、数学研究与编程代理效率",
+      "summary_source": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-12",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "summary": "OpenAI 的客户案例介绍，创作者平台 Gondola 使用 Codex 扩展软件开发能力，并用 ChatGPT 辅助日常运营。公司报告团队月度工程产出增加25%、首席工程师产出增加50%，同期收入同比超过翻倍。这些数字是该公司披露的业务结果，不能把收入增长全部归因于 AI，也不能直接推广为其他团队的预期收益。",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Gondola 分享 Codex 与 ChatGPT 支持小团队开发的实践",
+      "summary_source": "https://openai.com/business/customer-stories/gondola",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-09",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "summary": "NVIDIA 与合作伙伴在机器人学习会议上介绍 GR00T 2、Isaac Lab 3.0、开放基准和代理工作流，重点从移动能力扩展到齿轮对齐、接线及小部件装配等精细操作。官方展示利用人类演示和仿真训练、迁移并评估机器人技能的方向。这则11月9日发布但尚未推送的动态作为补充收录；实验基准成绩不等同于工业部署已全面验证。",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 在 CoRL 展示 GR00T 2、仿真工具与机器人训练进展",
+      "summary_source": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 64
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 112
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 105
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 118
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 92
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 67
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 70
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 12
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1989
+}

@@ -2119,6 +2119,42 @@
         "url:https://doi.org/10.1007/s44267-025-00106-w"
       ],
       "doi": "10.1007/s44267-025-00106-w"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Large Language Models Estimate Fine‐Grained Human Color–Concept Associations",
+      "url": "https://doi.org/10.1111/cogs.70219",
+      "keys": [
+        "doi:10.1111/cogs.70219",
+        "title:largelanguagemodelsestimatefinegrainedhumancolorconceptassociations",
+        "title:大语言模型估计人类细粒度颜色概念联想",
+        "url:https://doi.org/10.1111/cogs.70219"
+      ],
+      "doi": "10.1111/cogs.70219"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Adverse reactions to the use of large language models in social interactions",
+      "url": "https://doi.org/10.1093/pnasnexus/pgaf112",
+      "keys": [
+        "doi:10.1093/pnasnexus/pgaf112",
+        "title:adversereactionstotheuseoflargelanguagemodelsinsocialinteractions",
+        "title:当chatgpt代替他人做决定人们在社会互动中的反应",
+        "url:https://doi.org/10.1093/pnasnexus/pgaf112"
+      ],
+      "doi": "10.1093/pnasnexus/pgaf112"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Fe–N 3 S Single-Atom Nanozyme with Asymmetric Coordination for Ultra-Low-Background Colorimetric Immunoassays",
+      "url": "https://doi.org/10.1021/acs.analchem.5c07715",
+      "keys": [
+        "doi:10.1021/acs.analchem.5c07715",
+        "title:fen3ssingleatomnanozymewithasymmetriccoordinationforultralowbackgroundcolorimetricimmunoassays",
+        "title:非对称配位的fen3s单原子纳米酶实现低背景比色免疫检测",
+        "url:https://doi.org/10.1021/acs.analchem.5c07715"
+      ],
+      "doi": "10.1021/acs.analchem.5c07715"
     }
   ],
   "news": [
@@ -4552,6 +4588,72 @@
         "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.1"
       ],
       "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Qwen Code · Release v0.27.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.3",
+      "keys": [
+        "title:qwencodereleasev0273",
+        "title:qwencode发布v0273完善后台任务中文提示和消息渠道",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.3"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "How Amplitude ships product improvements in 1–2 days with OpenAI",
+      "url": "https://openai.com/business/customer-stories/amplitude",
+      "keys": [
+        "title:amplitude用openai模型将产品洞察转为开发与效果验证",
+        "title:howamplitudeshipsproductimprovementsin12dayswithopenai",
+        "url:https://openai.com/business/customer-stories/amplitude"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Introducing Gemini 4 Hydrogen",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+      "keys": [
+        "title:google发布gemini4hydrogen聚焦快速执行与多模型协作",
+        "title:introducinggemini4hydrogen",
+        "url:https://deepmind.google/blog/introducing-gemini-4-hydrogen"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Microsoft Research Focus – Edition #98",
+      "url": "https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/",
+      "keys": [
+        "title:microsoftresearchfocusedition98",
+        "title:微软研究播客第98期语音翻译数学研究与编程代理效率",
+        "url:https://microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Gondola doubles revenue as its team builds more with Codex",
+      "url": "https://openai.com/business/customer-stories/gondola",
+      "keys": [
+        "title:gondoladoublesrevenueasitsteambuildsmorewithcodex",
+        "title:gondola分享codex与chatgpt支持小团队开发的实践",
+        "url:https://openai.com/business/customer-stories/gondola"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-13",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "keys": [
+        "title:nvidia在corl展示gr00t2仿真工具与机器人训练进展",
+        "title:practicemakespreciseatcorlnvidiaandpartnersrevealhowrobotsrehearsedelicateworkinsimulation",
+        "url:https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl"
+      ],
+      "company": "NVIDIA"
     }
   ]
 }
