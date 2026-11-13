@@ -464,5 +464,21 @@
     "checked_on": "2026-11-12",
     "discover": true,
     "notes": "This original study compares large language models with a dataset of 100,000 human participants on the Divergent Association Task, using the same semantic divergence scoring. It also compares creative-writing outputs using semantic measures. Some models exceed the overall human mean, but even leading models remain below the mean of the higher-scoring half of humans. Prompt strategy and temperature affect model scores. The task measures associative divergent thinking rather than all dimensions of creativity, and similar scores do not establish human-like mechanisms or replacement of creative workers. Scientific Reports published this research on 21 January 2026."
+  },
+  "10.1111/cogs.70219": {
+    "doi": "10.1111/cogs.70219",
+    "title": "Large Language Models Estimate Fine‐Grained Human Color–Concept Associations",
+    "source": "https://onlinelibrary.wiley.com/doi/full/10.1111/cogs.70219",
+    "checked_on": "2026-11-13",
+    "discover": true,
+    "notes": "The study estimates human color-concept associations with GPT-4 and compares them with observed human ratings for 71 colors and concrete or abstract concepts. Model ratings correlate with human ratings and outperform earlier image-based estimation methods. A further experiment with human participants evaluates color palettes in information visualizations: model-derived palettes are interpretable and sometimes more effective than human-derived palettes. The human samples primarily represent English-speaking US university students. This is evidence of alignment in a specific perceptual-knowledge task, not identical human cognition or universal cross-cultural validity. Cognitive Science published the journal article on 22 June 2026."
+  },
+  "10.1093/pnasnexus/pgaf112": {
+    "doi": "10.1093/pnasnexus/pgaf112",
+    "title": "Adverse reactions to the use of large language models in social interactions",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11997303/",
+    "checked_on": "2026-11-13",
+    "discover": true,
+    "notes": "The authors conduct a preregistered online experiment with human participants playing five economic two-player games. They measure human fairness, trust, trustworthiness, cooperation and coordination when ChatGPT makes decisions on behalf of another human participant. These responses decrease when AI involvement is disclosed; the authors do not observe the same adverse responses when participants are uncertain whether their partner's decisions come from a human or the model. Participants also delegate decisions to AI, especially when its involvement is undisclosed. Payoff effects differ across games and must not be described as a universal decline. The findings concern controlled games and the tested ChatGPT system, not all real-world social interactions. PNAS Nexus published this research article online on 7 April 2025."
   }
 }

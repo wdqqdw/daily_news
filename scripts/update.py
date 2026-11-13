@@ -339,6 +339,13 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Color-concept associations model human perceptual knowledge. Require
+        # actual human ratings and an estimated association, not color naming alone.
+        human_color_concepts = (re.search(r'\bhuman colou?r.concept associations?\b',title,re.I)
+                                and observed_comparison
+                                and re.search(r'\bhuman ratings\b',conversation_source,re.I)
+                                and re.search(r'\bestimat\w*\b',text,re.I))
+        if human_color_concepts and LLM.search(text):return True
         # Face impressions model human social judgements, not actual character.
         # Require a comparison with observed human ratings, not synthetic raters.
         face_impressions = (re.search(r'\bface.to.character biases\b',title,re.I)
@@ -392,6 +399,18 @@ def relevant(p, slot):
         # Perceptual and social judgements are human cognition too. Only add
         # this title route when the source supplies actual human observations.
         judgement_source = SIMULATED_HUMAN_REFERENCES.sub('',p.get('abstract','')[:1400])
+        # Social-game experiments measure people's reactions to AI delegation.
+        # Require observed human decisions and an empirical economic-game design.
+        human_social_games = (re.search(r'\breactions?\b',title,re.I)
+                              and re.search(r'\bsocial interactions?\b',title,re.I)
+                              and OBSERVED_HUMANS.search(judgement_source)
+                              and human_research_source(judgement_source)
+                              and re.search(r'\bpreregistered (?:online )?experiment\b',judgement_source,re.I)
+                              and re.search(r'\beconomic (?:two.player )?games\b',judgement_source,re.I)
+                              and re.search(r'\btrust\b',judgement_source,re.I)
+                              and re.search(r'\bcooperation\b',judgement_source,re.I))
+        if human_social_games and (LLM.search(text) or AI.search(text)):
+            return p.get('citations',0) >= 5
         # Divergent-thinking comparisons study human creative cognition. Require
         # observed human task data and semantic scoring, not model-only output.
         human_creativity = (re.search(r'\bdivergent creativity\b',title,re.I)

@@ -29,6 +29,30 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_color_concepts_require_observed_human_ratings_and_llm_estimation(self):
+        p=paper('10.1/color','Language models estimate human color–concept associations',
+                abstract='We estimate color associations with GPT-4 and compare them with human ratings.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Estimating human color–concept associations',abstract='We estimate associations from human ratings using word counts.'),1))
+        for abstract in ('Language models estimate associations without observations from people.',
+                         'Language models estimate associations by simulating human participants.',
+                         'Human participants annotate model color naming errors.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_social_game_reactions_require_human_experiment_and_influence(self):
+        p=paper('10.1/socialgames','Reactions to language models in social interactions',citations=10,
+                abstract='Human participants joined a preregistered online experiment using economic two-player games to measure trust and cooperation.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title='Reactions in social interactions'),2))
+        for abstract in ('Language models simulate human participants in a preregistered online experiment using economic games measuring trust and cooperation.',
+                         'Human participants annotate a language-model trust benchmark.',
+                         'This review describes a preregistered experiment with human participants in economic games measuring trust and cooperation.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_divergent_creativity_requires_observed_human_task_comparison(self):
         p=paper('10.1/creativity','Divergent creativity in humans and large language models',citations=27,
                 abstract='We compare human participants with language models on the divergent association task, scoring semantic divergence.')
