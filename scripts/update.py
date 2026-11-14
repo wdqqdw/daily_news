@@ -346,6 +346,14 @@ def relevant(p, slot):
                                 and re.search(r'\bhuman ratings\b',conversation_source,re.I)
                                 and re.search(r'\bestimat\w*\b',text,re.I))
         if human_color_concepts and LLM.search(text):return True
+        # Scoring people's story retellings models human communication ability.
+        # Require observed human ratings, not model-generated stories alone.
+        human_story_assessment = (re.search(r'\bstory retelling\b',title,re.I)
+                                  and re.search(r'\bmain concepts\b',title,re.I)
+                                  and observed_comparison
+                                  and re.search(r'\bhuman (?:raters|ratings)\b',conversation_source,re.I)
+                                  and re.search(r'\b(?:assess\w*|scor\w*|compar\w*)\b',text,re.I))
+        if human_story_assessment and LLM.search(text):return True
         # Face impressions model human social judgements, not actual character.
         # Require a comparison with observed human ratings, not synthetic raters.
         face_impressions = (re.search(r'\bface.to.character biases\b',title,re.I)

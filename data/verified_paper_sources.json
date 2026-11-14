@@ -480,5 +480,21 @@
     "checked_on": "2026-11-13",
     "discover": true,
     "notes": "The authors conduct a preregistered online experiment with human participants playing five economic two-player games. They measure human fairness, trust, trustworthiness, cooperation and coordination when ChatGPT makes decisions on behalf of another human participant. These responses decrease when AI involvement is disclosed; the authors do not observe the same adverse responses when participants are uncertain whether their partner's decisions come from a human or the model. Participants also delegate decisions to AI, especially when its involvement is undisclosed. Payoff effects differ across games and must not be described as a universal decline. The findings concern controlled games and the tested ChatGPT system, not all real-world social interactions. PNAS Nexus published this research article online on 7 April 2025."
+  },
+  "10.1044/2025_ajslp-24-00400": {
+    "doi": "10.1044/2025_ajslp-24-00400",
+    "title": "Large Language Models' Ability to Assess Main Concepts in Story Retelling: A Proof-of-Concept Comparison of Human Versus Machine Ratings",
+    "source": "https://pubs.asha.org/doi/10.1044/2025_AJSLP-24-00400",
+    "checked_on": "2026-11-14",
+    "discover": true,
+    "notes": "The study compares GPT-4, GPT-4o and Llama-3-70B with human ratings of main concepts in story retelling. Human participants include 96 people with aphasia and familiar or unfamiliar conversation partners. The researchers score 1,760 transcribed story retells for the presence, accuracy and completeness of main concepts. Model scores correlate strongly with human raters and show reliable scoring under generalizability-theory analysis. This is a proof-of-concept assessment of human communication, not proof of treatment benefit or a replacement for clinical judgement. ASHA identifies it as a journal Research Article first published online on 31 March 2025; the December date is its issue date."
+  },
+  "10.1038/s41562-025-02331-1": {
+    "doi": "10.1038/s41562-025-02331-1",
+    "title": "A large-scale comparison of divergent creativity in humans and large language models",
+    "source": "https://english.amss.cas.cn/ae/rp/202605/t20260521_1159685.html",
+    "checked_on": "2026-11-14",
+    "discover": true,
+    "notes": "This study compares observed human data from 9,198 people with 215,542 large language model observations on the Divergent Association Task. The task measures semantic divergence in generated words. The Nature Human Behaviour abstract reports slightly higher mean human performance, greater human variability and a stronger human upper tail. The authors' institution confirms the task and describes limitations of persona prompts and temperature changes. These task-based comparisons do not measure every aspect of creativity or establish that model and human cognitive mechanisms are identical. The journal article was first published on 23 December 2025; the institution's May 2026 news date is not the publication date."
   }
 }

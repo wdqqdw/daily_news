@@ -95,5 +95,20 @@
     "published": "2026-06-12",
     "source": "https://pubsonline.informs.org/doi/10.1287/orsc.2025.20702",
     "reason": "Publisher explicitly records Published Online: 12 Jun 2026. Crossref provides only the later July issue month; no day is inferred from that month."
+  },
+  "10.1044/2025_ajslp-24-00400": {
+    "published": "2025-03-31",
+    "source": "https://pubs.asha.org/doi/10.1044/2025_AJSLP-24-00400",
+    "reason": "Publisher history and PubMed identify this first online publication date; Crossref supplied the later issue date."
+  },
+  "10.1056/nejmoa2517213": {
+    "published": "2026-03-28",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2517213",
+    "reason": "Publisher history and PubMed identify this first online publication date; Crossref supplied the later issue date."
+  },
+  "10.1056/nejmoa2508668": {
+    "published": "2025-10-29",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2508668",
+    "reason": "Publisher history and PubMed identify this first online publication date; Crossref supplied the later issue date."
   }
 }

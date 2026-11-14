@@ -29,6 +29,19 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_story_assessment_requires_observed_human_ratings_and_llm(self):
+        p=paper('10.1/story','Language models assess main concepts in story retelling',
+                abstract='We compare model scores with human ratings of stories retold by human participants with aphasia.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Assessing main concepts in story retelling'),1))
+        for abstract in ('Language models simulate human participants retelling stories.',
+                         'We compare main concept scores in model-generated stories.',
+                         'Human participants annotate an unrelated language-model benchmark.',
+                         'This review compares language models with human ratings of story retelling.',
+                         'We generate clinical reports based on model outputs and compare them with human ratings.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
     def test_color_concepts_require_observed_human_ratings_and_llm_estimation(self):
         p=paper('10.1/color','Language models estimate human color–concept associations',
                 abstract='We estimate color associations with GPT-4 and compare them with human ratings.')
