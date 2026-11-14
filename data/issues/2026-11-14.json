@@ -1,0 +1,353 @@
+{
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T14:20:34+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Large Language Models' Ability to Assess Main Concepts in Story Retelling: A Proof-of-Concept Comparison of Human Versus Machine Ratings",
+      "doi": "10.1044/2025_ajslp-24-00400",
+      "url": "https://doi.org/10.1044/2025_ajslp-24-00400",
+      "journal": "American Journal of Speech-Language Pathology",
+      "publisher": "American Speech Language Hearing Association",
+      "published": "2025-03-31",
+      "authors": "Kurland et al.",
+      "citations": 8,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1044%2F2025_ajslp-24-00400",
+      "publication_types": [],
+      "publication_date_source": "https://pubs.asha.org/doi/10.1044/2025_AJSLP-24-00400",
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-14；来源：Crossref；引用数 8，距发表 593 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按经来源核实的首次在线日期校正。",
+      "summary": "研究以96名失语症患者及其熟悉、陌生对话伙伴产生的1760段故事复述为材料，比较 GPT-4、GPT-4o、Llama-3-70B 与人工评分者对关键概念的存在、准确性和完整性的判断。模型评分与人工评分较强相关，可靠性分析也支持这一任务中的一致性。这是自动评估人类沟通表现的概念验证，不能据此认定已改善治疗效果或可替代临床判断。该文首次在线发表于2025年3月31日，作为较早研究补充。",
+      "tag": "认知与行为建模",
+      "ranking_score": 7.7029,
+      "title_zh": "大语言模型能否评估故事复述中的关键概念？",
+      "summary_source": "https://pubs.asha.org/doi/10.1044/2025_AJSLP-24-00400",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "A large-scale comparison of divergent creativity in humans and large language models",
+      "doi": "10.1038/s41562-025-02331-1",
+      "url": "https://doi.org/10.1038/s41562-025-02331-1",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-12-23",
+      "authors": "Wang et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-025-02331-1",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-14；来源：Crossref；引用数 16，距发表 326 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究比较9198名人类参与者与215542次模型输出，在发散联想任务中考察创造性表现。人类平均得分略高，个体差异更大，高分端优势尤其明显。让模型扮演天才或人口群体角色的提示仅在一定范围内改善表现，进一步调整可能偏离真实人类规律，其他提示工程效果也不稳定。这项研究揭示特定语言任务中的分布差异，不能将其等同于对全部创造力的测量。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.9901,
+      "title_zh": "大规模比较人类与大语言模型的发散性创造力",
+      "summary_source": "https://www.nature.com/articles/s41562-025-02331-1",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation",
+      "doi": "10.1056/nejmoa2517213",
+      "url": "https://doi.org/10.1056/nejmoa2517213",
+      "journal": "New England Journal of Medicine",
+      "publisher": "Massachusetts Medical Society",
+      "published": "2026-03-28",
+      "authors": "Doshi et al.",
+      "citations": 121,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1056%2Fnejmoa2517213",
+      "publication_date_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2517213",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 121 次引用，约 15.71 次 / 月。",
+      "evidence": "检索时间：2026-11-14；来源：Crossref；引用数 121，距发表 231 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。发表日期已按经来源核实的首次在线日期校正。",
+      "summary": "CHAMPION-AF 试验将3000名适合口服抗凝的房颤患者随机分为器械封堵与非维生素K拮抗剂口服抗凝两组。三年时，心血管死亡、卒中或全身性栓塞复合终点的估计发生率为5.7%与4.8%，封堵达到预设非劣效标准；非操作相关出血为10.9%与19.0%。非劣效不表示两者完全等效或封堵疗效更优，出血指标也不包含操作相关出血。研究由器械厂商资助，结论限于试验人群和随访期。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 13.3914,
+      "title_zh": "房颤患者左心耳封堵与口服抗凝治疗的随机比较",
+      "summary_source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2517213",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-11-13",
+      "title": "Introducing ChatGPT Wallet",
+      "summary": "OpenAI 与 American Express、Mastercard、Visa 合作推出代理支付钱包，初期通过 dots 向美国 ChatGPT Pro 用户有限开放。用户逐笔核对商品、金额和卡片并完成安全验证；随后支付网络提供替代真实卡片信息的支付令牌。官方同时发布商家接入指引，并表示未来将探索按额度等条件预授权；这类完全委托的购买能力属于后续计划。",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 发布 ChatGPT Wallet，支持经用户确认的代理支付",
+      "summary_source": "https://openai.com/index/introducing-chatgpt-wallet",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-13",
+      "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+      "summary": "NVIDIA 汇总医疗机构和初创公司的应用，涵盖病历信息提取、临床试验匹配及院内外照护支持。其中 Synapsis AI 从非结构化记录中整理可追溯的临床线索，并在医院自身计算环境中运行。文章强调由医护人员核实证据并作出决定。这是厂商展示的工作流实践，不能直接视为所有应用均已证实改善临床结局。",
+      "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 分享 AI 辅助病历梳理与医疗团队协作的案例",
+      "summary_source": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-13",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "summary": "OpenAI 的客户案例介绍，Shield 的 Forge 平台使用 GPT-6 Astra 读取界面、点击和输入，在缺少 API 的旧式 IT 门户中完成受支持任务。技术人员设定可自动执行的动作及需审批的环节；电话、现场服务和远程桌面工作仍需人工参与。案例反映特定公司的部署经验，其速度与可靠性描述不能直接推广到所有旧系统。",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Shield 用 OpenAI 代理协助 IT 技术人员操作旧式门户",
+      "summary_source": "https://openai.com/business/customer-stories/shield",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-10",
+      "title": "Opening the datasets behind our AI weather models",
+      "summary": "DeepMind 发布 SatWeave 和 PARDIG，开放历史档案及实时数据流，支持天气、水文和气候应用。前者将地球静止卫星影像拼接为全球观测，后者提供基于 AI 的全球降水数据；两者也用于 WeatherNext 3 的相关能力。此次动态聚焦数据开放，与此前模型发布不同；这则11月10日的未推送信息作为补充收录。",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Google DeepMind 开放卫星拼接与全球降水数据集",
+      "summary_source": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Google DeepMind",
+      "kind": "产品发布",
+      "published": "2026-11-09",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "summary": "DeepMind 介绍新版视觉—语言—动作模型，重点提升操作技能覆盖、可靠性及物理安全可控性。官方称评测覆盖200多种任务，并在奔驰产线的概念验证中报告 Apollo 2 人形机器人分拣装箱成功率为96%。这些结果来自特定测试与试点，不能视为所有环境均达到同样表现。该产品正向机器人合作伙伴推出，本条补充收录11月9日的未推送动态。",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "source_feed": "https://deepmind.google/blog/rss.xml",
+      "title_zh": "Gemini Robotics 2.5 推进机器人精细操作与技能学习",
+      "summary_source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-09",
+      "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "summary": "在与韩国科学技术信息通信部共同举办的论坛上，NVIDIA 宣布投资互连技术企业 Point2，并计划进一步投资 Motif Technologies、RLWRLD 和 Upstage，覆盖模型、机器人及企业 AI。已宣布的投资与拟议投资应区分，文章未将全部计划描述为已经完成。这则11月9日发布的未推送公司动态作为补充收录。",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 宣布韩国 AI 初创企业投资及后续投资计划",
+      "summary_source": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 64
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 122
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 93
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 53
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 139
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 79
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 3
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 12
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1995
+}

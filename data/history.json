@@ -2155,6 +2155,42 @@
         "url:https://doi.org/10.1021/acs.analchem.5c07715"
       ],
       "doi": "10.1021/acs.analchem.5c07715"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Large Language Models' Ability to Assess Main Concepts in Story Retelling: A Proof-of-Concept Comparison of Human Versus Machine Ratings",
+      "url": "https://doi.org/10.1044/2025_ajslp-24-00400",
+      "keys": [
+        "doi:10.1044/2025_ajslp-24-00400",
+        "title:largelanguagemodelsabilitytoassessmainconceptsinstoryretellingaproofofconceptcomparisonofhumanversusmachineratings",
+        "title:大语言模型能否评估故事复述中的关键概念",
+        "url:https://doi.org/10.1044/2025_ajslp-24-00400"
+      ],
+      "doi": "10.1044/2025_ajslp-24-00400"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "A large-scale comparison of divergent creativity in humans and large language models",
+      "url": "https://doi.org/10.1038/s41562-025-02331-1",
+      "keys": [
+        "doi:10.1038/s41562-025-02331-1",
+        "title:alargescalecomparisonofdivergentcreativityinhumansandlargelanguagemodels",
+        "title:大规模比较人类与大语言模型的发散性创造力",
+        "url:https://doi.org/10.1038/s41562-025-02331-1"
+      ],
+      "doi": "10.1038/s41562-025-02331-1"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Left Atrial Appendage Closure or Anticoagulation for Atrial Fibrillation",
+      "url": "https://doi.org/10.1056/nejmoa2517213",
+      "keys": [
+        "doi:10.1056/nejmoa2517213",
+        "title:leftatrialappendageclosureoranticoagulationforatrialfibrillation",
+        "title:房颤患者左心耳封堵与口服抗凝治疗的随机比较",
+        "url:https://doi.org/10.1056/nejmoa2517213"
+      ],
+      "doi": "10.1056/nejmoa2517213"
     }
   ],
   "news": [
@@ -4652,6 +4688,72 @@
         "title:nvidia在corl展示gr00t2仿真工具与机器人训练进展",
         "title:practicemakespreciseatcorlnvidiaandpartnersrevealhowrobotsrehearsedelicateworkinsimulation",
         "url:https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Introducing ChatGPT Wallet",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet",
+      "keys": [
+        "title:introducingchatgptwallet",
+        "title:openai发布chatgptwallet支持经用户确认的代理支付",
+        "url:https://openai.com/index/introducing-chatgpt-wallet"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "How AI Is Helping Care Teams Get Patients the Right Care, Sooner",
+      "url": "https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams/",
+      "keys": [
+        "title:howaiishelpingcareteamsgetpatientstherightcaresooner",
+        "title:nvidia分享ai辅助病历梳理与医疗团队协作的案例",
+        "url:https://blogs.nvidia.com/blog/how-ai-is-helping-care-teams"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+      "url": "https://openai.com/business/customer-stories/shield",
+      "keys": [
+        "title:shieldhelpstechnicianshandofflegacyportalworkwithopenai",
+        "title:shield用openai代理协助it技术人员操作旧式门户",
+        "url:https://openai.com/business/customer-stories/shield"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Opening the datasets behind our AI weather models",
+      "url": "https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models/",
+      "keys": [
+        "title:googledeepmind开放卫星拼接与全球降水数据集",
+        "title:openingthedatasetsbehindouraiweathermodels",
+        "url:https://deepmind.google/blog/opening-the-datasets-behind-our-ai-weather-models"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "keys": [
+        "title:geminirobotics25acceleratesrealworldgeneraldexterity",
+        "title:geminirobotics25推进机器人精细操作与技能学习",
+        "url:https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-14",
+      "title": "NVIDIA Announces New Planned Investments in Korean Startups at the MSIT-NVIDIA AI Startup Partnership Forum",
+      "url": "https://blogs.nvidia.com/blog/korean-startup-investments-msit/",
+      "keys": [
+        "title:nvidiaannouncesnewplannedinvestmentsinkoreanstartupsatthemsitnvidiaaistartuppartnershipforum",
+        "title:nvidia宣布韩国ai初创企业投资及后续投资计划",
+        "url:https://blogs.nvidia.com/blog/korean-startup-investments-msit"
       ],
       "company": "NVIDIA"
     }
