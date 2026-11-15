@@ -318,7 +318,7 @@ def relevant(p, slot):
     # These title routes require observed human comparisons, not synthetic agents.
     observed_comparison = (OBSERVED_HUMANS.search(conversation_source)
                            and human_research_source(conversation_source))
-    human_affect = re.search(r'\bhuman (?:well.being|happiness|affects?)\b',title,re.I) and observed_comparison
+    human_affect = re.search(r'\bhuman (?:well[ -]?being|happiness|affects?)\b',title,re.I) and observed_comparison
     human_imitation = re.search(r'\bTuring.like tests?\b',title,re.I) and observed_comparison
     # Language prediction can compare models with human ratings and gaze.
     # This route needs observed people, not just a language-model benchmark.
@@ -339,6 +339,16 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Speech-based cognitive assessment models people's mental functioning.
+        # Require observed recordings and predictive LLM features, not a model
+        # that only writes a report or a synthetic-patient benchmark.
+        cognitive_speech = (re.search(r'\bcognitive decline detection\b',title,re.I)
+                            and observed_comparison
+                            and re.search(r'\bspeech (?:samples|recordings|data)\b',conversation_source,re.I)
+                            and re.search(r'\b(?:extract\w*|deriv\w*)\b',conversation_source,re.I)
+                            and re.search(r'\bfeatures\b',conversation_source,re.I)
+                            and re.search(r'\bpredict\w* cognitive scores\b',conversation_source,re.I))
+        if cognitive_speech and LLM.search(text):return True
         # Color-concept associations model human perceptual knowledge. Require
         # actual human ratings and an estimated association, not color naming alone.
         human_color_concepts = (re.search(r'\bhuman colou?r.concept associations?\b',title,re.I)

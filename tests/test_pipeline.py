@@ -29,6 +29,30 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_cognitive_speech_requires_observed_people_and_predictive_features(self):
+        p=paper('10.1/speech','Cognitive decline detection with large language models',
+                abstract='We extract features from speech recordings of human participants to predict cognitive scores using GPT-4o.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Cognitive decline detection',abstract=p['abstract'].replace('GPT-4o','word counts')),1))
+        for abstract in ('We extract features from simulated human participants and speech recordings to predict cognitive scores using GPT-4o.',
+                         'We extract features from speech recordings to predict cognitive scores using GPT-4o.',
+                         'Human participants annotate an unrelated language-model benchmark.',
+                         'We generate clinical reports based on model outputs and extract features from speech recordings of human participants to predict cognitive scores.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_human_wellbeing_spellings_keep_observation_ai_and_influence_gates(self):
+        for spelling in ('wellbeing','well-being','well being'):
+            p=paper('10.1/wellbeing','Machine learning in the prediction of human '+spelling,
+                    abstract='Human respondents reported life satisfaction in surveys; tree-based machine learning predicts their wellbeing.',citations=5)
+            self.assertTrue(relevant(p,2))
+            self.assertFalse(relevant(p,1))
+            self.assertFalse(relevant(dict(p,citations=4),2))
+            self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+            self.assertFalse(relevant(dict(p,title='Prediction of human '+spelling,abstract='Human respondents reported life satisfaction in surveys.'),2))
+            self.assertFalse(relevant(dict(p,abstract='Machine learning simulates human respondents reporting life satisfaction.'),2))
+            self.assertFalse(relevant(dict(p,abstract='Machine learning predicts model-generated wellbeing without observations from people.'),2))
+
     def test_story_assessment_requires_observed_human_ratings_and_llm(self):
         p=paper('10.1/story','Language models assess main concepts in story retelling',
                 abstract='We compare model scores with human ratings of stories retold by human participants with aphasia.')

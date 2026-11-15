@@ -496,5 +496,21 @@
     "checked_on": "2026-11-14",
     "discover": true,
     "notes": "This study compares observed human data from 9,198 people with 215,542 large language model observations on the Divergent Association Task. The task measures semantic divergence in generated words. The Nature Human Behaviour abstract reports slightly higher mean human performance, greater human variability and a stronger human upper tail. The authors' institution confirms the task and describes limitations of persona prompts and temperature changes. These task-based comparisons do not measure every aspect of creativity or establish that model and human cognitive mechanisms are identical. The journal article was first published on 23 December 2025; the institution's May 2026 news date is not the publication date."
+  },
+  "10.3389/fninf.2025.1679664": {
+    "doi": "10.3389/fninf.2025.1679664",
+    "title": "Enhancing dementia and cognitive decline detection with large language models and speech representation learning",
+    "source": "https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2025.1679664/full",
+    "checked_on": "2026-11-15",
+    "discover": true,
+    "notes": "The study uses speech recordings from human participants to model cognitive decline. GPT-4o large language models extract linguistic features from transcribed speech; these features are combined with HuBERT and acoustic representations to predict cognitive scores and classify dementia, mild cognitive impairment and controls. The PROCESS split contains 157 training participants and 40 independent test participants. The reported regression RMSE is 2.7775; classification macro-F1 is 0.5521, only marginally above the baseline. These limited benchmark results do not establish clinical effectiveness. The publisher labels this Original Research, first published on 5 December 2025."
+  },
+  "10.1038/s41598-024-84137-1": {
+    "doi": "10.1038/s41598-024-84137-1",
+    "title": "Machine learning in the prediction of human wellbeing",
+    "source": "https://www.nature.com/articles/s41598-024-84137-1",
+    "checked_on": "2026-11-15",
+    "discover": true,
+    "notes": "The authors analyze survey data from human respondents in Germany, the United Kingdom and the United States between 2010 and 2018. They use tree-based machine learning, including random forests and gradient boosting, to predict self-reported life satisfaction and compare held-out predictive performance with ordinary least squares. Machine learning improves prediction moderately in absolute terms, with higher computational cost. Health and interpersonal relationships are important predictors. The observational associations and feature importance do not identify causal effects. This original research article was first published on 10 January 2025."
   }
 }

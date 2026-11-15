@@ -1749,5 +1749,44 @@
     "summary": "DeepMind 介绍新版视觉—语言—动作模型，重点提升操作技能覆盖、可靠性及物理安全可控性。官方称评测覆盖200多种任务，并在奔驰产线的概念验证中报告 Apollo 2 人形机器人分拣装箱成功率为96%。这些结果来自特定测试与试点，不能视为所有环境均达到同样表现。该产品正向机器人合作伙伴推出，本条补充收录11月9日的未推送动态。",
     "summary_source": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
     "kind": "产品发布"
+  },
+  "doi:10.3389/fninf.2025.1679664": {
+    "title_zh": "结合大语言模型与语音表征识别认知衰退",
+    "summary": "研究将 GPT-4o 从真实语音转写中提取的语言特征，与声学特征及 HuBERT 表征结合，预测认知评分并区分痴呆、轻度认知障碍和对照组。157名参与者用于训练，另40名用于独立测试；评分预测误差较基线降低，而三分类的提升较小。这是有限样本上的方法验证，尚不能证明临床筛查有效性。",
+    "summary_source": "https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2025.1679664/full"
+  },
+  "doi:10.1038/s41598-024-84137-1": {
+    "title_zh": "用机器学习预测人的主观幸福感",
+    "summary": "研究利用德国、英国和美国2010至2018年的调查数据，以随机森林、梯度提升等方法预测受访者自报的生活满意度。相较常规线性回归，树模型在留出数据上有适度改进，但计算成本更高；健康与人际关系是重要预测因素。这些结果描述关联和预测能力，不能据此认定哪些因素必然提高幸福感。",
+    "summary_source": "https://www.nature.com/articles/s41598-024-84137-1"
+  },
+  "doi:10.1056/nejmoa2514663": {
+    "title_zh": "特立妥单抗联合达雷妥尤单抗治疗复发或难治性多发性骨髓瘤",
+    "summary": "MajesTEC-3三期试验将587名接受过一至三线治疗的患者随机分组。中位随访34.5个月后，特立妥单抗联合达雷妥尤单抗组的估计36个月无进展生存率为83.4%，对照联合方案组为29.7%。两组严重不良事件发生率分别为70.7%和62.4%。结果支持特定患者群体的疾病控制获益，同时需结合安全性评估，不能推广为所有患者均适用。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41363801/"
+  },
+  "url:https://openai.com/index/children-first-declaration": {
+    "title_zh": "OpenAI 承诺投入200万美元支持 AI 与儿童安全研究",
+    "summary": "OpenAI 宣布投入200万美元，支持人工智能与儿童安全相关研究，并推动建立共同使用的工具，衡量 AI 为年轻人带来的风险与机会。这是研究资助承诺，尚不代表相关工具已经完成，也不意味着儿童使用 AI 的安全性已得到全面验证。",
+    "summary_source": "https://openai.com/index/children-first-declaration",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem": {
+    "title_zh": "NVIDIA 与韩国企业推进工业仿真、机器人和自动驾驶",
+    "summary": "NVIDIA 介绍与三星、Kakao Mobility 和 LG 的物理 AI 合作：三星将 GPU 与 AI 用于半导体及热力学仿真；Kakao Mobility 计划结合车载计算和安全工具开发四级自动驾驶；LG 已在制造环境演示机器人操作。各项目所处阶段不同，仿真加速与试点演示不能等同于相关系统已全面投产。本条补充收录11月9日的未推送动态。",
+    "summary_source": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/korea-secure-agentic-ai": {
+    "title_zh": "韩国企业探索安全代理，LG 开放 K-EXAONE-2.5 接口",
+    "summary": "NVIDIA 介绍韩国企业的代理应用与模型进展：现代汽车集团探索 NemoClaw 与 OpenShell，AIM Intelligence 将代理控制平台与沙盒、访问控制结合；LG AI Research 开放使用 Nemotron 数据训练的 K-EXAONE-2.5 接口。其中韩国人物画像数据集包含700万个合成画像，并非700万名真人记录。部分企业部署仍处于探索或概念验证阶段。本条补充收录11月9日的未推送动态。",
+    "summary_source": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/business/customer-stories/holidays-extras-codex": {
+    "title_zh": "Holiday Extras 分享用 Codex 重建旅行应用的经验",
+    "summary": "OpenAI 的客户案例介绍，Holiday Extras 在全公司使用 ChatGPT Enterprise 的基础上，把 Codex 引入面向客户的应用和内部系统开发。团队称，两周内完成了可运行的应用重建，并由熟悉业务的人员与工程师协作。案例报告预订转化改善，但属于企业自述的实施结果，不能把全部变化直接归因于工具，也不能推广为所有项目的开发周期。",
+    "summary_source": "https://openai.com/business/customer-stories/holidays-extras-codex",
+    "kind": "研究 / 公司动态"
   }
 }
