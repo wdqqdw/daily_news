@@ -2191,6 +2191,42 @@
         "url:https://doi.org/10.1056/nejmoa2517213"
       ],
       "doi": "10.1056/nejmoa2517213"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Enhancing dementia and cognitive decline detection with large language models and speech representation learning",
+      "url": "https://doi.org/10.3389/fninf.2025.1679664",
+      "keys": [
+        "doi:10.3389/fninf.2025.1679664",
+        "title:enhancingdementiaandcognitivedeclinedetectionwithlargelanguagemodelsandspeechrepresentationlearning",
+        "title:结合大语言模型与语音表征识别认知衰退",
+        "url:https://doi.org/10.3389/fninf.2025.1679664"
+      ],
+      "doi": "10.3389/fninf.2025.1679664"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Machine learning in the prediction of human wellbeing",
+      "url": "https://doi.org/10.1038/s41598-024-84137-1",
+      "keys": [
+        "doi:10.1038/s41598-024-84137-1",
+        "title:machinelearninginthepredictionofhumanwellbeing",
+        "title:用机器学习预测人的主观幸福感",
+        "url:https://doi.org/10.1038/s41598-024-84137-1"
+      ],
+      "doi": "10.1038/s41598-024-84137-1"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Teclistamab plus Daratumumab in Relapsed or Refractory Multiple Myeloma",
+      "url": "https://doi.org/10.1056/nejmoa2514663",
+      "keys": [
+        "doi:10.1056/nejmoa2514663",
+        "title:teclistamabplusdaratumumabinrelapsedorrefractorymultiplemyeloma",
+        "title:特立妥单抗联合达雷妥尤单抗治疗复发或难治性多发性骨髓瘤",
+        "url:https://doi.org/10.1056/nejmoa2514663"
+      ],
+      "doi": "10.1056/nejmoa2514663"
     }
   ],
   "news": [
@@ -4754,6 +4790,39 @@
         "title:nvidiaannouncesnewplannedinvestmentsinkoreanstartupsatthemsitnvidiaaistartuppartnershipforum",
         "title:nvidia宣布韩国ai初创企业投资及后续投资计划",
         "url:https://blogs.nvidia.com/blog/korean-startup-investments-msit"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Supporting research on AI and children’s safety",
+      "url": "https://openai.com/index/children-first-declaration",
+      "keys": [
+        "title:openai承诺投入200万美元支持ai与儿童安全研究",
+        "title:supportingresearchonaiandchildrenssafety",
+        "url:https://openai.com/index/children-first-declaration"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Korea Advances Physical AI Across Industries With NVIDIA",
+      "url": "https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem/",
+      "keys": [
+        "title:koreaadvancesphysicalaiacrossindustrieswithnvidia",
+        "title:nvidia与韩国企业推进工业仿真机器人和自动驾驶",
+        "url:https://blogs.nvidia.com/blog/korea-physical-ai-ecosystem"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-15",
+      "title": "Korea’s AI Ecosystem Advances and Secures Agentic AI With NVIDIA",
+      "url": "https://blogs.nvidia.com/blog/korea-secure-agentic-ai/",
+      "keys": [
+        "title:koreasaiecosystemadvancesandsecuresagenticaiwithnvidia",
+        "title:韩国企业探索安全代理lg开放kexaone25接口",
+        "url:https://blogs.nvidia.com/blog/korea-secure-agentic-ai"
       ],
       "company": "NVIDIA"
     }
