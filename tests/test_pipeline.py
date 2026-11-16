@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_therapist_alignment_requires_observed_transcript_comparison(self):
+        p=paper('10.1/therapy','Alignment of language model responses with human therapists',
+                abstract='We compare recorded human responses from therapist transcripts with GPT-4o outputs based on conversation context.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Alignment of responses with human therapists',abstract=p['abstract'].replace('GPT-4o','scripted')),1))
+        for abstract in ('We compare transcripts from simulated human participants with GPT-4o outputs based on conversation context.',
+                         'Human participants annotate an unrelated language model benchmark.',
+                         'We compare GPT-4o outputs with synthetic therapist transcripts based on conversation context.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_medical_student_decisions_require_real_human_experiment(self):
+        p=paper('10.1/education','Language models improve clinical decision making of medical students',
+                abstract='Human participants were randomly assigned to feedback conditions using ChatGPT, and raters evaluated human decisions.',citations=5)
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in ('Language models simulate human participants making human decisions.',
+                         'Human participants rate an unrelated model benchmark.',
+                         'This review examines human participants randomly assigned to feedback conditions to evaluate human decisions.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_cognitive_speech_requires_observed_people_and_predictive_features(self):
         p=paper('10.1/speech','Cognitive decline detection with large language models',
                 abstract='We extract features from speech recordings of human participants to predict cognitive scores using GPT-4o.')

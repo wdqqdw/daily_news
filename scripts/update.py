@@ -79,7 +79,9 @@ def human_research_source(text):
     # Observed online debate records also contain human beliefs and choices;
     # these studies need not call the people in their corpus "participants".
     user_debate_data = re.search(r'\b(?:online )?user (?:debate|discussion) data\b',text,re.I)
-    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or gathered_human_benchmark or sampled_human_norms or user_debate_data) and not MODEL_SUBJECTS.search(text))
+    recorded_human_dialogue = (re.search(r'\brecorded human responses\b',text,re.I)
+                               and re.search(r'\btranscripts\b',text,re.I))
+    return bool((HUMAN_DATA.search(text) or sampled_self_reports or human_dataset or gathered_human_benchmark or sampled_human_norms or user_debate_data or recorded_human_dialogue) and not MODEL_SUBJECTS.search(text))
 
 def clean(text):
     return re.sub(r'\s+', ' ', html.unescape(re.sub(r'</?[A-Za-z][^>]*>|<!--.*?-->', ' ', text or ''))).strip()
@@ -339,6 +341,16 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Recorded therapist responses provide human conversational behaviour.
+        # Require a transcript-based comparison, not synthetic therapist agents
+        # or a claim that response similarity establishes treatment efficacy.
+        therapist_alignment = (re.search(r'\balignment\b',title,re.I)
+                               and re.search(r'\bhuman therapists\b',title,re.I)
+                               and observed_comparison
+                               and re.search(r'\btranscripts\b',conversation_source,re.I)
+                               and re.search(r'\b(?:compar\w*|similarity)\b',conversation_source,re.I)
+                               and re.search(r'\bconversation context\b',conversation_source,re.I))
+        if therapist_alignment and LLM.search(text):return True
         # Speech-based cognitive assessment models people's mental functioning.
         # Require observed recordings and predictive LLM features, not a model
         # that only writes a report or a synthetic-patient benchmark.
@@ -510,7 +522,7 @@ def relevant(p, slot):
                               and re.search(r'\b(?:psychometric|validation|validity)\b',judgement_source,re.I))
         # Decision-support experiments study how people actually use AI advice.
         # Model-only medical benchmarks and simulated users are insufficient.
-        human_decision_support = (re.search(r'\b(?:decision support|medical assistants? for (?:the )?general public)\b',title,re.I)
+        human_decision_support = (re.search(r'\b(?:decision support|medical assistants? for (?:the )?general public|clinical decision.making of medical students)\b',title,re.I)
                                   and OBSERVED_HUMANS.search(judgement_source)
                                   and human_research_source(judgement_source)
                                   and re.search(r'\b(?:randomi[sz]ed|randomly assigned)\b',judgement_source,re.I)

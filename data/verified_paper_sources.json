@@ -512,5 +512,21 @@
     "checked_on": "2026-11-15",
     "discover": true,
     "notes": "The authors analyze survey data from human respondents in Germany, the United Kingdom and the United States between 2010 and 2018. They use tree-based machine learning, including random forests and gradient boosting, to predict self-reported life satisfaction and compare held-out predictive performance with ordinary least squares. Machine learning improves prediction moderately in absolute terms, with higher computational cost. Health and interpersonal relationships are important predictors. The observational associations and feature importance do not identify causal effects. This original research article was first published on 10 January 2025."
+  },
+  "10.1001/jamanetworkopen.2026.2750": {
+    "doi": "10.1001/jamanetworkopen.2026.2750",
+    "title": "Alignment of Large Language Model Responses With Human Therapists in Motivational Interviewing",
+    "source": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2846839",
+    "checked_on": "2026-11-16",
+    "discover": true,
+    "notes": "The study compares recorded human responses in transcripts from public motivational-interviewing demonstration videos with GPT-4o large language model responses generated using the preceding conversation context. The dataset contains 154 high-fidelity sessions and 3706 therapist turns, with Motivational Interviewing Treatment Integrity annotation. Automated semantic similarity and contextual appropriateness measure different aspects of alignment; longer conversations show modest declines. These are recorded human therapist demonstrations, not model-generated human comparators. Response alignment does not establish equivalent clinical skill, therapeutic effectiveness or patient benefit. The original research article was first published on 23 March 2026."
+  },
+  "10.1186/s12909-024-06399-7": {
+    "doi": "10.1186/s12909-024-06399-7",
+    "title": "Large language models improve clinical decision making of medical students through patient simulation and structured feedback: a randomized controlled trial",
+    "source": "https://link.springer.com/article/10.1186/s12909-024-06399-7",
+    "checked_on": "2026-11-16",
+    "discover": true,
+    "notes": "This randomized controlled experiment studied human participants: 21 medical students using ChatGPT 3.5 to practise history-taking with simulated patients. The students were randomly assigned to receive structured AI feedback or complete the same simulated conversations without additional feedback. Two raters evaluated human decisions and clinical reasoning with the CRI-HTI inventory. After four training cases, the feedback group had higher scores than controls. The small, single-centre study concerns observed human learning, not model-only medical test performance; it does not establish better patient outcomes or long-term retention. This original research was first published on 28 November 2024."
   }
 }

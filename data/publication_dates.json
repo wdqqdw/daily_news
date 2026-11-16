@@ -110,5 +110,10 @@
     "published": "2025-10-29",
     "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2508668",
     "reason": "Publisher history and PubMed identify this first online publication date; Crossref supplied the later issue date."
+  },
+  "10.1145/3765895": {
+    "published": "2025-09-03",
+    "source": "https://doi.org/10.1145/3765895",
+    "reason": "ACM 出版页面注明 Online AM: 03 September 2025；2026年11月15日的题录卷期日期不是首次上线日期。"
   }
 }

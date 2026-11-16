@@ -1788,5 +1788,50 @@
     "summary": "OpenAI 的客户案例介绍，Holiday Extras 在全公司使用 ChatGPT Enterprise 的基础上，把 Codex 引入面向客户的应用和内部系统开发。团队称，两周内完成了可运行的应用重建，并由熟悉业务的人员与工程师协作。案例报告预订转化改善，但属于企业自述的实施结果，不能把全部变化直接归因于工具，也不能推广为所有项目的开发周期。",
     "summary_source": "https://openai.com/business/customer-stories/holidays-extras-codex",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1001/jamanetworkopen.2026.2750": {
+    "title_zh": "大语言模型的会谈回应与真人治疗师有多相似？",
+    "summary": "研究从154段真人动机式访谈示范中提取3706个治疗师话轮，让 GPT-4o 根据前文生成回应。自动指标显示，模型与真人措辞、语义的相似程度有限，上下文适切性评分相对较高；长对话中的一致性略有下降。不同指标衡量的内容不同，这些示范会谈结果不能证明模型具有同等治疗能力或临床疗效。",
+    "summary_source": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2846839"
+  },
+  "doi:10.1186/s12909-024-06399-7": {
+    "title_zh": "结构化 AI 反馈能否改善医学生的临床决策训练？",
+    "summary": "这项单中心随机实验纳入21名医学生，两组均与 ChatGPT 3.5 模拟的患者练习问诊，仅一组额外获得结构化反馈。四次练习后，反馈组的临床推理量表得分高于对照组，其中建立情境和获取信息有所改善。样本较小，结果主要反映短期训练表现，尚不能推断长期保持效果或真实患者获益。",
+    "summary_source": "https://link.springer.com/article/10.1186/s12909-024-06399-7"
+  },
+  "doi:10.1093/nar/gkaf1226": {
+    "title_zh": "AlphaFold 蛋白质结构数据库更新：扩展覆盖并整合结构注释",
+    "summary": "这篇期刊论文介绍 AlphaFold 数据库对齐 UniProt 2025_03 的更新，补充蛋白质异构体预测及底层多序列比对数据，并将结构域注释接入交互式三维查看器。更新有助于研究者追踪序列、结构与功能之间的关系，数据可经网页和接口获取。数据库内容主要是计算预测，使用时仍需结合置信度与实验验证。",
+    "summary_source": "https://doi.org/10.1093/nar/gkaf1226"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-day-seoul-wrapup": {
+    "title_zh": "首尔 AI Day 汇总开发者培训与社区活动成果",
+    "summary": "NVIDIA 回顾为期两天的首尔 AI Day：活动吸引超过2000名参与者，超过500名开发者参加全天培训和韩语认证考试。社区环节展示韩语与韩国文化相关代理项目，创业活动则让10家企业展示机器人等应用。此次报道重点是培训、社区交流与项目展示，并非新的模型性能评测。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4": {
+    "title_zh": "Qwen Code 0.27.4 更新目录授权、消息通道和代理控制",
+    "summary": "该版本为托管代理增加临时本地目录授权和交互式网页终端，支持向飞书、企业微信发送结果，并将较长回复按顺序分段发送。更新还加强高风险操作的明确授权检查，恢复命令行记忆管理，并修复终端、会话及依赖相关问题。这是开发工具版本更新，不属于论文推送。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4",
+    "kind": "产品发布"
+  },
+  "url:https://openai.com/index/step-toward-defining-the-standard-model": {
+    "title_zh": "OpenAI 分享 AI 协助构造标准模型格点定义的研究进展",
+    "summary": "物理学家 Nathaniel Craig 在 OpenAI 科学博客介绍一项标准模型非微扰格点定义的候选方案，并称 GPT-6 Astra 协助发展了构造和证明细节。对应成果此前以10月预印本发布，本条收录的是11月15日的研究者解读。它仍是待进一步检验的候选方案，不能表述为标准模型的全部数学基础问题已经解决。",
+    "summary_source": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/index/our-new-blog-for-science": {
+    "title_zh": "OpenAI 开设科学博客，分享 AI 科研方法与研究者经验",
+    "summary": "OpenAI 宣布设立面向科学家和学术研究者的新博客，计划发布跨学科研究进展、实际方法和研究者亲历记录。内容将涵盖科学计算、数据分析、文献探索和实验规划，也会说明如何核查模型产出及方法的局限。此次动态是科研交流栏目的上线，具体成果仍需结合各项原始研究判断。",
+    "summary_source": "https://openai.com/index/our-new-blog-for-science",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration": {
+    "title_zh": "NVIDIA 与韩国扩大本土 AI 基础设施及人才合作",
+    "summary": "NVIDIA 与韩国科学技术信息通信部介绍从芯片、数据中心到模型和人才的合作，支持本土 NPU、XPU 企业探索接入 NVLink Fusion，并通过培训与认证提升 GPU 使用能力。合作还计划用 Dynamo 优化韩国模型推理，并与 SK Telecom、Rebellions 推进相关基础设施。本条补充收录11月9日的未推送信息，部分合作仍处于推进阶段。",
+    "summary_source": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
+    "kind": "研究 / 公司动态"
   }
 }
