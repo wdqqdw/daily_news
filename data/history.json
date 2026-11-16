@@ -2227,6 +2227,42 @@
         "url:https://doi.org/10.1056/nejmoa2514663"
       ],
       "doi": "10.1056/nejmoa2514663"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "Alignment of Large Language Model Responses With Human Therapists in Motivational Interviewing",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2026.2750",
+      "keys": [
+        "doi:10.1001/jamanetworkopen.2026.2750",
+        "title:alignmentoflargelanguagemodelresponseswithhumantherapistsinmotivationalinterviewing",
+        "title:大语言模型的会谈回应与真人治疗师有多相似",
+        "url:https://doi.org/10.1001/jamanetworkopen.2026.2750"
+      ],
+      "doi": "10.1001/jamanetworkopen.2026.2750"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "Large language models improve clinical decision making of medical students through patient simulation and structured feedback: a randomized controlled trial",
+      "url": "https://doi.org/10.1186/s12909-024-06399-7",
+      "keys": [
+        "doi:10.1186/s12909-024-06399-7",
+        "title:largelanguagemodelsimproveclinicaldecisionmakingofmedicalstudentsthroughpatientsimulationandstructuredfeedbackarandomizedcontrolledtrial",
+        "title:结构化ai反馈能否改善医学生的临床决策训练",
+        "url:https://doi.org/10.1186/s12909-024-06399-7"
+      ],
+      "doi": "10.1186/s12909-024-06399-7"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "AlphaFold Protein Structure Database 2025: a redesigned interface and updated structural coverage",
+      "url": "https://doi.org/10.1093/nar/gkaf1226",
+      "keys": [
+        "doi:10.1093/nar/gkaf1226",
+        "title:alphafoldproteinstructuredatabase2025aredesignedinterfaceandupdatedstructuralcoverage",
+        "title:alphafold蛋白质结构数据库更新扩展覆盖并整合结构注释",
+        "url:https://doi.org/10.1093/nar/gkaf1226"
+      ],
+      "doi": "10.1093/nar/gkaf1226"
     }
   ],
   "news": [
@@ -4823,6 +4859,61 @@
         "title:koreasaiecosystemadvancesandsecuresagenticaiwithnvidia",
         "title:韩国企业探索安全代理lg开放kexaone25接口",
         "url:https://blogs.nvidia.com/blog/korea-secure-agentic-ai"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "AI Day Seoul Brings Together Korea’s Industry Leaders, Startups and Developer Communities",
+      "url": "https://blogs.nvidia.com/blog/ai-day-seoul-wrapup/",
+      "keys": [
+        "title:aidayseoulbringstogetherkoreasindustryleadersstartupsanddevelopercommunities",
+        "title:首尔aiday汇总开发者培训与社区活动成果",
+        "url:https://blogs.nvidia.com/blog/ai-day-seoul-wrapup"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "Qwen Code · Release v0.27.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4",
+      "keys": [
+        "title:qwencode0274更新目录授权消息通道和代理控制",
+        "title:qwencodereleasev0274",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.27.4"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "A step toward defining the Standard Model on a lattice",
+      "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+      "keys": [
+        "title:asteptowarddefiningthestandardmodelonalattice",
+        "title:openai分享ai协助构造标准模型格点定义的研究进展",
+        "url:https://openai.com/index/step-toward-defining-the-standard-model"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "Our new blog for science",
+      "url": "https://openai.com/index/our-new-blog-for-science",
+      "keys": [
+        "title:openai开设科学博客分享ai科研方法与研究者经验",
+        "title:ournewblogforscience",
+        "url:https://openai.com/index/our-new-blog-for-science"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-16",
+      "title": "From Chips to Skills, NVIDIA and Korea Expand Sovereign AI Collaboration",
+      "url": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
+      "keys": [
+        "title:fromchipstoskillsnvidiaandkoreaexpandsovereignaicollaboration",
+        "title:nvidia与韩国扩大本土ai基础设施及人才合作",
+        "url:https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration"
       ],
       "company": "NVIDIA"
     }
