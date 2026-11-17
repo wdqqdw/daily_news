@@ -2263,6 +2263,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1226"
       ],
       "doi": "10.1093/nar/gkaf1226"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "Evaluating the ability of large Language models to predict human social decisions",
+      "url": "https://doi.org/10.1038/s41598-025-17188-7",
+      "keys": [
+        "doi:10.1038/s41598-025-17188-7",
+        "title:evaluatingtheabilityoflargelanguagemodelstopredicthumansocialdecisions",
+        "title:大语言模型能否准确预测人的社会决策",
+        "url:https://doi.org/10.1038/s41598-025-17188-7"
+      ],
+      "doi": "10.1038/s41598-025-17188-7"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "Humans learn generalizable representations through efficient coding",
+      "url": "https://doi.org/10.1038/s41467-025-58848-6",
+      "keys": [
+        "doi:10.1038/s41467-025-58848-6",
+        "title:humanslearngeneralizablerepresentationsthroughefficientcoding",
+        "title:人类如何通过高效编码学会可泛化的表征",
+        "url:https://doi.org/10.1038/s41467-025-58848-6"
+      ],
+      "doi": "10.1038/s41467-025-58848-6"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "Database resources of the National Genomics Data Center, China National Center for Bioinformation in 2026",
+      "url": "https://doi.org/10.1093/nar/gkaf1172",
+      "keys": [
+        "doi:10.1093/nar/gkaf1172",
+        "title:databaseresourcesofthenationalgenomicsdatacenterchinanationalcenterforbioinformationin2026",
+        "title:国家基因组科学数据中心发布2026版数据库资源进展",
+        "url:https://doi.org/10.1093/nar/gkaf1172"
+      ],
+      "doi": "10.1093/nar/gkaf1172"
     }
   ],
   "news": [
@@ -4914,6 +4950,39 @@
         "title:fromchipstoskillsnvidiaandkoreaexpandsovereignaicollaboration",
         "title:nvidia与韩国扩大本土ai基础设施及人才合作",
         "url:https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+      "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+      "keys": [
+        "title:nvidiadgxsparkdeveloperkitturnsadeskintoasupercomputinglab",
+        "title:nvidia推出四节点dgxspark高性能计算开发套件",
+        "url:https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "keys": [
+        "title:tokeneconomizerlearningfromexperiencetomakeaicodingagentsmoreefficient",
+        "title:tokeneconomizer利用历史会话减少编程代理开销",
+        "url:https://microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-17",
+      "title": "How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+      "url": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+      "keys": [
+        "title:howtheworldsmostadvancedaiinfrastructuresupplychaininventsthefuture",
+        "title:nvidia分享ai基础设施从设计走向量产的协作经验",
+        "url:https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain"
       ],
       "company": "NVIDIA"
     }

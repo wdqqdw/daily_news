@@ -1,0 +1,316 @@
+{
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T09:49:58+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Evaluating the ability of large Language models to predict human social decisions",
+      "doi": "10.1038/s41598-025-17188-7",
+      "url": "https://doi.org/10.1038/s41598-025-17188-7",
+      "journal": "Scientific Reports",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-09-02",
+      "authors": "XIAO et al.",
+      "citations": 6,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-17188-7",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-17；来源：Crossref；引用数 6，距发表 441 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将 GPT-3.5、GPT-4 在51种情境中的预测，与既有研究中2104名参与者的选择比较，并用 GPT-4o 检验亲属及群体条件。模型未稳定重现人类对亲属关系、群体规模和语言框架的敏感性；平均风险偏好相近，也可能掩盖相反的情境效应。结果说明预测人的选择需要检验具体社会线索，不能只比较总体平均表现。",
+      "tag": "认知与行为建模",
+      "ranking_score": 7.0966,
+      "title_zh": "大语言模型能否准确预测人的社会决策？",
+      "summary_source": "https://www.nature.com/articles/s41598-025-17188-7",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Humans learn generalizable representations through efficient coding",
+      "doi": "10.1038/s41467-025-58848-6",
+      "url": "https://doi.org/10.1038/s41467-025-58848-6",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-04-29",
+      "authors": "Fang et al.",
+      "citations": 9,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-58848-6",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-17；来源：Crossref；引用数 9，距发表 567 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究在强化学习的奖励目标中加入偏好简洁表征的约束，并用两项真人行为实验检验学习后的迁移表现。包含高效编码的计算模型能更好再现人类依据功能和知觉线索进行泛化的行为，提示压缩经验和提取奖励相关特征可能共同支持学习。结果支持一种计算层面的解释，尚不能证明大脑直接实现了同一算法。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 8.0363,
+      "title_zh": "人类如何通过高效编码学会可泛化的表征？",
+      "summary_source": "https://www.nature.com/articles/s41467-025-58848-6",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Database resources of the National Genomics Data Center, China National Center for Bioinformation in 2026",
+      "doi": "10.1093/nar/gkaf1172",
+      "url": "https://doi.org/10.1093/nar/gkaf1172",
+      "journal": "Nucleic Acids Research",
+      "publisher": "Oxford University Press (OUP)",
+      "published": "2025-12-08",
+      "authors": "CNCB–NGDC Members and Partners et al.",
+      "citations": 116,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1093%2Fnar%2Fgkaf1172",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 116 次引用，约 10.12 次 / 月。",
+      "evidence": "检索时间：2026-11-17；来源：Crossref；引用数 116，距发表 344 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "这篇期刊论文介绍国家基因组科学数据中心的多组学资源更新，包括新的基因组、表达、单细胞、健康与疾病数据库，以及分析工具。新推出的 BIG Search 支持跨 NGDC、NCBI 和 EBI 等平台检索，帮助研究者关联文献和数据。这些资源与工具可通过中心网站免费访问，面向多组学整合和后续生物医学研究。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.0614,
+      "title_zh": "国家基因组科学数据中心发布2026版数据库资源进展",
+      "summary_source": "https://doi.org/10.1093/nar/gkaf1172",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "NVIDIA",
+      "kind": "产品发布",
+      "published": "2026-11-16",
+      "title": "NVIDIA DGX Spark Developer Kit Turns a Desk Into a Supercomputing Lab",
+      "summary": "NVIDIA 在 SC26 介绍由四台 DGX Spark 组成的桌面集群，采用直接环形互连，面向多节点科学计算、模型部署与代理开发。研究人员可在本地完成开发、调试和初步验证，再扩展到大型计算系统；配套 HPC SDK 安装指南仍待推出。官方展示了材料模拟、分子动力学等应用案例，具体加速效果取决于任务和配置。",
+      "url": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 推出四节点 DGX Spark 高性能计算开发套件",
+      "summary_source": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "技术报告",
+      "published": "2026-11-16",
+      "title": "TokenEconomizer: Learning from Experience to Make AI Coding Agents More Efficient",
+      "summary": "微软研究院、微软安全团队与加州大学伯克利分校介绍开源插件 TokenEconomizer：它从同一仓库的已完成会话提炼简短经验、裁剪少用工具，并在代理陷入失败循环时提供干预。报告在277项真实缺陷修复任务上观察到18.4%至30.9%的成本下降，任务成功率总体保持稳定，统计包含插件自身调用成本。该结果来自特定评测，本条作为技术报告动态收录。",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "TokenEconomizer 利用历史会话减少编程代理开销",
+      "summary_source": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "How the World’s Most Advanced AI Infrastructure Supply Chain Invents the Future",
+      "summary": "NVIDIA 的运营访谈介绍其与台积电、富士康、纬创及封装测试伙伴的长期合作。随着产品从芯片扩展为系统和平台，供应商需要共同解决复杂互连、自动化装配、质量控制及产能爬坡问题。文章通过工厂案例说明供应链工程能力如何支撑 AI 硬件交付，属于公司运营经验分享。",
+      "url": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 分享 AI 基础设施从设计走向量产的协作经验",
+      "summary_source": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [
+    "有 2 条新动态缺少可用原文，暂未收录。"
+  ],
+  "sources": [
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 104
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 111
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 84
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 69
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 92
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 116
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 143
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 69
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 7
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 54
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1989
+}
