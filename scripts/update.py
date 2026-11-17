@@ -341,6 +341,11 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Social choices are a direct human modelling target. Require observed
+        # human decision data rather than a synthetic population alone.
+        human_social_decisions = (re.search(r'\bhuman social decisions\b',title,re.I)
+                                  and observed_comparison and MODELLING.search(text))
+        if human_social_decisions and LLM.search(text):return True
         # Recorded therapist responses provide human conversational behaviour.
         # Require a transcript-based comparison, not synthetic therapist agents
         # or a claim that response similarity establishes treatment efficacy.
@@ -421,6 +426,14 @@ def relevant(p, slot):
         text = title + ' ' + p.get('abstract','')[:1400]
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
+        # Reinforcement-learning models can explain people's generalization.
+        # Keep the human-experiment and influence requirements for this route.
+        human_generalization = (re.search(r'\bhumans? learn generalizable representations\b',title,re.I)
+                                and observed_comparison
+                                and re.search(r'\breinforcement learning\b',text,re.I)
+                                and re.search(r'\bexperiments\b',text,re.I)
+                                and re.search(r'\bcompar\w*\b',text,re.I))
+        if human_generalization and AI.search(text):return p.get('citations',0)>=5
         # Cognitive-strategy studies may name the method rather than the species
         # in their title. Require observed human data in the abstract or verified
         # source notes; animal-only and simulated-agent studies do not qualify.

@@ -528,5 +528,21 @@
     "checked_on": "2026-11-16",
     "discover": true,
     "notes": "This randomized controlled experiment studied human participants: 21 medical students using ChatGPT 3.5 to practise history-taking with simulated patients. The students were randomly assigned to receive structured AI feedback or complete the same simulated conversations without additional feedback. Two raters evaluated human decisions and clinical reasoning with the CRI-HTI inventory. After four training cases, the feedback group had higher scores than controls. The small, single-centre study concerns observed human learning, not model-only medical test performance; it does not establish better patient outcomes or long-term retention. This original research was first published on 28 November 2024."
+  },
+  "10.1038/s41598-025-17188-7": {
+    "doi": "10.1038/s41598-025-17188-7",
+    "title": "Evaluating the ability of large Language models to predict human social decisions",
+    "source": "https://www.nature.com/articles/s41598-025-17188-7",
+    "checked_on": "2026-11-17",
+    "discover": true,
+    "notes": "The study compares large language model predictions of human social decisions with previously published observations from 2104 human participants. GPT-3.5 and GPT-4 were tested across 51 scenarios, with a further GPT-4o comparison across eight group and kinship conditions. Models did not consistently reproduce human sensitivity to kinship, group size and verbal framing. Similar average risk preference did not imply matching context-dependent choice patterns. The study concerns those particular models, prompts and historical human datasets, not universal conclusions about all LLMs. The publisher identifies this original research article as first published on 2 September 2025."
+  },
+  "10.1038/s41467-025-58848-6": {
+    "doi": "10.1038/s41467-025-58848-6",
+    "title": "Humans learn generalizable representations through efficient coding",
+    "source": "https://www.nature.com/articles/s41467-025-58848-6",
+    "checked_on": "2026-11-17",
+    "discover": true,
+    "notes": "The authors tested human participants in two behavioral experiments on learning and generalization. They compare computational models of reinforcement learning, including an efficient coding policy-gradient model, with observed human choices. Adding a constraint favoring simpler internal representations helps the model reproduce functional and perceptual generalization that conventional models miss. The experiments manipulate reward-related stimulus features and test transfer to new associations. These results support a computational explanation of human behavior but do not demonstrate that the brain literally implements this algorithm. The original Nature Communications research article was first published on 29 April 2025."
   }
 }

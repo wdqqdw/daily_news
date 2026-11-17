@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_social_decision_prediction_requires_human_data_and_llm(self):
+        p=paper('10.1/socialdecisions','Language models predict human social decisions',
+                abstract='We compare GPT-4 predictions with recorded choices from human participants.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Predicting human social decisions',abstract=p['abstract'].replace('GPT-4','heuristic')),1))
+        for abstract in ('Language models simulate human participants making decisions.',
+                         'We compare language models predicting synthetic decisions.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_human_generalization_requires_rl_experiments_and_influence(self):
+        p=paper('10.1/generalization','Humans learn generalizable representations through efficient coding',citations=5,
+                abstract='We compare reinforcement learning computational models against human participants in two generalization experiments.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in ('We compare reinforcement learning computational models in two experiments.',
+                         'Computational models simulate human participants in two reinforcement learning experiments.',
+                         'Human participants annotate an unrelated computational model benchmark.',
+                         'This review compares human participants and reinforcement learning computational models in two experiments.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_therapist_alignment_requires_observed_transcript_comparison(self):
         p=paper('10.1/therapy','Alignment of language model responses with human therapists',
                 abstract='We compare recorded human responses from therapist transcripts with GPT-4o outputs based on conversation context.')

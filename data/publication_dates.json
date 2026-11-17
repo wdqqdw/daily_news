@@ -115,5 +115,10 @@
     "published": "2025-09-03",
     "source": "https://doi.org/10.1145/3765895",
     "reason": "ACM 出版页面注明 Online AM: 03 September 2025；2026年11月15日的题录卷期日期不是首次上线日期。"
+  },
+  "10.1056/nejmoa2511648": {
+    "published": "2025-10-19",
+    "source": "https://www.remegen.com/uploadfile/2025/11/17/5f20c10aba07db45ec17a4c148e5faaa691a765e468eb.pdf",
+    "reason": "出版商原文首页注明首次在线发表于2025年10月19日，题录2025年12月11日为卷期日期。"
   }
 }

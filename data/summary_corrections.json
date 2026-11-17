@@ -1833,5 +1833,50 @@
     "summary": "NVIDIA 与韩国科学技术信息通信部介绍从芯片、数据中心到模型和人才的合作，支持本土 NPU、XPU 企业探索接入 NVLink Fusion，并通过培训与认证提升 GPU 使用能力。合作还计划用 Dynamo 优化韩国模型推理，并与 SK Telecom、Rebellions 推进相关基础设施。本条补充收录11月9日的未推送信息，部分合作仍处于推进阶段。",
     "summary_source": "https://blogs.nvidia.com/blog/korea-sovereign-ai-collaboration/",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1038/s41598-025-17188-7": {
+    "title_zh": "大语言模型能否准确预测人的社会决策？",
+    "summary": "研究将 GPT-3.5、GPT-4 在51种情境中的预测，与既有研究中2104名参与者的选择比较，并用 GPT-4o 检验亲属及群体条件。模型未稳定重现人类对亲属关系、群体规模和语言框架的敏感性；平均风险偏好相近，也可能掩盖相反的情境效应。结果说明预测人的选择需要检验具体社会线索，不能只比较总体平均表现。",
+    "summary_source": "https://www.nature.com/articles/s41598-025-17188-7"
+  },
+  "doi:10.1038/s41467-025-58848-6": {
+    "title_zh": "人类如何通过高效编码学会可泛化的表征？",
+    "summary": "研究在强化学习的奖励目标中加入偏好简洁表征的约束，并用两项真人行为实验检验学习后的迁移表现。包含高效编码的计算模型能更好再现人类依据功能和知觉线索进行泛化的行为，提示压缩经验和提取奖励相关特征可能共同支持学习。结果支持一种计算层面的解释，尚不能证明大脑直接实现了同一算法。",
+    "summary_source": "https://www.nature.com/articles/s41467-025-58848-6"
+  },
+  "doi:10.1093/nar/gkaf1172": {
+    "title_zh": "国家基因组科学数据中心发布2026版数据库资源进展",
+    "summary": "这篇期刊论文介绍国家基因组科学数据中心的多组学资源更新，包括新的基因组、表达、单细胞、健康与疾病数据库，以及分析工具。新推出的 BIG Search 支持跨 NGDC、NCBI 和 EBI 等平台检索，帮助研究者关联文献和数据。这些资源与工具可通过中心网站免费访问，面向多组学整合和后续生物医学研究。",
+    "summary_source": "https://doi.org/10.1093/nar/gkaf1172"
+  },
+  "url:https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26": {
+    "title_zh": "NVIDIA 推出四节点 DGX Spark 高性能计算开发套件",
+    "summary": "NVIDIA 在 SC26 介绍由四台 DGX Spark 组成的桌面集群，采用直接环形互连，面向多节点科学计算、模型部署与代理开发。研究人员可在本地完成开发、调试和初步验证，再扩展到大型计算系统；配套 HPC SDK 安装指南仍待推出。官方展示了材料模拟、分子动力学等应用案例，具体加速效果取决于任务和配置。",
+    "summary_source": "https://blogs.nvidia.com/blog/dgx-spark-hpc-developer-kit-sc26/",
+    "kind": "产品发布"
+  },
+  "url:https://microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient": {
+    "title_zh": "TokenEconomizer 利用历史会话减少编程代理开销",
+    "summary": "微软研究院、微软安全团队与加州大学伯克利分校介绍开源插件 TokenEconomizer：它从同一仓库的已完成会话提炼简短经验、裁剪少用工具，并在代理陷入失败循环时提供干预。报告在277项真实缺陷修复任务上观察到18.4%至30.9%的成本下降，任务成功率总体保持稳定，统计包含插件自身调用成本。该结果来自特定评测，本条作为技术报告动态收录。",
+    "summary_source": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/",
+    "kind": "技术报告"
+  },
+  "url:https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain": {
+    "title_zh": "NVIDIA 分享 AI 基础设施从设计走向量产的协作经验",
+    "summary": "NVIDIA 的运营访谈介绍其与台积电、富士康、纬创及封装测试伙伴的长期合作。随着产品从芯片扩展为系统和平台，供应商需要共同解决复杂互连、自动化装配、质量控制及产能爬坡问题。文章通过工厂案例说明供应链工程能力如何支撑 AI 硬件交付，属于公司运营经验分享。",
+    "summary_source": "https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/index/expanding-chatgpt-for-academic-researchers": {
+    "title_zh": "OpenAI 扩大学术研究者 ChatGPT 支持计划",
+    "summary": "OpenAI 宣布扩大科研访问计划，整体目标覆盖最多20万名研究者。下一轮预计11月23日开放5万个新资助名额，按符合资格的申请顺序分配，每份可覆盖获资助者及最多两名合作者，提供 ChatGPT Plus。公司同时公布试点使用研究；参与者自报节省时间的估计应与独立测量的效率结果区分。",
+    "summary_source": "https://openai.com/index/expanding-chatgpt-for-academic-researchers",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/index/strengthening-online-child-safety": {
+    "title_zh": "OpenAI 发布儿童网络安全检测工具与协作措施",
+    "summary": "OpenAI 宣布向经过审核的机构免费提供图像分类器，用于辅助识别疑似儿童性虐待材料，包括 AI 生成内容。工具提供评分，帮助安全团队确定人工复核优先级。公告还介绍开发者防护资源、跨平台信号协作及对儿童保护调查工作的支持；官方强调技术应由人员掌控。",
+    "summary_source": "https://openai.com/index/strengthening-online-child-safety",
+    "kind": "研究 / 公司动态"
   }
 }

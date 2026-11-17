@@ -190,5 +190,12 @@
     ],
     "reason": "ASCO出版商明确标为Meeting Abstract且没有全文，并且研究的是模型的手术建议风格，不是对真实人的人格建模。",
     "source": "https://ascopubs.org/doi/10.1200/JCO.2026.44.16_suppl.e13703"
+  },
+  "10.1002/sia.70036": {
+    "slots": [
+      3
+    ],
+    "reason": "出版商原文标为 Notes and Insights，摘要和引言说明是面向实践者与初学者的谱线分析概览及操作指导，不作为每日原创研究论文候选。",
+    "source": "https://orca.cardiff.ac.uk/id/eprint/183236/1/Surface%20Interface%20Analysis%20-%202025%20-%20Graf%20-%20Insight%20Notes%20Considerations%20in%20the%20XPS%20Analysis%20of%20O1s%20Spectra%20for%20Metal.pdf"
   }
 }
