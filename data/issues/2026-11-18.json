@@ -1,0 +1,351 @@
+{
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T09:36:49+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Visual cognition in multimodal large language models",
+      "doi": "10.1038/s42256-024-00963-y",
+      "url": "https://doi.org/10.1038/s42256-024-00963-y",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-01-15",
+      "authors": "Schulze Buschoff et al.",
+      "citations": 60,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-024-00963-y",
+      "publication_types": [],
+      "slot": 1,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-18；来源：Crossref；引用数 60，距发表 672 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究用直觉物理、因果责任和直觉心理学任务，将多模态语言模型与既有人类实验中的判断进行比较。GPT-4V、Claude-3 等模型能完成部分任务，但整体未重现人的反应模式，对他人偏好的推断尤其有限。结果说明图像问答表现不能直接代表人类式社会理解；结论限于论文测试的模型与任务。",
+      "tag": "认知与行为建模",
+      "ranking_score": 13.4044,
+      "title_zh": "多模态大语言模型的视觉认知与人有多大差距？",
+      "summary_source": "https://www.nature.com/articles/s42256-024-00963-y",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "What large language models know and what people think they know",
+      "doi": "10.1038/s42256-024-00976-7",
+      "url": "https://doi.org/10.1038/s42256-024-00976-7",
+      "journal": "Nature Machine Intelligence",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-01-21",
+      "authors": "Steyvers et al.",
+      "citations": 239,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs42256-024-00976-7",
+      "publication_types": [],
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-18；来源：Crossref；引用数 239，距发表 666 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究让301名参与者判断语言模型选择题和简答题答案的可信度，比较人的信心、模型内部置信度与实际正确率。默认解释容易让人高估答案可靠性；更长的解释也会增加信任，却未改善辨别对错的能力。让解释中的不确定性措辞与模型置信度相匹配，可缩小这种差距，为 AI 如何向用户表达不确定性提供实验依据。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 16.5161,
+      "title_zh": "模型知道多少，与人以为它知道多少并不一致",
+      "summary_source": "https://www.nature.com/articles/s42256-024-00976-7",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Rare-Earth-Induced Intermediate-Spin Co Centers in MnCo 2 O 4.5 for Sustainable Acidic Water Oxidation",
+      "doi": "10.1021/jacs.5c17361",
+      "url": "https://doi.org/10.1021/jacs.5c17361",
+      "journal": "Journal of the American Chemical Society",
+      "publisher": "American Chemical Society (ACS)",
+      "published": "2025-11-28",
+      "authors": "Li et al.",
+      "citations": 115,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1021%2Fjacs.5c17361",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 115 次引用，约 9.72 次 / 月。",
+      "evidence": "检索时间：2026-11-18；来源：Crossref；引用数 115，距发表 355 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究通过在锰钴氧化物中掺入稀土元素，调节钴的自旋态及晶格结构，以兼顾酸性析氧反应的活性与稳定性。优化后的钐掺杂催化剂在10毫安每平方厘米下的过电位为212毫伏，并报告1200小时稳定运行；集成到质子交换膜电解槽后，在1.73伏、0.5安每平方厘米下运行超过300小时。这些结果为非贵金属催化剂设计提供了实验依据。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 11.939,
+      "title_zh": "稀土掺杂调控钴自旋态，提升酸性水氧化催化性能",
+      "summary_source": "https://pubs.acs.org/doi/10.1021/jacs.5c17361",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-17",
+      "title": "Qwen Code · Release v0.28.0",
+      "summary": "Qwen Code 发布 v0.28.0，新增工作区筛选、钉钉适配和外部工作区执行支持，并让终端与无界面会话默认使用共享代理循环。更新还改进上下文压缩时的操作保留、会话状态展示和本地文件访问，重点提升长任务与多入口使用的连续性。官方发布说明列出完整变更，未声明已知破坏性变更。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code v0.28.0 改进工作区与代理会话管理",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品发布",
+      "published": "2026-11-17",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "summary": "OpenAI 介绍面向复杂专业任务的 GPT-6.2 Astra，以及面向日常工作的 Sol。公告重点展示文档、幻灯片、电子表格、编程和计算机操作能力，并称新模型能用更少输出词元完成部分复杂任务。产品面向 ChatGPT Work、Codex 和 API；文中性能与成本对比来自官方评测。",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 发布 GPT-6.2 Astra 与 Sol",
+      "summary_source": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-17",
+      "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+      "summary": "NVIDIA 在 SC26 演讲中介绍 Nemotron for Science、Rubin HPC GPU 和扩展后的 Vera CPU 平台。科学代理工具结合开放模型、化学数据与训练方案，支持研究者在本地系统规划实验、运行代码和检查结果。公司同时公布与 IBM、费米国家加速器实验室的量子计算合作，展示模拟、AI 与量子计算协作的方向。",
+      "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 在 SC26 介绍科学代理工具与新一代计算平台",
+      "summary_source": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "Microsoft Research",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-17",
+      "title": "Can AI help build a healthier future?",
+      "summary": "微软研究院邀请 Ava Amini、Eric Horvitz 和 Eric Topol，讨论 AI 辅助诊断、医学影像、整个人体建模、虚拟细胞及生物基础模型。嘉宾也分析科研进展为何难以迅速转化为患者获益，强调高质量生物数据、实验验证和真实场景评估的重要性。这是研究者访谈与公司动态，并非新增临床疗效结论。",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "source_feed": "https://www.microsoft.com/en-us/research/feed/",
+      "title_zh": "微软研究院播客讨论 AI 医疗的机会与落地条件",
+      "summary_source": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "安全 / 报告",
+      "published": "2026-11-17",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "summary": "OpenAI 表示正通过 Daybreak 和先进网络安全模型支持北约通信与信息局及欧洲网络安全机构，协助授权的软件审查、漏洞验证与修复测试。公告也介绍网络演习中的 AI 代理培训，以及与欧盟机构开展的软件项目检查，强调由防御人员监督工具使用。相关内容属于公司合作与安全动态。",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 介绍与北约及欧洲机构的网络防御合作",
+      "summary_source": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+      "summary": "Lambda 使用 NVIDIA Photonics 共封装光学交换机连接超过一万块 GPU 的 GB300 NVL72 机架。公司测试报告称，在保持相近吞吐量的同时，机架级网络延迟下降约4%，更大集群配置下降最多约10%。该部署通过缩短电光转换路径、液冷和可更换光源改善能效与维护，数据反映特定部署及测试条件。",
+      "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "Lambda 将 NVIDIA 共封装光学交换机用于万卡集群",
+      "summary_source": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 65
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 73
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 93
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 54
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 142
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 17
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 8
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1996
+}

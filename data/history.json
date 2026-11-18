@@ -2299,6 +2299,42 @@
         "url:https://doi.org/10.1093/nar/gkaf1172"
       ],
       "doi": "10.1093/nar/gkaf1172"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Visual cognition in multimodal large language models",
+      "url": "https://doi.org/10.1038/s42256-024-00963-y",
+      "keys": [
+        "doi:10.1038/s42256-024-00963-y",
+        "title:visualcognitioninmultimodallargelanguagemodels",
+        "title:多模态大语言模型的视觉认知与人有多大差距",
+        "url:https://doi.org/10.1038/s42256-024-00963-y"
+      ],
+      "doi": "10.1038/s42256-024-00963-y"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "What large language models know and what people think they know",
+      "url": "https://doi.org/10.1038/s42256-024-00976-7",
+      "keys": [
+        "doi:10.1038/s42256-024-00976-7",
+        "title:whatlargelanguagemodelsknowandwhatpeoplethinktheyknow",
+        "title:模型知道多少与人以为它知道多少并不一致",
+        "url:https://doi.org/10.1038/s42256-024-00976-7"
+      ],
+      "doi": "10.1038/s42256-024-00976-7"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Rare-Earth-Induced Intermediate-Spin Co Centers in MnCo 2 O 4.5 for Sustainable Acidic Water Oxidation",
+      "url": "https://doi.org/10.1021/jacs.5c17361",
+      "keys": [
+        "doi:10.1021/jacs.5c17361",
+        "title:rareearthinducedintermediatespincocentersinmnco2o45forsustainableacidicwateroxidation",
+        "title:稀土掺杂调控钴自旋态提升酸性水氧化催化性能",
+        "url:https://doi.org/10.1021/jacs.5c17361"
+      ],
+      "doi": "10.1021/jacs.5c17361"
     }
   ],
   "news": [
@@ -4983,6 +5019,72 @@
         "title:howtheworldsmostadvancedaiinfrastructuresupplychaininventsthefuture",
         "title:nvidia分享ai基础设施从设计走向量产的协作经验",
         "url:https://blogs.nvidia.com/blog/ai-infrastructure-supply-chain"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Qwen Code · Release v0.28.0",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0",
+      "keys": [
+        "title:qwencodereleasev0280",
+        "title:qwencodev0280改进工作区与代理会话管理",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.0"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Introducing GPT-6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "keys": [
+        "title:introducinggpt62astraandsol",
+        "title:openai发布gpt62astra与sol",
+        "url:https://openai.com/index/introducing-gpt-6-2-astra-sol"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Ian Buck Kicks Off NVIDIA’s Week at SC26 as Science Enters the Age of Agents",
+      "url": "https://blogs.nvidia.com/blog/ian-buck-sc26/",
+      "keys": [
+        "title:ianbuckkicksoffnvidiasweekatsc26asscienceenterstheageofagents",
+        "title:nvidia在sc26介绍科学代理工具与新一代计算平台",
+        "url:https://blogs.nvidia.com/blog/ian-buck-sc26"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Can AI help build a healthier future?",
+      "url": "https://www.microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future/",
+      "keys": [
+        "title:canaihelpbuildahealthierfuture",
+        "title:微软研究院播客讨论ai医疗的机会与落地条件",
+        "url:https://microsoft.com/en-us/research/podcast/can-ai-help-build-a-healthier-future"
+      ],
+      "company": "Microsoft Research"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Strengthening NATO and allied cyber defenses with AI",
+      "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai",
+      "keys": [
+        "title:openai介绍与北约及欧洲机构的网络防御合作",
+        "title:strengtheningnatoandalliedcyberdefenseswithai",
+        "url:https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-18",
+      "title": "Lambda Boosts AI Factory Resiliency and Efficiency With NVIDIA Photonics",
+      "url": "https://blogs.nvidia.com/blog/lambda-photonics/",
+      "keys": [
+        "title:lambdaboostsaifactoryresiliencyandefficiencywithnvidiaphotonics",
+        "title:lambda将nvidia共封装光学交换机用于万卡集群",
+        "url:https://blogs.nvidia.com/blog/lambda-photonics"
       ],
       "company": "NVIDIA"
     }
