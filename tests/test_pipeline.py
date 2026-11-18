@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_visual_cognition_requires_observed_social_judgment_comparison(self):
+        p=paper('10.1/visual','Visual cognition in multimodal large language models',
+                abstract='We compare language models with human ratings from human participants in intuitive psychology tasks about preferences.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Visual cognition in neural networks',abstract=p['abstract'].replace('language models','neural networks')),1))
+        for abstract in ('Language models simulate human participants in intuitive psychology tasks about preferences.',
+                         'We compare language models in intuitive psychology tasks about preferences.',
+                         'We compare language models with human ratings from human participants in object detection tasks.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_human_confidence_requires_experiment_and_influence(self):
+        p=paper('10.1/confidence','What large language models know and what people think they know',citations=5,
+                abstract='Experiments with human participants compare human confidence, calibration and discrimination of correct language model answers.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in ('Experiments compare language model confidence calibration and discrimination.',
+                         'Experiments simulate human participants and their human confidence, calibration and discrimination with language models.',
+                         'Human participants answer questions about language models in experiments.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_social_decision_prediction_requires_human_data_and_llm(self):
         p=paper('10.1/socialdecisions','Language models predict human social decisions',
                 abstract='We compare GPT-4 predictions with recorded choices from human participants.')

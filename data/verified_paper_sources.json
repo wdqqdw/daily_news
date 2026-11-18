@@ -544,5 +544,21 @@
     "checked_on": "2026-11-17",
     "discover": true,
     "notes": "The authors tested human participants in two behavioral experiments on learning and generalization. They compare computational models of reinforcement learning, including an efficient coding policy-gradient model, with observed human choices. Adding a constraint favoring simpler internal representations helps the model reproduce functional and perceptual generalization that conventional models miss. The experiments manipulate reward-related stimulus features and test transfer to new associations. These results support a computational explanation of human behavior but do not demonstrate that the brain literally implements this algorithm. The original Nature Communications research article was first published on 29 April 2025."
+  },
+  "10.1038/s42256-024-00963-y": {
+    "doi": "10.1038/s42256-024-00963-y",
+    "title": "Visual cognition in multimodal large language models",
+    "source": "https://www.nature.com/articles/s42256-024-00963-y",
+    "checked_on": "2026-11-18",
+    "discover": true,
+    "notes": "This study compares multimodal large language models with observed human ratings and judgments from psychological experiments. The tasks examine intuitive physics, causal responsibility and intuitive psychology, including inferences about other people's preferences. GPT-4V and Claude-3 solve some tasks above chance, but the tested models do not reproduce human behavior across these domains. The comparisons use human participants' data from established experiments; model responses alone are not the human evidence. Preference-inference performance is particularly limited, and the findings concern the tested models and visual tasks, not every later LLM. This original Nature Machine Intelligence article was first published on 15 January 2025."
+  },
+  "10.1038/s42256-024-00976-7": {
+    "doi": "10.1038/s42256-024-00976-7",
+    "title": "What large language models know and what people think they know",
+    "source": "https://www.nature.com/articles/s42256-024-00976-7",
+    "checked_on": "2026-11-18",
+    "discover": true,
+    "notes": "The study reports experiments with 301 human participants assessing GPT-3.5, PaLM2 and GPT-4o answers to multiple-choice and short-answer questions. Researchers compare human confidence with model confidence and answer accuracy, measuring calibration and discrimination between correct and incorrect responses. Default explanations lead users to overestimate answer accuracy; longer explanations increase confidence without providing better discrimination. Adapting uncertainty wording to model confidence narrows these gaps. The study investigates observed human judgments and trust in AI-assisted decisions, not model-only confidence calibration, and does not establish that verbose answers are more accurate. This original Nature Machine Intelligence article was first published on 21 January 2025."
   }
 }

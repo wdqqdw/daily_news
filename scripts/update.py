@@ -341,6 +341,16 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Visual-cognition benchmarks can compare LLMs with observed people
+        # without mentioning humans in the title. Require actual judgments
+        # and a social-cognition task, not a model-only vision benchmark.
+        visual_social_cognition = (re.search(r'\bvisual cognition\b',title,re.I)
+                                   and observed_comparison
+                                   and re.search(r'\bhuman (?:judgments?|judgements?|ratings?)\b',conversation_source,re.I)
+                                   and re.search(r'\bintuitive psychology\b',conversation_source,re.I)
+                                   and re.search(r'\bpreferences\b',conversation_source,re.I)
+                                   and re.search(r'\bcompar\w*\b',conversation_source,re.I))
+        if visual_social_cognition and LLM.search(text):return True
         # Social choices are a direct human modelling target. Require observed
         # human decision data rather than a synthetic population alone.
         human_social_decisions = (re.search(r'\bhuman social decisions\b',title,re.I)
@@ -424,6 +434,16 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # People's estimates of AI knowledge are metacognitive judgments.
+        # Keep observed human experiments and the influence threshold; model
+        # confidence calibration by itself is not research on human cognition.
+        human_confidence = (re.search(r'\b(?:people think they know|human confidence|user confidence)\b',title,re.I)
+                            and observed_comparison
+                            and re.search(r'\bexperiments?\b',text,re.I)
+                            and re.search(r'\bhuman confidence\b',text,re.I)
+                            and re.search(r'\bcalibration\b',text,re.I)
+                            and re.search(r'\bdiscrimination\b',text,re.I))
+        if human_confidence and LLM.search(text):return p.get('citations',0)>=5
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
         # Reinforcement-learning models can explain people's generalization.

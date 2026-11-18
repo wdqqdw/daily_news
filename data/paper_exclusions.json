@@ -197,5 +197,14 @@
     ],
     "reason": "出版商原文标为 Notes and Insights，摘要和引言说明是面向实践者与初学者的谱线分析概览及操作指导，不作为每日原创研究论文候选。",
     "source": "https://orca.cardiff.ac.uk/id/eprint/183236/1/Surface%20Interface%20Analysis%20-%202025%20-%20Graf%20-%20Insight%20Notes%20Considerations%20in%20the%20XPS%20Analysis%20of%20O1s%20Spectra%20for%20Metal.pdf"
+  },
+  "10.1038/s41562-025-02373-5": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "期刊文章类型为 Perspective，PubMed 同时标为 Review；它综合高阶网络研究，不作为每日原创实证研究论文。",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/41407877/"
   }
 }
