@@ -2335,6 +2335,42 @@
         "url:https://doi.org/10.1021/jacs.5c17361"
       ],
       "doi": "10.1021/jacs.5c17361"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "Human-Like Attention? A Psychophysical Comparison of Visual Search in Humans and MLLMs",
+      "url": "https://doi.org/10.1007/s42113-026-00333-4",
+      "keys": [
+        "doi:10.1007/s42113-026-00333-4",
+        "title:humanlikeattentionapsychophysicalcomparisonofvisualsearchinhumansandmllms",
+        "title:多模态语言模型的视觉搜索像人类注意力吗",
+        "url:https://doi.org/10.1007/s42113-026-00333-4"
+      ],
+      "doi": "10.1007/s42113-026-00333-4"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "Abstract rule learning promotes cognitive flexibility in complex environments across species",
+      "url": "https://doi.org/10.1038/s41467-025-60943-7",
+      "keys": [
+        "doi:10.1038/s41467-025-60943-7",
+        "title:abstractrulelearningpromotescognitiveflexibilityincomplexenvironmentsacrossspecies",
+        "title:抽象规则学习如何支持人类与大鼠的认知灵活性",
+        "url:https://doi.org/10.1038/s41467-025-60943-7"
+      ],
+      "doi": "10.1038/s41467-025-60943-7"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "Helixer: ab initio prediction of primary eukaryotic gene models combining deep learning and a hidden Markov model",
+      "url": "https://doi.org/10.1038/s41592-025-02939-1",
+      "keys": [
+        "doi:10.1038/s41592-025-02939-1",
+        "title:helixerabinitiopredictionofprimaryeukaryoticgenemodelscombiningdeeplearningandahiddenmarkovmodel",
+        "title:helixer结合深度学习与隐马尔可夫模型预测真核基因",
+        "url:https://doi.org/10.1038/s41592-025-02939-1"
+      ],
+      "doi": "10.1038/s41592-025-02939-1"
     }
   ],
   "news": [
@@ -5085,6 +5121,61 @@
         "title:lambdaboostsaifactoryresiliencyandefficiencywithnvidiaphotonics",
         "title:lambda将nvidia共封装光学交换机用于万卡集群",
         "url:https://blogs.nvidia.com/blog/lambda-photonics"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "How OpenAI’s Performance Factory keeps ChatGPT fast",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "keys": [
+        "title:howopenaisperformancefactorykeepschatgptfast",
+        "title:openai介绍自动排查性能退化的performancefactory",
+        "url:https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "NVIDIA and Microsoft Expand Accelerated Computing From Azure to Windows PCs",
+      "url": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+      "keys": [
+        "title:nvidiaandmicrosoftexpandacceleratedcomputingfromazuretowindowspcs",
+        "title:nvidia与微软扩大云端到本地的ai计算合作",
+        "url:https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "Introducing Gemini 4 Neon",
+      "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+      "keys": [
+        "title:google发布面向编程与专业任务的gemini4neon",
+        "title:introducinggemini4neon",
+        "url:https://deepmind.google/blog/introducing-gemini-4-neon"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "Genie 4 is now available",
+      "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+      "keys": [
+        "title:genie4isnowavailable",
+        "title:genie4开始向符合条件的googleaiultra用户开放",
+        "url:https://deepmind.google/blog/genie-4-is-now-available"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-20",
+      "title": "NVIDIA RTX Spark Compact Desktops Out Now",
+      "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/",
+      "keys": [
+        "title:nvidiartxsparkcompactdesktopsoutnow",
+        "title:nvidiartxspark紧凑桌面机上市面向本地ai工作流",
+        "url:https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now"
       ],
       "company": "NVIDIA"
     }
