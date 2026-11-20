@@ -341,6 +341,14 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Visual search is human attention research when model error patterns
+        # are compared with observed people, not only synthetic visual tasks.
+        human_visual_search = (re.search(r'\bvisual search\b',title,re.I)
+                               and HUMAN_SUBJECT_TITLE.search(title)
+                               and observed_comparison
+                               and re.search(r'\berror rates?\b',conversation_source,re.I)
+                               and re.search(r'\bcompar\w*\b',conversation_source,re.I))
+        if human_visual_search and LLM.search(text):return True
         # Visual-cognition benchmarks can compare LLMs with observed people
         # without mentioning humans in the title. Require actual judgments
         # and a social-cognition task, not a model-only vision benchmark.
@@ -457,7 +465,7 @@ def relevant(p, slot):
         # Cognitive-strategy studies may name the method rather than the species
         # in their title. Require observed human data in the abstract or verified
         # source notes; animal-only and simulated-agent studies do not qualify.
-        human_strategy = (re.search(r'\bcognitive (?:strategies|algorithms)\b',title,re.I)
+        human_strategy = (re.search(r'\bcognitive (?:strategies|algorithms|flexibility)\b',title,re.I)
                           and OBSERVED_HUMANS.search(text) and human_research_source(text))
         # Perceptual and social judgements are human cognition too. Only add
         # this title route when the source supplies actual human observations.

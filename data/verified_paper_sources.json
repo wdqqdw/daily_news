@@ -560,5 +560,21 @@
     "checked_on": "2026-11-18",
     "discover": true,
     "notes": "The study reports experiments with 301 human participants assessing GPT-3.5, PaLM2 and GPT-4o answers to multiple-choice and short-answer questions. Researchers compare human confidence with model confidence and answer accuracy, measuring calibration and discrimination between correct and incorrect responses. Default explanations lead users to overestimate answer accuracy; longer explanations increase confidence without providing better discrimination. Adapting uncertainty wording to model confidence narrows these gaps. The study investigates observed human judgments and trust in AI-assisted decisions, not model-only confidence calibration, and does not establish that verbose answers are more accurate. This original Nature Machine Intelligence article was first published on 21 January 2025."
+  },
+  "10.1007/s42113-026-00333-4": {
+    "doi": "10.1007/s42113-026-00333-4",
+    "title": "Human-Like Attention? A Psychophysical Comparison of Visual Search in Humans and MLLMs",
+    "source": "https://link.springer.com/article/10.1007/s42113-026-00333-4",
+    "checked_on": "2026-11-20",
+    "discover": true,
+    "notes": "Researchers compare visual search error rates from 1250 human participants and multimodal large language models using identical two-dimensional and three-dimensional scenes. Both groups find unique-color targets readily but struggle more with conjunction searches as the number of objects increases. Human and model error rates correlate at rho 0.82 across conditions. Nevertheless, people spend more time searching when targets are absent, whereas models develop extreme present-versus-absent response biases. These findings concern shared task-difficulty patterns and do not establish identical attention mechanisms. This original research article was published on 20 August 2026."
+  },
+  "10.1038/s41467-025-60943-7": {
+    "doi": "10.1038/s41467-025-60943-7",
+    "title": "Abstract rule learning promotes cognitive flexibility in complex environments across species",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12198366/",
+    "checked_on": "2026-11-20",
+    "discover": true,
+    "notes": "The study compares computational models of reinforcement learning with observed behavior from human participants and rats in multidimensional rule-learning experiments. It recruited 32 adults, with exclusions reported separately for behavioral and neural analyses. Human magnetoencephalography and rat prefrontal recordings provide neural data. Attention-modulated reinforcement learning and sequential testing of abstract hypotheses explain sudden learning transitions and transfer better than learning every cue-action combination separately. Neural decoding identifies representations related to behavioral strategies across the two species. These are experimental and computational findings about cognitive flexibility, not a demonstrated treatment for a disorder. This original Nature Communications article was published on 25 June 2025."
   }
 }

@@ -1929,5 +1929,56 @@
     "summary": "Lambda 使用 NVIDIA Photonics 共封装光学交换机连接超过一万块 GPU 的 GB300 NVL72 机架。公司测试报告称，在保持相近吞吐量的同时，机架级网络延迟下降约4%，更大集群配置下降最多约10%。该部署通过缩短电光转换路径、液冷和可更换光源改善能效与维护，数据反映特定部署及测试条件。",
     "summary_source": "https://blogs.nvidia.com/blog/lambda-photonics/",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1007/s42113-026-00333-4": {
+    "title_zh": "多模态语言模型的视觉搜索，像人类注意力吗？",
+    "summary": "研究比较1250名参与者与多模态大语言模型在相同二维、三维场景中的视觉搜索表现。两者在颜色突出的目标上表现较好，组合特征搜索则随物体数量增加而变难，条件间错误率相关系数为0.82。但目标缺失时，人会延长搜索时间，模型却出现明显的有无目标判断偏差。相似的任务难度模式尚不能证明双方具有相同的注意力机制。",
+    "summary_source": "https://link.springer.com/article/10.1007/s42113-026-00333-4"
+  },
+  "doi:10.1038/s41467-025-60943-7": {
+    "title_zh": "抽象规则学习如何支持人类与大鼠的认知灵活性",
+    "summary": "研究结合人与大鼠的规则学习行为、强化学习计算模型及神经记录，检验在复杂环境中快速适应的机制。结果支持两类被试通过依次检验低维抽象规则学习任务，而非逐一记住所有线索与动作组合；前额叶活动中也可解码相关策略。这为理解突然学会、经验迁移等现象提供跨物种证据，尚不等于已验证的临床治疗方法。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12198366/"
+  },
+  "doi:10.1038/s41592-025-02939-1": {
+    "title_zh": "Helixer 结合深度学习与隐马尔可夫模型预测真核基因",
+    "summary": "研究提出基因注释工具 Helixer，将深度学习的序列特征预测与隐马尔可夫模型后处理结合，直接从基因组 DNA 生成完整基因模型。预训练模型覆盖真菌、植物及多类动物，在论文测试中达到或超过既有从头预测方法，无需额外 RNA 测序数据或针对每个物种重新训练。工具提供开源实现和在线入口，适合新测序、研究较少物种的基因注释。",
+    "summary_source": "https://www.nature.com/articles/s41592-025-02939-1"
+  },
+  "url:https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs": {
+    "title_zh": "NVIDIA 与微软扩大云端到本地的 AI 计算合作",
+    "summary": "NVIDIA 与微软在 Ignite 宣布扩大合作，涵盖 Azure 中的 Vera Rubin NVL72 基础设施、Microsoft Foundry 的开放模型定制与部署，以及边缘设备和 Windows PC。双方还推进机密计算与能效优化，帮助企业在不同环境运行 AI 应用。部分产品仍处于预览或即将推出阶段，具体可用性以各项服务公告为准。",
+    "summary_source": "https://blogs.nvidia.com/blog/microsoft-ignite-accelerated-computing-azure-windows-pcs/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast": {
+    "title_zh": "OpenAI 介绍自动排查性能退化的 Performance Factory",
+    "summary": "OpenAI 分享内部 Performance Factory：性能告警触发任务后，云端 Codex 代理调查原因并提出修复，由工程师审阅；部署后再由代理检查性能是否恢复。公司称，该流程在三个多月内跟踪了1700余次调查，定位600余个问题原因。文章强调可配置流程、交叉审查和部署后验证，属于工程实践动态。",
+    "summary_source": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://openai.com/business/learn/deploying-daybreak-red": {
+    "title_zh": "OpenAI 发布 Daybreak Red 受监督安全调查部署指南",
+    "summary": "OpenAI 发布 Daybreak Red 部署指南，介绍如何为受监督的安全调查设置隔离环境。指南覆盖参考架构、安全控制、环境配置，以及调查的运行和监控，面向需要在授权范围内使用相关工具的团队。本条作为安全技术文档动态收录，不计入三篇研究论文。",
+    "summary_source": "https://openai.com/business/learn/deploying-daybreak-red",
+    "kind": "安全 / 报告"
+  },
+  "url:https://deepmind.google/blog/introducing-gemini-4-neon": {
+    "title_zh": "Google 发布面向编程与专业任务的 Gemini 4 Neon",
+    "summary": "Google 发布 Gemini 4 Neon，面向软件工程、知识工作和科学分析，提供百万词元上下文及可调思考档位。公告称模型加强了长任务中的工具使用、指令跟随和中途纠正能力，并通过 Gemini API、企业服务及部分付费产品开放。性能和任务成本比较来自公告引用的特定评测，实际表现取决于任务与运行环境。",
+    "summary_source": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "kind": "产品发布"
+  },
+  "url:https://deepmind.google/blog/genie-4-is-now-available": {
+    "title_zh": "Genie 4 开始向符合条件的 Google AI Ultra 用户开放",
+    "summary": "Google 更新 Project Genie，向符合条件的 AI Ultra 用户逐步开放 Genie 4。用户可用文字实时改变天气、添加角色并生成相应声音，也可通过创作代理对话构建环境，将作品分享到社区供他人探索或改编。该公告介绍交互世界生成产品进展，并不代表生成环境已经达到真实世界模拟的可靠性。",
+    "summary_source": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "kind": "产品发布"
+  },
+  "url:https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now": {
+    "title_zh": "NVIDIA RTX Spark 紧凑桌面机上市，面向本地 AI 工作流",
+    "summary": "华硕、戴尔和微星推出 RTX Spark 紧凑桌面机，最高提供128GB统一内存，面向本地模型、持续运行的代理、图像视频生成和模型微调。NVIDIA 同时介绍 Windows on Arm 创作软件、CUDA、WSL 与本地 AI 工具的协作进展。其他厂商机型仍待推出，具体功能和可运行模型取决于设备配置及软件支持。",
+    "summary_source": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/",
+    "kind": "产品发布"
   }
 }

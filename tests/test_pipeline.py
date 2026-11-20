@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_visual_search_requires_human_error_comparison(self):
+        p=paper('10.1/search','Visual search in humans and multimodal large language models',
+                abstract='We compare error rates from human participants and multimodal large language models across visual search tasks.')
+        self.assertTrue(relevant(p,1))
+        for abstract in ('We compare error rates of language models on synthetic visual search tasks.',
+                         'Language models simulate human participants and compare error rates.',
+                         'Human participants annotate objects for a language model.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title='Visual search in humans and neural networks',abstract=p['abstract'].replace('large language models','neural networks')),1))
+
+    def test_cognitive_flexibility_requires_observed_humans_and_ai(self):
+        p=paper('10.1/flexibility','Abstract rule learning promotes cognitive flexibility across species',citations=5,
+                abstract='Computational models of reinforcement learning explain cognitive flexibility in human participants and rats.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in ('Computational models explain cognitive flexibility in rats.',
+                         'Computational models simulate human participants learning cognitive strategies.',
+                         'Human participants and rats learn rules without any computational analysis.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_visual_cognition_requires_observed_social_judgment_comparison(self):
         p=paper('10.1/visual','Visual cognition in multimodal large language models',
                 abstract='We compare language models with human ratings from human participants in intuitive psychology tasks about preferences.')
