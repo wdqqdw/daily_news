@@ -1,0 +1,325 @@
+{
+  "date": "2026-11-21",
+  "generated_at": "2026-11-21T09:39:18+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Cognitive grounding improves LLM simulation of collective human behavior",
+      "doi": "10.1038/s43588-026-01080-z",
+      "url": "https://doi.org/10.1038/s43588-026-01080-z",
+      "journal": "Nature Computational Science",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-11-16",
+      "authors": "Zhu et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs43588-026-01080-z",
+      "slot": 1,
+      "freshness": "近期研究",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-21；来源：Crossref；引用数 0，距发表 5 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将行为决策模型中的定性规则加入提示，在231场模拟啤酒供应链游戏中测试七种大语言模型。主参照轨迹由历史人类实验的参数生成，并用另一组实测人类数据复核。加入认知规则后，各模型的行为轨迹拟合均有改善，但不同角色和模型的收益并不一致。这支持经过任务验证的行为模拟，不能据此认定模型可普遍替代人类被试。",
+      "tag": "认知与行为建模",
+      "ranking_score": 5.9178,
+      "title_zh": "认知机制提示让 LLM 更接近人类群体行为",
+      "summary_source": "https://www.nature.com/articles/s43588-026-01080-z",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "The shrinking landscape of linguistic diversity in the age of large language models",
+      "doi": "10.1038/s41562-026-02550-0",
+      "url": "https://doi.org/10.1038/s41562-026-02550-0",
+      "journal": "Nature Human Behaviour",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-08-24",
+      "authors": "Sourati et al.",
+      "citations": 14,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41562-026-02550-0",
+      "slot": 2,
+      "freshness": "近期研究",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-21；来源：Crossref；引用数 14，距发表 89 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究分析七个数据集、超过88万篇文本，并比较同一文本经大语言模型改写前后的语言特征与作者属性预测。结果显示，核心内容大体保留，但写作复杂性的方差在所测数据集和模型中下降21%至50%，人格、同理心等个体特征的可识别性也发生变化。研究提示，使用 AI 润色后的文本进行心理或社会分析可能产生偏差；长期趋势关联本身不等于因果证明。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.9539,
+      "title_zh": "LLM 改写如何改变语言多样性与个体特征线索",
+      "summary_source": "https://www.nature.com/articles/s41562-026-02550-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Atom-level enzyme active site scaffolding using RFdiffusion2",
+      "doi": "10.1038/s41592-025-02975-x",
+      "url": "https://doi.org/10.1038/s41592-025-02975-x",
+      "journal": "Nature Methods",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-12-03",
+      "authors": "Ahern et al.",
+      "citations": 115,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41592-025-02975-x",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 115 次引用，约 9.77 次 / 月。",
+      "evidence": "检索时间：2026-11-21；来源：Crossref；引用数 115，距发表 353 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "RFdiffusion2 可根据催化基团的原子位置生成蛋白质支架，无需预先指定残基顺序或枚举侧链构象。在计算基准中，它为全部41个活性位点找到支架，旧方法为16个；研究还针对三类催化机制设计酶，每类测试少于96条序列就找到了活性候选。结果显示原子级生成设计的潜力，但计算成功并不等于所有设计都有活性，所获酶的活性仍未达到天然酶水平。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 11.9552,
+      "title_zh": "RFdiffusion2 从原子级活性位点出发设计酶",
+      "summary_source": "https://www.nature.com/articles/s41592-025-02975-x",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "OpenAI",
+      "kind": "安全 / 报告",
+      "published": "2026-11-20",
+      "title": "Combatting adversarial distillation",
+      "summary": "OpenAI 介绍结合模型训练、输入输出检测、API 控制与账号调查的多层防护，重点降低受保护推理轨迹被提取后用于训练其他模型的风险。公司报告，在其内部自适应测试中，提取此前请求推理轨迹的平均成功率由旧防护配置的54%降至新配置的0.2%。该比较针对特定模型和测试设置，不能视为所有攻击均已被阻止。",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 介绍对抗未经授权模型蒸馏的防护措施",
+      "summary_source": "https://openai.com/index/combatting-adversarial-distillation",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-20",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "summary": "Hebbia 使用相同金融研究案例测试 GPT-6 Astra 的预发布版本，关注来源覆盖、引用相关性和演示文稿要求。公司称，必要来源类型覆盖率较所测最佳替代模型高13.6个百分点，99.5%的引用片段与问题相关，97.9%的适用演示要求得到满足。这是客户在特定案例上的评测，引用相关并不等于结论正确，输出仍需对照原始文件审阅。",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "Hebbia 分享 GPT-6 Astra 金融研究与演示文稿测试结果",
+      "summary_source": "https://openai.com/business/customer-stories/hebbia",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+      "summary": "NVIDIA 宣布扩展 Slurm，通过 QRMI、QDMI 等既有接口连接量子处理器，减少超算中心和硬件厂商逐一编写专用集成的工作。科学家可沿用调度流程运行 CUDA-Q 等平台开发的量子与经典混合任务，多家量子计算厂商已参与采用。相关 Slurm 26.11 版本计划于本月稍后提供，本次公告不代表量子计算已在所有任务上优于经典计算。",
+      "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 扩展 Slurm，支持超算统一调度量子处理器",
+      "summary_source": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+      "summary": "NVIDIA 公布 Vera Rubin 在 MLPerf Training 6.1 和 Endpoints 中的结果，覆盖训练、后训练及代理推理。公司报告，DeepSeek-V3 训练从256扩展至1024块 GPU 时效率约97%；一项 Kimi K3 代理推理比较中，每瓦吞吐量超过 GB300 的十倍。后者为尚待 MLCommons 核验的初步结果，比较依赖指定并发、功耗和响应速度条件，不应泛化为所有任务的性能提升。",
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 公布 Vera Rubin 的 MLPerf 训练与代理推理成绩",
+      "summary_source": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 66
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 81
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 113
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 92
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 54
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 120
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 138
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 12
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 118
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1990
+}

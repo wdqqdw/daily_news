@@ -2371,6 +2371,42 @@
         "url:https://doi.org/10.1038/s41592-025-02939-1"
       ],
       "doi": "10.1038/s41592-025-02939-1"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "Cognitive grounding improves LLM simulation of collective human behavior",
+      "url": "https://doi.org/10.1038/s43588-026-01080-z",
+      "keys": [
+        "doi:10.1038/s43588-026-01080-z",
+        "title:cognitivegroundingimprovesllmsimulationofcollectivehumanbehavior",
+        "title:认知机制提示让llm更接近人类群体行为",
+        "url:https://doi.org/10.1038/s43588-026-01080-z"
+      ],
+      "doi": "10.1038/s43588-026-01080-z"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "The shrinking landscape of linguistic diversity in the age of large language models",
+      "url": "https://doi.org/10.1038/s41562-026-02550-0",
+      "keys": [
+        "doi:10.1038/s41562-026-02550-0",
+        "title:llm改写如何改变语言多样性与个体特征线索",
+        "title:theshrinkinglandscapeoflinguisticdiversityintheageoflargelanguagemodels",
+        "url:https://doi.org/10.1038/s41562-026-02550-0"
+      ],
+      "doi": "10.1038/s41562-026-02550-0"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "Atom-level enzyme active site scaffolding using RFdiffusion2",
+      "url": "https://doi.org/10.1038/s41592-025-02975-x",
+      "keys": [
+        "doi:10.1038/s41592-025-02975-x",
+        "title:atomlevelenzymeactivesitescaffoldingusingrfdiffusion2",
+        "title:rfdiffusion2从原子级活性位点出发设计酶",
+        "url:https://doi.org/10.1038/s41592-025-02975-x"
+      ],
+      "doi": "10.1038/s41592-025-02975-x"
     }
   ],
   "news": [
@@ -5176,6 +5212,50 @@
         "title:nvidiartxsparkcompactdesktopsoutnow",
         "title:nvidiartxspark紧凑桌面机上市面向本地ai工作流",
         "url:https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "Combatting adversarial distillation",
+      "url": "https://openai.com/index/combatting-adversarial-distillation",
+      "keys": [
+        "title:combattingadversarialdistillation",
+        "title:openai介绍对抗未经授权模型蒸馏的防护措施",
+        "url:https://openai.com/index/combatting-adversarial-distillation"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "Hebbia sees improvements in financial research with GPT-6 Astra",
+      "url": "https://openai.com/business/customer-stories/hebbia",
+      "keys": [
+        "title:hebbiaseesimprovementsinfinancialresearchwithgpt6astra",
+        "title:hebbia分享gpt6astra金融研究与演示文稿测试结果",
+        "url:https://openai.com/business/customer-stories/hebbia"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "NVIDIA Expands Slurm to Bring Quantum Computing Into Supercomputing",
+      "url": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+      "keys": [
+        "title:nvidiaexpandsslurmtobringquantumcomputingintosupercomputing",
+        "title:nvidia扩展slurm支持超算统一调度量子处理器",
+        "url:https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-21",
+      "title": "NVIDIA Sweeps MLPerf Training and Endpoints as Vera Rubin Debuts With Leading Performance",
+      "url": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+      "keys": [
+        "title:nvidiasweepsmlperftrainingandendpointsasverarubindebutswithleadingperformance",
+        "title:nvidia公布verarubin的mlperf训练与代理推理成绩",
+        "url:https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin"
       ],
       "company": "NVIDIA"
     }
