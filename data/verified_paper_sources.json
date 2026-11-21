@@ -576,5 +576,21 @@
     "checked_on": "2026-11-20",
     "discover": true,
     "notes": "The study compares computational models of reinforcement learning with observed behavior from human participants and rats in multidimensional rule-learning experiments. It recruited 32 adults, with exclusions reported separately for behavioral and neural analyses. Human magnetoencephalography and rat prefrontal recordings provide neural data. Attention-modulated reinforcement learning and sequential testing of abstract hypotheses explain sudden learning transitions and transfer better than learning every cue-action combination separately. Neural decoding identifies representations related to behavioral strategies across the two species. These are experimental and computational findings about cognitive flexibility, not a demonstrated treatment for a disorder. This original Nature Communications article was published on 25 June 2025."
+  },
+  "10.1038/s43588-026-01080-z": {
+    "doi": "10.1038/s43588-026-01080-z",
+    "title": "Cognitive grounding improves LLM simulation of collective human behavior",
+    "source": "https://www.nature.com/articles/s43588-026-01080-z",
+    "checked_on": "2026-11-21",
+    "discover": true,
+    "notes": "This original empirical analysis evaluates seven large language models in 231 model gameplay sessions of the Beer Distribution Game. It models collective human behavior using qualitative decision heuristics from behavioral models. The main reference trajectories are simulated from parameter estimates reported for 11 human teams; these reference trajectories are not new human observations. Independent validation compares model trajectories with previously published experimental data from human participants, using digitized median orders and decision-parameter estimates. Cognitive grounding improves trajectory fit for all seven models, but improvements vary by role and model. Prompt and memory variants are also tested. The evidence supports task-specific behavioral surrogates, not a general replacement for human experiments. The public abstract and data-availability statement describe the human references and external empirical benchmark. Published 16 November 2026."
+  },
+  "10.1038/s41562-026-02550-0": {
+    "doi": "10.1038/s41562-026-02550-0",
+    "title": "The shrinking landscape of linguistic diversity in the age of large language models",
+    "source": "https://www.nature.com/articles/s41562-026-02550-0",
+    "checked_on": "2026-11-21",
+    "discover": true,
+    "notes": "This original empirical study examines human-authored texts and observed data from human participants, including personality surveys, empathy measures and moral questionnaires. Across three studies and seven datasets comprising over 880000 texts, researchers examine associations between writing-assistant adoption and linguistic diversity. They also compare paired author-attribute predictions for original texts and large language model rewrites using trained classifiers. Personality, empathy and other author attributes are linked to human labels; this is not a model-only personality test. Rewriting retains core content while reducing writing-complexity variance by 21 to 50 percent in the tested datasets and models, and changes the trait information recoverable from text. The observational adoption trends do not establish that AI alone caused population-wide changes. The public abstract, data-availability statement and extended-data captions document the human corpora and paired comparisons. Published 24 August 2026."
   }
 }

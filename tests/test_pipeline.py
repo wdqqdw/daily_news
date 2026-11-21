@@ -29,6 +29,19 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_linguistic_diversity_requires_observed_trait_comparison(self):
+        p=paper('10.1/writing','Linguistic diversity in the age of large language models',citations=5,
+                abstract='Human participants supplied human-authored texts and personality measures. We compare paired author-attribute predictions for original and large language model rewritten texts.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('Human participants','Simulated agents'),
+                         p['abstract'].replace('Human participants supplied','Language models simulate human participants supplying'),
+                         p['abstract'].replace('paired author-attribute predictions','paired readability scores'),
+                         p['abstract'].replace('personality measures','generic task labels')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_visual_search_requires_human_error_comparison(self):
         p=paper('10.1/search','Visual search in humans and multimodal large language models',
                 abstract='We compare error rates from human participants and multimodal large language models across visual search tasks.')

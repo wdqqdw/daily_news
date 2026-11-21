@@ -1980,5 +1980,44 @@
     "summary": "华硕、戴尔和微星推出 RTX Spark 紧凑桌面机，最高提供128GB统一内存，面向本地模型、持续运行的代理、图像视频生成和模型微调。NVIDIA 同时介绍 Windows on Arm 创作软件、CUDA、WSL 与本地 AI 工具的协作进展。其他厂商机型仍待推出，具体功能和可运行模型取决于设备配置及软件支持。",
     "summary_source": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/",
     "kind": "产品发布"
+  },
+  "doi:10.1038/s43588-026-01080-z": {
+    "title_zh": "认知机制提示让 LLM 更接近人类群体行为",
+    "summary": "研究将行为决策模型中的定性规则加入提示，在231场模拟啤酒供应链游戏中测试七种大语言模型。主参照轨迹由历史人类实验的参数生成，并用另一组实测人类数据复核。加入认知规则后，各模型的行为轨迹拟合均有改善，但不同角色和模型的收益并不一致。这支持经过任务验证的行为模拟，不能据此认定模型可普遍替代人类被试。",
+    "summary_source": "https://www.nature.com/articles/s43588-026-01080-z"
+  },
+  "doi:10.1038/s41562-026-02550-0": {
+    "title_zh": "LLM 改写如何改变语言多样性与个体特征线索",
+    "summary": "研究分析七个数据集、超过88万篇文本，并比较同一文本经大语言模型改写前后的语言特征与作者属性预测。结果显示，核心内容大体保留，但写作复杂性的方差在所测数据集和模型中下降21%至50%，人格、同理心等个体特征的可识别性也发生变化。研究提示，使用 AI 润色后的文本进行心理或社会分析可能产生偏差；长期趋势关联本身不等于因果证明。",
+    "summary_source": "https://www.nature.com/articles/s41562-026-02550-0"
+  },
+  "doi:10.1038/s41592-025-02975-x": {
+    "title_zh": "RFdiffusion2 从原子级活性位点出发设计酶",
+    "summary": "RFdiffusion2 可根据催化基团的原子位置生成蛋白质支架，无需预先指定残基顺序或枚举侧链构象。在计算基准中，它为全部41个活性位点找到支架，旧方法为16个；研究还针对三类催化机制设计酶，每类测试少于96条序列就找到了活性候选。结果显示原子级生成设计的潜力，但计算成功并不等于所有设计都有活性，所获酶的活性仍未达到天然酶水平。",
+    "summary_source": "https://www.nature.com/articles/s41592-025-02975-x"
+  },
+  "url:https://openai.com/index/combatting-adversarial-distillation": {
+    "title_zh": "OpenAI 介绍对抗未经授权模型蒸馏的防护措施",
+    "summary": "OpenAI 介绍结合模型训练、输入输出检测、API 控制与账号调查的多层防护，重点降低受保护推理轨迹被提取后用于训练其他模型的风险。公司报告，在其内部自适应测试中，提取此前请求推理轨迹的平均成功率由旧防护配置的54%降至新配置的0.2%。该比较针对特定模型和测试设置，不能视为所有攻击均已被阻止。",
+    "summary_source": "https://openai.com/index/combatting-adversarial-distillation",
+    "kind": "安全 / 报告"
+  },
+  "url:https://openai.com/business/customer-stories/hebbia": {
+    "title_zh": "Hebbia 分享 GPT-6 Astra 金融研究与演示文稿测试结果",
+    "summary": "Hebbia 使用相同金融研究案例测试 GPT-6 Astra 的预发布版本，关注来源覆盖、引用相关性和演示文稿要求。公司称，必要来源类型覆盖率较所测最佳替代模型高13.6个百分点，99.5%的引用片段与问题相关，97.9%的适用演示要求得到满足。这是客户在特定案例上的评测，引用相关并不等于结论正确，输出仍需对照原始文件审阅。",
+    "summary_source": "https://openai.com/business/customer-stories/hebbia",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing": {
+    "title_zh": "NVIDIA 扩展 Slurm，支持超算统一调度量子处理器",
+    "summary": "NVIDIA 宣布扩展 Slurm，通过 QRMI、QDMI 等既有接口连接量子处理器，减少超算中心和硬件厂商逐一编写专用集成的工作。科学家可沿用调度流程运行 CUDA-Q 等平台开发的量子与经典混合任务，多家量子计算厂商已参与采用。相关 Slurm 26.11 版本计划于本月稍后提供，本次公告不代表量子计算已在所有任务上优于经典计算。",
+    "summary_source": "https://blogs.nvidia.com/blog/slurm-quantum-computing-supercomputing/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin": {
+    "title_zh": "NVIDIA 公布 Vera Rubin 的 MLPerf 训练与代理推理成绩",
+    "summary": "NVIDIA 公布 Vera Rubin 在 MLPerf Training 6.1 和 Endpoints 中的结果，覆盖训练、后训练及代理推理。公司报告，DeepSeek-V3 训练从256扩展至1024块 GPU 时效率约97%；一项 Kimi K3 代理推理比较中，每瓦吞吐量超过 GB300 的十倍。后者为尚待 MLCommons 核验的初步结果，比较依赖指定并发、功耗和响应速度条件，不应泛化为所有任务的性能提升。",
+    "summary_source": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
+    "kind": "研究 / 公司动态"
   }
 }

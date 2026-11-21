@@ -452,6 +452,16 @@ def relevant(p, slot):
                             and re.search(r'\bcalibration\b',text,re.I)
                             and re.search(r'\bdiscrimination\b',text,re.I))
         if human_confidence and LLM.search(text):return p.get('citations',0)>=5
+        # Rewriting studies can test human trait inference from language even
+        # when the title says linguistic diversity rather than human cognition.
+        # Require observed people and paired author-attribute predictions.
+        human_writing = (re.search(r'\blinguistic diversity\b',title,re.I)
+                         and observed_comparison
+                         and re.search(r'\bhuman.authored texts\b',text,re.I)
+                         and re.search(r'\bpersonality\b',text,re.I)
+                         and re.search(r'\bauthor.attribute predictions\b',text,re.I)
+                         and re.search(r'\bpaired\b',text,re.I))
+        if human_writing and LLM.search(text):return p.get('citations',0)>=5
         # Biological neural networks refer to brain tissue, not an AI method.
         text = re.sub(r'\bbiological neural networks?\b', '', text, flags=re.I)
         # Reinforcement-learning models can explain people's generalization.
