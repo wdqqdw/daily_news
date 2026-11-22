@@ -29,6 +29,28 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_public_opinion_requires_observed_survey_comparison(self):
+        p=paper('10.1/opinion','Public opinion surveys with large language models',
+                abstract='We evaluate large language model response distributions against survey data from human respondents.')
+        self.assertTrue(relevant(p,1))
+        for abstract in ('We evaluate large language model response distributions from synthetic agents.',
+                         'Large language models simulate human respondents and compare response distributions.',
+                         'Human respondents rate the fluency of large language model text.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
+    def test_memory_capacity_requires_human_connectomes_and_ai(self):
+        p=paper('10.1/memory','Computational memory capacity predicts aging and cognitive decline',citations=5,
+                abstract='Reservoir computing uses recurrent neural networks built from brain anatomical connectivity data from human participants.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('human participants','simulated agents'),
+                         p['abstract'].replace('brain anatomical connectivity','synthetic graph'),
+                         p['abstract'].replace('recurrent neural networks','statistical scores')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_linguistic_diversity_requires_observed_trait_comparison(self):
         p=paper('10.1/writing','Linguistic diversity in the age of large language models',citations=5,
                 abstract='Human participants supplied human-authored texts and personality measures. We compare paired author-attribute predictions for original and large language model rewritten texts.')

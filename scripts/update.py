@@ -341,6 +341,13 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Aggregate public-opinion estimates model human beliefs when validated
+        # against observed respondents, not only synthetic survey participants.
+        public_opinion = (re.search(r'\bpublic opinion surveys?\b',title,re.I)
+                          and observed_comparison
+                          and re.search(r'\bresponse distributions\b',text,re.I)
+                          and re.search(r'\b(?:compar\w*|evaluat\w*)\b',text,re.I))
+        if public_opinion and LLM.search(text):return True
         # Visual search is human attention research when model error patterns
         # are compared with observed people, not only synthetic visual tasks.
         human_visual_search = (re.search(r'\bvisual search\b',title,re.I)
@@ -442,6 +449,13 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # Reservoir models built from measured human connectomes study memory;
+        # a synthetic neural-network capacity benchmark alone does not qualify.
+        human_memory_capacity = (re.search(r'\bcomputational memory capacity\b',title,re.I)
+                                 and observed_comparison
+                                 and re.search(r'\breservoir computing\b',text,re.I)
+                                 and re.search(r'\bbrain anatomical connectivity\b',text,re.I))
+        if human_memory_capacity and AI.search(text):return p.get('citations',0)>=5
         # People's estimates of AI knowledge are metacognitive judgments.
         # Keep observed human experiments and the influence threshold; model
         # confidence calibration by itself is not research on human cognition.

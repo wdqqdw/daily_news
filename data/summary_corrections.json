@@ -2019,5 +2019,50 @@
     "summary": "NVIDIA 公布 Vera Rubin 在 MLPerf Training 6.1 和 Endpoints 中的结果，覆盖训练、后训练及代理推理。公司报告，DeepSeek-V3 训练从256扩展至1024块 GPU 时效率约97%；一项 Kimi K3 代理推理比较中，每瓦吞吐量超过 GB300 的十倍。后者为尚待 MLCommons 核验的初步结果，比较依赖指定并发、功耗和响应速度条件，不应泛化为所有任务的性能提升。",
     "summary_source": "https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1057/s41599-026-09593-8": {
+    "title_zh": "LLM 能估计公众观点，但仍有党派偏差与不确定性低估",
+    "summary": "研究以皮尤研究中心的真实民调为参照，检验多种大语言模型对样本外问题的公众回应分布预测。GPT-4 在所测设置中的平均绝对误差约为4%至8.5%，直接估计群体分布通常优于汇总虚拟个体回答。但模型会低估不确定性，部分设置低估共和党观点，效果也随议题和模型变化。结果支持辅助探索，不能据此替代有代表性的人类调查。",
+    "summary_source": "https://www.nature.com/articles/s41599-026-09593-8"
+  },
+  "doi:10.1038/s41467-025-57995-0": {
+    "title_zh": "从脑连接网络估计记忆容量，研究认知衰老",
+    "summary": "研究将636人的脑解剖连接数据构造成储备池计算网络，估计其计算记忆容量，并分析它与年龄、认知表现及脑功能和结构指标的关系。相关发现又在154名年轻人和72名老年人的独立队列中得到复现。这为研究脑网络与认知衰老提供计算工具，但相关性结果并不等于已建立个体临床诊断方法或治疗效果。",
+    "summary_source": "https://www.nature.com/articles/s41467-025-57995-0"
+  },
+  "doi:10.1038/s41586-025-09909-9": {
+    "title_zh": "ENCODE 扩充人类与小鼠候选基因调控元件图谱",
+    "summary": "研究整合新的 ENCODE 数据和计算方法，将候选顺式调控元件目录扩充至约237万个人类元件和96.7万个小鼠元件，覆盖数百种细胞与组织类型。功能检测数据覆盖超过90%的人类候选元件，并发现部分元件可随细胞环境兼具增强和抑制作用。该资源有助于解释遗传变异与性状关联；被检测覆盖不等于每个候选元件都已证实具有特定功能。",
+    "summary_source": "https://www.nature.com/articles/s41586-025-09909-9"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3": {
+    "title_zh": "Qwen Code 0.28.3 扩展通道接入与会话功能",
+    "summary": "Qwen Code 0.28.3 新增 GitHub 托管通道、通用 Webhook 通知和实验性企业微信接入，并改进跨会话发送、生成界面状态保存与工作区产物浏览。版本还加入繁体中文界面和多项会话控制改进。部分能力需要启用实验选项，属于开发工具与协作流程更新。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+    "kind": "产品发布"
+  },
+  "url:https://openai.com/index/introducing-medchembench": {
+    "title_zh": "OpenAI 发布药物化学推理基准 MedChemBench",
+    "summary": "MedChemBench 包含99道题，考察分子结构重建、证据解释、化合物选择与性质预测。官方报告，GPT-6.2 Astra 在指定推理设置获得84.5%的可得分数，化合物选择与数值预测仍较难。基准使用既有文献，无法排除模型此前接触来源，也不能证明实际发现新药的能力。本条作为公司研究与技术报告动态收录。",
+    "summary_source": "https://openai.com/index/introducing-medchembench",
+    "kind": "技术报告"
+  },
+  "url:https://openai.com/business/learn/codex-security-plugin-demo": {
+    "title_zh": "OpenAI 发布 Codex Security Plugin 工作流程演示",
+    "summary": "OpenAI 发布 Codex Security Plugin 产品演示，展示从开始使用到审阅演示结果的工作流程。页面主要提供演示入口，未公布独立性能评测或量化效果，适合了解产品操作流程。",
+    "summary_source": "https://openai.com/business/learn/codex-security-plugin-demo",
+    "kind": "产品演示"
+  },
+  "url:https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery": {
+    "title_zh": "NVIDIA 扩展 CUDA-X 科研库，支持代理参与科学分析",
+    "summary": "NVIDIA 扩展 cuPhoton、cuPotential、cuSpa 等 CUDA-X 库，面向天文观测、等离子体与分子模拟、单细胞分析等工作。公告介绍 GPU 加速的数据处理和交互分析流程，并将科研工具与代理连接，帮助研究人员在实验或模拟进行时查看结果。文中的加速效果来自特定应用与配置，不能直接视为所有科研任务的收益。",
+    "summary_source": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/20-years-cuda": {
+    "title_zh": "CUDA 发布二十周年：NVIDIA 回顾科学计算生态进展",
+    "summary": "NVIDIA 在 SC26 回顾自2006年发布 CUDA 以来的科学计算应用，介绍分子模拟、AlexNet 和 AlphaFold 等研究如何使用 GPU 计算。官方称，目前已有超过1100万开发者使用 CUDA，并通过 CUDA-X 库扩展科研与 AI 工作流。本条是平台生态回顾，不代表这些历史研究在本次会议上首次发表。",
+    "summary_source": "https://blogs.nvidia.com/blog/20-years-cuda/",
+    "kind": "研究 / 公司动态"
   }
 }

@@ -592,5 +592,21 @@
     "checked_on": "2026-11-21",
     "discover": true,
     "notes": "This original empirical study examines human-authored texts and observed data from human participants, including personality surveys, empathy measures and moral questionnaires. Across three studies and seven datasets comprising over 880000 texts, researchers examine associations between writing-assistant adoption and linguistic diversity. They also compare paired author-attribute predictions for original texts and large language model rewrites using trained classifiers. Personality, empathy and other author attributes are linked to human labels; this is not a model-only personality test. Rewriting retains core content while reducing writing-complexity variance by 21 to 50 percent in the tested datasets and models, and changes the trait information recoverable from text. The observational adoption trends do not establish that AI alone caused population-wide changes. The public abstract, data-availability statement and extended-data captions document the human corpora and paired comparisons. Published 24 August 2026."
+  },
+  "10.1057/s41599-026-09593-8": {
+    "doi": "10.1057/s41599-026-09593-8",
+    "title": "Public opinion surveys with large language models: methodological opportunities and validity risks",
+    "source": "https://www.nature.com/articles/s41599-026-09593-8",
+    "checked_on": "2026-11-22",
+    "discover": true,
+    "notes": "This peer-reviewed original research evaluates large language model estimates of public opinion against existing Pew Research Centre survey data from human respondents. Across three studies, the authors compare national-level response distributions and partisan subgroups, using out-of-sample survey questions. The human reference consists of previously collected real survey responses; the authors did not recruit a new human sample. GPT-4 achieves mean absolute errors around 4 to 8.5 percent in the tested settings, but models underrepresent some Republican viewpoints and underestimate uncertainty. Direct aggregate estimates perform better than aggregating persona-based individual simulations. Results differ by topic and model and depend on survey-item context. The findings support supplementary exploratory uses, not replacing representative surveys. Published as a peer-reviewed article in press on 17 November 2026."
+  },
+  "10.1038/s41467-025-57995-0": {
+    "doi": "10.1038/s41467-025-57995-0",
+    "title": "Computational memory capacity predicts aging and cognitive decline",
+    "source": "https://www.nature.com/articles/s41467-025-57995-0",
+    "checked_on": "2026-11-22",
+    "discover": true,
+    "notes": "This original research applies reservoir computing, a recurrent neural network method, to brain anatomical connectivity data from human participants. The primary lifespan cohort contains 636 individuals. Researchers estimate computational memory capacity from these measured brain networks and examine associations with age, cognitive performance, resting-state activity, white matter integrity and locus coeruleus signal intensity. The findings are replicated in an independent cohort with 154 young and 72 older individuals. The neural network is used to investigate human memory and cognitive aging, rather than merely evaluate a synthetic computing benchmark. The reported associations do not establish a treatment or a clinically validated individual diagnosis. Published 20 March 2025."
   }
 }
