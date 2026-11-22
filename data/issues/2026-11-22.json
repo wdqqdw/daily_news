@@ -1,0 +1,337 @@
+{
+  "date": "2026-11-22",
+  "generated_at": "2026-11-22T09:40:42+08:00",
+  "label": "DAILY EDITION",
+  "papers": [
+    {
+      "type": "journal-article",
+      "title": "Public opinion surveys with large language models: methodological opportunities and validity risks",
+      "doi": "10.1057/s41599-026-09593-8",
+      "url": "https://doi.org/10.1057/s41599-026-09593-8",
+      "journal": "Humanities and Social Sciences Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-11-17",
+      "authors": "Li et al.",
+      "citations": 0,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1057%2Fs41599-026-09593-8",
+      "slot": 1,
+      "freshness": "近期研究 · 其他期刊补充",
+      "reason": "题录涉及语言模型与人的认知、行为或神经表征，适合追踪 LLM 对人的理解与建模。",
+      "evidence": "检索时间：2026-11-22；来源：Crossref；引用数 0，距发表 5 天。优先匹配期刊品牌与主题，再考虑新近程度和引用。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究以皮尤研究中心的真实民调为参照，检验多种大语言模型对样本外问题的公众回应分布预测。GPT-4 在所测设置中的平均绝对误差约为4%至8.5%，直接估计群体分布通常优于汇总虚拟个体回答。但模型会低估不确定性，部分设置低估共和党观点，效果也随议题和模型变化。结果支持辅助探索，不能据此替代有代表性的人类调查。",
+      "tag": "认知与行为建模",
+      "ranking_score": 2.9178,
+      "title_zh": "LLM 能估计公众观点，但仍有党派偏差与不确定性低估",
+      "summary_source": "https://www.nature.com/articles/s41599-026-09593-8",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "Computational memory capacity predicts aging and cognitive decline",
+      "doi": "10.1038/s41467-025-57995-0",
+      "url": "https://doi.org/10.1038/s41467-025-57995-0",
+      "journal": "Nature Communications",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2025-03-20",
+      "authors": "Mijalkov et al.",
+      "citations": 16,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-57995-0",
+      "slot": 2,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "使用人工智能研究人的认知、行为或脑机制，综合主题匹配、引用数与发表时间入选。",
+      "evidence": "检索时间：2026-11-22；来源：Crossref；引用数 16，距发表 612 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究将636人的脑解剖连接数据构造成储备池计算网络，估计其计算记忆容量，并分析它与年龄、认知表现及脑功能和结构指标的关系。相关发现又在154名年轻人和72名老年人的独立队列中得到复现。这为研究脑网络与认知衰老提供计算工具，但相关性结果并不等于已建立个体临床诊断方法或治疗效果。",
+      "tag": "研究人的人工智能工作",
+      "ranking_score": 9.5998,
+      "title_zh": "从脑连接网络估计记忆容量，研究认知衰老",
+      "summary_source": "https://www.nature.com/articles/s41467-025-57995-0",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "type": "journal-article",
+      "title": "An expanded registry of candidate cis-regulatory elements",
+      "doi": "10.1038/s41586-025-09909-9",
+      "url": "https://doi.org/10.1038/s41586-025-09909-9",
+      "journal": "Nature",
+      "publisher": "Springer Science and Business Media LLC",
+      "published": "2026-01-07",
+      "authors": "Moore et al.",
+      "citations": 115,
+      "metadata_source": "Crossref",
+      "metadata_url": "https://api.crossref.org/works/10.1038%2Fs41586-025-09909-9",
+      "slot": 3,
+      "freshness": "延伸阅读 · 较早发表",
+      "reason": "本次跨领域候选中热度评分最高的未读研究：公开记录 115 次引用，约 10.82 次 / 月。",
+      "evidence": "检索时间：2026-11-22；来源：Crossref；引用数 115，距发表 319 天。评分依据公开题录、引用总数与发表时间。引用统计可能滞后且存在学科偏差。题录规则筛选未替代人工阅读全文，请以原文为准。",
+      "summary": "研究整合新的 ENCODE 数据和计算方法，将候选顺式调控元件目录扩充至约237万个人类元件和96.7万个小鼠元件，覆盖数百种细胞与组织类型。功能检测数据覆盖超过90%的人类候选元件，并发现部分元件可随细胞环境兼具增强和抑制作用。该资源有助于解释遗传变异与性状关联；被检测覆盖不等于每个候选元件都已证实具有特定功能。",
+      "tag": "跨学科 / 引用热度",
+      "ranking_score": 12.2467,
+      "title_zh": "ENCODE 扩充人类与小鼠候选基因调控元件图谱",
+      "summary_source": "https://www.nature.com/articles/s41586-025-09909-9",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "news": [
+    {
+      "company": "Qwen",
+      "kind": "产品发布",
+      "published": "2026-11-21",
+      "title": "Qwen Code · Release v0.28.3",
+      "summary": "Qwen Code 0.28.3 新增 GitHub 托管通道、通用 Webhook 通知和实验性企业微信接入，并改进跨会话发送、生成界面状态保存与工作区产物浏览。版本还加入繁体中文界面和多项会话控制改进。部分能力需要启用实验选项，属于开发工具与协作流程更新。",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+      "source_feed": "https://github.com/QwenLM/qwen-code/releases.atom",
+      "title_zh": "Qwen Code 0.28.3 扩展通道接入与会话功能",
+      "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "技术报告",
+      "published": "2026-11-20",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "summary": "MedChemBench 包含99道题，考察分子结构重建、证据解释、化合物选择与性质预测。官方报告，GPT-6.2 Astra 在指定推理设置获得84.5%的可得分数，化合物选择与数值预测仍较难。基准使用既有文献，无法排除模型此前接触来源，也不能证明实际发现新药的能力。本条作为公司研究与技术报告动态收录。",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 发布药物化学推理基准 MedChemBench",
+      "summary_source": "https://openai.com/index/introducing-medchembench",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "OpenAI",
+      "kind": "产品演示",
+      "published": "2026-11-19",
+      "title": "Explore the Codex Security Plugin",
+      "summary": "OpenAI 发布 Codex Security Plugin 产品演示，展示从开始使用到审阅演示结果的工作流程。页面主要提供演示入口，未公布独立性能评测或量化效果，适合了解产品操作流程。",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "source_feed": "https://openai.com/news/rss.xml",
+      "title_zh": "OpenAI 发布 Codex Security Plugin 工作流程演示",
+      "summary_source": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+      "summary": "NVIDIA 扩展 cuPhoton、cuPotential、cuSpa 等 CUDA-X 库，面向天文观测、等离子体与分子模拟、单细胞分析等工作。公告介绍 GPU 加速的数据处理和交互分析流程，并将科研工具与代理连接，帮助研究人员在实验或模拟进行时查看结果。文中的加速效果来自特定应用与配置，不能直接视为所有科研任务的收益。",
+      "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "NVIDIA 扩展 CUDA-X 科研库，支持代理参与科学分析",
+      "summary_source": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+      "summary_method": "人工核对公开原文"
+    },
+    {
+      "company": "NVIDIA",
+      "kind": "研究 / 公司动态",
+      "published": "2026-11-16",
+      "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+      "summary": "NVIDIA 在 SC26 回顾自2006年发布 CUDA 以来的科学计算应用，介绍分子模拟、AlexNet 和 AlphaFold 等研究如何使用 GPU 计算。官方称，目前已有超过1100万开发者使用 CUDA，并通过 CUDA-X 库扩展科研与 AI 工作流。本条是平台生态回顾，不代表这些历史研究在本次会议上首次发表。",
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "source_feed": "https://blogs.nvidia.com/feed/",
+      "title_zh": "CUDA 发布二十周年：NVIDIA 回顾科学计算生态进展",
+      "summary_source": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "summary_method": "人工核对公开原文"
+    }
+  ],
+  "notices": [],
+  "sources": [
+    {
+      "source": "Human decision models",
+      "ok": true,
+      "items": 123
+    },
+    {
+      "source": "AI human judgement",
+      "ok": true,
+      "items": 85
+    },
+    {
+      "source": "AI cognitive strategies",
+      "ok": true,
+      "items": 66
+    },
+    {
+      "source": "AI personality correlations",
+      "ok": true,
+      "items": 76
+    },
+    {
+      "source": "Human reasoning models",
+      "ok": true,
+      "items": 80
+    },
+    {
+      "source": "LLM human modelling",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "LLM human memory",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "Human visual representations",
+      "ok": true,
+      "items": 121
+    },
+    {
+      "source": "LLM human concepts",
+      "ok": true,
+      "items": 114
+    },
+    {
+      "source": "Human concept formation",
+      "ok": true,
+      "items": 103
+    },
+    {
+      "source": "LLM social norms",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM belief modelling",
+      "ok": true,
+      "items": 101
+    },
+    {
+      "source": "Human sentence representations",
+      "ok": true,
+      "items": 102
+    },
+    {
+      "source": "AI human empathy",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "LLM cognition",
+      "ok": true,
+      "items": 83
+    },
+    {
+      "source": "AI human behaviour",
+      "ok": true,
+      "items": 75
+    },
+    {
+      "source": "Human interaction",
+      "ok": true,
+      "items": 71
+    },
+    {
+      "source": "AI human cognition impact",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "LLM brain alignment",
+      "ok": true,
+      "items": 91
+    },
+    {
+      "source": "AI human decisions",
+      "ok": true,
+      "items": 117
+    },
+    {
+      "source": "Indexed LLM human research",
+      "ok": true,
+      "items": 1
+    },
+    {
+      "source": "AI personality prediction",
+      "ok": true,
+      "items": 119
+    },
+    {
+      "source": "LLM personality inference",
+      "ok": true,
+      "items": 54
+    },
+    {
+      "source": "LLM social experiments",
+      "ok": true,
+      "items": 72
+    },
+    {
+      "source": "Neural models of cognition",
+      "ok": true,
+      "items": 140
+    },
+    {
+      "source": "LLM social reaction prediction",
+      "ok": true,
+      "items": 77
+    },
+    {
+      "source": "Human representational alignment",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "News OpenAI",
+      "ok": true,
+      "items": 78
+    },
+    {
+      "source": "News Google DeepMind",
+      "ok": true,
+      "items": 10
+    },
+    {
+      "source": "News NVIDIA",
+      "ok": true,
+      "items": 16
+    },
+    {
+      "source": "News Microsoft Research",
+      "ok": true,
+      "items": 6
+    },
+    {
+      "source": "News Qwen",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://www.anthropic.com/news",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Page https://deepseek.com/en/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline recent citations",
+      "ok": true,
+      "items": 11
+    },
+    {
+      "source": "Indexed AI human research",
+      "ok": true,
+      "items": 2
+    },
+    {
+      "source": "Page https://api-docs.deepseek.com/news/",
+      "ok": true,
+      "items": 0
+    },
+    {
+      "source": "Cross-discipline annual citations",
+      "ok": true,
+      "items": 74
+    },
+    {
+      "source": "Verified full-text methods",
+      "ok": true,
+      "items": 2
+    }
+  ],
+  "candidate_count": 1988
+}

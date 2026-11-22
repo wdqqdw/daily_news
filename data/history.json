@@ -2407,6 +2407,42 @@
         "url:https://doi.org/10.1038/s41592-025-02975-x"
       ],
       "doi": "10.1038/s41592-025-02975-x"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "Public opinion surveys with large language models: methodological opportunities and validity risks",
+      "url": "https://doi.org/10.1057/s41599-026-09593-8",
+      "keys": [
+        "doi:10.1057/s41599-026-09593-8",
+        "title:llm能估计公众观点但仍有党派偏差与不确定性低估",
+        "title:publicopinionsurveyswithlargelanguagemodelsmethodologicalopportunitiesandvalidityrisks",
+        "url:https://doi.org/10.1057/s41599-026-09593-8"
+      ],
+      "doi": "10.1057/s41599-026-09593-8"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "Computational memory capacity predicts aging and cognitive decline",
+      "url": "https://doi.org/10.1038/s41467-025-57995-0",
+      "keys": [
+        "doi:10.1038/s41467-025-57995-0",
+        "title:computationalmemorycapacitypredictsagingandcognitivedecline",
+        "title:从脑连接网络估计记忆容量研究认知衰老",
+        "url:https://doi.org/10.1038/s41467-025-57995-0"
+      ],
+      "doi": "10.1038/s41467-025-57995-0"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "An expanded registry of candidate cis-regulatory elements",
+      "url": "https://doi.org/10.1038/s41586-025-09909-9",
+      "keys": [
+        "doi:10.1038/s41586-025-09909-9",
+        "title:anexpandedregistryofcandidatecisregulatoryelements",
+        "title:encode扩充人类与小鼠候选基因调控元件图谱",
+        "url:https://doi.org/10.1038/s41586-025-09909-9"
+      ],
+      "doi": "10.1038/s41586-025-09909-9"
     }
   ],
   "news": [
@@ -5256,6 +5292,61 @@
         "title:nvidiasweepsmlperftrainingandendpointsasverarubindebutswithleadingperformance",
         "title:nvidia公布verarubin的mlperf训练与代理推理成绩",
         "url:https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "Qwen Code · Release v0.28.3",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3",
+      "keys": [
+        "title:qwencode0283扩展通道接入与会话功能",
+        "title:qwencodereleasev0283",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.3"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "Can AI help scientists identify promising drug candidates?",
+      "url": "https://openai.com/index/introducing-medchembench",
+      "keys": [
+        "title:canaihelpscientistsidentifypromisingdrugcandidates",
+        "title:openai发布药物化学推理基准medchembench",
+        "url:https://openai.com/index/introducing-medchembench"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "Explore the Codex Security Plugin",
+      "url": "https://openai.com/business/learn/codex-security-plugin-demo",
+      "keys": [
+        "title:explorethecodexsecurityplugin",
+        "title:openai发布codexsecurityplugin工作流程演示",
+        "url:https://openai.com/business/learn/codex-security-plugin-demo"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "NVIDIA CUDA-X Libraries Give Agents the Tools to Accelerate Scientific Discovery",
+      "url": "https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery/",
+      "keys": [
+        "title:nvidiacudaxlibrariesgiveagentsthetoolstoacceleratescientificdiscovery",
+        "title:nvidia扩展cudax科研库支持代理参与科学分析",
+        "url:https://blogs.nvidia.com/blog/cuda-x-libraries-agents-accelerate-scientific-discovery"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-22",
+      "title": "CUDA at 20: How the Platform Transformed Scientific Computing",
+      "url": "https://blogs.nvidia.com/blog/20-years-cuda/",
+      "keys": [
+        "title:cudaat20howtheplatformtransformedscientificcomputing",
+        "title:cuda发布二十周年nvidia回顾科学计算生态进展",
+        "url:https://blogs.nvidia.com/blog/20-years-cuda"
       ],
       "company": "NVIDIA"
     }
