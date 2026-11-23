@@ -206,5 +206,12 @@
     ],
     "reason": "期刊文章类型为 Perspective，PubMed 同时标为 Review；它综合高阶网络研究，不作为每日原创实证研究论文。",
     "source": "https://pubmed.ncbi.nlm.nih.gov/41407877/"
+  },
+  "10.1177/03000605251330578": {
+    "slots": [
+      2
+    ],
+    "reason": "原文使用胶质瘤 MRI 派生的合成代谢图评估超分辨率，指标为图像相似度、信噪比和感知质量；未研究人的认知、行为或功能性脑机制，不作为第二栏人类研究。",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12035488/"
   }
 }

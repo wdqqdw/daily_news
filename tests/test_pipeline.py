@@ -29,6 +29,27 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_facial_emotions_require_observed_human_comparison(self):
+        p=paper('10.1/facial','Large language models identifying human facial emotions',
+                abstract='We compare model responses with human ratings and ground-truth labels for facial expressions.')
+        self.assertTrue(relevant(p,1))
+        for abstract in (p['abstract'].replace('human ratings','synthetic labels'),
+                         p['abstract'].replace('ground-truth labels','image descriptions'),
+                         'Large language models simulate human participants and compare ground-truth labels.'):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
+    def test_rule_learning_requires_observed_humans_and_ai(self):
+        p=paper('10.1/rules','Data distribution during learning in humans and transformer networks',citations=5,
+                abstract='Human participants and transformer networks perform rule learning with a manipulated training distribution. We test in-context generalization and in-weights memory.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('Human participants','Synthetic agents'),
+                         p['abstract'].replace('in-context generalization and in-weights memory','model training speed')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_public_opinion_requires_observed_survey_comparison(self):
         p=paper('10.1/opinion','Public opinion surveys with large language models',
                 abstract='We evaluate large language model response distributions against survey data from human respondents.')

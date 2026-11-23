@@ -2064,5 +2064,38 @@
     "summary": "NVIDIA 在 SC26 回顾自2006年发布 CUDA 以来的科学计算应用，介绍分子模拟、AlexNet 和 AlphaFold 等研究如何使用 GPU 计算。官方称，目前已有超过1100万开发者使用 CUDA，并通过 CUDA-X 库扩展科研与 AI 工作流。本条是平台生态回顾，不代表这些历史研究在本次会议上首次发表。",
     "summary_source": "https://blogs.nvidia.com/blog/20-years-cuda/",
     "kind": "研究 / 公司动态"
+  },
+  "doi:10.1038/s41746-025-01985-5": {
+    "title_zh": "LLM 识别人类面部表情的表现与局限",
+    "summary": "研究使用43名演员的672张静态表情图像，将 GPT-4o、Gemini 2.0 Experimental 和 Claude 3.5 Sonnet 的分类与标准标签及既有人类评分比较。GPT-4o 和 Gemini 在部分类别上达到或超过人类参照表现，但恐惧常被误判为惊讶。单一数据集、演员年龄范围及提示差异限制了推广；表情分类成绩并不能证明模型能准确判断真实内心情绪或用于临床诊断。",
+    "summary_source": "https://www.nature.com/articles/s41746-025-01985-5"
+  },
+  "doi:10.1038/s41562-025-02359-3": {
+    "title_zh": "人类与 Transformer 如何在记忆和规则泛化之间取舍",
+    "summary": "研究让530名参与者与 Transformer 网络完成规则学习任务，并改变训练样例的多样性和重复程度。两类学习者都呈现相似取舍：更多重复有利于记住经历，更多样例多样性有利于泛化，均衡混合可兼顾两者。但先强调多样性的动态训练顺序只让人类受益，所测 Transformer 未出现同样效果。相似行为模式不等于双方采用完全相同的学习机制。",
+    "summary_source": "https://www.nature.com/articles/s41562-025-02359-3"
+  },
+  "doi:10.1126/scirobotics.adx8924": {
+    "title_zh": "BeyondMimic 用引导扩散组合人形机器人的运动技能",
+    "summary": "BeyondMimic 先用统一的运动跟踪设置学习侧手翻、旋转踢和冲刺等动作，再通过潜在扩散模型组合技能并接受目标引导。研究报告，系统能处理训练时未见的动作补全、手柄遥控和避障任务，并将相关技能零样本迁移到真实机器人。结果展示了从动作模仿到任务组合的进展，其适用范围仍以论文测试的机器人和任务为限。",
+    "summary_source": "https://api.crossref.org/works/10.1126%2Fscirobotics.adx8924"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4": {
+    "title_zh": "Qwen Code 0.28.4 改进产物浏览、会话继续与运行时可靠性",
+    "summary": "Qwen Code 0.28.4 为本地 Web Shell 加入支持渐进扫描的工作区产物库，并改进会话继续标记、建议输入和移动端布局。版本还加入 Gemini 4 的推理默认设置，修复状态目录权限、命令迁移冲突和扩展清单读取等问题。官方未列出已知破坏性变更，更新重点是使用体验和运行可靠性。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4",
+    "kind": "产品发布"
+  },
+  "url:https://openai.com/index/perplexity-and-intelligence": {
+    "title_zh": "OpenAI 提议以困惑度衡量预训练进展并讨论共同安全标准",
+    "summary": "OpenAI 首席科学家 Jakub Pachocki 撰文，公开部分内部预训练评估趋势，提议将困惑度或交叉熵用于跨机构进展讨论及共同安全门槛。文中数值来自内部代码留出集，作者同时指出不同数据集难以直接比较，指标也不能覆盖推理等预训练之外的能力提升。这是评估与治理提案，尚非已确立的行业统一标准。",
+    "summary_source": "https://openai.com/index/perplexity-and-intelligence",
+    "kind": "研究 / 公司动态"
+  },
+  "url:https://blogs.nvidia.com/blog/rubin-hpc": {
+    "title_zh": "NVIDIA 宣布面向科学模拟与数据分析的 Rubin HPC GPU",
+    "summary": "NVIDIA 在 SC26 宣布 Rubin HPC，面向科学、工程和分析工作中的模拟与数据处理。官方介绍，该 GPU 配置超过5万个 CUDA 核心，结合稀疏数据加速和第七代 NVLink，力图同时改善计算与数据传输，并配合 CUDA-X 库支持科研代理调用模拟工具。本次公告介绍产品设计与目标，具体应用收益仍取决于任务及软硬件配置。",
+    "summary_source": "https://blogs.nvidia.com/blog/rubin-hpc/",
+    "kind": "产品发布"
   }
 }

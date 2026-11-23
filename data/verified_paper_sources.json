@@ -608,5 +608,21 @@
     "checked_on": "2026-11-22",
     "discover": true,
     "notes": "This original research applies reservoir computing, a recurrent neural network method, to brain anatomical connectivity data from human participants. The primary lifespan cohort contains 636 individuals. Researchers estimate computational memory capacity from these measured brain networks and examine associations with age, cognitive performance, resting-state activity, white matter integrity and locus coeruleus signal intensity. The findings are replicated in an independent cohort with 154 young and 72 older individuals. The neural network is used to investigate human memory and cognitive aging, rather than merely evaluate a synthetic computing benchmark. The reported associations do not establish a treatment or a clinically validated individual diagnosis. Published 20 March 2025."
+  },
+  "10.1038/s41746-025-01985-5": {
+    "doi": "10.1038/s41746-025-01985-5",
+    "title": "Evaluating the performance of general purpose large language models in identifying human facial emotions",
+    "source": "https://www.nature.com/articles/s41746-025-01985-5",
+    "checked_on": "2026-11-23",
+    "discover": true,
+    "notes": "This original study compares large language model facial-expression classifications with ground-truth labels and observed human ratings in the NimStim dataset. It uses 672 static images of 43 professional human actors aged 21 to 30, and existing normative human ratings rather than a newly recruited observer cohort. GPT-4o, Gemini 2.0 Experimental and Claude 3.5 Sonnet were each tested twice per image through their user interfaces. GPT-4o and Gemini show agreement comparable to or above human observers on some expression categories; fear is often confused with surprise. The result concerns recognition of posed facial expressions, not direct measurement of a person's inner emotional state. A single static-image dataset, demographic coverage and prompt differences limit generalization; clinical effectiveness is not established. Published 16 October 2025."
+  },
+  "10.1038/s41562-025-02359-3": {
+    "doi": "10.1038/s41562-025-02359-3",
+    "title": "Shared sensitivity to data distribution during learning in humans and transformer networks",
+    "source": "https://www.nature.com/articles/s41562-025-02359-3",
+    "checked_on": "2026-11-23",
+    "discover": true,
+    "notes": "This original study compares 530 human participants with transformer networks on a rule learning task. Researchers manipulate the diversity and redundancy of examples in the training distribution, testing in-context generalization to new queries and in-weights recall of past examples. Both types of learner show a trade-off: diverse examples favor generalization and repeated examples favor memory; a balanced mixture supports both strategies. Humans benefit from dynamic curricula emphasizing diverse examples early, whereas the tested transformers do not. The study examines observed human learning and memory, not only artificial model training, and does not establish identical mechanisms in people and transformers. Published 23 December 2025."
   }
 }
