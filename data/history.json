@@ -2443,6 +2443,42 @@
         "url:https://doi.org/10.1038/s41586-025-09909-9"
       ],
       "doi": "10.1038/s41586-025-09909-9"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "Evaluating the performance of general purpose large language models in identifying human facial emotions",
+      "url": "https://doi.org/10.1038/s41746-025-01985-5",
+      "keys": [
+        "doi:10.1038/s41746-025-01985-5",
+        "title:evaluatingtheperformanceofgeneralpurposelargelanguagemodelsinidentifyinghumanfacialemotions",
+        "title:llm识别人类面部表情的表现与局限",
+        "url:https://doi.org/10.1038/s41746-025-01985-5"
+      ],
+      "doi": "10.1038/s41746-025-01985-5"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "Shared sensitivity to data distribution during learning in humans and transformer networks",
+      "url": "https://doi.org/10.1038/s41562-025-02359-3",
+      "keys": [
+        "doi:10.1038/s41562-025-02359-3",
+        "title:sharedsensitivitytodatadistributionduringlearninginhumansandtransformernetworks",
+        "title:人类与transformer如何在记忆和规则泛化之间取舍",
+        "url:https://doi.org/10.1038/s41562-025-02359-3"
+      ],
+      "doi": "10.1038/s41562-025-02359-3"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "BeyondMimic: From motion tracking to versatile humanoid control via guided diffusion",
+      "url": "https://doi.org/10.1126/scirobotics.adx8924",
+      "keys": [
+        "doi:10.1126/scirobotics.adx8924",
+        "title:beyondmimicfrommotiontrackingtoversatilehumanoidcontrolviaguideddiffusion",
+        "title:beyondmimic用引导扩散组合人形机器人的运动技能",
+        "url:https://doi.org/10.1126/scirobotics.adx8924"
+      ],
+      "doi": "10.1126/scirobotics.adx8924"
     }
   ],
   "news": [
@@ -5347,6 +5383,50 @@
         "title:cudaat20howtheplatformtransformedscientificcomputing",
         "title:cuda发布二十周年nvidia回顾科学计算生态进展",
         "url:https://blogs.nvidia.com/blog/20-years-cuda"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "Qwen Code · Release v0.28.4",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4",
+      "keys": [
+        "title:qwencode0284改进产物浏览会话继续与运行时可靠性",
+        "title:qwencodereleasev0284",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.4"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "Perplexity and Intelligence",
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "keys": [
+        "title:openai提议以困惑度衡量预训练进展并讨论共同安全标准",
+        "title:perplexityandintelligence",
+        "url:https://openai.com/index/perplexity-and-intelligence"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "Deploying Daybreak Red",
+      "url": "https://openai.com/business/learn/deploying-daybreak-red",
+      "keys": [
+        "title:deployingdaybreakred",
+        "title:openai发布daybreakred受监督安全调查部署指南",
+        "url:https://openai.com/business/learn/deploying-daybreak-red"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-23",
+      "title": "NVIDIA Announces Rubin HPC — A New GPU to Accelerate Agents for Science, Engineering and Analytics",
+      "url": "https://blogs.nvidia.com/blog/rubin-hpc/",
+      "keys": [
+        "title:nvidiaannouncesrubinhpcanewgputoaccelerateagentsforscienceengineeringandanalytics",
+        "title:nvidia宣布面向科学模拟与数据分析的rubinhpcgpu",
+        "url:https://blogs.nvidia.com/blog/rubin-hpc"
       ],
       "company": "NVIDIA"
     }
