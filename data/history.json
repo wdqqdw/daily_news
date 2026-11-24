@@ -2479,6 +2479,42 @@
         "url:https://doi.org/10.1126/scirobotics.adx8924"
       ],
       "doi": "10.1126/scirobotics.adx8924"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "Collective and augmented intelligence outperform artificial intelligence on emotion recognition tests",
+      "url": "https://doi.org/10.1038/s41598-026-45331-5",
+      "keys": [
+        "doi:10.1038/s41598-026-45331-5",
+        "title:collectiveandaugmentedintelligenceoutperformartificialintelligenceonemotionrecognitiontests",
+        "title:情绪识别测试中人类集体判断与人机组合超过单一ai",
+        "url:https://doi.org/10.1038/s41598-026-45331-5"
+      ],
+      "doi": "10.1038/s41598-026-45331-5"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "LLM-D12: A Dual-Dimensional Scale of Instrumental and Relational Dependencies on Large Language Models",
+      "url": "https://doi.org/10.1145/3765895",
+      "keys": [
+        "doi:10.1145/3765895",
+        "title:llmd12adualdimensionalscaleofinstrumentalandrelationaldependenciesonlargelanguagemodels",
+        "title:llmd12量表区分人对大模型的工具性依赖与关系性依赖",
+        "url:https://doi.org/10.1145/3765895"
+      ],
+      "doi": "10.1145/3765895"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "Automating expert-level medical reasoning evaluation of large language models",
+      "url": "https://doi.org/10.1038/s41746-025-02208-7",
+      "keys": [
+        "doi:10.1038/s41746-025-02208-7",
+        "title:automatingexpertlevelmedicalreasoningevaluationoflargelanguagemodels",
+        "title:medthinkbench用专家推理步骤评估大模型医学推理",
+        "url:https://doi.org/10.1038/s41746-025-02208-7"
+      ],
+      "doi": "10.1038/s41746-025-02208-7"
     }
   ],
   "news": [
@@ -5429,6 +5465,50 @@
         "url:https://blogs.nvidia.com/blog/rubin-hpc"
       ],
       "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "OpenAI and Cisco introduce Shirudo",
+      "url": "https://openai.com/index/introducing-shirudo",
+      "keys": [
+        "title:openaiandciscointroduceshirudo",
+        "title:openai与cisco介绍linux开源运行时shirudo",
+        "url:https://openai.com/index/introducing-shirudo"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "Finding faster quantum algorithms with agents and formal verification",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "keys": [
+        "title:deepmind用智能体团队与形式化证明优化量子算法",
+        "title:findingfasterquantumalgorithmswithagentsandformalverification",
+        "url:https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "Merry Making: Play, Build and Create With NVIDIA Technologies This Holiday Season",
+      "url": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
+      "keys": [
+        "title:merrymakingplaybuildandcreatewithnvidiatechnologiesthisholidayseason",
+        "title:nvidia汇总游戏内容创作与本地机器人开发工具",
+        "url:https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026"
+      ],
+      "company": "NVIDIA"
+    },
+    {
+      "first_pushed": "2026-11-24",
+      "title": "Connected intelligence for in-house legal",
+      "url": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+      "keys": [
+        "title:connectedintelligenceforinhouselegal",
+        "title:openai分享企业法务连接业务背景与可复用工作流的思路",
+        "url:https://openai.com/business/learn/connected-intelligence-for-in-house-legal"
+      ],
+      "company": "OpenAI"
     }
   ]
 }
