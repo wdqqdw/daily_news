@@ -29,6 +29,29 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_emotion_tests_require_observed_mental_state_comparison(self):
+        p=paper('10.1/eyes','Collective intelligence on emotion recognition tests',
+                abstract='We compare GPT-5 with human participants on mental state recognition using the Reading the Mind in the Eyes Test.')
+        self.assertTrue(relevant(p,1))
+        for abstract in (p['abstract'].replace('human participants','synthetic labels'),
+                         p['abstract'].replace('human participants','simulated human participants'),
+                         p['abstract'].replace('mental state recognition','image naming'),
+                         p['abstract'].replace('GPT-5','a statistical baseline')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
+    def test_dependency_scale_requires_human_validation_and_influence(self):
+        p=paper('10.1/dependency','A Scale of Dependencies on Large Language Models',citations=5,
+                abstract='Human participants completed a questionnaire; exploratory and confirmatory factor analyses validated two dimensions of dependency.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('Human participants','Simulated human participants'),
+                         p['abstract'].replace('Human participants','Artificial agents'),
+                         p['abstract'].replace('factor analyses','model comparisons')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_facial_emotions_require_observed_human_comparison(self):
         p=paper('10.1/facial','Large language models identifying human facial emotions',
                 abstract='We compare model responses with human ratings and ground-truth labels for facial expressions.')

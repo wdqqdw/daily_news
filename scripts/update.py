@@ -341,6 +341,14 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Eye-region emotion tests measure social perception. Require real
+        # human comparisons and mental-state inference, not model-only scores.
+        emotion_recognition = (re.search(r'\bemotion recognition tests?\b',title,re.I)
+                               and observed_comparison
+                               and re.search(r'\bmental state recognition\b',text,re.I)
+                               and re.search(r'\bReading the Mind in the Eyes\b',text,re.I)
+                               and re.search(r'\bcompar\w*\b',text,re.I))
+        if emotion_recognition and LLM.search(text):return True
         # Facial-emotion recognition tests social perception when evaluated
         # against observed human ratings, not only synthetic image labels.
         human_facial_emotions = (re.search(r'\bhuman facial emotions\b',title,re.I)
@@ -457,6 +465,15 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # Validated dependency scales study human relationships with LLMs.
+        # Keep this in the human-research slot and retain the influence gate.
+        llm_dependency = (re.search(r'\b(?:dependency|dependencies)\b',title,re.I)
+                          and re.search(r'\bscale\b',title,re.I)
+                          and observed_comparison
+                          and re.search(r'\bquestionnaire\b',text,re.I)
+                          and re.search(r'\bfactor analyses\b',text,re.I)
+                          and re.search(r'\b(?:validat\w*|validity)\b',text,re.I))
+        if llm_dependency and LLM.search(text):return p.get('citations',0)>=5
         # Training-distribution experiments compare human memory and rule
         # generalization with transformers, rather than model-only learning.
         human_rule_learning = (re.search(r'\blearning in humans\b',title,re.I)

@@ -624,5 +624,21 @@
     "checked_on": "2026-11-23",
     "discover": true,
     "notes": "This original study compares 530 human participants with transformer networks on a rule learning task. Researchers manipulate the diversity and redundancy of examples in the training distribution, testing in-context generalization to new queries and in-weights recall of past examples. Both types of learner show a trade-off: diverse examples favor generalization and repeated examples favor memory; a balanced mixture supports both strategies. Humans benefit from dynamic curricula emphasizing diverse examples early, whereas the tested transformers do not. The study examines observed human learning and memory, not only artificial model training, and does not establish identical mechanisms in people and transformers. Published 23 December 2025."
+  },
+  "10.1038/s41598-026-45331-5": {
+    "doi": "10.1038/s41598-026-45331-5",
+    "title": "Collective and augmented intelligence outperform artificial intelligence on emotion recognition tests",
+    "source": "https://www.nature.com/articles/s41598-026-45331-5",
+    "checked_on": "2026-11-24",
+    "discover": true,
+    "notes": "The researchers compare GPT-5 mini with existing data from human participants on standardized emotion and mental state recognition tasks: the Reading the Mind in the Eyes Test and its multiracial version. They use publicly available anonymized human responses and 100 zero-shot model runs. Individual model accuracy exceeds most individual human scores, but bootstrap-resampled plurality voting over independent human responses outperforms repeated model sampling. Aggregating human and AI responses improves performance further. These are simulated aggregations of real human data, not newly observed interactive teams. Public benchmark contamination, highly correlated model runs, and the limited ecological validity of forced-choice eye-image tasks constrain interpretation. Scientific Reports identifies this as an original research Article published on 24 March 2026."
+  },
+  "10.1145/3765895": {
+    "doi": "10.1145/3765895",
+    "title": "LLM-D12: A Dual-Dimensional Scale of Instrumental and Relational Dependencies on Large Language Models",
+    "source": "https://doi.org/10.1145/3765895",
+    "checked_on": "2026-11-24",
+    "discover": true,
+    "notes": "The authors collected questionnaire responses from 526 human participants in the UK to develop and validate LLM-D12, a 12-item scale of dependency on large language models. Exploratory and confirmatory factor analyses on separate halves of the sample support instrumental dependency and relationship dependency, with six items each. Instrumental dependency concerns reliance on LLMs for decision-making and cognitive tasks, while relationship dependency concerns perceived social meaning or companionship. Internal consistency, discriminant validity and external validation support the measurement structure. This is a human self-report study, not a model personality benchmark or a clinical diagnosis of addiction. Associations with usage do not establish causation. The original research article in ACM Transactions on the Web was first available online on 3 September 2025, before its later issue date."
   }
 }

@@ -2097,5 +2097,44 @@
     "summary": "NVIDIA 在 SC26 宣布 Rubin HPC，面向科学、工程和分析工作中的模拟与数据处理。官方介绍，该 GPU 配置超过5万个 CUDA 核心，结合稀疏数据加速和第七代 NVLink，力图同时改善计算与数据传输，并配合 CUDA-X 库支持科研代理调用模拟工具。本次公告介绍产品设计与目标，具体应用收益仍取决于任务及软硬件配置。",
     "summary_source": "https://blogs.nvidia.com/blog/rubin-hpc/",
     "kind": "产品发布"
+  },
+  "doi:10.1038/s41598-026-45331-5": {
+    "title_zh": "情绪识别测试中，人类集体判断与人机组合超过单一 AI",
+    "summary": "研究把 GPT-5 mini 的100次零样本运行，与既有人类数据在两种眼神读心测试上的表现比较。模型优于多数个体，但将独立人类回答用重采样方式汇总投票后，人类集体判断超过反复采样的模型；汇总人机回答还可进一步改善成绩。这里的组合是离线聚合，并非真实协作团队。公开测试可能存在训练污染，模型回答也高度相关，结果不能直接等同于真实社交能力。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-45331-5"
+  },
+  "doi:10.1145/3765895": {
+    "title_zh": "LLM-D12 量表区分人对大模型的工具性依赖与关系性依赖",
+    "summary": "研究收集526名英国参与者的问卷回答，开发12题的 LLM-D12 量表。将样本分半进行探索性与验证性因素分析后，研究支持两个各含6题的维度：依赖模型辅助决策和认知任务的工具性依赖，以及把模型视为有社会意义或陪伴关系对象的关系性依赖。内部一致性与效度检验支持这一区分，但自报依赖程度不等于临床成瘾，相关关系也不能证明使用模型造成了依赖。",
+    "summary_source": "https://doi.org/10.1145/3765895"
+  },
+  "doi:10.1038/s41746-025-02208-7": {
+    "title_zh": "MedThink-Bench 用专家推理步骤评估大模型医学推理",
+    "summary": "研究构建覆盖10个医学领域、含500道复杂问题的 MedThink-Bench，并为问题配备专家撰写的逐步推理依据。配套评估框架结合细粒度推理核对与大模型评分；实验中，其评分与专家评价的相关系数最高达0.87，评估时间约为人工的1.4%。这些结果支持扩大推理质量评估的规模，但基准表现和评分一致性不能替代真实临床安全性验证。",
+    "summary_source": "https://www.nature.com/articles/s41746-025-02208-7"
+  },
+  "url:https://openai.com/index/introducing-shirudo": {
+    "title_zh": "OpenAI 与 Cisco 介绍 Linux 开源运行时 Shirudo",
+    "summary": "OpenAI 与 Cisco 联合介绍 Shirudo，这是一款面向 Linux 的开源运行时。官方说明，其用途是在团队逐步部署补丁期间，帮助保护仍在运行的系统。",
+    "summary_source": "https://openai.com/index/introducing-shirudo",
+    "kind": "产品发布"
+  },
+  "url:https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026": {
+    "title_zh": "NVIDIA 汇总游戏、内容创作与本地机器人开发工具",
+    "summary": "NVIDIA 发布面向节日项目的产品与应用汇总，介绍 RTX 系列设备、AI 图形技术、Studio 创作工具以及 Jetson 边缘 AI 平台。文章展示了从游戏与视频制作到视觉识别、生成式 AI 和机器人原型开发的使用方向，并链接开发教程。这是一篇现有技术与应用资源的梳理，相关体验和性能取决于设备、软件与具体任务。",
+    "summary_source": "https://blogs.nvidia.com/blog/nvidia-technologies-holidays-2026/",
+    "kind": "生态 / 应用"
+  },
+  "url:https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification": {
+    "title_zh": "DeepMind 用智能体团队与形式化证明优化量子算法",
+    "summary": "Google DeepMind 与 Google Quantum AI 让 Gemini 4 智能体团队提出量子算法改进，并用 Lean 验证数学正确性。官方报告，所研究聚变模拟电路的计算成本降低11.8倍，部分分子模拟也取得资源节省，并开放证明库、问题规格与已验证方案。这些结果属于算法与资源估算层面的改进，尚不代表已在量子硬件上实现同等加速。",
+    "summary_source": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+    "kind": "技术报告"
+  },
+  "url:https://openai.com/business/learn/connected-intelligence-for-in-house-legal": {
+    "title_zh": "OpenAI 分享企业法务连接业务背景与可复用工作流的思路",
+    "summary": "OpenAI 与来自 LECG、Cooley 的嘉宾讨论企业内部法务如何使用 AI 连接业务背景、构建可重复使用的工作流，并改善与外部律师的协作。内容聚焦法务团队的应用方式与组织实践，属于经验分享。",
+    "summary_source": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
+    "kind": "应用 / 经验分享"
   }
 }
