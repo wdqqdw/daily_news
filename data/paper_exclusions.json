@@ -213,5 +213,23 @@
     ],
     "reason": "原文使用胶质瘤 MRI 派生的合成代谢图评估超分辨率，指标为图像相似度、信噪比和感知质量；未研究人的认知、行为或功能性脑机制，不作为第二栏人类研究。",
     "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12035488/"
+  },
+  "10.1038/s44360-026-00096-z": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "Nature Health 出版页面明确标为 Comment，内容回顾 PhysioNet 平台发展及数据共享基础设施，不是原创实证研究论文。",
+    "source": "https://www.nature.com/articles/s44360-026-00096-z"
+  },
+  "10.1038/s44360-025-00024-7": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "Nature Health 明确标为 Perspective；摘要说明其讨论全球健康中的 LLM 应用进展、挑战与前景，属于观点与案例综述而非原创实证研究。",
+    "source": "https://www.nature.com/articles/s44360-025-00024-7"
   }
 }

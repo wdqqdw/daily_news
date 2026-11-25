@@ -2136,5 +2136,32 @@
     "summary": "OpenAI 与来自 LECG、Cooley 的嘉宾讨论企业内部法务如何使用 AI 连接业务背景、构建可重复使用的工作流，并改善与外部律师的协作。内容聚焦法务团队的应用方式与组织实践，属于经验分享。",
     "summary_source": "https://openai.com/business/learn/connected-intelligence-for-in-house-legal",
     "kind": "应用 / 经验分享"
+  },
+  "doi:10.1038/s41562-026-02543-z": {
+    "title_zh": "人类海马如何利用上下文理解词义",
+    "summary": "研究记录10名参与者收听播客时的海马单神经元活动，发现神经元既编码词在分句中的位置，也反映当前词的语义及先前词语表征的加权组合。上下文词语的相对权重与大语言模型的自注意力权重相关，提示两者在语言上下文化过程中存在可比较的计算特征。这种相关性并不证明大脑与模型采用完全相同的机制。",
+    "summary_source": "https://www.nature.com/articles/s41562-026-02543-z"
+  },
+  "doi:10.1073/pnas.2509321123": {
+    "title_zh": "用卷积神经网络研究人类脑干白质连接及其病变",
+    "summary": "研究开发 BSBT，将扩散磁共振得到的概率纤维图与卷积神经网络结合，自动分割8条脑干白质束，并在健康者、神经疾病患者及离体组织上验证。分析发现不同疾病中的纤维束结构变化，并追踪一名重度脑外伤患者从昏迷到7个月后恢复的影像变化。该病例展示了研究意识恢复通路的可能用途，但尚不能据此建立可靠的个体预后判断。",
+    "summary_source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12890787/"
+  },
+  "doi:10.1073/pnas.2516511123": {
+    "title_zh": "Human2 借助大模型重建人体多尺度代谢模型",
+    "summary": "研究提出人体基因组尺度代谢模型 Human2，利用大语言模型与自动检查辅助模型整理和协作校验。整合转录组、蛋白质组及动力学数据后，研究构建不同年龄、性别和组织器官的模型，并在全身动态框架中模拟进食到禁食状态下的器官间代谢物交换。它为研究人群代谢差异提供计算工具，模型预测仍需相应实验与临床数据验证。",
+    "summary_source": "https://pubmed.ncbi.nlm.nih.gov/41950094/"
+  },
+  "url:https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities": {
+    "title_zh": "OpenAI 报告 GPT-6 的蛋白质设计能力与初步实验结果",
+    "summary": "OpenAI 发布预印本，报告 GPT-6 系列利用推理和通用代码工具设计蛋白结构与序列的能力。与 Onava 合作的实验在5个靶点上观察到结合迹象。初始设计未调用专用生物模型，但后续序列补充和候选筛选使用了专用模型；完整蛋白结构预测仍是弱项。这是公司报告的初步研究，不能等同于药物有效性验证。",
+    "summary_source": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+    "kind": "技术报告"
+  },
+  "url:https://openai.com/index/searching-for-distant-planets-with-astra": {
+    "title_zh": "业余天文学家借助 Codex 与 Astra 筛查系外行星候选",
+    "summary": "OpenAI 介绍两位业余天文学家利用 Codex 和 Astra 编写搜索程序，分析 Kepler、TESS 等望远镜公开数据中的周期性亮度下降。部分候选信号已交给专业天文学家复核，其中两条 Kepler 信号在独立搜索中被再次找到。这些结果仍是待确认的候选，并非已经证实的新行星。",
+    "summary_source": "https://openai.com/index/searching-for-distant-planets-with-astra",
+    "kind": "应用 / 研究案例"
   }
 }
