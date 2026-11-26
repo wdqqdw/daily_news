@@ -2163,5 +2163,38 @@
     "summary": "OpenAI 介绍两位业余天文学家利用 Codex 和 Astra 编写搜索程序，分析 Kepler、TESS 等望远镜公开数据中的周期性亮度下降。部分候选信号已交给专业天文学家复核，其中两条 Kepler 信号在独立搜索中被再次找到。这些结果仍是待确认的候选，并非已经证实的新行星。",
     "summary_source": "https://openai.com/index/searching-for-distant-planets-with-astra",
     "kind": "应用 / 研究案例"
+  },
+  "doi:10.1038/s44277-025-00042-z": {
+    "title_zh": "用 RoBERTa 识别心理治疗叙述中的焦虑与抑郁线索",
+    "summary": "研究用公开论坛文本微调 RoBERTa，并在另一项临床试验中55名参与者的899个叙述句子上，与专家临床标签比较。临床测试平均 F1 约为74%，平衡准确率约为73.5%，显示模型能够识别部分症状性内容。任务限于句子分类；训练与验证按句子划分也可能存在同一用户的文风重叠，因此不能等同于完整精神状态检查或临床诊断。",
+    "summary_source": "https://www.nature.com/articles/s44277-025-00042-z"
+  },
+  "doi:10.1038/s42256-025-01142-3": {
+    "title_zh": "未经任务预训练的卷积网络为何能预测视觉皮层表征",
+    "summary": "研究比较不同网络架构对人类功能磁共振和猴脑记录的解释能力，发现结合空间池化与通道扩展的卷积网络，即使未经任务预训练，也能形成有助于预测视觉皮层反应的特征。相同的维度扩展在其他受测架构中收益较小。结果强调架构约束的作用，但预测仍需拟合线性读出，并不说明大脑就是随机网络或经验学习无关紧要。",
+    "summary_source": "https://www.nature.com/articles/s42256-025-01142-3"
+  },
+  "doi:10.1038/s41591-025-04186-5": {
+    "title_zh": "FMT-LUMINate 探索菌群移植与癌症免疫治疗的联合应用",
+    "summary": "这项多中心开放标签Ⅱ期研究分别纳入20名非小细胞肺癌患者和20名黑色素瘤患者，观察菌群移植联合免疫检查点抑制剂后的结果，客观缓解率分别为80%和75%。黑色素瘤队列有65%出现3级及以上不良事件。由于样本较小且没有随机对照，结果不能单独证明菌群移植带来的额外疗效，仍需更严格的比较研究。",
+    "summary_source": "https://www.nature.com/articles/s41591-025-04186-5"
+  },
+  "url:https://openai.com/business/customer-stories/intentful-dots": {
+    "title_zh": "Intentful 分享用 dots 辅助网站调研、方案与日常协作",
+    "summary": "OpenAI 的客户案例介绍 Intentful 创始人如何使用名为 Aria 的 dot，检查约300个网站的站点地图，整理历史销售与定价信息，并生成由本人审阅修改的方案草稿。案例还涉及消息提醒、任务跟进和共享文档协作。文中效率改善属于这家公司的使用经验，并非对所有团队的普遍效果保证。",
+    "summary_source": "https://openai.com/business/customer-stories/intentful-dots",
+    "kind": "应用 / 客户案例"
+  },
+  "url:https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity": {
+    "title_zh": "DeepMind 用 Mass Spec Skills 辅助质谱解析与分子识别",
+    "summary": "Google DeepMind 发布面向 Google Antigravity 的 Mass Spec Skills，将 Gemini 的化学推理与成熟质谱工具、公开化合物数据库结合，完成谱图处理、候选结构筛选和证据报告。目标是加快串联质谱的解释，并让化学人员复核推断依据。输出仍是结构候选及支持证据，不能等同于已经确认所有未知分子的身份。",
+    "summary_source": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+    "kind": "工具发布 / 技术报告"
+  },
+  "url:https://openai.com/business/customer-stories/ifood": {
+    "title_zh": "iFood 将编码智能体接入覆盖约1.5万个代码仓库的平台",
+    "summary": "OpenAI 客户案例介绍 iFood 的远程智能体平台：团队通过 API 提交任务，GPT-5.6 Luna 在隔离环境中执行工作，再返回合并请求和结构化结果。平台已完成超过2.5万次任务，并用于依赖漏洞修复等场景。案例报告安全平台修复效果提升，但这些指标来自客户自身的部署经验，尚不能直接推广到其他组织。",
+    "summary_source": "https://openai.com/business/customer-stories/ifood",
+    "kind": "应用 / 客户案例"
   }
 }

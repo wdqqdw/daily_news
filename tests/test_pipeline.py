@@ -29,6 +29,30 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_mental_status_requires_observed_therapy_and_clinical_labels(self):
+        p=paper('10.1/mental-status','Large language models for mental status evaluation',
+                abstract='Human participants supplied psychotherapy narratives. Expert clinicians labeled symptomatic sentences for prediction.')
+        self.assertTrue(relevant(p,1))
+        for abstract in (p['abstract'].replace('Human participants','Simulated human participants'),
+                         p['abstract'].replace('Human participants','Artificial agents'),
+                         p['abstract'].replace('Expert clinicians','Automatic keyword rules'),
+                         p['abstract'].replace('symptomatic','grammatical')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+
+    def test_cortical_vision_requires_real_human_recordings_and_influence(self):
+        p=paper('10.1/cortex','Convolutional architectures are cortex-aligned de novo',citations=5,
+                abstract='Neural networks predict visual cortex representations using human fMRI data.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('human fMRI data','monkey neural responses'),
+                         p['abstract'].replace('human fMRI data','synthetic human fMRI data'),
+                         p['abstract'].replace('Neural networks','Statistical summaries'),
+                         p['abstract'].replace('visual cortex representations','model accuracy')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_emotion_tests_require_observed_mental_state_comparison(self):
         p=paper('10.1/eyes','Collective intelligence on emotion recognition tests',
                 abstract='We compare GPT-5 with human participants on mental state recognition using the Reading the Mind in the Eyes Test.')

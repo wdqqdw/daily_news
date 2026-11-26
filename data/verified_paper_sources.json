@@ -640,5 +640,21 @@
     "checked_on": "2026-11-24",
     "discover": true,
     "notes": "The authors collected questionnaire responses from 526 human participants in the UK to develop and validate LLM-D12, a 12-item scale of dependency on large language models. Exploratory and confirmatory factor analyses on separate halves of the sample support instrumental dependency and relationship dependency, with six items each. Instrumental dependency concerns reliance on LLMs for decision-making and cognitive tasks, while relationship dependency concerns perceived social meaning or companionship. Internal consistency, discriminant validity and external validation support the measurement structure. This is a human self-report study, not a model personality benchmark or a clinical diagnosis of addiction. Associations with usage do not establish causation. The original research article in ACM Transactions on the Web was first available online on 3 September 2025, before its later issue date."
+  },
+  "10.1038/s44277-025-00042-z": {
+    "doi": "10.1038/s44277-025-00042-z",
+    "title": "Using large language models as a scalable mental status evaluation technique",
+    "source": "https://www.nature.com/articles/s44277-025-00042-z",
+    "checked_on": "2026-11-26",
+    "discover": true,
+    "notes": "The study evaluates a RoBERTa-based large language model using observed human data: public forum texts and psychotherapy narratives from 55 human participants in an independent clinical trial. Expert clinicians label sentences as symptomatic of anxiety or depression or neutral. The model is trained on public text and tested on 899 retained clinical sentences; the discussion reports mean F1 of 74% and balanced accuracy of 73.5%. This is sentence-level symptom prediction, not a full mental status examination, diagnosis, or evidence of treatment efficacy. The public-data train-validation split is at sentence level and may allow stylistic overlap from the same users. The publisher identifies this as an original Article published on 13 November 2025."
+  },
+  "10.1038/s42256-025-01142-3": {
+    "doi": "10.1038/s42256-025-01142-3",
+    "title": "Convolutional architectures are cortex-aligned de novo",
+    "source": "https://www.nature.com/articles/s42256-025-01142-3",
+    "checked_on": "2026-11-26",
+    "discover": true,
+    "notes": "The researchers compare deep neural networks with observed human fMRI data from the Natural Scenes Dataset and THINGS, as well as monkey electrophysiology, to predict image representations in the visual cortex. Networks without task pretraining are compared across architectures and dimensionalities. Spatial compression through pooling and feature expansion through additional channels allow convolutional models to explain cortical representations more effectively than the other tested architectures. A fitted linear readout is needed to identify brain-aligned dimensions; these results do not imply that the brain is an untrained random network or that experience is irrelevant. The public publisher abstract and data statement identify real human recordings. Nature Machine Intelligence published the original research Article on 13 November 2025."
   }
 }

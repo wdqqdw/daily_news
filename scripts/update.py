@@ -341,6 +341,14 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Sentence-level symptom prediction models a human mental state.
+        # Require observed therapy narratives and independent clinical labels.
+        mental_status = (re.search(r'\bmental status evaluation\b',title,re.I)
+                         and observed_comparison
+                         and re.search(r'\bpsychotherapy\b',text,re.I)
+                         and re.search(r'\bsymptom\w*\b',text,re.I)
+                         and re.search(r'\bexpert (?:clinicians|labels|ratings)\b',text,re.I))
+        if mental_status and LLM.search(text):return True
         # Eye-region emotion tests measure social perception. Require real
         # human comparisons and mental-state inference, not model-only scores.
         emotion_recognition = (re.search(r'\bemotion recognition tests?\b',title,re.I)
@@ -465,6 +473,15 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # Cortex-aligned models study visual representation when predictions
+        # are tested against real human recordings, not model similarity alone.
+        cortical_vision = (re.search(r'\bcortex.aligned\b',title,re.I)
+                           and observed_comparison
+                           and re.search(r'\bhuman (?:fMRI|neural) (?:data|responses)\b',text,re.I)
+                           and re.search(r'\bvisual cort(?:ex|ices)\b',text,re.I)
+                           and re.search(r'\bpredict\w*\b',text,re.I)
+                           and not re.search(r'\b(?:synthetic|simulated) human (?:fMRI|neural)\b',text,re.I))
+        if cortical_vision and AI.search(text):return p.get('citations',0)>=5
         # Validated dependency scales study human relationships with LLMs.
         # Keep this in the human-research slot and retain the influence gate.
         llm_dependency = (re.search(r'\b(?:dependency|dependencies)\b',title,re.I)
