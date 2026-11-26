@@ -2551,6 +2551,42 @@
         "url:https://doi.org/10.1073/pnas.2516511123"
       ],
       "doi": "10.1073/pnas.2516511123"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "Using large language models as a scalable mental status evaluation technique",
+      "url": "https://doi.org/10.1038/s44277-025-00042-z",
+      "keys": [
+        "doi:10.1038/s44277-025-00042-z",
+        "title:usinglargelanguagemodelsasascalablementalstatusevaluationtechnique",
+        "title:用roberta识别心理治疗叙述中的焦虑与抑郁线索",
+        "url:https://doi.org/10.1038/s44277-025-00042-z"
+      ],
+      "doi": "10.1038/s44277-025-00042-z"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "Convolutional architectures are cortex-aligned de novo",
+      "url": "https://doi.org/10.1038/s42256-025-01142-3",
+      "keys": [
+        "doi:10.1038/s42256-025-01142-3",
+        "title:convolutionalarchitecturesarecortexaligneddenovo",
+        "title:未经任务预训练的卷积网络为何能预测视觉皮层表征",
+        "url:https://doi.org/10.1038/s42256-025-01142-3"
+      ],
+      "doi": "10.1038/s42256-025-01142-3"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "Fecal microbiota transplantation plus immunotherapy in non-small cell lung cancer and melanoma: the phase 2 FMT-LUMINate trial",
+      "url": "https://doi.org/10.1038/s41591-025-04186-5",
+      "keys": [
+        "doi:10.1038/s41591-025-04186-5",
+        "title:fecalmicrobiotatransplantationplusimmunotherapyinnonsmallcelllungcancerandmelanomathephase2fmtluminatetrial",
+        "title:fmtluminate探索菌群移植与癌症免疫治疗的联合应用",
+        "url:https://doi.org/10.1038/s41591-025-04186-5"
+      ],
+      "doi": "10.1038/s41591-025-04186-5"
     }
   ],
   "news": [
@@ -5565,6 +5601,39 @@
         "title:searchingfordistantplanetswithastra",
         "title:业余天文学家借助codex与astra筛查系外行星候选",
         "url:https://openai.com/index/searching-for-distant-planets-with-astra"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "How Intentful uses dots to make more time for growth",
+      "url": "https://openai.com/business/customer-stories/intentful-dots",
+      "keys": [
+        "title:howintentfulusesdotstomakemoretimeforgrowth",
+        "title:intentful分享用dots辅助网站调研方案与日常协作",
+        "url:https://openai.com/business/customer-stories/intentful-dots"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "From spectrum to structure: Identifying molecules with Mass Spec Skills for Google Antigravity",
+      "url": "https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity/",
+      "keys": [
+        "title:deepmind用massspecskills辅助质谱解析与分子识别",
+        "title:fromspectrumtostructureidentifyingmoleculeswithmassspecskillsforgoogleantigravity",
+        "url:https://deepmind.google/blog/interpreting-mass-spectra-with-google-antigravity"
+      ],
+      "company": "Google DeepMind"
+    },
+    {
+      "first_pushed": "2026-11-26",
+      "title": "How iFood scales coding agents across 15,000 repositories",
+      "url": "https://openai.com/business/customer-stories/ifood",
+      "keys": [
+        "title:howifoodscalescodingagentsacross15000repositories",
+        "title:ifood将编码智能体接入覆盖约15万个代码仓库的平台",
+        "url:https://openai.com/business/customer-stories/ifood"
       ],
       "company": "OpenAI"
     }
