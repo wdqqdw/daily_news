@@ -2587,6 +2587,42 @@
         "url:https://doi.org/10.1038/s41591-025-04186-5"
       ],
       "doi": "10.1038/s41591-025-04186-5"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Theory of mind inspired mental state reasoning with large language models for empathetic response generation",
+      "url": "https://doi.org/10.1038/s41598-026-77880-0",
+      "keys": [
+        "doi:10.1038/s41598-026-77880-0",
+        "title:theoryofmindinspiredmentalstatereasoningwithlargelanguagemodelsforempatheticresponsegeneration",
+        "title:从对话推断心理状态能否改善llm的共情回复",
+        "url:https://doi.org/10.1038/s41598-026-77880-0"
+      ],
+      "doi": "10.1038/s41598-026-77880-0"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "The network architecture of general intelligence in the human connectome",
+      "url": "https://doi.org/10.1038/s41467-026-68698-5",
+      "keys": [
+        "doi:10.1038/s41467-026-68698-5",
+        "title:thenetworkarchitectureofgeneralintelligenceinthehumanconnectome",
+        "title:机器学习连接脑网络结构与一般智力差异",
+        "url:https://doi.org/10.1038/s41467-026-68698-5"
+      ],
+      "doi": "10.1038/s41467-026-68698-5"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Making large language models reliable data science programming copilots for biomedical research",
+      "url": "https://doi.org/10.1038/s41551-025-01587-2",
+      "keys": [
+        "doi:10.1038/s41551-025-01587-2",
+        "title:biodsbench检验生物医学数据分析代码的可靠性",
+        "title:makinglargelanguagemodelsreliabledatascienceprogrammingcopilotsforbiomedicalresearch",
+        "url:https://doi.org/10.1038/s41551-025-01587-2"
+      ],
+      "doi": "10.1038/s41551-025-01587-2"
     }
   ],
   "news": [
@@ -5634,6 +5670,50 @@
         "title:howifoodscalescodingagentsacross15000repositories",
         "title:ifood将编码智能体接入覆盖约15万个代码仓库的平台",
         "url:https://openai.com/business/customer-stories/ifood"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Qwen Code · Release v0.28.7",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.7",
+      "keys": [
+        "title:qwencode0287改进模型设置保留与工作区快照",
+        "title:qwencodereleasev0287",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.7"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Qwen Code · Release v0.28.6",
+      "url": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+      "keys": [
+        "title:qwencode0286增强会话恢复并加入显示语言设置",
+        "title:qwencodereleasev0286",
+        "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6"
+      ],
+      "company": "Qwen"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Clay helps sales teams win with Codex and ChatGPT",
+      "url": "https://openai.com/business/customer-stories/clay-plugins-openai",
+      "keys": [
+        "title:clayhelpssalesteamswinwithcodexandchatgpt",
+        "title:clay将客户调研与销售工作流接入chatgpt和codex",
+        "url:https://openai.com/business/customer-stories/clay-plugins-openai"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-27",
+      "title": "Richpanel helps companies automate 50% of support in 30 days",
+      "url": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+      "keys": [
+        "title:richpanelhelpscompaniesautomate50ofsupportin30days",
+        "title:richpanel用ai管理智能体搭建客服工具与流程",
+        "url:https://openai.com/business/customer-stories/richpanel-ai-customer-support"
       ],
       "company": "OpenAI"
     }
