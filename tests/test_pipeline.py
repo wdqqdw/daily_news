@@ -29,6 +29,20 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_intelligence_requires_human_measurements_and_validated_prediction(self):
+        p=paper('10.1/intelligence','The network architecture of general intelligence in the human connectome',citations=5,
+                abstract='Machine learning predicts cognitive test scores using cross-validation and observed human data from fMRI.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        for abstract in (p['abstract'].replace('observed human data from fMRI','synthetic human data'),
+                         p['abstract'].replace('observed human data from fMRI','monkey data'),
+                         p['abstract'].replace('cognitive test scores','image quality'),
+                         p['abstract'].replace('cross-validation','in-sample fitting'),
+                         p['abstract'].replace('Machine learning','Network diagrams')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_mental_status_requires_observed_therapy_and_clinical_labels(self):
         p=paper('10.1/mental-status','Large language models for mental status evaluation',
                 abstract='Human participants supplied psychotherapy narratives. Expert clinicians labeled symptomatic sentences for prediction.')

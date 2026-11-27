@@ -656,5 +656,21 @@
     "checked_on": "2026-11-26",
     "discover": true,
     "notes": "The researchers compare deep neural networks with observed human fMRI data from the Natural Scenes Dataset and THINGS, as well as monkey electrophysiology, to predict image representations in the visual cortex. Networks without task pretraining are compared across architectures and dimensionalities. Spatial compression through pooling and feature expansion through additional channels allow convolutional models to explain cortical representations more effectively than the other tested architectures. A fitted linear readout is needed to identify brain-aligned dimensions; these results do not imply that the brain is an untrained random network or that experience is irrelevant. The public publisher abstract and data statement identify real human recordings. Nature Machine Intelligence published the original research Article on 13 November 2025."
+  },
+  "10.1038/s41467-026-68698-5": {
+    "doi": "10.1038/s41467-026-68698-5",
+    "title": "The network architecture of general intelligence in the human connectome",
+    "source": "https://www.nature.com/articles/s41467-026-68698-5",
+    "checked_on": "2026-11-27",
+    "discover": true,
+    "notes": "The authors use machine learning to predict cognitive test scores of general intelligence from observed human data: fMRI and diffusion MRI from 831 human participants in the Human Connectome Project. Elastic net regression with five-fold cross-validation predicts held-out scores from joint structural-functional connectomes (r=0.35; R2=0.12). Whole-brain predictions outperform individual networks. Associations with weak long-range connections, modal control and small-world topology support a distributed account of human cognition. A separate sample of 145 participants supplies a conceptual replication. These are predictive associations, not causal proof of how intelligence arises or a diagnostic test for individuals. The original Nature Communications Article was published on 26 January 2026."
+  },
+  "10.1038/s41598-026-77880-0": {
+    "doi": "10.1038/s41598-026-77880-0",
+    "title": "Theory of mind inspired mental state reasoning with large language models for empathetic response generation",
+    "source": "https://www.nature.com/articles/s41598-026-77880-0_reference.pdf",
+    "checked_on": "2026-11-27",
+    "discover": true,
+    "notes": "The study models speaker mental states with large language models using recorded human responses and dialogue transcripts from EmpatheticDialogues, a crowdsourced corpus of approximately 25,000 conversations. Five inferred states condition response generation. Automatic metrics and LLM judges evaluate outputs, not direct human validation of inferred states. Context-faithful factual summaries perform similarly, while corrupted descriptions hurt quality. The evidence supports contextual grounding rather than reliable mind reading or clinical benefit. PDF Methods and limitations confirm the real human dialogue corpus and absence of expert human evaluation. This is an original Scientific Reports Article published on 16 November 2026."
   }
 }

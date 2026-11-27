@@ -2196,5 +2196,44 @@
     "summary": "OpenAI 客户案例介绍 iFood 的远程智能体平台：团队通过 API 提交任务，GPT-5.6 Luna 在隔离环境中执行工作，再返回合并请求和结构化结果。平台已完成超过2.5万次任务，并用于依赖漏洞修复等场景。案例报告安全平台修复效果提升，但这些指标来自客户自身的部署经验，尚不能直接推广到其他组织。",
     "summary_source": "https://openai.com/business/customer-stories/ifood",
     "kind": "应用 / 客户案例"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.7": {
+    "title_zh": "Qwen Code 0.28.7 改进模型设置保留与工作区快照",
+    "summary": "新版 CLI 增加基于 Harness 内核的产品包，默认关闭使用统计，并按模型保存推理强度和上下文窗口设置。Web Shell 在会话开始时应用所选思考级别，工作树快照支持按工作区配置保留数量；托管会话的接管与跨实例同步也得到调整。这些是开发工具的功能与可靠性更新，并非模型能力评测。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.7",
+    "kind": "工具 / 版本更新"
+  },
+  "url:https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6": {
+    "title_zh": "Qwen Code 0.28.6 增强会话恢复并加入显示语言设置",
+    "summary": "该版本允许托管会话在等待审批、问题回答或后台工作时挂起，并在运行进程重启后恢复。新增显示语言设置，可显示中文或英文译文并保留原始内容；Web Shell 对短暂提交失败提供自动重试，生成的界面卡片也增加状态保存、复制和下载能力。更新重点是使用体验与会话可靠性。",
+    "summary_source": "https://github.com/QwenLM/qwen-code/releases/tag/v0.28.6",
+    "kind": "工具 / 版本更新"
+  },
+  "url:https://openai.com/business/customer-stories/clay-plugins-openai": {
+    "title_zh": "Clay 将客户调研与销售工作流接入 ChatGPT 和 Codex",
+    "summary": "OpenAI 客户案例介绍 Clay 如何通过 ChatGPT 与 Codex 插件提供客户资料、商机调研和销售流程。其智能体使用 GPT-6 Astra、GPT-6 Sol 等模型开展资料补充、资格判断和信号识别，并协助用户编排工作流。案例展示了企业集成方式，文中效果来自客户自身经验，不能视为普遍适用的销售收益保证。",
+    "summary_source": "https://openai.com/business/customer-stories/clay-plugins-openai",
+    "kind": "应用 / 客户案例"
+  },
+  "url:https://openai.com/business/customer-stories/richpanel-ai-customer-support": {
+    "title_zh": "Richpanel 用 AI 管理智能体搭建客服工具与流程",
+    "summary": "Richpanel 的 Boss AI 使用 GPT-6 Astra 和 GPT-6.1 Sol 编写客服处理流程、配置工具调用，再由采用 GPT-6 Luna 等模型的前台智能体处理对话。官方案例强调把系统连接和操作指引与对话能力结合；标题所述30天自动化50%客服工作属于客户案例陈述，并非适用于所有企业的承诺。",
+    "summary_source": "https://openai.com/business/customer-stories/richpanel-ai-customer-support",
+    "kind": "应用 / 客户案例"
+  },
+  "doi:10.1038/s41598-026-77880-0": {
+    "title_zh": "从对话推断心理状态，能否改善 LLM 的共情回复？",
+    "summary": "研究利用众包人类对话，让语言模型先推断说话者的信念、愿望、情绪、意图与知识，再生成回复。自动指标和模型评审显示部分改善，但忠于对话的事实摘要也取得相近效果，提示收益主要来自上下文信息。推断出的心理状态尚未经过人类直接验证，因此不能据此宣称模型能可靠读懂人心或已具备临床应用效果。",
+    "summary_source": "https://www.nature.com/articles/s41598-026-77880-0_reference.pdf"
+  },
+  "doi:10.1038/s41467-026-68698-5": {
+    "title_zh": "机器学习连接脑网络结构与一般智力差异",
+    "summary": "研究结合831名参与者的功能与扩散 MRI，用弹性网络回归和五折交叉验证预测认知测试提取的一般智力得分。全脑结构与功能连接模型的预测相关系数为0.35，解释约12%的得分方差，表现优于单个网络。结果支持分布式脑网络与智力的关联，但属于预测性证据，不能证明因果机制或充当个人诊断工具。",
+    "summary_source": "https://www.nature.com/articles/s41467-026-68698-5"
+  },
+  "doi:10.1038/s41551-025-01587-2": {
+    "title_zh": "BioDSBench 检验生物医学数据分析代码的可靠性",
+    "summary": "研究从39项研究、7个生物医学领域整理出293项编程任务。对16个语言模型的评测发现总体准确率不足40%；先制定并迭代修改分析计划的智能体达到74%。这说明生成流畅代码并不保证科学分析正确，规划与核查可能改善结果。指标仅对应所测试的任务和系统，不能视为所有研究场景中的通用准确率。",
+    "summary_source": "https://www.nature.com/articles/s41551-025-01587-2"
   }
 }

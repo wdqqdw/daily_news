@@ -231,5 +231,59 @@
     ],
     "reason": "Nature Health 明确标为 Perspective；摘要说明其讨论全球健康中的 LLM 应用进展、挑战与前景，属于观点与案例综述而非原创实证研究。",
     "source": "https://www.nature.com/articles/s44360-025-00024-7"
+  },
+  "10.3390/bs16112047": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "期刊页面明确标为 Perspective，摘要回顾现有证据并讨论社会认知风险；不是原创实证研究。",
+    "source": "https://www.mdpi.com/2076-328X/16/11/2047"
+  },
+  "10.3389/fpsyg.2026.1723503": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "正文梳理人类对 AI 的依恋概念，提出三阶段发展模型并讨论未来测量研究；未报告新的实证实验或数据分析，不作为每日原创实证研究论文。",
+    "source": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1723503/full"
+  },
+  "10.1007/s43681-025-00908-0": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "正文为自主 AI 科研的伦理论证、风险分类和治理建议，未报告新实验或实证数据；不作为每日原创实证研究。",
+    "source": "https://link.springer.com/article/10.1007/s43681-025-00908-0"
+  },
+  "10.1007/s44163-025-00753-4": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "公开正文对核心数据与任务存在无法核对的冲突：方法先称4500张图像、二分类，随后称7023张图像、四分类；结果又混用其他模型配置。当前无法安全确认实验设计和对应指标，暂不推送。",
+    "source": "https://link.springer.com/article/10.1007/s44163-025-00753-4"
+  },
+  "10.1038/d41586-026-01551-3": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "Nature 页面标为 Editorial，是关于 AI 科研角色的社论，不是原创研究。",
+    "source": "https://www.nature.com/articles/d41586-026-01551-3"
+  },
+  "10.1038/s41562-026-02492-7": {
+    "slots": [
+      1,
+      2,
+      3
+    ],
+    "reason": "期刊 citation_article_type 和 contentType 标为 Comment；内容为共识性报告清单，不是原创实证研究。",
+    "source": "https://www.nature.com/articles/s41562-026-02492-7"
   }
 }

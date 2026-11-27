@@ -473,6 +473,17 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # Connectome prediction can study human cognitive ability even when
+        # the title says intelligence rather than cognition. Require measured
+        # human data, cognitive tests and validated machine-learning prediction.
+        human_intelligence = (re.search(r'\bgeneral intelligence\b',title,re.I)
+                              and re.search(r'\bhuman connectome\b',title,re.I)
+                              and observed_comparison
+                              and re.search(r'\bcognitive tests?\b',text,re.I)
+                              and re.search(r'\bcross.validation\b',text,re.I)
+                              and re.search(r'\bpredict\w*\b',text,re.I)
+                              and not re.search(r'\b(?:synthetic|simulated) (?:human |brain )?(?:data|fMRI|connectomes?)\b',text,re.I))
+        if human_intelligence and AI.search(text):return p.get('citations',0)>=5
         # Cortex-aligned models study visual representation when predictions
         # are tested against real human recordings, not model similarity alone.
         cortical_vision = (re.search(r'\bcortex.aligned\b',title,re.I)
