@@ -2623,6 +2623,42 @@
         "url:https://doi.org/10.1038/s41551-025-01587-2"
       ],
       "doi": "10.1038/s41551-025-01587-2"
+    },
+    {
+      "first_pushed": "2026-11-28",
+      "title": "The empirical structure of psychopathology is represented in large language models",
+      "url": "https://doi.org/10.1038/s44220-025-00527-y",
+      "keys": [
+        "doi:10.1038/s44220-025-00527-y",
+        "title:llm能否重建真实心理问卷中的症状关联",
+        "title:theempiricalstructureofpsychopathologyisrepresentedinlargelanguagemodels",
+        "url:https://doi.org/10.1038/s44220-025-00527-y"
+      ],
+      "doi": "10.1038/s44220-025-00527-y"
+    },
+    {
+      "first_pushed": "2026-11-28",
+      "title": "The influence of mental state attributions on trust in large language models",
+      "url": "https://doi.org/10.1038/s44271-025-00262-1",
+      "keys": [
+        "doi:10.1038/s44271-025-00262-1",
+        "title:theinfluenceofmentalstateattributionsontrustinlargelanguagemodels",
+        "title:人们认为llm有何种心智会怎样关联对它的信任",
+        "url:https://doi.org/10.1038/s44271-025-00262-1"
+      ],
+      "doi": "10.1038/s44271-025-00262-1"
+    },
+    {
+      "first_pushed": "2026-11-28",
+      "title": "Sacituzumab Govitecan plus Pembrolizumab for Advanced Triple-Negative Breast Cancer",
+      "url": "https://doi.org/10.1056/nejmoa2508959",
+      "keys": [
+        "doi:10.1056/nejmoa2508959",
+        "title:sacituzumabgovitecanpluspembrolizumabforadvancedtriplenegativebreastcancer",
+        "title:戈沙妥珠单抗联合帕博利珠单抗的三阴性乳腺癌试验",
+        "url:https://doi.org/10.1056/nejmoa2508959"
+      ],
+      "doi": "10.1056/nejmoa2508959"
     }
   ],
   "news": [
@@ -5714,6 +5750,17 @@
         "title:richpanelhelpscompaniesautomate50ofsupportin30days",
         "title:richpanel用ai管理智能体搭建客服工具与流程",
         "url:https://openai.com/business/customer-stories/richpanel-ai-customer-support"
+      ],
+      "company": "OpenAI"
+    },
+    {
+      "first_pushed": "2026-11-28",
+      "title": "Get started with Daybreak Blue",
+      "url": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+      "keys": [
+        "title:getstartedwithdaybreakblue",
+        "title:openai展示daybreakblue的入门设置流程",
+        "url:https://openai.com/business/learn/daybreak-blue-onboarding-demo"
       ],
       "company": "OpenAI"
     }
