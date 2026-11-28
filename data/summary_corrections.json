@@ -2235,5 +2235,26 @@
     "title_zh": "BioDSBench 检验生物医学数据分析代码的可靠性",
     "summary": "研究从39项研究、7个生物医学领域整理出293项编程任务。对16个语言模型的评测发现总体准确率不足40%；先制定并迭代修改分析计划的智能体达到74%。这说明生成流畅代码并不保证科学分析正确，规划与核查可能改善结果。指标仅对应所测试的任务和系统，不能视为所有研究场景中的通用准确率。",
     "summary_source": "https://www.nature.com/articles/s41551-025-01587-2"
+  },
+  "doi:10.1038/s44220-025-00527-y": {
+    "title_zh": "LLM 能否重建真实心理问卷中的症状关联？",
+    "summary": "研究将心理病理问卷条目转化为语言模型的语义与情感向量，并与四个人类样本的实际作答数据比较。嵌入关联与真实条目关联的相关系数为0.18至0.57，加入随机森林后预测相关系数为0.33至0.81。结果说明语言表征可捕捉部分群体层面的症状结构，但不等于能诊断个人；问卷覆盖有限，仍需检验对其他症状领域的推广能力。",
+    "summary_source": "https://www.nature.com/articles/s44220-025-00527-y"
+  },
+  "doi:10.1038/s44271-025-00262-1": {
+    "title_zh": "人们认为 LLM 有何种心智，会怎样关联对它的信任？",
+    "summary": "一项纳入410名参与者的预注册实验先测量人们对 LLM 意识、体验与智能的判断，再观察他们是否按 ChatGPT 建议修改常识题答案。认为模型更有智能，与更愿意采纳建议相关；赋予模型更多体验能力则呈负向关联，意识归因没有获得正向关联的支持。这揭示了人类信任判断的不同维度，但不能证明归因造成信任变化，更不意味着模型真的具有意识。",
+    "summary_source": "https://www.nature.com/articles/s44271-025-00262-1"
+  },
+  "doi:10.1056/nejmoa2508959": {
+    "title_zh": "戈沙妥珠单抗联合帕博利珠单抗的三阴性乳腺癌试验",
+    "summary": "这项国际三期开放标签随机试验纳入443名既往未接受晚期疾病系统治疗的 PD-L1 阳性晚期三阴性乳腺癌患者。戈沙妥珠单抗联合帕博利珠单抗组的中位无进展生存期为11.2个月，化疗联合帕博利珠单抗组为7.8个月；疾病进展或死亡风险比为0.65。两组三级及以上不良事件发生率分别为71%和70%。当时总生存数据尚不成熟，因此不能据此断言已延长总生存期。",
+    "summary_source": "https://mdanderson.elsevierpure.com/en/publications/sacituzumab-govitecan-plus-pembrolizumab-for-advanced-triple-nega/"
+  },
+  "url:https://openai.com/business/learn/daybreak-blue-onboarding-demo": {
+    "title_zh": "OpenAI 展示 Daybreak Blue 的入门设置流程",
+    "summary": "OpenAI 发布 Daybreak Blue 的产品演示，带用户了解初次使用时的设置与上手过程。公开页面将内容定位为入门流程展示，未给出性能评测、技术架构或量化效果数据。该条作为公司产品动态收录。",
+    "summary_source": "https://openai.com/business/learn/daybreak-blue-onboarding-demo",
+    "kind": "产品演示"
   }
 }

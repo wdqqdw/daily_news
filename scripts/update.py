@@ -341,6 +341,14 @@ def relevant(p, slot):
         if LLM_REPORTING_ONLY.search(p.get('abstract','')):return False
         # Require cognition/people in title, LLM signal in title or abstract.
         text = title+' '+p.get('abstract','')[:1200]
+        # Questionnaire structure can model human psychopathology. Require
+        # empirical human responses rather than model-generated symptom scores.
+        psychopathology_structure = (re.search(r'\bstructure of psychopathology\b',title,re.I)
+                                      and observed_comparison
+                                      and re.search(r'\bquestionnaires?\b',text,re.I)
+                                      and re.search(r'\btext embeddings?\b',text,re.I)
+                                      and re.search(r'\bempirical (?:data|item|associations)\b',text,re.I))
+        if psychopathology_structure and LLM.search(text):return True
         # Sentence-level symptom prediction models a human mental state.
         # Require observed therapy narratives and independent clinical labels.
         mental_status = (re.search(r'\bmental status evaluation\b',title,re.I)
@@ -473,6 +481,15 @@ def relevant(p, slot):
         return bool((COGNITION.search(title) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (HUMAN_SUBJECT_TITLE.search(title) or empathic_judgement or human_moral_estimation) and (PERSON_TARGET.search(text) or LANGUAGE_COGNITION.search(title) or human_reactions or human_conversation or human_communication or human_concepts or human_affect or human_imitation or human_language_prediction or empathic_judgement or human_moral_estimation or human_lexical) and (MODELLING.search(text) or empathic_judgement or human_moral_estimation or human_lexical) and LLM.search(text))
     if slot == 2:
         text = title + ' ' + p.get('abstract','')[:1400]
+        # Attributing mental states to AI is human social cognition. Require
+        # an observed decision task, not a benchmark of model consciousness.
+        human_trust = (re.search(r'\bmental state attributions?\b',title,re.I)
+                       and re.search(r'\btrust\b',title,re.I)
+                       and observed_comparison
+                       and re.search(r'\bpreregistered experiment\b',text,re.I)
+                       and re.search(r'\badvice[ -](?:acceptance|taking)\b',text,re.I)
+                       and re.search(r'\bdecision.making task\b',text,re.I))
+        if human_trust and LLM.search(text):return p.get('citations',0)>=5
         # Connectome prediction can study human cognitive ability even when
         # the title says intelligence rather than cognition. Require measured
         # human data, cognitive tests and validated machine-learning prediction.

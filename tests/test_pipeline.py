@@ -29,6 +29,34 @@ def paper(doi,title=None,**extra):
     p.update(extra);return p
 
 class SelectionTests(unittest.TestCase):
+    def test_psychopathology_structure_requires_observed_questionnaire_data(self):
+        p=paper('10.1/psychopathology','The empirical structure of psychopathology is represented in large language models',
+                abstract='Human participants supplied questionnaire responses. Text embeddings predict empirical item associations.')
+        self.assertTrue(relevant(p,1))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),1))
+        self.assertFalse(relevant(dict(p,title=p['title'].replace('large language models','lexical dictionaries')),1))
+        for abstract in (p['abstract'].replace('Human participants','Simulated human participants'),
+                         p['abstract'].replace('Human participants','Artificial agents'),
+                         p['abstract'].replace('questionnaire','benchmark'),
+                         p['abstract'].replace('Text embeddings','Keyword counts'),
+                         p['abstract'].replace('empirical item associations','model-generated scores')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),1))
+
+    def test_llm_trust_requires_human_advice_task_and_influence(self):
+        p=paper('10.1/trust','The influence of mental state attributions on trust in large language models',citations=5,
+                abstract='A preregistered experiment with human participants measures advice-taking in a decision-making task.')
+        self.assertTrue(relevant(p,2))
+        self.assertFalse(relevant(p,1))
+        self.assertFalse(relevant(dict(p,citations=4),2))
+        self.assertFalse(relevant(dict(p,publication_types=['Review']),2))
+        self.assertFalse(relevant(dict(p,title=p['title'].replace('large language models','other people')),2))
+        for abstract in (p['abstract'].replace('human participants','simulated human participants'),
+                         p['abstract'].replace('human participants','artificial agents'),
+                         p['abstract'].replace('preregistered experiment','theoretical discussion'),
+                         p['abstract'].replace('advice-taking','response accuracy'),
+                         p['abstract'].replace('decision-making task','model benchmark')):
+            self.assertFalse(relevant(dict(p,abstract=abstract),2))
+
     def test_intelligence_requires_human_measurements_and_validated_prediction(self):
         p=paper('10.1/intelligence','The network architecture of general intelligence in the human connectome',citations=5,
                 abstract='Machine learning predicts cognitive test scores using cross-validation and observed human data from fMRI.')

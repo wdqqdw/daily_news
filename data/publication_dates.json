@@ -120,5 +120,15 @@
     "published": "2025-10-19",
     "source": "https://www.remegen.com/uploadfile/2025/11/17/5f20c10aba07db45ec17a4c148e5faaa691a765e468eb.pdf",
     "reason": "出版商原文首页注明首次在线发表于2025年10月19日，题录2025年12月11日为卷期日期。"
+  },
+  "10.1056/nejmoa2509766": {
+    "published": "2025-10-27",
+    "source": "https://www.nejm.org/doi/full/10.1056/NEJMoa2509766",
+    "reason": "Publisher history identifies first online publication on 27 October 2025. Crossref supplies the later 19 February 2026 issue date, which must not bring this older study into the current one-year hotspot window."
+  },
+  "10.1056/nejmoa2508959": {
+    "published": "2026-01-21",
+    "source": "https://www.nejm.org/doi/10.1056/NEJMoa2508959",
+    "reason": "Publisher history identifies first online publication on 21 January 2026, one day before the issue date supplied by Crossref."
   }
 }
